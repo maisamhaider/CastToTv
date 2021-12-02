@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.casttotv.viewmodel.SharedViewModel" />
+
+        <variable
+            name="thisFragment"
+            type="com.example.casttotv.ui.fragments.videos.CustomVideoPlayerFragment" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_header"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/black_80"
+            app:layout_constraintBottom_toTopOf="@+id/guideline7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewBack"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/dp_4"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="@{()-> thisFragment.back()}"
+                android:padding="@dimen/dp_6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_back" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_view_file_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_6"
+                android:layout_marginEnd="@dimen/dp_6"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageViewCast"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageViewBack"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="video_test_1234" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewCast"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="@{()-> thisFragment.enableWiFiDisplay()}"
+                android:padding="@dimen/dp_6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_cast" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llc_video_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:onClick="@{()->thisFragment.playPauseVideo()}"
+            app:layout_constraintBottom_toTopOf="@+id/cl_bellow_controls"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_header">
+
+            <VideoView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="@{()->thisFragment.playPauseVideo()}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageview_play_pause_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->thisFragment.playPauseVideo()}"
+                android:padding="@dimen/dp_10"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_play_circle" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageview_lock_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_20"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="@{()->thisFragment.lock()}"
+                android:padding="@dimen/dp_6"
+                android:visibility="gone"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_lock_open" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_middle"
+            android:layout_width="0dp"
+            android:padding="@dimen/dp_10"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline7">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewRepeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:background="@color/black_50"
+                android:onClick="@{()-> thisFragment.repeat()}"
+                 android:padding="@dimen/dp_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_repeat" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/image_view_play_back_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:background="@color/black_50"
+                android:gravity="center"
+                android:onClick="@{()-> thisFragment.showSpeedMenu()}"
+                android:text="@{viewModel.speedX}"
+                android:textColor="@color/white"
+                app:autoSizeMinTextSize="1sp"
+                android:padding="@dimen/dp_10"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewRepeat"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_view_equalizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:background="@color/black_50"
+                android:padding="@dimen/dp_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toEndOf="@+id/image_view_play_back_speed"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_equalizer" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_view_rotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:background="@color/black_50"
+                android:onClick="@{()->thisFragment.orientation()}"
+                android:padding="@dimen/dp_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_rotation" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_50"
+            android:padding="@dimen/dp_20"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline7">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageview_speed_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{()-> thisFragment.increaseSpeed(false)}"
+                android:padding="@dimen/dp_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_remove_circle" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textview_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{@string/speed(viewModel.speed)}"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/imageview_speed_minus"
+                app:layout_constraintEnd_toStartOf="@+id/imageview_speed_plus"
+                app:layout_constraintStart_toEndOf="@+id/imageview_speed_minus"
+                app:layout_constraintTop_toTopOf="@+id/imageview_speed_minus"
+                tools:text="100" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageview_speed_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{()-> thisFragment.increaseSpeed(true)}"
+                android:padding="@dimen/dp_10"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_add_circle" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_bellow_controls"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/black_80"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline6">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/m_textview_start_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp_6"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/imageview_lock"
+                app:layout_constraintEnd_toEndOf="@+id/imageview_lock"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.100000024"
+                tools:text="00:01" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/m_textview_end_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/imageView_crop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView_forward_10"
+                app:layout_constraintTop_toTopOf="@+id/seekbar"
+                tools:text="00:01" />
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_2"
+                android:progressBackgroundTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/m_textview_start_time"
+                app:layout_constraintEnd_toStartOf="@+id/m_textview_end_time"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/m_textview_start_time"
+                app:layout_constraintTop_toTopOf="@+id/m_textview_start_time" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageview_lock"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="@{()->thisFragment.lock()}"
+                android:scaleType="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView_replay_10"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/m_textview_start_time"
+                app:srcCompat="@drawable/ic_lock" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView_replay_10"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="@{()->thisFragment.replay()}"
+                android:scaleType="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView_previous"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageview_lock"
+                app:layout_constraintTop_toBottomOf="@+id/m_textview_start_time"
+                app:srcCompat="@drawable/ic_replay_10" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView_previous"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="@{()->thisFragment.playPreviousVideo()}"
+                android:scaleType="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView_play_pause"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView_replay_10"
+                app:layout_constraintTop_toBottomOf="@+id/m_textview_start_time"
+                app:srcCompat="@drawable/ic_previous" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView_play_pause"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="@{()->thisFragment.playPauseVideo()}"
+                android:scaleType="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView_next"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView_previous"
+                app:layout_constraintTop_toBottomOf="@+id/m_textview_start_time"
+                app:srcCompat="@drawable/ic_play_circle" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView_next"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="@{()-> thisFragment.playNextVideo() }"
+                android:scaleType="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView_forward_10"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView_play_pause"
+                app:layout_constraintTop_toBottomOf="@+id/m_textview_start_time"
+                app:srcCompat="@drawable/ic_next" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView_forward_10"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="@{()->thisFragment.forward()}"
+                android:scaleType="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView_crop"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView_next"
+                app:layout_constraintTop_toBottomOf="@+id/m_textview_start_time"
+                app:srcCompat="@drawable/ic_forward_10" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView_crop"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="@{()->thisFragment.resize()}"
+                android:scaleType="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView_forward_10"
+                app:layout_constraintTop_toBottomOf="@+id/m_textview_end_time"
+                app:srcCompat="@drawable/ic_crop" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.07" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.87" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

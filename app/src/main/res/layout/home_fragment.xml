@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="homeFragment"
+            type="com.example.casttotv.ui.fragments.HomeFragment" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp_10">
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/mSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{()->homeFragment.goToVpn()}"
+            android:text="VPN"
+            app:layout_constraintBottom_toTopOf="@+id/mButtonScreenMirroring"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButtonScreenMirroring"
+            style="@style/button_w0_hw"
+            android:onClick="@{()-> homeFragment.goToScreenMirroring()}"
+            android:text="Screen Mirroring"
+            app:layout_constraintBottom_toTopOf="@+id/mButtonImages"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButtonImages"
+            style="@style/button_w0_hw"
+            android:onClick="@{()-> homeFragment.goToImages()}"
+            android:text="Images"
+            app:layout_constraintBottom_toTopOf="@+id/mButtonVideo"
+            app:layout_constraintEnd_toEndOf="@+id/mButtonScreenMirroring"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/mButtonScreenMirroring"
+            app:layout_constraintTop_toBottomOf="@+id/mButtonScreenMirroring" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButtonVideo"
+            style="@style/button_w0_hw"
+            android:onClick="@{()-> homeFragment.goToVideos()}"
+            android:text="Videos"
+            app:layout_constraintBottom_toTopOf="@+id/mButtonWebBrowser"
+            app:layout_constraintEnd_toEndOf="@+id/mButtonScreenMirroring"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/mButtonScreenMirroring"
+            app:layout_constraintTop_toBottomOf="@+id/mButtonImages" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButtonWebBrowser"
+            style="@style/button_w0_hw"
+            android:onClick="@{()-> homeFragment.goToWebBrowser()}"
+            android:text="Web Browser"
+            app:layout_constraintBottom_toTopOf="@+id/mButtonImagesSlider"
+            app:layout_constraintEnd_toEndOf="@+id/mButtonScreenMirroring"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/mButtonScreenMirroring"
+            app:layout_constraintTop_toBottomOf="@+id/mButtonVideo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButtonImagesSlider"
+            style="@style/button_w0_hw"
+            android:onClick="@{()-> homeFragment.goToImageSlider()}"
+            android:text="Image slider"
+            app:layout_constraintEnd_toEndOf="@+id/mButtonScreenMirroring"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/mButtonScreenMirroring"
+            app:layout_constraintTop_toBottomOf="@+id/mButtonWebBrowser" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButtonAudios"
+            style="@style/button_w0_hw"
+            android:onClick="@{()-> homeFragment.goToAudios()}"
+            android:text="Audio"
+            app:layout_constraintEnd_toEndOf="@+id/mButtonScreenMirroring"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/mButtonScreenMirroring"
+            app:layout_constraintTop_toBottomOf="@+id/mButtonImagesSlider" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

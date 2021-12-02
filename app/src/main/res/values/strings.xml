@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">CastToTv</string>
+    <string name="title_activity_main_second">MainSecondActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_transform">Transform</string>
+    <string name="menu_reflow">Reflow</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_settings">Settings</string>
+
+    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="address">Server Address:</string>
+    <string name="port">Server Port:</string>
+    <string name="secret">Shared Secret:</string>
+    <string name="proxyhost">HTTP proxy hostname</string>
+    <string name="proxyport">HTTP proxy port</string>
+
+    <string name="packages">Packages (comma separated):</string>
+    <string name="allowed">Allow</string>
+    <string name="disallowed">Disallow</string>
+
+    <string name="connected">ToyVPN is connected!</string>
+    <string name="disconnected">ToyVPN is disconnected!</string>
+    <string name="incomplete_proxy_settings">
+        Incomplete proxy settings. For HTTP proxy we require both hostname and port settings.
+    </string>
+    <string name="unknown_package_names">
+        Some of the specified package names do not correspond to any installed packages.
+    </string>
+
+    <string name="vpn_on">VPN ON</string>
+    <string name="vpn_off">VPN OFF</string>
+    <string name="navigation_drawer_close">drawer close</string>
+    <string name="connect">Connect</string>
+    <string name="connecting">Connecting</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="connection_close_confirm">Would you like to cancel the current VPN Connection?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="gps_network_not_enabled">Gps network is not enabled</string>
+    <string name="enable">Enable</string>
+    <string name="location_is_already_enabled">Location is already enabled.</string>
+    <string name="end_time_00_00">00:00</string>
+    <string name="speed">%d</string>
+    <string name="select_images">Select Images</string>
+</resources>

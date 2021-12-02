@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.casttotv.ui.fragments.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_imagesFoldersFragment"
+            app:destination="@id/imagesFoldersFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_screenMirroringFragment"
+            app:destination="@id/screenMirroringFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_webBrowserFragment"
+            app:destination="@id/webBrowserFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_imageSliderFragment"
+            app:destination="@id/imageSliderFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_vpnFragment"
+            app:destination="@id/vpnFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_videosFoldersFragment"
+            app:destination="@id/videosFoldersFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_audiosFoldersFragment"
+            app:destination="@id/audiosFoldersFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/imagesFoldersFragment"
+        android:name="com.example.casttotv.ui.fragments.images.ImagesFoldersFragment"
+        android:label="images_fragment"
+        tools:layout="@layout/images_folders_fragment">
+        <action
+            android:id="@+id/action_imagesFoldersFragment_to_imagesFragment"
+            app:destination="@id/imagesFragment" />
+        <argument
+            android:name="folderPath"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_imagesFoldersFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageSliderFragment"
+        android:name="com.example.casttotv.ui.fragments.slider.ImageSliderFragment"
+        android:label="fragment_image_slider"
+        tools:layout="@layout/fragment_image_slider" >
+        <action
+            android:id="@+id/action_imageSliderFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_imageSliderFragment_to_imageSliderViewerFragment"
+            app:destination="@id/imageSliderViewerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageSliderViewerFragment"
+        android:name="com.example.casttotv.ui.fragments.slider.ImageSliderViewerFragment"
+        android:label="fragment_image_slider_viewer"
+        tools:layout="@layout/fragment_image_slider_viewer" >
+        <action
+            android:id="@+id/action_imageSliderFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_imageSliderViewerFragment_to_imageSliderFragment"
+            app:destination="@id/imageSliderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videosFragment"
+        android:name="com.example.casttotv.ui.fragments.videos.VideosFragment"
+        android:label="fragment_videos"
+        tools:layout="@layout/fragment_videos">
+        <action
+            android:id="@+id/action_videosFragment_to_customVideoPlayerFragment"
+            app:destination="@id/customVideoPlayerFragment" />
+        <action
+            android:id="@+id/action_videosFragment_to_videosFoldersFragment"
+            app:destination="@id/videosFoldersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webBrowserFragment"
+        android:name="com.example.casttotv.ui.fragments.WebBrowserFragment"
+        android:label="fragment_web_browser"
+        tools:layout="@layout/fragment_web_browser" >
+        <action
+            android:id="@+id/action_webBrowserFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenMirroringFragment"
+        android:name="com.example.casttotv.ui.fragments.ScreenMirroringFragment"
+        android:label="fragment_screen_mirroring"
+        tools:layout="@layout/fragment_screen_mirroring" >
+        <action
+            android:id="@+id/action_screenMirroringFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/vpnFragment"
+        android:name="com.example.casttotv.ui.fragments.VpnFragment"
+        android:label="vpn_fragment"
+        tools:layout="@layout/fragment_vpn" >
+        <action
+            android:id="@+id/action_vpnFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imagesFragment"
+        android:name="com.example.casttotv.ui.fragments.images.ImagesFragment"
+        android:label="fragment_images"
+        tools:layout="@layout/fragment_images">
+        <action
+            android:id="@+id/action_imagesFragment_to_viewImagesFragment"
+            app:destination="@id/viewImagesFragment" />
+        <action
+            android:id="@+id/action_imagesFragment_to_imagesFoldersFragment"
+            app:destination="@id/imagesFoldersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videosFoldersFragment"
+        android:name="com.example.casttotv.ui.fragments.videos.VideosFoldersFragment"
+        android:label="fragment_video_folder"
+        tools:layout="@layout/fragment_videos_folders">
+        <action
+            android:id="@+id/action_videosFoldersFragment_to_videosFragment"
+            app:destination="@id/videosFragment" />
+        <action
+            android:id="@+id/action_videosFoldersFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customVideoPlayerFragment"
+        android:name="com.example.casttotv.ui.fragments.videos.CustomVideoPlayerFragment"
+        android:label="fragment_custom_video_player"
+        tools:layout="@layout/fragment_custom_video_player">
+
+        <action
+            android:id="@+id/action_customVideoPlayerFragment_to_videosFragment"
+            app:destination="@id/videosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewImagesFragment"
+        android:name="com.example.casttotv.ui.fragments.images.ViewImagesFragment"
+        android:label="fragment_view_images"
+        tools:layout="@layout/fragment_view_images" >
+        <action
+            android:id="@+id/action_viewImagesFragment_to_imagesFragment"
+            app:destination="@id/imagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/audiosFoldersFragment"
+        android:name="com.example.casttotv.ui.fragments.audios.AudiosFoldersFragment"
+        android:label="fragment_audios_folders"
+        tools:layout="@layout/fragment_audios_folders">
+        <action
+            android:id="@+id/action_audiosFoldersFragment_to_audiosFragment"
+            app:destination="@id/audiosFragment" />
+        <action
+            android:id="@+id/action_audiosFoldersFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/audiosFragment"
+        android:name="com.example.casttotv.ui.fragments.audios.AudiosFragment"
+        android:label="fragment_audios"
+        tools:layout="@layout/fragment_audios">
+        <action
+            android:id="@+id/action_audiosFragment_to_audioPlayerFragment"
+            app:destination="@id/audioPlayerFragment" />
+        <action
+            android:id="@+id/action_audiosFragment_to_audiosFoldersFragment"
+            app:destination="@id/audiosFoldersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/audioPlayerFragment"
+        android:name="com.example.casttotv.ui.fragments.audios.AudioPlayerFragment"
+        android:label="fragment_audio_player"
+        tools:layout="@layout/fragment_audio_player">
+
+        <action
+            android:id="@+id/action_audioPlayerFragment_to_audiosFragment"
+            app:destination="@id/audiosFragment" />
+    </fragment>
+
+</navigation>
