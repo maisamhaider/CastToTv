@@ -55,8 +55,8 @@
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/textview_next"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="@{()->thisFragment.next()}"
+                android:layout_height="0dp"
+                android:onClick="@{()-> thisFragment.next()}"
                 android:padding="@dimen/dp_10"
                 android:text="Next"
                 android:textAppearance="?attr/textAppearanceBody1"

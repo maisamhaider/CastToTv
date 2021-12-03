@@ -43,7 +43,7 @@ class ImageSliderFragment : Fragment() {
     private val selectedImageList: MutableList<FileModel> = ArrayList()
 
     private val coroutineScopeFolders = CoroutineScope(Job())
-    val coroutineScopeImages = CoroutineScope(Job())
+    private val coroutineScopeImages = CoroutineScope(Job())
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -71,11 +71,12 @@ class ImageSliderFragment : Fragment() {
         _binding.apply {
             lifecycleOwner = viewLifecycleOwner
             shareViewModel = sharedViewModel
+            thisFragment = this@ImageSliderFragment
         }
 
         CoroutineScope(Dispatchers.IO).launch {
             loadFolders()
-            delay(1000)
+            delay(500)
             loadImages(folderPath)
         }
 
@@ -100,20 +101,19 @@ class ImageSliderFragment : Fragment() {
                 if (!it.isNullOrEmpty()) {
                     imageVideosAdapter.submitList(it)
                 } else {
-                     requireContext().toastLong("Image not found.")
+                    requireContext().toastLong("Image not found.")
                 }
             }
         }
     }
 
 
-    var i  = 0
+    var i = 0
     private fun onFolderClick(folderPath: FolderModel) {
         try {
             if (loadImages(folderPath.folderPath).isCompleted) {
                 loadImages(folderPath.folderPath)
                 requireContext().toastShort("${i++}")
-
             }
 
         } catch (e: Exception) {
@@ -124,7 +124,7 @@ class ImageSliderFragment : Fragment() {
 
     private fun onImageClick(fileModel: FileModel, int: Int) {
         if (!selectedImageList.contains(fileModel)) {
-            selectedImageList.add(0,fileModel)
+            selectedImageList.add(0, fileModel)
             sharedViewModel.selectImages(selectedImageList)
         } else {
             selectedImageList.remove(fileModel)

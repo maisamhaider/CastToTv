@@ -7,6 +7,8 @@ import android.net.Uri
 import android.provider.MediaStore
 import com.example.casttotv.models.FileModel
 import com.example.casttotv.models.FolderModel
+import com.example.casttotv.models.PagerAnimation
+import com.example.casttotv.utils.animation.*
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import java.io.File
@@ -188,6 +190,43 @@ class SharedRepository(val context: Context) {
             }
         }
         cursor.close()
+    }
+
+
+    fun pagerAnimations(): Flow<MutableList<PagerAnimation>> = flow {
+        val animation: MutableList<PagerAnimation> = ArrayList()
+        animation.add(PagerAnimation(1, AccordionTransformer()))
+        animation.add(PagerAnimation(2, AntiClockSpinTransformer()))
+        animation.add(PagerAnimation(3, BackDrawTransformer()))
+        animation.add(PagerAnimation(4, BackgroundToForegroundTransformer()))
+        animation.add(PagerAnimation(5, ClockSpinTransformer()))
+        animation.add(PagerAnimation(6, CubeInDepthTransformer()))
+        animation.add(PagerAnimation(7, CubeInScalingTransformer()))
+        animation.add(PagerAnimation(8, CubeInTransformer()))
+        animation.add(PagerAnimation(9, CubeOutDepthTransformer()))
+        animation.add(PagerAnimation(10, CubeOutScalingTransformer()))
+        animation.add(PagerAnimation(11, CubeOutTransformer()))
+        animation.add(PagerAnimation(12, DepthTransformer()))
+        animation.add(PagerAnimation(13, FadeOutTransformer()))
+        animation.add(PagerAnimation(14, FanTransformer()))
+        animation.add(PagerAnimation(15, FidgetSpinTransformer()))
+        animation.add(PagerAnimation(16, ForegroundToBackgroundTransformer()))
+        animation.add(PagerAnimation(17, GateTransformer()))
+        animation.add(PagerAnimation(18, HingeTransformer()))
+        animation.add(PagerAnimation(19, HorizontalFlipTransformer()))
+        animation.add(PagerAnimation(20, PopTransformer()))
+        animation.add(PagerAnimation(21, RotateDownTransformer()))
+        animation.add(PagerAnimation(22, RotateUpTransformer()))
+        animation.add(PagerAnimation(23, SpinnerTransformer()))
+        animation.add(PagerAnimation(24, StackTransformer()))
+        animation.add(PagerAnimation(25, TabletTransformer()))
+        animation.add(PagerAnimation(26, TossTransformer()))
+        animation.add(PagerAnimation(27, VerticalFlipTransformer()))
+        animation.add(PagerAnimation(28, VerticalShutTransformer()))
+        animation.add(PagerAnimation(29, ZoomInTransformer()))
+        animation.add(PagerAnimation(30, ZoomOutSlideTransformer()))
+        animation.add(PagerAnimation(31, ZoomOutTransformer()))
+        emit(animation)
     }
 
 

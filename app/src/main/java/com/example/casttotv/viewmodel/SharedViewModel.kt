@@ -17,6 +17,9 @@ class SharedViewModel(context: Context) : ViewModel() {
     val audioFoldersFlow = sharedRepository.audioFoldersFlow
     fun audiosByBucket(audio: String) = sharedRepository.audiosByBucket(audio)
 
+
+    fun pagerAnimations() = sharedRepository.pagerAnimations()
+
     private var _speed: MutableLiveData<Int> = MutableLiveData(100)
 
     val speed: LiveData<Int> = _speed
@@ -27,9 +30,16 @@ class SharedViewModel(context: Context) : ViewModel() {
 
     private var _selectedImages: MutableLiveData<MutableList<FileModel>> = MutableLiveData()
 
-
     val selectedImages: LiveData<MutableList<FileModel>> = _selectedImages
 
+    private var _play: MutableLiveData<Boolean> = MutableLiveData(false)
+
+    val play: LiveData<Boolean> = _play
+
+
+    fun playPause() {
+        _play.value = !_play.value!!
+     }
 
     fun adjustPlayerSpeed(value: Int) {
         _speed.value = value
@@ -39,7 +49,6 @@ class SharedViewModel(context: Context) : ViewModel() {
         _selectedImages.value = value
 
     }
-
 
 
     class SharedViewModelFactory(

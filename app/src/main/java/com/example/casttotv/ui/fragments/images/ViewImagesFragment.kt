@@ -11,6 +11,7 @@ import com.example.casttotv.adapter.ImageViewPagerAdapter
 import com.example.casttotv.databinding.FragmentViewImagesBinding
 import com.example.casttotv.models.FileModel
 import com.example.casttotv.utils.MySingleton.toastLong
+import com.example.casttotv.utils.animation.DepthPageTransformer
 import com.example.casttotv.viewmodel.SharedViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -40,11 +41,11 @@ class ViewImagesFragment : Fragment() {
 
         val path = bundle.getString("folderPath")!!
         adapter = ImageHorizonAdapter2(::onItemClick, requireContext(), false)
-        adapterSlider = ImageViewPagerAdapter(requireContext())
+        adapterSlider = ImageViewPagerAdapter(requireContext()) { }
 
         binding.recyclerView.adapter = adapter
         binding.viewpager2.adapter = adapterSlider
-
+        binding.viewpager2.setPageTransformer(DepthPageTransformer())
         CoroutineScope(Dispatchers.IO).launch {
             sharedViewModel.imagesByFolder(path).collect {
                 CoroutineScope(Dispatchers.Main).launch {
