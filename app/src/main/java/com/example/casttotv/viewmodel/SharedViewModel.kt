@@ -8,8 +8,8 @@ import com.example.casttotv.repositories.SharedRepository
 class SharedViewModel(context: Context) : ViewModel() {
     private val sharedRepository = SharedRepository(context)
 
-    val imagesFolderFlow = sharedRepository.imageFolderFlow
-    fun imagesByFolder(image: String) = sharedRepository.getImagesByBucket(image)
+    val imagesFolderFlow = sharedRepository.imageFolderFlow.asLiveData()
+    fun imagesByFolder(image: String) = sharedRepository.getImagesByBucket(image).asLiveData()
 
     val videosFoldersFlow = sharedRepository.videosFoldersFlow
     fun videosByBucket(video: String) = sharedRepository.videosByBucket(video)
@@ -39,7 +39,11 @@ class SharedViewModel(context: Context) : ViewModel() {
 
     fun playPause() {
         _play.value = !_play.value!!
-     }
+    }
+
+    fun playPause(value : Boolean) {
+        _play.value = value
+    }
 
     fun adjustPlayerSpeed(value: Int) {
         _speed.value = value

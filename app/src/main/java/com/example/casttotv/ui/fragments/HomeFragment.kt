@@ -1,5 +1,6 @@
 package com.example.casttotv.ui.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.casttotv.R
 import com.example.casttotv.databinding.HomeFragmentBinding
+import com.example.casttotv.ui.activities.browser.WebBrowserActivity
 
 class HomeFragment : Fragment() {
 
@@ -52,7 +54,7 @@ class HomeFragment : Fragment() {
     }
 
     fun goToWebBrowser() {
-        navController.navigate(R.id.action_homeFragment_to_webBrowserFragment)
+        startActivity(Intent(requireContext(), WebBrowserActivity::class.java))
     }
 
     fun goToImageSlider() {

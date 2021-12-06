@@ -13,10 +13,6 @@ import com.example.casttotv.models.FileModel
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.utils.animation.DepthPageTransformer
 import com.example.casttotv.viewmodel.SharedViewModel
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.launch
 
 
 class ViewImagesFragment : Fragment() {
@@ -46,17 +42,13 @@ class ViewImagesFragment : Fragment() {
         binding.recyclerView.adapter = adapter
         binding.viewpager2.adapter = adapterSlider
         binding.viewpager2.setPageTransformer(DepthPageTransformer())
-        CoroutineScope(Dispatchers.IO).launch {
-            sharedViewModel.imagesByFolder(path).collect {
-                CoroutineScope(Dispatchers.Main).launch {
-                    if (!it.isNullOrEmpty()) {
-                        adapter.submitList(it)
-                        adapterSlider.submitList(it)
+        sharedViewModel.imagesByFolder(path).observe(viewLifecycleOwner) {
+            if (!it.isNullOrEmpty()) {
+                adapter.submitList(it)
+                adapterSlider.submitList(it)
 
-                    } else {
-                        requireContext().toastLong("Image not found.")
-                    }
-                }
+            } else {
+                requireContext().toastLong("Image not found.")
             }
         }
 

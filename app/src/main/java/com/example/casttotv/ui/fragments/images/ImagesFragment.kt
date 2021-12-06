@@ -15,10 +15,6 @@ import com.example.casttotv.models.FileModel
 import com.example.casttotv.utils.MySingleton.IMAGE
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.viewmodel.SharedViewModel
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.launch
 
 class ImagesFragment : Fragment() {
 
@@ -43,17 +39,14 @@ class ImagesFragment : Fragment() {
 
         binding.recyclerView.adapter = adapter
 
-        CoroutineScope(Dispatchers.IO).launch {
-            sharedViewModel.imagesByFolder(path).collect {
-                CoroutineScope(Dispatchers.Main).launch {
-                    if (!it.isNullOrEmpty()) {
-                        adapter.submitList(it)
-                    } else {
-                        requireContext().toastLong("Image not found.")
-                    }
-                }
+        sharedViewModel.imagesByFolder(path).observe(viewLifecycleOwner) {
+            if (!it.isNullOrEmpty()) {
+                adapter.submitList(it)
+            } else {
+                requireContext().toastLong("Image not found.")
             }
         }
+
 
     }
 

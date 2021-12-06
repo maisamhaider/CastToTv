@@ -6,6 +6,10 @@
     <data>
 
         <variable
+            name="viewModel"
+            type="com.example.casttotv.viewmodel.SharedViewModel" />
+
+        <variable
             name="thisFragment"
             type="com.example.casttotv.ui.fragments.slider.ImageSliderViewerFragment" />
     </data>
@@ -15,16 +19,6 @@
         android:layout_height="match_parent"
         tools:context=".ui.fragments.slider.ImageSliderViewerFragment">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/button_play"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp_10"
-            android:onClick="@{()->thisFragment.onPagerClicked()}"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewpager_2"
@@ -35,7 +29,21 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_play" />
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView_play_pause"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/black_50"
+            android:onClick="@{()->viewModel.playPause()}"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/viewpager_2"
+            app:layout_constraintEnd_toEndOf="@+id/viewpager_2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewpager_2"
+            app:srcCompat="@drawable/ic_play_circle" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"

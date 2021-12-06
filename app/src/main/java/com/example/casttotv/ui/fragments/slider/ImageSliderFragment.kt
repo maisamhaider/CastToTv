@@ -1,6 +1,7 @@
 package com.example.casttotv.ui.fragments.slider
 
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -16,11 +17,8 @@ import com.example.casttotv.databinding.FragmentImageSliderBinding
 import com.example.casttotv.models.FileModel
 import com.example.casttotv.models.FolderModel
 import com.example.casttotv.utils.MySingleton
-import com.example.casttotv.utils.MySingleton.toastLong
-import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.viewmodel.SharedViewModel
 import kotlinx.coroutines.*
-import kotlinx.coroutines.flow.collect
 
 class ImageSliderFragment : Fragment() {
 
@@ -42,8 +40,6 @@ class ImageSliderFragment : Fragment() {
 
     private val selectedImageList: MutableList<FileModel> = ArrayList()
 
-    private val coroutineScopeFolders = CoroutineScope(Job())
-    private val coroutineScopeImages = CoroutineScope(Job())
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -74,51 +70,30 @@ class ImageSliderFragment : Fragment() {
             thisFragment = this@ImageSliderFragment
         }
 
-        CoroutineScope(Dispatchers.IO).launch {
-            loadFolders()
-            delay(500)
-            loadImages(folderPath)
-        }
+        loadImageFolder()
+        loadImages(folderPath)
 
     }
 
-    private fun loadFolders() = coroutineScopeFolders.launch(Dispatchers.IO) {
-        sharedViewModel.imagesFolderFlow.collect {
-            launch(Dispatchers.Main) {
-                if (!it.isNullOrEmpty()) {
-                    folderPath = it[0].folderPath
-                } else {
-                    requireContext().toastLong("Image not found.")
-                }
-            }
+
+    private fun loadImageFolder() {
+        sharedViewModel.imagesFolderFlow.observe(this.viewLifecycleOwner) {
+            it?.let { folderPath = it[0].folderPath }
         }
     }
 
+    private fun loadImages(path: String) {
+        sharedViewModel.imagesByFolder(path).observe(viewLifecycleOwner) {
 
-    private fun loadImages(path: String) = coroutineScopeImages.launch(Dispatchers.IO) {
-        sharedViewModel.imagesByFolder(path).collect {
-            launch(Dispatchers.Main) {
-                if (!it.isNullOrEmpty()) {
-                    imageVideosAdapter.submitList(it)
-                } else {
-                    requireContext().toastLong("Image not found.")
-                }
-            }
+            it?.let { imageVideosAdapter.submitList(it) }
         }
     }
 
-
-    var i = 0
     private fun onFolderClick(folderPath: FolderModel) {
         try {
-            if (loadImages(folderPath.folderPath).isCompleted) {
-                loadImages(folderPath.folderPath)
-                requireContext().toastShort("${i++}")
-            }
-
+            loadImages(folderPath.folderPath)
         } catch (e: Exception) {
             Log.e(TAG, e.message.toString())
-
         }
     }
 
@@ -136,6 +111,8 @@ class ImageSliderFragment : Fragment() {
         selectedImageList.remove(fileModel)
         sharedViewModel.selectImages(selectedImageList)
     }
+
+
 
     fun next() {
         findNavController().navigate(R.id.action_imageSliderFragment_to_imageSliderViewerFragment)

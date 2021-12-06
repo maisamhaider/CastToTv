@@ -127,7 +127,6 @@ class AudioPlayerFragment : Fragment() {
         }
 
 
-        initSeekbar()
     }
 
     fun lock() {
@@ -385,7 +384,7 @@ class AudioPlayerFragment : Fragment() {
             e.stackTrace
             Log.e(TAG, e.message.toString())
         }
-
+         initSeekbar()
 
     }
 

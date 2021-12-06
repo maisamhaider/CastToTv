@@ -12,14 +12,9 @@ import com.example.casttotv.R
 import com.example.casttotv.adapter.FolderAdapter
 import com.example.casttotv.databinding.ImagesFoldersFragmentBinding
 import com.example.casttotv.models.FolderModel
-import com.example.casttotv.utils.MySingleton.AUDIO
 import com.example.casttotv.utils.MySingleton.IMAGE
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.viewmodel.SharedViewModel
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.launch
 
 
 class ImagesFoldersFragment : Fragment() {
@@ -44,22 +39,17 @@ class ImagesFoldersFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         adapter = FolderAdapter(::onItemClick, requireContext(), IMAGE)
         binding.recyclerView.adapter = adapter
-        CoroutineScope(Dispatchers.IO).launch {
-            loadImage()
-        }
-
+        loadImageFolder()
     }
 
-    private suspend fun loadImage() {
-        sharedViewModel.imagesFolderFlow.collect {
-            CoroutineScope(Dispatchers.Main).launch {
-                if (!it.isNullOrEmpty()) {
-                    adapter.submitList(it)
-                } else {
-                    requireContext().toastLong("Image not found.")
-                }
+    private fun loadImageFolder() {
+        sharedViewModel.imagesFolderFlow.observe(this.viewLifecycleOwner) {
+            it?.let {
+                adapter.submitList(it)
+
             }
         }
+
 
     }
 

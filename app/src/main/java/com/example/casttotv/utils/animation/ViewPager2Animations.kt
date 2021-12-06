@@ -105,30 +105,37 @@ class BackDrawTransformer : ViewPager2.PageTransformer {
         when {
             position >= -1.0F && position <= 1.0F -> {
                 var v: Float
-                if (position <= 0.0F) {
-                    page.alpha = 1.0F + position
-                    page.translationX = pageWidth.toFloat() * -position
-                    v = 0.75F + 0.25F * (1.0F - abs(position))
-                    page.scaleX = v
-                    page.scaleY = v
-                } else if (position.toDouble() > 0.5 && position <= 1.0F) {
-                    page.alpha = 0.0F
-                    page.translationX = pageWidth.toFloat() * -position
-                } else if (position.toDouble() > 0.3 && position.toDouble() <= 0.5) {
-                    page.alpha = 1.0F
-                    page.translationX = pageWidth.toFloat() * position
-                    v = 0.75F
-                    page.scaleX = v
-                    page.scaleY = v
-                } else {
-                    if (position.toDouble() <= 0.3) {
+                when {
+                    position <= 0.0F -> {
+                        page.alpha = 1.0F + position
+                        page.translationX = pageWidth.toFloat() * -position
+                        v = 0.75F + 0.25F * (1.0F - abs(position))
+                        page.scaleX = v
+                        page.scaleY = v
+                    }
+                    position.toDouble() > 0.5 && position <= 1.0F -> {
+                        page.alpha = 0.0F
+                        page.translationX = pageWidth.toFloat() * -position
+                    }
+                    position.toDouble() > 0.3 && position.toDouble() <= 0.5 -> {
                         page.alpha = 1.0F
                         page.translationX = pageWidth.toFloat() * position
-                        v = (0.3 - position.toDouble()).toFloat()
-                        v = min(v, 0.25F)
-                        val scaleFactor = 0.75F + v
-                        page.scaleX = scaleFactor
-                        page.scaleY = scaleFactor
+                        v = 0.75F
+                        page.scaleX = v
+                        page.scaleY = v
+                    }
+                    else -> {
+                        when {
+                            position.toDouble() <= 0.3 -> {
+                                page.alpha = 1.0F
+                                page.translationX = pageWidth.toFloat() * position
+                                v = (0.3 - position.toDouble()).toFloat()
+                                v = min(v, 0.25F)
+                                val scaleFactor = 0.75F + v
+                                page.scaleX = scaleFactor
+                                page.scaleY = scaleFactor
+                            }
+                        }
                     }
                 }
             }
@@ -161,27 +168,35 @@ class ClockSpinTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.translationX = -position * page.width
 
-        if (abs(position) <= 0.5) {
-            page.visibility = View.VISIBLE
-            page.scaleX = 1 - abs(position)
-            page.scaleY = 1 - abs(position)
-        } else if (abs(position) > 0.5) {
-            page.visibility = View.GONE
+        when {
+            abs(position) <= 0.5 -> {
+                page.visibility = View.VISIBLE
+                page.scaleX = 1 - abs(position)
+                page.scaleY = 1 - abs(position)
+            }
+            abs(position) > 0.5 -> {
+                page.visibility = View.GONE
+            }
         }
 
 
-        if (position < -1) {  // [-Infinity,-1)
-            // This page is way off-screen to the left.
-            page.alpha = 0F
-        } else if (position <= 0) {   // [-1,0]
-            page.alpha = 1F
-            page.rotation = 360 * abs(position)
-        } else if (position <= 1) {   // (0,1]
-            page.alpha = 1F
-            page.rotation = -360 * abs(position)
-        } else {  // (1,+Infinity]
-            // This page is way off-screen to the right.
-            page.alpha = 0F
+        when {
+            position < -1 -> {  // [-Infinity,-1)
+                // This page is way off-screen to the left.
+                page.alpha = 0F
+            }
+            position <= 0 -> {   // [-1,0]
+                page.alpha = 1F
+                page.rotation = 360 * abs(position)
+            }
+            position <= 1 -> {   // (0,1]
+                page.alpha = 1F
+                page.rotation = -360 * abs(position)
+            }
+            else -> {  // (1,+Infinity]
+                // This page is way off-screen to the right.
+                page.alpha = 0F
+            }
         }
     }
 
@@ -302,9 +317,6 @@ class CubeOutDepthTransformer : ViewPager2.PageTransformer {
                 page.alpha = 0F
             }
         }
-
-
-
         when {
             abs(position) <= 0.5 -> {
                 page.scaleY = max(0.4F, 1 - abs(position))
@@ -801,6 +813,7 @@ class ZoomInTransformer : ViewPager2.PageTransformer {
     }
 }
 class ZoomOutSlideTransformer : ViewPager2.PageTransformer {
+
     override fun transformPage(page: View, position: Float) {
         when {
             position >= -1.0F || position <= 1.0F -> {
