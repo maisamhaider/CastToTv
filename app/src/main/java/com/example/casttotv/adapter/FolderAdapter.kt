@@ -17,8 +17,7 @@ class FolderAdapter(
     val onItemClicked: (FolderModel) -> Unit,
     private var context: Context,
     private val mimType: String,
-) :
-    ListAdapter<FolderModel, FolderAdapter.Holder>(DIF_UTIL) {
+) : ListAdapter<FolderModel, FolderAdapter.Holder>(DIF_UTIL) {
 
     companion object {
         val DIF_UTIL = object : DiffUtil.ItemCallback<FolderModel>() {
@@ -56,9 +55,7 @@ class FolderAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val viewHolder = Holder(
-            FolderItemBinding.inflate(
-                LayoutInflater.from(parent.context), parent, false
-            )
+            FolderItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         )
         viewHolder.itemView.setOnClickListener {
             onItemClicked(getItem(viewHolder.absoluteAdapterPosition))

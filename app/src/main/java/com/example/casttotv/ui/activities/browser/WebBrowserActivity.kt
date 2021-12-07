@@ -6,10 +6,15 @@ import android.view.inputmethod.EditorInfo
 import android.widget.TextView.OnEditorActionListener
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager2.widget.ViewPager2
 import com.example.casttotv.R
+import com.example.casttotv.adapter.BrowserAdapter2
 import com.example.casttotv.databinding.ActivityWebBrowserBinding
 import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.viewmodel.BrowserViewModel
+import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 
 
 class WebBrowserActivity : AppCompatActivity() {
@@ -33,13 +38,11 @@ class WebBrowserActivity : AppCompatActivity() {
             }
 
             imageviewMore.setOnClickListener {
-                viewModel.bottomSheet(LayoutInflater.from(this@WebBrowserActivity)
-                    .inflate(R.layout.bottom_sheet_tabs, null, false),
-                    this@WebBrowserActivity)
+                bottomSheet()
             }
 
         }
-        binding.mInputEdittext.setOnEditorActionListener(OnEditorActionListener { _, actionId, event ->
+        binding.mInputEdittext.setOnEditorActionListener(OnEditorActionListener { _, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_GO) {
                 if (isSearchValid()) {
                     viewModel.search(binding.mInputEdittext.text.toString())
@@ -54,6 +57,74 @@ class WebBrowserActivity : AppCompatActivity() {
 
 
     fun back() = viewModel.back()
+
+    private fun bottomSheet() {
+
+        // on below line we are creating a new bottom sheet dialog.
+        val dialog = BottomSheetDialog(this)
+        // on below line we are inflating a layout file which we have created.
+
+        val bottomBinding =
+            LayoutInflater.from(this).inflate(R.layout.bottom_sheet_dialog, null, false)
+
+
+        // closing of dialog box when clicking on the screen.
+        dialog.setCancelable(true)
+
+        // on below line we are setting
+        // content view to our view.
+        dialog.setContentView(bottomBinding)
+
+        val viewpager2 = bottomBinding.findViewById<ViewPager2>(R.id.viewpager_2)
+        val tabLayout = bottomBinding.findViewById<TabLayout>(R.id.tabLayout)
+
+        val adapter = BrowserAdapter2(this)
+        viewpager2.adapter = adapter
+
+        TabLayoutMediator(tabLayout, viewpager2) { tab, position ->
+            when (position) {
+                0 -> {
+                    tab.icon = getDrawable(R.drawable.ic_tab)
+                }
+                1 -> {
+                    tab.icon = getDrawable(R.drawable.ic_share)
+                }
+                2 -> {
+                    tab.icon = getDrawable(R.drawable.ic_save)
+                }
+                3 -> {
+                    tab.icon = getDrawable(R.drawable.ic_more_vert)
+                }
+            }
+        }.attach()
+        tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+                when (tab!!.position) {
+                    0 -> {
+                        viewpager2.currentItem = 0
+                    }
+                    1 -> {
+                        viewpager2.currentItem = 1
+                    }
+                    2 -> {
+                        viewpager2.currentItem = 2
+                    }
+                    3 -> {
+                        viewpager2.currentItem = 3
+                    }
+                }
+            }
+
+            override fun onTabUnselected(tab: TabLayout.Tab?) {
+            }
+
+            override fun onTabReselected(tab: TabLayout.Tab?) {
+            }
+
+        })
+
+        dialog.show()
+    }
 
     override fun onBackPressed() {
         if (viewModel.canGoBack()) {

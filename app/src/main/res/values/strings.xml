@@ -57,4 +57,15 @@
     <string name="share">share</string>
     <string name="save">Save</string>
     <string name="more">More</string>
+    <string name="favorite_site">Here you can change the default website which loads on start of Browser. Enter\"about:blank\" to get an smpty start site.</string>
+    <string name="custom_user_agent_body">Here you can enter a custom user agent. Let empty to use defaul one</string>
+    <string name="custom_search_engine_body">Here you can enter a custom search URL Also choose \"Custom search engine\" as search provider</string>
+    <string name="search_engine_body">Here you can choose your preffered search engine or set a custom one</string>
+    <string name="data_control_body">Clear your browser data or decide what data will be cleared when you leave the aplication</string>
+    <string name="start_control_body">Decide which components of the browser will be enabled on start</string>
+    <string name="behavior_ui_body">Change the behavior and ui of the app to suit your preferences</string>
+    <string name="book_mark_body">To show the filter dialog long press on the bookmark icon in the overview. Decide which filters you will use</string>
+    <string name="gestures_body">Use gestures on the toolbar and the \"Navigation button\"</string>
+    <string name="backup_body">Import and export several app data(whitelist, bookmarks)</string>
+    <string name="app_settings_body">Open the system app settings for \"Browser\". There you can, depending on your Android version grant permissions, clear the app data and so on.</string>
 </resources>

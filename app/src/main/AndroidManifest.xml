@@ -40,14 +40,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CastToTv">
         <activity
+            android:name=".ui.activities.browser.BrowserSettingsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.activities.WelcomeActivity"
             android:exported="true">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
+
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
-
-
         </activity>
         <activity
             android:name=".vpn.VpnClient"
@@ -60,6 +62,7 @@
             </intent-filter>
             <intent-filter>
                 <action android:name="com.google.android.gms.cast.tv.action.LAUNCH" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -69,8 +72,9 @@
             android:noHistory="true"
             android:taskAffinity=".DisconnectVPN"
             android:theme="@style/blinkt.dialog" />
-        <activity android:name=".ui.activities.browser.WebBrowserActivity"
-            android:exported="false"/>
+        <activity
+            android:name=".ui.activities.browser.WebBrowserActivity"
+            android:exported="false" />
 
         <service
             android:name="de.blinkt.openvpn.core.OpenVPNService"
