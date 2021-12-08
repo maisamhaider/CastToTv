@@ -16,6 +16,7 @@ import com.example.casttotv.adapter.SelectedImagesAdapter
 import com.example.casttotv.databinding.FragmentImageSliderBinding
 import com.example.casttotv.models.FileModel
 import com.example.casttotv.models.FolderModel
+import com.example.casttotv.utils.IMAGE
 import com.example.casttotv.utils.MySingleton
 import com.example.casttotv.viewmodel.SharedViewModel
 import kotlinx.coroutines.*
@@ -53,8 +54,8 @@ class ImageSliderFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        folderAdapter = FolderAdapter(::onFolderClick, requireContext(), MySingleton.IMAGE)
-        imageVideosAdapter = ImageVideosAdapter(::onImageClick, requireContext(), MySingleton.IMAGE)
+        folderAdapter = FolderAdapter(::onFolderClick, requireContext(), IMAGE)
+        imageVideosAdapter = ImageVideosAdapter(::onImageClick, requireContext(),  IMAGE)
         selectedImagesAdapter =
             SelectedImagesAdapter(::onImageRemoveClick, requireContext())
 

@@ -23,11 +23,9 @@ import androidx.navigation.fragment.findNavController
 import com.example.casttotv.R
 import com.example.casttotv.databinding.FragmentAudioPlayerBinding
 import com.example.casttotv.models.FileModel
-import com.example.casttotv.utils.MySingleton
+import com.example.casttotv.utils.*
 import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
-import com.example.casttotv.utils.MySingleton.playingFileCurrentPos
-import com.example.casttotv.utils.MySingleton.playingFileModel
-import com.example.casttotv.utils.MySingleton.playingFileName
+
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.viewmodel.SharedViewModel
 import kotlinx.coroutines.CoroutineScope
@@ -80,7 +78,7 @@ class AudioPlayerFragment : Fragment() {
     @SuppressLint("SetTextI18n")
     private fun observer() {
         CoroutineScope(Dispatchers.IO).launch {
-            sharedViewModel.audiosByBucket(MySingleton.folder_path).collect {
+            sharedViewModel.audiosByBucket(folder_path).collect {
                 CoroutineScope(Dispatchers.Main).launch {
                     if (!it.isNullOrEmpty()) {
                         audiosModelList.clear()

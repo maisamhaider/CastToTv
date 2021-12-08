@@ -40,6 +40,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CastToTv">
         <activity
+            android:name=".ui.activities.browser.BackupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.browser.GesturesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.browser.BookmarkFilterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.browser.BehaviorAndUIActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.browser.WhitelistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.browser.StartControlActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.browser.DataControlActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.activities.browser.BrowserSettingsActivity"
             android:exported="false" />
         <activity

@@ -3,12 +3,12 @@ package com.example.casttotv.utils
 import android.content.Context
 import android.content.SharedPreferences
 
+const val NO_COUNTRY = "NO_COUNTRY"
+const val COUNTRY = "COUNTRY"
+const val SHOW_SPLASH_LAYOUT = "SHOW_SPLASH_LAYOUT"
+const val SHOW_PERMISSION_LAYOUT = "SHOW_PERMISSION_LAYOUT"
 
 object Pref {
-    const val NO_COUNTRY = "NO_COUNTRY"
-    const val COUNTRY = "COUNTRY"
-    const val SHOW_SPLASH_LAYOUT = "SHOW_SPLASH_LAYOUT"
-    const val SHOW_PERMISSION_LAYOUT = "SHOW_PERMISSION_LAYOUT"
 
     private const val My_PREF = "My_PREF"
     private lateinit var sharePreferences: SharedPreferences

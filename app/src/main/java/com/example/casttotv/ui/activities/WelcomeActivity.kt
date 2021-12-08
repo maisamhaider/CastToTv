@@ -2,24 +2,23 @@ package com.example.casttotv.ui.activities
 
 import android.content.Intent
 import android.location.Location
-import android.location.LocationListener
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.casttotv.LocationItem
 import com.example.casttotv.R
 import com.example.casttotv.databinding.ActivityWelcomeBinding
+import com.example.casttotv.utils.COUNTRY
 import com.example.casttotv.utils.MySingleton.toastLong
-import com.example.casttotv.utils.Pref.COUNTRY
-import com.example.casttotv.utils.Pref.NO_COUNTRY
-import com.example.casttotv.utils.Pref.SHOW_PERMISSION_LAYOUT
-import com.example.casttotv.utils.Pref.SHOW_SPLASH_LAYOUT
+import com.example.casttotv.utils.NO_COUNTRY
 import com.example.casttotv.utils.Pref.getBoolean
 import com.example.casttotv.utils.Pref.getString
 import com.example.casttotv.utils.Pref.putBoolean
 import com.example.casttotv.utils.Pref.putString
+import com.example.casttotv.utils.SHOW_PERMISSION_LAYOUT
+import com.example.casttotv.utils.SHOW_SPLASH_LAYOUT
 import com.example.casttotv.viewmodel.WelcomeViewModel
 import kotlinx.coroutines.*
 
@@ -117,6 +116,7 @@ class WelcomeActivity : AppCompatActivity() {
                              * */
                             viewModel.getCurrentCountryName(this@WelcomeActivity, location)
                         }
+
                         override fun message(message: String) {
                             toastLong(message)
                         }

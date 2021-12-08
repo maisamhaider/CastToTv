@@ -11,8 +11,7 @@ import com.example.casttotv.R
 import com.example.casttotv.adapter.ImageVideosAdapter
 import com.example.casttotv.databinding.FragmentAudiosBinding
 import com.example.casttotv.models.FileModel
-import com.example.casttotv.utils.MySingleton
-import com.example.casttotv.utils.MySingleton.AUDIO
+import com.example.casttotv.utils.*
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.viewmodel.SharedViewModel
 import kotlinx.coroutines.CoroutineScope
@@ -44,7 +43,7 @@ class AudiosFragment : Fragment() {
         binding.recyclerView.adapter = adapter
 
         CoroutineScope(Dispatchers.IO).launch {
-            sharedViewModel.audiosByBucket(MySingleton.folder_path).collect {
+            sharedViewModel.audiosByBucket(folder_path).collect {
                 CoroutineScope(Dispatchers.Main).launch {
                     if (!it.isNullOrEmpty()) {
                         adapter.submitList(it)
@@ -59,8 +58,8 @@ class AudiosFragment : Fragment() {
 
 
     private fun onItemClick(fileModel: FileModel, int: Int) {
-        MySingleton.playingFileModel = fileModel
-        MySingleton.playingFileName = fileModel.fileName
+        playingFileModel = fileModel
+        playingFileName = fileModel.fileName
         findNavController().navigate(R.id.action_audiosFragment_to_audioPlayerFragment)
     }
 

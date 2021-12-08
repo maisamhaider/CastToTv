@@ -11,9 +11,10 @@ import com.example.casttotv.R
 import com.example.casttotv.adapter.FolderAdapter
 import com.example.casttotv.databinding.FragmentAudiosFoldersBinding
 import com.example.casttotv.models.FolderModel
+import com.example.casttotv.utils.AUDIO
 import com.example.casttotv.utils.MySingleton
-import com.example.casttotv.utils.MySingleton.AUDIO
-import com.example.casttotv.utils.MySingleton.toastLong
+ import com.example.casttotv.utils.MySingleton.toastLong
+import com.example.casttotv.utils.folder_path
 import com.example.casttotv.viewmodel.SharedViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -61,7 +62,7 @@ class AudiosFoldersFragment : Fragment() {
     }
 
     private fun onItemClick(folderPath: FolderModel) {
-        MySingleton.folder_path = folderPath.folderPath
+         folder_path = folderPath.folderPath
         findNavController().navigate(R.id.action_audiosFoldersFragment_to_audiosFragment)
     }
 

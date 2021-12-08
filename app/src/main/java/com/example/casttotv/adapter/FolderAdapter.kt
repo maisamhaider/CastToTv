@@ -11,7 +11,8 @@ import com.bumptech.glide.Glide
 import com.example.casttotv.R
 import com.example.casttotv.databinding.FolderItemBinding
 import com.example.casttotv.models.FolderModel
-import com.example.casttotv.utils.MySingleton
+import com.example.casttotv.utils.IMAGE
+import com.example.casttotv.utils.VIDEO
 
 class FolderAdapter(
     val onItemClicked: (FolderModel) -> Unit,
@@ -36,11 +37,11 @@ class FolderAdapter(
         fun bind(context: Context, folderModel: FolderModel, mimType: String) {
 
             when (mimType) {
-                MySingleton.VIDEO -> {
+                VIDEO -> {
                     binding.imageViewPlay.visibility = View.VISIBLE
                     Glide.with(context).load(folderModel.filePath).into(binding.imageView)
                 }
-                MySingleton.IMAGE -> {
+                IMAGE -> {
                     binding.imageViewPlay.visibility = View.GONE
                     Glide.with(context).load(folderModel.filePath).into(binding.imageView)
                 }

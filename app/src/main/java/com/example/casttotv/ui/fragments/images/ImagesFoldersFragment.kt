@@ -12,7 +12,7 @@ import com.example.casttotv.R
 import com.example.casttotv.adapter.FolderAdapter
 import com.example.casttotv.databinding.ImagesFoldersFragmentBinding
 import com.example.casttotv.models.FolderModel
-import com.example.casttotv.utils.MySingleton.IMAGE
+import com.example.casttotv.utils.IMAGE
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.viewmodel.SharedViewModel
 

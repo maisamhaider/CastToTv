@@ -118,13 +118,10 @@ public class ConfirmDialog extends Activity implements
             mAlert = builder.create();
             mAlert.setCanceledOnTouchOutside(false);
 
-            mAlert.setOnShowListener(new OnShowListener() {
-                @Override
-                public void onShow(DialogInterface dialog) {
-                    mButton = mAlert.getButton(DialogInterface.BUTTON_POSITIVE);
-                    mButton.setEnabled(false);
+            mAlert.setOnShowListener(dialog -> {
+                mButton = mAlert.getButton(DialogInterface.BUTTON_POSITIVE);
+                mButton.setEnabled(false);
 
-                }
             });
 
             //setCloseOnTouchOutside(false);

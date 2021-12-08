@@ -11,9 +11,9 @@ import com.example.casttotv.R
 import com.example.casttotv.adapter.FolderAdapter
 import com.example.casttotv.databinding.FragmentVideosFoldersBinding
 import com.example.casttotv.models.FolderModel
-import com.example.casttotv.utils.MySingleton.VIDEO
-import com.example.casttotv.utils.MySingleton.folder_path
 import com.example.casttotv.utils.MySingleton.toastLong
+import com.example.casttotv.utils.VIDEO
+import com.example.casttotv.utils.folder_path
 import com.example.casttotv.viewmodel.SharedViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

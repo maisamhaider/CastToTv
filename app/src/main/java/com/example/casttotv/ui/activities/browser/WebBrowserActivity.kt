@@ -30,6 +30,7 @@ class WebBrowserActivity : AppCompatActivity() {
         _binding = ActivityWebBrowserBinding.inflate(layoutInflater)
         setContentView(binding.root)
         viewModel.initWebView(binding.webView)
+
         binding.apply {
             imageviewRefresh.setOnClickListener {
                 if (isSearchValid()) {

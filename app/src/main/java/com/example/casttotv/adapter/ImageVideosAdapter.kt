@@ -11,8 +11,8 @@ import com.bumptech.glide.Glide
 import com.example.casttotv.R
 import com.example.casttotv.databinding.ImagesVideosItemBinding
 import com.example.casttotv.models.FileModel
-import com.example.casttotv.utils.MySingleton.IMAGE
-import com.example.casttotv.utils.MySingleton.VIDEO
+import com.example.casttotv.utils.IMAGE
+import com.example.casttotv.utils.VIDEO
 
 class ImageVideosAdapter(
     val onItemClicked: (FileModel, Int) -> Unit,

@@ -16,13 +16,14 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.casttotv.R
 import com.example.casttotv.models.Country
 import com.example.casttotv.utils.MySingleton
-import com.example.casttotv.utils.MySingleton.LATITUDE
-import com.example.casttotv.utils.MySingleton.LONGITUDE
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import java.util.*
 import kotlin.collections.HashMap
 import android.location.LocationManager
 import com.example.casttotv.LocationItem
+import com.example.casttotv.utils.LATITUDE
+import com.example.casttotv.utils.LOCATION_PERMISSION_REQUEST_CODE
+import com.example.casttotv.utils.LONGITUDE
 import com.google.android.gms.location.LocationServices
 import kotlin.collections.ArrayList
 
@@ -72,7 +73,7 @@ class WelcomeViewModel(context: Activity) : ViewModel() {
             arrayOf(
                 Manifest.permission.ACCESS_FINE_LOCATION,
                 Manifest.permission.ACCESS_COARSE_LOCATION
-            ), MySingleton.LOCATION_PERMISSION_REQUEST_CODE
+            ),  LOCATION_PERMISSION_REQUEST_CODE
         )
     }
 
