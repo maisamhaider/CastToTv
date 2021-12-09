@@ -10,6 +10,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.example.casttotv.R
 import com.example.casttotv.adapter.BrowserAdapter2
 import com.example.casttotv.databinding.ActivityWebBrowserBinding
+import com.example.casttotv.utils.BEHAVIOR_UI_CONFIRM_BROWSER_EXIT
 import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.viewmodel.BrowserViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialog
@@ -22,7 +23,9 @@ class WebBrowserActivity : AppCompatActivity() {
     private lateinit var _binding: ActivityWebBrowserBinding
     private val binding get() = _binding
 
-    private val viewModel: BrowserViewModel by viewModels()
+    private val viewModel: BrowserViewModel by viewModels {
+        BrowserViewModel.BrowserViewModelFactory(this)
+    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -131,7 +134,12 @@ class WebBrowserActivity : AppCompatActivity() {
         if (viewModel.canGoBack()) {
             back()
         } else {
-            super.onBackPressed()
+            if (viewModel.getBooleanPrefs(BEHAVIOR_UI_CONFIRM_BROWSER_EXIT, false)) {
+                viewModel.exitDialog(this)
+            }else
+            {
+                super.onBackPressed()
+            }
         }
     }
 

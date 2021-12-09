@@ -95,4 +95,7 @@
     <string name="position_body">Decide where the Navigation button will be placed</string>
     <string name="overview_body">What should be shown at the start of the Overview? The Start Page, your bookmarks,…</string>
     <string name="Show_on_start_body">Open the Overview on every app start</string>
+    <string name="clear_cookies_body">if enabled, all cookies will be deleted. Also the Cookies of trusted websites.</string>
+    <string name="backup_text">All files will be exportednto the directory of your sd: card. This directory will be DELETE.D if you uninstall \"Screen Mirroring\". So make a backup regularly on a save place.</string>
+    <string name="backup_export_app_data_body">Export app data(Storage + previews, History Bookmarks) and uour personal settings</string>
 </resources>
