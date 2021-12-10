@@ -16,7 +16,7 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <style name="folder_card_view">
+    <style name="card_view_1">
         <item name="cardElevation">5dp</item>
         <item name="cardCornerRadius">10dp</item>
         <item name="android:layout_width">0dp</item>

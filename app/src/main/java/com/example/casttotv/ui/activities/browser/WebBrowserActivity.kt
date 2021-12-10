@@ -7,9 +7,9 @@ import android.widget.TextView.OnEditorActionListener
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
-import com.example.casttotv.R
 import com.example.casttotv.adapter.BrowserAdapter2
 import com.example.casttotv.databinding.ActivityWebBrowserBinding
+import com.example.casttotv.ui.activities.browser.fragments.BrowserBottomSheetFragment
 import com.example.casttotv.utils.BEHAVIOR_UI_CONFIRM_BROWSER_EXIT
 import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.viewmodel.BrowserViewModel
@@ -27,6 +27,7 @@ class WebBrowserActivity : AppCompatActivity() {
         BrowserViewModel.BrowserViewModelFactory(this)
     }
 
+    private val modalBottomSheet = BrowserBottomSheetFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,12 +41,16 @@ class WebBrowserActivity : AppCompatActivity() {
                     viewModel.search(mInputEdittext.text.toString())
                 }
             }
-
             imageviewMore.setOnClickListener {
                 bottomSheet()
             }
+            imageviewTabs.setOnClickListener {
+                showBottomSheet()
+            }
 
         }
+
+
         binding.mInputEdittext.setOnEditorActionListener(OnEditorActionListener { _, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_GO) {
                 if (isSearchValid()) {
@@ -58,7 +63,9 @@ class WebBrowserActivity : AppCompatActivity() {
     }
 
     private fun isSearchValid() = viewModel.isSearchValid(binding.mInputEdittext.text.toString())
-
+    private fun showBottomSheet() {
+        modalBottomSheet.show(supportFragmentManager, BrowserBottomSheetFragment.TAG)
+    }
 
     fun back() = viewModel.back()
 
@@ -69,7 +76,8 @@ class WebBrowserActivity : AppCompatActivity() {
         // on below line we are inflating a layout file which we have created.
 
         val bottomBinding =
-            LayoutInflater.from(this).inflate(R.layout.bottom_sheet_dialog, null, false)
+            LayoutInflater.from(this)
+                .inflate(com.example.casttotv.R.layout.bottom_sheet_dialog, null, false)
 
 
         // closing of dialog box when clicking on the screen.
@@ -79,8 +87,9 @@ class WebBrowserActivity : AppCompatActivity() {
         // content view to our view.
         dialog.setContentView(bottomBinding)
 
-        val viewpager2 = bottomBinding.findViewById<ViewPager2>(R.id.viewpager_2)
-        val tabLayout = bottomBinding.findViewById<TabLayout>(R.id.tabLayout)
+        val viewpager2 =
+            bottomBinding.findViewById<ViewPager2>(com.example.casttotv.R.id.viewpager_2)
+        val tabLayout = bottomBinding.findViewById<TabLayout>(com.example.casttotv.R.id.tabLayout)
 
         val adapter = BrowserAdapter2(this)
         viewpager2.adapter = adapter
@@ -88,16 +97,16 @@ class WebBrowserActivity : AppCompatActivity() {
         TabLayoutMediator(tabLayout, viewpager2) { tab, position ->
             when (position) {
                 0 -> {
-                    tab.icon = getDrawable(R.drawable.ic_tab)
+                    tab.icon = getDrawable(com.example.casttotv.R.drawable.ic_tab)
                 }
                 1 -> {
-                    tab.icon = getDrawable(R.drawable.ic_share)
+                    tab.icon = getDrawable(com.example.casttotv.R.drawable.ic_share)
                 }
                 2 -> {
-                    tab.icon = getDrawable(R.drawable.ic_save)
+                    tab.icon = getDrawable(com.example.casttotv.R.drawable.ic_save)
                 }
                 3 -> {
-                    tab.icon = getDrawable(R.drawable.ic_more_vert)
+                    tab.icon = getDrawable(com.example.casttotv.R.drawable.ic_more_vert)
                 }
             }
         }.attach()
@@ -136,8 +145,7 @@ class WebBrowserActivity : AppCompatActivity() {
         } else {
             if (viewModel.getBooleanPrefs(BEHAVIOR_UI_CONFIRM_BROWSER_EXIT, false)) {
                 viewModel.exitDialog(this)
-            }else
-            {
+            } else {
                 super.onBackPressed()
             }
         }

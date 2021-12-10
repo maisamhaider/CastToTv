@@ -13,7 +13,7 @@
         android:padding="@dimen/dp_6">
 
         <com.google.android.material.card.MaterialCardView
-            style="@style/folder_card_view"
+            style="@style/card_view_1"
             app:cardCornerRadius="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="w,60:50"
