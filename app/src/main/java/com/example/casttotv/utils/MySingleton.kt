@@ -1,9 +1,18 @@
 package com.example.casttotv.utils
 
+import android.content.ClipData
+import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
+import android.print.PrintAttributes
+import android.print.PrintDocumentAdapter
+import android.print.PrintManager
+import android.webkit.WebView
 import android.widget.Toast
+import androidx.core.content.FileProvider
 import com.example.casttotv.models.FileModel
+import java.io.File
+
 
 var folder_path = ""
 const val default = "default"
@@ -32,6 +41,35 @@ const val ECOSIA_ENGINE_URL = "https://www.ecosia.org/search?q="
 
 object MySingleton {
 
+    fun Context.shareWithText(image: String) {
+        val share = Intent()
+        share.action = Intent.ACTION_SEND
+        share.type = "image/*"
+
+        val photoURI = FileProvider.getUriForFile(this, "$packageName.provider",
+            File(image)
+        )
+        share.putExtra(Intent.EXTRA_STREAM, photoURI)
+//        share.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+
+        startActivity(Intent.createChooser(share, "share with"))
+
+    }
+
+    fun Context.funCopy(text: String) {
+        val clipboardManager = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+        val clipData: ClipData = ClipData.newPlainText("", text)
+        clipboardManager.setPrimaryClip(clipData)
+    }
+
+    fun Context.createWebPrintJob(webView: WebView) {
+        val printManager = this
+            .getSystemService(Context.PRINT_SERVICE) as PrintManager
+        val printAdapter: PrintDocumentAdapter?
+        printAdapter = webView.createPrintDocumentAdapter("MyDocument")
+        val jobName = " Print Test"
+        printManager.print(jobName, printAdapter, PrintAttributes.Builder().build())
+    }
 
     fun Context.toastLong(messages: String) {
         Toast.makeText(this, messages, Toast.LENGTH_LONG).show()

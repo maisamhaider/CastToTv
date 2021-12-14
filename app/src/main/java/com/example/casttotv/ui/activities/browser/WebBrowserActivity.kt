@@ -7,7 +7,7 @@ import android.widget.TextView.OnEditorActionListener
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
-import com.example.casttotv.adapter.BrowserAdapter2
+import com.example.casttotv.adapter.*
 import com.example.casttotv.databinding.ActivityWebBrowserBinding
 import com.example.casttotv.ui.activities.browser.fragments.BrowserBottomSheetFragment
 import com.example.casttotv.utils.BEHAVIOR_UI_CONFIRM_BROWSER_EXIT
@@ -36,9 +36,11 @@ class WebBrowserActivity : AppCompatActivity() {
         viewModel.initWebView(binding.webView)
 
         binding.apply {
+            lifecycleOwner = this@WebBrowserActivity
+            browserVM = viewModel
             imageviewRefresh.setOnClickListener {
                 if (isSearchValid()) {
-                    viewModel.search(mInputEdittext.text.toString())
+                    viewModel.searchFromHistory(mInputEdittext.text.toString())
                 }
             }
             imageviewMore.setOnClickListener {
@@ -143,11 +145,13 @@ class WebBrowserActivity : AppCompatActivity() {
         if (viewModel.canGoBack()) {
             back()
         } else {
-            if (viewModel.getBooleanPrefs(BEHAVIOR_UI_CONFIRM_BROWSER_EXIT, false)) {
+            if (viewModel.getPrefs(BEHAVIOR_UI_CONFIRM_BROWSER_EXIT, false)) {
                 viewModel.exitDialog(this)
             } else {
+                viewModel.onBrowserExit()
                 super.onBackPressed()
             }
+
         }
     }
 

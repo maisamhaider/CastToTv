@@ -14,7 +14,7 @@ import com.example.casttotv.database.entities.HomeEntity
 const val DATABASE = "DATABASE"
 
 @Database(entities = [BookmarkEntity::class, HistoryEntity::class, HomeEntity::class],
-    version = 1)
+    version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun bookmarkDao(): BookmarkDao

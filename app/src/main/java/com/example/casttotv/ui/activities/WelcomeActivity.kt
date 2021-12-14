@@ -13,10 +13,8 @@ import com.example.casttotv.databinding.ActivityWelcomeBinding
 import com.example.casttotv.utils.COUNTRY
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.utils.NO_COUNTRY
-import com.example.casttotv.utils.Pref.getBoolean
-import com.example.casttotv.utils.Pref.getString
-import com.example.casttotv.utils.Pref.putBoolean
-import com.example.casttotv.utils.Pref.putString
+import com.example.casttotv.utils.Pref.getPrefs
+import com.example.casttotv.utils.Pref.putPrefs
 import com.example.casttotv.utils.SHOW_PERMISSION_LAYOUT
 import com.example.casttotv.utils.SHOW_SPLASH_LAYOUT
 import com.example.casttotv.viewmodel.WelcomeViewModel
@@ -54,8 +52,8 @@ class WelcomeActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        val showSplash = getBoolean(SHOW_SPLASH_LAYOUT, false)
-        val showPermissionLayout = getBoolean(SHOW_PERMISSION_LAYOUT, true)
+        val showSplash = getPrefs(SHOW_SPLASH_LAYOUT, false)
+        val showPermissionLayout = getPrefs(SHOW_PERMISSION_LAYOUT, true)
 
         if (showPermissionLayout) {
             binding.includedLayoutPermission.clShowPerm.visibility = View.VISIBLE
@@ -85,22 +83,26 @@ class WelcomeActivity : AppCompatActivity() {
 
                     override fun message(message: String) {
                         toastLong(message)
+                        this@WelcomeActivity.putPrefs(COUNTRY, COUNTRY)
+                        this@WelcomeActivity.putPrefs(SHOW_PERMISSION_LAYOUT, false)
+                        showSplash()
                     }
 
                 })
                 viewModel.country.observe(this, {
                     if (it != null) {
-                        putString(COUNTRY, it.countryName)
-                        putBoolean(SHOW_PERMISSION_LAYOUT, false)
+                        this.putPrefs(COUNTRY, it.countryName)
+                        this.putPrefs(SHOW_PERMISSION_LAYOUT, false)
                         showSplash()
                     } else {
                         toastLong("Null")
+
                     }
                 })
             }
 
         } else {
-            val savedCountry = getString(COUNTRY, COUNTRY)
+            val savedCountry = getPrefs(COUNTRY, COUNTRY)
 
             if (savedCountry != NO_COUNTRY) {
                 /**check on Splash that if location permission is granted and location is enabled
@@ -119,6 +121,7 @@ class WelcomeActivity : AppCompatActivity() {
 
                         override fun message(message: String) {
                             toastLong(message)
+                            showSplash()
                         }
 
                     })
@@ -127,13 +130,14 @@ class WelcomeActivity : AppCompatActivity() {
                     viewModel.country.observe(this, {
                         if (it != null) {
                             if (savedCountry != it.countryName) {
-                                putString(COUNTRY, it.countryName)
+                                this.putPrefs(COUNTRY, it.countryName)
                             }
                             toastLong(it.countryName + " " + it.countryCode)
-                            showSplash()
-                        } else {
+                         } else {
                             toastLong("country Null")
                         }
+                        showSplash()
+
                     })
                 } else {
                     /** if location permission is not granted and location is not enabled

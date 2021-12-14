@@ -12,6 +12,9 @@
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/textView_text"
             android:layout_width="0dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/textView_date"

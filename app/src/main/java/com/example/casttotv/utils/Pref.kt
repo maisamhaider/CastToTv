@@ -48,22 +48,22 @@ object Pref {
         editor = sharePreferences.edit()
     }
 
-    fun Context.putString(key: String, value: String): Boolean {
+    fun Context.putPrefs(key: String, value: String): Boolean {
         initPref()
         return editor.putString(key, value).commit()
     }
 
-    fun Context.getString(key: String, defValue: String): String {
+    fun Context.getPrefs(key: String, defValue: String): String {
         initPref()
         return sharePreferences.getString(key, defValue).toString()
     }
 
-    fun Context.putBoolean(key: String, value: Boolean): Boolean {
+    fun Context.putPrefs(key: String, value: Boolean): Boolean {
         initPref()
         return editor.putBoolean(key, value).commit()
     }
 
-    fun Context.getBoolean(key: String, defValue: Boolean): Boolean {
+    fun Context.getPrefs(key: String, defValue: Boolean): Boolean {
         initPref()
         return sharePreferences.getBoolean(key, defValue)
     }
