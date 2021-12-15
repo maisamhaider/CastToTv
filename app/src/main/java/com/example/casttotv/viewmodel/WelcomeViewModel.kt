@@ -5,7 +5,10 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.location.*
+import android.location.Address
+import android.location.Geocoder
+import android.location.Location
+import android.location.LocationManager
 import android.provider.Settings
 import androidx.core.app.ActivityCompat
 import androidx.core.location.LocationManagerCompat
@@ -13,19 +16,16 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.example.casttotv.LocationItem
 import com.example.casttotv.R
 import com.example.casttotv.models.Country
-import com.example.casttotv.utils.MySingleton
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import java.util.*
-import kotlin.collections.HashMap
-import android.location.LocationManager
-import com.example.casttotv.LocationItem
 import com.example.casttotv.utils.LATITUDE
 import com.example.casttotv.utils.LOCATION_PERMISSION_REQUEST_CODE
 import com.example.casttotv.utils.LONGITUDE
 import com.google.android.gms.location.LocationServices
-import kotlin.collections.ArrayList
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import java.util.*
+import kotlin.collections.HashMap
 
 
 class WelcomeViewModel(context: Activity) : ViewModel() {
@@ -73,7 +73,7 @@ class WelcomeViewModel(context: Activity) : ViewModel() {
             arrayOf(
                 Manifest.permission.ACCESS_FINE_LOCATION,
                 Manifest.permission.ACCESS_COARSE_LOCATION
-            ),  LOCATION_PERMISSION_REQUEST_CODE
+            ), LOCATION_PERMISSION_REQUEST_CODE
         )
     }
 

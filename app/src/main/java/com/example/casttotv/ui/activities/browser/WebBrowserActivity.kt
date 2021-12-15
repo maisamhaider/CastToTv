@@ -1,8 +1,11 @@
 package com.example.casttotv.ui.activities.browser
 
+import android.annotation.SuppressLint
+import android.graphics.*
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.inputmethod.EditorInfo
+import android.webkit.*
 import android.widget.TextView.OnEditorActionListener
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +19,7 @@ import com.example.casttotv.viewmodel.BrowserViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+import java.util.*
 
 
 class WebBrowserActivity : AppCompatActivity() {
@@ -33,7 +37,8 @@ class WebBrowserActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = ActivityWebBrowserBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        viewModel.initWebView(binding.webView)
+        viewModel.initWebViewContainer(binding.webViewContainer)
+        viewModel.newTabWebView(WebView(this))
 
         binding.apply {
             lifecycleOwner = this@WebBrowserActivity
@@ -140,6 +145,8 @@ class WebBrowserActivity : AppCompatActivity() {
 
         dialog.show()
     }
+
+    @SuppressLint("DefaultLocale")
 
     override fun onBackPressed() {
         if (viewModel.canGoBack()) {

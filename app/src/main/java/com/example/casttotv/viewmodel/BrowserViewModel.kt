@@ -11,6 +11,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.webkit.*
+import android.widget.FrameLayout
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.FileProvider
 import androidx.core.view.drawToBitmap
@@ -21,10 +22,13 @@ import com.example.casttotv.database.entities.HistoryEntity
 import com.example.casttotv.database.entities.HomeEntity
 import com.example.casttotv.databinding.*
 import com.example.casttotv.datasource.DataSource
+import com.example.casttotv.models.Tabs
+import com.example.casttotv.models.TitleAndUrl
 import com.example.casttotv.utils.*
 import com.example.casttotv.utils.MySingleton.createWebPrintJob
 import com.example.casttotv.utils.MySingleton.funCopy
 import com.example.casttotv.utils.MySingleton.shareWithText
+import com.example.casttotv.utils.MySingleton.tabs
 import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.Pref.putPrefs
@@ -43,11 +47,14 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     private val homeDao = (cxt.applicationContext as AppApplication).database.homeDao()
     private val historyDao = (cxt.applicationContext as AppApplication).database.historyDao()
 
-    private var webView = WebView(cxt)
+    var container: FrameLayout? = null
     val cookieManager: CookieManager = CookieManager.getInstance()!!
+
+    private val _webView: MutableLiveData<WebView> = MutableLiveData()
 
     private val _searchText: MutableLiveData<String> = MutableLiveData("")
     val searchText: LiveData<String> = _searchText
+    private var _currentTabIndex = 0
 
 
     private var bookmarkItem: MutableLiveData<BookmarkEntity> = MutableLiveData()
@@ -74,22 +81,34 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         return getEngine == value
     }
 
+    fun getCurrentTab(): Tabs {
+        return tabs.get(index = _currentTabIndex )
+    }
+
+    private fun getCurrentWebView(): WebView {
+        return getCurrentTab().webView
+    }
+
+    fun initWebViewContainer(container: FrameLayout) {
+        this.container = container
+    }
 
     /**
      * set web view properties
      */
     @SuppressLint("SetJavaScriptEnabled")
-    fun initWebView(wv: WebView) {
-        webView = wv
-        webView.webViewClient = MyBrowser()
-        webView.settings.javaScriptEnabled = getPrefs(START_CONTROL_JAVASCRIPT, true)
-        webView.settings.loadsImagesAutomatically = getPrefs(START_CONTROL_IMAGE, true)
-        webView.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
-        webView.settings.setGeolocationEnabled(getPrefs(START_CONTROL_LOCATION, false))
+    fun newTabWebView(wv: WebView) {
+        _webView.value = wv
+        _webView.value!!.webViewClient = MyBrowser()
+        _webView.value!!.settings.javaScriptEnabled = getPrefs(START_CONTROL_JAVASCRIPT, true)
+        _webView.value!!.settings.loadsImagesAutomatically = getPrefs(START_CONTROL_IMAGE, true)
+        _webView.value!!.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
+        _webView.value!!.settings.setGeolocationEnabled(getPrefs(START_CONTROL_LOCATION, false))
+        container!!.addView(wv)
         if (getPrefs(START_CONTROL_COOKIES, false)) {
-            cookieManager.setAcceptThirdPartyCookies(webView, true)
+            cookieManager.setAcceptThirdPartyCookies(_webView.value!!, true)
         }
-         webView.webViewClient = object : WebViewClient() {
+        _webView.value!!.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
                 view.loadUrl(url)
                 val date = Date().time.toString()
@@ -112,21 +131,57 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         val engine = getPrefs(SELECTED_ENGINE, "https://www.google.com/")
 
         if (getPrefs(FAVORITE_DEFAULT_SITE, "") == "") {
-            webView.loadUrl(engine)
+            _webView.value!!.loadUrl(engine)
         } else {
-            webView.loadUrl(getPrefs(FAVORITE_DEFAULT_SITE, ""))
+            _webView.value!!.loadUrl(getPrefs(FAVORITE_DEFAULT_SITE, ""))
         }
-        _searchText.value = webView.url
+        _searchText.value = _webView.value!!.url
+        tabs.add(Tabs(_webView.value!!))
+     }
+
+
+    fun switchToTab(tab: Int) {
+        getCurrentWebView().visibility = View.GONE
+        _currentTabIndex = tab
+        getCurrentWebView().visibility = View.VISIBLE
+//        searchTextInput.setText(getCurrentWebView().url)
+        getCurrentWebView().requestFocus()
     }
 
-    fun onBrowserExit() {
 
+    fun closeCurrentTab() {
+        if (getCurrentWebView().url != null && !getCurrentWebView().url.equals("")) {
+            val titleAndUrl = TitleAndUrl()
+            titleAndUrl.title = getCurrentWebView().title
+            titleAndUrl.url = getCurrentWebView().url
+        }
+        container!!.removeView(getCurrentWebView())
+        getCurrentWebView().destroy()
+        tabs.removeAt(_currentTabIndex)
+        if (_currentTabIndex >= tabs.size) {
+            _currentTabIndex = tabs.size - 1
+        }
+        if (_currentTabIndex == -1) {
+            // We just closed the last tab
+            newTabWebView(_webView.value!!)
+            _currentTabIndex = 0
+        }
+        getCurrentWebView().visibility = View.VISIBLE
+//        searchTextInput.setText(getCurrentWebView().url)
+//        setTabCountText(Tab.tabs.size())
+        getCurrentWebView().requestFocus()
+    }
+
+
+    fun onBrowserExit() {
+        tabs.clear()
+        closeCurrentTab()
         if (getPrefs(DATA_CLEAR_APPLICATION_EXIT, false)) {
             if (getPrefs(DATA_CLEAR_CACHE, false)) {
                 clearCache()
             }
             if (getPrefs(DATA_CLEAR_HISTORY, false)) {
-                webView.clearHistory()
+                _webView.value!!.clearHistory()
                 deleteHistory()
             }
             if (getPrefs(DATA_CLEAR_COOKIES, false)) {
@@ -142,17 +197,17 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
     private fun clearCache() {
-        webView.clearCache(true);
+        _webView.value!!.clearCache(true)
     }
 
     fun back() {
-        if (webView.isFocused && webView.canGoBack()) {
-            webView.goBack()
+        if (_webView.value!!.isFocused && _webView.value!!.canGoBack()) {
+            _webView.value!!.goBack()
         }
     }
 
     fun canGoBack(): Boolean {
-        return (webView.isFocused && webView.canGoBack())
+        return (_webView.value!!.isFocused && _webView.value!!.canGoBack())
     }
 
     fun search(searchText: String) {
@@ -164,7 +219,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
             engine + searchText
         }
 
-        webView.loadUrl(url)
+        _webView.value!!.loadUrl(url)
 
         val date = Date().time.toString()
 
@@ -172,7 +227,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         bookmark(searchText, url, date)
         home(searchText, url, date)
 
-        Log.e(TAG, "title---->$searchText\n url----->${webView.url.toString()}")
+        Log.e(TAG, "title---->$searchText\n url----->${_webView.value!!.url.toString()}")
         _searchText.value = url
         if (getPrefs(START_CONTROL_LOCATION, true)) {
             insertHistory()
@@ -180,14 +235,14 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
     fun searchFromHistory(searchText: String) {
-        webView.loadUrl(searchText)
+        _webView.value!!.loadUrl(searchText)
         val date = Date().time.toString()
 
-        history(searchText, webView.url.toString(), date)
-        bookmark(searchText, webView.url.toString(), date)
-        home(searchText, webView.url.toString(), date)
+        history(searchText, _webView.value!!.url.toString(), date)
+        bookmark(searchText, _webView.value!!.url.toString(), date)
+        home(searchText, _webView.value!!.url.toString(), date)
 
-        Log.e(TAG, "title---->$searchText\n url----->${webView.url.toString()}")
+        Log.e(TAG, "title---->$searchText\n url----->${_webView.value!!.url.toString()}")
         _searchText.value = searchText
         if (getPrefs(START_CONTROL_LOCATION, true)) {
             if (searchText.isNotBlank()) {
@@ -201,13 +256,13 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
     fun print() {
-        cxt.createWebPrintJob(webView)
+        cxt.createWebPrintJob(_webView.value!!)
     }
 
     fun shareLink() {
         val sendIntent: Intent = Intent().apply {
             action = Intent.ACTION_SEND
-            putExtra(Intent.EXTRA_TEXT, webView.url.toString())
+            putExtra(Intent.EXTRA_TEXT, _webView.value!!.url.toString())
             type = "text/plain"
         }
 
@@ -216,7 +271,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
     fun copyToClipBoard() {
-        cxt.funCopy(webView.url.toString())
+        cxt.funCopy(_webView.value!!.url.toString())
     }
 
     fun openDownload() {
@@ -236,7 +291,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
     fun openWith() {
         val i = Intent(Intent.ACTION_VIEW)
-        i.data = Uri.parse(webView.url)
+        i.data = Uri.parse(_webView.value!!.url)
         cxt.startActivity(i)
     }
 
@@ -246,14 +301,14 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
     fun addToFavorite() {
-        putPrefs(FAVORITE_DEFAULT_SITE, webView.url.toString())
+        putPrefs(FAVORITE_DEFAULT_SITE, _webView.value!!.url.toString())
     }
 
     fun saveScreenShot(isShare: Boolean): String {
 
         return try {
 //            val picture = webView.capturePicture()
-            val bitmap = webView.drawToBitmap()
+            val bitmap = _webView.value!!.drawToBitmap()
             val time = SimpleDateFormat("EEE-dd-yyyy h:mm s a", Locale.getDefault()).format(Date())
 
             val dir = if (isShare) {

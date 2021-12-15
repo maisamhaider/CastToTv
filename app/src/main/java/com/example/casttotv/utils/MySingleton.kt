@@ -11,7 +11,9 @@ import android.webkit.WebView
 import android.widget.Toast
 import androidx.core.content.FileProvider
 import com.example.casttotv.models.FileModel
+import com.example.casttotv.models.Tabs
 import java.io.File
+import java.util.ArrayList
 
 
 var folder_path = ""
@@ -40,6 +42,7 @@ const val QWANT_ENGINE_URL = "https://www.qwant.com/?q="
 const val ECOSIA_ENGINE_URL = "https://www.ecosia.org/search?q="
 
 object MySingleton {
+    var tabs: MutableList<Tabs> = ArrayList<Tabs>()
 
     fun Context.shareWithText(image: String) {
         val share = Intent()
