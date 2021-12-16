@@ -8,6 +8,7 @@ plugins {
 android {
     compileSdk 31
 
+
     defaultConfig {
         applicationId "com.example.casttotv"
         minSdk 21
@@ -41,6 +42,9 @@ android {
     viewBinding {
         enabled true
     }
+    android.sourceSets.all {
+        kotlin.srcDir("src/$name/kotlin")
+    }
 }
 
 dependencies {
@@ -64,7 +68,7 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.12.0'
 
     //location service dependency
-    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.android.gms:play-services-location:19.0.0'
 
 
     //room
