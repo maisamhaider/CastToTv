@@ -30,7 +30,7 @@
             android:id="@+id/mButtonScreenMirroring"
             style="@style/button_w0_hw"
             android:onClick="@{()-> homeFragment.goToScreenMirroring()}"
-            android:text="Screen Mirroring"
+            android:text="@string/screen_mirroring"
             app:layout_constraintBottom_toTopOf="@+id/mButtonImages"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -42,7 +42,7 @@
             android:id="@+id/mButtonImages"
             style="@style/button_w0_hw"
             android:onClick="@{()-> homeFragment.goToImages()}"
-            android:text="Images"
+            android:text="@string/images"
             app:layout_constraintBottom_toTopOf="@+id/mButtonVideo"
             app:layout_constraintEnd_toEndOf="@+id/mButtonScreenMirroring"
             app:layout_constraintHorizontal_bias="0.5"
@@ -53,7 +53,7 @@
             android:id="@+id/mButtonVideo"
             style="@style/button_w0_hw"
             android:onClick="@{()-> homeFragment.goToVideos()}"
-            android:text="Videos"
+            android:text="@string/videos"
             app:layout_constraintBottom_toTopOf="@+id/mButtonWebBrowser"
             app:layout_constraintEnd_toEndOf="@+id/mButtonScreenMirroring"
             app:layout_constraintHorizontal_bias="0.5"
@@ -64,7 +64,7 @@
             android:id="@+id/mButtonWebBrowser"
             style="@style/button_w0_hw"
             android:onClick="@{()-> homeFragment.goToWebBrowser()}"
-            android:text="Web Browser"
+            android:text="@string/web_browser"
             app:layout_constraintBottom_toTopOf="@+id/mButtonImagesSlider"
             app:layout_constraintEnd_toEndOf="@+id/mButtonScreenMirroring"
             app:layout_constraintHorizontal_bias="0.5"
@@ -75,7 +75,7 @@
             android:id="@+id/mButtonImagesSlider"
             style="@style/button_w0_hw"
             android:onClick="@{()-> homeFragment.goToImageSlider()}"
-            android:text="Image slider"
+            android:text="@string/image_slider"
             app:layout_constraintEnd_toEndOf="@+id/mButtonScreenMirroring"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/mButtonScreenMirroring"
@@ -90,6 +90,16 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/mButtonScreenMirroring"
             app:layout_constraintTop_toBottomOf="@+id/mButtonImagesSlider" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mButtonLanguage"
+            style="@style/button_w0_hw"
+            android:onClick="@{()-> homeFragment.goToLanguage()}"
+            android:text="Languages"
+            app:layout_constraintEnd_toEndOf="@+id/mButtonScreenMirroring"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/mButtonScreenMirroring"
+            app:layout_constraintTop_toBottomOf="@+id/mButtonAudios" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

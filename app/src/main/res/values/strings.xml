@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CastToTv</string>
+    <string name="app_name">Cast To Tv</string>
     <string name="title_activity_main_second">MainSecondActivity</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
@@ -98,4 +98,11 @@
     <string name="clear_cookies_body">if enabled, all cookies will be deleted. Also the Cookies of trusted websites.</string>
     <string name="backup_text">All files will be exportednto the directory of your sd: card. This directory will be DELETE.D if you uninstall \"Screen Mirroring\". So make a backup regularly on a save place.</string>
     <string name="backup_export_app_data_body">Export app data(Storage + previews, History Bookmarks) and uour personal settings</string>
+    <string name="screen_mirroring">Screen Mirroring</string>
+    <string name="images">Images</string>
+    <string name="videos">Videos</string>
+    <string name="web_browser">Web Browser</string>
+    <string name="image_slider">Image Slider</string>
+    <string name="language_changed">Language Changed</string>
+
 </resources>

@@ -29,6 +29,9 @@
         <action
             android:id="@+id/action_homeFragment_to_audiosFoldersFragment"
             app:destination="@id/audiosFoldersFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_languagesFragment"
+            app:destination="@id/languagesFragment" />
 
     </fragment>
     <fragment
@@ -178,5 +181,9 @@
             android:id="@+id/action_audioPlayerFragment_to_audiosFragment"
             app:destination="@id/audiosFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/languagesFragment"
+        android:name="com.example.casttotv.ui.fragments.LanguagesFragment"
+        android:label="LanguagesFragment" />
 
 </navigation>
