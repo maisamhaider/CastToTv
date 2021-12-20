@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.activities.browser.BehaviorAndUIActivity">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:padding="@dimen/dp_6"
+                android:text="Behavior"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <include
+                android:id="@+id/include_behavior_ui_1"
+                layout="@layout/layout_behavior_ui_1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_50" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:padding="@dimen/dp_6"
+                android:text="UI"
+                android:visibility="gone"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <include
+                android:visibility="gone"
+                android:id="@+id/include_behavior_ui_2"
+                layout="@layout/layout_behavior_ui_2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_50" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:padding="@dimen/dp_6"
+                android:text="Toolbar"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <include
+                android:id="@+id/include_behavior_ui_3"
+                layout="@layout/layout_behavior_ui_3" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_50" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:padding="@dimen/dp_6"
+                android:visibility="gone"
+                android:text="Overview"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <include
+                android:visibility="gone"
+                android:id="@+id/include_behavior_ui_4"
+                layout="@layout/layout_behavior_ui_4" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </ScrollView>
+</layout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="browserVM"
+            type="com.example.casttotv.viewmodel.BrowserViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:text="Search Engine"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialTextView17">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/m_radio_button_google"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked='@{browserVM.checkSelectedEngine(browserVM.engines["google"])}'
+                    android:onClick='@{()->browserVM.putEngine(browserVM.engines["google"])}'
+                    android:paddingStart="@dimen/dp_10"
+                    android:text="Google" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/m_radio_button_StartPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/dp_10"
+                    android:text="StartPage"
+                    android:visibility="gone" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/m_radio_button_bing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked='@{browserVM.checkSelectedEngine(browserVM.engines["bing"])}'
+                    android:onClick='@{()->browserVM.putEngine(browserVM.engines["bing"])}'
+                    android:paddingStart="@dimen/dp_10"
+                    android:text="Bing" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/m_radio_button_duckduckgo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked='@{browserVM.checkSelectedEngine(browserVM.engines["duckduckgo"])}'
+                    android:onClick='@{()->browserVM.putEngine(browserVM.engines["duckduckgo"])}'
+                    android:paddingStart="@dimen/dp_10"
+                    android:text="DuckDuckGo" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/m_radio_button_searx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked='@{browserVM.checkSelectedEngine(browserVM.engines["searx"])}'
+                    android:onClick='@{()->browserVM.putEngine(browserVM.engines["searx"])}'
+                    android:paddingStart="@dimen/dp_10"
+                    android:text="Searx" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/m_radio_button_baidu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked='@{browserVM.checkSelectedEngine(browserVM.engines["baidu"])}'
+                    android:onClick='@{()->browserVM.putEngine(browserVM.engines["baidu"])}'
+                    android:paddingStart="@dimen/dp_10"
+                    android:text="Baidu" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/m_radio_button_qwant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked='@{browserVM.checkSelectedEngine(browserVM.engines["qwant"])}'
+                    android:onClick='@{()->browserVM.putEngine(browserVM.engines["qwant"])}'
+                    android:paddingStart="@dimen/dp_10"
+                    android:text="Qwant" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/m_radio_button_ecosia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked='@{browserVM.checkSelectedEngine(browserVM.engines["ecosia"])}'
+                    android:onClick='@{()->browserVM.putEngine(browserVM.engines["ecosia"])}'
+                    android:paddingStart="@dimen/dp_10"
+                    android:text="Ecosia" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/m_radio_button_custom_search_engine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked='@{browserVM.checkSelectedEngine("")}'
+                    android:onClick='@{()->browserVM.putEngine("")}'
+                    android:paddingStart="@dimen/dp_10"
+                    android:text="Custom search engine" />
+            </RadioGroup>
+        </ScrollView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/m_button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:padding="@dimen/dp_6"
+            android:text="Cancel"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:minWidth="200dp"
+    tools:ignore="ContentDescription">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:minWidth="200dp"
+        app:cardUseCompatPadding="true"
+        app:elevation="0dp"
+        tools:ignore="PrivateResource">
+
+        <ImageView
+            android:id="@+id/faviconTab"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:minWidth="200dp"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|bottom"
+            android:minWidth="144dp">
+
+            <ImageView
+                android:id="@+id/deleteAction"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="?attr/selectableItemBackground"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/textTab"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:layout_toStartOf="@+id/deleteAction"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:minWidth="200dp"
+                android:paddingStart="6dp"
+                android:textColor="?android:attr/colorLongPressedHighlight"
+                tools:ignore="RtlSymmetry" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

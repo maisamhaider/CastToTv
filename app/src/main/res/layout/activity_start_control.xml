@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activities.browser.StartControlActivity">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/include_javascript_cookies"
+                layout="@layout/start_control_layout_1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_50" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_16"
+                android:text="AdBlock"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <include
+                android:visibility="gone"
+                android:id="@+id/include_adblock"
+                layout="@layout/start_control_layout_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_16"
+                android:text="JavaScript"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <include
+                android:id="@+id/include_javascript"
+                layout="@layout/start_control_layout_3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_16"
+                android:text="Cookies"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <include
+                android:id="@+id/include_cookies"
+                layout="@layout/start_control_layout_4" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</layout>

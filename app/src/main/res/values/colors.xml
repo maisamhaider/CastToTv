@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    //light theme
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+
+
+    //common
+    <color name="white">#FFFFFFFF</color>
     <color name="black">#FF000000</color>
+    <color name="black_15">#26000000</color>
     <color name="black_50">#80000000</color>
+    <color name="black_60">#99000000</color>
     <color name="black_70">#B3000000</color>
     <color name="black_80">#CC000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="dodger_blue_dark">#325FFF</color>
+    <color name="dodger_blue_light_1">#4F8BFF</color>
+    <color name="dodger_blue_light_2">#39A0FF</color>
+     <color name="cinnabar">#E1484A</color>
+    <color name="pumpkin">#FF7714</color>
+    <color name="medium_purple">#924FE7</color>
+    <color name="bright_sun">#FFC542</color>
+    <color name="amethyst">#B857C7</color>
+    <color name="mountain_meadow">#24C058</color>
+    <color name="mona_lisa">#FF9696</color>
+    <color name="turquoise">#3FD5DE</color>
+    <color name="malachite">#12B449</color>
+
+
+    //dark theme
+    <color name="mirage">#1C2536</color>
+    <color name="black_pearl">#061126</color>
+
 </resources>
