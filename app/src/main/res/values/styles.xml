@@ -8,13 +8,175 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
+
     <style name="button_w0_hw">
         <item name="android:padding">10dp</item>
         <item name="cornerRadius">10dp</item>
-        <item name="android:textColor">@color/white</item>
         <item name="android:layout_width">@dimen/dp_0</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
+    <!--//-->
+    <style name="w_0_h_0">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="w_w_h_0">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="w_w_h_w">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="w_0_h_w">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="w_m_h_m">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="w_w_h_0_auto_sizing">
+        <item name="autoSizeMinTextSize">2sp</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <style name="w_0_h_0_auto_sizing_font">
+        <item name="autoSizeMinTextSize">2sp</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="w_m_h_m_ripple">
+        <item name="android:background">@drawable/ripple_stroke_curved</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="w_m_h_m_ripple_gray_main">
+        <item name="layout_constraintDimensionRatio">1:1</item>
+        <item name="android:background">@drawable/ripple_curved</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="w0_h0_variant">
+        <item name="android:background">?attr/colorPrimaryVariant</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="card_view_wifi_connected">
+        <item name="cardBackgroundColor">?attr/colorPrimary</item>
+        <item name="cardElevation">5dp</item>
+        <item name="cardCornerRadius">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="card_view_w0_h0_r5">
+        <item name="cardBackgroundColor">?attr/colorPrimary</item>
+        <item name="cardElevation">5dp</item>
+        <item name="cardCornerRadius">6dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="card_view_0_0">
+        <item name="cardBackgroundColor">?attr/colorPrimary</item>
+        <item name="cardElevation">5dp</item>
+        <item name="cardCornerRadius">5dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="wrap_center_start_end_margin_10">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="header_text_view">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="fontFamily">@font/ubuntu_medium</item>
+        <item name="autoSizeMinTextSize">2sp</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceHeadline6</item>
+    </style>
+
+    <style name="header_text_ww_h0">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="fontFamily">@font/ubuntu_medium</item>
+        <item name="autoSizeMinTextSize">2sp</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceHeadline6</item>
+    </style>
+
+    <style name="header_text_3">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="autoSizeMinTextSize">2sp</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+    </style>
+
+    <style name="divider_black_white_2020_1p5">
+        <item name="android:background">?attr/attr_black_white_20_20</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1.5dp</item>
+    </style>
+
+    <style name="subheading_w0_h0">
+        <item name="android:textColor">?attr/attr_subheading</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="autoSizeMinTextSize">2sp</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceSubtitle2</item>
+    </style>
+
+    <style name="body_text_view">
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="autoSizeMinTextSize">6sp</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceSubtitle2</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="body_text_view_wrap">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="autoSizeMinTextSize">2sp</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+    </style>
+
+    <style name="imageview_w0_h0_ratio11">
+        <item name="layout_constraintDimensionRatio">1:1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
 
     <style name="card_view_1">
         <item name="cardElevation">5dp</item>

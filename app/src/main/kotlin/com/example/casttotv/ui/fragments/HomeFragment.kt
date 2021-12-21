@@ -1,19 +1,18 @@
 package com.example.casttotv.ui.fragments
 
-import android.content.Context
-import android.content.ContextWrapper
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.casttotv.R
 import com.example.casttotv.databinding.HomeFragmentBinding
 import com.example.casttotv.ui.activities.browser.WebBrowserActivity
-import com.example.casttotv.utils.MySingleton.setAppLocale
+import com.example.casttotv.utils.MySingleton.toastShort
 
 class HomeFragment : Fragment() {
 
@@ -22,11 +21,6 @@ class HomeFragment : Fragment() {
 
     private val binding get() = _dataBinding!!
     private val navController get() = _navController!!
-
-    companion object {
-        fun newInstance() = HomeFragment()
-    }
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,7 +35,16 @@ class HomeFragment : Fragment() {
         _navController = NavHostFragment.findNavController(this)
         binding.apply {
             homeFragment = this@HomeFragment
+            binding.includedDrawer.clHelp.setOnClickListener {
+             }
+            binding.includedDrawer.clSettings.setOnClickListener {
+                navController.navigate(R.id.action_homeFragment_to_appSettingsFragment)
+            }
         }
+    }
+
+    fun openCloseDrawer() {
+//        mainViewModel.openCloseDrawer()
     }
 
     fun goToScreenMirroring() {
@@ -50,6 +53,7 @@ class HomeFragment : Fragment() {
 
     fun goToImages() {
         navController.navigate(R.id.action_homeFragment_to_imagesFoldersFragment)
+        requireContext().toastShort("click")
     }
 
     fun goToVideos() {
@@ -64,16 +68,17 @@ class HomeFragment : Fragment() {
         navController.navigate(R.id.action_homeFragment_to_imageSliderFragment)
     }
 
-    fun goToVpn() {
-        navController.navigate(R.id.action_homeFragment_to_vpnFragment)
-    }
+//    fun goToVpn() {
+//        navController.navigate(R.id.action_homeFragment_to_vpnFragment)
+//    }
 
-    fun goToAudios() {
-        navController.navigate(R.id.action_homeFragment_to_audiosFoldersFragment)
-    }
-    fun goToLanguage() {
-        navController.navigate(R.id.action_homeFragment_to_languagesFragment)
-    }
+//    fun goToAudios() {
+//        navController.navigate(R.id.action_homeFragment_to_audiosFoldersFragment)
+//    }
+//
+//    fun goToLanguage() {
+//        navController.navigate(R.id.action_homeFragment_to_languagesFragment)
+//    }
 
 
 

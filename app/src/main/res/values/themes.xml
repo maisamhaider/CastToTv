@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.CastToTv" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/dodger_blue_light_2</item>
+        <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryVariant">@color/white</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
@@ -12,7 +12,20 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+
+        <item name="attr_subheading">@color/black_60</item>
+        <item name="attr_black_white_20_20">@color/black_20</item>
+
     </style>
+
+    <style name="Theme.CastToTv.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.CastToTv.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.CastToTv.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
 </resources>

@@ -11,17 +11,18 @@ import android.os.Build.VERSION.SDK_INT
 import android.os.Bundle
 import android.os.Environment
 import android.provider.Settings
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.casttotv.R
 import com.example.casttotv.databinding.ActivityMainBinding
-import com.example.casttotv.utils.LOCALE_LANGUAGE
 import com.example.casttotv.utils.MySingleton
 import com.example.casttotv.utils.MySingleton.setAppLocale
-import com.example.casttotv.utils.Pref.getPrefs
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -39,7 +40,12 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
         controller = navHostFragment.navController
 
+
+
+
+
     }
+
 
     override fun onResume() {
         super.onResume()

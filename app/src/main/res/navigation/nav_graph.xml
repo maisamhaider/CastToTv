@@ -32,6 +32,9 @@
         <action
             android:id="@+id/action_homeFragment_to_languagesFragment"
             app:destination="@id/languagesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_appSettingsFragment"
+            app:destination="@id/appSettingsFragment" />
 
     </fragment>
     <fragment
@@ -185,5 +188,9 @@
         android:id="@+id/languagesFragment"
         android:name="com.example.casttotv.ui.fragments.LanguagesFragment"
         android:label="LanguagesFragment" />
+    <fragment
+        android:id="@+id/appSettingsFragment"
+        android:name="com.example.casttotv.ui.fragments.AppSettingsFragment"
+        android:label="AppSettingsFragment" />
 
 </navigation>

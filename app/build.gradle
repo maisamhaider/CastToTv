@@ -24,7 +24,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -41,6 +41,9 @@ android {
     }
     viewBinding {
         enabled true
+    }
+    buildFeatures {
+        viewBinding true
     }
     android.sourceSets.all {
         kotlin.srcDir("src/$name/kotlin")

@@ -9,7 +9,10 @@
 
     //common
     <color name="white">#FFFFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
     <color name="black">#FF000000</color>
+    <color name="black_20">#33000000</color>
     <color name="black_15">#26000000</color>
     <color name="black_50">#80000000</color>
     <color name="black_60">#99000000</color>
@@ -18,7 +21,7 @@
     <color name="dodger_blue_dark">#325FFF</color>
     <color name="dodger_blue_light_1">#4F8BFF</color>
     <color name="dodger_blue_light_2">#39A0FF</color>
-     <color name="cinnabar">#E1484A</color>
+    <color name="cinnabar">#E1484A</color>
     <color name="pumpkin">#FF7714</color>
     <color name="medium_purple">#924FE7</color>
     <color name="bright_sun">#FFC542</color>
@@ -30,7 +33,7 @@
 
 
     //dark theme
-    <color name="mirage">#1C2536</color>
+    <color name="mirage">#EB1C2536</color>
     <color name="black_pearl">#061126</color>
 
 </resources>
