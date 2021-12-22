@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/general"/>
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_question_filled_red"
+            android:title="@string/help" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/nav_translate"
+            android:icon="@drawable/ic_translate"
+            android:title="@string/language" />
+
+    </group>
+    <group android:checkableBehavior="single">
+
+    </group>
+    <group>
+        <item
+            android:id="@+id/thirdItemHeader"
+            android:title="Communication"></item>
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="@string/menu_slideshow" />
+    </group>
+</menu>

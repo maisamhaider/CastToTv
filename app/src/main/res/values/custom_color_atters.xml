@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="attr_subheading" format="reference"/>
+    <attr name="attr_lblack_dwhite_80_60" format="reference"/>
+    <attr name="attr_black_white_20_20" format="reference"/>
+    <attr name="attr_lblack_dwhite_60_60" format="reference"/>
+    <attr name="attr_white_orange" format="reference"/>
+</resources>
