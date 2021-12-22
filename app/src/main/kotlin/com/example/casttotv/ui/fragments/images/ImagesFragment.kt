@@ -37,8 +37,10 @@ class ImagesFragment : Fragment() {
 
         val adapter = ImageVideosAdapter(::onItemClick, requireContext(), IMAGE)
 
-        binding.recyclerView.adapter = adapter
-
+        binding.apply {
+            imagesFrag = this@ImagesFragment
+            recyclerView.adapter = adapter
+        }
         sharedViewModel.imagesByFolder(path).observe(viewLifecycleOwner) {
             if (!it.isNullOrEmpty()) {
                 adapter.submitList(it)
@@ -48,6 +50,10 @@ class ImagesFragment : Fragment() {
         }
 
 
+    }
+
+    fun back() {
+        findNavController().navigate(R.id.action_imagesFragment_to_imagesFoldersFragment)
     }
 
 

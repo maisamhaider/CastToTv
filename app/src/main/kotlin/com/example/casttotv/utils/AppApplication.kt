@@ -1,7 +1,6 @@
 package com.example.casttotv.utils
 
 import android.app.Application
-
 import com.example.casttotv.database.AppDatabase
 import com.example.casttotv.utils.MySingleton.languageSetUp
 import com.example.casttotv.utils.MySingleton.localeLanguage
@@ -16,7 +15,7 @@ class AppApplication : Application() {
         super.onCreate()
         languageSetUp()
         localeLanguage = getPrefs(LOCALE_LANGUAGE, "en")
-         setAppLocale(localeLanguage)
+        setAppLocale(localeLanguage)
     }
 
 

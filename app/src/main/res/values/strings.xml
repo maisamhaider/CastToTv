@@ -130,5 +130,22 @@
     <string name="streaming_quality">Streaming Quality</string>
     <string name="auto_stop">Auto Stop</string>
     <string name="auto_minimize">Auto Minimize</string>
+    <string name="advance">Advance</string>
+    <string name="orientation_mode">Orientation Mode</string>
+    <string name="auto_stop_body_text">Stop mirroring when connection\nto target is lost</string>
+    <string name="auto_minimize_body_text">Hide app when mirroring begins</string>
+    <string name="casting_orientation_body_text">Casting orientation</string>
+    <string name="mirroring_mode">Mirroring mode</string>
+    <string name="screen_mirroring_privacy_policy">Screen mirroring privacy policy</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="supporting_devices">Supporting Devices</string>
+    <string name="see_which_devices_support_mirroring">See which devices support mirroring</string>
+    <string name="color_theme">Color Theme</string>
+    <string name="dark">Dark</string>
+    <string name="light">Light</string>
+    <string name="auto">Auto</string>
+    <string name="version">Version: %s</string>
+    <string name="select_language">Select Language</string>
+    <string name="close">close</string>
 
 </resources>

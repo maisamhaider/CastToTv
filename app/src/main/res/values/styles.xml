@@ -47,6 +47,7 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">0dp</item>
     </style>
+
     <style name="w_0_h_0_auto_sizing_font">
         <item name="autoSizeMinTextSize">2sp</item>
         <item name="fontFamily">@font/ubuntu</item>
@@ -133,6 +134,15 @@
         <item name="android:layout_height">0dp</item>
         <item name="android:textAppearance">?attr/textAppearanceBody2</item>
     </style>
+    <style name="header_text_4">
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="autoSizeMinTextSize">2sp</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+    </style>
 
     <style name="divider_black_white_2020_1p5">
         <item name="android:background">?attr/attr_black_white_20_20</item>
@@ -180,10 +190,17 @@
 
     <style name="card_view_1">
         <item name="cardElevation">5dp</item>
-        <item name="cardCornerRadius">10dp</item>
+        <item name="cardCornerRadius">0dp</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">0dp</item>
     </style>
+    <style name="card_view_match_parent">
+        <item name="cardElevation">5dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
 
     <style name="folder_card_view_2">
         <item name="cardElevation">5dp</item>
@@ -194,7 +211,6 @@
     </style>
 
     <style name="recycler_view">
-        <item name="android:padding">@dimen/dp_6</item>
         <item name="android:clipToPadding">false</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">0dp</item>

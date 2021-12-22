@@ -47,14 +47,5 @@ fun sliderImagesList(recyclerView: RecyclerView, list: List<FileModel>?) {
     }
 }
 
-@BindingAdapter("languagesList")
-fun list(recyclerView: RecyclerView, list: MutableList<Lang>) {
-    try {
-        val adapter = recyclerView.adapter as LanguagesAdapter
-        adapter.submitList(list)
 
-    } catch (e: Exception) {
-        e.stackTrace
-    }
-}
 

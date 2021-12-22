@@ -1,10 +1,10 @@
 package com.example.casttotv.ui.fragments.videos
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.casttotv.R
@@ -33,7 +33,7 @@ class VideosFoldersFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View? {
         _binding = FragmentVideosFoldersBinding.inflate(inflater, container, false)
         return binding.root
@@ -42,7 +42,10 @@ class VideosFoldersFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         adapter = FolderAdapter(::onItemClick, requireContext(), VIDEO)
-        binding.recyclerView.adapter = adapter
+        binding.apply {
+            videoFolderFrag = this@VideosFoldersFragment
+            recyclerView.adapter = adapter
+        }
         CoroutineScope(Dispatchers.IO).launch {
             loadVideos()
         }
@@ -58,6 +61,10 @@ class VideosFoldersFragment : Fragment() {
                 }
             }
         }
+    }
+
+    fun back() {
+        findNavController().navigate(R.id.action_videosFoldersFragment_to_homeFragment)
     }
 
     private fun onItemClick(folderPath: FolderModel) {

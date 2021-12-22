@@ -38,7 +38,11 @@ class ImagesFoldersFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         adapter = FolderAdapter(::onItemClick, requireContext(), IMAGE)
-        binding.recyclerView.adapter = adapter
+
+        binding.apply {
+            imageFolderFrag = this@ImagesFoldersFragment
+            recyclerView.adapter = adapter
+        }
         loadImageFolder()
     }
 
@@ -46,11 +50,12 @@ class ImagesFoldersFragment : Fragment() {
         sharedViewModel.imagesFolderFlow.observe(this.viewLifecycleOwner) {
             it?.let {
                 adapter.submitList(it)
-
             }
         }
+    }
 
-
+    fun back() {
+        findNavController().navigate(R.id.action_imagesFoldersFragment_to_homeFragment)
     }
 
     private fun onItemClick(folderPath: FolderModel) {

@@ -3,6 +3,8 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'androidx.navigation.safeargs'
+//    id 'dagger.hilt.android.plugin'
+
 }
 
 android {
@@ -78,5 +80,12 @@ dependencies {
     implementation "androidx.room:room-ktx:$roomVersion"
     kapt "androidx.room:room-compiler:$roomVersion"
 
+    //hilt
+//    implementation 'com.google.dagger:hilt-android:2.40.5'
+//    kapt 'com.google.dagger:hilt-android-compiler:2.40.5'
+//    implementation("androidx.hilt:hilt-navigation-fragment:1.0.0")
 
 }
+//kapt {
+//    correctErrorTypes = true
+//}

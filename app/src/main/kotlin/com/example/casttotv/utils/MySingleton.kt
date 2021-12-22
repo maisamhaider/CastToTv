@@ -7,8 +7,12 @@ import android.content.Intent
 import android.print.PrintAttributes
 import android.print.PrintDocumentAdapter
 import android.print.PrintManager
+import android.util.TypedValue
 import android.webkit.WebView
 import android.widget.Toast
+import androidx.annotation.AttrRes
+import androidx.annotation.ColorInt
+import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import com.example.casttotv.models.FileModel
 import com.example.casttotv.models.Lang
@@ -48,6 +52,7 @@ const val QWANT_ENGINE_URL = "https://www.qwant.com/?q="
 const val ECOSIA_ENGINE_URL = "https://www.ecosia.org/search?q="
 
 object MySingleton {
+    var LANGUAGE_DIALOG_SHOWING = false
     var localeLanguage = "en"
     var tabs: MutableList<Tabs> = ArrayList<Tabs>()
 
@@ -107,11 +112,23 @@ object MySingleton {
             ).show()
         }
     }
+    @ColorInt
+    fun Context.resolveColorAttr(@AttrRes colorAttr: Int): Int {
+        val resolvedAttr = resolveThemeAttr(colorAttr)
+        // resourceId is used if it's a ColorStateList, and data if it's a color reference or a hex color
+        val colorRes = if (resolvedAttr.resourceId != 0) resolvedAttr.resourceId else resolvedAttr.data
+        return ContextCompat.getColor(this, colorRes)
+    }
 
+    fun Context.resolveThemeAttr(@AttrRes attrRes: Int): TypedValue {
+        val typedValue = TypedValue()
+        theme.resolveAttribute(attrRes, typedValue, true)
+        return typedValue
+    }
 
     val listOfLanguages: MutableList<Lang> = ArrayList()
 
-    val LANGUAGES_CODES_ONLINE = listOf(
+      private val LANGUAGES_CODES_ONLINE = listOf(
         "af", "sq", "am", "ar", "hy", "az", "eu", "be", "bn", "bs", "bg", "ca", "ceb", "zh-CN",
         "zh-TW", "co", "hr", "cs", "da", "nl", "en", "eo", "et", "fi", "fr", "fy", "gl", "ka",
         "de", "el", "gu", "ht", "ha", "haw", "he", "hi", "hmn", "hu", "is", "ig", "id", "ga",
@@ -121,7 +138,7 @@ object MySingleton {
         "sl", "so", "es", "su", "sw", "sv", "tl", "tg", "ta", "tt", "te", "th", "tr", "tk",
         "uk", "ur", "ug", "uz", "vi", "cy", "xh", "yi", "yo", "zu"
     )
-    val LANGUAGES_NAMES_ONLINE = listOf(
+      private val LANGUAGES_NAMES_ONLINE = listOf(
         "Afrikaans",
         "Albanian",
         "Amharic",

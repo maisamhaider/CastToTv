@@ -2,8 +2,11 @@ package com.example.casttotv.adapter
 
 import android.content.Context
 import android.content.ContextWrapper
+import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.annotation.ColorInt
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -11,10 +14,11 @@ import com.example.casttotv.R
 import com.example.casttotv.databinding.LanguageItemBinding
 import com.example.casttotv.models.Lang
 import com.example.casttotv.utils.LOCALE_LANGUAGE
+import com.example.casttotv.utils.MySingleton.resolveColorAttr
 import com.example.casttotv.utils.MySingleton.setAppLocale
-import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.Pref.putPrefs
+import com.google.android.material.internal.ContextUtils.getActivity
 
 class LanguagesAdapter(
     private var context: Context,
@@ -41,14 +45,24 @@ class LanguagesAdapter(
 
     class Holder(private val binding: LanguageItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(lang: Lang, context: Context) {
-            binding.checkbox.text = lang.name
+            binding.textview.text = lang.name
             binding.checkbox.isChecked = context.getPrefs(LOCALE_LANGUAGE, "en") == lang.code
+            if (context.getPrefs(LOCALE_LANGUAGE, "en") == lang.code) {
+                binding.textview.setTextColor(ContextCompat.getColor(context,
+                    R.color.dodger_blue_light_2))
+            } else {
+                @ColorInt val color = context.resolveColorAttr(R.attr.attr_lblack_dwhite_80_60)
 
+                binding.textview.setTextColor(color)
+            }
         }
 
         fun click(click: (Lang) -> Unit, lang: Lang, context: Context) {
             bind(lang, context)
             binding.checkbox.setOnClickListener {
+                click(lang)
+            }
+            binding.root.setOnClickListener {
                 click(lang)
             }
         }
@@ -75,6 +89,6 @@ class LanguagesAdapter(
         holder.bind(getItem(holder.absoluteAdapterPosition), context)
         notifyDataSetChanged()
         ContextWrapper(context.setAppLocale(context.getPrefs(LOCALE_LANGUAGE, "en")))
-     }
+    }
 
 }

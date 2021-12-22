@@ -49,6 +49,8 @@
             android:name="folderPath"
             app:argType="string" />
         <action
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true"
             android:id="@+id/action_imagesFoldersFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
@@ -85,6 +87,8 @@
             android:id="@+id/action_videosFragment_to_customVideoPlayerFragment"
             app:destination="@id/customVideoPlayerFragment" />
         <action
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/videosFoldersFragment"
             android:id="@+id/action_videosFragment_to_videosFoldersFragment"
             app:destination="@id/videosFoldersFragment" />
     </fragment>
@@ -116,6 +120,8 @@
             android:id="@+id/action_imagesFragment_to_viewImagesFragment"
             app:destination="@id/viewImagesFragment" />
         <action
+            app:popUpTo="@id/imagesFoldersFragment"
+            app:popUpToInclusive="true"
             android:id="@+id/action_imagesFragment_to_imagesFoldersFragment"
             app:destination="@id/imagesFoldersFragment" />
     </fragment>
@@ -128,6 +134,8 @@
             android:id="@+id/action_videosFoldersFragment_to_videosFragment"
             app:destination="@id/videosFragment" />
         <action
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/homeFragment"
             android:id="@+id/action_videosFoldersFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
@@ -138,6 +146,8 @@
         tools:layout="@layout/fragment_custom_video_player">
 
         <action
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/videosFragment"
             android:id="@+id/action_customVideoPlayerFragment_to_videosFragment"
             app:destination="@id/videosFragment" />
     </fragment>
@@ -147,6 +157,8 @@
         android:label="fragment_view_images"
         tools:layout="@layout/fragment_view_images">
         <action
+            app:popUpTo="@id/imagesFragment"
+            app:popUpToInclusive="true"
             android:id="@+id/action_viewImagesFragment_to_imagesFragment"
             app:destination="@id/imagesFragment" />
     </fragment>

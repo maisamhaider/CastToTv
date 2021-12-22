@@ -1,10 +1,10 @@
 package com.example.casttotv.ui.fragments.videos
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.casttotv.R
@@ -41,8 +41,10 @@ class VideosFragment : Fragment() {
 
         val adapter = ImageVideosAdapter(::onItemClick, requireContext(), VIDEO)
 
-        binding.recyclerView.adapter = adapter
-
+        binding.apply {
+            videosFrag = this@VideosFragment
+            recyclerView.adapter = adapter
+        }
         CoroutineScope(Dispatchers.IO).launch {
             sharedViewModel.videosByBucket(folder_path).collect {
                 CoroutineScope(Dispatchers.Main).launch {
@@ -57,6 +59,10 @@ class VideosFragment : Fragment() {
 
     }
 
+    fun back()
+    {
+        findNavController().navigate(R.id.action_videosFragment_to_videosFoldersFragment)
+    }
 
     private fun onItemClick(fileModel: FileModel, int: Int) {
         playingFileModel = fileModel

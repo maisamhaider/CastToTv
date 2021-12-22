@@ -13,6 +13,7 @@
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/button.xml" value="0.37083333333333335" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/button_connected.xml" value="0.37083333333333335" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/check_box_selector.xml" value="0.33055555555555555" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/check_box_selector_radio_shape.xml" value="0.33125" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_add.xml" value="0.23703703703703705" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_add_circle.xml" value="0.37083333333333335" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_app_settings.xml" value="0.37083333333333335" />
@@ -32,16 +33,25 @@
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_equalizer.xml" value="0.37083333333333335" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_forward_10.xml" value="0.35520833333333335" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_history.xml" value="0.23703703703703705" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_hq.xml" value="0.37083333333333335" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_image.xml" value="0.265625" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_image_light.xml" value="0.24010416666666667" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_lens.xml" value="0.23703703703703705" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_lock.xml" value="0.35520833333333335" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_mirroring.xml" value="0.2953125" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_mirrorng_mode.xml" value="0.33125" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_more_app.xml" value="0.2765625" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_more_vert.xml" value="0.23703703703703705" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_music.xml" value="0.37083333333333335" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_next.xml" value="0.35520833333333335" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_orientation_mode.xml" value="0.33125" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_pause_circle.xml" value="0.35520833333333335" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_play.xml" value="0.37083333333333335" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_play_circle.xml" value="0.35520833333333335" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_previous.xml" value="0.35520833333333335" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_question_filled_red.xml" value="0.37083333333333335" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_radio_botton_checked.xml" value="0.33125" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_radio_botton_un_checked.xml" value="0.33125" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_remove_circle.xml" value="0.37083333333333335" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_repeat.xml" value="0.37083333333333335" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_repeat_one.xml" value="0.3067708333333333" />
@@ -50,6 +60,7 @@
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_screen_mirroring.xml" value="0.30364583333333334" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_settings_black_24dp.xml" value="0.35520833333333335" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_star.xml" value="0.37083333333333335" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_translate.xml" value="0.2765625" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ic_view_carousel.xml" value="0.37083333333333335" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ripple_curved.xml" value="0.37083333333333335" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/drawable/ripple_stroke_curved.xml" value="0.2942708333333333" />
@@ -62,6 +73,7 @@
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout-v23/server_list_view.xml" value="0.3546875" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout-w1240dp/content_main.xml" value="0.1" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout-w1240dp/history_item.xml" value="0.47891156462585033" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout-w1240dp/language_item.xml" value="0.356640625" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout-w1240dp/nav_header_main.xml" value="0.463265306122449" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout-w600dp/tabs_listview.xml" value="0.2" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/Home_item.xml" value="0.36666666666666664" />
@@ -95,7 +107,7 @@
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/delete_layout.xml" value="0.3385416666666667" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/folder_item.xml" value="0.22" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/form.xml" value="0.2682291666666667" />
-        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/fragment_app_settings.xml" value="0.33" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/fragment_app_settings.xml" value="0.25" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/fragment_audio_player.xml" value="0.25" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/fragment_audios.xml" value="0.3546875" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/fragment_audios_folders.xml" value="0.3546875" />
@@ -104,7 +116,7 @@
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/fragment_first.xml" value="0.33541666666666664" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/fragment_image_slider.xml" value="0.18489583333333334" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/fragment_image_slider_viewer.xml" value="0.2" />
-        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/fragment_images.xml" value="0.25" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/fragment_images.xml" value="0.22" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/fragment_languages.xml" value="0.3546875" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/fragment_main.xml" value="0.3546875" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/fragment_modal_bottom_sheet.xml" value="0.3151041666666667" />
@@ -123,13 +135,13 @@
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/home_fragment.xml" value="0.25" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/home_item.xml" value="0.3546875" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/image_sliding.xml" value="0.25" />
-        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/images_folders_fragment.xml" value="0.3177083333333333" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/images_folders_fragment.xml" value="0.25" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/images_fragment.xml" value="0.33489583333333334" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/images_item2.xml" value="0.23072916666666668" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/images_videos_item.xml" value="0.3177083333333333" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/images_videos_item2.xml" value="0.2" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/input_dialog_layout.xml" value="0.3546875" />
-        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/language_item.xml" value="0.2125" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/language_item.xml" value="0.25" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/layout_behavior.xml" value="0.25" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/layout_behavior_ui_1.xml" value="0.2677083333333333" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/layout_behavior_ui_2.xml" value="0.3546875" />
@@ -137,12 +149,13 @@
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/layout_behavior_ui_4.xml" value="0.3546875" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/layout_body_pos_and_nag_button.xml" value="0.3546875" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/layout_body_pos_and_neg_button.xml" value="0.25" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/layout_languages.xml" value="0.25" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/layout_permissions.xml" value="0.33" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/layout_right_navigation.xml" value="0.3546875" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/layout_search_engines.xml" value="0.25" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/layout_splash.xml" value="0.3546875" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/layout_title_body_pos_and_neg_button.xml" value="0.36666666666666664" />
-        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/nav_header_main.xml" value="0.33" />
+        <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/nav_header_main.xml" value="0.5217794253938832" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/ripple_stroke_curved.xml" value="0.3546875" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/selected_images_item.xml" value="0.12" />
         <entry key="..\:/SyncMedia/Doing/CastToTv/app/src/main/res/layout/server_list_view.xml" value="0.24739583333333334" />

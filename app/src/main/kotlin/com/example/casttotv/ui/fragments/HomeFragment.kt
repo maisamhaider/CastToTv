@@ -1,18 +1,23 @@
 package com.example.casttotv.ui.fragments
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.casttotv.R
+import com.example.casttotv.adapter.LanguagesAdapter
 import com.example.casttotv.databinding.HomeFragmentBinding
 import com.example.casttotv.ui.activities.browser.WebBrowserActivity
+import com.example.casttotv.utils.MySingleton
 import com.example.casttotv.utils.MySingleton.toastShort
+import com.example.casttotv.viewmodel.MainViewModel
 
 class HomeFragment : Fragment() {
 
@@ -21,6 +26,8 @@ class HomeFragment : Fragment() {
 
     private val binding get() = _dataBinding!!
     private val navController get() = _navController!!
+
+    val viewModel: MainViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,16 +43,47 @@ class HomeFragment : Fragment() {
         binding.apply {
             homeFragment = this@HomeFragment
             binding.includedDrawer.clHelp.setOnClickListener {
-             }
+            }
             binding.includedDrawer.clSettings.setOnClickListener {
                 navController.navigate(R.id.action_homeFragment_to_appSettingsFragment)
+//                closeDrawer()
+            }
+            binding.includedDrawer.clLanguages.setOnClickListener {
+                MySingleton.LANGUAGE_DIALOG_SHOWING = true
+                viewModel.viewVisibility(MySingleton.LANGUAGE_DIALOG_SHOWING)
+//                closeDrawer()
             }
         }
+        languagesDialog(requireContext(), binding.includedLanguages.root)
+    }
+
+    fun languagesDialog(context: Context, view: View) {
+
+        val adapter = LanguagesAdapter(context)
+        binding.apply {
+        }
+        val recyclerView = binding.includedLanguages.recyclerview
+        recyclerView.adapter = adapter
+        try {
+            adapter.submitList(viewModel.list())
+        } catch (e: Exception) {
+            e.stackTrace
+        }
+        viewModel.setView(view)
     }
 
     fun openCloseDrawer() {
-//        mainViewModel.openCloseDrawer()
+
+     }
+
+    fun closeDrawer() {
+        binding.drawerLayout.closeDrawer(GravityCompat.START)
     }
+
+    fun openDrawer() {
+        binding.drawerLayout.openDrawer(GravityCompat.END)
+    }
+
 
     fun goToScreenMirroring() {
         navController.navigate(R.id.action_homeFragment_to_screenMirroringFragment)
@@ -72,14 +110,10 @@ class HomeFragment : Fragment() {
 //        navController.navigate(R.id.action_homeFragment_to_vpnFragment)
 //    }
 
-//    fun goToAudios() {
+    //    fun goToAudios() {
 //        navController.navigate(R.id.action_homeFragment_to_audiosFoldersFragment)
 //    }
 //
-//    fun goToLanguage() {
-//        navController.navigate(R.id.action_homeFragment_to_languagesFragment)
-//    }
-
 
 
 }

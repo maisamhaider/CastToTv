@@ -39,17 +39,14 @@ class ImageVideosAdapter(
         fun bind(context: Context, fileModel: FileModel, mimType: String) {
             when (mimType) {
                 VIDEO -> {
-                    binding.mTextView.visibility = View.GONE
                     binding.imageViewPlay.visibility = View.VISIBLE
                     Glide.with(context).load(fileModel.filePath).into(binding.imageView)
                 }
                 IMAGE -> {
                     binding.imageViewPlay.visibility = View.GONE
-                    binding.mTextView.visibility = View.GONE
                     Glide.with(context).load(fileModel.filePath).into(binding.imageView)
                 }
                 else -> {
-                    binding.mTextView.text = fileModel.fileName
                     Glide.with(context).load(R.drawable.ic_launcher_background)
                         .into(binding.imageView)
                 }

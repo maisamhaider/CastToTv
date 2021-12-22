@@ -38,11 +38,11 @@ class FolderAdapter(
 
             when (mimType) {
                 VIDEO -> {
-                    binding.imageViewPlay.visibility = View.VISIBLE
+//                    binding.imageViewPlay.visibility = View.VISIBLE
                     Glide.with(context).load(folderModel.filePath).into(binding.imageView)
                 }
                 IMAGE -> {
-                    binding.imageViewPlay.visibility = View.GONE
+//                    binding.imageViewPlay.visibility = View.GONE
                     Glide.with(context).load(folderModel.filePath).into(binding.imageView)
                 }
                 else -> {
