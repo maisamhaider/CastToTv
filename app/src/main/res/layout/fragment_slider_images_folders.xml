@@ -6,8 +6,9 @@
     <data>
 
         <variable
-            name="imageFolderFrag"
-            type="com.example.casttotv.ui.fragments.images.ImagesFoldersFragment" />
+            name="thisFrag"
+            type="com.example.casttotv.ui.fragments.slider.SliderImagesFoldersFragment" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,8 +19,8 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imageview_back"
             style="@style/imageview_w0_h0_ratio11"
+            android:onClick="@{()->thisFrag.back()}"
             android:scaleType="centerInside"
-            android:onClick="@{()->imageFolderFrag.back()}"
             app:layout_constraintBottom_toTopOf="@+id/guideline47"
             app:layout_constraintStart_toStartOf="@+id/recyclerView"
             app:layout_constraintTop_toTopOf="@+id/guideline40"
@@ -29,7 +30,7 @@
             android:id="@+id/materialTextView27"
             style="@style/header_text_3"
             android:layout_marginStart="@dimen/dp_4"
-            android:text="@string/images"
+            android:text="@string/images_slider"
             app:layout_constraintBottom_toTopOf="@+id/guideline107"
             app:layout_constraintEnd_toStartOf="@+id/imageview_cast"
             app:layout_constraintStart_toEndOf="@+id/imageview_back"
@@ -38,10 +39,10 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imageview_cast"
             android:layout_width="0dp"
-            android:onClick="@{()->imageFolderFrag.enablingWiFiDisplay()}"
             android:layout_height="0dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="centerInside"
+            android:onClick="@{()->thisFrag.enablingWiFiDisplay()}"
             app:layout_constraintBottom_toTopOf="@+id/guideline47"
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toStartOf="@+id/guideline146"
@@ -113,5 +114,4 @@
             app:layout_constraintGuide_percent="0.98" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </layout>

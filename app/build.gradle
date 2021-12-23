@@ -85,6 +85,9 @@ dependencies {
 //    kapt 'com.google.dagger:hilt-android-compiler:2.40.5'
 //    implementation("androidx.hilt:hilt-navigation-fragment:1.0.0")
 
+    //pager dots indicator
+    implementation 'com.tbuonomo:dotsindicator:4.2'
+
 }
 //kapt {
 //    correctErrorTypes = true

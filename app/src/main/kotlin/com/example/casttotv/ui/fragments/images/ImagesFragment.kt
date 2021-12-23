@@ -13,6 +13,7 @@ import com.example.casttotv.adapter.ImageVideosAdapter
 import com.example.casttotv.databinding.FragmentImagesBinding
 import com.example.casttotv.models.FileModel
 import com.example.casttotv.utils.IMAGE
+import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.viewmodel.SharedViewModel
 
@@ -55,7 +56,9 @@ class ImagesFragment : Fragment() {
     fun back() {
         findNavController().navigate(R.id.action_imagesFragment_to_imagesFoldersFragment)
     }
-
+    fun enablingWiFiDisplay() {
+        requireContext().enablingWiFiDisplay()
+    }
 
     private fun onItemClick(fileModel: FileModel, int: Int) {
         val bundle = Bundle().apply {

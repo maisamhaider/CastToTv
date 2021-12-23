@@ -12,8 +12,9 @@
         android:layout_height="wrap_content"
         android:padding="@dimen/dp_4">
 
-        <androidx.coordinatorlayout.widget.CoordinatorLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             style="@style/card_view_1"
+            android:background="?attr/attr_black_white_20_20"
             app:cardCornerRadius="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="w,60:60"
@@ -27,6 +28,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 tool:src="@tools:sample/backgrounds/scenic" />
 
             <androidx.appcompat.widget.AppCompatImageView
@@ -35,8 +41,46 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_play" />
-        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                style="@style/imageview_w0_h0_ratio11"
+                android:layout_gravity="end"
+                android:background="@drawable/check_box_selector_radio_filled"
+                android:button="@null"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/guideline8"
+                app:layout_constraintEnd_toStartOf="@+id/guideline9"
+                app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.035" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.2" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.955" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

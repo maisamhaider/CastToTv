@@ -1,6 +1,5 @@
 package com.example.casttotv.ui.fragments
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -42,24 +41,11 @@ class HomeFragment : Fragment() {
         _navController = NavHostFragment.findNavController(this)
         binding.apply {
             homeFragment = this@HomeFragment
-            binding.includedDrawer.clHelp.setOnClickListener {
-            }
-            binding.includedDrawer.clSettings.setOnClickListener {
-                navController.navigate(R.id.action_homeFragment_to_appSettingsFragment)
-//                closeDrawer()
-            }
-            binding.includedDrawer.clLanguages.setOnClickListener {
-                MySingleton.LANGUAGE_DIALOG_SHOWING = true
-                viewModel.viewVisibility(MySingleton.LANGUAGE_DIALOG_SHOWING)
-//                closeDrawer()
-            }
+            includedDrawer.homeFrag = this@HomeFragment
         }
-        languagesDialog(requireContext(), binding.includedLanguages.root)
-    }
 
-    fun languagesDialog(context: Context, view: View) {
 
-        val adapter = LanguagesAdapter(context)
+        val adapter = LanguagesAdapter(requireContext())
         binding.apply {
         }
         val recyclerView = binding.includedLanguages.recyclerview
@@ -69,12 +55,18 @@ class HomeFragment : Fragment() {
         } catch (e: Exception) {
             e.stackTrace
         }
-        viewModel.setView(view)
+        viewModel.setView(binding.includedLanguages.root)
+
+    }
+
+    fun languagesDialog() {
+        MySingleton.LANGUAGE_DIALOG_SHOWING = true
+        viewModel.viewVisibility(MySingleton.LANGUAGE_DIALOG_SHOWING)
     }
 
     fun openCloseDrawer() {
 
-     }
+    }
 
     fun closeDrawer() {
         binding.drawerLayout.closeDrawer(GravityCompat.START)
@@ -103,7 +95,15 @@ class HomeFragment : Fragment() {
     }
 
     fun goToImageSlider() {
-        navController.navigate(R.id.action_homeFragment_to_imageSliderFragment)
+        navController.navigate(R.id.action_homeFragment_to_sliderImagesFoldersFragment)
+    }
+
+    fun goToAppSettings() {
+        navController.navigate(R.id.action_homeFragment_to_appSettingsFragment)
+    }
+
+    fun goToTutorial() {
+        navController.navigate(R.id.action_homeFragment_to_tutorialFragment)
     }
 
 //    fun goToVpn() {

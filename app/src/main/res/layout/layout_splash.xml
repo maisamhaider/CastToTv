@@ -11,13 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"
-        android:background="@drawable/ic_launcher_background">
+        android:background="?attr/colorPrimaryVariant">
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/app_name"
-            android:textColor="@color/white"
+            android:textColor="?attr/colorOnPrimary"
             android:textAppearance="?attr/textAppearanceHeadline4"
             app:layout_constraintBottom_toTopOf="@+id/guideline4"
             app:layout_constraintEnd_toEndOf="parent"

@@ -12,6 +12,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:background="?attr/colorPrimaryVariant"
         android:layout_height="match_parent">
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -42,6 +43,7 @@
             android:layout_height="0dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:scaleType="centerInside"
+            android:onClick="@{()->imagesFrag.enablingWiFiDisplay()}"
             app:layout_constraintBottom_toTopOf="@+id/guideline47"
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toStartOf="@+id/guideline146"

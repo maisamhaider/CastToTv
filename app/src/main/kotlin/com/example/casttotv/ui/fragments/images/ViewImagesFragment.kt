@@ -10,6 +10,7 @@ import com.example.casttotv.adapter.ImageHorizonAdapter2
 import com.example.casttotv.adapter.ImageViewPagerAdapter
 import com.example.casttotv.databinding.FragmentViewImagesBinding
 import com.example.casttotv.models.FileModel
+import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.utils.animation.DepthPageTransformer
 import com.example.casttotv.viewmodel.SharedViewModel
@@ -53,7 +54,9 @@ class ViewImagesFragment : Fragment() {
         }
 
     }
-
+    fun enablingWiFiDisplay() {
+        requireContext().enablingWiFiDisplay()
+    }
 
     private fun onItemClick(fileModel: FileModel, pos: Int) {
         binding.viewpager2.setCurrentItem(pos, true)

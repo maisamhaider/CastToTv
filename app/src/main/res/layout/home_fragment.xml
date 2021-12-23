@@ -8,7 +8,6 @@
         <variable
             name="homeFragment"
             type="com.example.casttotv.ui.fragments.HomeFragment" />
-
     </data>
 
     <androidx.drawerlayout.widget.DrawerLayout
@@ -18,16 +17,19 @@
         android:elevation="5dp"
         android:fitsSystemWindows="true"
         tools:openDrawer="start">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="?attr/colorPrimaryVariant">
+
             <androidx.appcompat.widget.AppCompatImageView
                 style="@style/imageview_w0_h0_ratio11"
                 app:layout_constraintBottom_toTopOf="@+id/guideline109"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_corner_circles_light" />
+
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imageview_draw"
                 android:layout_width="0dp"
@@ -64,6 +66,8 @@
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/materialTextView19"
                 style="@style/body_text_view"
+                android:lineSpacingExtra="@dimen/dp_2"
+                android:lineSpacingMultiplier="1.2"
                 android:text="@string/home_screen_text"
                 android:textAppearance="?attr/textAppearanceBody2"
                 app:layout_constraintBottom_toTopOf="@+id/guideline20"
@@ -294,8 +298,8 @@
                         app:layout_constraintTop_toTopOf="@+id/guideline37">
 
                         <androidx.appcompat.widget.AppCompatImageView
-                            android:layout_height="@dimen/dp_0"
                             android:layout_width="@dimen/dp_0"
+                            android:layout_height="@dimen/dp_0"
                             app:layout_constraintBottom_toTopOf="@+id/guideline102"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.5"
@@ -451,7 +455,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.2" />
+                app:layout_constraintGuide_percent="0.198" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline21"
@@ -541,9 +545,9 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <include
-            android:visibility="gone"
             android:id="@+id/included_languages"
-            layout="@layout/layout_languages" />
+            layout="@layout/layout_languages"
+            android:visibility="gone" />
 
         <com.google.android.material.navigation.NavigationView
             android:id="@+id/nav_view"
@@ -553,6 +557,7 @@
             android:fitsSystemWindows="true">
 
             <include
+
                 android:id="@+id/included_drawer"
                 layout="@layout/nav_header_main" />
         </com.google.android.material.navigation.NavigationView>

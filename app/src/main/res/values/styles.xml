@@ -159,6 +159,15 @@
         <item name="android:layout_height">0dp</item>
         <item name="android:textAppearance">?attr/textAppearanceSubtitle2</item>
     </style>
+    <style name="subheading_w0_h0_2">
+        <item name="android:textColor">?attr/attr_lblack_dwhite_80</item>
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="autoSizeMinTextSize">2sp</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceSubtitle2</item>
+    </style>
 
     <style name="body_text_view">
         <item name="android:textColor">?attr/colorOnPrimary</item>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.casttotv">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -32,6 +33,7 @@
 
     <application
         android:name=".utils.AppApplication"
+        tools:replace="android:supportsRtl"
         android:allowBackup="true"
         android:banner="@mipmap/ic_launcher"
         android:icon="@mipmap/ic_launcher"
@@ -39,8 +41,8 @@
         android:launchMode="singleTask"
         android:logo="@mipmap/ic_launcher"
         android:preserveLegacyExternalStorage="true"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/Theme.CastToTv">
 
 

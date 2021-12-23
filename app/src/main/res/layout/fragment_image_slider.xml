@@ -14,161 +14,120 @@
             type="com.example.casttotv.ui.fragments.slider.ImageSliderFragment" />
     </data>
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+
+        android:background="?attr/colorPrimaryVariant"
         android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/black_70"
-            android:padding="@dimen/dp_10"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dp_6"
-                android:text="@string/select_images"
-                android:textAppearance="?attr/textAppearanceHeadline6"
-                android:textColor="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/textview_next"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toEndOf="@+id/imageview_back"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/imageview_back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="@{()->thisFragment.back()}"
-                android:padding="@dimen/dp_10"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_back" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/textview_next"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:onClick="@{()-> thisFragment.next()}"
-                android:padding="@dimen/dp_10"
-                android:text="Next"
-                android:textAppearance="?attr/textAppearanceBody1"
-                android:textColor="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline5"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.35" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerview_folder"
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview_back"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="@color/black_50"
-            android:clipToPadding="false"
-            android:orientation="vertical"
-            android:padding="@dimen/dp_6"
-            app:dataList="@{shareViewModel.imagesFolderFlow}"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintBottom_toTopOf="@+id/guideline8"
-            app:layout_constraintEnd_toStartOf="@+id/guideline5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
-            tools:listitem="@layout/folder_item" />
+            android:onClick="@{()->thisFragment.back()}"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@+id/guideline47"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@+id/recyclerView"
+            app:layout_constraintTop_toTopOf="@+id/guideline40"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView27"
+            style="@style/header_text_3"
+            android:layout_marginStart="@dimen/dp_4"
+            android:text="@string/image_slider"
+            app:layout_constraintBottom_toTopOf="@+id/guideline107"
+            app:layout_constraintEnd_toStartOf="@+id/imageview_cast"
+            app:layout_constraintStart_toEndOf="@+id/imageview_back"
+            app:layout_constraintTop_toTopOf="@+id/guideline106" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview_slideshow"
+            style="@style/imageview_w0_h0_ratio11"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="@{()->thisFragment.next()}"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@+id/guideline47"
+            app:layout_constraintEnd_toEndOf="@+id/materialTextView27"
+            app:layout_constraintTop_toTopOf="@+id/guideline40"
+            app:srcCompat="@drawable/ic_slideshow" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview_cast"
+            style="@style/imageview_w0_h0_ratio11"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="@{()->thisFragment.enablingWiFiDisplay()}"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@+id/guideline47"
+            app:layout_constraintEnd_toStartOf="@+id/guideline146"
+            app:layout_constraintTop_toTopOf="@+id/guideline40"
+            app:srcCompat="@drawable/ic_mirroring" />
+
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerview_images"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:clipToPadding="false"
+            android:id="@+id/recyclerView"
+            style="@style/recycler_view"
             android:orientation="vertical"
-            android:padding="@dimen/dp_6"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            app:layout_constraintBottom_toTopOf="@+id/guideline8"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
-            app:spanCount="2"
-            tools:itemCount="14"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline146"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/guideline139"
+            app:layout_constraintTop_toTopOf="@+id/guideline136"
+            app:spanCount="3"
+            tools:itemCount="18"
             tools:listitem="@layout/images_videos_item" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cl_clear_all"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="@color/black_50"
-            app:layout_constraintBottom_toTopOf="@+id/guideline9"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline8">
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/materialTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:padding="@dimen/dp_10"
-                android:text="Clear All"
-                android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/textview_selected_files"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/dp_10"
-                android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:text="0" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerview_selected"
-            style="@style/recycler_view"
-            android:orientation="horizontal"
-            android:padding="@dimen/dp_6"
-            app:sliderImagesList="@{shareViewModel.selectedImages}"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline9"
-            app:layout_constraintVertical_bias="0.0"
-            tools:listitem="@layout/selected_images_item" />
-
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline8"
+            android:id="@+id/guideline40"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.78" />
+            app:layout_constraintGuide_percent="0.025" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline9"
+            android:id="@+id/guideline47"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.835" />
+            app:layout_constraintGuide_percent="0.075" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline106"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.035" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline107"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.065" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline136"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline139"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline146"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.98" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

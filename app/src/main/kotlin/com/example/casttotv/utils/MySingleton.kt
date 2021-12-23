@@ -31,6 +31,7 @@ const val default = "default"
 const val VIDEO = "VIDEO"
 const val AUDIO = "AUDIO"
 const val IMAGE = "IMAGE"
+const val SLIDE = "SLIDE"
 var playingFileModel = FileModel("", 0, "")
 var playingFileName = ""
 var playingFileCurrentPos = 0

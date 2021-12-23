@@ -1,4 +1,4 @@
-package com.example.casttotv.ui.fragments.images
+package com.example.casttotv.ui.fragments.slider
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,17 +10,16 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.casttotv.R
 import com.example.casttotv.adapter.FolderAdapter
-import com.example.casttotv.databinding.ImagesFoldersFragmentBinding
+import com.example.casttotv.databinding.FragmentSliderImagesFoldersBinding
 import com.example.casttotv.models.FolderModel
 import com.example.casttotv.utils.IMAGE
 import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
-import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.viewmodel.SharedViewModel
 
 
-class ImagesFoldersFragment : Fragment() {
+class SliderImagesFoldersFragment : Fragment() {
 
-    private var _binding: ImagesFoldersFragmentBinding? = null
+    private var _binding: FragmentSliderImagesFoldersBinding? = null
     private val binding get() = _binding!!
     private val sharedViewModel: SharedViewModel by activityViewModels {
         SharedViewModel.SharedViewModelFactory(requireContext())
@@ -32,7 +31,7 @@ class ImagesFoldersFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        _binding = ImagesFoldersFragmentBinding.inflate(inflater, container, false)
+        _binding = FragmentSliderImagesFoldersBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -41,7 +40,7 @@ class ImagesFoldersFragment : Fragment() {
         adapter = FolderAdapter(::onItemClick, requireContext(), IMAGE)
 
         binding.apply {
-            imageFolderFrag = this@ImagesFoldersFragment
+            thisFrag = this@SliderImagesFoldersFragment
             recyclerView.adapter = adapter
         }
         loadImageFolder()
@@ -58,13 +57,12 @@ class ImagesFoldersFragment : Fragment() {
         requireContext().enablingWiFiDisplay()
     }
     fun back() {
-        findNavController().navigate(R.id.action_imagesFoldersFragment_to_homeFragment)
+        findNavController().navigate(R.id.action_sliderImagesFoldersFragment_to_homeFragment)
     }
 
     private fun onItemClick(folderPath: FolderModel) {
         val bundle = bundleOf("folderPath" to folderPath.folderPath)
-        findNavController().navigate(R.id.action_imagesFoldersFragment_to_imagesFragment, bundle)
-        requireContext().toastLong(folderPath.folderPath)
+        findNavController().navigate(R.id.action_sliderImagesFoldersFragment_to_imageSliderFragment,
+            bundle)
     }
-
 }

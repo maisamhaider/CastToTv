@@ -13,6 +13,7 @@ import com.example.casttotv.adapter.ImageViewPagerAdapter
 import com.example.casttotv.adapter.ViewPager2AnimationsAdapter
 import com.example.casttotv.databinding.FragmentImageSliderViewerBinding
 import com.example.casttotv.models.PagerAnimation
+import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
 import com.example.casttotv.viewmodel.SharedViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -121,7 +122,9 @@ class ImageSliderViewerFragment : Fragment() {
     fun onPagerClicked() {
         sharedViewModel.playPause()
     }
-
+    fun enablingWiFiDisplay() {
+        requireContext().enablingWiFiDisplay()
+    }
     private fun onAnimationSelected(animationClass: PagerAnimation?) {
         sharedViewModel.playPause(false)
         viewPager = null

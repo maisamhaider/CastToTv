@@ -12,7 +12,6 @@
         android:layout_height="match_parent"
         tools:context=".ui.activities.WelcomeActivity">
 
-
         <include
             android:id="@+id/includedLayoutSplash"
             layout="@layout/layout_splash"

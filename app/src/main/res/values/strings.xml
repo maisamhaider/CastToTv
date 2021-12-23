@@ -147,5 +147,9 @@
     <string name="version">Version: %s</string>
     <string name="select_language">Select Language</string>
     <string name="close">close</string>
+    <string name="images_slider">Images Silder</string>
+    <string name="screen_mirror">Screen Mirror</string>
+    <string name="tutorial_screen_setup_body">Your target device has to be in the same Wi-Fi network as this device, because Screen Mirror is transmitting your screen.</string>
+    <string name="tutorial_screen_mirror_body">Stream your device’s screen over Wi-Fi to your computer, notebook or tablet</string>
 
 </resources>

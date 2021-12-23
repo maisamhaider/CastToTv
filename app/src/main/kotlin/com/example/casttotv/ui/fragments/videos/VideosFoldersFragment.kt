@@ -11,6 +11,7 @@ import com.example.casttotv.R
 import com.example.casttotv.adapter.FolderAdapter
 import com.example.casttotv.databinding.FragmentVideosFoldersBinding
 import com.example.casttotv.models.FolderModel
+import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.utils.VIDEO
 import com.example.casttotv.utils.folder_path
@@ -62,7 +63,9 @@ class VideosFoldersFragment : Fragment() {
             }
         }
     }
-
+    fun enablingWiFiDisplay() {
+        requireContext().enablingWiFiDisplay()
+    }
     fun back() {
         findNavController().navigate(R.id.action_videosFoldersFragment_to_homeFragment)
     }

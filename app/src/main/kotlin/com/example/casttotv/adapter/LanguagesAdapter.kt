@@ -2,7 +2,6 @@ package com.example.casttotv.adapter
 
 import android.content.Context
 import android.content.ContextWrapper
-import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.annotation.ColorInt
@@ -18,7 +17,6 @@ import com.example.casttotv.utils.MySingleton.resolveColorAttr
 import com.example.casttotv.utils.MySingleton.setAppLocale
 import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.Pref.putPrefs
-import com.google.android.material.internal.ContextUtils.getActivity
 
 class LanguagesAdapter(
     private var context: Context,
@@ -51,7 +49,7 @@ class LanguagesAdapter(
                 binding.textview.setTextColor(ContextCompat.getColor(context,
                     R.color.dodger_blue_light_2))
             } else {
-                @ColorInt val color = context.resolveColorAttr(R.attr.attr_lblack_dwhite_80_60)
+                @ColorInt val color = context.resolveColorAttr(R.attr.attr_lblack_dwhite_80)
 
                 binding.textview.setTextColor(color)
             }
