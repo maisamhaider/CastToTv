@@ -24,13 +24,13 @@
         android:fillColor="?attr/colorOnPrimary"
         android:pathData="M81.122,122.075h5.557v8.2h-5.557z" />
     <path
-        android:fillColor="#000000"
+        android:fillColor="?attr/colorOnPrimary"
         android:pathData="M92.323,114.468h5.557v15.808h-5.557z" />
     <path
-        android:fillColor="#000000"
+        android:fillColor="?attr/colorOnPrimary"
         android:pathData="M103.524,104.327h5.557v25.948h-5.557z" />
     <path
-        android:fillColor="#000000"
+        android:fillColor="?attr/colorOnPrimary"
         android:pathData="M114.725,92.886h5.557v37.389h-5.557z" />
     <path
         android:fillColor="#39A0FF"

@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import com.example.casttotv.BuildConfig
 import com.example.casttotv.R
 import com.example.casttotv.adapter.LanguagesAdapter
 import com.example.casttotv.databinding.HomeFragmentBinding
@@ -27,7 +28,7 @@ class HomeFragment : Fragment() {
     private val navController get() = _navController!!
 
     val viewModel: MainViewModel by activityViewModels()
-
+    val version = BuildConfig.VERSION_NAME
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
@@ -67,6 +68,7 @@ class HomeFragment : Fragment() {
     fun openCloseDrawer() {
 
     }
+
 
     fun closeDrawer() {
         binding.drawerLayout.closeDrawer(GravityCompat.START)

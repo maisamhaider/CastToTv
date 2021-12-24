@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
+        <variable
+            name="thisFrag"
+            type="com.example.casttotv.ui.fragments.AppSettingsFragment" />
+
+        <variable
+            name="mainVM"
+            type="com.example.casttotv.viewmodel.MainViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -476,6 +484,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_theme"
             style="@style/w_0_h_0"
+            android:onClick="@{()->thisFrag.themeDialog()}"
             app:layout_constraintBottom_toTopOf="@+id/guideline116"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -504,11 +513,12 @@
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/materialTextView31"
                 style="@style/subheading_w0_h0"
-                android:text="@string/dark"
+                android:text="@{mainVM.darkAndLight}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline158"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline125"
-                app:layout_constraintTop_toTopOf="@+id/guideline159" />
+                app:layout_constraintTop_toTopOf="@+id/guideline159"
+                tools:text="@string/light" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline125"
@@ -750,7 +760,7 @@
         <com.google.android.material.textview.MaterialTextView
             style="@style/subheading_w0_h0"
             android:gravity="center"
-            android:text="@string/version"
+            android:text="@{@string/version(thisFrag.version)}"
             app:layout_constraintBottom_toTopOf="@+id/guideline176"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline105"

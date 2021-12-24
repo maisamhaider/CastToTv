@@ -35,7 +35,7 @@
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/textView_version"
                 style="@style/body_text_view"
-                android:text="Version: 1.1.1"
+                android:text="@{@string/version(homeFrag.version)}"
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toTopOf="@+id/guideline44"
                 app:layout_constraintEnd_toEndOf="parent"

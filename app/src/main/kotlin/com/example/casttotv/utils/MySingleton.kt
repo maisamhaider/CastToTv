@@ -4,6 +4,7 @@ import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 import android.print.PrintAttributes
 import android.print.PrintDocumentAdapter
 import android.print.PrintManager
@@ -12,18 +13,18 @@ import android.webkit.WebView
 import android.widget.Toast
 import androidx.annotation.AttrRes
 import androidx.annotation.ColorInt
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import com.example.casttotv.models.FileModel
 import com.example.casttotv.models.Lang
 import com.example.casttotv.models.Tabs
+import com.example.casttotv.utils.Pref.getPrefs
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.io.File
 import java.util.*
-import androidx.core.content.IntentCompat
-import kotlin.system.exitProcess
 
 
 var folder_path = ""
@@ -57,6 +58,27 @@ object MySingleton {
     var localeLanguage = "en"
     var tabs: MutableList<Tabs> = ArrayList<Tabs>()
 
+//    fun Context.themeDark(): Boolean = getPrefs(THEME_DARK, false)
+
+    fun Context.themeDark(): Boolean {
+        return when (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) {
+            Configuration.UI_MODE_NIGHT_NO -> false
+            Configuration.UI_MODE_NIGHT_YES -> true
+            else -> false
+
+        }
+    }
+
+
+    fun Context.changeTheme() {
+        val dark = getPrefs(THEME_DARK, false)
+        if (dark) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        }
+    }
+
     fun Context.shareWithText(image: String) {
         val share = Intent()
         share.action = Intent.ACTION_SEND
@@ -87,12 +109,12 @@ object MySingleton {
         printManager.print(jobName, printAdapter, PrintAttributes.Builder().build())
     }
 
-    fun Context.toastLong(messages: String) {
-        Toast.makeText(this, messages, Toast.LENGTH_LONG).show()
+    fun <T> Context.toastLong(messages: T) {
+        Toast.makeText(this, messages.toString(), Toast.LENGTH_LONG).show()
     }
 
-    fun Context.toastShort(messages: String) {
-        Toast.makeText(this, messages, Toast.LENGTH_SHORT).show()
+    fun <T> Context.toastShort(messages: T) {
+        Toast.makeText(this, messages.toString(), Toast.LENGTH_SHORT).show()
     }
 
     fun Context.enablingWiFiDisplay() {
@@ -113,11 +135,13 @@ object MySingleton {
             ).show()
         }
     }
+
     @ColorInt
     fun Context.resolveColorAttr(@AttrRes colorAttr: Int): Int {
         val resolvedAttr = resolveThemeAttr(colorAttr)
         // resourceId is used if it's a ColorStateList, and data if it's a color reference or a hex color
-        val colorRes = if (resolvedAttr.resourceId != 0) resolvedAttr.resourceId else resolvedAttr.data
+        val colorRes =
+            if (resolvedAttr.resourceId != 0) resolvedAttr.resourceId else resolvedAttr.data
         return ContextCompat.getColor(this, colorRes)
     }
 
@@ -129,7 +153,7 @@ object MySingleton {
 
     val listOfLanguages: MutableList<Lang> = ArrayList()
 
-      private val LANGUAGES_CODES_ONLINE = listOf(
+    private val LANGUAGES_CODES_ONLINE = listOf(
         "af", "sq", "am", "ar", "hy", "az", "eu", "be", "bn", "bs", "bg", "ca", "ceb", "zh-CN",
         "zh-TW", "co", "hr", "cs", "da", "nl", "en", "eo", "et", "fi", "fr", "fy", "gl", "ka",
         "de", "el", "gu", "ht", "ha", "haw", "he", "hi", "hmn", "hu", "is", "ig", "id", "ga",
@@ -139,7 +163,7 @@ object MySingleton {
         "sl", "so", "es", "su", "sw", "sv", "tl", "tg", "ta", "tt", "te", "th", "tr", "tk",
         "uk", "ur", "ug", "uz", "vi", "cy", "xh", "yi", "yo", "zu"
     )
-      private val LANGUAGES_NAMES_ONLINE = listOf(
+    private val LANGUAGES_NAMES_ONLINE = listOf(
         "Afrikaans",
         "Albanian",
         "Amharic",

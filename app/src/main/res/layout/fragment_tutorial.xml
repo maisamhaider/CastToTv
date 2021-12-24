@@ -5,6 +5,13 @@
 
     <data>
 
+        <variable
+            name="tutorialVM"
+            type="com.example.casttotv.viewmodel.TutorialViewModel" />
+
+        <variable
+            name="thisFrag"
+            type="com.example.casttotv.ui.fragments.TutorialFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -14,25 +21,33 @@
         tools:context=".ui.fragments.TutorialFragment">
 
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpager_2"
             style="@style/w_0_h_0"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:listitem="@layout/tutorial_layout_1" />
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <include
-            layout="@layout/tutorial_layout_1"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="0dp" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textview_header"
+            style="@style/header_text_view"
+            android:gravity="center"
+            android:textColor="@color/dodger_blue_light_2"
+            app:layout_constraintBottom_toTopOf="@+id/guideline199"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline196"
+            app:layout_constraintVertical_bias="0.54" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/materialTextView"
             style="@style/w_0_h_0"
             android:background="@drawable/ripple_curved_gradient_button_drawable"
+            android:onClick="@{()->thisFrag.nextOrFinished()}"
             app:layout_constraintBottom_toTopOf="@+id/guideline195"
             app:layout_constraintEnd_toStartOf="@+id/guideline189"
             app:layout_constraintHorizontal_bias="0.0"
@@ -48,7 +63,6 @@
             app:dotsSize="@dimen/dp_10"
             app:dotsSpacing="@dimen/dp_5"
             app:dotsWidthFactor="2.5"
-            app:layout_constraintBottom_toTopOf="@+id/guideline202"
             app:layout_constraintEnd_toStartOf="@+id/guideline189"
             app:layout_constraintStart_toStartOf="@+id/guideline192"
             app:layout_constraintTop_toTopOf="@+id/guideline201"
@@ -56,10 +70,10 @@
             app:selectedDotColor="@color/dodger_blue_light_2" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/materialTextView37"
+            android:id="@+id/textview_next_text"
             style="@style/header_text_3"
             android:gravity="center"
-            android:text="@string/next"
+            android:text="@{tutorialVM.nextButtonText}"
             android:textColor="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/guideline198"
             app:layout_constraintEnd_toStartOf="@+id/guideline189"
@@ -70,12 +84,26 @@
         <androidx.appcompat.widget.AppCompatImageView
             style="@style/imageview_w0_h0_ratio11"
             android:scaleType="centerInside"
+            android:id="@+id/imageview_arrow"
             app:layout_constraintBottom_toTopOf="@+id/guideline198"
             app:layout_constraintEnd_toStartOf="@+id/guideline207"
             app:layout_constraintStart_toStartOf="@+id/guideline200"
             app:layout_constraintTop_toTopOf="@+id/guideline197"
             app:srcCompat="@drawable/ic_arrow_next" />
 
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline196"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.12" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline199"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.16" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline189"

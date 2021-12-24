@@ -557,7 +557,6 @@
             android:fitsSystemWindows="true">
 
             <include
-
                 android:id="@+id/included_drawer"
                 layout="@layout/nav_header_main" />
         </com.google.android.material.navigation.NavigationView>

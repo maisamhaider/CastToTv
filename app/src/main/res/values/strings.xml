@@ -150,6 +150,14 @@
     <string name="images_slider">Images Silder</string>
     <string name="screen_mirror">Screen Mirror</string>
     <string name="tutorial_screen_setup_body">Your target device has to be in the same Wi-Fi network as this device, because Screen Mirror is transmitting your screen.</string>
-    <string name="tutorial_screen_mirror_body">Stream your device’s screen over Wi-Fi to your computer, notebook or tablet</string>
+    <string name="tutorial_screen_mirror_body">Stream your device’s screen over Wi-Fi to your computer, notebook or tablet.</string>
+    <string name="tutorial_device_hotspot_body">You can also use your device’s hotspot (tethering mode) and connect your target device to your hotspot.</string>
+    <string name="tutorial_scan_code_body">Open site on your target device. By scanning the QR code the connection configuration is transmitted and mirroring starts.</string>
+    <string name="tutorial_support_body">Please be aware that Screen Mirror only works when setup correctly. Screen Mirror transmit your screen, but not your device’s audio signals. If you face any problems contact us.</string>
+    <string name="screen_setup">Screen Setup</string>
+    <string name="device_hotspot">Device\'s Hotspot</string>
+    <string name="scan_code">Scan Code</string>
+    <string name="support">Support</string>
+    <string name="finish">Finish</string>
 
 </resources>

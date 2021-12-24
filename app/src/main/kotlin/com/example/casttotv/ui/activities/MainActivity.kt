@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
         if (LANGUAGE_DIALOG_SHOWING) {
             LANGUAGE_DIALOG_SHOWING = false
             viewModel.viewVisibility(LANGUAGE_DIALOG_SHOWING)
-         } else {
+        } else {
             super.onBackPressed()
         }
 
