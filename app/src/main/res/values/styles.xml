@@ -123,6 +123,15 @@
         <item name="android:textAppearance">?attr/textAppearanceHeadline6</item>
     </style>
 
+    <style name="header_text_view_24sp">
+        <item name="fontFamily">@font/ubuntu</item>
+        <item name="autoSizeMinTextSize">2sp</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceHeadline5</item>
+    </style>
+
     <style name="header_text_ww_h0">
         <item name="android:textColor">?attr/colorOnPrimary</item>
         <item name="fontFamily">@font/ubuntu_medium</item>

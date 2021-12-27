@@ -13,7 +13,9 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
         <item name="attr_lblack_dwhite_80">@color/black_80</item>
-         <item name="attr_subheading">@color/black_60</item>
+        <item name="attr_lblack_dwhite_12_12">@color/black_12</item>
+        <item name="attr_lblack_dwhite_80_80">@color/black_80</item>
+        <item name="attr_subheading">@color/black_60</item>
         <item name="attr_black_white_20_20">@color/black_20</item>
         <item name="attr_white_orange">@color/pumpkin</item>
         <item name="attr_lblack_dwhite_60_60">@color/black_60</item>

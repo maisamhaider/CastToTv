@@ -2,6 +2,8 @@
 <resources>
     <attr name="attr_subheading" format="reference"/>
     <attr name="attr_lblack_dwhite_80" format="reference"/>
+    <attr name="attr_lblack_dwhite_80_80" format="reference"/>
+    <attr name="attr_lblack_dwhite_12_12" format="reference"/>
      <attr name="attr_black_white_20_20" format="reference"/>
     <attr name="attr_lblack_dwhite_60_60" format="reference"/>
     <attr name="attr_white_orange" format="reference"/>

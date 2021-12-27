@@ -650,6 +650,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_privacy_policy"
             style="@style/w_0_h_0"
+            android:onClick="@{()->thisFrag.goToPrivacyPolicy()}"
             app:layout_constraintBottom_toTopOf="@+id/guideline169"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"

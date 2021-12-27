@@ -357,6 +357,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_send_feedback"
                 style="@style/w_0_h_0"
+                android:background="?attr/selectableItemBackground"
+                android:onClick="@{()->homeFrag.goToFeedBack()}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline85"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline50"
