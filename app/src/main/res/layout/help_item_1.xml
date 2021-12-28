@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_item_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/w_0_h_0"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,60:10.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view_color"
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline253"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline254" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textview_question"
+            style="@style/header_text_3"
+            android:lineSpacingExtra="1.0dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline256"
+            app:layout_constraintEnd_toStartOf="@+id/image_view_arrow"
+            app:layout_constraintStart_toStartOf="@+id/guideline259"
+            app:layout_constraintTop_toTopOf="@+id/guideline255"
+            tools:text="My Phone gets stuck at “Connecting”\nwhen pairing up with TV." />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/textview_question"
+            app:layout_constraintEnd_toStartOf="@+id/guideline258"
+            app:layout_constraintTop_toTopOf="@+id/textview_question"
+            app:srcCompat="@drawable/ic_arrow_down_small" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline254"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline253"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline255"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.22" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline256"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.78" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline258"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline259"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
