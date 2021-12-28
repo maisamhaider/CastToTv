@@ -97,6 +97,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_help"
                 style="@style/w_0_h_0"
+                android:background="?attr/selectableItemBackground"
+                android:onClick="@{()->homeFrag.goToHelpCenter()}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline54"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -306,6 +308,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_rate_us"
                 style="@style/w_0_h_0"
+                android:background="?attr/selectableItemBackground"
+                android:onClick="@{()->homeFrag.rateUs()}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline62"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline50"

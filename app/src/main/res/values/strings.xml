@@ -169,5 +169,30 @@
     <string name="check_your_internet_connection">Check your internet connection</string>
     <string name="type_here">type here…</string>
     <string name="enter_your_email_optional">Enter your email (optional)</string>
+    <string name="enjoy_the_app">Enjoy the App?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Rate your experience using Screen\nMirroring App.</string>
+    <string name="not_now">Not now</string>
+    <string name="feedback">Feedback:</string>
+    <string name="model">Model:</string>
+    <string name="brand">Brand:</string>
+    <string name="os_version">OS Version:</string>
+    <string name="manufacturer">Manufacturer:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Send mail</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="help_center">Help Center</string>
+    <string name="question_1">My Phone gets stuck at “Connecting”\nwhen pairing up with TV.</string>
+    <string name="question_2">It worked for me before, but it doesn’t\nwork now.</string>
+    <string name="question_3">It shows that my device is not\nsupported</string>
+    <string name="question_4">My TV is an old TV and does not\nsupport wi-fi.</string>
+    <string name="question_5">The image on TV  is black, but the sound\ncan be heard.</string>
+    <string name="question_6">Connection will be interrupted after a\nwhile</string>
+    <string name="question_7">My TV is an old TV and does not\nsupport wi-fi.</string>
+    <string name="question_8">The image on TV  is black, but the sound\ncan be heard.</string>
+    <string name="question_9">Connection will be interrupted after a\nwhile</string>
+    <string name="q_answer_1_1">Restart the smart phone’s Wi-Fi and see if the connection is successful.</string>
+    <string name="q_answer_1_2">Turn off the TV and remove its power cord from the socket as well. Wait 1 minute and restart the TV.</string>
+    <string name="q_answer_1_3">Shorten the distance between your phone and the TV. Take it up close.</string>
+
 
 </resources>

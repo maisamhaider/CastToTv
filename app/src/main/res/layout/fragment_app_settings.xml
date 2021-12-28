@@ -23,6 +23,8 @@
             android:id="@+id/imageview_back"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="@{()->thisFrag.back()}"
             android:scaleType="centerInside"
             app:layout_constraintBottom_toTopOf="@+id/guideline47"
             app:layout_constraintDimensionRatio="1:1"

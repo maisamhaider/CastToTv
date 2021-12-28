@@ -15,7 +15,8 @@
         <item name="attr_lblack_dwhite_80">@color/white</item>
         <item name="attr_lblack_dwhite_12_12">@color/white_12</item>
         <item name="attr_lblack_dwhite_80_80">@color/white_60</item>
-         <item name="attr_subheading">@color/white_60</item>
+        <item name="attr_lblack_dwhite_70_70">@color/white_70</item>
+        <item name="attr_subheading">@color/white_60</item>
         <item name="attr_black_white_20_20">@color/white_20</item>
         <item name="attr_white_orange">@color/white</item>
         <item name="attr_lblack_dwhite_60_60">@color/white_60</item>

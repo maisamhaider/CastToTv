@@ -5,26 +5,24 @@
 
     <data>
 
-
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/black_60"
-         >
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
 
         <com.google.android.material.card.MaterialCardView
-            style="@style/card_view_match_parent"
-            android:layout_marginStart="@dimen/dp_20"
-            android:layout_marginTop="@dimen/dp_40"
-            android:layout_marginEnd="@dimen/dp_20"
-            android:layout_marginBottom="@dimen/dp_20"
+            android:id="@+id/materialCardView3"
+            style="@style/card_view_0_0"
+            android:layout_margin="@dimen/dp_10"
+            app:cardBackgroundColor="?attr/colorPrimary"
+            app:cardCornerRadius="@dimen/dp_16"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="w,60:99"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:cardBackgroundColor="?attr/colorPrimary"
-             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -94,6 +92,7 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.card.MaterialCardView>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

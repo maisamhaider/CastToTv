@@ -21,6 +21,11 @@
         <item name="android:layout_height">0dp</item>
     </style>
 
+    <style name="w_m_h_w">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
     <style name="w_w_h_0">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">0dp</item>
