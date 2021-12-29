@@ -62,7 +62,7 @@
     </style>
 
     <style name="w_m_h_m_ripple">
-        <item name="android:background">@drawable/ripple_stroke_curved</item>
+        <item name="android:background">@drawable/ripple_1</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
     </style>
@@ -82,7 +82,7 @@
 
     <style name="card_view_wifi_connected">
         <item name="cardBackgroundColor">?attr/colorPrimary</item>
-        <item name="cardElevation">5dp</item>
+        <item name="cardElevation">@dimen/dp_2</item>
         <item name="cardCornerRadius">5dp</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">0dp</item>
@@ -90,15 +90,24 @@
 
     <style name="card_view_w0_h0_r5">
         <item name="cardBackgroundColor">?attr/colorPrimary</item>
-        <item name="cardElevation">5dp</item>
-        <item name="cardCornerRadius">6dp</item>
+        <item name="cardElevation">@dimen/dp_2</item>
+        <item name="elevation">@dimen/dp_2</item>
+        <item name="cardCornerRadius">@dimen/dp_5</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">0dp</item>
     </style>
 
+    <style name="card_view_wm_hw_r5">
+        <item name="cardBackgroundColor">?attr/colorPrimary</item>
+        <item name="cardElevation">@dimen/dp_2</item>
+        <item name="cardCornerRadius">6dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
     <style name="card_view_0_0">
         <item name="cardBackgroundColor">?attr/colorPrimary</item>
-        <item name="cardElevation">5dp</item>
+        <item name="cardElevation">@dimen/dp_2</item>
         <item name="cardCornerRadius">5dp</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">0dp</item>

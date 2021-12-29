@@ -19,10 +19,12 @@ import androidx.lifecycle.ViewModel
 import com.example.casttotv.R
 import com.example.casttotv.adapter.LanguagesAdapter
 import com.example.casttotv.databinding.LayoutLanguagesBinding
+import com.example.casttotv.databinding.OrientationDialogBinding
 import com.example.casttotv.databinding.RateDialogBinding
 import com.example.casttotv.databinding.ThemeDialogBinding
 import com.example.casttotv.interfaces.MyCallBack
 import com.example.casttotv.models.Lang
+import com.example.casttotv.utils.AUTO_ROTATION
 import com.example.casttotv.utils.MySingleton
 import com.example.casttotv.utils.MySingleton.changeTheme
 import com.example.casttotv.utils.MySingleton.toastLong
@@ -35,19 +37,96 @@ import java.util.*
 class MainViewModel : ViewModel() {
 
     private val _darkAndLight: MutableLiveData<String> = MutableLiveData()
+    private val _orientation: MutableLiveData<String> = MutableLiveData()
     val darkAndLight: LiveData<String> = _darkAndLight
+    val orientation: LiveData<String> = _orientation
     private var languageDialog: MutableLiveData<AlertDialog> = MutableLiveData(null)
 
     fun list(): MutableList<Lang> {
         return MySingleton.listOfLanguages
     }
 
-    fun preLoadDarkAndLight(context: Context) {
+    fun preLoadData(context: Context) {
         val dark = context.getPrefs(THEME_DARK, false)
         if (dark) {
             _darkAndLight.value = context.getString(R.string.dark)
         } else _darkAndLight.value = context.getString(R.string.light)
 
+        //orientation
+        val orient = context.getPrefs(AUTO_ROTATION, false)
+        if (orient) {
+            _orientation.value = context.getString(R.string.auto)
+        } else _orientation.value = context.getString(R.string.manual)
+
+    }
+
+
+    fun orientationDialog(context: Context) {
+        val builder = AlertDialog.Builder(context)
+        val binding = OrientationDialogBinding.inflate(LayoutInflater.from(context), null, false)
+        builder.setView(binding.root)
+        val dialog = builder.create()
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        val orient = context.getPrefs(AUTO_ROTATION, false)
+        val dark = context.getPrefs(THEME_DARK, false)
+
+        binding.apply {
+            if (orient) {
+                radioButton1.isChecked = true
+                radioButton2.isChecked = false
+                if (dark) {
+                    textviewManual.setTextColor(ContextCompat.getColor(context, R.color.white))
+                } else {
+                    textviewManual.setTextColor(ContextCompat.getColor(context, R.color.black_80))
+                }
+                textviewAuto.setTextColor(ContextCompat.getColor(context,
+                    R.color.dodger_blue_light_2))
+
+            } else {
+                radioButton1.isChecked = false
+                radioButton2.isChecked = true
+                if (dark) {
+                    textviewAuto.setTextColor(ContextCompat.getColor(context, R.color.white))
+                } else {
+                    textviewAuto.setTextColor(ContextCompat.getColor(context, R.color.black_80))
+                }
+                textviewManual.setTextColor(ContextCompat.getColor(context,
+                    R.color.dodger_blue_light_2))
+                _orientation.value = context.getString(R.string.manual)
+
+            }
+            viewCancel.setOnClickListener { dialog.dismiss() }
+            clRatio1.setOnClickListener {
+                context.putPrefs(AUTO_ROTATION, true)
+                radioButton1.isChecked = true
+                radioButton2.isChecked = false
+                textviewAuto.setTextColor(ContextCompat.getColor(context,
+                    R.color.dodger_blue_light_2))
+                if (dark) {
+                    textviewManual.setTextColor(ContextCompat.getColor(context, R.color.white))
+                } else {
+                    textviewManual.setTextColor(ContextCompat.getColor(context, R.color.black_80))
+                }
+                _orientation.value = context.getString(R.string.auto)
+                context.changeTheme()
+            }
+            clRatio2.setOnClickListener {
+                context.putPrefs(AUTO_ROTATION, false)
+                radioButton1.isChecked = false
+                radioButton2.isChecked = true
+                if (dark) {
+                    textviewAuto.setTextColor(ContextCompat.getColor(context, R.color.white))
+                } else {
+                    textviewAuto.setTextColor(ContextCompat.getColor(context, R.color.black_80))
+                }
+                textviewManual.setTextColor(ContextCompat.getColor(context,
+                    R.color.dodger_blue_light_2))
+                _orientation.value = context.getString(R.string.manual)
+                context.changeTheme()
+            }
+        }
+        dialog.show()
     }
 
     fun themeDialog(context: Context) {

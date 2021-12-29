@@ -33,7 +33,6 @@
 
     <application
         android:name=".utils.AppApplication"
-        tools:replace="android:supportsRtl"
         android:allowBackup="true"
         android:banner="@mipmap/ic_launcher"
         android:icon="@mipmap/ic_launcher"
@@ -41,9 +40,10 @@
         android:launchMode="singleTask"
         android:logo="@mipmap/ic_launcher"
         android:preserveLegacyExternalStorage="true"
-        android:supportsRtl="false"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:theme="@style/Theme.CastToTv">
+        android:supportsRtl="false"
+        android:theme="@style/Theme.CastToTv"
+        tools:replace="android:supportsRtl">
 
 
         <activity
@@ -122,6 +122,11 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
     </application>
 
 </manifest>

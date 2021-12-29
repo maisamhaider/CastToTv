@@ -34,7 +34,7 @@
                 android:id="@+id/imageview_draw"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:onClick="@{()->homeFragment.openCloseDrawer()}"
+                android:onClick="@{()->homeFragment.openDrawer()}"
                 android:src="@drawable/ic_drawer"
                 app:layout_constraintBottom_toTopOf="@+id/guideline15"
                 app:layout_constraintDimensionRatio="1:1"
@@ -102,10 +102,9 @@
                 <androidx.constraintlayout.widget.ConstraintLayout style="@style/wrap_center_start_end_margin_10">
 
                     <androidx.appcompat.widget.AppCompatImageView
-                        android:id="@+id/appCompatImageView32"
+                        android:id="@+id/imageview_wifi_state"
                         style="@style/w_w_h_0"
                         android:layout_marginStart="11dp"
-                        android:src="@drawable/ic_wifi"
                         app:layout_constraintBottom_toTopOf="@+id/guideline24"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/guideline23" />
@@ -116,10 +115,9 @@
                         android:layout_marginStart="@dimen/dp_8"
                         android:layout_marginEnd="11dp"
                         android:gravity="center"
-                        android:text="@string/wifi_connected"
                         app:layout_constraintBottom_toTopOf="@+id/guideline24"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/appCompatImageView32"
+                        app:layout_constraintStart_toEndOf="@+id/imageview_wifi_state"
                         app:layout_constraintTop_toTopOf="@+id/guideline23"
                         tools:text="@string/wifi_connected" />
 
@@ -146,7 +144,9 @@
                 app:layout_constraintBottom_toTopOf="@+id/guideline27"
                 app:layout_constraintEnd_toStartOf="@+id/guideline28"
                 app:layout_constraintStart_toStartOf="@+id/guideline16"
-                app:layout_constraintTop_toTopOf="@+id/guideline25">
+                app:layout_constraintTop_toTopOf="@+id/guideline25"
+                app:strokeColor="#3339A0FF"
+                app:strokeWidth="@dimen/dp_1">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     style="@style/w_m_h_m_ripple"
@@ -155,15 +155,14 @@
                     app:layout_constraintStart_toStartOf="@+id/guideline16">
 
                     <androidx.appcompat.widget.AppCompatImageView
-                        android:id="@+id/appCompatImageView33"
+                        android:id="@+id/imageview_screen_mirring"
                         style="@style/imageview_w0_h0_ratio11"
                         app:layout_constraintBottom_toTopOf="@+id/guideline31"
                         app:layout_constraintEnd_toStartOf="@+id/materialTextView20"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintHorizontal_chainStyle="packed"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/guideline32"
-                        app:srcCompat="@drawable/ic_screen_mirroring" />
+                        app:layout_constraintTop_toTopOf="@+id/guideline32" />
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/materialTextView20"
@@ -174,7 +173,7 @@
                         app:layout_constraintBottom_toTopOf="@+id/guideline30"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toEndOf="@+id/appCompatImageView33"
+                        app:layout_constraintStart_toEndOf="@+id/imageview_screen_mirring"
                         app:layout_constraintTop_toTopOf="@+id/guideline29" />
 
                     <androidx.constraintlayout.widget.Guideline
@@ -234,6 +233,7 @@
                         app:layout_constraintTop_toTopOf="@+id/guideline37">
 
                         <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imageview_images"
                             style="@style/imageview_w0_h0_ratio11"
                             app:layout_constraintBottom_toTopOf="@+id/guideline99"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -377,25 +377,28 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:gravity="center"
-                android:text="native ad"
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ad_container_big"
+                style="@style/card_view_w0_h0_r5"
                 app:layout_constraintBottom_toTopOf="@+id/guideline26"
                 app:layout_constraintEnd_toStartOf="@+id/guideline28"
                 app:layout_constraintStart_toStartOf="@+id/guideline16"
-                app:layout_constraintTop_toTopOf="@+id/guideline33" />
+                app:layout_constraintTop_toTopOf="@+id/guideline33">
 
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:gravity="center"
-                android:text="Native add"
+                <include layout="@layout/ad_unified" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/ad_container_small"
+                style="@style/card_view_w0_h0_r5"
                 app:layout_constraintBottom_toTopOf="@+id/guideline39"
                 app:layout_constraintEnd_toStartOf="@+id/guideline28"
                 app:layout_constraintStart_toStartOf="@+id/guideline16"
-                app:layout_constraintTop_toTopOf="@+id/guideline36" />
+                app:layout_constraintTop_toTopOf="@+id/guideline36">
+
+                <include layout="@layout/ad_unified_small" />
+            </com.google.android.material.card.MaterialCardView>
 
 
             <androidx.constraintlayout.widget.Guideline
@@ -529,21 +532,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.87" />
+                app:layout_constraintGuide_percent="0.885" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline36"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.885" />
+                app:layout_constraintGuide_percent="0.9" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline39"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.99" />
+                app:layout_constraintGuide_percent="0.98" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

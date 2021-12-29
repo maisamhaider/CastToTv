@@ -43,6 +43,9 @@
         <action
             android:id="@+id/action_homeFragment_to_helpCenterFragment"
             app:destination="@id/helpCenterFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_moreAppsFragment"
+            app:destination="@id/moreAppsFragment" />
 
     </fragment>
     <fragment
@@ -220,6 +223,9 @@
             app:destination="@id/homeFragment"
             app:popUpTo="@id/homeFragment"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_appSettingsFragment_to_supportedDevicesFragment"
+            app:destination="@id/supportedDevicesFragment" />
     </fragment>
     <fragment
         android:id="@+id/sliderImagesFoldersFragment"
@@ -274,6 +280,26 @@
             android:id="@+id/action_helpCenterFragment_to_homeFragment"
             app:destination="@id/homeFragment"
             app:popUpTo="@+id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/supportedDevicesFragment"
+        android:name="com.example.casttotv.ui.fragments.SupportedDevicesFragment"
+        android:label="SupportedDevicesFragment">
+        <action
+            android:id="@+id/action_supportedDevicesFragment_to_appSettingsFragment"
+            app:destination="@id/appSettingsFragment"
+            app:popUpTo="@id/appSettingsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreAppsFragment"
+        android:name="com.example.casttotv.ui.fragments.MoreAppsFragment"
+        android:label="MoreAppsFragment">
+        <action
+            android:id="@+id/action_moreAppsFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
             app:popUpToInclusive="true" />
     </fragment>
 

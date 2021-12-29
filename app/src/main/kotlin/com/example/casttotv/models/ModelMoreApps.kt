@@ -1,3 +1,3 @@
 package com.example.casttotv.models
 
-class ModelMoreApps(name: String?, app_package: String?, body: String?)
+data class ModelMoreApps(val name: String?,val app_package: String?,val body: String?)

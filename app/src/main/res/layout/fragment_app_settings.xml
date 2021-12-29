@@ -69,15 +69,13 @@
             app:layout_constraintTop_toTopOf="@+id/guideline112">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/appCompatImageView34"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/imageview_setting_hq"
+                style="@style/w_w_h_w"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_hq" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/materialTextView22"
@@ -152,14 +150,14 @@
             app:layout_constraintTop_toTopOf="@+id/guideline113">
 
             <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageview_setting_auto_min"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_auto_manimize" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.textview.MaterialTextView
                 style="@style/header_text_3"
@@ -241,14 +239,13 @@
             app:layout_constraintTop_toTopOf="@+id/guideline119">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/imageview_setting_auto_stop"
+                style="@style/w_w_h_w"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_auto_stop" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/materialTextView24"
@@ -324,6 +321,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_orientation_mode"
             style="@style/w_0_h_0"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="@{()->thisFrag.orientationDialog()}"
             app:layout_constraintBottom_toTopOf="@+id/guideline137"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -350,8 +349,9 @@
                 app:layout_constraintTop_toTopOf="@+id/guideline141" />
 
             <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textview_orientation_mode"
                 style="@style/subheading_w0_h0"
-                android:text="@string/casting_orientation_body_text"
+                android:text="@{mainVM.orientation}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline144"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline140"
@@ -412,8 +412,7 @@
             app:layout_constraintTop_toTopOf="@+id/guideline137">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/w_w_h_w"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -494,14 +493,13 @@
             app:layout_constraintTop_toTopOf="@+id/guideline178">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/imageview_color_theme"
+                style="@style/w_w_h_w"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_color_theme" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/materialTextView32"
@@ -570,6 +568,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_supporting_devices"
             style="@style/w_0_h_0"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="@{()->thisFrag.goToSupportedDevices()}"
             app:layout_constraintBottom_toTopOf="@+id/guideline160"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -577,14 +577,13 @@
             app:layout_constraintTop_toTopOf="@+id/guideline116">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/imageview_supported_devices"
+                style="@style/w_w_h_w"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/supporting_devices" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/materialTextView36"
@@ -660,14 +659,13 @@
             app:layout_constraintTop_toTopOf="@+id/guideline160">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/imageview_pp"
+                style="@style/w_w_h_w"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_shield" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/materialTextView34"

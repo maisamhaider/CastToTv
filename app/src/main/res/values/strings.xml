@@ -121,6 +121,7 @@
     <string name="screen_mirroring">Screen Mirroring</string>
     <string name="home_screen_text">Make sure your phone and TV are connected to the same Wi-Fi network.</string>
     <string name="wifi_connected">Wi-Fi Connected</string>
+    <string name="wifi_disconnected">Wi-Fi Disconnected</string>
     <string name="general">General</string>
     <string name="communicate">Communicate</string>
     <string name="send_feedback">Send Feedback</string>
@@ -193,6 +194,10 @@
     <string name="q_answer_1_1">Restart the smart phone’s Wi-Fi and see if the connection is successful.</string>
     <string name="q_answer_1_2">Turn off the TV and remove its power cord from the socket as well. Wait 1 minute and restart the TV.</string>
     <string name="q_answer_1_3">Shorten the distance between your phone and the TV. Take it up close.</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">INSTALL</string>
+    <string name="manual">Manual</string>
 
 
 </resources>

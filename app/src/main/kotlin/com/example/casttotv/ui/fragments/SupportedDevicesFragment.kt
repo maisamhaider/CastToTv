@@ -7,13 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.casttotv.R
-import com.example.casttotv.adapter.MoreAppsAdapter
-import com.example.casttotv.databinding.FragmentMoreAppsBinding
-import com.example.casttotv.models.ModelMoreApps
+import com.example.casttotv.adapter.SupportedDevicesAdapter
+import com.example.casttotv.databinding.FragmentSupportedDevicesBinding
 
-
-class MoreAppsFragment : Fragment() {
-    private lateinit var _binding: FragmentMoreAppsBinding
+class SupportedDevicesFragment : Fragment() {
+    private lateinit var _binding: FragmentSupportedDevicesBinding
     private val binding get() = _binding
 
     override fun onCreateView(
@@ -21,24 +19,22 @@ class MoreAppsFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View {
         // Inflate the layout for this fragment
-        _binding = FragmentMoreAppsBinding.inflate(layoutInflater, container, false)
+        _binding = FragmentSupportedDevicesBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val adapter = MoreAppsAdapter(requireContext())
-        val list = listOf(ModelMoreApps("", "", ""),
-            ModelMoreApps("", "", ""),
-            ModelMoreApps("", "", ""))
+        val adapter = SupportedDevicesAdapter()
+        val list = listOf("1", "1", "1", "1", "1", "1")
         binding.apply {
-            thisFrag = this@MoreAppsFragment
+            thisFrag = this@SupportedDevicesFragment
             recyclerView.adapter = adapter
             adapter.submitList(list)
         }
     }
 
     fun back() {
-        findNavController().navigate(R.id.action_moreAppsFragment_to_homeFragment)
+        findNavController().navigate(R.id.action_supportedDevicesFragment_to_appSettingsFragment)
     }
 }

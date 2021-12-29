@@ -3,11 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+
     <data>
 
         <variable
             name="thisFrag"
-            type="com.example.casttotv.ui.fragments.MoreAppsFragment" />
+            type="com.example.casttotv.ui.fragments.SupportedDevicesFragment" />
 
     </data>
 
@@ -21,37 +22,42 @@
             android:id="@+id/imageview_back"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:onClick="@{()->thisFrag.back()}"
             android:scaleType="centerInside"
             app:layout_constraintBottom_toTopOf="@+id/guideline47"
             app:layout_constraintDimensionRatio="1:1"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline105"
             app:layout_constraintTop_toTopOf="@+id/guideline40"
             app:srcCompat="@drawable/ic_arrow_back" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/materialTextView27"
+            android:id="@+id/materialTextView39"
             style="@style/header_text_3"
             android:layout_marginStart="@dimen/dp_4"
-            android:text="@string/more_app"
+            android:text="@string/supporting_devices"
             app:layout_constraintBottom_toTopOf="@+id/guideline107"
-            app:layout_constraintEnd_toStartOf="@+id/guideline146"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageview_back"
             app:layout_constraintTop_toTopOf="@+id/guideline106" />
-
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             style="@style/recycler_view"
-            android:orientation="vertical"
+            android:layout_margin="@dimen/dp_6"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline146"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="@+id/guideline139"
-            app:layout_constraintTop_toTopOf="@+id/guideline136"
-            app:spanCount="3"
-            tools:itemCount="18"
-            tools:listitem="@layout/item_more_apps" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline47"
+            tools:listitem="@layout/supported_devices_item" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline105"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.01" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline40"
@@ -80,27 +86,6 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.065" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline136"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.09" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline139"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.04" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline146"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.96" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

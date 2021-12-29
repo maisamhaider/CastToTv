@@ -36,4 +36,8 @@
     <dimen name="layout_width_144dp">200dp</dimen>
     <dimen name="dp_5">5dp</dimen>
     <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_1.5">1.5dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
 </resources>
