@@ -1,0 +1,209 @@
+<com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/w_m_h_w"
+    android:background="?attr/colorPrimary">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/w_0_h_0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="w,60:60"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <com.google.android.gms.ads.nativead.MediaView
+            android:id="@+id/ad_media"
+            style="@style/w_0_h_0"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toTopOf="@+id/guideline818"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ad_app_icon"
+            style="@style/imageview_w0_h0_ratio11"
+            android:layout_gravity="center|start"
+            android:adjustViewBounds="true"
+            android:background="@drawable/ic_launcher_background"
+            android:paddingEnd="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintBottom_toTopOf="@+id/guideline832"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@+id/guideline268"
+            app:layout_constraintTop_toTopOf="@+id/guideline830" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/side_nav_bar"
+            android:gravity="center"
+            android:text="AD"
+            android:textColor="@color/white"
+            app:autoSizeMaxTextSize="18sp"
+            app:autoSizeMinTextSize="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline831"
+            app:layout_constraintStart_toEndOf="@+id/ad_app_icon"
+            app:layout_constraintTop_toTopOf="@+id/guideline830"
+            app:layout_constraintVertical_bias="0.44" />
+
+        <TextView
+            android:id="@+id/ad_headline"
+            style="@style/header_text_3"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="2dp"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:text="Honeycam Chat - Live Video"
+            app:autoSizeMaxTextSize="18sp"
+            app:autoSizeMinTextSize="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline831"
+            app:layout_constraintEnd_toStartOf="@+id/guideline838"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="@+id/guideline830" />
+
+
+        <TextView
+            android:id="@+id/ad_body"
+            style="@style/subheading_w0_h0"
+            android:layout_marginEnd="3dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/segoe_ui_normal"
+            android:gravity="center|start"
+            android:maxLines="1"
+            android:paddingStart="2dp"
+            android:text="Free Live Chat Apps Join live group via Ho..."
+            app:autoSizeMaxTextSize="14sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline833"
+            app:layout_constraintEnd_toStartOf="@+id/guideline838"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="@+id/guideline834" />
+
+
+        <TextView
+            android:id="@+id/ad_call_to_action"
+            style="@style/w_0_h_0"
+            android:background="@drawable/ripple_grediant_flat"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dp_14"
+            android:paddingTop="2dp"
+            android:paddingEnd="@dimen/dp_14"
+            android:paddingBottom="2dp"
+            android:text="@string/install"
+            android:textColor="@color/white"
+            app:autoSizeMaxTextSize="18sp"
+            app:autoSizeMinTextSize="2sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline836"
+            app:layout_constraintEnd_toStartOf="@+id/guideline269"
+            app:layout_constraintStart_toStartOf="@+id/guideline838"
+            app:layout_constraintTop_toTopOf="@+id/guideline835" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline838"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline837"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.08" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline818"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline830"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline831"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.82" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline832"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline834"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.845" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline833"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.924" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline835"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.798" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline836"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.905" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline268"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.021" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline269"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.979" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.gms.ads.nativead.NativeAdView>

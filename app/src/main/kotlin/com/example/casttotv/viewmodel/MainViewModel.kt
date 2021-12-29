@@ -163,6 +163,7 @@ class MainViewModel : ViewModel() {
                 textviewLight.setTextColor(ContextCompat.getColor(context, R.color.white))
                 _darkAndLight.value = context.getString(R.string.dark)
                 context.changeTheme()
+                dialog.dismiss()
             }
             clLight.setOnClickListener {
                 context.putPrefs(THEME_DARK, false)
@@ -173,6 +174,7 @@ class MainViewModel : ViewModel() {
                     R.color.dodger_blue_light_2))
                 _darkAndLight.value = context.getString(R.string.light)
                 context.changeTheme()
+                dialog.dismiss()
             }
         }
         dialog.show()

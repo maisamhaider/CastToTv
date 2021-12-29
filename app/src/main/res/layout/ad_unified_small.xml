@@ -1,0 +1,196 @@
+<com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/w_m_h_w">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/w_0_h_0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="w,60:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView4"
+                style="@style/imageview_w0_h0_ratio11"
+                app:cardCornerRadius="@dimen/dp_5"
+                app:layout_constraintBottom_toTopOf="@+id/guideline133"
+                app:layout_constraintStart_toStartOf="@+id/guideline266"
+                app:layout_constraintTop_toTopOf="@+id/guideline132">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ad_app_icon"
+                    style="@style/w_m_h_m"
+                    android:layout_gravity="center|start"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/ic_launcher_background"
+                    android:paddingEnd="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    app:srcCompat="@drawable/ic_launcher_foreground" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:layout_marginStart="@dimen/dp_10"
+                android:background="@drawable/side_nav_bar"
+                android:gravity="center"
+                android:text="AD"
+                android:textColor="@color/white"
+                app:autoSizeMaxTextSize="18sp"
+                app:autoSizeMinTextSize="2sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toTopOf="@+id/guideline134"
+                app:layout_constraintStart_toEndOf="@+id/ad_headline"
+                app:layout_constraintTop_toTopOf="@+id/ad_headline" />
+
+            <TextView
+                android:id="@+id/ad_headline"
+                style="@style/w_w_h_w"
+                android:layout_marginStart="@dimen/dp_10"
+                android:fontFamily="@font/roboto"
+                android:maxWidth="200dp"
+                android:text="TikTok"
+                android:textColor="?attr/colorOnPrimary"
+                app:autoSizeMaxTextSize="24sp"
+                app:autoSizeMinTextSize="2sp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline134"
+                app:layout_constraintStart_toEndOf="@+id/materialCardView4"
+                app:layout_constraintTop_toTopOf="@+id/guideline132"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+
+                android:id="@+id/ad_body"
+                style="@style/subheading_w0_h0"
+                android:ellipsize="end"
+                android:fontFamily="@font/segoe_ui_normal"
+                android:gravity="center|start"
+                android:maxLines="1"
+                android:paddingStart="2dp"
+                android:text="TikTok is Destination for Mobile Videos."
+                app:autoSizeMaxTextSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline133"
+                app:layout_constraintEnd_toStartOf="@+id/guideline271"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/guideline270"
+                app:layout_constraintTop_toTopOf="@+id/guideline126" />
+
+
+            <TextView
+                android:id="@+id/ad_call_to_action"
+                style="@style/w_0_h_0"
+                android:background="@drawable/ripple_grediant_flat_orange"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingStart="@dimen/dp_10"
+                android:paddingTop="2dp"
+                android:paddingEnd="@dimen/dp_10"
+                android:paddingBottom="2dp"
+                android:text="@string/install"
+                android:textColor="@color/white"
+                app:autoSizeMaxTextSize="18sp"
+                app:autoSizeMinTextSize="2sp"
+                app:autoSizeTextType="uniform"
+                app:layout_constraintBottom_toTopOf="@+id/guideline110"
+                app:layout_constraintEnd_toStartOf="@+id/guideline267"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline838"
+                app:layout_constraintTop_toTopOf="@+id/guideline127"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline838"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.78" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline126"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.55" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline127"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.27" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline110"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.73" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline132"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline133"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.9" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline134"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline266"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.03" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline270"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.175" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline271"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.744" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline267"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.97" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.gms.ads.nativead.NativeAdView>

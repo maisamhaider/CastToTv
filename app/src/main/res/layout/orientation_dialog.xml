@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/card_view_0_0_radius_16"
+        android:layout_margin="@dimen/dp_8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,60:36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout style="@style/w_m_h_m">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView37"
+                style="@style/header_text_ww_h0"
+                android:text="@string/orientation_mode"
+                app:layout_constraintBottom_toTopOf="@+id/guideline211"
+                app:layout_constraintStart_toStartOf="@+id/guideline208"
+                app:layout_constraintTop_toTopOf="@+id/guideline202" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_ratio_1"
+                style="@style/w_0_h_0"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintBottom_toTopOf="@+id/guideline212"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline208"
+                app:layout_constraintTop_toTopOf="@+id/guideline209">
+
+                <RadioButton
+                    android:id="@+id/radioButton_1"
+                    style="@style/imageview_w0_h0_ratio11"
+                    android:background="@drawable/check_box_selector_radio_shape"
+                    android:button="@null"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textview_auto"
+                    style="@style/subheading_w0_h0"
+                    android:text="@string/auto"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline219"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/guideline220"
+                    app:layout_constraintTop_toTopOf="@+id/guideline218" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline218"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.12" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline219"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.88" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline220"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.134" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_ratio_2"
+                style="@style/w_0_h_0"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintBottom_toTopOf="@+id/guideline210"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline208"
+                app:layout_constraintTop_toTopOf="@+id/guideline213">
+
+                <RadioButton
+                    android:id="@+id/radioButton_2"
+                    style="@style/imageview_w0_h0_ratio11"
+                    android:background="@drawable/check_box_selector_radio_shape"
+                    android:button="@null"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/textview_manual"
+                    style="@style/subheading_w0_h0"
+                    android:text="@string/manual"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline216"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@+id/guideline217"
+                    app:layout_constraintTop_toTopOf="@+id/guideline215" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline215"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.12" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline216"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.88" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline217"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.134" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/view_cancel"
+                style="@style/w_0_h_0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textview_cancel"
+                app:layout_constraintStart_toStartOf="@+id/textview_cancel"
+                app:layout_constraintTop_toTopOf="@+id/guideline210" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textview_cancel"
+                style="@style/dialog_red_text"
+                android:layout_marginEnd="@dimen/dp_22"
+                android:text="@string/cancel"
+                app:layout_constraintBottom_toTopOf="@+id/guideline222"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline221" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline202"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.11" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline211"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.22" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline209"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.35" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline212"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.464" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline213"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.61" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline210"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.73" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline221"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.82" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.9" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline208"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.06" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline223"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.96" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

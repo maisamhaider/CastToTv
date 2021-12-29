@@ -84,9 +84,13 @@ class LanguagesAdapter(
 
     private fun click(lang: Lang) {
         context.putPrefs(LOCALE_LANGUAGE, lang.code)
-        holder.bind(getItem(holder.absoluteAdapterPosition), context)
-        notifyDataSetChanged()
-        ContextWrapper(context.setAppLocale(context.getPrefs(LOCALE_LANGUAGE, "en")))
+//        if (holder.absoluteAdapterPosition != -1) {
+            holder.bind(getItem(holder.absoluteAdapterPosition), context)
+            notifyDataSetChanged()
+            ContextWrapper(context.setAppLocale(context.getPrefs(LOCALE_LANGUAGE, "en")))
+//        }
+
+
     }
 
 }
