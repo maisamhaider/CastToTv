@@ -36,7 +36,8 @@ const val SLIDE = "SLIDE"
 var playingFileModel = FileModel("", 0, "")
 var playingFileName = ""
 var playingFileCurrentPos = 0
-const val LOCATION_PERMISSION_REQUEST_CODE = 1000
+
+ const val LOCATION_PERMISSION_REQUEST_CODE = 1000
 const val LATITUDE = "LATITUDE"
 const val LONGITUDE = "LONGITUDE"
 

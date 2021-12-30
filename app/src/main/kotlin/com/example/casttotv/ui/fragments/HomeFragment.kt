@@ -14,6 +14,7 @@ import androidx.core.content.ContextCompat
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.casttotv.BuildConfig
@@ -25,6 +26,7 @@ import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.THEME_DARK
 import com.example.casttotv.viewmodel.MainViewModel
+import com.example.casttotv.viewmodel.SharedViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -39,6 +41,7 @@ class HomeFragment : Fragment(), MyCallBack {
     private val navController get() = _navController!!
 
     val viewModel: MainViewModel by activityViewModels()
+
     val version = BuildConfig.VERSION_NAME
     private var connection: ConnectivityManager? = null
     override fun onCreateView(

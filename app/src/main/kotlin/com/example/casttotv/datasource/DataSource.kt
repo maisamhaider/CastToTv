@@ -26,52 +26,33 @@ class DataSource {
             ), R.color.cinnabar),
             QuestionAnswer(context.getString(R.string.question_2),
                 listOf(
-                    context.getString(R.string.q_answer_1_1),
-                    context.getString(R.string.q_answer_1_2),
-                    context.getString(R.string.q_answer_1_3)
+                    context.getString(R.string.q_answer_2_1),
+                    context.getString(R.string.q_answer_2_2)
                 ), R.color.pumpkin),
             QuestionAnswer(context.getString(R.string.question_3),
                 listOf(
-                    context.getString(R.string.q_answer_1_1),
-                    context.getString(R.string.q_answer_1_2),
-                    context.getString(R.string.q_answer_1_3)
+                    context.getString(R.string.q_answer_3_1),
+                    context.getString(R.string.q_answer_3_2)
                 ), R.color.medium_purple),
             QuestionAnswer(context.getString(R.string.question_4),
                 listOf(
-                    context.getString(R.string.q_answer_1_1),
-                    context.getString(R.string.q_answer_1_2),
-                    context.getString(R.string.q_answer_1_3)
+                    context.getString(R.string.q_answer_4_1)
                 ), R.color.bright_sun),
             QuestionAnswer(context.getString(R.string.question_5),
                 listOf(
-                    context.getString(R.string.q_answer_1_1),
-                    context.getString(R.string.q_answer_1_2),
-                    context.getString(R.string.q_answer_1_3)
+                    context.getString(R.string.q_answer_5_1),
+                    context.getString(R.string.q_answer_5_2)
                 ), R.color.amethyst),
             QuestionAnswer(context.getString(R.string.question_6),
                 listOf(
-                    context.getString(R.string.q_answer_1_1),
-                    context.getString(R.string.q_answer_1_2),
-                    context.getString(R.string.q_answer_1_3)
+                    context.getString(R.string.q_answer_6_1),
+                    context.getString(R.string.q_answer_6_2)
                 ), R.color.mountain_meadow),
             QuestionAnswer(context.getString(R.string.question_7),
                 listOf(
-                    context.getString(R.string.q_answer_1_1),
-                    context.getString(R.string.q_answer_1_2),
-                    context.getString(R.string.q_answer_1_3)
-                ), R.color.mona_lisa),
-            QuestionAnswer(context.getString(R.string.question_8),
-                listOf(
-                    context.getString(R.string.q_answer_1_1),
-                    context.getString(R.string.q_answer_1_2),
-                    context.getString(R.string.q_answer_1_3)
-                ), R.color.turquoise),
-            QuestionAnswer(context.getString(R.string.question_9),
-                listOf(
-                    context.getString(R.string.q_answer_1_1),
-                    context.getString(R.string.q_answer_1_2),
-                    context.getString(R.string.q_answer_1_3)
-                ), R.color.malachite))
+                    context.getString(R.string.q_answer_7_1),
+                    context.getString(R.string.q_answer_7_2)
+                ), R.color.mona_lisa))
     }
 
 }

@@ -27,7 +27,10 @@ class VideosFragment : Fragment() {
 
     private var _binding: FragmentVideosBinding? = null
     private val binding get() = _binding!!
-    private val sharedViewModel: SharedViewModel by activityViewModels()
+    private val sharedViewModel: SharedViewModel by activityViewModels {
+        SharedViewModel.SharedViewModelFactory(requireContext())
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
@@ -57,13 +60,13 @@ class VideosFragment : Fragment() {
                 }
             }
         }
-
     }
+
     fun enablingWiFiDisplay() {
         requireContext().enablingWiFiDisplay()
     }
-    fun back()
-    {
+
+    fun back() {
         findNavController().navigate(R.id.action_videosFragment_to_videosFoldersFragment)
     }
 
@@ -71,5 +74,13 @@ class VideosFragment : Fragment() {
         playingFileModel = fileModel
         playingFileName = fileModel.fileName
         findNavController().navigate(R.id.action_videosFragment_to_customVideoPlayerFragment)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        sharedViewModel.orientation(requireActivity(), true)
+        sharedViewModel.playingVideoCurrentPosBeforeDestroy(0)
+        sharedViewModel.setPlayingVideoCurrentPos(0)
+        sharedViewModel.setTimeLeftInMillis(0)
     }
 }

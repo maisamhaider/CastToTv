@@ -47,27 +47,35 @@
 
 
         <activity
+            android:screenOrientation="portrait"
             android:name=".ui.activities.browser.BackupActivity"
             android:exported="false" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".ui.activities.browser.BookmarkFilterActivity"
             android:exported="false" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".ui.activities.browser.BehaviorAndUIActivity"
             android:exported="false" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".ui.activities.browser.WhitelistActivity"
             android:exported="false" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".ui.activities.browser.StartControlActivity"
             android:exported="false" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".ui.activities.browser.DataControlActivity"
             android:exported="false" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".ui.activities.browser.BrowserSettingsActivity"
             android:exported="false" />
         <activity
+            android:screenOrientation="portrait"
             android:name=".ui.activities.WelcomeActivity"
             android:exported="true">
             <intent-filter>
@@ -77,6 +85,7 @@
             </intent-filter>
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name=".vpn.VpnClient"
             android:exported="true" />
         <activity
@@ -92,6 +101,7 @@
             </intent-filter>
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name="de.blinkt.openvpn.DisconnectVPNActivity"
             android:excludeFromRecents="true"
             android:noHistory="true"
@@ -102,6 +112,7 @@
             android:exported="false" />
 
         <service
+            android:screenOrientation="portrait"
             android:name="de.blinkt.openvpn.core.OpenVPNService"
             android:exported="false"
             android:permission="android.permission.BIND_VPN_SERVICE">

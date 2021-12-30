@@ -47,6 +47,11 @@ class AppSettingsFragment : Fragment() {
     fun orientationDialog() {
         viewModel.orientationDialog(requireContext())
     }
+    fun changeAutoStop() {
+        viewModel.changeAutoStop(requireContext())
+    }fun changeAutoMinimize() {
+        viewModel.changeAutoMinimize(requireContext())
+    }
 
     private fun setIcons() {
         val dark = requireContext().getPrefs(THEME_DARK, false)

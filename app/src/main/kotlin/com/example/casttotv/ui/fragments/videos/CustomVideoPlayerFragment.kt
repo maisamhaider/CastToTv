@@ -1,14 +1,13 @@
 package com.example.casttotv.ui.fragments.videos
 
 import android.annotation.SuppressLint
-import android.content.pm.ActivityInfo
-import android.content.res.Configuration.ORIENTATION_LANDSCAPE
 import android.media.PlaybackParams
 import android.os.Build
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.*
 import android.widget.SeekBar
+import android.widget.VideoView
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -16,6 +15,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.casttotv.R
 import com.example.casttotv.databinding.FragmentCustomVideoPlayerBinding
 import com.example.casttotv.models.FileModel
+import com.example.casttotv.utils.*
 import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.viewmodel.SharedViewModel
@@ -24,20 +24,22 @@ import kotlinx.coroutines.flow.collect
 import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.math.roundToInt
-import android.media.audiofx.Equalizer
-import com.example.casttotv.utils.*
 
 
 class CustomVideoPlayerFragment : Fragment() {
 
     private lateinit var binding: FragmentCustomVideoPlayerBinding
 
-    private val sharedViewModel: SharedViewModel by activityViewModels()
+    private val sharedViewModel: SharedViewModel by activityViewModels {
+        SharedViewModel.SharedViewModelFactory(requireContext())
+    }
 
     private val videosModelList: MutableList<FileModel> = ArrayList()
     private var repeat = false
     private var mCountDownTimer: CountDownTimer? = null
 
+    private var playingVideoCurrentPos: Int = 0
+    private var playingVideoCurrentPosBeforeDestroy: Int = 0
     private var mStartTimeInMillis: Long = 0
     private var mTimeLeftInMillis: Long = 0
     private var mTimeNextInMillis: Double = 0.0
@@ -47,6 +49,7 @@ class CustomVideoPlayerFragment : Fragment() {
     private var cropState = 0
     var firstHeight = 0
     var firstWeight = 0
+    lateinit var videoPlayer: VideoView
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -62,6 +65,7 @@ class CustomVideoPlayerFragment : Fragment() {
             thisFragment = this@CustomVideoPlayerFragment
             viewModel = sharedViewModel
             lifecycleOwner = viewLifecycleOwner
+            videoPlayer = videoView
 
         }
 
@@ -76,7 +80,6 @@ class CustomVideoPlayerFragment : Fragment() {
                 CoroutineScope(Dispatchers.Main).launch {
                     if (!it.isNullOrEmpty()) {
                         videosModelList.clear()
-
                         videosModelList.addAll(it)
                     } else {
                         requireContext().toastLong("videos not found.")
@@ -84,35 +87,45 @@ class CustomVideoPlayerFragment : Fragment() {
                 }
             }
         }
+        sharedViewModel.mTimeLeftInMillis.observe(viewLifecycleOwner, {
+            mTimeLeftInMillis = it
+        })
+        sharedViewModel.playingVideoCurrentPos.observe(viewLifecycleOwner, {
+            playingVideoCurrentPos = it
+        })
+        sharedViewModel.playingVideoCurrentPosBeforeDestroy.observe(viewLifecycleOwner, {
+            playingVideoCurrentPosBeforeDestroy = it
+        })
 
         sharedViewModel.speed.observe(viewLifecycleOwner, {
             videoSpeed = it
-            playingFileCurrentPos = binding.videoView.currentPosition
-            binding.videoView.setVideoPath(playingFileModel.filePath)
-            binding.videoView.setOnPreparedListener { mp ->
+            sharedViewModel.playingVideoCurrentPosBeforeDestroy(videoPlayer.currentPosition)
+            sharedViewModel.setPlayingVideoCurrentPos(videoPlayer.currentPosition)
+//            videoPlayer.setVideoPath(playingFileModel.filePath)
+//            videoPlayer.pause()
+            videoPlayer.setOnPreparedListener { mp ->
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     mp.playbackParams = PlaybackParams().setSpeed(videoSpeed / 100f)
                 }
             }
-            playVideo()
-
+//            playVideo()
+            playVideo(playingFileModel)
         })
     }
 
 
     private fun initFun() {
         binding.textViewFileName.text = playingFileName
-        playVideo(playingFileModel)
 
 
-        binding.videoView.setOnCompletionListener {
+        videoPlayer.setOnCompletionListener {
             if (repeat) {
-                playingFileCurrentPos = 0
+                sharedViewModel.setPlayingVideoCurrentPos(0)
                 playVideo(playingFileModel)
             } else {
                 binding.imageViewPlayPause.setImageResource(R.drawable.ic_play_circle)
                 binding.imageviewPlayPauseMain.setImageResource(R.drawable.ic_play_circle)
-                playingFileCurrentPos = 0
+                sharedViewModel.setPlayingVideoCurrentPos(0)
             }
 
         }
@@ -140,7 +153,7 @@ class CustomVideoPlayerFragment : Fragment() {
         val currentProg = binding.seekbar.progress
         val currentMax = binding.seekbar.max
         if (currentProg < currentMax - 5) {
-            binding.videoView.seekTo(((currentProg.times(1000)) + 5000))
+            videoPlayer.seekTo(((currentProg.times(1000)) + 5000))
             pauseTimer()
             startTimer()
         }
@@ -149,7 +162,7 @@ class CustomVideoPlayerFragment : Fragment() {
     fun replay() {
         val currentProg = binding.seekbar.progress
         if (currentProg > 5) {
-            binding.videoView.seekTo(((currentProg.times(1000)) - 5000))
+            videoPlayer.seekTo(((currentProg.times(1000)) - 5000))
             pauseTimer()
             startTimer()
         }
@@ -159,11 +172,11 @@ class CustomVideoPlayerFragment : Fragment() {
     fun resize() {
         // Adjust the size of the video
         // so it fits on the screen
-        val videoProportion = getVideoProportion()
+//        val videoProportion = getVideoProportion()
         val screenWidth = resources.displayMetrics.widthPixels
         val screenHeight = resources.displayMetrics.heightPixels
 
-        val screenProportion = screenHeight.toFloat() / screenWidth.toFloat()
+//        val screenProportion = screenHeight.toFloat() / screenWidth.toFloat()
         val lp: ViewGroup.LayoutParams = binding.llcVideoView.layoutParams
 
         when (cropState) {
@@ -216,8 +229,7 @@ class CustomVideoPlayerFragment : Fragment() {
     private fun startTimer() {
         mCountDownTimer = object : CountDownTimer(mTimeLeftInMillis, 100) {
             override fun onTick(millisUntilFinished: Long) {
-                val mCurrentPosition: Int = binding.videoView.currentPosition / 1000
-                binding.seekbar.progress = mCurrentPosition
+                binding.seekbar.progress = videoPlayer.currentPosition / 1000
             }
 
             override fun onFinish() {
@@ -237,7 +249,7 @@ class CustomVideoPlayerFragment : Fragment() {
 
 
     private fun resetTimer() {
-        mTimeLeftInMillis = mStartTimeInMillis
+        sharedViewModel.setTimeLeftInMillis(mStartTimeInMillis)
         mTimeNextInMillis = 0.0
         updateCountDownText()
     }
@@ -271,14 +283,7 @@ class CustomVideoPlayerFragment : Fragment() {
 
     @SuppressLint("SourceLockedOrientationActivity")
     fun orientation() {
-
-        val orientation: Int = resources.configuration.orientation
-        if (orientation == ORIENTATION_LANDSCAPE) {
-            requireActivity().requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
-        } else {
-            requireActivity().requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
-        }
-
+        sharedViewModel.orientation(requireActivity())
     }
 
     fun repeat() {
@@ -303,7 +308,7 @@ class CustomVideoPlayerFragment : Fragment() {
         if (plus) {
             if (videoSpeed < 400) {
                 videoSpeed += 10
-                binding.videoView.start()
+                videoPlayer.pause()
                 sharedViewModel.adjustPlayerSpeed(videoSpeed)
 
             } else {
@@ -312,9 +317,8 @@ class CustomVideoPlayerFragment : Fragment() {
         } else {
             if (videoSpeed > 10) {
                 videoSpeed -= 10
-                binding.videoView.start()
+                videoPlayer.pause()
                 sharedViewModel.adjustPlayerSpeed(videoSpeed)
-
             } else {
                 requireContext().toastLong("min speed is 0.25x")
             }
@@ -327,11 +331,11 @@ class CustomVideoPlayerFragment : Fragment() {
         binding.seekbar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(p0: SeekBar?, prog: Int, userSeek: Boolean) {
                 if (userSeek) {
-                    binding.videoView.seekTo(prog.times(1000))
+                    videoPlayer.seekTo(prog.times(1000))
                 } else {
                     val dur = playingFileModel.duration
-                    mTimeLeftInMillis = dur - binding.videoView.currentPosition
-                    mTimeNextInMillis = (binding.videoView.currentPosition / 1000).toDouble()
+                    sharedViewModel.setTimeLeftInMillis(dur - videoPlayer.currentPosition)
+                    mTimeNextInMillis = (videoPlayer.currentPosition / 1000).toDouble()
                     updateCountDownText()
                 }
 
@@ -341,7 +345,7 @@ class CustomVideoPlayerFragment : Fragment() {
             }
 
             override fun onStopTrackingTouch(p0: SeekBar?) {
-                binding.videoView.seekTo(p0!!.progress.times(1000))
+                videoPlayer.seekTo(p0!!.progress.times(1000))
 
             }
 
@@ -352,15 +356,15 @@ class CustomVideoPlayerFragment : Fragment() {
     fun playPauseVideo() {
         binding.clSpeed.visibility = View.GONE
         if (!locked) {
-            if (binding.videoView.isPlaying) {
-                binding.videoView.pause()
+            if (videoPlayer.isPlaying) {
+                videoPlayer.pause()
                 binding.imageViewPlayPause.setImageResource(R.drawable.ic_play_circle)
                 binding.imageviewPlayPauseMain.setImageResource(R.drawable.ic_play_circle)
                 binding.imageviewPlayPauseMain.visibility = View.VISIBLE
                 pauseTimer()
             } else {
                 binding.imageviewPlayPauseMain.visibility = View.GONE
-                binding.videoView.start()
+                videoPlayer.start()
                 restartTimer()
                 binding.imageViewPlayPause.setImageResource(R.drawable.ic_pause_circle)
             }
@@ -371,12 +375,13 @@ class CustomVideoPlayerFragment : Fragment() {
 
     private fun pauseVideo() {
         pauseTimer()
-        if (binding.videoView.isPlaying) {
+        if (videoPlayer.isPlaying) {
             binding.imageviewPlayPauseMain.visibility = View.VISIBLE
-            binding.videoView.pause()
+            videoPlayer.pause()
             binding.imageViewPlayPause.setImageResource(R.drawable.ic_play_circle)
             binding.imageviewPlayPauseMain.setImageResource(R.drawable.ic_play_circle)
-            playingFileCurrentPos = binding.videoView.currentPosition
+            sharedViewModel.setPlayingVideoCurrentPos(videoPlayer.currentPosition)
+            sharedViewModel.playingVideoCurrentPosBeforeDestroy(videoPlayer.currentPosition)
         }
     }
 
@@ -405,17 +410,10 @@ class CustomVideoPlayerFragment : Fragment() {
         playingFileModel = model
         binding.imageviewPlayPauseMain.visibility = View.GONE
         binding.imageViewPlayPause.setImageResource(R.drawable.ic_pause_circle)
-        binding.videoView.setVideoPath(model.filePath)
-        binding.videoView.start()
-        val eq = Equalizer(0, binding.videoView.audioSessionId)
-
-    }
-
-    private fun playVideo() {
-        restartTimer()
-        binding.imageviewPlayPauseMain.visibility = View.GONE
-        binding.imageViewPlayPause.setImageResource(R.drawable.ic_pause_circle)
-        binding.videoView.seekTo(playingFileCurrentPos)
+        videoPlayer.setVideoPath(model.filePath)
+        videoPlayer.start()
+        videoPlayer.seekTo(playingVideoCurrentPosBeforeDestroy)
+//        val eq = Equalizer(0, videoPlayer.audioSessionId)
     }
 
 
@@ -438,7 +436,7 @@ class CustomVideoPlayerFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        playVideo()
+        playVideo(playingFileModel)
     }
 
     override fun onPause() {
@@ -450,5 +448,6 @@ class CustomVideoPlayerFragment : Fragment() {
         super.onDestroy()
         sharedViewModel.adjustPlayerSpeed(100)
     }
+
 
 }

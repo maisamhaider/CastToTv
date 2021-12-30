@@ -12,9 +12,7 @@ import com.example.casttotv.models.QuestionAnswer
 
 val visibilityList: MutableList<Pair<Int, Boolean>> = ArrayList()
 
-class HelpCenterAdapter(
-    private var context: Context,
-) : ListAdapter<QuestionAnswer, HelpCenterAdapter.Holder>(DIF_UTIL) {
+class HelpCenterAdapter: ListAdapter<QuestionAnswer, HelpCenterAdapter.Holder>(DIF_UTIL) {
 
     companion object {
         val DIF_UTIL = object : DiffUtil.ItemCallback<QuestionAnswer>() {

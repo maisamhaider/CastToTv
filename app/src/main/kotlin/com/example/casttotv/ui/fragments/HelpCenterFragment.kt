@@ -27,7 +27,7 @@ class HelpCenterFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val adapter = HelpCenterAdapter(requireContext())
+        val adapter = HelpCenterAdapter()
         binding.apply {
             recyclerView.adapter = adapter
             helpCenter = this@HelpCenterFragment

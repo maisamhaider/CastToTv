@@ -20,7 +20,9 @@ class ViewImagesFragment : Fragment() {
 
     private var _binding: FragmentViewImagesBinding? = null
     private val binding get() = _binding!!
-    private val sharedViewModel: SharedViewModel by activityViewModels()
+    private val sharedViewModel: SharedViewModel by activityViewModels{
+        SharedViewModel.SharedViewModelFactory(requireContext())
+    }
     lateinit var adapter: ImageHorizonAdapter2
     private lateinit var adapterSlider: ImageViewPagerAdapter
     override fun onCreateView(

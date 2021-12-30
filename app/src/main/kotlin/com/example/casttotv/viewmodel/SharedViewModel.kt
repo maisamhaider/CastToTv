@@ -1,6 +1,11 @@
 package com.example.casttotv.viewmodel
 
+import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Context
+import android.content.pm.ActivityInfo
+import android.content.res.Configuration
+import android.widget.VideoView
 import androidx.lifecycle.*
 import com.example.casttotv.models.FileModel
 import com.example.casttotv.repositories.SharedRepository
@@ -20,9 +25,15 @@ class SharedViewModel(context: Context) : ViewModel() {
 
     fun pagerAnimations() = sharedRepository.pagerAnimations()
 
-    private var _speed: MutableLiveData<Int> = MutableLiveData(100)
+     private var _speed: MutableLiveData<Int> = MutableLiveData(100)
+    private var _mTimeLeftInMillis: MutableLiveData<Long> = MutableLiveData(0)
+    private var _playingVideoCurrentPos: MutableLiveData<Int> = MutableLiveData(0)
+    private var _playingVideoCurrentPosBeforeDestroy: MutableLiveData<Int> = MutableLiveData(0)
 
     val speed: LiveData<Int> = _speed
+    val mTimeLeftInMillis: LiveData<Long> = _mTimeLeftInMillis
+    val playingVideoCurrentPos: LiveData<Int> = _playingVideoCurrentPos
+    val playingVideoCurrentPosBeforeDestroy: LiveData<Int> = _playingVideoCurrentPosBeforeDestroy
 
     val speedX: LiveData<String> = Transformations.map(_speed) {
         String.format("%.1fx", it / 100f)
@@ -41,7 +52,7 @@ class SharedViewModel(context: Context) : ViewModel() {
         _play.value = !_play.value!!
     }
 
-    fun playPause(value : Boolean) {
+    fun playPause(value: Boolean) {
         _play.value = value
     }
 
@@ -54,6 +65,43 @@ class SharedViewModel(context: Context) : ViewModel() {
 
     }
 
+
+
+    fun setTimeLeftInMillis(time: Long) {
+        _mTimeLeftInMillis.value = time
+    }
+
+    fun setPlayingVideoCurrentPos(time: Int) {
+        _playingVideoCurrentPos.value = time
+    }
+
+    fun playingVideoCurrentPosBeforeDestroy(time: Int) {
+        _playingVideoCurrentPosBeforeDestroy.value = time
+    }
+
+    @SuppressLint("SourceLockedOrientationActivity")
+    fun orientation(context: Activity) {
+        val orientation: Int = context.resources.configuration.orientation
+        if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            context.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+        } else {
+            context.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+        }
+    }
+
+    fun orientation(context: Activity, pot: Boolean) {
+        val orientation: Int = context.resources.configuration.orientation
+        if (pot) {
+            if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                context.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+            }
+        } else {
+            if (orientation == Configuration.ORIENTATION_PORTRAIT) {
+                context.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
+            }
+        }
+
+    }
 
     class SharedViewModelFactory(
         private val context: Context,

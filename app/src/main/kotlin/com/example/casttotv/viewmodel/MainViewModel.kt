@@ -24,13 +24,11 @@ import com.example.casttotv.databinding.RateDialogBinding
 import com.example.casttotv.databinding.ThemeDialogBinding
 import com.example.casttotv.interfaces.MyCallBack
 import com.example.casttotv.models.Lang
-import com.example.casttotv.utils.AUTO_ROTATION
-import com.example.casttotv.utils.MySingleton
+import com.example.casttotv.utils.*
 import com.example.casttotv.utils.MySingleton.changeTheme
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.Pref.putPrefs
-import com.example.casttotv.utils.THEME_DARK
 import java.util.*
 
 
@@ -38,8 +36,14 @@ class MainViewModel : ViewModel() {
 
     private val _darkAndLight: MutableLiveData<String> = MutableLiveData()
     private val _orientation: MutableLiveData<String> = MutableLiveData()
+    private val _autoStop: MutableLiveData<Boolean> = MutableLiveData()
+    private val _autoMinimize: MutableLiveData<Boolean> = MutableLiveData()
+
     val darkAndLight: LiveData<String> = _darkAndLight
     val orientation: LiveData<String> = _orientation
+    val autoStop: LiveData<Boolean> = _autoStop
+    val autoMinimize: LiveData<Boolean> = _autoMinimize
+
     private var languageDialog: MutableLiveData<AlertDialog> = MutableLiveData(null)
 
     fun list(): MutableList<Lang> {
@@ -58,6 +62,20 @@ class MainViewModel : ViewModel() {
             _orientation.value = context.getString(R.string.auto)
         } else _orientation.value = context.getString(R.string.manual)
 
+        //Auto Stop
+        _autoStop.value = context.getPrefs(AUTO_STOP, false)
+        //Auto Minimize
+        _autoMinimize.value = context.getPrefs(AUTO_MINIMIZE, false)
+    }
+
+    fun changeAutoStop(context: Context) {
+        context.putPrefs(AUTO_STOP, !context.getPrefs(AUTO_STOP, false))
+        _autoStop.value = context.getPrefs(AUTO_STOP, false)
+    }
+
+    fun changeAutoMinimize(context: Context) {
+        context.putPrefs(AUTO_MINIMIZE, !context.getPrefs(AUTO_MINIMIZE, false))
+        _autoMinimize.value = context.getPrefs(AUTO_MINIMIZE, false)
     }
 
 
