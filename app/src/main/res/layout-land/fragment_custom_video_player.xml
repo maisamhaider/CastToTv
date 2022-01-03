@@ -97,14 +97,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.35" />
+                app:layout_constraintGuide_percent="0.34" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline107"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.65" />
+                app:layout_constraintGuide_percent="0.66" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -117,25 +117,36 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline6">
 
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageview_lock"
+                style="@style/w_0_h_0"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="@{()->thisFragment.lock()}"
+                android:scaleType="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView_replay_10"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_lock" />
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imageView_replay_10"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                style="@style/w_0_h_0"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:onClick="@{()->thisFragment.replay()}"
                 android:scaleType="center"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/imageView_previous"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="@+id/guideline291"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageview_lock"
+                app:layout_constraintTop_toTopOf="@+id/imageview_lock"
                 app:srcCompat="@drawable/ic_replay" />
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imageView_previous"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                style="@style/w_0_h_0"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:onClick="@{()->thisFragment.playPreviousVideo()}"
                 android:scaleType="center"
@@ -148,8 +159,7 @@
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imageView_play_pause"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                style="@style/w_0_h_0"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:onClick="@{()->thisFragment.playPauseVideo()}"
                 android:scaleType="center"
@@ -162,8 +172,7 @@
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imageView_next"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                style="@style/w_0_h_0"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:onClick="@{()-> thisFragment.playNextVideo() }"
                 android:scaleType="center"
@@ -176,31 +185,29 @@
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imageView_forward_10"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                style="@style/w_0_h_0"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:onClick="@{()->thisFragment.forward()}"
                 android:scaleType="center"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/guideline295"
+                app:layout_constraintEnd_toStartOf="@+id/imageView_crop"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/imageView_next"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ic_forward" />
 
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline291"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.02" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline295"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.98" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView_crop"
+                style="@style/w_0_h_0"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="@{()->thisFragment.resize()}"
+                android:scaleType="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView_forward_10"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_crop" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -219,15 +226,14 @@
             style="@style/w_0_h_0"
             android:onClick="@{()->thisFragment.playPauseVideo()}"
             app:layout_constraintBottom_toTopOf="@+id/guideline6"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline292"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline283"
             app:layout_constraintTop_toBottomOf="@+id/cl_header">
 
             <VideoView
                 android:id="@+id/video_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                style="@style/w_m_h_m"
                 android:onClick="@{()->thisFragment.playPauseVideo()}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -252,6 +258,21 @@
                 app:srcCompat="@drawable/ic_play_circle" />
 
 
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageview_lock_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_20"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:onClick="@{()->thisFragment.lock()}"
+                android:padding="@dimen/dp_6"
+                android:visibility="gone"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_lock_open" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -267,13 +288,12 @@
                 android:id="@+id/imageViewRepeat"
                 style="@style/imageview_w0_h0_ratio11"
 
-                android:layout_marginStart="@dimen/dp_10"
                 android:background="@drawable/ripple_ovel_player_button"
                 android:onClick="@{()-> thisFragment.repeat()}"
                 android:padding="@dimen/dp_10"
                 app:layout_constraintBottom_toTopOf="@+id/guideline281"
                 app:layout_constraintDimensionRatio="1:1"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline293"
                 app:layout_constraintTop_toTopOf="@+id/guideline282"
                 app:srcCompat="@drawable/ic_repeat" />
 
@@ -300,13 +320,12 @@
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/image_view_rotate"
                 style="@style/imageview_w0_h0_ratio11"
-                android:layout_marginEnd="@dimen/dp_10"
                 android:background="@drawable/ripple_ovel_player_button"
                 android:onClick="@{()->thisFragment.orientation()}"
                 android:padding="@dimen/dp_10"
                 app:layout_constraintBottom_toTopOf="@+id/guideline281"
                 app:layout_constraintDimensionRatio="1:1"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline294"
                 app:layout_constraintTop_toTopOf="@+id/guideline282"
                 app:srcCompat="@drawable/ic_rotate" />
 
@@ -325,69 +344,18 @@
                 app:layout_constraintGuide_percent="0.84" />
 
             <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline293"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.02" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/cl_lock_crop"
-            style="@style/w_0_h_0"
-            app:layout_constraintBottom_toTopOf="@+id/guideline287"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline288">
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/imageview_lock"
-                style="@style/imageview_w0_h0_ratio11"
-                android:layout_marginStart="@dimen/dp_10"
-                android:background="@drawable/ripple_ovel_player_button"
-                android:onClick="@{()->thisFragment.lock()}"
-                android:padding="@dimen/dp_10"
-                android:tint="@color/white"
-                app:layout_constraintBottom_toTopOf="@+id/guideline289"
-                app:layout_constraintDimensionRatio="1:1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline290"
-                app:srcCompat="@drawable/ic_lock" />
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/imageView_crop"
-                style="@style/imageview_w0_h0_ratio11"
-                android:layout_marginEnd="@dimen/dp_10"
-                android:background="@drawable/ripple_ovel_player_button"
-                android:onClick="@{()->thisFragment.resize()}"
-                android:padding="@dimen/dp_10"
-                android:tint="@color/white"
-                app:layout_constraintBottom_toTopOf="@+id/guideline289"
-                app:layout_constraintDimensionRatio="1:1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline290"
-                app:srcCompat="@drawable/ic_crop" />
-
+                app:layout_constraintGuide_percent="0.05" />
 
             <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline290"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.175" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline289"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.84" />
-
-            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline294"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.02" />
+                app:layout_constraintGuide_percent="0.95" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -442,7 +410,7 @@
             android:id="@+id/cl_seekbar"
             style="@style/w_0_h_0"
             android:background="?attr/l_black50_b_strome"
-            app:layout_constraintBottom_toBottomOf="@+id/llc_video_view"
+            app:layout_constraintBottom_toTopOf="@+id/cl_bellow_controls"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline287">
@@ -476,7 +444,6 @@
                 android:id="@+id/seekbar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dp_2"
                 android:progress="50"
                 android:progressDrawable="@drawable/seek_bar_bg"
                 android:thumb="@null"
@@ -502,70 +469,77 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
+
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imageview_lock_2"
             style="@style/imageview_w0_h0_ratio11"
-            android:layout_marginStart="@dimen/dp_10"
             android:background="@drawable/ripple_ovel_player_button"
             android:onClick="@{()->thisFragment.lock()}"
             android:padding="@dimen/dp_10"
             android:tint="@color/white"
             android:visibility="gone"
             app:layout_constraintBottom_toTopOf="@+id/guideline2"
-            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/guideline283"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline1"
             app:srcCompat="@drawable/ic_lock" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.07" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline284"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.142" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.08" />
+            app:layout_constraintGuide_percent="0.14" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.12" />
+            app:layout_constraintGuide_percent="0.225" />
 
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline288"
+            android:id="@+id/guideline7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.8" />
+            app:layout_constraintGuide_percent="0.14" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline284"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.275" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline287"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.875" />
+            app:layout_constraintGuide_percent="0.79" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.92" />
+            app:layout_constraintGuide_percent="0.86" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline283"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline292"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -42,16 +42,16 @@ const val BEHAVIOR_UI_SHOW_ON_START = "BEHAVIOR_UI_SHOW_ON_START"
 const val LOCALE_LANGUAGE = "LOCALE_LANGUAGE"
 const val THEME_DARK = "THEME_DARK"
 const val AUTO_ROTATION = "AUTO_ROTATION"
-const val AUTO_STOP= "AUTO_STOP"
+const val AUTO_STOP = "AUTO_STOP"
 const val AUTO_MINIMIZE = "AUTO_MINIMIZE"
-
+const val WALK_THROUGH = "WALK_THROUGH"
 
 
 object Pref {
 
     private lateinit var sharePreferences: SharedPreferences
     private lateinit var editor: SharedPreferences.Editor
-      fun Context.initPref() {
+    fun Context.initPref() {
         sharePreferences = getSharedPreferences(My_PREF, Context.MODE_PRIVATE)
         editor = sharePreferences.edit()
     }

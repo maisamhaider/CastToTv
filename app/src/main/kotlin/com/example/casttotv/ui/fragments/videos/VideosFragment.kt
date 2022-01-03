@@ -78,7 +78,7 @@ class VideosFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        sharedViewModel.orientation(requireActivity(), true)
+        sharedViewModel.setOrientation(requireActivity(), true)
         sharedViewModel.playingVideoCurrentPosBeforeDestroy(0)
         sharedViewModel.setPlayingVideoCurrentPos(0)
         sharedViewModel.setTimeLeftInMillis(0)

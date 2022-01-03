@@ -67,7 +67,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_cast" />
+                app:srcCompat="@drawable/ic_mirroring" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -186,7 +186,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_rotation" />
+                app:srcCompat="@drawable/ic_rotate" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -307,7 +307,7 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/image_view_lock"
                 app:layout_constraintTop_toBottomOf="@+id/m_textview_start_time"
-                app:srcCompat="@drawable/ic_replay_10" />
+                app:srcCompat="@drawable/ic_replay" />
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imageView_previous"
@@ -363,7 +363,7 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/imageView_next"
                 app:layout_constraintTop_toBottomOf="@+id/m_textview_start_time"
-                app:srcCompat="@drawable/ic_forward_10" />
+                app:srcCompat="@drawable/ic_forward" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

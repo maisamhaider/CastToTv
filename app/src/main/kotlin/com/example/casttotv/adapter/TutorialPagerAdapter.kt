@@ -19,7 +19,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.casttotv.R
-import com.example.casttotv.databinding.TutorialItemBinding
+import com.example.casttotv.databinding.LayoutContainerItemBinding
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.THEME_DARK
@@ -41,7 +41,8 @@ class TutorialPagerAdapter(private var context: Context) :
         }
     }
 
-    class Holder(private val binding: TutorialItemBinding) : RecyclerView.ViewHolder(binding.root) {
+    class Holder(private val binding: LayoutContainerItemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
         fun bind(context: Context, view: View) {
             if (binding.tutorialViewContainer.isNotEmpty()) {
                 binding.tutorialViewContainer.removeView(view)
@@ -100,19 +101,14 @@ class TutorialPagerAdapter(private var context: Context) :
             textView.text = spannableString
             textView.movementMethod = LinkMovementMethod.getInstance()
         }
-
-
     }
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
-        val view = Holder(
-            TutorialItemBinding.inflate(
+        return Holder(
+            LayoutContainerItemBinding.inflate(
                 LayoutInflater.from(parent.context), parent, false
             )
         )
-
-        return view
     }
 
     override fun onBindViewHolder(holder: Holder, position: Int) {

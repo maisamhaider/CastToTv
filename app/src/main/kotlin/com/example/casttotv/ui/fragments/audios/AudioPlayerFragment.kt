@@ -314,7 +314,7 @@ class AudioPlayerFragment : Fragment() {
                 binding.imageviewPlayPauseMain.visibility = View.GONE
                 mediaPlayer!!.start()
                 restartTimer()
-                binding.imageViewPlayPause.setImageResource(R.drawable.ic_pause_circle)
+                binding.imageViewPlayPause.setImageResource(R.drawable.ic_play_circle)/*pause*/
             }
 
         }
@@ -358,10 +358,10 @@ class AudioPlayerFragment : Fragment() {
         setTime(model.duration)
         startTimer()
         binding.imageviewPlayPauseMain.visibility = View.GONE
-        binding.imageViewPlayPause.setImageResource(R.drawable.ic_pause_circle)
+        binding.imageViewPlayPause.setImageResource(R.drawable.ic_play_circle)/*pause*/
         if (mediaPlayer != null && mediaPlayer!!.isPlaying) {
             mediaPlayer!!.stop()
-         }
+        }
         try {
             val myUri: Uri = model.filePath.toUri() // initialize Uri here
             mediaPlayer = MediaPlayer().apply {
@@ -382,14 +382,14 @@ class AudioPlayerFragment : Fragment() {
             e.stackTrace
             Log.e(TAG, e.message.toString())
         }
-         initSeekbar()
+        initSeekbar()
 
     }
 
     private fun playAudio() {
         restartTimer()
         binding.imageviewPlayPauseMain.visibility = View.GONE
-        binding.imageViewPlayPause.setImageResource(R.drawable.ic_pause_circle)
+        binding.imageViewPlayPause.setImageResource(R.drawable.ic_play_circle)/*pause*/
         mediaPlayer!!.seekTo(playingFileCurrentPos)
     }
 

@@ -50,6 +50,8 @@ class CustomVideoPlayerFragment : Fragment() {
     var firstHeight = 0
     var firstWeight = 0
     lateinit var videoPlayer: VideoView
+
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -115,8 +117,7 @@ class CustomVideoPlayerFragment : Fragment() {
 
 
     private fun initFun() {
-        binding.textViewFileName.text = playingFileName
-
+        binding.textviewFileName.text = playingFileName
 
         videoPlayer.setOnCompletionListener {
             if (repeat) {
@@ -131,6 +132,7 @@ class CustomVideoPlayerFragment : Fragment() {
         }
 
         initSeekbar()
+
     }
 
     fun lock() {
@@ -138,13 +140,18 @@ class CustomVideoPlayerFragment : Fragment() {
             binding.clBellowControls.visibility = View.GONE
             binding.clMiddle.visibility = View.GONE
             binding.clHeader.visibility = View.GONE
-            binding.imageviewLockOpen.visibility = View.VISIBLE
+            binding.clSeekbar.visibility = View.GONE
+            binding.imageviewLock2.visibility = View.VISIBLE
+            binding.clLockCrop?.visibility = View.GONE
             locked = true
+
         } else {
+            binding.clSeekbar.visibility = View.VISIBLE
             binding.clBellowControls.visibility = View.VISIBLE
             binding.clMiddle.visibility = View.VISIBLE
             binding.clHeader.visibility = View.VISIBLE
-            binding.imageviewLockOpen.visibility = View.GONE
+            binding.clLockCrop?.visibility = View.VISIBLE
+            binding.imageviewLock2.visibility = View.GONE
             locked = false
         }
     }
@@ -172,10 +179,9 @@ class CustomVideoPlayerFragment : Fragment() {
     fun resize() {
         // Adjust the size of the video
         // so it fits on the screen
-//        val videoProportion = getVideoProportion()
-        val screenWidth = resources.displayMetrics.widthPixels
-        val screenHeight = resources.displayMetrics.heightPixels
+        val screenWidth = binding.llcVideoView.width
 
+//        val videoProportion = getVideoProportion()
 //        val screenProportion = screenHeight.toFloat() / screenWidth.toFloat()
         val lp: ViewGroup.LayoutParams = binding.llcVideoView.layoutParams
 
@@ -183,22 +189,27 @@ class CustomVideoPlayerFragment : Fragment() {
             0 -> {
                 firstHeight = lp.height
                 firstWeight = lp.width
-
+                val screenHeight = binding.llcVideoView.height
                 lp.height = screenHeight / 2
                 lp.width = screenWidth
+
                 cropState++
             }
             1 -> {
+                val screenHeight = binding.llcVideoView.height * 2
                 lp.height = (screenHeight / 3)
                 lp.width = screenWidth
+
                 cropState++
             }
             2 -> {
+                val screenHeight = binding.llcVideoView.height * 3
                 lp.height = screenHeight / 4
                 lp.width = screenWidth
                 cropState++
             }
             3 -> {
+                val screenHeight = binding.llcVideoView.height * 4
                 lp.height = (screenHeight / 5)
                 lp.width = screenWidth
                 cropState++
@@ -283,7 +294,7 @@ class CustomVideoPlayerFragment : Fragment() {
 
     @SuppressLint("SourceLockedOrientationActivity")
     fun orientation() {
-        sharedViewModel.orientation(requireActivity())
+        sharedViewModel.setOrientation(requireActivity())
     }
 
     fun repeat() {
@@ -354,6 +365,7 @@ class CustomVideoPlayerFragment : Fragment() {
 
 
     fun playPauseVideo() {
+
         binding.clSpeed.visibility = View.GONE
         if (!locked) {
             if (videoPlayer.isPlaying) {
@@ -366,7 +378,7 @@ class CustomVideoPlayerFragment : Fragment() {
                 binding.imageviewPlayPauseMain.visibility = View.GONE
                 videoPlayer.start()
                 restartTimer()
-                binding.imageViewPlayPause.setImageResource(R.drawable.ic_pause_circle)
+                binding.imageViewPlayPause.setImageResource(R.drawable.ic_play_circle)/*pause*/
             }
 
         }
@@ -390,7 +402,7 @@ class CustomVideoPlayerFragment : Fragment() {
         if (videosModelList.size == videosModelList.indexOf(playingFileModel).plus(1)) {
             requireContext().toastLong("no more video found")
         } else {
-            binding.textViewFileName.text = getNextModel().fileName
+            binding.textviewFileName.text = getNextModel().fileName
             playVideo(getNextModel())
         }
     }
@@ -399,7 +411,7 @@ class CustomVideoPlayerFragment : Fragment() {
         if (videosModelList.indexOf(playingFileModel).minus(1) <= -1) {
             requireContext().toastLong("no previous video found")
         } else {
-            binding.textViewFileName.text = getPreviousModel().fileName
+            binding.textviewFileName.text = getPreviousModel().fileName
             playVideo(getPreviousModel())
         }
     }
@@ -409,11 +421,12 @@ class CustomVideoPlayerFragment : Fragment() {
         startTimer()
         playingFileModel = model
         binding.imageviewPlayPauseMain.visibility = View.GONE
-        binding.imageViewPlayPause.setImageResource(R.drawable.ic_pause_circle)
+        binding.imageViewPlayPause.setImageResource(R.drawable.ic_play_circle)/*pause*/
         videoPlayer.setVideoPath(model.filePath)
         videoPlayer.start()
         videoPlayer.seekTo(playingVideoCurrentPosBeforeDestroy)
 //        val eq = Equalizer(0, videoPlayer.audioSessionId)
+
     }
 
 
@@ -437,6 +450,7 @@ class CustomVideoPlayerFragment : Fragment() {
     override fun onResume() {
         super.onResume()
         playVideo(playingFileModel)
+
     }
 
     override fun onPause() {

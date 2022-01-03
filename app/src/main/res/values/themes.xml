@@ -22,6 +22,7 @@
         <item name="attr_lblack_dwhite_60_60">@color/black_60</item>
         <item name="l_zumthor_b_black_pearl_1">@color/zumthor</item>
         <item name="l_white_b_black">@color/white</item>
+        <item name="l_black50_b_strome">@color/black_50</item>
 
 
     </style>

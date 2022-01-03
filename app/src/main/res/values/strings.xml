@@ -155,6 +155,9 @@
     <string name="tutorial_device_hotspot_body">You can also use your device’s hotspot (tethering mode) and connect your target device to your hotspot.</string>
     <string name="tutorial_scan_code_body">Open site on your target device. By scanning the QR code the connection configuration is transmitted and mirroring starts.</string>
     <string name="tutorial_support_body">Please be aware that Screen Mirror only works when setup correctly. Screen Mirror transmit your screen, but not your device’s audio signals. If you face any problems contact us.</string>
+    <string name="walk_through_body_1">Enjoy smooth and high quality streaming\nwith no lagging</string>
+    <string name="walk_through_body_2">Connect with any smart device and enjoy the\nshow on any screen</string>
+    <string name="walk_through_body_3">Enjoy in-app private browser with no limitations</string>
     <string name="screen_setup">Screen Setup</string>
     <string name="device_hotspot">Device\'s Hotspot</string>
     <string name="scan_code">Scan Code</string>
@@ -213,11 +216,14 @@
     <string name="q_answer_7_2">The system may warn you that there is a safety hazard before screen mirroring. This is just a regular reminder, it will be</string>
 
 
-
     <string name="wi_fi">WI-FI</string>
     <string name="miracast">MIRACAST</string>
     <string name="install">INSTALL</string>
     <string name="manual">Manual</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Make sure your phone and TV are connected\nto the same Wi-Fi network.</string>
+    <string name="hd_streaming">HD Streaming</string>
+    <string name="smart_devices">smart devices</string>
+    <string name="private_browser">Private Browser</string>
 
 
 </resources>

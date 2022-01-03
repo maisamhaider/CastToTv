@@ -5,7 +5,6 @@ import android.app.Activity
 import android.content.Context
 import android.content.pm.ActivityInfo
 import android.content.res.Configuration
-import android.widget.VideoView
 import androidx.lifecycle.*
 import com.example.casttotv.models.FileModel
 import com.example.casttotv.repositories.SharedRepository
@@ -25,7 +24,7 @@ class SharedViewModel(context: Context) : ViewModel() {
 
     fun pagerAnimations() = sharedRepository.pagerAnimations()
 
-     private var _speed: MutableLiveData<Int> = MutableLiveData(100)
+    private var _speed: MutableLiveData<Int> = MutableLiveData(100)
     private var _mTimeLeftInMillis: MutableLiveData<Long> = MutableLiveData(0)
     private var _playingVideoCurrentPos: MutableLiveData<Int> = MutableLiveData(0)
     private var _playingVideoCurrentPosBeforeDestroy: MutableLiveData<Int> = MutableLiveData(0)
@@ -66,7 +65,6 @@ class SharedViewModel(context: Context) : ViewModel() {
     }
 
 
-
     fun setTimeLeftInMillis(time: Long) {
         _mTimeLeftInMillis.value = time
     }
@@ -79,24 +77,27 @@ class SharedViewModel(context: Context) : ViewModel() {
         _playingVideoCurrentPosBeforeDestroy.value = time
     }
 
+    fun orientation(context: Activity): Int {
+        return context.resources.configuration.orientation
+    }
+
+
     @SuppressLint("SourceLockedOrientationActivity")
-    fun orientation(context: Activity) {
-        val orientation: Int = context.resources.configuration.orientation
-        if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
+    fun setOrientation(context: Activity) {
+        if (orientation(context) == Configuration.ORIENTATION_LANDSCAPE) {
             context.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         } else {
             context.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
         }
     }
 
-    fun orientation(context: Activity, pot: Boolean) {
-        val orientation: Int = context.resources.configuration.orientation
+    fun setOrientation(context: Activity, pot: Boolean) {
         if (pot) {
-            if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            if (orientation(context) == Configuration.ORIENTATION_LANDSCAPE) {
                 context.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
             }
         } else {
-            if (orientation == Configuration.ORIENTATION_PORTRAIT) {
+            if (orientation(context) == Configuration.ORIENTATION_PORTRAIT) {
                 context.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
             }
         }

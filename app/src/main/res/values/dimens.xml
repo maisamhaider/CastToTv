@@ -40,4 +40,5 @@
     <dimen name="dp_1.5">1.5dp</dimen>
     <dimen name="dp_3">3dp</dimen>
     <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_7">7dp</dimen>
 </resources>

@@ -10,12 +10,20 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/black_pearl_2"
         tools:context=".ui.activities.WelcomeActivity">
+
+        <include
+            android:id="@+id/includedWalkThrough"
+            layout="@layout/walk_through_layout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <include
             android:id="@+id/includedLayoutSplash"
             layout="@layout/layout_splash"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <include
