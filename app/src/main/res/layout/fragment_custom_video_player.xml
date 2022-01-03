@@ -18,7 +18,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="?attr/colorPrimaryVariant">
+        android:background="@color/black">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_header"
@@ -203,16 +203,6 @@
                 app:layout_constraintGuide_percent="0.98" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <View
-            android:id="@+id/view7"
-            style="@style/w_0_h_0"
-            android:background="@color/black"
-            app:layout_constraintBottom_toBottomOf="@+id/llc_video_view"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cl_header" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/llc_video_view"
