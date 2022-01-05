@@ -5,6 +5,7 @@
     //common
     <color name="white">#FFFFFFFF</color>
     <color name="white_12">#1FFFFFFF</color>
+    <color name="white_15">#26FFFFFF</color>
     <color name="white_20">#33FFFFFF</color>
     <color name="white_60">#99FFFFFF</color>
     <color name="white_70">#B3FFFFFF</color>

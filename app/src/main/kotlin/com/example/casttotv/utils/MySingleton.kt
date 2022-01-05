@@ -17,6 +17,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import com.example.casttotv.models.FileModel
+import com.example.casttotv.models.FolderModel
 import com.example.casttotv.models.Lang
 import com.example.casttotv.models.Tabs
 import com.example.casttotv.utils.Pref.getPrefs
@@ -34,10 +35,11 @@ const val AUDIO = "AUDIO"
 const val IMAGE = "IMAGE"
 const val SLIDE = "SLIDE"
 var playingFileModel = FileModel("", 0, "")
+var singletonFolderModel = FolderModel("", "", "")
 var playingFileName = ""
 var playingFileCurrentPos = 0
 
- const val LOCATION_PERMISSION_REQUEST_CODE = 1000
+const val LOCATION_PERMISSION_REQUEST_CODE = 1000
 const val LATITUDE = "LATITUDE"
 const val LONGITUDE = "LONGITUDE"
 

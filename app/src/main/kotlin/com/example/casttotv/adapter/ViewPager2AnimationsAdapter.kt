@@ -5,10 +5,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.example.casttotv.R
 import com.example.casttotv.databinding.ViewPager2AnimationItemBinding
 import com.example.casttotv.models.PagerAnimation
 
-class ViewPager2AnimationsAdapter(private val onItemClick: (PagerAnimation?) -> Unit) :
+class ViewPager2AnimationsAdapter(private val onItemClick: (PagerAnimation?, Int) -> Unit) :
     ListAdapter<PagerAnimation, ViewPager2AnimationsAdapter.Holder>(DIF_UTIL) {
 
 
@@ -36,6 +37,14 @@ class ViewPager2AnimationsAdapter(private val onItemClick: (PagerAnimation?) -> 
         fun bind(animation: PagerAnimation) {
             binding.materialTextView.text = animation.int.toString()
         }
+
+        fun setBack(b: Boolean) {
+            if (b) {
+                binding.imageviewSelect.setImageResource(R.drawable.ic_checked)
+            } else {
+                binding.imageviewSelect.setImageBitmap(null)
+            }
+        }
     }
 
 
@@ -46,15 +55,20 @@ class ViewPager2AnimationsAdapter(private val onItemClick: (PagerAnimation?) -> 
                 parent,
                 false))
         viewHolder.itemView.setOnClickListener {
-            onItemClick(getItem(viewHolder.absoluteAdapterPosition))
+            onItemClick(getItem(viewHolder.absoluteAdapterPosition),
+                viewHolder.absoluteAdapterPosition)
         }
 
         return viewHolder
     }
 
-
+    var selected = 0
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(getItem(holder.absoluteAdapterPosition))
+        holder.setBack(holder.absoluteAdapterPosition == selected)
 
+    }
+    fun setSelect(selected: Int) {
+        this.selected = selected
     }
 }

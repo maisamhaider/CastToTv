@@ -14,6 +14,7 @@ import com.example.casttotv.models.FileModel
 import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
 import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.utils.SLIDE
+import com.example.casttotv.utils.singletonFolderModel
 import com.example.casttotv.viewmodel.SharedViewModel
 import kotlinx.coroutines.*
 
@@ -29,7 +30,6 @@ class ImageSliderFragment : Fragment() {
 
     private lateinit var imageVideosAdapter: ImageVideosAdapter
 
-    var folderPath = ""
 
 
     override fun onCreateView(
@@ -47,7 +47,6 @@ class ImageSliderFragment : Fragment() {
         imageVideosAdapter = ImageVideosAdapter(::onImageClick, requireContext(), SLIDE)
         imageVideosAdapter.setVM(sharedViewModel)
 
-        folderPath = arguments?.getString("folderPath")!!
 
 
         _binding.apply {
@@ -57,7 +56,7 @@ class ImageSliderFragment : Fragment() {
             recyclerView.adapter = imageVideosAdapter
         }
 
-        loadImages(folderPath)
+        loadImages(singletonFolderModel.folderPath)
 
     }
 

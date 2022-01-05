@@ -14,6 +14,7 @@ import com.example.casttotv.databinding.FragmentSliderImagesFoldersBinding
 import com.example.casttotv.models.FolderModel
 import com.example.casttotv.utils.IMAGE
 import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
+import com.example.casttotv.utils.singletonFolderModel
 import com.example.casttotv.viewmodel.SharedViewModel
 
 
@@ -61,8 +62,7 @@ class SliderImagesFoldersFragment : Fragment() {
     }
 
     private fun onItemClick(folderPath: FolderModel) {
-        val bundle = bundleOf("folderPath" to folderPath.folderPath)
-        findNavController().navigate(R.id.action_sliderImagesFoldersFragment_to_imageSliderFragment,
-            bundle)
+        singletonFolderModel = folderPath
+         findNavController().navigate(R.id.action_sliderImagesFoldersFragment_to_imageSliderFragment)
     }
 }

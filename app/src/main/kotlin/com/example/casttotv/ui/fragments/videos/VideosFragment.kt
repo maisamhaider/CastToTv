@@ -60,6 +60,7 @@ class VideosFragment : Fragment() {
                 }
             }
         }
+
     }
 
     fun enablingWiFiDisplay() {
@@ -73,6 +74,7 @@ class VideosFragment : Fragment() {
     private fun onItemClick(fileModel: FileModel, int: Int) {
         playingFileModel = fileModel
         playingFileName = fileModel.fileName
+
         findNavController().navigate(R.id.action_videosFragment_to_customVideoPlayerFragment)
     }
 

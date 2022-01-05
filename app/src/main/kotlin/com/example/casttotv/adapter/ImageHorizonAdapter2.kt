@@ -4,7 +4,6 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -16,8 +15,9 @@ import com.example.casttotv.models.FileModel
 class ImageHorizonAdapter2(
     val onItemClicked: (FileModel, Int) -> Unit,
     private var context: Context,
-    private val isVideo: Boolean,
+    private val isSlider: Boolean,
 ) : ListAdapter<FileModel, ImageHorizonAdapter2.Holder>(DIF_UTIL) {
+    private var selected = 0
 
     companion object {
         val DIF_UTIL = object : DiffUtil.ItemCallback<FileModel>() {
@@ -34,32 +34,23 @@ class ImageHorizonAdapter2(
 
     class Holder(private val binding: ImagesItem2Binding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(context: Context, fileModel: FileModel, isVideo: Boolean) {
-            if (isVideo) {
-                binding.imageViewPlay.visibility = View.VISIBLE
-            }
+        fun bind(context: Context, fileModel: FileModel, isSlider: Boolean) {
             Glide.with(context).load(fileModel.filePath).into(binding.imageView)
+            if (isSlider) {
+                binding.imageviewSelect.setImageResource(R.drawable.ic_eye)
+            } else {
+                binding.imageviewSelect.setImageResource(R.drawable.ic_tick)
+            }
         }
 
         fun setBack(context: Context, boolean: Boolean) {
             if (boolean) {
-                binding.constraintLayout.setBackgroundColor(
-                    ContextCompat.getColor(
-                        context,
-                        R.color.black_50
-                    )
-                )
+                binding.clSelect.visibility = View.VISIBLE
             } else {
-                binding.constraintLayout.setBackgroundColor(
-                    ContextCompat.getColor(
-                        context,
-                        R.color.white
-                    )
-                )
+                binding.clSelect.visibility = View.GONE
             }
 
         }
-
 
     }
 
@@ -78,14 +69,15 @@ class ImageHorizonAdapter2(
         return viewHolder
     }
 
-    var selected = ""
     override fun onBindViewHolder(holder: Holder, position: Int) {
-
-        holder.bind(context, getItem(holder.absoluteAdapterPosition), isVideo)
-        holder.setBack(context, getItem(position).filePath == selected)
+        holder.bind(context, getItem(holder.absoluteAdapterPosition), isSlider)
+        holder.setBack(context, holder.absoluteAdapterPosition == selected)
 
 
     }
 
+    fun setSelect(selected: Int) {
+        this.selected = selected
+    }
 
 }

@@ -224,6 +224,8 @@
     <string name="hd_streaming">HD Streaming</string>
     <string name="smart_devices">smart devices</string>
     <string name="private_browser">Private Browser</string>
+    <string name="effects">Effects</string>
+    <string name="slider">Slider</string>
 
 
 </resources>

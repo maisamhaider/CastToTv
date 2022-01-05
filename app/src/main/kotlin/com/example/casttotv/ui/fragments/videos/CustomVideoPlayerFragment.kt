@@ -101,16 +101,12 @@ class CustomVideoPlayerFragment : Fragment() {
 
         sharedViewModel.speed.observe(viewLifecycleOwner, {
             videoSpeed = it
-            sharedViewModel.playingVideoCurrentPosBeforeDestroy(videoPlayer.currentPosition)
             sharedViewModel.setPlayingVideoCurrentPos(videoPlayer.currentPosition)
-//            videoPlayer.setVideoPath(playingFileModel.filePath)
-//            videoPlayer.pause()
             videoPlayer.setOnPreparedListener { mp ->
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     mp.playbackParams = PlaybackParams().setSpeed(videoSpeed / 100f)
                 }
             }
-//            playVideo()
             playVideo(playingFileModel)
         })
     }
@@ -334,6 +330,7 @@ class CustomVideoPlayerFragment : Fragment() {
                 requireContext().toastLong("min speed is 0.25x")
             }
         }
+        sharedViewModel.playingVideoCurrentPosBeforeDestroy(videoPlayer.currentPosition)
 
     }
 

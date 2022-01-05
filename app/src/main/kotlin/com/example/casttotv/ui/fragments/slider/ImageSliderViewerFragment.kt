@@ -7,11 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.example.casttotv.R
+import com.example.casttotv.adapter.ImageHorizonAdapter2
 import com.example.casttotv.adapter.ImageViewPagerAdapter
 import com.example.casttotv.adapter.ViewPager2AnimationsAdapter
 import com.example.casttotv.databinding.FragmentImageSliderViewerBinding
+import com.example.casttotv.models.FileModel
 import com.example.casttotv.models.PagerAnimation
 import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
 import com.example.casttotv.viewmodel.SharedViewModel
@@ -31,6 +34,8 @@ class ImageSliderViewerFragment : Fragment() {
     private var viewPager: ViewPager2? = null
 
     private val binding get() = _binding
+
+    lateinit var adapter: ImageHorizonAdapter2
     private lateinit var adapterSlider: ImageViewPagerAdapter
     private lateinit var viewPager2AnimationsAdapter: ViewPager2AnimationsAdapter
     var listSize = 0
@@ -49,15 +54,12 @@ class ImageSliderViewerFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.apply {
-            lifecycleOwner = viewLifecycleOwner
-            viewModel = sharedViewModel
-            thisFragment = this@ImageSliderViewerFragment
-        }
+
+        adapter = ImageHorizonAdapter2(::onItemClick, requireContext(), true)
+
         adapterSlider = ImageViewPagerAdapter(requireContext(), ::onPagerClicked)
         viewPager2AnimationsAdapter = ViewPager2AnimationsAdapter(::onAnimationSelected)
 
-        binding.recyclerView.adapter = viewPager2AnimationsAdapter
 
         CoroutineScope(Dispatchers.IO).launch {
             sharedViewModel.pagerAnimations().collect {
@@ -66,14 +68,23 @@ class ImageSliderViewerFragment : Fragment() {
                 }
             }
         }
-        viewPager = null
-        viewPager = binding.viewpager2
+        binding.apply {
+            lifecycleOwner = viewLifecycleOwner
+            viewModel = sharedViewModel
+            thisFragment = this@ImageSliderViewerFragment
+            recyclerViewImage.adapter = adapter
+            recyclerView.adapter = viewPager2AnimationsAdapter
+            viewPager = null
+            viewPager = binding.viewpager2
+
+        }
         viewPager!!.adapter = adapterSlider
         viewPager!!.scrollBarFadeDuration = 2000
 
         sharedViewModel.selectedImages.observe(viewLifecycleOwner, {
             listSize = it.size
             adapterSlider.submitList(it)
+            adapter.submitList(it)
         })
 
         startTimer()
@@ -82,13 +93,23 @@ class ImageSliderViewerFragment : Fragment() {
                 pauseTimer()
                 restartTimer()
                 binding.imageViewPlayPause.visibility = View.GONE
+                binding.clPlayPause.visibility = View.GONE
             } else {
                 pauseTimer()
+                binding.clPlayPause.visibility = View.VISIBLE
                 binding.imageViewPlayPause.visibility = View.VISIBLE
                 binding.imageViewPlayPause.setImageResource(R.drawable.ic_play_circle)
             }
         })
-        onAnimationSelected(null)
+        binding.viewpager2.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                super.onPageSelected(position)
+                adapter.setSelect(position)
+                binding.recyclerView.smoothScrollToPosition(position)
+                adapter.notifyDataSetChanged()
+            }
+        })
+        onAnimationSelected(null, -1)
     }
 
     private fun startTimer() {
@@ -96,7 +117,7 @@ class ImageSliderViewerFragment : Fragment() {
         mCountDownTimer = object : CountDownTimer(milliSec, 3000) {
             override fun onTick(millisUntilFinished: Long) {
                 if (currentImage != listSize) {
-                    binding.viewpager2.setCurrentItem(currentImage,true)
+                    binding.viewpager2.setCurrentItem(currentImage, true)
                     currentImage++
                 } else {
                     currentImage = 0
@@ -122,20 +143,40 @@ class ImageSliderViewerFragment : Fragment() {
     fun onPagerClicked() {
         sharedViewModel.playPause()
     }
+
     fun enablingWiFiDisplay() {
         requireContext().enablingWiFiDisplay()
     }
-    private fun onAnimationSelected(animationClass: PagerAnimation?) {
+
+    private fun onAnimationSelected(animationClass: PagerAnimation?, pos: Int) {
         sharedViewModel.playPause(false)
         viewPager = null
         viewPager = binding.viewpager2
         viewPager!!.adapter = adapterSlider
         viewPager!!.scrollBarFadeDuration = 2000
         viewPager!!.setPageTransformer(animationClass?.pageTransformer)
-        if (currentImage!= 0)
-        {
-            binding.viewpager2.setCurrentItem(currentImage-1,false)
+//        if (currentImage != 0) {
+//            binding.viewpager2.setCurrentItem(currentImage - 1, false)
+//        }
+        if (pos != -1) {
+            viewPager2AnimationsAdapter.setSelect(pos)
+            binding.recyclerView.smoothScrollToPosition(pos)
+            viewPager2AnimationsAdapter.notifyDataSetChanged()
         }
+
+
+    }
+
+    private fun onItemClick(fileModel: FileModel, pos: Int) {
+        binding.viewpager2.setCurrentItem(pos, true)
+        adapter.setSelect(pos)
+        currentImage = pos
+        binding.recyclerViewImage.smoothScrollToPosition(pos)
+        adapter.notifyDataSetChanged()
+    }
+
+    fun back() {
+        findNavController().navigate(R.id.action_imageSliderViewerFragment_to_imageSliderFragment)
     }
 
     override fun onPause() {

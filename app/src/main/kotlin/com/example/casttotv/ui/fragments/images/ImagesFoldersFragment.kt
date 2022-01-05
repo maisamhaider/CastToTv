@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -15,6 +14,7 @@ import com.example.casttotv.models.FolderModel
 import com.example.casttotv.utils.IMAGE
 import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
 import com.example.casttotv.utils.MySingleton.toastLong
+import com.example.casttotv.utils.singletonFolderModel
 import com.example.casttotv.viewmodel.SharedViewModel
 
 
@@ -54,16 +54,18 @@ class ImagesFoldersFragment : Fragment() {
             }
         }
     }
+
     fun enablingWiFiDisplay() {
         requireContext().enablingWiFiDisplay()
     }
+
     fun back() {
         findNavController().navigate(R.id.action_imagesFoldersFragment_to_homeFragment)
     }
 
     private fun onItemClick(folderPath: FolderModel) {
-        val bundle = bundleOf("folderPath" to folderPath.folderPath)
-        findNavController().navigate(R.id.action_imagesFoldersFragment_to_imagesFragment, bundle)
+        singletonFolderModel = folderPath
+        findNavController().navigate(R.id.action_imagesFoldersFragment_to_imagesFragment)
         requireContext().toastLong(folderPath.folderPath)
     }
 
