@@ -26,6 +26,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.io.File
 import java.util.*
+import kotlin.collections.ArrayList
 
 
 var folder_path = ""
@@ -154,7 +155,7 @@ object MySingleton {
         return typedValue
     }
 
-    val listOfLanguages: MutableList<Lang> = ArrayList()
+    val listOfLanguages: ArrayList<Lang> = ArrayList()
 
     private val LANGUAGES_CODES_ONLINE = listOf(
         "af", "sq", "am", "ar", "hy", "az", "eu", "be", "bn", "bs", "bg", "ca", "ceb", "zh-CN",

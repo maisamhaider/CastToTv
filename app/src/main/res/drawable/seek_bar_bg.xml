@@ -5,7 +5,7 @@
         android:left="2dp">
         <shape android:shape="rectangle">
             <corners android:radius="@dimen/dp_5" />
-            <solid android:color="@color/white_20" />
+            <solid android:color="@color/cr_white_20" />
 
         </shape>
     </item>
@@ -13,7 +13,7 @@
         <clip>
             <shape android:shape="rectangle">
                 <corners android:radius="@dimen/dp_5" />
-                <solid android:color="@color/dodger_blue_light_2" />
+                <solid android:color="@color/cr_dodger_blue_light_2" />
 
             </shape>
         </clip>

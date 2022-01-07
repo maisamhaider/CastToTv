@@ -21,8 +21,8 @@ import androidx.navigation.fragment.NavHostFragment
 import com.example.casttotv.R
 import com.example.casttotv.databinding.ActivityMainBinding
 import com.example.casttotv.utils.MySingleton
-import com.example.casttotv.utils.MySingleton.LANGUAGE_DIALOG_SHOWING
 import com.example.casttotv.utils.MySingleton.setAppLocale
+import com.example.casttotv.viewmodel.BrowserViewModel
 import com.example.casttotv.viewmodel.MainViewModel
 
 class MainActivity : AppCompatActivity() {
@@ -31,6 +31,9 @@ class MainActivity : AppCompatActivity() {
     lateinit var controller: NavController
     lateinit var navHostFragment: NavHostFragment
     private val viewModel: MainViewModel by viewModels()
+    private val browserVM: BrowserViewModel by viewModels {
+        BrowserViewModel.BrowserViewModelFactory(this)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -84,10 +87,18 @@ class MainActivity : AppCompatActivity() {
     override fun attachBaseContext(newBase: Context) {
         super.attachBaseContext(ContextWrapper(newBase.setAppLocale(MySingleton.localeLanguage)))
     }
+//    fun browserBack() = browserVM.back()
 
     override fun onBackPressed() {
+
+//        if (viewModel.canGoBack()) {
+//            back()
+//        } else {
+//            viewModel.exitDialog(this)
+//        }
+
         if (viewModel.languageDialogIsShowing()) {
-             viewModel.cancelLanguageDialog()
+            viewModel.cancelLanguageDialog()
         } else {
             super.onBackPressed()
         }

@@ -3,17 +3,24 @@ package com.example.casttotv.datasource
 import android.content.Context
 import com.example.casttotv.R
 import com.example.casttotv.models.QuestionAnswer
+import com.example.casttotv.models.SearchEngine
 
 class DataSource {
 
     val engines = mapOf(
-        "google" to "https://www.google.com/search?q=",
-        "bing" to "www.bing.com/search?q=",
-        "duckduckgo" to "duckduckgo.com/?q=",
-        "searx" to "searx.github.io/searx/search.html?q=",
-        "baidu" to "www.baidu.com/s?wd=",
-        "qwant" to "www.qwant.com/?q=",
-        "ecosia" to "www.ecosia.org/search?q=",
+        "google" to SearchEngine("Google",
+            "https://www.google.com/search?q=",
+            R.drawable.ic_google),
+        "bing" to SearchEngine("Bing", "www.bing.com/search?q=", R.drawable.ic_bing_logo),
+        "duckduckgo" to SearchEngine("Duckduckgo",
+            "duckduckgo.com/?q=",
+            R.drawable.ic_duck_duck_go),
+        "searx" to SearchEngine("Searx",
+            "searx.github.io/searx/search.html?q=",
+            R.drawable.search_one),
+        "baidu" to SearchEngine("Baidu", "www.baidu.com/s?wd=", R.drawable.ic_baidu),
+        "qwant" to SearchEngine("Qwant", "www.qwant.com/?q=", R.drawable.ic_qwant),
+        "ecosia" to SearchEngine("Ecosia", "www.ecosia.org/search?q=", R.drawable.ic_ecosia),
     )
 
 
@@ -23,36 +30,36 @@ class DataSource {
                 context.getString(R.string.q_answer_1_1),
                 context.getString(R.string.q_answer_1_2),
                 context.getString(R.string.q_answer_1_3)
-            ), R.color.cinnabar),
+            ), R.color.cr_cinnabar),
             QuestionAnswer(context.getString(R.string.question_2),
                 listOf(
                     context.getString(R.string.q_answer_2_1),
                     context.getString(R.string.q_answer_2_2)
-                ), R.color.pumpkin),
+                ), R.color.cr_pumpkin),
             QuestionAnswer(context.getString(R.string.question_3),
                 listOf(
                     context.getString(R.string.q_answer_3_1),
                     context.getString(R.string.q_answer_3_2)
-                ), R.color.medium_purple),
+                ), R.color.cr_medium_purple),
             QuestionAnswer(context.getString(R.string.question_4),
                 listOf(
                     context.getString(R.string.q_answer_4_1)
-                ), R.color.bright_sun),
+                ), R.color.cr_bright_sun),
             QuestionAnswer(context.getString(R.string.question_5),
                 listOf(
                     context.getString(R.string.q_answer_5_1),
                     context.getString(R.string.q_answer_5_2)
-                ), R.color.amethyst),
+                ), R.color.cr_amethyst),
             QuestionAnswer(context.getString(R.string.question_6),
                 listOf(
                     context.getString(R.string.q_answer_6_1),
                     context.getString(R.string.q_answer_6_2)
-                ), R.color.mountain_meadow),
+                ), R.color.cr_mountain_meadow),
             QuestionAnswer(context.getString(R.string.question_7),
                 listOf(
                     context.getString(R.string.q_answer_7_1),
                     context.getString(R.string.q_answer_7_2)
-                ), R.color.mona_lisa))
+                ), R.color.cr_mona_lisa))
     }
 
 }

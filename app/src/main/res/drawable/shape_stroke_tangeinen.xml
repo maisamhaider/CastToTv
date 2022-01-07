@@ -4,5 +4,5 @@
     <corners android:radius="@dimen/dp_4" />
     <stroke
         android:width="@dimen/dp_1.5"
-        android:color="@color/atomic_tangerine" />
+        android:color="@color/cr_atomic_tangerine" />
 </shape>

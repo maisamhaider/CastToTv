@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/white">
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/cr_white">
     <item android:id="@+id/background">
         <shape android:shape="rectangle">
             <gradient android:type="linear"
-                android:startColor="@color/dodger_blue_light_2"
-                android:endColor="@color/dodger_blue_dark"/>
+                android:startColor="@color/cr_dodger_blue_light_2"
+                android:endColor="@color/cr_dodger_blue_dark"/>
         </shape>
     </item>
 

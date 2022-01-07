@@ -45,12 +45,14 @@ class LanguagesAdapter(
         fun bind(lang: Lang, context: Context) {
             binding.textview.text = lang.name
             binding.checkbox.isChecked = context.getPrefs(LOCALE_LANGUAGE, "en") == lang.code
+
+
+
             if (context.getPrefs(LOCALE_LANGUAGE, "en") == lang.code) {
                 binding.textview.setTextColor(ContextCompat.getColor(context,
-                    R.color.dodger_blue_light_2))
+                    R.color.cr_dodger_blue_light_2))
             } else {
                 @ColorInt val color = context.resolveColorAttr(R.attr.attr_lblack_dwhite_80)
-
                 binding.textview.setTextColor(color)
             }
         }

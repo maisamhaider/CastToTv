@@ -2,27 +2,28 @@
     <!-- Base application theme. -->
     <style name="Theme.CastToTv" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/mirage</item>
-        <item name="colorPrimaryVariant">@color/black_pearl_2</item>
-        <item name="colorOnPrimary">@color/white</item><!--text-->
+        <item name="colorPrimary">@color/cr_mirage</item>
+        <item name="colorPrimaryVariant">@color/cr_black_pearl_2</item>
+        <item name="colorOnPrimary">@color/cr_white</item><!--text-->
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/dodger_blue_light_1</item>
-        <item name="colorSecondaryVariant">@color/dodger_blue_dark</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/cr_dodger_blue_light_1</item>
+        <item name="colorSecondaryVariant">@color/cr_dodger_blue_dark</item>
+        <item name="colorOnSecondary">@color/cr_black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="attr_lblack_dwhite_80">@color/white</item>
-        <item name="attr_lblack_dwhite_12_12">@color/white_12</item>
-        <item name="attr_lblack_dwhite_80_80">@color/white_60</item>
-        <item name="attr_lblack_dwhite_70_70">@color/white_70</item>
-        <item name="attr_subheading">@color/white_60</item>
-        <item name="attr_black_white_20_20">@color/white_20</item>
-        <item name="attr_white_orange">@color/white</item>
-        <item name="attr_lblack_dwhite_60_60">@color/white_60</item>
-        <item name="l_zumthor_b_black_pearl_1">@color/black_pearl_1</item>
-        <item name="l_white_b_black">@color/black</item>
-        <item name="l_black50_b_strome">@color/dust_storm</item>
+        <item name="attr_lblack_dwhite_80">@color/cr_white</item>
+        <item name="attr_lblack_dwhite_12_12">@color/cr_white_12</item>
+        <item name="attr_lblack_dwhite_80_80">@color/cr_white_60</item>
+        <item name="attr_lblack_dwhite_70_70">@color/cr_white_70</item>
+        <item name="attr_subheading">@color/cr_white_60</item>
+        <item name="attr_black_white_20_20">@color/cr_white_20</item>
+        <item name="attr_white_orange">@color/cr_white</item>
+        <item name="attr_lblack_dwhite_60_60">@color/cr_white_60</item>
+        <item name="l_zumthor_b_black_pearl_1">@color/cr_black_pearl_1</item>
+        <item name="l_white_b_black">@color/cr_black</item>
+        <item name="l_black50_b_strome">@color/cr_dust_storm</item>
+        <item name="l_emperor_b_silver_chalice">@color/cr_silver_chalice</item>
 
     </style>
 </resources>

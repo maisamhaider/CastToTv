@@ -31,22 +31,41 @@
                 app:srcCompat="@drawable/ic_corner_circles_light" />
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/imageview_draw"
+                android:id="@+id/appCompatImageView42"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:onClick="@{()->homeFragment.openDrawer()}"
                 android:src="@drawable/ic_drawer"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 app:layout_constraintBottom_toTopOf="@+id/guideline15"
                 app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintStart_toStartOf="@+id/guideline16"
                 app:layout_constraintTop_toTopOf="@+id/guideline14" />
 
             <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageview_draw"
+                android:layout_width="0dp"
+                android:onClick="@{()->homeFragment.openDrawer()}"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline17"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imageview_question"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
                 android:onClick="@{()->homeFragment.goToTutorial()}"
+                app:layout_constraintBottom_toTopOf="@+id/guideline17"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/appCompatImageView46"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/ic_question_circle"
                 app:layout_constraintBottom_toTopOf="@+id/guideline15"
                 app:layout_constraintDimensionRatio="1:1"
@@ -85,7 +104,7 @@
                 android:gravity="center"
                 android:onClick="@{()->homeFragment.goToTutorial()}"
                 android:text="@string/how_to_use"
-                android:textColor="@color/dodger_blue_light_2"
+                android:textColor="@color/cr_dodger_blue_light_2"
                 app:layout_constraintBottom_toTopOf="@+id/guideline103"
                 app:layout_constraintEnd_toStartOf="@+id/guideline28"
                 app:layout_constraintTop_toTopOf="@+id/guideline104" />

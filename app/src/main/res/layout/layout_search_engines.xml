@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/dp_10"
-            android:text="Search Engine"
+            android:text="@string/search_engine"
             android:textAppearance="?attr/textAppearanceHeadline6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -40,72 +40,72 @@
                     android:id="@+id/m_radio_button_google"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked='@{browserVM.checkSelectedEngine(browserVM.engines["google"])}'
-                    android:onClick='@{()->browserVM.putEngine(browserVM.engines["google"])}'
+                    android:checked='@{browserVM.checkSelectedEngine("google")}'
+                    android:onClick='@{()->browserVM.putEngine("google")}'
                     android:paddingStart="@dimen/dp_10"
-                    android:text="Google" />
+                    android:text="@string/google" />
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
                     android:id="@+id/m_radio_button_StartPage"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="@dimen/dp_10"
-                    android:text="StartPage"
+                    android:text="@string/startpage"
                     android:visibility="gone" />
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
                     android:id="@+id/m_radio_button_bing"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked='@{browserVM.checkSelectedEngine(browserVM.engines["bing"])}'
-                    android:onClick='@{()->browserVM.putEngine(browserVM.engines["bing"])}'
+                    android:checked='@{browserVM.checkSelectedEngine("bing")}'
+                    android:onClick='@{()->browserVM.putEngine("bing")}'
                     android:paddingStart="@dimen/dp_10"
-                    android:text="Bing" />
+                    android:text="@string/bing" />
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
                     android:id="@+id/m_radio_button_duckduckgo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked='@{browserVM.checkSelectedEngine(browserVM.engines["duckduckgo"])}'
-                    android:onClick='@{()->browserVM.putEngine(browserVM.engines["duckduckgo"])}'
+                    android:checked='@{browserVM.checkSelectedEngine("duckduckgo")}'
+                    android:onClick='@{()->browserVM.putEngine("duckduckgo")}'
                     android:paddingStart="@dimen/dp_10"
-                    android:text="DuckDuckGo" />
+                    android:text="@string/duckduckgo" />
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
                     android:id="@+id/m_radio_button_searx"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked='@{browserVM.checkSelectedEngine(browserVM.engines["searx"])}'
-                    android:onClick='@{()->browserVM.putEngine(browserVM.engines["searx"])}'
+                    android:checked='@{browserVM.checkSelectedEngine("searx")}'
+                    android:onClick='@{()->browserVM.putEngine("searx")}'
                     android:paddingStart="@dimen/dp_10"
-                    android:text="Searx" />
+                    android:text="@string/searx" />
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
                     android:id="@+id/m_radio_button_baidu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked='@{browserVM.checkSelectedEngine(browserVM.engines["baidu"])}'
-                    android:onClick='@{()->browserVM.putEngine(browserVM.engines["baidu"])}'
+                    android:checked='@{browserVM.checkSelectedEngine("baidu")}'
+                    android:onClick='@{()->browserVM.putEngine("baidu")}'
                     android:paddingStart="@dimen/dp_10"
-                    android:text="Baidu" />
+                    android:text="@string/baidu" />
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
                     android:id="@+id/m_radio_button_qwant"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked='@{browserVM.checkSelectedEngine(browserVM.engines["qwant"])}'
-                    android:onClick='@{()->browserVM.putEngine(browserVM.engines["qwant"])}'
+                    android:checked='@{browserVM.checkSelectedEngine("qwant")}'
+                    android:onClick='@{()->browserVM.putEngine("qwant")}'
                     android:paddingStart="@dimen/dp_10"
-                    android:text="Qwant" />
+                    android:text="@string/qwant" />
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
                     android:id="@+id/m_radio_button_ecosia"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked='@{browserVM.checkSelectedEngine(browserVM.engines["ecosia"])}'
-                    android:onClick='@{()->browserVM.putEngine(browserVM.engines["ecosia"])}'
+                    android:checked='@{browserVM.checkSelectedEngine("ecosia")}'
+                    android:onClick='@{()->browserVM.putEngine("ecosia")}'
                     android:paddingStart="@dimen/dp_10"
-                    android:text="Ecosia" />
+                    android:text="@string/ecosia" />
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
                     android:id="@+id/m_radio_button_custom_search_engine"
@@ -114,7 +114,7 @@
                     android:checked='@{browserVM.checkSelectedEngine("")}'
                     android:onClick='@{()->browserVM.putEngine("")}'
                     android:paddingStart="@dimen/dp_10"
-                    android:text="Custom search engine" />
+                    android:text="@string/custom_search_engine" />
             </RadioGroup>
         </ScrollView>
 

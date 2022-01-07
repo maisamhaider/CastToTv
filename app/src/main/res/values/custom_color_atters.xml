@@ -11,4 +11,5 @@
     <attr name="l_zumthor_b_black_pearl_1" format="reference" />
     <attr name="l_white_b_black" format="reference" />
     <attr name="l_black50_b_strome" format="reference" />
+    <attr name="l_emperor_b_silver_chalice" format="reference" />
 </resources>

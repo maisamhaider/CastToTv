@@ -30,7 +30,7 @@
         <com.google.android.material.textview.MaterialTextView
             style="@style/header_text_view_24sp"
             android:text="@string/our_policies"
-            android:textColor="@color/dodger_blue_light_2"
+            android:textColor="@color/cr_dodger_blue_light_2"
             app:layout_constraintBottom_toTopOf="@+id/guideline224"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline105"

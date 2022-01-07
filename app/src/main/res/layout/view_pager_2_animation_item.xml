@@ -18,7 +18,7 @@
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/card_view"
             style="@style/card_view_w0_h0_r5"
-            app:cardBackgroundColor="@color/white"
+            app:cardBackgroundColor="@color/cr_white"
             app:cardCornerRadius="@dimen/dp_6"
             app:cardElevation="@dimen/dp_0"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -39,7 +39,7 @@
                     style="@style/header_text_view"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:textColor="@color/black"
+                    android:textColor="@color/cr_black"
                     app:layout_constraintBottom_toTopOf="@+id/guideline307"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"

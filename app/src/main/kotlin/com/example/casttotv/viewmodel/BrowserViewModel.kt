@@ -18,6 +18,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.core.view.drawToBitmap
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.*
@@ -31,6 +32,7 @@ import com.example.casttotv.databinding.*
 import com.example.casttotv.datasource.DataSource
 import com.example.casttotv.models.Tabs
 import com.example.casttotv.ui.activities.browser.fragments.BrowserBottomSheetFragment
+import com.example.casttotv.ui.activities.browser.frags.MenuBottomSheetFragment
 import com.example.casttotv.utils.*
 import com.example.casttotv.utils.MySingleton.createWebPrintJob
 import com.example.casttotv.utils.MySingleton.funCopy
@@ -40,6 +42,7 @@ import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.Pref.putPrefs
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.coroutines.Dispatchers
@@ -91,7 +94,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     fun checkSelectedEngine(value: String): Boolean {
         val getEngine = cxt.getPrefs(SELECTED_ENGINE, "")
 
-        return getEngine == value
+        return getEngine.contains(value)
     }
 
     fun getCurrentTab(): Tabs {
@@ -104,6 +107,10 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
     fun initWebViewContainer(container: FrameLayout) {
         this.container = container
+    }
+
+    fun loadFragment(fragment: Fragment, fragmentManager: FragmentManager) {
+        fragmentManager.beginTransaction().replace(R.id.browser_container, fragment, "").commit()
     }
 
     /**
@@ -267,7 +274,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         if (_currentTabIndex == -1) {
             newTabWebView(WebView(cxt))
         }
-        val engine = getPrefs(SELECTED_ENGINE, "https://www.google.com/search?q=")
+        val engine =  engines[getPrefs(SELECTED_ENGINE, "google")]?.link?: "https://www.google.com/search?q="
 
         val url = if (engine.isEmpty()) {
             "https://www.google.com/search?q=$searchText"
@@ -619,7 +626,17 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
     }
 
-    fun bottomSheetMenu(fragmentActivity: FragmentActivity) {
+    fun showBottomSheet(fragmentManager: FragmentManager, bottomSheet: BottomSheetDialogFragment) {
+        bottomSheet.show(fragmentManager, null)
+    }
+    fun cancelBottomSheet(fragmentManager: FragmentManager, bottomSheet: BottomSheetDialogFragment) {
+        if(bottomSheet.isVisible)
+        {
+            bottomSheet.dismiss()
+        }
+     }
+
+    fun showBottomSheet(fragmentActivity: FragmentActivity) {
 
         // on below line we are creating a new bottom sheet dialog.
         val dialog = BottomSheetDialog(cxt)
@@ -627,7 +644,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
         val bottomBinding =
             LayoutInflater.from(cxt)
-                .inflate(com.example.casttotv.R.layout.bottom_sheet_dialog, null, false)
+                .inflate(R.layout.bottom_sheet_dialog, null, false)
 
 
         // closing of dialog box when clicking on the screen.

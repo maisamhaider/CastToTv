@@ -226,6 +226,35 @@
     <string name="private_browser">Private Browser</string>
     <string name="effects">Effects</string>
     <string name="slider">Slider</string>
+    <string name="search_or_type_web_address">Search or type web address</string>
+    <string name="ad">AD</string>
+    <string name="install_2">Install</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="downloads">Downloads</string>
+    <string name="favourites">Favourites</string>
+    <string name="history">History</string>
+    <string name="share_pdf">Share Pdf</string>
+    <string name="copy_url">Copy URL</string>
+    <string name="share_app">Share App</string>
+    <string name="share_url">Share url</string>
+    <string name="exit">Exit</string>
+    <string name="new_tab">New Tab</string>
+    <string name="google">Google</string>
+    <string name="startpage">StartPage</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Custom search engine</string>
+    <string name="add_shortcut_to_home">Add shortcut to home</string>
+    <string name="save_screenshot">Save Screenshot</string>
+    <string name="add_to_bookmark">Add to bookmark</string>
+    <string name="save_as_pdf">Save as pdf</string>
+    <string name="save_action">Save Action</string>
+    <string name="add_to_favorite">Add to favorite</string>
+    <string name="search_engine">Search Engine</string>
 
 
 </resources>

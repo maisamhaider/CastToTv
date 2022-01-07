@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.example.casttotv.R
 import com.example.casttotv.databinding.TabItemBinding
 import com.example.casttotv.models.Tabs
 import com.example.casttotv.viewmodel.BrowserViewModel
@@ -32,8 +34,9 @@ class TabsAdapter(
 
     class Holder(private val binding: TabItemBinding) : RecyclerView.ViewHolder(binding.root) {
         var i = 0
-        fun bind(tab: Tabs, browserVm: BrowserViewModel) {
-            binding.mTextView.text = tab.webView.title ?: "empty"
+        fun bind(context: Context, tab: Tabs, browserVm: BrowserViewModel) {
+            binding.textview.text = tab.webView.title ?: "empty"
+            Glide.with(context).load(tab.webView.url).placeholder(R.drawable.ic_app_icon).into(binding.imageviewTabSiteLogo)
             i = i.inc()
             binding.imageviewRemove.setOnClickListener {
                 browserVm.closTabDialog(this.absoluteAdapterPosition)
@@ -47,7 +50,7 @@ class TabsAdapter(
         )
         viewHolder.itemView.setOnClickListener {
             onItemClick(viewHolder.absoluteAdapterPosition)
-          }
+        }
 
 
         return viewHolder
@@ -55,7 +58,7 @@ class TabsAdapter(
 
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.bind(getItem(holder.absoluteAdapterPosition), browserVm)
+        holder.bind(context, getItem(holder.absoluteAdapterPosition), browserVm)
     }
 
 }

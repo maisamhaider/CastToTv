@@ -92,7 +92,7 @@ class TutorialPagerAdapter(private var context: Context) :
 
 
             val color =
-                ForegroundColorSpan(ContextCompat.getColor(context, R.color.dodger_blue_light_2))
+                ForegroundColorSpan(ContextCompat.getColor(context, R.color.cr_dodger_blue_light_2))
             spannableString.setSpan(color, 166, 177, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
             spannableString.setSpan(notUnderlineSpanAndClick,
                 166,

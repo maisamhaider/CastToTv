@@ -38,7 +38,12 @@
     <dimen name="dp_40">40dp</dimen>
     <dimen name="dp_1">1dp</dimen>
     <dimen name="dp_1.5">1.5dp</dimen>
+    <dimen name="dp_0.5">0.5dp</dimen>
+    <dimen name="dp_0.8">0.8dp</dimen>
     <dimen name="dp_3">3dp</dimen>
     <dimen name="dp_15">15dp</dimen>
     <dimen name="dp_7">7dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_11">11dp</dimen>
 </resources>

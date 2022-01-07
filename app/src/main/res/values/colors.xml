@@ -3,41 +3,46 @@
 
 
     //common
-    <color name="white">#FFFFFFFF</color>
-    <color name="white_12">#1FFFFFFF</color>
-    <color name="white_15">#26FFFFFF</color>
-    <color name="white_20">#33FFFFFF</color>
-    <color name="white_60">#99FFFFFF</color>
-    <color name="white_70">#B3FFFFFF</color>
-    <color name="white_80">#CCFFFFFF</color>
-    <color name="black">#FF000000</color>
-    <color name="black_12">#1F000000</color>
-    <color name="black_20">#33000000</color>
-    <color name="black_15">#26000000</color>
-    <color name="black_40">#66000000</color>
-    <color name="black_50">#80000000</color>
-    <color name="black_60">#99000000</color>
-    <color name="black_70">#B3000000</color>
-    <color name="black_80">#CC000000</color>
-    <color name="dodger_blue_dark">#325FFF</color>
-    <color name="dodger_blue_light_1">#4F8BFF</color>
-    <color name="dodger_blue_light_2">#39A0FF</color>
-    <color name="cinnabar">#E1484A</color>
-    <color name="pumpkin">#FF7714</color>
-    <color name="medium_purple">#924FE7</color>
-    <color name="bright_sun">#FFC542</color>
-    <color name="amethyst">#B857C7</color>
-    <color name="mountain_meadow">#24C058</color>
-    <color name="mona_lisa">#FF9696</color>
-    <color name="turquoise">#3FD5DE</color>
-    <color name="malachite">#12B449</color>
-    <color name="zumthor">#E4EEFF</color>
-    <color name="atomic_tangerine">#FFA15E</color>
-    <color name="dust_storm">#80E4C8C8</color>
+    <color name="cr_white">#FFFFFFFF</color>
+    <color name="cr_white_12">#1FFFFFFF</color>
+    <color name="cr_white_15">#26FFFFFF</color>
+    <color name="cr_white_20">#33FFFFFF</color>
+    <color name="cr_white_60">#99FFFFFF</color>
+    <color name="cr_white_70">#B3FFFFFF</color>
+    <color name="cr_white_80">#CCFFFFFF</color>
+    <color name="cr_black">#FF000000</color>
+    <color name="cr_black_12">#1F000000</color>
+    <color name="cr_black_20">#33000000</color>
+    <color name="cr_black_15">#26000000</color>
+    <color name="cr_black_40">#66000000</color>
+    <color name="cr_black_50">#80000000</color>
+    <color name="cr_black_60">#99000000</color>
+    <color name="cr_black_70">#B3000000</color>
+    <color name="cr_black_80">#CC000000</color>
+    <color name="cr_malibu">#41D8FF</color>
+    <color name="cr_dodger_blue_dark">#325FFF</color>
+    <color name="cr_dodger_blue_light_1">#4F8BFF</color>
+    <color name="cr_dodger_blue_light_2">#39A0FF</color>
+    <color name="cr_dodger_blue_light_3">#1CA9FF</color>
+    <color name="cr_cinnabar">#E1484A</color>
+    <color name="cr_cinnabar_2">#E53935</color>
+    <color name="cr_pumpkin">#FF7714</color>
+    <color name="cr_medium_purple">#924FE7</color>
+    <color name="cr_bright_sun">#FFC542</color>
+    <color name="cr_amethyst">#B857C7</color>
+    <color name="cr_mountain_meadow">#24C058</color>
+    <color name="cr_mona_lisa">#FF9696</color>
+    <color name="cr_turquoise">#3FD5DE</color>
+    <color name="cr_malachite">#12B449</color>
+    <color name="cr_zumthor">#E4EEFF</color>
+    <color name="cr_atomic_tangerine">#FFA15E</color>
+    <color name="cr_dust_storm">#80E4C8C8</color>
+    <color name="cr_emperor">#535353</color>
+    <color name="cr_silver_chalice">#A8A8A8</color>
 
 
     //dark theme
-    <color name="mirage">#1C2536</color>
-    <color name="black_pearl_1">#091938</color>
-    <color name="black_pearl_2">#061126</color>
+    <color name="cr_mirage">#1C2536</color>
+    <color name="cr_black_pearl_1">#091938</color>
+    <color name="cr_black_pearl_2">#061126</color>
 </resources>

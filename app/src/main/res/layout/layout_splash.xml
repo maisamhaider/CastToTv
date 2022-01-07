@@ -10,7 +10,7 @@
         android:id="@+id/cl_splash_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/black_pearl_2"
+        android:background="@color/cr_black_pearl_2"
         android:visibility="gone">
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -27,7 +27,7 @@
             style="@style/header_text_view"
             android:gravity="center"
             android:text="@string/app_name"
-            android:textColor="@color/white"
+            android:textColor="@color/cr_white"
             app:layout_constraintBottom_toTopOf="@+id/guideline4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -39,7 +39,7 @@
             android:gravity="center"
             android:id="@+id/textview_slogan"
             android:text="@string/make_sure_your_phone_and_tv_are_connected"
-            android:textColor="@color/white_60"
+            android:textColor="@color/cr_white_60"
             app:layout_constraintBottom_toTopOf="@+id/guideline275"
             app:layout_constraintEnd_toStartOf="@+id/guideline277"
             app:layout_constraintStart_toStartOf="@+id/guideline276"

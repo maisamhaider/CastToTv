@@ -94,23 +94,23 @@ class MainViewModel : ViewModel() {
                 radioButton1.isChecked = true
                 radioButton2.isChecked = false
                 if (dark) {
-                    textviewManual.setTextColor(ContextCompat.getColor(context, R.color.white))
+                    textviewManual.setTextColor(ContextCompat.getColor(context, R.color.cr_white))
                 } else {
-                    textviewManual.setTextColor(ContextCompat.getColor(context, R.color.black_80))
+                    textviewManual.setTextColor(ContextCompat.getColor(context, R.color.cr_black_80))
                 }
                 textviewAuto.setTextColor(ContextCompat.getColor(context,
-                    R.color.dodger_blue_light_2))
+                    R.color.cr_dodger_blue_light_2))
 
             } else {
                 radioButton1.isChecked = false
                 radioButton2.isChecked = true
                 if (dark) {
-                    textviewAuto.setTextColor(ContextCompat.getColor(context, R.color.white))
+                    textviewAuto.setTextColor(ContextCompat.getColor(context, R.color.cr_white))
                 } else {
-                    textviewAuto.setTextColor(ContextCompat.getColor(context, R.color.black_80))
+                    textviewAuto.setTextColor(ContextCompat.getColor(context, R.color.cr_black_80))
                 }
                 textviewManual.setTextColor(ContextCompat.getColor(context,
-                    R.color.dodger_blue_light_2))
+                    R.color.cr_dodger_blue_light_2))
                 _orientation.value = context.getString(R.string.manual)
 
             }
@@ -120,11 +120,11 @@ class MainViewModel : ViewModel() {
                 radioButton1.isChecked = true
                 radioButton2.isChecked = false
                 textviewAuto.setTextColor(ContextCompat.getColor(context,
-                    R.color.dodger_blue_light_2))
+                    R.color.cr_dodger_blue_light_2))
                 if (dark) {
-                    textviewManual.setTextColor(ContextCompat.getColor(context, R.color.white))
+                    textviewManual.setTextColor(ContextCompat.getColor(context, R.color.cr_white))
                 } else {
-                    textviewManual.setTextColor(ContextCompat.getColor(context, R.color.black_80))
+                    textviewManual.setTextColor(ContextCompat.getColor(context, R.color.cr_black_80))
                 }
                 _orientation.value = context.getString(R.string.auto)
                 context.changeTheme()
@@ -134,12 +134,12 @@ class MainViewModel : ViewModel() {
                 radioButton1.isChecked = false
                 radioButton2.isChecked = true
                 if (dark) {
-                    textviewAuto.setTextColor(ContextCompat.getColor(context, R.color.white))
+                    textviewAuto.setTextColor(ContextCompat.getColor(context, R.color.cr_white))
                 } else {
-                    textviewAuto.setTextColor(ContextCompat.getColor(context, R.color.black_80))
+                    textviewAuto.setTextColor(ContextCompat.getColor(context, R.color.cr_black_80))
                 }
                 textviewManual.setTextColor(ContextCompat.getColor(context,
-                    R.color.dodger_blue_light_2))
+                    R.color.cr_dodger_blue_light_2))
                 _orientation.value = context.getString(R.string.manual)
                 context.changeTheme()
             }
@@ -160,15 +160,15 @@ class MainViewModel : ViewModel() {
                 radioButtonDark.isChecked = true
                 radioButtonLight.isChecked = false
                 textviewDark.setTextColor(ContextCompat.getColor(context,
-                    R.color.dodger_blue_light_2))
-                textviewLight.setTextColor(ContextCompat.getColor(context, R.color.white))
+                    R.color.cr_dodger_blue_light_2))
+                textviewLight.setTextColor(ContextCompat.getColor(context, R.color.cr_white))
                 _darkAndLight.value = context.getString(R.string.dark)
             } else {
                 radioButtonDark.isChecked = false
                 radioButtonLight.isChecked = true
-                textviewDark.setTextColor(ContextCompat.getColor(context, R.color.black_80))
+                textviewDark.setTextColor(ContextCompat.getColor(context, R.color.cr_black_80))
                 textviewLight.setTextColor(ContextCompat.getColor(context,
-                    R.color.dodger_blue_light_2))
+                    R.color.cr_dodger_blue_light_2))
                 _darkAndLight.value = context.getString(R.string.light)
             }
             viewCancel.setOnClickListener { dialog.dismiss() }
@@ -177,8 +177,8 @@ class MainViewModel : ViewModel() {
                 radioButtonDark.isChecked = true
                 radioButtonLight.isChecked = false
                 textviewDark.setTextColor(ContextCompat.getColor(context,
-                    R.color.dodger_blue_light_2))
-                textviewLight.setTextColor(ContextCompat.getColor(context, R.color.white))
+                    R.color.cr_dodger_blue_light_2))
+                textviewLight.setTextColor(ContextCompat.getColor(context, R.color.cr_white))
                 _darkAndLight.value = context.getString(R.string.dark)
                 context.changeTheme()
                 dialog.dismiss()
@@ -187,9 +187,9 @@ class MainViewModel : ViewModel() {
                 context.putPrefs(THEME_DARK, false)
                 radioButtonDark.isChecked = false
                 radioButtonLight.isChecked = true
-                textviewDark.setTextColor(ContextCompat.getColor(context, R.color.black_80))
+                textviewDark.setTextColor(ContextCompat.getColor(context, R.color.cr_black_80))
                 textviewLight.setTextColor(ContextCompat.getColor(context,
-                    R.color.dodger_blue_light_2))
+                    R.color.cr_dodger_blue_light_2))
                 _darkAndLight.value = context.getString(R.string.light)
                 context.changeTheme()
                 dialog.dismiss()

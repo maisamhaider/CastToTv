@@ -4,7 +4,7 @@
     <style name="button1">
         <item name="android:padding">10dp</item>
         <item name="cornerRadius">10dp</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/cr_white</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
@@ -167,7 +167,7 @@
     </style>
 
     <style name="header_text_4">
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/cr_white</item>
         <item name="fontFamily">@font/ubuntu</item>
         <item name="autoSizeMinTextSize">2sp</item>
         <item name="autoSizeTextType">uniform</item>
@@ -224,7 +224,7 @@
     </style>
 
     <style name="dialog_red_text">
-        <item name="android:textColor">@color/cinnabar</item>
+        <item name="android:textColor">@color/cr_cinnabar</item>
         <item name="fontFamily">@font/ubuntu</item>
         <item name="autoSizeMinTextSize">2sp</item>
         <item name="autoSizeTextType">uniform</item>
@@ -253,6 +253,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
     </style>
+
     <style name="card_view_w_0_r6">
         <item name="cardElevation">5dp</item>
         <item name="cardCornerRadius">6dp</item>
@@ -290,9 +291,9 @@
     </style>
 
     <style name="textView_1">
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/cr_white</item>
         <item name="android:ellipsize">end</item>
-        <item name="android:background">@color/black_70</item>
+        <item name="android:background">@color/cr_black_70</item>
         <item name="android:padding">@dimen/dp_10</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -303,6 +304,14 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
         <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="BottomSheetDialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetBackground</item>
+    </style>
+
+    <style name="bottomSheetBackground" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_sheet_bg</item>
     </style>
 
 

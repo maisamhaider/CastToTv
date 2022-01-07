@@ -67,9 +67,9 @@ class WelcomeActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         window.statusBarColor =
-            ContextCompat.getColor(this, com.example.casttotv.R.color.black_pearl_2)
+            ContextCompat.getColor(this, com.example.casttotv.R.color.cr_black_pearl_2)
         window.navigationBarColor =
-            ContextCompat.getColor(this, com.example.casttotv.R.color.black_pearl_2)
+            ContextCompat.getColor(this, com.example.casttotv.R.color.cr_black_pearl_2)
 
 //        val showSplash = getPrefs(SHOW_SPLASH_LAYOUT, false)
 //        val showPermissionLayout = getPrefs(SHOW_PERMISSION_LAYOUT, true)

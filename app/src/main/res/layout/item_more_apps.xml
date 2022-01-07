@@ -36,7 +36,7 @@
             android:maxLines="1"
             android:padding="5dp"
             android:text="Install"
-            android:textColor="@color/white"
+            android:textColor="@color/cr_white"
             app:autoSizeMaxTextSize="18sp"
             app:autoSizeMinTextSize="2sp"
             app:autoSizeTextType="uniform"

@@ -35,7 +35,7 @@
             android:id="@+id/textview_header"
             style="@style/header_text_view"
             android:gravity="center"
-            android:textColor="@color/dodger_blue_light_2"
+            android:textColor="@color/cr_dodger_blue_light_2"
             app:layout_constraintBottom_toTopOf="@+id/guideline199"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -67,14 +67,14 @@
             app:layout_constraintStart_toStartOf="@+id/guideline192"
             app:layout_constraintTop_toTopOf="@+id/guideline201"
             app:progressMode="true"
-            app:selectedDotColor="@color/dodger_blue_light_2" />
+            app:selectedDotColor="@color/cr_dodger_blue_light_2" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/textview_next_text"
             style="@style/header_text_3"
             android:gravity="center"
             android:text="@{tutorialVM.nextButtonText}"
-            android:textColor="@color/white"
+            android:textColor="@color/cr_white"
             app:layout_constraintBottom_toTopOf="@+id/guideline198"
             app:layout_constraintEnd_toStartOf="@+id/guideline189"
             app:layout_constraintStart_toStartOf="@+id/materialTextView"

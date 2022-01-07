@@ -18,7 +18,7 @@
         android:id="@+id/cl_walk_through_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/black_pearl_2"
+        android:background="@color/cr_black_pearl_2"
         android:visibility="gone">
 
 
@@ -47,7 +47,7 @@
         <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
             android:id="@+id/dots_indicator"
             style="@style/w_w_h_0"
-            app:dotsColor="@color/white_20"
+            app:dotsColor="@color/cr_white_20"
             app:dotsCornerRadius="@dimen/dp_8"
             app:dotsSize="@dimen/dp_10"
             app:dotsSpacing="@dimen/dp_5"
@@ -57,14 +57,14 @@
             app:layout_constraintStart_toStartOf="@+id/guideline192"
             app:layout_constraintTop_toTopOf="@+id/guideline201"
             app:progressMode="true"
-            app:selectedDotColor="@color/dodger_blue_light_2" />
+            app:selectedDotColor="@color/cr_dodger_blue_light_2" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/textview_next_text"
             style="@style/header_text_3"
             android:gravity="center"
             android:text="@{tutorialVM.nextButtonText}"
-            android:textColor="@color/white"
+            android:textColor="@color/cr_white"
             app:layout_constraintBottom_toTopOf="@+id/guideline198"
             app:layout_constraintEnd_toStartOf="@+id/guideline189"
             app:layout_constraintStart_toStartOf="@+id/materialTextView"

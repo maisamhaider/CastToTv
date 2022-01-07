@@ -20,7 +20,7 @@
             style="@style/w_0_h_0"
             android:layout_margin="@dimen/dp_10"
             android:elevation="@dimen/dp_0"
-            app:cardBackgroundColor="@color/dodger_blue_light_2"
+            app:cardBackgroundColor="@color/cr_dodger_blue_light_2"
             app:cardCornerRadius="@dimen/dp_5"
             app:cardElevation="@dimen/dp_1"
             app:layout_constraintBottom_toTopOf="@+id/guideline247"
@@ -58,7 +58,7 @@
             android:paddingEnd="@dimen/dp_3"
             android:paddingBottom="@dimen/dp_4"
             android:text="@string/wi_fi"
-            android:textColor="@color/dodger_blue_light_2"
+            android:textColor="@color/cr_dodger_blue_light_2"
             app:layout_constraintBottom_toTopOf="@+id/guideline263"
             app:layout_constraintEnd_toStartOf="@+id/textview_2"
             app:layout_constraintTop_toTopOf="@+id/guideline260" />
@@ -73,7 +73,7 @@
             android:paddingEnd="@dimen/dp_3"
             android:paddingBottom="@dimen/dp_4"
             android:text="@string/miracast"
-            android:textColor="@color/atomic_tangerine"
+            android:textColor="@color/cr_atomic_tangerine"
             app:layout_constraintBottom_toTopOf="@+id/guideline263"
             app:layout_constraintEnd_toEndOf="@+id/card_view_background"
             app:layout_constraintTop_toTopOf="@+id/guideline260" />
