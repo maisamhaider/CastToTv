@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -10,37 +11,89 @@
 
     </data>
 
-    <ScrollView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ui.activities.browser.BrowserSettingsActivity">
+        android:background="?attr/colorPrimaryVariant"
+        android:layout_height="match_parent">
 
-        <androidx.appcompat.widget.LinearLayoutCompat
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            style="@style/w_0_h_0"
+            app:layout_constraintBottom_toTopOf="@+id/guideline491"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageview_back"
+                style="@style/imageview_w0_h0_ratio11"
+                android:onClick="@{()->browserSettingsActivity.back()}"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_arrow_back" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView27"
+                style="@style/header_text_view"
+                android:layout_marginStart="@dimen/dp_4"
+                android:text="@string/settings"
+                app:layout_constraintBottom_toTopOf="@+id/guideline462"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageview_back"
+                app:layout_constraintTop_toTopOf="@+id/guideline461" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline461"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.3" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline462"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.7" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
             android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="?attr/colorPrimaryVariant"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+            tools:context=".ui.activities.browser.BrowserSettingsActivity">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/include_browser_settings"
+                    layout="@layout/browser_settings_layout" />
+
+                <include
+                    android:id="@+id/include_settings_layout"
+                    layout="@layout/app_settings_layout" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline491"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.075" />
 
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dp_16"
-                android:text="Browser Settings"
-                android:textColor="@android:color/holo_red_dark" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <include
-                android:id="@+id/include_browser_settings"
-                layout="@layout/browser_settings_layout" />
 
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dp_16"
-                android:text="Browser Settings"
-                android:textColor="@android:color/holo_red_dark" />
-
-            <include
-                android:id="@+id/include_settings_layout"
-                layout="@layout/app_settings_layout" />
-        </androidx.appcompat.widget.LinearLayoutCompat>
-    </ScrollView>
 </layout>

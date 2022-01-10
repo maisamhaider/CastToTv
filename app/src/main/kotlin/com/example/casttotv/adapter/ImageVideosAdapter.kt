@@ -12,6 +12,7 @@ import com.example.casttotv.R
 import com.example.casttotv.databinding.ImagesVideosItemBinding
 import com.example.casttotv.models.FileModel
 import com.example.casttotv.utils.IMAGE
+import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.utils.SLIDE
 import com.example.casttotv.utils.VIDEO
 import com.example.casttotv.viewmodel.SharedViewModel
@@ -47,6 +48,8 @@ class ImageVideosAdapter(
             sliderImageList: MutableList<FileModel>,
             onItemClicked: (FileModel, Int) -> Unit,
         ) {
+
+            context.toastShort("${fileModel.duration},\n ${fileModel.filePath},\n ${fileModel.fileName}")
             when (mimType) {
                 VIDEO -> {
                     binding.imageViewPlay.visibility = View.VISIBLE

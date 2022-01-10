@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="browserVM"
+            type="com.example.casttotv.viewmodel.BrowserViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/w_0_h_0"
+            android:background="@drawable/bottom_sheet_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="w,10:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/header_text_view"
+                android:text="@string/save_action"
+                app:layout_constraintBottom_toTopOf="@+id/guideline426"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline429"
+                app:layout_constraintTop_toTopOf="@+id/guideline425" />
+
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="?attr/attr_black_white_20_20"
+                app:layout_constraintBottom_toTopOf="@+id/guideline401"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline401" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_save_ss"
+                style="@style/w_0_h_0"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintBottom_toTopOf="@+id/guideline404"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline403">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/appCompatImageView47"
+                    style="@style/imageview_w0_h0_ratio11"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline421"
+                    app:layout_constraintStart_toStartOf="@+id/guideline430"
+                    app:layout_constraintTop_toTopOf="@+id/guideline420"
+                    app:srcCompat="@drawable/ic_save_scren_shot" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/body_text_view"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="start|center"
+                    android:text="@string/save_screenshot"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline421"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/appCompatImageView47"
+                    app:layout_constraintTop_toTopOf="@+id/guideline420" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline420"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.32" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline421"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.67" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline430"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.04" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_save_as_pdf"
+                style="@style/w_0_h_0"
+                android:background="?attr/selectableItemBackground"
+                android:onClick="@{()-> browserVM.print()}"
+                app:layout_constraintBottom_toTopOf="@+id/guideline431"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline404">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/appCompatImageView49"
+                    style="@style/imageview_w0_h0_ratio11"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline433"
+                    app:layout_constraintStart_toStartOf="@+id/guideline434"
+                    app:layout_constraintTop_toTopOf="@+id/guideline432"
+                    app:srcCompat="@drawable/ic_as_pdf" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textview_save_screenshot"
+                    style="@style/body_text_view"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="start|center"
+                    android:text="@string/save_as_pdf"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline433"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/appCompatImageView49"
+                    app:layout_constraintTop_toTopOf="@+id/guideline432" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline432"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.32" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline433"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.67" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline434"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.04" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_save_to_bookmark"
+                style="@style/w_0_h_0"
+                android:background="?attr/selectableItemBackground"
+                android:onClick="@{()-> browserVM.insertBookmark()}"
+                app:layout_constraintBottom_toTopOf="@+id/guideline435"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline431">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/appCompatImageView50"
+                    style="@style/imageview_w0_h0_ratio11"
+                    android:layout_width="0dp"
+                    android:layout_height="22dp"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline437"
+                    app:layout_constraintStart_toStartOf="@+id/guideline438"
+                    app:layout_constraintTop_toTopOf="@+id/guideline436"
+                    app:srcCompat="@drawable/ic_save_as_bookmark" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/body_text_view"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="start|center"
+                    android:text="@string/add_to_bookmark"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline437"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/appCompatImageView50"
+                    app:layout_constraintTop_toTopOf="@+id/guideline436" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline436"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.32" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline437"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.67" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline438"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.04" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_add_to_favorite"
+                style="@style/w_0_h_0"
+                android:background="?attr/selectableItemBackground"
+                app:layout_constraintBottom_toTopOf="@+id/guideline440"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline435">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/appCompatImageView51"
+                    style="@style/imageview_w0_h0_ratio11"
+                    android:layout_width="0dp"
+                    android:layout_height="22dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline439"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_add_favourites" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/body_text_view"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="start|center"
+                    android:text="@string/add_to_favorite"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline442"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/appCompatImageView51"
+                    app:layout_constraintTop_toTopOf="@+id/guideline441" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline441"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.32" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline442"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.67" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline439"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.04" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_add_home_home"
+                style="@style/w_0_h_0"
+                android:background="?attr/selectableItemBackground"
+                android:onClick="@{()-> browserVM.insertHome()}"
+                app:layout_constraintBottom_toTopOf="@+id/guideline446"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline440">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/appCompatImageView52"
+                    style="@style/imageview_w0_h0_ratio11"
+                    android:layout_width="0dp"
+                    android:layout_height="22dp"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline444"
+                    app:layout_constraintStart_toStartOf="@+id/guideline445"
+                    app:layout_constraintTop_toTopOf="@+id/guideline443"
+                    app:srcCompat="@drawable/ic_add_to_home" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/body_text_view"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="start|center"
+                    android:text="@string/add_shortcut_to_home"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline444"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/appCompatImageView52"
+                    app:layout_constraintTop_toTopOf="@+id/guideline443" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline443"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.32" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline444"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.67" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline445"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="16dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline425"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.06" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline426"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.13" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline401"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.165" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline403"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.20" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline404"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.35" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline431"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.50" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline435"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.65" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline440"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.80" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline446"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.95" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline429"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.04" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

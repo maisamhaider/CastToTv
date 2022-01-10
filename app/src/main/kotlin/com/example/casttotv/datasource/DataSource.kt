@@ -22,6 +22,20 @@ class DataSource {
         "qwant" to SearchEngine("Qwant", "www.qwant.com/?q=", R.drawable.ic_qwant),
         "ecosia" to SearchEngine("Ecosia", "www.ecosia.org/search?q=", R.drawable.ic_ecosia),
     )
+    val enginesList = listOf(
+        SearchEngine("Google",
+            "https://www.google.com/search?q=",
+            R.drawable.ic_google),
+        SearchEngine("Bing", "www.bing.com/search?q=", R.drawable.ic_bing_logo),
+        SearchEngine("Duckduckgo",
+            "duckduckgo.com/?q=",
+            R.drawable.ic_duck_duck_go),
+        SearchEngine("Searx",
+            "searx.github.io/searx/search.html?q=",
+            R.drawable.search_one),
+        SearchEngine("Baidu", "www.baidu.com/s?wd=", R.drawable.ic_baidu),
+        SearchEngine("Qwant", "www.qwant.com/?q=", R.drawable.ic_qwant),
+        SearchEngine("Ecosia", "www.ecosia.org/search?q=", R.drawable.ic_ecosia))
 
 
     fun listOfQA(context: Context): List<QuestionAnswer> {

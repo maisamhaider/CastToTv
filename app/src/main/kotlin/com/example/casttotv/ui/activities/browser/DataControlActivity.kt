@@ -6,7 +6,6 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.casttotv.databinding.ActivityDataControlBinding
 import com.example.casttotv.databinding.LayoutBodyPosAndNegButtonBinding
-import com.example.casttotv.utils.AppApplication
 import com.example.casttotv.viewmodel.BrowserViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialog
 
@@ -47,5 +46,9 @@ class DataControlActivity : AppCompatActivity() {
 
 
         bottomSheet.show()
+    }
+
+    fun back() {
+        finish()
     }
 }

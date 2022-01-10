@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -11,124 +12,119 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="380dp">
+        android:layout_height="wrap_content">
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/materialTextView17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp_10"
-            android:text="@string/search_engine"
-            android:textAppearance="?attr/textAppearanceHeadline6"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ScrollView
-            android:id="@+id/scrollView3"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/materialTextView17">
-
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/m_radio_button_google"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:checked='@{browserVM.checkSelectedEngine("google")}'
-                    android:onClick='@{()->browserVM.putEngine("google")}'
-                    android:paddingStart="@dimen/dp_10"
-                    android:text="@string/google" />
-
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/m_radio_button_StartPage"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="@dimen/dp_10"
-                    android:text="@string/startpage"
-                    android:visibility="gone" />
-
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/m_radio_button_bing"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:checked='@{browserVM.checkSelectedEngine("bing")}'
-                    android:onClick='@{()->browserVM.putEngine("bing")}'
-                    android:paddingStart="@dimen/dp_10"
-                    android:text="@string/bing" />
-
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/m_radio_button_duckduckgo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:checked='@{browserVM.checkSelectedEngine("duckduckgo")}'
-                    android:onClick='@{()->browserVM.putEngine("duckduckgo")}'
-                    android:paddingStart="@dimen/dp_10"
-                    android:text="@string/duckduckgo" />
-
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/m_radio_button_searx"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:checked='@{browserVM.checkSelectedEngine("searx")}'
-                    android:onClick='@{()->browserVM.putEngine("searx")}'
-                    android:paddingStart="@dimen/dp_10"
-                    android:text="@string/searx" />
-
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/m_radio_button_baidu"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:checked='@{browserVM.checkSelectedEngine("baidu")}'
-                    android:onClick='@{()->browserVM.putEngine("baidu")}'
-                    android:paddingStart="@dimen/dp_10"
-                    android:text="@string/baidu" />
-
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/m_radio_button_qwant"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:checked='@{browserVM.checkSelectedEngine("qwant")}'
-                    android:onClick='@{()->browserVM.putEngine("qwant")}'
-                    android:paddingStart="@dimen/dp_10"
-                    android:text="@string/qwant" />
-
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/m_radio_button_ecosia"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:checked='@{browserVM.checkSelectedEngine("ecosia")}'
-                    android:onClick='@{()->browserVM.putEngine("ecosia")}'
-                    android:paddingStart="@dimen/dp_10"
-                    android:text="@string/ecosia" />
-
-                <com.google.android.material.radiobutton.MaterialRadioButton
-                    android:id="@+id/m_radio_button_custom_search_engine"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:checked='@{browserVM.checkSelectedEngine("")}'
-                    android:onClick='@{()->browserVM.putEngine("")}'
-                    android:paddingStart="@dimen/dp_10"
-                    android:text="@string/custom_search_engine" />
-            </RadioGroup>
-        </ScrollView>
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/m_button_cancel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp_10"
-            android:padding="@dimen/dp_6"
-            android:text="Cancel"
-            android:textColor="@android:color/holo_red_dark"
+        <com.google.android.material.card.MaterialCardView
+            style="@style/card_view_0_0"
+            app:cardBackgroundColor="?attr/colorPrimary"
+            app:cardCornerRadius="@dimen/dp_16"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="w,10:13"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="?attr/colorPrimary">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/materialTextView17"
+                    style="@style/header_text_view"
+                    android:layout_marginStart="@dimen/dp_25"
+                    android:text="@string/search_engine"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline413"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline411" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    style="@style/recycler_view"
+                    android:paddingTop="6dp"
+                    android:layout_marginStart="@dimen/dp_18"
+                    tools:listitem="@layout/language_item"
+                    app:cardBackgroundColor="?attr/colorPrimary"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline414"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline413" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/m_button_cancel_click"
+                    style="@style/w_0_h_0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline417"
+                    app:layout_constraintStart_toStartOf="@+id/m_button_cancel"
+                    app:layout_constraintTop_toTopOf="@+id/guideline414" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/m_button_cancel"
+                    style="@style/header_text_ww_h0"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:textColor="@color/cr_cinnabar_2"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline416"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline417"
+                    app:layout_constraintTop_toTopOf="@+id/guideline415" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline412"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.05" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline411"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.05" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline413"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.105" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline414"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.85" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline415"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.905" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline416"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.947" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline417"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.95" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

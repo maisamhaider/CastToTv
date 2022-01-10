@@ -6,8 +6,8 @@ import android.os.Bundle
 import android.provider.Settings
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.example.casttotv.R
 import com.example.casttotv.databinding.ActivityBrowserSettingsBinding
-import com.example.casttotv.utils.AppApplication
 import com.example.casttotv.utils.CUSTOM_SEARCH_ENGINE
 import com.example.casttotv.utils.CUSTOM_USER_AGENT
 import com.example.casttotv.utils.FAVORITE_DEFAULT_SITE
@@ -31,13 +31,15 @@ class BrowserSettingsActivity : AppCompatActivity() {
             browserSettingsActivity = this@BrowserSettingsActivity
 
             includeBrowserSettings.clFavoriteSite.setOnClickListener {
-                browserViewModel.inputDialog("Favorite", FAVORITE_DEFAULT_SITE)
+                browserViewModel.inputDialog(getString(R.string.favorite), FAVORITE_DEFAULT_SITE)
             }
             includeBrowserSettings.clCustomSearch.setOnClickListener {
-                browserViewModel.inputDialog("Custom search engine", CUSTOM_SEARCH_ENGINE)
+                browserViewModel.inputDialog(getString(R.string.custom_search_engine),
+                    CUSTOM_SEARCH_ENGINE)
             }
             includeBrowserSettings.clCustomUserAgent.setOnClickListener {
-                browserViewModel.inputDialog("Custom user agent", CUSTOM_USER_AGENT)
+                browserViewModel.inputDialog(getString(R.string.custom_user_agent),
+                    CUSTOM_USER_AGENT)
             }
 
             includeBrowserSettings.clDataControl.setOnClickListener {
@@ -56,18 +58,18 @@ class BrowserSettingsActivity : AppCompatActivity() {
                 startActivity(Intent(this@BrowserSettingsActivity,
                     BehaviorAndUIActivity::class.java))
             }
-            includeSettingsLayout.clBookmarkFilter.setOnClickListener {
-                startActivity(Intent(this@BrowserSettingsActivity,
-                    BookmarkFilterActivity::class.java))
-            }
+//            includeSettingsLayout.clBookmarkFilter.setOnClickListener {
+//                startActivity(Intent(this@BrowserSettingsActivity,
+//                    BookmarkFilterActivity::class.java))
+//            }
 //            includeSettingsLayout.clGestures.setOnClickListener {
 //                startActivity(Intent(this@BrowserSettingsActivity,
 //                    GesturesActivity::class.java))
 //            }
-            includeSettingsLayout.clBackup.setOnClickListener {
-                startActivity(Intent(this@BrowserSettingsActivity,
-                    BackupActivity::class.java))
-            }
+//            includeSettingsLayout.clBackup.setOnClickListener {
+//                startActivity(Intent(this@BrowserSettingsActivity,
+//                    BackupActivity::class.java))
+//            }
             includeSettingsLayout.clAppSettings.setOnClickListener {
 
                 val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
@@ -76,6 +78,10 @@ class BrowserSettingsActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+    }
+
+    fun back() {
+        finish()
     }
 
 

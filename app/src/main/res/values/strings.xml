@@ -47,6 +47,8 @@
     <string name="connection_close_confirm">Would you like to cancel the current VPN Connection?</string>
     <string name="yes">YES</string>
     <string name="no">NO</string>
+    <string name="yes_2">Yes</string>
+    <string name="no_2">No</string>
     <string name="gps_network_not_enabled">Gps network is not enabled</string>
     <string name="enable">Enable</string>
     <string name="location_is_already_enabled">Location is already enabled.</string>
@@ -60,18 +62,18 @@
     <string name="ok">OK</string>
     <string name="cancel">Cancel</string>
 
-    <string name="favorite_site">Here you can change the default website which loads on start of Browser. Enter\"about:blank\" to get an smpty start site.</string>
-    <string name="custom_user_agent_body">Here you can enter a custom user agent. Let empty to use defaul one</string>
-    <string name="custom_search_engine_body">Here you can enter a custom search URL Also choose \"Custom search engine\" as search provider</string>
-    <string name="search_engine_body">Here you can choose your preffered search engine or set a custom one</string>
-    <string name="data_control_body">Clear your browser data or decide what data will be cleared when you leave the aplication</string>
-    <string name="start_control_body">Decide which components of the browser will be enabled on start</string>
-    <string name="behavior_ui_body">Change the behavior and ui of the app to suit your preferences</string>
+    <string name="favorite_site">Change the default website which loads on\nstart of Browser</string>
+    <string name="custom_user_agent_body">Here you can enter a custom user agent. Let empty to use default one</string>
+    <string name="custom_search_engine_body">Add custom search url also choose “Custom\nsearch engine” as search provider</string>
+    <string name="search_engine_body">Choose your preferred search engine or\nset a custom one</string>
+    <string name="data_control_body">Clear your browser data or decide what data\nwill be cleared when you leave the app</string>
+    <string name="start_control_body">Decide which components of the browser\nwill be on start</string>
+    <string name="behavior_ui_body">Change the behavior and ui of the app to\nsuit your preferences</string>
     <string name="book_mark_body">To show the filter dialog long press on the bookmark icon in the overview. Decide which filters you will use</string>
     <string name="gestures_body">Use gestures on the toolbar and the \"Navigation button\"</string>
     <string name="backup_body">Import and export several app data(whitelist, bookmarks)</string>
-    <string name="app_settings_body">Open the system app settings for \"Browser\". There you can, depending on your Android version grant permissions, clear the app data and so on.</string>
-    <string name="delete_database_body">Delete the whole database (Startpage, bookmarks,history and all whitelist)</string>
+    <string name="app_settings_body">Browser settings, there you can depending on\nyour android version grant permission.</string>
+    <string name="delete_database_body">Delete the whole database (Start page, bookmarks,history and all whitelist)</string>
     <string name="clear_when_application_exits_body">Every time you quit all above checked data will be deleted</string>
     <string name="this_will_delete_all_settings">This will delete all your current settings and data. Will you proceed?</string>
     <string name="start_control_image_body">Enable Network images. Disabling could be useful to save mobile data and to load websites faster</string>
@@ -231,7 +233,8 @@
     <string name="install_2">Install</string>
     <string name="bookmark">Bookmark</string>
     <string name="downloads">Downloads</string>
-    <string name="favourites">Favourites</string>
+    <string name="favorites">Favorites</string>
+    <string name="favorite">Favorite</string>
     <string name="history">History</string>
     <string name="share_pdf">Share Pdf</string>
     <string name="copy_url">Copy URL</string>
@@ -255,6 +258,20 @@
     <string name="save_action">Save Action</string>
     <string name="add_to_favorite">Add to favorite</string>
     <string name="search_engine">Search Engine</string>
+    <string name="browser_exit_body">Are you sure you want to exit Browser</string>
+    <string name="exit_browser">Exit Browser</string>
+    <string name="custom_user_agent">Custom user agent</string>
+    <string name="start_control">Start Control</string>
+    <string name="data_control">Data Control</string>
+    <string name="app_settings">App settings</string>
+    <string name="browser_settings">Browser Settings</string>
+    <string name="behavior_ui">Behavior/UI</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="clear_history">Clear History</string>
+    <string name="clear_browsing_history">Clear browsing history</string>
+    <string name="clear_all_cache">Clear all cache</string>
+    <string name="clear_database_body">Clear “indexed databases” and “ local\ndata bases”</string>
+    <string name="clear_databases">Clear databases</string>
 
 
 </resources>

@@ -22,7 +22,6 @@
                 style="@style/imageview_w0_h0_ratio11"
                 android:background="@drawable/check_box_selector_radio_shape"
                 android:button="@null"
-                android:paddingStart="@dimen/dp_16"
                 app:layout_constraintBottom_toTopOf="@+id/guideline185"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline184" />
@@ -41,14 +40,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.25" />
+                app:layout_constraintGuide_percent="0.27" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline185"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.75" />
+                app:layout_constraintGuide_percent="0.73" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline186"
@@ -63,6 +62,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layout_constraintGuide_percent="0.67" />
+
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline188"
                 android:layout_width="wrap_content"
@@ -71,7 +71,6 @@
                 app:layout_constraintGuide_percent="0.15" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

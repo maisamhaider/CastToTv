@@ -5,6 +5,8 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.text.TextUtils
 import android.util.Log
@@ -21,18 +23,20 @@ import androidx.core.view.drawToBitmap
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.*
 import androidx.viewpager2.widget.ViewPager2
 import com.example.casttotv.R
 import com.example.casttotv.adapter.BrowserAdapter2
+import com.example.casttotv.adapter.SearchEngineAdapter
 import com.example.casttotv.database.entities.BookmarkEntity
 import com.example.casttotv.database.entities.HistoryEntity
 import com.example.casttotv.database.entities.HomeEntity
 import com.example.casttotv.databinding.*
 import com.example.casttotv.datasource.DataSource
 import com.example.casttotv.models.Tabs
+import com.example.casttotv.ui.activities.MainActivity
 import com.example.casttotv.ui.activities.browser.fragments.BrowserBottomSheetFragment
-import com.example.casttotv.ui.activities.browser.frags.MenuBottomSheetFragment
 import com.example.casttotv.utils.*
 import com.example.casttotv.utils.MySingleton.createWebPrintJob
 import com.example.casttotv.utils.MySingleton.funCopy
@@ -93,7 +97,6 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
     fun checkSelectedEngine(value: String): Boolean {
         val getEngine = cxt.getPrefs(SELECTED_ENGINE, "")
-
         return getEngine.contains(value)
     }
 
@@ -109,8 +112,15 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         this.container = container
     }
 
-    fun loadFragment(fragment: Fragment, fragmentManager: FragmentManager) {
-        fragmentManager.beginTransaction().replace(R.id.browser_container, fragment, "").commit()
+    fun loadFragment(fragment: Fragment, fragmentManager: FragmentManager, container : Int) {
+        fragmentManager.beginTransaction().replace(container, fragment, "").commit()
+    }
+
+    fun removeFrag(myFrag: Fragment, manager: FragmentManager) {
+        val trans: FragmentTransaction = manager.beginTransaction()
+        trans.remove(myFrag)
+        trans.commit()
+        manager.popBackStack()
     }
 
     /**
@@ -148,8 +158,8 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
             override fun onPageFinished(view: WebView, url: String) {
             }
         }
-        val engine = getPrefs(SELECTED_ENGINE, "https://www.google.com/")
-
+        val engine = engines[getPrefs(SELECTED_ENGINE, "google").lowercase()]?.link
+            ?: "https://www.google.com/search?q="
         if (getPrefs(FAVORITE_DEFAULT_SITE, "") == "") {
             _webView.value!!.loadUrl(engine)
         } else {
@@ -267,14 +277,15 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
     fun canGoBack(): Boolean {
-        return (_webView.value!!.isFocused && _webView.value!!.canGoBack())
+        return (_webView.value != null && _webView.value!!.isFocused && _webView.value!!.canGoBack())
     }
 
     fun search(searchText: String) {
         if (_currentTabIndex == -1) {
             newTabWebView(WebView(cxt))
         }
-        val engine =  engines[getPrefs(SELECTED_ENGINE, "google")]?.link?: "https://www.google.com/search?q="
+        val engine = engines[getPrefs(SELECTED_ENGINE, "google").lowercase()]?.link
+            ?: "https://www.google.com/search?q="
 
         val url = if (engine.isEmpty()) {
             "https://www.google.com/search?q=$searchText"
@@ -629,12 +640,15 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     fun showBottomSheet(fragmentManager: FragmentManager, bottomSheet: BottomSheetDialogFragment) {
         bottomSheet.show(fragmentManager, null)
     }
-    fun cancelBottomSheet(fragmentManager: FragmentManager, bottomSheet: BottomSheetDialogFragment) {
-        if(bottomSheet.isVisible)
-        {
+
+    fun cancelBottomSheet(
+        fragmentManager: FragmentManager,
+        bottomSheet: BottomSheetDialogFragment,
+    ) {
+        if (bottomSheet.isVisible) {
             bottomSheet.dismiss()
         }
-     }
+    }
 
     fun showBottomSheet(fragmentActivity: FragmentActivity) {
 
@@ -713,43 +727,49 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     fun engineDialog() {
         val binding = LayoutSearchEnginesBinding.inflate(LayoutInflater.from(cxt), null,
             false)
+        val adapter = SearchEngineAdapter(cxt)
         val builder = AlertDialog.Builder(cxt)
         builder.setView(binding.root)
         val dialog = builder.create()
-
+        dialog.window?.apply {
+            setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        }
         binding.apply {
             browserVM = this@BrowserViewModel
             mButtonCancel.setOnClickListener { dialog.dismiss() }
+            recyclerView.adapter = adapter
+            adapter.submitList(DataSource().enginesList)
+
         }
         dialog.show()
     }
 
-    fun closeCurrentTabDialog() {
-        if (getPrefs(BEHAVIOR_UI_CONFIRM_TAB_CLOSE, false)) {
-            val binding =
-                LayoutTitleBodyPosAndNegButtonBinding.inflate(LayoutInflater.from(cxt), null,
-                    false)
-            val builder = AlertDialog.Builder(cxt)
-            builder.setView(binding.root)
-            val dialog = builder.create()
-
-            binding.apply {
-                textviewTitle.text = "Tab Exit"
-                textviewBody.text = "Do you want to close"
-                textviewPositive.text = "Yes"
-                textviewNegative.text = "No"
-                textviewPositive.setOnClickListener {
-                    closeCurrentTab()
-                    dialog.dismiss()
-                }
-                textviewNegative.setOnClickListener { dialog.dismiss() }
-            }
-
-            dialog.show()
-        } else {
-            closeCurrentTab()
-        }
-    }
+//    fun closeCurrentTabDialog() {
+//        if (getPrefs(BEHAVIOR_UI_CONFIRM_TAB_CLOSE, false)) {
+//            val binding =
+//                LayoutTitleBodyPosAndNegButtonBinding.inflate(LayoutInflater.from(cxt), null,
+//                    false)
+//            val builder = AlertDialog.Builder(cxt)
+//            builder.setView(binding.root)
+//            val dialog = builder.create()
+//
+//            binding.apply {
+//                textviewTitle.text = "Tab Exit"
+//                textviewBody.text = "Do you want to close"
+//                textviewPositive.text = "Yes"
+//                textviewNegative.text = "No"
+//                textviewPositive.setOnClickListener {
+//                    closeCurrentTab()
+//                    dialog.dismiss()
+//                }
+//                textviewNegative.setOnClickListener { dialog.dismiss() }
+//            }
+//
+//            dialog.show()
+//        } else {
+//            closeCurrentTab()
+//        }
+//    }
 
     fun closTabDialog(tab: Int) {
         if (getPrefs(BEHAVIOR_UI_CONFIRM_TAB_CLOSE, false)) {
@@ -763,13 +783,13 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
             binding.apply {
                 textviewTitle.text = "Tab Exit"
                 textviewBody.text = "Do you want to close"
-                textviewPositive.text = "Yes"
-                textviewNegative.text = "No"
-                textviewPositive.setOnClickListener {
+                textviewPositiveText.text = "Yes"
+                textviewNegativeText.text = "No"
+                textviewPositiveClick.setOnClickListener {
                     closeTab(tab)
                     dialog.dismiss()
                 }
-                textviewNegative.setOnClickListener { dialog.dismiss() }
+                textviewNegativeClick.setOnClickListener { dialog.dismiss() }
             }
 
             dialog.show()
@@ -779,6 +799,8 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
     fun exitDialog(activity: Activity) {
+        val mainActivity = activity as MainActivity
+
         if (getPrefs(BEHAVIOR_UI_CONFIRM_BROWSER_EXIT, false)) {
             val binding =
                 LayoutTitleBodyPosAndNegButtonBinding.inflate(LayoutInflater.from(cxt), null,
@@ -786,23 +808,25 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
             val builder = AlertDialog.Builder(cxt)
             builder.setView(binding.root)
             val dialog = builder.create()
-
+            dialog.window?.apply {
+                setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            }
             binding.apply {
-                textviewTitle.text = "Exit"
-                textviewBody.text = "This is exit dialog"
-                textviewPositive.text = "Yes"
-                textviewNegative.text = "No"
-                textviewPositive.setOnClickListener {
+                textviewTitle.text = activity.getString(R.string.exit_browser)
+                textviewBody.text = activity.getString(R.string.browser_exit_body)
+                textviewPositiveText.text = activity.getString(R.string.yes_2)
+                textviewNegativeText.text = activity.getString(R.string.no_2)
+                textviewPositiveClick.setOnClickListener {
                     dialog.dismiss()
                     onBrowserExit()
-                    activity.finish()
+                    mainActivity.fromBrowserBack()
                 }
-                textviewNegative.setOnClickListener { dialog.dismiss() }
+                textviewNegativeClick.setOnClickListener { dialog.dismiss() }
             }
             dialog.show()
         } else {
             onBrowserExit()
-            activity.finish()
+            mainActivity.fromBrowserBack()
         }
 
     }
@@ -813,23 +837,31 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         val builder = AlertDialog.Builder(cxt)
         builder.setView(binding.root)
         val dialog = builder.create()
-
+        dialog.window?.apply {
+            setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        }
         binding.apply {
             textviewTitle.text = title
-            textviewOk.text = cxt.getString(R.string.ok)
-            textviewCancel.text = cxt.getString(R.string.cancel)
+            textviewOkText.text = cxt.getString(R.string.ok)
+            textviewCancelText.text = cxt.getString(R.string.cancel)
             textInputEditText.setText(cxt.getPrefs(prefKey, ""))
 
-            textviewOk.setOnClickListener {
+            textviewOkClick.setOnClickListener {
                 val input = textInputEditText.text.toString()
                 if (TextUtils.isEmpty(input)) {
-                    cxt.putPrefs(prefKey, "")
+                    if (prefKey == CUSTOM_SEARCH_ENGINE) {
+                        cxt.putPrefs(SELECTED_ENGINE, "")
+                    } else
+                        cxt.putPrefs(prefKey, "")
                 } else {
-                    cxt.putPrefs(prefKey, input)
+                    if (prefKey == CUSTOM_SEARCH_ENGINE) {
+                        cxt.putPrefs(SELECTED_ENGINE, input)
+                    } else
+                        cxt.putPrefs(prefKey, input)
                 }
                 dialog.dismiss()
             }
-            textviewCancel.setOnClickListener {
+            textviewCancelClick.setOnClickListener {
                 dialog.dismiss()
             }
         }

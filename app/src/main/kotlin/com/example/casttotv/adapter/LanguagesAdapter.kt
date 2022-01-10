@@ -57,13 +57,13 @@ class LanguagesAdapter(
             }
         }
 
-        fun click(click: (Lang) -> Unit, lang: Lang, context: Context) {
+        fun click(click: (Lang,Holder) -> Unit, lang: Lang, context: Context) {
             bind(lang, context)
             binding.checkbox.setOnClickListener {
-                click(lang)
+                click(lang,this)
             }
             binding.root.setOnClickListener {
-                click(lang)
+                click(lang,this)
             }
         }
     }
@@ -84,7 +84,7 @@ class LanguagesAdapter(
 
     }
 
-    private fun click(lang: Lang) {
+    private fun click(lang: Lang,holder: Holder) {
         context.putPrefs(LOCALE_LANGUAGE, lang.code)
 //        if (holder.absoluteAdapterPosition != -1) {
             holder.bind(getItem(holder.absoluteAdapterPosition), context)

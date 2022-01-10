@@ -16,14 +16,17 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import com.example.casttotv.R
 import com.example.casttotv.databinding.ActivityMainBinding
+import com.example.casttotv.ui.activities.browser.frags.BrowserContainerFragment
 import com.example.casttotv.utils.MySingleton
 import com.example.casttotv.utils.MySingleton.setAppLocale
 import com.example.casttotv.viewmodel.BrowserViewModel
 import com.example.casttotv.viewmodel.MainViewModel
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -42,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_NOTHING)
 
         navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
+            supportFragmentManager.findFragmentById(com.example.casttotv.R.id.nav_host) as NavHostFragment
         controller = navHostFragment.navController
 
 
@@ -87,20 +90,32 @@ class MainActivity : AppCompatActivity() {
     override fun attachBaseContext(newBase: Context) {
         super.attachBaseContext(ContextWrapper(newBase.setAppLocale(MySingleton.localeLanguage)))
     }
-//    fun browserBack() = browserVM.back()
+
+    fun browserBack() = browserVM.back()
+    fun fromBrowserBack() =
+        controller.navigate(com.example.casttotv.R.id.action_browserContainerFragment_to_homeFragment)
+
+    private val FragmentManager.currentNavigationFragment: Fragment?
+        get() = primaryNavigationFragment?.childFragmentManager?.fragments?.first()
+
 
     override fun onBackPressed() {
+        val currentFragment = supportFragmentManager.currentNavigationFragment
 
-//        if (viewModel.canGoBack()) {
-//            back()
-//        } else {
-//            viewModel.exitDialog(this)
-//        }
 
-        if (viewModel.languageDialogIsShowing()) {
-            viewModel.cancelLanguageDialog()
-        } else {
-            super.onBackPressed()
+        when {
+            browserVM.canGoBack() -> {
+                browserBack()
+            }
+            currentFragment is BrowserContainerFragment -> {
+                browserVM.exitDialog(this)
+            }
+            viewModel.languageDialogIsShowing() -> {
+                viewModel.cancelLanguageDialog()
+            }
+            else -> {
+                super.onBackPressed()
+            }
         }
 
     }
