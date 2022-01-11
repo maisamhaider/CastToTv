@@ -22,8 +22,10 @@ class BehaviorAndUIActivity : AppCompatActivity() {
         binding.apply {
             includeBehaviorUi1.browserVM = browserViewModel
             includeBehaviorUi2.browserVM = browserViewModel
-            includeBehaviorUi3.browserVM = browserViewModel
-            includeBehaviorUi4.browserVM = browserViewModel
         }
+    }
+
+    fun back() {
+        finish()
     }
 }

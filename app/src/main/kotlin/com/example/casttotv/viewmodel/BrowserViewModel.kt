@@ -687,7 +687,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
                     tab.icon = ContextCompat.getDrawable(cxt, R.drawable.ic_save)
                 }
                 3 -> {
-                    tab.icon = ContextCompat.getDrawable(cxt, R.drawable.ic_more_vert)
+                    tab.icon = ContextCompat.getDrawable(cxt, R.drawable.ic_vert_dots)
                 }
             }
         }.attach()
@@ -720,9 +720,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         dialog.show()
     }
 
-    fun showBottomSheetTabPreview(fragmentManager: FragmentManager) {
-        BrowserBottomSheetFragment().show(fragmentManager, BrowserBottomSheetFragment.TAG)
-    }
+
 
     fun engineDialog() {
         val binding = LayoutSearchEnginesBinding.inflate(LayoutInflater.from(cxt), null,

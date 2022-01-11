@@ -91,7 +91,7 @@
                 android:id="@+id/tabItem_more"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:icon="@drawable/ic_more_vert" />
+                android:icon="@drawable/ic_vert_dots" />
         </com.google.android.material.tabs.TabLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

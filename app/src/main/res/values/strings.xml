@@ -76,17 +76,21 @@
     <string name="delete_database_body">Delete the whole database (Start page, bookmarks,history and all whitelist)</string>
     <string name="clear_when_application_exits_body">Every time you quit all above checked data will be deleted</string>
     <string name="this_will_delete_all_settings">This will delete all your current settings and data. Will you proceed?</string>
-    <string name="start_control_image_body">Enable Network images. Disabling could be useful to save mobile data and to load websites faster</string>
-    <string name="start_control_location_body">Allow websites to access your location.\nSome websites(like Google, maps for navigation) need this enabled</string>
+    <string name="start_control_image_body">Enable Network images, Disabling could be useful\nto save mobile data and load website faster</string>
+    <string name="start_control_location_body">Allow websites to access your location. Some\nwebsites {google, maps for nav) need this enable</string>
     <string name="start_control_history_body">Save the history of visited websites</string>
     <string name="start_control_request_save_data_body">Tell websites that you would prefer to save data. Supported websites will load faster</string>
     <string name="javascript_whitelist">JavaScript whitelist</string>
-    <string name="start_control_java_script_body">Enable JavaScript. Many websites need JavaScript for their functionality (menus, loading and displaying images,…). But they are also a rist and acan be used for attacks</string>
+    <string name="start_control_java_script_body">Enable JavaScript. Many websites need\nJavaScript for their functionality. But they are\nalso rest and can be used for attacks</string>
     <string name="start_control_adblock_body">Enable AdBlockto block annoying ads. Sites also load faster when enabled</string>
     <string name="adblock_whitelist">AdBlock whitelist</string>
-    <string name="start_control_cookies_body">Enable Cookies. Cookies are small text files, which are stored on your device. Websites  use themfor example to store user settings (for example search settings). But they could also be used to collect personal  user data. Third party cookies (they collect user data for advertising) are always disabled.</string>
+    <string name="start_control_cookies_body">Enable Cookies. Cookies are small text files,
+which are stored on your device. Websites use
+them for example to store user settings. But
+they could also be used to collect personal user
+data. Third party cookies are always disabled.</string>
     <string name="cookies_whitelist">Cookies whitelist</string>
-    <string name="confirmation_browser_exit_body">Confirmation dialog when closing browser</string>
+    <string name="confirmation_browser_exit_body">Confirmation dialog when\nclosing browser</string>
     <string name="confirmation_tab_close_body">Confirmation dialog when closing a tab</string>
     <string name="confirmation_reopen_last_body">Reopen a new tab when the last tab is closed instead of exiting the browser</string>
     <string name="theme_body">Set the app theme</string>
@@ -94,10 +98,9 @@
     <string name="inverted_colors_body">if checked, content will be rendered in a inverted gray scale mode. This is a kind of night mode</string>
     <string name="hide_toolbar_body">Use the whole screen when scrolling through website if you press the back button you will leave fullscreen mode</string>
     <string name="first_toolbar_body">Pressing back will make the toolbar visible, before going back in history</string>
-    <string name="position_body">Decide where the Navigation button will be placed</string>
+    <string name="position_body">Decide where the Navigation button will be\nplaced</string>
     <string name="overview_body">What should be shown at the start of the Overview? The Start Page, your bookmarks,…</string>
     <string name="Show_on_start_body">Open the Overview on every app start</string>
-    <string name="clear_cookies_body">if enabled, all cookies will be deleted. Also the Cookies of trusted websites.</string>
     <string name="backup_text">All files will be exportednto the directory of your sd: card. This directory will be DELETE.D if you uninstall \"Screen Mirroring\". So make a backup regularly on a save place.</string>
     <string name="backup_export_app_data_body">Export app data(Storage + previews, History Bookmarks) and uour personal settings</string>
     <string name="images">Images</string>
@@ -271,7 +274,23 @@
     <string name="clear_browsing_history">Clear browsing history</string>
     <string name="clear_all_cache">Clear all cache</string>
     <string name="clear_database_body">Clear “indexed databases” and “ local\ndata bases”</string>
+    <string name="clear_cookies_body">If enabled, all cookies will be deleted. Also\nthe Cookies of trusted websites</string>
     <string name="clear_databases">Clear databases</string>
+    <string name="clear_cookies">Clear Cookies</string>
+    <string name="clear_when_application_exit">Clear when application exit</string>
+    <string name="clear_when_application_exit_body">Every time you quit all above checked data\nwill be deleted</string>
+    <string name="image">Image</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Cookies</string>
+    <string name="reopen_last_tab">Reopen last tab</string>
+    <string name="confirm_tab_close">Confirm tab close</string>
+    <string name="confirm_browser_exit">Confirm browser exit</string>
+    <string name="position">Position</string>
+    <string name="first_toolbar">First toolbar</string>
+    <string name="hide_toolbar">Hide toolbar</string>
+    <string name="toolbar">Toolbar</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="edit">Edit</string>
 
 
 </resources>

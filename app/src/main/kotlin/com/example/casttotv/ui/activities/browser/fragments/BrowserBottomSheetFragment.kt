@@ -82,7 +82,6 @@ class BrowserBottomSheetFragment : CBottomSheetDialogFragment() {
                         1 -> {
                             requireContext().toastShort("bookmark")
                             showLowerTabs(1)
-                            loadBookmark()
                             previousTab = 1
                         }
                         2 -> {
@@ -142,15 +141,7 @@ class BrowserBottomSheetFragment : CBottomSheetDialogFragment() {
 
     }
 
-    fun loadBookmark() {
-        val adapter = BookmarkAdapter(::onBookmarkClicked, requireContext())
-        binding.recyclerView.adapter = adapter
-        browserViewModel.getBookmarks().asLiveData().observe(viewLifecycleOwner) {
-            it?.let { bookmarks ->
-                adapter.submitList(bookmarks)
-            }
-        }
-    }
+
 
 //    fun loadHomeData() {
 //        val adapter = HomeAdapter(::onHomeClicked, requireContext())
@@ -178,17 +169,7 @@ class BrowserBottomSheetFragment : CBottomSheetDialogFragment() {
         this.dismiss()
     }
 
-    private fun onBookmarkClicked(bookmark: BookmarkEntity, longClick: Boolean) {
 
-        if (longClick) {
-//            browserViewModel.deleteBookMarkDialog(bookmark)
-            browserViewModel.editBottomSheet(bookmark, false)
-        } else {
-            requireContext().toastShort(bookmark.link)
-            browserViewModel.searchFromHistory(bookmark.link)
-            this.dismiss()
-        }
-    }
 
     private fun onHomeClicked(homeEntity: HomeEntity) {
         requireContext().toastShort(homeEntity.link)

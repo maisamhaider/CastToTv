@@ -1,15 +1,15 @@
 package com.example.casttotv.utils
 
+import android.widget.CheckBox
 import androidx.databinding.BindingAdapter
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.asFlow
 import androidx.recyclerview.widget.RecyclerView
 import com.example.casttotv.adapter.FolderAdapter
-import com.example.casttotv.adapter.LanguagesAdapter
 import com.example.casttotv.adapter.SelectedImagesAdapter
 import com.example.casttotv.models.FileModel
 import com.example.casttotv.models.FolderModel
-import com.example.casttotv.models.Lang
+import com.example.casttotv.viewmodel.BrowserViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collect
@@ -46,6 +46,8 @@ fun sliderImagesList(recyclerView: RecyclerView, list: List<FileModel>?) {
         e.stackTrace
     }
 }
+
+
 
 
 

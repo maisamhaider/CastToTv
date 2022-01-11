@@ -17,6 +17,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:background="?attr/colorPrimaryVariant"
         android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -68,14 +69,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline492">
+            app:layout_constraintTop_toTopOf="@+id/guideline492"
+            app:layout_constraintVertical_bias="0.0">
 
             <include
                 android:id="@+id/data_control_layout_1"
                 layout="@layout/data_control_layout_1" />
+
             <include
                 android:id="@+id/data_control_layout_2"
                 layout="@layout/data_control_layout_2" />

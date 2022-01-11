@@ -1,16 +1,27 @@
 package com.example.casttotv.ui.activities.browser.frags
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import com.example.casttotv.R
+import com.example.casttotv.databinding.FragmentMenuBottomSheetBinding
+import com.example.casttotv.ui.activities.browser.BookmarkActivity
+import com.example.casttotv.viewmodel.BrowserViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
 
 class MenuBottomSheetFragment : BottomSheetDialogFragment() {
 
+    private lateinit var _binding: FragmentMenuBottomSheetBinding
+    private val binding get() = _binding
+
+    val browserViewModel: BrowserViewModel by activityViewModels {
+        BrowserViewModel.BrowserViewModelFactory(requireContext())
+    }
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -20,11 +31,20 @@ class MenuBottomSheetFragment : BottomSheetDialogFragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_menu_bottom_sheet, container, false)
+        _binding = FragmentMenuBottomSheetBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.apply {
+            clBookmarks.setOnClickListener {
+                startActivity(Intent(requireContext(), BookmarkActivity::class.java))
+            }
+        }
+    }
 
 //    textviewShareScreenshot.setOnClickListener {
 //        val ssPath = browserViewModel.saveScreenShot(true) //screenshot return path

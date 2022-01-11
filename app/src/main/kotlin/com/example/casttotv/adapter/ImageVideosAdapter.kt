@@ -12,7 +12,6 @@ import com.example.casttotv.R
 import com.example.casttotv.databinding.ImagesVideosItemBinding
 import com.example.casttotv.models.FileModel
 import com.example.casttotv.utils.IMAGE
-import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.utils.SLIDE
 import com.example.casttotv.utils.VIDEO
 import com.example.casttotv.viewmodel.SharedViewModel
@@ -49,15 +48,18 @@ class ImageVideosAdapter(
             onItemClicked: (FileModel, Int) -> Unit,
         ) {
 
-            context.toastShort("${fileModel.duration},\n ${fileModel.filePath},\n ${fileModel.fileName}")
+//            context.toastShort("${fileModel.duration},\n ${fileModel.filePath},\n ${fileModel.fileName}")
             when (mimType) {
                 VIDEO -> {
                     binding.imageViewPlay.visibility = View.VISIBLE
+
                     Glide.with(context).load(fileModel.filePath).into(binding.imageView)
                 }
                 IMAGE -> {
                     binding.imageViewPlay.visibility = View.GONE
+
                     Glide.with(context).load(fileModel.filePath).into(binding.imageView)
+//                    binding.imageView.setImageURI(Uri.parse(fileModel.filePath))
                 }
                 SLIDE -> {
                     binding.checkBox.visibility = View.VISIBLE

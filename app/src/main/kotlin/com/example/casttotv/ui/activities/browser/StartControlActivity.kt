@@ -26,21 +26,15 @@ class StartControlActivity : AppCompatActivity() {
 
 
         binding.apply {
+            thisActivity = this@StartControlActivity
             includeJavascriptCookies.browserVM = browserViewModel
-            includeAdblock.browserVM = browserViewModel
             includeJavascript.browserVM = browserViewModel
             includeCookies.browserVM = browserViewModel
-
-            includeAdblock.clAdblockWhitelist.setOnClickListener {
-                intent(WHITE_LIST_ADBLOCK)
-            }
-            includeJavascript.clJavaScriptWhitelist.setOnClickListener {
-                intent(WHITE_LIST_JAVASCRIPT)
-            }
-            includeCookies.clCookiesWhitelist.setOnClickListener {
-                intent(WHITE_LIST_COOKIES)
-            }
         }
+    }
+
+    fun back() {
+        finish()
     }
 
     fun intent(whiteListType: String) {

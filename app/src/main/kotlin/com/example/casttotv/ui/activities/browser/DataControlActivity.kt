@@ -2,6 +2,7 @@ package com.example.casttotv.ui.activities.browser
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.widget.CheckBox
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.casttotv.databinding.ActivityDataControlBinding
@@ -23,6 +24,8 @@ class DataControlActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.apply {
             browserVM = browserViewModel
+            dataControlLayout1.browserVM = browserViewModel
+            dataControlLayout2.browserVM = browserViewModel
             dataControlActivity = this@DataControlActivity
         }
     }

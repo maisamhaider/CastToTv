@@ -1,87 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".ui.activities.browser.BehaviorAndUIActivity">
+        <variable
+            name="thisActivity"
+            type="com.example.casttotv.ui.activities.browser.BehaviorAndUIActivity" />
+    </data>
 
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/w_m_h_m"
+        android:background="?attr/colorPrimaryVariant">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            style="@style/w_0_h_0"
+            android:background="?attr/colorPrimaryVariant"
+            app:layout_constraintBottom_toTopOf="@+id/guideline525"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageview_back"
+                style="@style/imageview_w0_h0_ratio11"
+                android:onClick="@{()->thisActivity.back()}"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_arrow_back" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView27"
+                style="@style/header_text_view"
+                android:layout_marginStart="@dimen/dp_4"
+                android:text="@string/behavior_ui"
+                app:layout_constraintBottom_toTopOf="@+id/guideline462"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageview_back"
+                app:layout_constraintTop_toTopOf="@+id/guideline461" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline461"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.3" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline462"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.7" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            style="@style/w_0_h_0"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline525"
+            tools:context=".ui.activities.browser.BehaviorAndUIActivity">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/include_behavior_ui_1"
+                    layout="@layout/layout_behavior_ui_1" />
+
+
+                <include
+                    android:id="@+id/include_behavior_ui_2"
+                    layout="@layout/layout_behavior_ui_2" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline525"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.08" />
 
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dp_10"
-                android:padding="@dimen/dp_6"
-                android:text="Behavior"
-                android:textColor="@android:color/holo_red_dark" />
-
-            <include
-                android:id="@+id/include_behavior_ui_1"
-                layout="@layout/layout_behavior_ui_1" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/cr_black_50" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dp_10"
-                android:padding="@dimen/dp_6"
-                android:text="UI"
-                android:visibility="gone"
-                android:textColor="@android:color/holo_red_dark" />
-
-            <include
-                android:visibility="gone"
-                android:id="@+id/include_behavior_ui_2"
-                layout="@layout/layout_behavior_ui_2" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/cr_black_50" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dp_10"
-                android:padding="@dimen/dp_6"
-                android:text="Toolbar"
-                android:textColor="@android:color/holo_red_dark" />
-
-            <include
-                android:id="@+id/include_behavior_ui_3"
-                layout="@layout/layout_behavior_ui_3" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/cr_black_50" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dp_10"
-                android:padding="@dimen/dp_6"
-                android:visibility="gone"
-                android:text="Overview"
-                android:textColor="@android:color/holo_red_dark" />
-
-            <include
-                android:visibility="gone"
-                android:id="@+id/include_behavior_ui_4"
-                layout="@layout/layout_behavior_ui_4" />
-        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    </ScrollView>
 </layout>

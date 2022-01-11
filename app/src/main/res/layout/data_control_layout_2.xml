@@ -23,9 +23,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_clear_index_and_local_database"
             style="@style/w_0_h_0"
-            android:onClick='@{()->browserVM.putPrefs("DATA_CLEAR_INDEXED_LOCAL_DATABASE",!browserVM.getPrefs("DATA_CLEAR_INDEXED_LOCAL_DATABASE",false))}'
             app:layout_constraintBottom_toTopOf="@+id/cl_clear_cookies"
-            app:layout_constraintDimensionRatio="w,10:2"
+            app:layout_constraintDimensionRatio="w,10:2.2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +54,7 @@
                 android:layout_width="@dimen/dp_6"
                 android:layout_height="0dp"
                 android:layout_marginStart="@dimen/dp_15"
-                android:background="@color/cr_dodger_blue_light_1"
+                android:background="@color/cr_amethyst"
                 app:layout_constraintBottom_toTopOf="@+id/guideline500"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/guideline504" />
@@ -66,84 +65,103 @@
                 android:layout_marginStart="@dimen/dp_20"
                 android:text="@string/clear_databases"
                 app:layout_constraintBottom_toTopOf="@+id/guideline502"
-                app:layout_constraintEnd_toStartOf="@+id/checkBox2"
+                app:layout_constraintEnd_toStartOf="@+id/guideline521"
                 app:layout_constraintStart_toEndOf="@+id/view9"
                 app:layout_constraintTop_toTopOf="@+id/guideline503" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/materialTextView48"
                 style="@style/subheading_w0_h0"
-                 android:layout_marginStart="@dimen/dp_20"
+                android:layout_marginStart="@dimen/dp_20"
                 android:text="@string/clear_database_body"
                 app:layout_constraintBottom_toTopOf="@+id/guideline499"
-                app:layout_constraintEnd_toStartOf="@+id/checkBox2"
+                app:layout_constraintEnd_toStartOf="@+id/guideline521"
                 app:layout_constraintStart_toEndOf="@+id/view9"
                 app:layout_constraintTop_toTopOf="@+id/guideline501" />
 
 
             <CheckBox
                 android:id="@+id/checkBox2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                style="@style/w_0_h_0"
                 android:button="@null"
                 android:checked='@{browserVM.getPrefs("DATA_CLEAR_INDEXED_LOCAL_DATABASE",false)}'
-                android:clickable="false"
+                android:onClick='@{()->browserVM.putPrefs("DATA_CLEAR_INDEXED_LOCAL_DATABASE",!browserVM.getPrefs("DATA_CLEAR_INDEXED_LOCAL_DATABASE",false))}'
                 android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                android:paddingEnd="@dimen/dp_15"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline503"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.23" />
+                app:layout_constraintGuide_percent="0.21" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline502"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.5" />
+                app:layout_constraintGuide_percent="0.43" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline501"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.58" />
+                app:layout_constraintGuide_percent="0.495" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline499"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.9" />
+                app:layout_constraintGuide_percent="0.85" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline504"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.3" />
+                app:layout_constraintGuide_percent="0.34" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline500"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.7" />
+                app:layout_constraintGuide_percent="0.66" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline521"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.8" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_clear_cookies"
             style="@style/w_0_h_0"
             app:layout_constraintBottom_toTopOf="@+id/cl_clear_when_application_exits"
-            app:layout_constraintDimensionRatio="w,10:2"
+            app:layout_constraintDimensionRatio="w,10:2.2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cl_clear_index_and_local_database">
+
+            <View
+                android:id="@+id/view11"
+                android:layout_width="@dimen/dp_6"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/dp_15"
+                android:background="@color/cr_malachite"
+                app:layout_constraintBottom_toTopOf="@+id/guideline509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline510" />
 
             <View
                 android:layout_width="match_parent"
@@ -154,48 +172,94 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/appCompatImageView16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_lens" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/materialTextView16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dp_10"
-                android:text="Clear Cookies"
-                android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/appCompatImageView16"
-                app:layout_constraintTop_toTopOf="parent" />
+                style="@style/header_text_view"
+                android:layout_marginStart="@dimen/dp_20"
+                android:text="@string/clear_cookies"
+                app:layout_constraintBottom_toTopOf="@+id/guideline505"
+                app:layout_constraintEnd_toStartOf="@+id/guideline519"
+                app:layout_constraintStart_toEndOf="@+id/view11"
+                app:layout_constraintTop_toTopOf="@+id/guideline508" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/subheading_w0_h0"
+                android:layout_marginStart="@dimen/dp_20"
+                android:text="@string/clear_cookies_body"
+                app:layout_constraintBottom_toTopOf="@+id/guideline507"
+                app:layout_constraintEnd_toStartOf="@+id/guideline519"
+                app:layout_constraintStart_toEndOf="@+id/view11"
+                app:layout_constraintTop_toTopOf="@+id/guideline506" />
 
             <CheckBox
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dp_10"
+                android:id="@+id/checkBox3"
+                style="@style/w_0_h_0"
                 android:button="@null"
                 android:checked='@{browserVM.getPrefs("DATA_CLEAR_COOKIES",false)}'
-                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
                 android:onClick='@{()->browserVM.putPrefs("DATA_CLEAR_COOKIES",!browserVM.getPrefs("DATA_CLEAR_COOKIES",false))}'
-                android:text="@string/clear_cookies_body"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:paddingEnd="@dimen/dp_15"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/appCompatImageView16"
-                app:layout_constraintTop_toBottomOf="@+id/materialTextView16"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline508"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.21" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline505"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.43" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline506"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.495" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline507"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.85" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline510"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.34" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline509"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.66" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline519"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.8" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_clear_when_application_exits"
             style="@style/w_0_h_0"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintDimensionRatio="w,10:2"
+            app:layout_constraintDimensionRatio="w,10:2.2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -210,40 +274,98 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/appCompatImageView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
+            <View
+                android:id="@+id/view12"
+                android:layout_width="@dimen/dp_6"
+                android:layout_height="@dimen/dp_0"
+                android:layout_marginStart="@dimen/dp_15"
+                android:background="@color/cr_mona_lisa"
+                app:layout_constraintBottom_toTopOf="@+id/guideline516"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_lens" />
+                app:layout_constraintTop_toTopOf="@+id/guideline514" />
+
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/materialTextView15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dp_10"
-                android:text="Clear when application exit"
-                android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/appCompatImageView14"
-                app:layout_constraintTop_toTopOf="parent" />
+                style="@style/header_text_view"
+                android:layout_marginStart="@dimen/dp_20"
+                android:text="@string/clear_when_application_exit"
+                app:layout_constraintBottom_toTopOf="@+id/guideline512"
+                app:layout_constraintEnd_toStartOf="@+id/guideline520"
+                app:layout_constraintStart_toEndOf="@+id/view12"
+                app:layout_constraintTop_toTopOf="@+id/guideline511" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/subheading_w0_h0"
+                android:layout_marginStart="@dimen/dp_20"
+                android:text="@string/clear_when_application_exit_body"
+                app:layout_constraintBottom_toTopOf="@+id/guideline515"
+                app:layout_constraintEnd_toStartOf="@+id/guideline520"
+                app:layout_constraintStart_toEndOf="@+id/view12"
+                app:layout_constraintTop_toTopOf="@+id/guideline513" />
 
 
             <CheckBox
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dp_10"
+                android:id="@+id/checkBox4"
+                style="@style/w_0_h_0"
                 android:button="@null"
                 android:checked='@{browserVM.getPrefs("DATA_CLEAR_APPLICATION_EXIT",false)}'
-                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
                 android:onClick='@{()->browserVM.putPrefs("DATA_CLEAR_APPLICATION_EXIT",!browserVM.getPrefs("DATA_CLEAR_APPLICATION_EXIT",false))}'
-                android:text="@string/clear_when_application_exits_body"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                android:paddingEnd="@dimen/dp_15"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/appCompatImageView14"
-                app:layout_constraintTop_toBottomOf="@+id/materialTextView15" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline511"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.21" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline512"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.43" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline513"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.495" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline515"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.85" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline514"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.34" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline516"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.66" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline520"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.8" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
