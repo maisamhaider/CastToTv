@@ -18,7 +18,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.casttotv.LocationItem
 import com.example.casttotv.R
-import com.example.casttotv.models.Country
+import com.example.casttotv.dataclasses.Country
 import com.example.casttotv.utils.LATITUDE
 import com.example.casttotv.utils.LOCATION_PERMISSION_REQUEST_CODE
 import com.example.casttotv.utils.LONGITUDE

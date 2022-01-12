@@ -1,6 +1,5 @@
 package com.example.casttotv.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +7,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.casttotv.databinding.HelpCenterItemBinding
-import com.example.casttotv.models.QuestionAnswer
+import com.example.casttotv.dataclasses.QuestionAnswer
 
 val visibilityList: MutableList<Pair<Int, Boolean>> = ArrayList()
 

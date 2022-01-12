@@ -6,7 +6,7 @@ import android.content.Context
 import android.content.pm.ActivityInfo
 import android.content.res.Configuration
 import androidx.lifecycle.*
-import com.example.casttotv.models.FileModel
+import com.example.casttotv.dataclasses.FileModel
 import com.example.casttotv.repositories.SharedRepository
 
 class SharedViewModel(context: Context) : ViewModel() {

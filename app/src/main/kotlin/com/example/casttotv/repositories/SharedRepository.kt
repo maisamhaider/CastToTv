@@ -6,9 +6,9 @@ import android.content.Context
 import android.database.Cursor
 import android.net.Uri
 import android.provider.MediaStore
-import com.example.casttotv.models.FileModel
-import com.example.casttotv.models.FolderModel
-import com.example.casttotv.models.PagerAnimation
+import com.example.casttotv.dataclasses.FileModel
+import com.example.casttotv.dataclasses.FolderModel
+import com.example.casttotv.dataclasses.PagerAnimation
 import com.example.casttotv.utils.animation.*
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

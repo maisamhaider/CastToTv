@@ -291,6 +291,11 @@ data. Third party cookies are always disabled.</string>
     <string name="toolbar">Toolbar</string>
     <string name="bookmarks">Bookmarks</string>
     <string name="edit">Edit</string>
+    <string name="today">Today</string>
+    <string name="the_last_hour">The last hour</string>
+    <string name="last_week">Last week</string>
+    <string name="last_month">Last month</string>
+    <string name="delete_all_history">Delete all history</string>
 
 
 </resources>

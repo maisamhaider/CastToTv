@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.casttotv.databinding.SelectedImagesItemBinding
-import com.example.casttotv.models.FileModel
+import com.example.casttotv.dataclasses.FileModel
 
 class SelectedImagesAdapter(
     val onItemClicked: (FileModel) -> Unit, private var context: Context,

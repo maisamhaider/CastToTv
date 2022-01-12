@@ -18,7 +18,7 @@ class SaveActionFragment : BottomSheetDialogFragment() {
 
 
     private val viewModel: BrowserViewModel by activityViewModels {
-        BrowserViewModel.BrowserViewModelFactory(requireContext())
+        BrowserViewModel.BrowserViewModelFactory(requireActivity())
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,10 +35,12 @@ class SaveActionFragment : BottomSheetDialogFragment() {
         return binding.root
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
             browserVM = viewModel
+            thisFrag = this@SaveActionFragment
             clSaveSs.setOnClickListener {
                 val ssPath = viewModel.saveScreenShot(false) //screenshot return path
                 if (ssPath != "error") {
@@ -46,7 +48,14 @@ class SaveActionFragment : BottomSheetDialogFragment() {
                 } else {
                     requireContext().toastShort("error")
                 }
+                clSaveAsPdf.setOnClickListener {
+                    print()
+                }
             }
         }
+    }
+
+    fun print() {
+        viewModel.print()
     }
 }

@@ -2,8 +2,8 @@ package com.example.casttotv.datasource
 
 import android.content.Context
 import com.example.casttotv.R
-import com.example.casttotv.models.QuestionAnswer
-import com.example.casttotv.models.SearchEngine
+import com.example.casttotv.dataclasses.QuestionAnswer
+import com.example.casttotv.dataclasses.SearchEngine
 
 class DataSource {
 

@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.casttotv.R
 import com.example.casttotv.adapter.FolderAdapter
 import com.example.casttotv.databinding.ImagesFoldersFragmentBinding
-import com.example.casttotv.models.FolderModel
+import com.example.casttotv.dataclasses.FolderModel
 import com.example.casttotv.utils.IMAGE
 import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
 import com.example.casttotv.utils.MySingleton.toastLong

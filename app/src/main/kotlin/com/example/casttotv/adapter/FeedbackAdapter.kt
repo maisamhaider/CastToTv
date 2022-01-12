@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.casttotv.R
 import com.example.casttotv.databinding.FeedbackItemBinding
-import com.example.casttotv.models.Feedback
+import com.example.casttotv.dataclasses.Feedback
 import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.THEME_DARK
 

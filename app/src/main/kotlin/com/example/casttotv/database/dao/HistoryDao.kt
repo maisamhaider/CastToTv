@@ -13,6 +13,12 @@ interface HistoryDao {
     @Query("select * from history")
     fun getHistory(): Flow<List<HistoryEntity>>
 
+    @Query("select * from history")
+    fun getHistoryList():  List<HistoryEntity>
+
+    @Query("select * from history group by days")
+    fun getDateMilli(): Flow<List<HistoryEntity>>
+
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insert(historyEntity: HistoryEntity)
 
@@ -21,4 +27,7 @@ interface HistoryDao {
 
     @Delete
     fun delete(historyEntity: HistoryEntity)
+
+    @Query("delete from history where id = :id")
+    fun delete(id: Int)
 }

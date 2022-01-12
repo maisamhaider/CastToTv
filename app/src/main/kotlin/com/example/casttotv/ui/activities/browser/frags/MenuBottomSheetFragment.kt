@@ -10,6 +10,8 @@ import androidx.fragment.app.activityViewModels
 import com.example.casttotv.R
 import com.example.casttotv.databinding.FragmentMenuBottomSheetBinding
 import com.example.casttotv.ui.activities.browser.BookmarkActivity
+import com.example.casttotv.ui.activities.browser.FavoritesActivity
+import com.example.casttotv.ui.activities.browser.HistoryActivity
 import com.example.casttotv.viewmodel.BrowserViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
@@ -42,6 +44,12 @@ class MenuBottomSheetFragment : BottomSheetDialogFragment() {
         binding.apply {
             clBookmarks.setOnClickListener {
                 startActivity(Intent(requireContext(), BookmarkActivity::class.java))
+            }
+            clFavorites.setOnClickListener {
+                startActivity(Intent(requireContext(), FavoritesActivity::class.java))
+            }
+            clHistory.setOnClickListener {
+                startActivity(Intent(requireContext(), HistoryActivity::class.java))
             }
         }
     }

@@ -7,6 +7,10 @@
         <variable
             name="browserVM"
             type="com.example.casttotv.viewmodel.BrowserViewModel" />
+
+        <variable
+            name="thisFrag"
+            type="com.example.casttotv.ui.activities.browser.frags.SaveActionFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -102,8 +106,7 @@
                 android:id="@+id/cl_save_as_pdf"
                 style="@style/w_0_h_0"
                 android:background="?attr/selectableItemBackground"
-                android:onClick="@{()-> browserVM.print()}"
-                app:layout_constraintBottom_toTopOf="@+id/guideline431"
+                 app:layout_constraintBottom_toTopOf="@+id/guideline431"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -177,7 +180,6 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     style="@style/body_text_view"
                     android:layout_marginStart="@dimen/dp_12"
-                    android:background="?attr/selectableItemBackground"
                     android:gravity="start|center"
                     android:text="@string/add_to_bookmark"
                     app:layout_constraintBottom_toTopOf="@+id/guideline437"
@@ -213,6 +215,7 @@
                 android:id="@+id/cl_add_to_favorite"
                 style="@style/w_0_h_0"
                 android:background="?attr/selectableItemBackground"
+                android:onClick="@{()-> browserVM.insertFavorites()}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline440"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -232,7 +235,6 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     style="@style/body_text_view"
                     android:layout_marginStart="@dimen/dp_12"
-                    android:background="?attr/selectableItemBackground"
                     android:gravity="start|center"
                     android:text="@string/add_to_favorite"
                     app:layout_constraintBottom_toTopOf="@+id/guideline442"
@@ -288,7 +290,6 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     style="@style/body_text_view"
                     android:layout_marginStart="@dimen/dp_12"
-                    android:background="?attr/selectableItemBackground"
                     android:gravity="start|center"
                     android:text="@string/add_shortcut_to_home"
                     app:layout_constraintBottom_toTopOf="@+id/guideline444"

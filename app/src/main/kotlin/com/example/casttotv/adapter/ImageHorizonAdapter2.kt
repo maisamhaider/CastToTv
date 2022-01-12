@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.casttotv.R
 import com.example.casttotv.databinding.ImagesItem2Binding
-import com.example.casttotv.models.FileModel
+import com.example.casttotv.dataclasses.FileModel
 
 class ImageHorizonAdapter2(
     val onItemClicked: (FileModel, Int) -> Unit,

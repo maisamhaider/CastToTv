@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.casttotv.R
 import com.example.casttotv.databinding.ImagesVideosItemBinding
-import com.example.casttotv.models.FileModel
+import com.example.casttotv.dataclasses.FileModel
 import com.example.casttotv.utils.IMAGE
 import com.example.casttotv.utils.SLIDE
 import com.example.casttotv.utils.VIDEO

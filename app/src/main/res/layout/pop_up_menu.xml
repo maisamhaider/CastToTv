@@ -13,8 +13,8 @@
 
         <androidx.cardview.widget.CardView
             style="@style/card_view_0_0"
-            app:cardCornerRadius="@dimen/dp_8"
             app:cardBackgroundColor="?attr/l_white_b_ebony_clay"
+            app:cardCornerRadius="@dimen/dp_8"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="w,10:3.5"
             app:layout_constraintEnd_toEndOf="parent"

@@ -87,7 +87,7 @@ class BrowserBottomSheetFragment : CBottomSheetDialogFragment() {
                         2 -> {
                             requireContext().toastShort("history")
                             showLowerTabs(2)
-                            loadHistory()
+//                            loadHistory()
                             previousTab = 2
                         }
 
@@ -153,15 +153,15 @@ class BrowserBottomSheetFragment : CBottomSheetDialogFragment() {
 //        }
 //    }
 
-    fun loadHistory() {
-        val adapter = HistoryAdapter(::onHistoryClicked, requireContext())
-        binding.recyclerView.adapter = adapter
-        browserViewModel.getHistory().asLiveData().observe(viewLifecycleOwner) {
-            it?.let { history ->
-                adapter.submitList(history)
-            }
-        }
-    }
+//    fun loadHistory() {
+//        val adapter = HistoryAdapter(::onHistoryClicked, requireContext())
+//        binding.recyclerView.adapter = adapter
+//        browserViewModel.getHistory().asLiveData().observe(viewLifecycleOwner) {
+//            it?.let { history ->
+//                adapter.submitList(history)
+//            }
+//        }
+//    }
 
 
     private fun onTabClicked(tab: Int) {

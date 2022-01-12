@@ -1,3 +1,3 @@
-package com.example.casttotv.models
+package com.example.casttotv.dataclasses
 
 data class Lang(val code: String, val name: String)

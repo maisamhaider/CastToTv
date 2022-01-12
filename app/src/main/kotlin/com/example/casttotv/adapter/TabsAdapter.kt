@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.casttotv.R
 import com.example.casttotv.databinding.TabItemBinding
-import com.example.casttotv.models.Tabs
+import com.example.casttotv.dataclasses.Tabs
 import com.example.casttotv.viewmodel.BrowserViewModel
 
 class TabsAdapter(

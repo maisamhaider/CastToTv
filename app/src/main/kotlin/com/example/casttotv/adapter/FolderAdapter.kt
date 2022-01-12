@@ -2,7 +2,6 @@ package com.example.casttotv.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
@@ -10,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.casttotv.R
 import com.example.casttotv.databinding.FolderItemBinding
-import com.example.casttotv.models.FolderModel
+import com.example.casttotv.dataclasses.FolderModel
 import com.example.casttotv.utils.IMAGE
 import com.example.casttotv.utils.VIDEO
 

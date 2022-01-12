@@ -15,7 +15,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.casttotv.R
 import com.example.casttotv.adapter.FeedbackAdapter
 import com.example.casttotv.databinding.FragmentFeedbackBinding
-import com.example.casttotv.models.Feedback
+import com.example.casttotv.dataclasses.Feedback
 import com.example.casttotv.utils.Internet
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.viewmodel.MainViewModel

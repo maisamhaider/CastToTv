@@ -14,8 +14,8 @@ import com.example.casttotv.adapter.ImageHorizonAdapter2
 import com.example.casttotv.adapter.ImageViewPagerAdapter
 import com.example.casttotv.adapter.ViewPager2AnimationsAdapter
 import com.example.casttotv.databinding.FragmentImageSliderViewerBinding
-import com.example.casttotv.models.FileModel
-import com.example.casttotv.models.PagerAnimation
+import com.example.casttotv.dataclasses.FileModel
+import com.example.casttotv.dataclasses.PagerAnimation
 import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
 import com.example.casttotv.viewmodel.SharedViewModel
 import kotlinx.coroutines.CoroutineScope

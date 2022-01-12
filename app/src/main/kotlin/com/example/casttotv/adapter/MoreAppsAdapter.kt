@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.casttotv.databinding.ItemMoreAppsBinding
-import com.example.casttotv.models.ModelMoreApps
+import com.example.casttotv.dataclasses.ModelMoreApps
 
 class MoreAppsAdapter(private var context: Context) :
     ListAdapter<ModelMoreApps, MoreAppsAdapter.Holder>(DIF_UTIL) {

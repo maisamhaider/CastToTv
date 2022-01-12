@@ -30,13 +30,14 @@ import com.example.casttotv.R
 import com.example.casttotv.adapter.BrowserAdapter2
 import com.example.casttotv.adapter.SearchEngineAdapter
 import com.example.casttotv.database.entities.BookmarkEntity
+import com.example.casttotv.database.entities.FavoritesEntity
 import com.example.casttotv.database.entities.HistoryEntity
 import com.example.casttotv.database.entities.HomeEntity
 import com.example.casttotv.databinding.*
+import com.example.casttotv.dataclasses.Tabs
 import com.example.casttotv.datasource.DataSource
-import com.example.casttotv.models.Tabs
+import com.example.casttotv.interfaces.MyCallBack
 import com.example.casttotv.ui.activities.MainActivity
-import com.example.casttotv.ui.activities.browser.fragments.BrowserBottomSheetFragment
 import com.example.casttotv.utils.*
 import com.example.casttotv.utils.MySingleton.createWebPrintJob
 import com.example.casttotv.utils.MySingleton.funCopy
@@ -59,11 +60,15 @@ import java.util.*
 
 
 class BrowserViewModel(private var cxt: Context) : ViewModel() {
-
+    lateinit var myCallBack: MyCallBack
     private val TAG = "BrowserViewModel"
     private val bookmarkDao = (cxt.applicationContext as AppApplication).database.bookmarkDao()
+    private val favoritesDao = (cxt.applicationContext as AppApplication).database.favoriteDao()
     private val homeDao = (cxt.applicationContext as AppApplication).database.homeDao()
     private val historyDao = (cxt.applicationContext as AppApplication).database.historyDao()
+
+    private var _history: MutableLiveData<HistoryEntity> = MutableLiveData()
+    val historyLive:LiveData<HistoryEntity> =  _history
 
     private var container: FrameLayout? = null
     private val cookieManager: CookieManager = CookieManager.getInstance()!!
@@ -72,12 +77,14 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     private var _tabs: MutableLiveData<List<Tabs>> = MutableLiveData()
     var liveTabs: LiveData<List<Tabs>> = _tabs
 
+    val historyInt: MutableLiveData<Int> = MutableLiveData(1)
     private val _searchText: MutableLiveData<String> = MutableLiveData("")
     val searchText: LiveData<String> = _searchText
     private var _currentTabIndex = 0
 
 
     private var bookmarkItem: MutableLiveData<BookmarkEntity> = MutableLiveData()
+    private var favoriteItem: MutableLiveData<FavoritesEntity> = MutableLiveData()
     private var homeItem: MutableLiveData<HomeEntity> = MutableLiveData()
     private var historyItem: MutableLiveData<HistoryEntity> = MutableLiveData()
 
@@ -112,7 +119,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         this.container = container
     }
 
-    fun loadFragment(fragment: Fragment, fragmentManager: FragmentManager, container : Int) {
+    fun loadFragment(fragment: Fragment, fragmentManager: FragmentManager, container: Int) {
         fragmentManager.beginTransaction().replace(container, fragment, "").commit()
     }
 
@@ -121,6 +128,16 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         trans.remove(myFrag)
         trans.commit()
         manager.popBackStack()
+    }
+
+    fun date() = Date().time.toString()
+
+    @SuppressLint("SimpleDateFormat")
+    fun day(): String {
+        val sFormat = SimpleDateFormat("DD.MM.yyyy")
+        sFormat.isLenient = false
+
+        return sFormat.format(Date())
     }
 
     /**
@@ -141,10 +158,10 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         _webView.value!!.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
                 view.loadUrl(url)
-                val date = Date().time.toString()
-                history(url, url, date)
-                bookmark(url, url, date)
-                home(url, url, date)
+                history(url, url, date(), day())
+                bookmark(url, url, date())
+                favorite(url, url, date())
+                home(url, url, date())
 
                 Log.e(TAG, "title---->${view.title.toString()}\n url----->${view.url.toString()}")
                 _searchText.value = url
@@ -295,11 +312,11 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
         _webView.value!!.loadUrl(url)
 
-        val date = Date().time.toString()
 
-        history(searchText, url, date)
-        bookmark(searchText, url, date)
-        home(searchText, url, date)
+        history(searchText, url, date(), day())
+        bookmark(searchText, url, date())
+        favorite(searchText, url, date())
+        home(searchText, url, date())
 
         Log.e(TAG, "title---->$searchText\n url----->${_webView.value!!.url.toString()}")
         _searchText.value = url
@@ -311,11 +328,11 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     fun searchFromHistory(searchText: String) {
         newTabWebView(WebView(cxt))
         _webView.value!!.loadUrl(searchText)
-        val date = Date().time.toString()
 
-        history(searchText, _webView.value!!.url.toString(), date)
-        bookmark(searchText, _webView.value!!.url.toString(), date)
-        home(searchText, _webView.value!!.url.toString(), date)
+        history(searchText, _webView.value!!.url.toString(), date(), day())
+        bookmark(searchText, _webView.value!!.url.toString(), date())
+        favorite(searchText, _webView.value!!.url.toString(), date())
+        home(searchText, _webView.value!!.url.toString(), date())
 
         Log.e(TAG, "title---->$searchText\n url----->${_webView.value!!.url.toString()}")
         _searchText.value = searchText
@@ -329,11 +346,11 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     fun searchInBackground(searchText: String) {
         val web = WebView(cxt)
         web.loadUrl(searchText)
-        val date = Date().time.toString()
 
-        history(searchText, _webView.value!!.url.toString(), date)
-        bookmark(searchText, _webView.value!!.url.toString(), date)
-        home(searchText, _webView.value!!.url.toString(), date)
+        history(searchText, _webView.value!!.url.toString(), date(), day())
+        bookmark(searchText, _webView.value!!.url.toString(), date())
+        favorite(searchText, _webView.value!!.url.toString(), date())
+        home(searchText, _webView.value!!.url.toString(), date())
 
         Log.e(TAG, "title---->$searchText\n url----->${_webView.value!!.url.toString()}")
         _searchText.value = searchText
@@ -351,11 +368,11 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
             newTabWebView(WebView(cxt))
         }
         _webView.value!!.loadUrl(searchText)
-        val date = Date().time.toString()
 
-        history(searchText, _webView.value!!.url.toString(), date)
-        bookmark(searchText, _webView.value!!.url.toString(), date)
-        home(searchText, _webView.value!!.url.toString(), date)
+        history(searchText, _webView.value!!.url.toString(), date(), day())
+        bookmark(searchText, _webView.value!!.url.toString(), date())
+        favorite(searchText, _webView.value!!.url.toString(), date())
+        home(searchText, _webView.value!!.url.toString(), date())
 
         Log.e(TAG, "title---->$searchText\n url----->${_webView.value!!.url.toString()}")
         _searchText.value = searchText
@@ -378,6 +395,16 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         val sendIntent: Intent = Intent().apply {
             action = Intent.ACTION_SEND
             putExtra(Intent.EXTRA_TEXT, _webView.value!!.url.toString())
+            type = "text/plain"
+        }
+
+        val shareIntent = Intent.createChooser(sendIntent, "share with")
+        cxt.startActivity(shareIntent)
+    }
+    fun share(string: String) {
+        val sendIntent: Intent = Intent().apply {
+            action = Intent.ACTION_SEND
+            putExtra(Intent.EXTRA_TEXT, string)
             type = "text/plain"
         }
 
@@ -512,19 +539,51 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
             textviewDelete.setOnClickListener {
                 when (int) {
                     1 -> {
-                        deleteBookmark()
+                        deleteBookmarks()
                     }
-                    2 -> {
-                        deleteHistory()
+
+                    3 -> {
+                        deleteFavorite()
                     }
                 }
                 bottomSheet.dismiss()
             }
         }
-        if (int == 1 || int == 2) {
+        if (int == 1 || int == 2 || int == 3) {
             bottomSheet.show()
         }
 
+    }
+
+    fun setHistoryTimeConstraint(timeConstraint: Int) {
+        historyInt.value = timeConstraint
+        when (timeConstraint) {
+            1 -> {//hourly
+                deleteHistory()
+            }
+            2 -> { //today
+                deleteHistory()
+            }
+            3 -> { //week
+                deleteHistory()
+            }
+            4 -> { //month
+                deleteHistory()
+            }
+            5 -> { //month
+                deleteHistory()
+            }
+        }
+        caller()
+    }
+
+
+    fun myCallback(myCallBack: MyCallBack) {
+        this.myCallBack = myCallBack
+    }
+
+    fun caller() {
+        myCallBack.callback()
     }
 
     fun deleteHistoryDialog(historyEntity: HistoryEntity) {
@@ -721,7 +780,6 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
 
-
     fun engineDialog() {
         val binding = LayoutSearchEnginesBinding.inflate(LayoutInflater.from(cxt), null,
             false)
@@ -902,11 +960,54 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     /**
      * delete all bookmark records
      * */
-    fun deleteBookmark() {
+    fun deleteBookmarks() {
         viewModelScope.launch(Dispatchers.IO) {
             bookmarkDao.delete()
         }
     }
+
+    // favorites record functions
+
+    fun getFavorites() = favoritesDao.getFavorites()
+
+    fun getFavorite(id: Int) = favoritesDao.getFavorite(id)
+
+    fun favorite(title: String, link: String, date: String) {
+        favoriteItem.value = FavoritesEntity(title = title, link = link, date = date)
+    }
+
+    fun insertFavorites() {
+        viewModelScope.launch(Dispatchers.IO) {
+            if (favoriteItem.value != null) {
+                favoritesDao.insert(favoritesEntity = favoriteItem.value!!)
+            }
+        }
+    }
+
+    fun updateFavorites() {
+        viewModelScope.launch(Dispatchers.IO) {
+            favoritesDao.update(favoritesEntity = favoriteItem.value!!)
+        }
+    }
+
+    /**
+     * delete a single favorites record
+     * */
+    fun deleteFavorites(favoriteItem: FavoritesEntity) {
+        viewModelScope.launch(Dispatchers.IO) {
+            favoritesDao.delete(favoritesEntity = favoriteItem)
+        }
+    }
+
+    /**
+     * delete all favorites records
+     * */
+    fun deleteFavorite() {
+        viewModelScope.launch(Dispatchers.IO) {
+            favoritesDao.delete()
+        }
+    }
+
 
     // home data functions
     fun getHome() = homeDao.getHome()
@@ -951,13 +1052,14 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
     // History data functions
-    fun getHistory() = historyDao.getHistory()
+    fun getHistoryGroupBtDay() = historyDao.getDateMilli()
+    fun getHistory() =  historyDao.getHistory()
 
 
     fun getHistory(id: Int) = historyDao.getHistory(id)
 
-    fun history(title: String, link: String, date: String) {
-        historyItem.value = HistoryEntity(title = title, link = link, date = date)
+    fun history(title: String, link: String, date: String, day: String) {
+        historyItem.value = HistoryEntity(title = title, link = link, date = date, day = day)
     }
 
     fun insertHistory() {
@@ -982,6 +1084,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         viewModelScope.launch(Dispatchers.IO) {
             historyDao.delete()
         }
+
     }
 
 

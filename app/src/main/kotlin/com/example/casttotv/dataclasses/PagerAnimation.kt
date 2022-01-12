@@ -1,4 +1,4 @@
-package com.example.casttotv.models
+package com.example.casttotv.dataclasses
 
 import androidx.viewpager2.widget.ViewPager2
 

@@ -1,7 +1,6 @@
-package com.example.casttotv.models
+package com.example.casttotv.dataclasses
 
 import android.webkit.WebView
-import java.util.*
 
 
 data class Tabs(val webView: WebView) {

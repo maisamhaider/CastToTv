@@ -14,7 +14,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.casttotv.R
 import com.example.casttotv.databinding.FragmentCustomVideoPlayerBinding
-import com.example.casttotv.models.FileModel
+import com.example.casttotv.dataclasses.FileModel
 import com.example.casttotv.utils.*
 import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
 import com.example.casttotv.utils.MySingleton.toastLong

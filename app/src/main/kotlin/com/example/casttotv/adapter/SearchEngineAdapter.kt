@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.casttotv.R
 import com.example.casttotv.databinding.LanguageItemBinding
-import com.example.casttotv.models.SearchEngine
+import com.example.casttotv.dataclasses.SearchEngine
 import com.example.casttotv.utils.MySingleton.resolveColorAttr
 import com.example.casttotv.utils.MySingleton.setAppLocale
 import com.example.casttotv.utils.Pref.getPrefs

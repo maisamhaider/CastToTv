@@ -23,7 +23,7 @@ import com.example.casttotv.databinding.OrientationDialogBinding
 import com.example.casttotv.databinding.RateDialogBinding
 import com.example.casttotv.databinding.ThemeDialogBinding
 import com.example.casttotv.interfaces.MyCallBack
-import com.example.casttotv.models.Lang
+import com.example.casttotv.dataclasses.Lang
 import com.example.casttotv.utils.*
 import com.example.casttotv.utils.MySingleton.changeTheme
 import com.example.casttotv.utils.MySingleton.toastLong

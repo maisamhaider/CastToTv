@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.casttotv.R
 import com.example.casttotv.databinding.ViewPager2AnimationItemBinding
-import com.example.casttotv.models.PagerAnimation
+import com.example.casttotv.dataclasses.PagerAnimation
 
 class ViewPager2AnimationsAdapter(private val onItemClick: (PagerAnimation?, Int) -> Unit) :
     ListAdapter<PagerAnimation, ViewPager2AnimationsAdapter.Holder>(DIF_UTIL) {

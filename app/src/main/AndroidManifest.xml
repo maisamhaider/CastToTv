@@ -46,6 +46,12 @@
         android:theme="@style/Theme.CastToTv"
         tools:replace="android:supportsRtl">
         <activity
+            android:name=".ui.activities.browser.HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.browser.FavoritesActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.activities.browser.BookmarkActivity"
             android:exported="false" />
         <activity

@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.casttotv.R
 import com.example.casttotv.adapter.MoreAppsAdapter
 import com.example.casttotv.databinding.FragmentMoreAppsBinding
-import com.example.casttotv.models.ModelMoreApps
+import com.example.casttotv.dataclasses.ModelMoreApps
 
 
 class MoreAppsFragment : Fragment() {

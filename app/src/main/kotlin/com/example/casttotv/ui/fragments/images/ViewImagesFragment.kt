@@ -12,7 +12,7 @@ import com.example.casttotv.R
 import com.example.casttotv.adapter.ImageHorizonAdapter2
 import com.example.casttotv.adapter.ImageViewPagerAdapter
 import com.example.casttotv.databinding.FragmentViewImagesBinding
-import com.example.casttotv.models.FileModel
+import com.example.casttotv.dataclasses.FileModel
 import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.utils.animation.DepthPageTransformer

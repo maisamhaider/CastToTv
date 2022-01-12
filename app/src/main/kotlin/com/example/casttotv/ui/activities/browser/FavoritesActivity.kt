@@ -5,16 +5,15 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.asLiveData
 import com.example.casttotv.R
-import com.example.casttotv.adapter.BookmarkAdapter
-import com.example.casttotv.database.entities.BookmarkEntity
-import com.example.casttotv.databinding.ActivityBookmarkBinding
+import com.example.casttotv.adapter.FavoriteAdapter
+import com.example.casttotv.database.entities.FavoritesEntity
+import com.example.casttotv.databinding.ActivityFavoritesBinding
 import com.example.casttotv.interfaces.OptionMenuListener
 import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.viewmodel.BrowserViewModel
 
-class BookmarkActivity : AppCompatActivity(), OptionMenuListener {
-
-    private lateinit var _binding: ActivityBookmarkBinding
+class FavoritesActivity : AppCompatActivity(), OptionMenuListener {
+    private lateinit var _binding: ActivityFavoritesBinding
     private val binding get() = _binding
 
     private val browserViewModel: BrowserViewModel by viewModels {
@@ -24,29 +23,32 @@ class BookmarkActivity : AppCompatActivity(), OptionMenuListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        _binding = ActivityBookmarkBinding.inflate(layoutInflater)
+        _binding = ActivityFavoritesBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.bookmarks = this
-        loadBookmark()
+        binding.favoriteActivity = this
+        loadFavorites()
     }
 
-    private fun loadBookmark() {
-        val adapter = BookmarkAdapter(::onBookmarkClicked, this, this)
+    private fun loadFavorites() {
+        val adapter = FavoriteAdapter(::onFavoriteClicked, this, this)
         binding.recyclerView.adapter = adapter
-        browserViewModel.getBookmarks().asLiveData().observe(this) {
+        browserViewModel.getFavorites().asLiveData().observe(this) {
             it?.let { bookmarks ->
                 adapter.submitList(bookmarks)
             }
         }
     }
 
-    private fun onBookmarkClicked(bookmark: BookmarkEntity, longClick: Boolean) {
+    private fun onFavoriteClicked(favorite: FavoritesEntity, longClick: Boolean) {
 
         if (longClick) {
 //            browserViewModel.deleteBookMarkDialog(bookmark)
-            browserViewModel.editBottomSheet(bookmark, false)
+            browserViewModel.editBottomSheet(favorite, false)
         } else {
-            toastShort(bookmark.link)
+            toastShort(favorite.link)
+//            startActivity(Intent(this,))
+//            browserViewModel.searchFromHistory(bookmark.link)
+//            this.dismiss()
         }
     }
 
@@ -55,14 +57,15 @@ class BookmarkActivity : AppCompatActivity(), OptionMenuListener {
     }
 
     override fun <T> item(itemId: Int, dataClass: T) {
-        val bookmarkEntity: BookmarkEntity = dataClass as BookmarkEntity
+        val favoritesEntity: FavoritesEntity = dataClass as FavoritesEntity
         when (itemId) {
             R.id.item_edit -> {
             }
             R.id.item_delete -> {
+                browserViewModel.deleteFavorites(favoritesEntity)
             }
             R.id.item_share -> {
-                val string = "Website: ${bookmarkEntity.title}\nUrl: ${bookmarkEntity.link}"
+                val string = "Website: ${favoritesEntity.title}\nUrl: ${favoritesEntity.link}"
                 browserViewModel.share(string)
             }
             else -> {

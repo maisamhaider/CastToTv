@@ -16,10 +16,10 @@ import androidx.annotation.ColorInt
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
-import com.example.casttotv.models.FileModel
-import com.example.casttotv.models.FolderModel
-import com.example.casttotv.models.Lang
-import com.example.casttotv.models.Tabs
+import com.example.casttotv.dataclasses.FileModel
+import com.example.casttotv.dataclasses.FolderModel
+import com.example.casttotv.dataclasses.Lang
+import com.example.casttotv.dataclasses.Tabs
 import com.example.casttotv.utils.Pref.getPrefs
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
