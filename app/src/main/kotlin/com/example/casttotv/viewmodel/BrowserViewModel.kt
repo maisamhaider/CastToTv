@@ -8,6 +8,9 @@ import android.graphics.Bitmap
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.net.Uri
+import android.print.PrintAttributes
+import android.print.PrintDocumentAdapter
+import android.print.PrintManager
 import android.text.TextUtils
 import android.util.Log
 import android.view.LayoutInflater
@@ -17,17 +20,15 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.FrameLayout
 import androidx.appcompat.app.AlertDialog
-import androidx.core.content.ContextCompat
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.FileProvider
 import androidx.core.view.drawToBitmap
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.*
-import androidx.viewpager2.widget.ViewPager2
 import com.example.casttotv.R
-import com.example.casttotv.adapter.BrowserAdapter2
 import com.example.casttotv.adapter.SearchEngineAdapter
 import com.example.casttotv.database.entities.BookmarkEntity
 import com.example.casttotv.database.entities.FavoritesEntity
@@ -39,7 +40,6 @@ import com.example.casttotv.datasource.DataSource
 import com.example.casttotv.interfaces.MyCallBack
 import com.example.casttotv.ui.activities.MainActivity
 import com.example.casttotv.utils.*
-import com.example.casttotv.utils.MySingleton.createWebPrintJob
 import com.example.casttotv.utils.MySingleton.funCopy
 import com.example.casttotv.utils.MySingleton.shareWithText
 import com.example.casttotv.utils.MySingleton.tabs
@@ -48,8 +48,7 @@ import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.Pref.putPrefs
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayoutMediator
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.io.File
@@ -68,12 +67,16 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     private val historyDao = (cxt.applicationContext as AppApplication).database.historyDao()
 
     private var _history: MutableLiveData<HistoryEntity> = MutableLiveData()
-    val historyLive:LiveData<HistoryEntity> =  _history
+    val historyLive: LiveData<HistoryEntity> = _history
 
     private var container: FrameLayout? = null
     private val cookieManager: CookieManager = CookieManager.getInstance()!!
 
-    private val _webView: MutableLiveData<WebView> = MutableLiveData()
+    private val _showTabFragment: MutableLiveData<Boolean> = MutableLiveData(false)
+    val showTabFragment: LiveData<Boolean> = _showTabFragment
+
+    private val _webView: MutableLiveData<ObservableWebView> = MutableLiveData()
+    val webView: MutableLiveData<ObservableWebView> get() = _webView
     private var _tabs: MutableLiveData<List<Tabs>> = MutableLiveData()
     var liveTabs: LiveData<List<Tabs>> = _tabs
 
@@ -115,7 +118,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         return getCurrentTab().webView
     }
 
-    fun initWebViewContainer(container: FrameLayout) {
+    fun initWebViewContainer(container: FrameLayout, clWeb: ConstraintLayout) {
         this.container = container
     }
 
@@ -128,6 +131,10 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         trans.remove(myFrag)
         trans.commit()
         manager.popBackStack()
+    }
+
+    fun clickTabLayout() {
+        _showTabFragment.value = !_showTabFragment.value!!
     }
 
     fun date() = Date().time.toString()
@@ -144,7 +151,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
      * set web view properties
      */
     @SuppressLint("SetJavaScriptEnabled")
-    fun newTabWebView(wv: WebView) {
+    fun newTabWebView(wv: ObservableWebView) {
         _webView.value = wv
         _webView.value!!.webViewClient = MyBrowser()
         _webView.value!!.settings.javaScriptEnabled = getPrefs(START_CONTROL_JAVASCRIPT, true)
@@ -188,6 +195,8 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         _currentTabIndex = tabs.size.minus(1)
     }
 
+    fun webScrollObserver() = _webView.value
+
 
     fun switchToTab(tab: Int) {
         getCurrentWebView().visibility = View.GONE
@@ -199,7 +208,6 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
 
     fun closeCurrentTab() {
-
         if (_currentTabIndex != -1) {
             container!!.removeView(getCurrentWebView())
             getCurrentWebView().destroy()
@@ -219,7 +227,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
                 }
             } else {
                 if (getPrefs(BEHAVIOR_UI_REOPEN_LAST_TAB, false)) {
-                    newTabWebView(WebView(cxt))
+                    newTabWebView(ObservableWebView(cxt))
                 } else {
                     exitDialog(cxt as Activity)
                     _currentTabIndex = -1
@@ -230,7 +238,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
 
-    fun closeTab(tab: Int) {
+    private fun closeTab(tab: Int) {
         if (tabs.contains(tabs[tab])) {
             container!!.removeView(getCurrentWebView())
             getCurrentWebView().destroy()
@@ -250,7 +258,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
                 }
             } else {
                 if (getPrefs(BEHAVIOR_UI_REOPEN_LAST_TAB, false)) {
-                    newTabWebView(WebView(cxt))
+                    newTabWebView(ObservableWebView(cxt))
                 } else {
                     exitDialog(cxt as Activity)
                     _currentTabIndex = -1
@@ -299,7 +307,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
     fun search(searchText: String) {
         if (_currentTabIndex == -1) {
-            newTabWebView(WebView(cxt))
+            newTabWebView(ObservableWebView(cxt))
         }
         val engine = engines[getPrefs(SELECTED_ENGINE, "google").lowercase()]?.link
             ?: "https://www.google.com/search?q="
@@ -326,7 +334,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
     fun searchFromHistory(searchText: String) {
-        newTabWebView(WebView(cxt))
+        newTabWebView(ObservableWebView(cxt))
         _webView.value!!.loadUrl(searchText)
 
         history(searchText, _webView.value!!.url.toString(), date(), day())
@@ -365,7 +373,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
     fun searchReload(searchText: String) {
         if (_currentTabIndex == -1) {
-            newTabWebView(WebView(cxt))
+            newTabWebView(ObservableWebView(cxt))
         }
         _webView.value!!.loadUrl(searchText)
 
@@ -387,9 +395,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         return searchText.isNotBlank()
     }
 
-    fun print() {
-        cxt.createWebPrintJob(_webView.value!!)
-    }
+    fun webViewVisisble() :Boolean { return  container != null && container!!.isVisible }
 
     fun shareLink() {
         val sendIntent: Intent = Intent().apply {
@@ -401,6 +407,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         val shareIntent = Intent.createChooser(sendIntent, "share with")
         cxt.startActivity(shareIntent)
     }
+
     fun share(string: String) {
         val sendIntent: Intent = Intent().apply {
             action = Intent.ACTION_SEND
@@ -419,7 +426,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     fun openDownload() {
         val intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
         intent.addCategory(Intent.CATEGORY_DEFAULT)
-        intent.type = "*/*"
+         intent.type = "*/*"
         cxt.startActivity(intent)
     }
 
@@ -447,79 +454,80 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
     fun saveScreenShot(isShare: Boolean): String {
-
         return try {
-            val bitmap = _webView.value!!.drawToBitmap()
-            val time = SimpleDateFormat("EEE-dd-yyyy h:mm s a", Locale.getDefault()).format(Date())
+            if (webViewVisisble())
+            { val bitmap = _webView.value!!.drawToBitmap()
+                val time = SimpleDateFormat("EEE-dd-yyyy h:mm s a", Locale.getDefault()).format(Date())
 
-            val dir = if (isShare) {
-                cxt.filesDir
-            } else {
-                cxt.getExternalFilesDir("Download")
+                val dir = if (isShare) {
+                    cxt.filesDir
+                } else {
+                    cxt.getExternalFilesDir("Download")
+                }
+                val file = File(dir, "screenshot$time.png")
+                val out = FileOutputStream(file)
+                bitmap.setHasAlpha(true)
+                bitmap.compress(Bitmap.CompressFormat.PNG, 100, out)
+                out.flush()
+                out.close()
+                file.absolutePath
+            }else
+            {
+                "error"
             }
-            val file = File(dir, "screenshot$time.png")
-            val out = FileOutputStream(file)
-            bitmap.setHasAlpha(true)
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, out)
-            out.flush()
-            out.close()
-            file.absolutePath
 
         } catch (e: IOException) {
             e.printStackTrace()
             "error"
-        }
+         }
 
     }
 
-    fun openSS(path: String) {
-        val binding =
-            LayoutBodyPosAndNegButtonBinding.inflate(LayoutInflater.from(cxt), null,
-                false)
-        val bottomSheetDialog = BottomSheetDialog(cxt)
-        bottomSheetDialog.setContentView(binding.root)
-
-        binding.apply {
-            textviewBody.text = "Download complete. Preview image"
-            textviewPositive.text = "Yes"
-            textviewNegative.text = "No"
-            textviewPositive.setOnClickListener {
-                bottomSheetDialog.dismiss()
-                val intent = Intent()
-                intent.action = Intent.ACTION_VIEW
-                intent.type = "image/*"
-
-                val photoURI = FileProvider.getUriForFile(cxt, "${cxt.packageName}.provider",
-                    File(path)
-                )
-                intent.data = photoURI
-
-                cxt.startActivity(Intent.createChooser(intent, "share with"))
-                cxt.toastShort(path)
-
-            }
-            textviewNegative.setOnClickListener { bottomSheetDialog.dismiss() }
-        }
-        bottomSheetDialog.create()
-        bottomSheetDialog.show()
-    }
+//    fun openSS(path: String) {
+//        val binding =
+//            LayoutBodyPosAndNegButtonBinding.inflate(LayoutInflater.from(cxt), null,
+//                false)
+//        val bottomSheetDialog = BottomSheetDialog(cxt)
+//        bottomSheetDialog.setContentView(binding.root)
+//
+//        binding.apply {
+//            textviewBody.text = "Download complete. Preview image"
+//            textviewPositive.text = "Yes"
+//            textviewNegative.text = "No"
+//            textviewPositive.setOnClickListener {
+//                bottomSheetDialog.dismiss()
+//                val intent = Intent()
+//                intent.action = Intent.ACTION_VIEW
+//                intent.type = "image/*"
+//
+//                val photoURI = FileProvider.getUriForFile(cxt, "${cxt.packageName}.provider",
+//                    File(path)
+//                )
+//                intent.data = photoURI
+//
+//                cxt.startActivity(Intent.createChooser(intent, "share with"))
+//                cxt.toastShort(path)
+//
+//            }
+//            textviewNegative.setOnClickListener { bottomSheetDialog.dismiss() }
+//        }
+//        bottomSheetDialog.create()
+//        bottomSheetDialog.show()
+//    }
 
     fun shareSS(path: String) {
-        val binding =
-            LayoutBodyPosAndNegButtonBinding.inflate(LayoutInflater.from(cxt), null,
+        val binding = LayoutBodyPosAndNegButtonBinding.inflate(LayoutInflater.from(cxt), null,
                 false)
         val bottomSheetDialog = BottomSheetDialog(cxt)
         bottomSheetDialog.setContentView(binding.root)
 
         binding.apply {
-            textviewBody.text = "Download complete. Share image"
-            textviewPositive.text = "Yes"
-            textviewNegative.text = "No"
+            textviewBody.text =  cxt.getText(R.string.download_complete_share_image)
+            textviewPositive.text = cxt.getText(R.string.yes_2)
+            textviewNegative.text = cxt.getText(R.string.no_2)
             textviewPositive.setOnClickListener {
                 bottomSheetDialog.dismiss()
                 cxt.shareWithText(path)
-                cxt.toastShort(path)
-
             }
             textviewNegative.setOnClickListener { bottomSheetDialog.dismiss() }
         }
@@ -541,7 +549,6 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
                     1 -> {
                         deleteBookmarks()
                     }
-
                     3 -> {
                         deleteFavorite()
                     }
@@ -709,77 +716,6 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         }
     }
 
-    fun showBottomSheet(fragmentActivity: FragmentActivity) {
-
-        // on below line we are creating a new bottom sheet dialog.
-        val dialog = BottomSheetDialog(cxt)
-        // on below line we are inflating a layout file which we have created.
-
-        val bottomBinding =
-            LayoutInflater.from(cxt)
-                .inflate(R.layout.bottom_sheet_dialog, null, false)
-
-
-        // closing of dialog box when clicking on the screen.
-        dialog.setCancelable(true)
-
-        // on below line we are setting
-        // content view to our view.
-        dialog.setContentView(bottomBinding)
-
-        val viewpager2 =
-            bottomBinding.findViewById<ViewPager2>(R.id.viewpager_2)
-        val tabLayout = bottomBinding.findViewById<TabLayout>(com.example.casttotv.R.id.tabLayout)
-
-        val adapter = BrowserAdapter2(fragmentActivity)
-        viewpager2.adapter = adapter
-
-        TabLayoutMediator(tabLayout, viewpager2) { tab, position ->
-            when (position) {
-                0 -> {
-                    tab.icon = ContextCompat.getDrawable(cxt, R.drawable.ic_tab)
-                }
-                1 -> {
-                    tab.icon = ContextCompat.getDrawable(cxt, R.drawable.ic_share)
-                }
-                2 -> {
-                    tab.icon = ContextCompat.getDrawable(cxt, R.drawable.ic_save)
-                }
-                3 -> {
-                    tab.icon = ContextCompat.getDrawable(cxt, R.drawable.ic_vert_dots)
-                }
-            }
-        }.attach()
-        tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
-            override fun onTabSelected(tab: TabLayout.Tab?) {
-                when (tab!!.position) {
-                    0 -> {
-                        viewpager2.currentItem = 0
-                    }
-                    1 -> {
-                        viewpager2.currentItem = 1
-                    }
-                    2 -> {
-                        viewpager2.currentItem = 2
-                    }
-                    3 -> {
-                        viewpager2.currentItem = 3
-                    }
-                }
-            }
-
-            override fun onTabUnselected(tab: TabLayout.Tab?) {
-            }
-
-            override fun onTabReselected(tab: TabLayout.Tab?) {
-            }
-
-        })
-
-        dialog.show()
-    }
-
-
     fun engineDialog() {
         val binding = LayoutSearchEnginesBinding.inflate(LayoutInflater.from(cxt), null,
             false)
@@ -829,18 +765,17 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
     fun closTabDialog(tab: Int) {
         if (getPrefs(BEHAVIOR_UI_CONFIRM_TAB_CLOSE, false)) {
-            val binding =
-                LayoutTitleBodyPosAndNegButtonBinding.inflate(LayoutInflater.from(cxt), null,
+            val binding = LayoutTitleBodyPosAndNegButtonBinding.inflate(LayoutInflater.from(cxt), null,
                     false)
             val builder = AlertDialog.Builder(cxt)
             builder.setView(binding.root)
             val dialog = builder.create()
-
+            dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             binding.apply {
-                textviewTitle.text = "Tab Exit"
-                textviewBody.text = "Do you want to close"
-                textviewPositiveText.text = "Yes"
-                textviewNegativeText.text = "No"
+                textviewTitle.text = cxt.getString(R.string.tab_exit)
+                textviewBody.text = cxt.getString(R.string.do_you_want_to_close)
+                textviewPositiveText.text = cxt.getString(R.string.yes_2)
+                textviewNegativeText.text = cxt.getString(R.string.no_2)
                 textviewPositiveClick.setOnClickListener {
                     closeTab(tab)
                     dialog.dismiss()
@@ -1053,7 +988,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
     // History data functions
     fun getHistoryGroupBtDay() = historyDao.getDateMilli()
-    fun getHistory() =  historyDao.getHistory()
+    fun getHistory() = historyDao.getHistory()
 
 
     fun getHistory(id: Int) = historyDao.getHistory(id)

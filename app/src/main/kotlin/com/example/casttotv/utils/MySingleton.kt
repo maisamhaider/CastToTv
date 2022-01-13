@@ -104,14 +104,7 @@ object MySingleton {
         clipboardManager.setPrimaryClip(clipData)
     }
 
-    fun Context.createWebPrintJob(webView: WebView) {
-        val printManager = this
-            .getSystemService(Context.PRINT_SERVICE) as PrintManager
-        val printAdapter: PrintDocumentAdapter?
-        printAdapter = webView.createPrintDocumentAdapter("MyDocument")
-        val jobName = " Print Test"
-        printManager.print(jobName, printAdapter, PrintAttributes.Builder().build())
-    }
+
 
     fun <T> Context.toastLong(messages: T) {
         Toast.makeText(this, messages.toString(), Toast.LENGTH_LONG).show()

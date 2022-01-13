@@ -18,6 +18,7 @@ import com.example.casttotv.BuildConfig
 import com.example.casttotv.R
 import com.example.casttotv.databinding.HomeFragmentBinding
 import com.example.casttotv.interfaces.MyCallBack
+import com.example.casttotv.ui.activities.MainActivity
 import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.THEME_DARK
@@ -54,6 +55,10 @@ class HomeFragment : Fragment(), MyCallBack {
             homeFragment = this@HomeFragment
             includedDrawer.homeFrag = this@HomeFragment
         }
+
+        val mainActivity = activity as MainActivity
+        mainActivity.refreshAd(binding.adContainerBig)
+        mainActivity.refreshAdSmallNative(binding.adContainerSmall)
 
     }
 

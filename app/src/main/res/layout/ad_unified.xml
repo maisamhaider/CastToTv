@@ -1,17 +1,21 @@
 <com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     style="@style/w_m_h_w"
+    android:layout_marginTop="@dimen/dp_10"
     android:background="?attr/colorPrimary">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dp_10">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             style="@style/w_0_h_0"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintDimensionRatio="w,60:60"
+            app:layout_constraintDimensionRatio="w,60:55"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -35,15 +39,11 @@
             style="@style/imageview_w0_h0_ratio11"
             android:layout_gravity="center|start"
             android:adjustViewBounds="true"
-            android:background="@drawable/ic_launcher_background"
-            android:paddingEnd="5dp"
-            android:paddingRight="5dp"
-            android:paddingBottom="5dp"
-            android:src="@drawable/ic_launcher_foreground"
             app:layout_constraintBottom_toTopOf="@+id/guideline832"
             app:layout_constraintDimensionRatio="1:1"
-            app:layout_constraintStart_toStartOf="@+id/guideline268"
-            app:layout_constraintTop_toTopOf="@+id/guideline830" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline830"
+            tools:src="@drawable/ic_launcher_background" />
 
 
         <TextView
@@ -58,9 +58,9 @@
             app:autoSizeMaxTextSize="18sp"
             app:autoSizeMinTextSize="2sp"
             app:autoSizeTextType="uniform"
-            app:layout_constraintBottom_toTopOf="@+id/guideline831"
+            app:layout_constraintBottom_toTopOf="@+id/ad_body"
             app:layout_constraintStart_toEndOf="@+id/ad_app_icon"
-            app:layout_constraintTop_toTopOf="@+id/guideline830"
+            app:layout_constraintTop_toTopOf="@+id/ad_headline"
             app:layout_constraintVertical_bias="0.44" />
 
         <TextView
@@ -69,14 +69,15 @@
             android:layout_marginStart="5dp"
             android:layout_marginEnd="2dp"
             android:fontFamily="@font/segoe_ui_bold"
-            android:text="Honeycam Chat - Live Video"
+            android:gravity="center|start"
             app:autoSizeMaxTextSize="18sp"
             app:autoSizeMinTextSize="2sp"
             app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toTopOf="@+id/guideline831"
             app:layout_constraintEnd_toStartOf="@+id/guideline838"
             app:layout_constraintStart_toEndOf="@+id/textView3"
-            app:layout_constraintTop_toTopOf="@+id/guideline830" />
+            app:layout_constraintTop_toTopOf="@+id/guideline830"
+            tools:text="Honeycam Chat - Live Video" />
 
 
         <TextView
@@ -86,15 +87,16 @@
             android:ellipsize="end"
             android:fontFamily="@font/segoe_ui_normal"
             android:gravity="center|start"
+            android:maxLength="30"
             android:maxLines="1"
             android:paddingStart="2dp"
-            android:text="Free Live Chat Apps Join live group via Ho..."
             app:autoSizeMaxTextSize="14sp"
             app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toTopOf="@+id/guideline833"
             app:layout_constraintEnd_toStartOf="@+id/guideline838"
             app:layout_constraintStart_toStartOf="@+id/textView3"
-            app:layout_constraintTop_toTopOf="@+id/guideline834" />
+            app:layout_constraintTop_toTopOf="@+id/guideline834"
+            tools:text="Free Live Chat Apps Join live group via Ho..." />
 
 
         <TextView
@@ -114,7 +116,7 @@
             app:autoSizeMinTextSize="2sp"
             app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toTopOf="@+id/guideline836"
-            app:layout_constraintEnd_toStartOf="@+id/guideline269"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline838"
             app:layout_constraintTop_toTopOf="@+id/guideline835" />
 
@@ -126,82 +128,63 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.75" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline837"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.08" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline818"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.7" />
+            app:layout_constraintGuide_percent="0.78" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline830"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.75" />
+            app:layout_constraintGuide_percent="0.83" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline831"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.82" />
+            app:layout_constraintGuide_percent="0.9" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline832"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.95" />
+            app:layout_constraintGuide_percent="1" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline834"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.845" />
+            app:layout_constraintGuide_percent="0.93" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline833"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.924" />
+            app:layout_constraintGuide_percent="0.994" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline835"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.798" />
+            app:layout_constraintGuide_percent="0.848" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline836"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.905" />
+            app:layout_constraintGuide_percent="0.955" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline268"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.021" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline269"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.979" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

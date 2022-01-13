@@ -10,25 +10,34 @@ import android.os.Build
 import android.os.Build.VERSION.SDK_INT
 import android.os.Bundle
 import android.os.Environment
+import android.print.PrintAttributes
+import android.print.PrintDocumentAdapter
+import android.print.PrintManager
 import android.provider.Settings
 import android.view.WindowManager
 import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import com.example.casttotv.R
 import com.example.casttotv.databinding.ActivityMainBinding
 import com.example.casttotv.ui.activities.browser.frags.BrowserContainerFragment
 import com.example.casttotv.utils.MySingleton
 import com.example.casttotv.utils.MySingleton.setAppLocale
+import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.viewmodel.BrowserViewModel
 import com.example.casttotv.viewmodel.MainViewModel
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
+    private var originalContext: Context? = null
+
 
     private lateinit var binding: ActivityMainBinding
     lateinit var controller: NavController
@@ -89,7 +98,28 @@ class MainActivity : AppCompatActivity() {
 
     override fun attachBaseContext(newBase: Context) {
         super.attachBaseContext(ContextWrapper(newBase.setAppLocale(MySingleton.localeLanguage)))
+        this.originalContext = newBase;
+
     }
+
+    fun print() {
+        if (browserVM.webViewVisisble()) {
+            val printManager = originalContext?.getSystemService(Context.PRINT_SERVICE) as PrintManager
+            val printAdapter: PrintDocumentAdapter? =
+                browserVM.webView.value?.run { createPrintDocumentAdapter("MyDocument") }
+            val jobName = " Print Test"
+            printAdapter?.let {
+                CoroutineScope(Dispatchers.Main).launch {
+                    printManager.print(jobName, it, PrintAttributes.Builder().build())
+                }
+            }
+        } else {
+            CoroutineScope(Dispatchers.Main).launch {
+                toastShort(getString(R.string.make_sure_you_are_in_browser_view))
+            }
+        }
+    }
+
 
     fun browserBack() = browserVM.back()
     fun fromBrowserBack() =

@@ -8,9 +8,11 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_tabs"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="?attr/colorPrimaryVariant">
+        android:background="?attr/colorPrimaryVariant"
+        android:visibility="gone">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout7"
@@ -42,10 +44,11 @@
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/materialTextView46"
                 style="@style/header_text_view"
+                android:layout_marginStart="@dimen/dp_5"
                 android:text="@string/new_tab"
                 app:layout_constraintBottom_toTopOf="@+id/guideline386"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/guideline387"
+                app:layout_constraintStart_toEndOf="@+id/view_new_tab"
                 app:layout_constraintTop_toTopOf="@+id/guideline385" />
 
 
@@ -68,14 +71,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.29" />
+                app:layout_constraintGuide_percent="0.3" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline386"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.73" />
+                app:layout_constraintGuide_percent="0.71" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.recyclerview.widget.RecyclerView

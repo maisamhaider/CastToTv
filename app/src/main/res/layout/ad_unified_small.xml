@@ -1,11 +1,13 @@
 <com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     style="@style/w_m_h_w">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:background="?attr/colorPrimary">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,11 +32,7 @@
                     style="@style/w_m_h_m"
                     android:layout_gravity="center|start"
                     android:adjustViewBounds="true"
-                    android:background="@drawable/ic_launcher_background"
-                    android:paddingEnd="5dp"
-                    android:paddingRight="5dp"
-                    android:paddingBottom="5dp"
-                    app:srcCompat="@drawable/ic_launcher_foreground" />
+                    tools:src="@drawable/ic_launcher_background" />
             </com.google.android.material.card.MaterialCardView>
 
 
@@ -60,14 +58,14 @@
                 android:layout_marginStart="@dimen/dp_10"
                 android:fontFamily="@font/roboto"
                 android:maxWidth="200dp"
-                android:text="TikTok"
                 android:textColor="?attr/colorOnPrimary"
                 app:autoSizeMaxTextSize="24sp"
                 app:autoSizeMinTextSize="2sp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline134"
                 app:layout_constraintStart_toEndOf="@+id/materialCardView4"
                 app:layout_constraintTop_toTopOf="@+id/guideline132"
-                app:layout_constraintVertical_chainStyle="packed" />
+                app:layout_constraintVertical_chainStyle="packed"
+                tools:text="TikTok" />
 
             <TextView
 
@@ -76,15 +74,16 @@
                 android:ellipsize="end"
                 android:fontFamily="@font/segoe_ui_normal"
                 android:gravity="center|start"
+                android:maxLength="30"
                 android:maxLines="1"
                 android:paddingStart="2dp"
-                android:text="TikTok is Destination for Mobile Videos."
                 app:autoSizeMaxTextSize="18sp"
-                app:layout_constraintBottom_toTopOf="@+id/guideline133"
+                app:layout_constraintBottom_toTopOf="@+id/guideline560"
                 app:layout_constraintEnd_toStartOf="@+id/guideline271"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="@+id/guideline270"
-                app:layout_constraintTop_toTopOf="@+id/guideline126" />
+                app:layout_constraintTop_toTopOf="@+id/guideline126"
+                tools:text="TikTok is Destination for Mobile Videos." />
 
 
             <TextView
@@ -145,6 +144,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline560"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.8" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline133"

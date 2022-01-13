@@ -19,7 +19,7 @@
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/browser_container"
             style="@style/w_0_h_0"
-            app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
+            app:layout_constraintBottom_toTopOf="@+id/cl_bottom_nav"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout6"
+            android:id="@+id/cl_bottom_nav"
             style="@style/w_0_h_0"
             android:background="?attr/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"

@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import com.example.casttotv.R
 import com.example.casttotv.databinding.FragmentSaveActionBinding
+import com.example.casttotv.ui.activities.MainActivity
 import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.viewmodel.BrowserViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
@@ -44,18 +45,19 @@ class SaveActionFragment : BottomSheetDialogFragment() {
             clSaveSs.setOnClickListener {
                 val ssPath = viewModel.saveScreenShot(false) //screenshot return path
                 if (ssPath != "error") {
-                    requireContext().toastShort("save \n$ssPath")
+                    requireContext().toastShort("${getString(R.string.save)}\n$ssPath")
                 } else {
-                    requireContext().toastShort("error")
+                    requireContext().toastShort(getString(R.string.make_sure_you_are_in_browser_view))
                 }
-                clSaveAsPdf.setOnClickListener {
-                    print()
+            }
+            clSaveAsPdf.setOnClickListener {
+                requireContext().toastShort("clicked")
+                if (activity is MainActivity) {
+                    (activity as MainActivity).print()
                 }
             }
         }
     }
 
-    fun print() {
-        viewModel.print()
-    }
+
 }

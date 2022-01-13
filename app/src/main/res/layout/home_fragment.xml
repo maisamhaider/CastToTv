@@ -34,8 +34,8 @@
                 android:id="@+id/appCompatImageView42"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:src="@drawable/ic_drawer"
                 android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_drawer"
                 app:layout_constraintBottom_toTopOf="@+id/guideline15"
                 app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintStart_toStartOf="@+id/guideline16"
@@ -44,8 +44,8 @@
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imageview_draw"
                 android:layout_width="0dp"
-                android:onClick="@{()->homeFragment.openDrawer()}"
                 android:layout_height="0dp"
+                android:onClick="@{()->homeFragment.openDrawer()}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline17"
                 app:layout_constraintDimensionRatio="1:1"
                 app:layout_constraintStart_toStartOf="parent"
@@ -399,25 +399,20 @@
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/ad_container_big"
                 style="@style/card_view_w0_h0_r5"
+                android:padding="@dimen/dp_10"
                 app:layout_constraintBottom_toTopOf="@+id/guideline26"
                 app:layout_constraintEnd_toStartOf="@+id/guideline28"
                 app:layout_constraintStart_toStartOf="@+id/guideline16"
-                app:layout_constraintTop_toTopOf="@+id/guideline33">
-
-                <include layout="@layout/ad_unified" />
-
-            </com.google.android.material.card.MaterialCardView>
+                app:layout_constraintTop_toTopOf="@+id/guideline33" />
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/ad_container_small"
                 style="@style/card_view_w0_h0_r5"
+                android:padding="@dimen/dp_10"
                 app:layout_constraintBottom_toTopOf="@+id/guideline39"
                 app:layout_constraintEnd_toStartOf="@+id/guideline28"
                 app:layout_constraintStart_toStartOf="@+id/guideline16"
-                app:layout_constraintTop_toTopOf="@+id/guideline36">
-
-                <include layout="@layout/ad_unified_small" />
-            </com.google.android.material.card.MaterialCardView>
+                app:layout_constraintTop_toTopOf="@+id/guideline36" />
 
 
             <androidx.constraintlayout.widget.Guideline

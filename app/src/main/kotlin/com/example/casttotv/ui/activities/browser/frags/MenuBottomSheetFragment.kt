@@ -9,9 +9,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import com.example.casttotv.R
 import com.example.casttotv.databinding.FragmentMenuBottomSheetBinding
+import com.example.casttotv.ui.activities.MainActivity
 import com.example.casttotv.ui.activities.browser.BookmarkActivity
 import com.example.casttotv.ui.activities.browser.FavoritesActivity
 import com.example.casttotv.ui.activities.browser.HistoryActivity
+import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.viewmodel.BrowserViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
@@ -51,29 +53,40 @@ class MenuBottomSheetFragment : BottomSheetDialogFragment() {
             clHistory.setOnClickListener {
                 startActivity(Intent(requireContext(), HistoryActivity::class.java))
             }
+
+            clShareUrl.setOnClickListener {
+                browserViewModel.shareLink()
+            }
+            clCopyUrl.setOnClickListener {
+                browserViewModel.copyToClipBoard()
+                requireContext().toastShort(getString(R.string.copied))
+            }
+            clSharePdf.setOnClickListener {
+                if (activity is MainActivity) {
+                    (activity as MainActivity).print()
+                }
+            }
+            clShareSs.setOnClickListener {
+                val ssPath = browserViewModel.saveScreenShot(true) //screenshot return path
+                if (ssPath != "error") {
+                    browserViewModel.shareSS(ssPath)
+                } else {
+                    requireContext().toastShort(getString(R.string.make_sure_you_are_in_browser_view))
+                }
+            }
+            clDownloads.setOnClickListener {
+                browserViewModel.openDownload()
+            }
+            clFileManager.setOnClickListener {
+                browserViewModel.openFileManager()
+            }
+            clSearchOn.setOnClickListener {
+                browserViewModel.openWith()
+            }
+
+
         }
     }
 
-//    textviewShareScreenshot.setOnClickListener {
-//        val ssPath = browserViewModel.saveScreenShot(true) //screenshot return path
-//        if (ssPath != "error") {
-//            browserViewModel.shareSS(ssPath)
-//        } else {
-//            requireContext().toastShort("error")
-//        }
-//    }
-//    textviewSharePdf.setOnClickListener {
-//        browserViewModel.print()
-//    }
-//    textviewShareLink.setOnClickListener {
-//        browserViewModel.shareLink()
-//    }
-//    textviewCopyToClipboard.setOnClickListener {
-//        browserViewModel.copyToClipBoard()
-//        requireContext().toastShort("copied")
-//    }
-//    textviewOpenLinkWith.setOnClickListener {
-//        browserViewModel.openWith()
-//    }
 
 }

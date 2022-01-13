@@ -2,12 +2,15 @@ package com.example.casttotv.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.example.casttotv.R
 import com.example.casttotv.database.entities.HomeEntity
-import com.example.casttotv.databinding.HomeItemBinding
+import com.example.casttotv.databinding.BrowserShortcutsItemBinding
 
 class HomeAdapter(
     val onItemClicked: (HomeEntity) -> Unit,
@@ -28,15 +31,25 @@ class HomeAdapter(
         }
     }
 
-    class Holder(private val binding: HomeItemBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(homeEntity: HomeEntity) {
-            binding.mTextView.text = homeEntity.link
+    class Holder(private val binding: BrowserShortcutsItemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+        fun bind(context: Context, homeEntity: HomeEntity) {
+
+            binding.textview.text = homeEntity.title
+
+            if (homeEntity.id == -1) {
+                binding.imageviewPlus.visibility = View.VISIBLE
+            } else {
+                binding.imageviewPlus.visibility = View.GONE
+                Glide.with(context).load(homeEntity.link).placeholder(R.drawable.ic_browser)
+                    .into(binding.imageview)
+            }
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val viewHolder = Holder(
-            HomeItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            BrowserShortcutsItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         )
         viewHolder.itemView.setOnClickListener {
             onItemClicked(getItem(viewHolder.absoluteAdapterPosition))
@@ -47,7 +60,7 @@ class HomeAdapter(
 
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.bind(getItem(holder.absoluteAdapterPosition))
+        holder.bind(context, getItem(holder.absoluteAdapterPosition))
     }
 
 }

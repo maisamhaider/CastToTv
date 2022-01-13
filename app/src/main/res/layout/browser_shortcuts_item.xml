@@ -2,31 +2,45 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         style="@style/w_0_h_0"
+        android:layout_marginTop="@dimen/dp_10"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="w,40:30"
+        app:layout_constraintDimensionRatio="w,40:35"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/appCompatImageView32"
+            android:id="@+id/imageview"
             style="@style/imageview_w0_h0_ratio11"
             android:background="@drawable/shape_stroke_ovel_dodger"
+            android:padding="@dimen/dp_5"
             app:layout_constraintBottom_toTopOf="@+id/guideline326"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline325" />
+            app:layout_constraintTop_toTopOf="@+id/guideline325"
+            tools:src="@drawable/ic_browser" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview_plus"
+            style="@style/imageview_w0_h0_ratio11"
+            app:layout_constraintBottom_toTopOf="@+id/guideline545"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline546"
+            app:srcCompat="@drawable/ic_plus_2" />
 
         <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textview"
             style="@style/body_text_view"
             android:gravity="center"
+            android:maxLength="12"
+            android:maxLines="1"
             app:layout_constraintBottom_toTopOf="@+id/guideline327"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,14 +52,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.1" />
+            app:layout_constraintGuide_percent="0.12" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline326"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.7" />
+            app:layout_constraintGuide_percent="0.63" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline546"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline545"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline328"
@@ -59,7 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.905" />
+            app:layout_constraintGuide_percent="0.895" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

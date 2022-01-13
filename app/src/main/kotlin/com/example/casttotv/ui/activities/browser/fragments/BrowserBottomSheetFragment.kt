@@ -1,6 +1,7 @@
 package com.example.casttotv.ui.activities.browser.fragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,8 +16,13 @@ import com.example.casttotv.database.entities.HistoryEntity
 import com.example.casttotv.database.entities.HomeEntity
 import com.example.casttotv.databinding.FragmentBrowserBottomSheetBinding
 import com.example.casttotv.utils.MySingleton.toastShort
+import com.example.casttotv.utils.ObservableWebView
 import com.example.casttotv.viewmodel.BrowserViewModel
 import com.google.android.material.tabs.TabLayout
+import com.example.casttotv.utils.ObservableWebView.OnScrollChangedCallback
+
+
+
 
 
 class BrowserBottomSheetFragment : CBottomSheetDialogFragment() {
@@ -46,12 +52,12 @@ class BrowserBottomSheetFragment : CBottomSheetDialogFragment() {
         binding.apply {
             textviewNewTab2.setOnClickListener {
                 this@BrowserBottomSheetFragment.dismiss()
-                browserViewModel.newTabWebView(WebView(requireContext()))
+                browserViewModel.newTabWebView(ObservableWebView(requireContext()))
                 loadTab()
             }
             textviewNewTab.setOnClickListener {
                 this@BrowserBottomSheetFragment.dismiss()
-                browserViewModel.newTabWebView(WebView(requireContext()))
+                browserViewModel.newTabWebView(ObservableWebView(requireContext()))
                 loadTab()
             }
             textviewMore.setOnClickListener {
@@ -60,6 +66,7 @@ class BrowserBottomSheetFragment : CBottomSheetDialogFragment() {
             }
         }
     }
+
 
     private fun tabLayoutClicks(tabLayout: TabLayout) {
         tabLayout.addOnTabSelectedListener(
