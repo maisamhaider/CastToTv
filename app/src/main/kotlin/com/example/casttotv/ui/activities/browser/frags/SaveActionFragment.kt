@@ -35,8 +35,7 @@ class SaveActionFragment : BottomSheetDialogFragment() {
         _binding = FragmentSaveActionBinding.inflate(inflater, container, false)
         return binding.root
     }
-
-
+    
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
@@ -51,7 +50,6 @@ class SaveActionFragment : BottomSheetDialogFragment() {
                 }
             }
             clSaveAsPdf.setOnClickListener {
-                requireContext().toastShort("clicked")
                 if (activity is MainActivity) {
                     (activity as MainActivity).print()
                 }

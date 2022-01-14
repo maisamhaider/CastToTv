@@ -20,7 +20,6 @@ import kotlinx.coroutines.launch
 class HistoryActivity : AppCompatActivity(), MyCallBack, OptionMenuListener {
     private lateinit var _binding: ActivityHistoryBinding
     private val binding get() = _binding
-    private val list: MutableList<History> = ArrayList()
     private val map: MutableMap<String, MutableList<HistoryEntity>> = HashMap()
 
     private val browserViewModel: BrowserViewModel by viewModels {
@@ -47,13 +46,13 @@ class HistoryActivity : AppCompatActivity(), MyCallBack, OptionMenuListener {
     }
 
     private fun loadHistory() {
-        if (list.isNotEmpty()) {
-            list.clear()
-            map.clear()
-        }
-        val adapter = HistoryAdapter(this, this)
+
+        val adapter = HistoryAdapter(::onClick, this, this)
         binding.recyclerView.adapter = adapter
         browserViewModel.getHistory().asLiveData().observe(this) {
+            if (map.isNotEmpty()) {
+                map.clear()
+            }
             CoroutineScope(Dispatchers.IO).launch {
                 it?.let { item ->
                     for (hist in item) {
@@ -66,9 +65,9 @@ class HistoryActivity : AppCompatActivity(), MyCallBack, OptionMenuListener {
                         }
                     }
                 }
-                map.forEach { m ->
-                    list.add(0, History(m.key, m.value))
-                }
+                val list: MutableList<History> = ArrayList()
+                map.forEach { m -> list.add(0, History(m.key, m.value)) }
+
                 launch(Dispatchers.Main) {
                     adapter.submitList(list)
                 }
@@ -85,6 +84,11 @@ class HistoryActivity : AppCompatActivity(), MyCallBack, OptionMenuListener {
         loadHistory()
     }
 
+    fun onClick(historyEntity: HistoryEntity) {
+//         back()
+//        browserViewModel.searchFromHistory(historyEntity.link)
+    }
+
     override fun <T> item(itemId: Int, dataClass: T) {
         val historyEntity: HistoryEntity = dataClass as HistoryEntity
         when (itemId) {
@@ -95,7 +99,7 @@ class HistoryActivity : AppCompatActivity(), MyCallBack, OptionMenuListener {
                 browserViewModel.insertBookmark()
             }
             R.id.item_delete -> {
-//                browserViewModel.deleteHistory(historyEntity)
+                browserViewModel.deleteHistory(historyEntity)
             }
             R.id.item_share -> {
                 val string = "Website: ${historyEntity.title}" +

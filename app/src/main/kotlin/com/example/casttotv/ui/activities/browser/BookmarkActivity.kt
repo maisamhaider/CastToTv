@@ -44,7 +44,7 @@ class BookmarkActivity : AppCompatActivity(), OptionMenuListener {
 
         if (longClick) {
 //            browserViewModel.deleteBookMarkDialog(bookmark)
-            browserViewModel.editBottomSheet(bookmark, false)
+//            browserViewModel.editBottomSheet(bookmark, false)
         } else {
             toastShort(bookmark.link)
         }
@@ -58,8 +58,10 @@ class BookmarkActivity : AppCompatActivity(), OptionMenuListener {
         val bookmarkEntity: BookmarkEntity = dataClass as BookmarkEntity
         when (itemId) {
             R.id.item_edit -> {
+                browserViewModel.editBottomSheet(bookmarkEntity, false)
             }
             R.id.item_delete -> {
+                browserViewModel.deleteBookmark(bookmarkEntity)
             }
             R.id.item_share -> {
                 val string = "Website: ${bookmarkEntity.title}\nUrl: ${bookmarkEntity.link}"

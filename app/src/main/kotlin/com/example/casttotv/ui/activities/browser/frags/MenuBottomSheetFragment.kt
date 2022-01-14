@@ -46,12 +46,15 @@ class MenuBottomSheetFragment : BottomSheetDialogFragment() {
         binding.apply {
             clBookmarks.setOnClickListener {
                 startActivity(Intent(requireContext(), BookmarkActivity::class.java))
+                dismiss()
             }
             clFavorites.setOnClickListener {
                 startActivity(Intent(requireContext(), FavoritesActivity::class.java))
+                dismiss()
             }
             clHistory.setOnClickListener {
                 startActivity(Intent(requireContext(), HistoryActivity::class.java))
+                dismiss()
             }
 
             clShareUrl.setOnClickListener {

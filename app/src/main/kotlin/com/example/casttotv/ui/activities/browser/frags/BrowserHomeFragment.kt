@@ -2,14 +2,17 @@ package com.example.casttotv.ui.activities.browser.frags
 
 import android.content.Intent
 import android.os.Bundle
+import android.speech.RecognizerIntent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
 import android.widget.TextView
+import androidx.activity.result.ActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.asLiveData
 import com.bumptech.glide.Glide
 import com.example.casttotv.R
 import com.example.casttotv.adapter.HomeAdapter
@@ -48,7 +51,65 @@ class BrowserHomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel.initWebViewContainer(binding.webViewContainer, binding.clWeb)
-        viewModel.newTabWebView(ObservableWebView(requireContext()))
+        viewModel.showTabFragment.observe(viewLifecycleOwner, {
+            if (it) {
+                binding.includeTabs.clTabs.visibility = View.VISIBLE
+                loadTab()
+            } else {
+                binding.includeTabs.clTabs.visibility = View.GONE
+            }
+        })
+        viewModel.webScrollObserver()?.let {
+            if (requireContext().getPrefs(BEHAVIOR_UI_HIDE_TOOLBAR, false)) {
+                it.setOnScrollChangedCallback(object :
+                    ObservableWebView.OnScrollChangedCallback {
+                    override fun onScroll(l: Int, t: Int, oldl: Int, oldt: Int) {
+                        if (t == 0) {
+                            //Do stuff
+                            binding.clSearchInput2Header.visibility = View.VISIBLE
+                            //Do stuff
+                        } else if (t > 40) {
+                            binding.clSearchInput2Header.visibility = View.GONE
+                        }
+                    }
+                })
+            }
+        }
+
+        viewModel.showBroswerHome.observe(viewLifecycleOwner) { show ->
+            if (show) {
+                binding.clHome.visibility = View.VISIBLE
+                binding.clWeb.visibility = View.GONE
+                binding.webViewContainer.visibility = View.GONE
+            } else {
+                binding.clHome.visibility = View.GONE
+                binding.clWeb.visibility = View.VISIBLE
+                binding.webViewContainer.visibility = View.VISIBLE
+
+
+            }
+        }
+        if (requireContext().getPrefs(FAVORITE_DEFAULT_SITE, "").isNotBlank()) {
+            //if there is user default site load it on start of this fragment
+            viewModel.searchFromHistory(requireContext().getPrefs(FAVORITE_DEFAULT_SITE, ""))
+        }
+        loadHomeData()
+
+        viewModel.mainActivityBackPress.observe(viewLifecycleOwner) {
+            if (it) {
+                when {
+                    viewModel.tabFragmentIsShowing() -> {
+                        viewModel.clickTabLayout()
+                    }
+                    viewModel.canGoBack() -> {
+                        viewModel.back()
+                    }
+                    !viewModel.showBroswerHome.value!! -> {
+                        viewModel.showBroswerHome(true)
+                    }
+                }
+            }
+        }
     }
 
     fun settings() {
@@ -102,14 +163,14 @@ class BrowserHomeFragment : Fragment() {
                 viewModel.newTabWebView(ObservableWebView(requireContext()))
                 viewModel.clickTabLayout()
             }
+            imageviewMic.setOnClickListener {
+                displaySpeechRecognizer()
+            }
         }
 
         binding.mInputEdittext.setOnEditorActionListener(TextView.OnEditorActionListener { _, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_GO) {
                 if (isSearchValid()) {
-                    binding.clHome.visibility = View.GONE
-                    binding.clWeb.visibility = View.VISIBLE
-                    binding.webViewContainer.visibility = View.VISIBLE
                     viewModel.search(binding.mInputEdittext.text.toString())
                 }
                 return@OnEditorActionListener true
@@ -117,52 +178,14 @@ class BrowserHomeFragment : Fragment() {
             false
         })
 
-        if (requireContext().getPrefs(FAVORITE_DEFAULT_SITE, "").isNotBlank()) {
-            //if there is user default site load it on start of this fragment
-            binding.clHome.visibility = View.GONE
-            binding.clWeb.visibility = View.VISIBLE
-            binding.webViewContainer.visibility = View.VISIBLE
-            viewModel.searchFromHistory(requireContext().getPrefs(FAVORITE_DEFAULT_SITE, ""))
-        } else {
-            //if there is no user default site load show start screen of the browser
-            binding.clHome.visibility = View.VISIBLE
-            binding.clWeb.visibility = View.GONE
-            binding.webViewContainer.visibility = View.GONE
-            loadHomeData()
-        }
-        viewModel.showTabFragment.observe(viewLifecycleOwner, {
-            if (it) {
-                binding.includeTabs.clTabs.visibility = View.VISIBLE
-                loadTab()
-            } else {
-                binding.includeTabs.clTabs.visibility = View.GONE
-            }
-        })
-        viewModel.webScrollObserver()?.let {
-            if (requireContext().getPrefs(BEHAVIOR_UI_HIDE_TOOLBAR, false)) {
-                it.setOnScrollChangedCallback(object :
-                    ObservableWebView.OnScrollChangedCallback {
-                    override fun onScroll(l: Int, t: Int, oldl: Int, oldt: Int) {
-                        if (t == 0) {
-                            //Do stuff
-                            binding.clSearchInput2Header.visibility = View.VISIBLE
-                            //Do stuff
-                        } else if (t > 40) {
-                            binding.clSearchInput2Header.visibility = View.GONE
-                        }
-                    }
-                })
-            }
 
-
-        }
     }
 
     private fun loadHomeData() {
         val adapter = HomeAdapter(::onClick, requireContext())
         binding.recyclerView.adapter = adapter
-        val list: MutableList<HomeEntity> = ArrayList()
-        viewModel.getHome().asLiveData().observe(viewLifecycleOwner, {
+        viewModel.getHome().observe(viewLifecycleOwner, {
+            val list: MutableList<HomeEntity> = ArrayList()
             list.addAll(it)
             list.add(HomeEntity(-1, getString(R.string.add_shortcut), "", ""))
             adapter.submitList(list)
@@ -193,21 +216,41 @@ class BrowserHomeFragment : Fragment() {
         viewModel.clickTabLayout()
     }
 
-//    binding.apply {
-//        viewNewTab.setOnClickListener {
-////                this@BrowserBottomSheetFragment.dismiss()
-//            viewModel.newTabWebView(WebView(requireContext()))
-//            loadTab()
-//        }
-//    }
+
+    private fun displaySpeechRecognizer() {
+        val sRIntent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
+            putExtra(
+                RecognizerIntent.EXTRA_LANGUAGE_MODEL,
+                RecognizerIntent.LANGUAGE_MODEL_FREE_FORM
+            ).putExtra(RecognizerIntent.EXTRA_LANGUAGE,
+                requireContext().getPrefs(LOCALE_LANGUAGE, "en"))
+        }
+        intentLauncher.launch(sRIntent)
+    }
+
+    private var intentLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result: ActivityResult ->
+        if (result.resultCode == AppCompatActivity.RESULT_OK) {
+            if (result.data != null) {
+
+                result.data!!.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
+                    .let { results ->
+                        results!![0]
+                    }?.let { query ->
+                        viewModel.setSeachText(query)
+                        viewModel.search(query)
+                    }
+
+            }
+
+        }
+    }
 
     fun onClick(homeEntity: HomeEntity) {
         if (homeEntity.id == -1) {
             requireContext().toastShort("click")
         } else {
-            binding.clHome.visibility = View.GONE
-            binding.clWeb.visibility = View.VISIBLE
-            binding.webViewContainer.visibility = View.VISIBLE
             viewModel.search(homeEntity.link)
         }
 

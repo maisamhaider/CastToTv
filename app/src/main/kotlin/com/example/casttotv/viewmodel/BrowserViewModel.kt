@@ -29,12 +29,14 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.*
 import com.example.casttotv.R
+import com.example.casttotv.adapter.HistoryAdapter
 import com.example.casttotv.adapter.SearchEngineAdapter
 import com.example.casttotv.database.entities.BookmarkEntity
 import com.example.casttotv.database.entities.FavoritesEntity
 import com.example.casttotv.database.entities.HistoryEntity
 import com.example.casttotv.database.entities.HomeEntity
 import com.example.casttotv.databinding.*
+import com.example.casttotv.dataclasses.History
 import com.example.casttotv.dataclasses.Tabs
 import com.example.casttotv.datasource.DataSource
 import com.example.casttotv.interfaces.MyCallBack
@@ -50,6 +52,8 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import java.io.File
 import java.io.FileOutputStream
@@ -74,6 +78,12 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
     private val _showTabFragment: MutableLiveData<Boolean> = MutableLiveData(false)
     val showTabFragment: LiveData<Boolean> = _showTabFragment
+
+   private val _showBroswerHome: MutableLiveData<Boolean> = MutableLiveData(true)
+    val showBroswerHome: LiveData<Boolean> = _showBroswerHome
+
+    private val _mainActivityBackPress: MutableLiveData<Boolean> = MutableLiveData(false)
+    val mainActivityBackPress: LiveData<Boolean> = _mainActivityBackPress
 
     private val _webView: MutableLiveData<ObservableWebView> = MutableLiveData()
     val webView: MutableLiveData<ObservableWebView> get() = _webView
@@ -136,6 +146,8 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     fun clickTabLayout() {
         _showTabFragment.value = !_showTabFragment.value!!
     }
+    fun tabFragmentIsShowing() = _showTabFragment.value!!
+
 
     fun date() = Date().time.toString()
 
@@ -147,21 +159,35 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         return sFormat.format(Date())
     }
 
+    fun showBroswerHome(value: Boolean){
+        _showBroswerHome.value = value
+    }
+    fun mainBackPress(value: Boolean){
+        _mainActivityBackPress.value = value
+    }
+    fun setSeachText(value: String){
+        _searchText.value = value
+    }
+
+
+
     /**
      * set web view properties
      */
     @SuppressLint("SetJavaScriptEnabled")
-    fun newTabWebView(wv: ObservableWebView) {
+     fun newTabWebView(wv: ObservableWebView) {
         _webView.value = wv
         _webView.value!!.webViewClient = MyBrowser()
         _webView.value!!.settings.javaScriptEnabled = getPrefs(START_CONTROL_JAVASCRIPT, true)
         _webView.value!!.settings.loadsImagesAutomatically = getPrefs(START_CONTROL_IMAGE, true)
         _webView.value!!.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
         _webView.value!!.settings.setGeolocationEnabled(getPrefs(START_CONTROL_LOCATION, false))
+        cookieManager.setAcceptThirdPartyCookies(_webView.value!!, getPrefs(START_CONTROL_COOKIES, false))
+
         container!!.addView(wv)
-        if (getPrefs(START_CONTROL_COOKIES, false)) {
-            cookieManager.setAcceptThirdPartyCookies(_webView.value!!, true)
-        }
+
+        _showBroswerHome.value = false
+
         _webView.value!!.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
                 view.loadUrl(url)
@@ -171,9 +197,8 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
                 home(url, url, date())
 
                 Log.e(TAG, "title---->${view.title.toString()}\n url----->${view.url.toString()}")
-                _searchText.value = url
-
-                if (getPrefs(START_CONTROL_LOCATION, true)) {
+                 setSeachText(url)
+                if (getPrefs(START_CONTROL_HISTORY, true)) {
                     insertHistory()
                 }
                 return true
@@ -184,13 +209,13 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         }
         val engine = engines[getPrefs(SELECTED_ENGINE, "google").lowercase()]?.link
             ?: "https://www.google.com/search?q="
-        if (getPrefs(FAVORITE_DEFAULT_SITE, "") == "") {
+//        if (getPrefs(FAVORITE_DEFAULT_SITE, "") == "") {
             _webView.value!!.loadUrl(engine)
-        } else {
-            _webView.value!!.loadUrl(getPrefs(FAVORITE_DEFAULT_SITE, ""))
-        }
-        _searchText.value = _webView.value!!.url
-        tabs.add(Tabs(_webView.value!!))
+        /*  } else {
+              _webView.value!!.loadUrl(getPrefs(FAVORITE_DEFAULT_SITE, ""))
+          }*/
+        setSeachText(_webView.value!!.url.toString())
+         tabs.add(Tabs(_webView.value!!))
         _tabs.value = tabs // set tabs to mutablelive list
         _currentTabIndex = tabs.size.minus(1)
     }
@@ -202,7 +227,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         getCurrentWebView().visibility = View.GONE
         _currentTabIndex = tab
         getCurrentWebView().visibility = View.VISIBLE
-        _searchText.value = getCurrentWebView().url
+        setSeachText(getCurrentWebView().url.toString())
         getCurrentWebView().requestFocus()
     }
 
@@ -223,13 +248,14 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
                 if (_currentTabIndex != -1) {
                     getCurrentWebView().visibility = View.VISIBLE
                     getCurrentWebView().requestFocus()
-                    _searchText.value = getCurrentWebView().url
+                    setSeachText(getCurrentWebView().url.toString())
                 }
             } else {
                 if (getPrefs(BEHAVIOR_UI_REOPEN_LAST_TAB, false)) {
                     newTabWebView(ObservableWebView(cxt))
                 } else {
                     exitDialog(cxt as Activity)
+                    _showBroswerHome.value = true
                     _currentTabIndex = -1
                 }
 
@@ -254,13 +280,17 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
                 if (_currentTabIndex != -1) {
                     getCurrentWebView().visibility = View.VISIBLE
                     getCurrentWebView().requestFocus()
-                    _searchText.value = getCurrentWebView().url
+                    setSeachText(getCurrentWebView().url.toString())
+
+
                 }
             } else {
+
                 if (getPrefs(BEHAVIOR_UI_REOPEN_LAST_TAB, false)) {
                     newTabWebView(ObservableWebView(cxt))
                 } else {
                     exitDialog(cxt as Activity)
+                    _showBroswerHome.value = true
                     _currentTabIndex = -1
                 }
 
@@ -300,15 +330,23 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
             _webView.value!!.goBack()
         }
     }
+    fun forward() {
+        if (_webView.value!!.isFocused && _webView.value!!.canGoBack()) {
+            _webView.value!!.goBack()
+        }
+    }
 
     fun canGoBack(): Boolean {
         return (_webView.value != null && _webView.value!!.isFocused && _webView.value!!.canGoBack())
     }
+    fun canGoForword(): Boolean {
+        return (_webView.value != null && _webView.value!!.isFocused && _webView.value!!.canGoForward())
+    }
 
     fun search(searchText: String) {
-        if (_currentTabIndex == -1) {
-            newTabWebView(ObservableWebView(cxt))
-        }
+//        if (_currentTabIndex == -1) {
+//            newTabWebView(ObservableWebView(cxt))
+//        }
         val engine = engines[getPrefs(SELECTED_ENGINE, "google").lowercase()]?.link
             ?: "https://www.google.com/search?q="
 
@@ -317,9 +355,9 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         } else {
             engine + searchText
         }
+        newTabWebView(ObservableWebView(cxt))
 
         _webView.value!!.loadUrl(url)
-
 
         history(searchText, url, date(), day())
         bookmark(searchText, url, date())
@@ -327,10 +365,12 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         home(searchText, url, date())
 
         Log.e(TAG, "title---->$searchText\n url----->${_webView.value!!.url.toString()}")
-        _searchText.value = url
-        if (getPrefs(START_CONTROL_LOCATION, true)) {
+        setSeachText(url)
+
+        if (getPrefs(START_CONTROL_HISTORY, true)) {
             insertHistory()
         }
+        _showBroswerHome.value = false
     }
 
     fun searchFromHistory(searchText: String) {
@@ -343,8 +383,8 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         home(searchText, _webView.value!!.url.toString(), date())
 
         Log.e(TAG, "title---->$searchText\n url----->${_webView.value!!.url.toString()}")
-        _searchText.value = searchText
-        if (getPrefs(START_CONTROL_LOCATION, true)) {
+         setSeachText(searchText)
+        if (getPrefs(START_CONTROL_HISTORY, true)) {
             if (searchText.isNotBlank()) {
                 insertHistory()
             }
@@ -361,8 +401,8 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         home(searchText, _webView.value!!.url.toString(), date())
 
         Log.e(TAG, "title---->$searchText\n url----->${_webView.value!!.url.toString()}")
-        _searchText.value = searchText
-        if (getPrefs(START_CONTROL_LOCATION, true)) {
+         setSeachText(searchText)
+        if (getPrefs(START_CONTROL_HISTORY, true)) {
             if (searchText.isNotBlank()) {
                 insertHistory()
             }
@@ -383,8 +423,8 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         home(searchText, _webView.value!!.url.toString(), date())
 
         Log.e(TAG, "title---->$searchText\n url----->${_webView.value!!.url.toString()}")
-        _searchText.value = searchText
-        if (getPrefs(START_CONTROL_LOCATION, true)) {
+         setSeachText(searchText)
+        if (getPrefs(START_CONTROL_HISTORY, true)) {
             if (searchText.isNotBlank()) {
                 insertHistory()
             }
@@ -625,77 +665,44 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
     }
 
-    fun <T> editBottomSheet(input: T, isHistory: Boolean) {
+    fun <T> editBottomSheet(input: T, fav :Boolean) {
         val binding = BottomSheetEditLayoutBinding.inflate(LayoutInflater.from(cxt), null,
             false)
         val bottomSheet = BottomSheetDialog(cxt)
         bottomSheet.setContentView(binding.root)
         bottomSheet.create()
-        var hist: HistoryEntity? = null
+        var favEntity: FavoritesEntity? = null
         var book: BookmarkEntity? = null
         binding.apply {
-            if (isHistory) {
-                hist = (input as HistoryEntity)
-                textviewEdit.visibility = View.GONE
-                appCompatImageView4.visibility = View.GONE
-            } else {
+            if(fav)
+            {
+                favEntity = (input as FavoritesEntity)
+                edittextTitle.setText(favEntity!!.title)
+                edittextUrl.setText(favEntity!!.link)
+            }else
+            {
                 book = (input as BookmarkEntity)
                 edittextTitle.setText(book!!.title)
                 edittextUrl.setText(book!!.link)
             }
-            textviewNewTabForeground.setOnClickListener {
-                when (isHistory) {
-                    true -> {
-                        searchFromHistory(hist!!.link)
-                    }
-                    false -> {
-                        searchFromHistory(book!!.link)
-                    }
-                }
-                bottomSheet.dismiss()
-            }
-            textviewNewTabBackground.setOnClickListener {
-                when (isHistory) {
-                    true -> {
-                        searchInBackground(hist!!.link)
-                    }
-                    false -> {
-                        searchInBackground(book!!.link)
-                    }
-                }
-            }
-            textviewEdit.setOnClickListener {
-                clEdit.visibility = View.VISIBLE
-                clButtons.visibility = View.GONE
-            }
-            textviewSaveAsFavorite.setOnClickListener {
-                when (isHistory) {
-                    true -> {
-                        putPrefs(FAVORITE_DEFAULT_SITE, hist!!.link)
-                    }
-                    false -> {
-                        putPrefs(FAVORITE_DEFAULT_SITE, book!!.link)
-                    }
-                }
-                bottomSheet.dismiss()
-            }
-            textviewDelete.setOnClickListener {
-                when (isHistory) {
-                    true -> {
-                        deleteHistoryDialog(hist!!)
-                    }
-                    false -> {
-                        deleteBookMarkDialog(book!!)
-                    }
-                }
-                bottomSheet.dismiss()
-            }
+
+
+
 
             textviewUpdate.setOnClickListener {
-                bookmarkItem.value =
-                    BookmarkEntity(id = book!!.id, title = edittextTitle.text.toString(),
-                        link = edittextUrl.text.toString(), date = Date().time.toString())
-                updateBookmark()
+                if (fav)
+                {
+                    favoriteItem.value =
+                        FavoritesEntity(id = favEntity!!.id, title = edittextTitle.text.toString(),
+                            link = edittextUrl.text.toString(), date = Date().time.toString())
+                    updateFavorites()
+                }else{
+                    bookmarkItem.value =
+                        BookmarkEntity(id = book!!.id, title = edittextTitle.text.toString(),
+                            link = edittextUrl.text.toString(), date = Date().time.toString())
+                    updateBookmark()
+                }
+
                 bottomSheet.dismiss()
             }
         }
@@ -810,7 +817,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
                 textviewPositiveClick.setOnClickListener {
                     dialog.dismiss()
                     onBrowserExit()
-                    mainActivity.fromBrowserBack()
+                     mainActivity.fromBrowserBack()
                 }
                 textviewNegativeClick.setOnClickListener { dialog.dismiss() }
             }
@@ -945,7 +952,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
 
     // home data functions
-    fun getHome() = homeDao.getHome()
+    fun getHome():LiveData<List<HomeEntity>> = homeDao.getHome().asLiveData()
 
 
     fun getHome(id: Int) = homeDao.getHome(id)
@@ -991,6 +998,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     fun getHistory() = historyDao.getHistory()
 
 
+
     fun getHistory(id: Int) = historyDao.getHistory(id)
 
     fun history(title: String, link: String, date: String, day: String) {
@@ -1009,6 +1017,14 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     fun deleteHistory(historyEntity: HistoryEntity) {
         viewModelScope.launch(Dispatchers.IO) {
             historyDao.delete(historyEntity)
+        }
+    }
+    /**
+     * delete a single History record by id
+     * */
+    fun deleteHistory(id: Int) {
+        viewModelScope.launch(Dispatchers.IO) {
+            historyDao.delete(id)
         }
     }
 

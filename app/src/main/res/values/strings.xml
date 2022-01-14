@@ -325,6 +325,9 @@ data. Third party cookies are always disabled.</string>
     <string name="do_you_want_to_close">Do you want to close</string>
     <string name="make_sure_you_are_in_browser_view">Make sure you are in browser view</string>
     <string name="download_complete_share_image">Download complete. Share image</string>
+    <string name="_0">0</string>
+    <string name="update">Update</string>
+    <string name="unfavorite">Unfavorite</string>
 
 
 </resources>

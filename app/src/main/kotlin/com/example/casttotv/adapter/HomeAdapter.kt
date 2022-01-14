@@ -17,7 +17,6 @@ class HomeAdapter(
     private var context: Context,
 ) :
     ListAdapter<HomeEntity, HomeAdapter.Holder>(DIF_UTIL) {
-
     companion object {
         val DIF_UTIL = object : DiffUtil.ItemCallback<HomeEntity>() {
             override fun areItemsTheSame(oldItem: HomeEntity, newItem: HomeEntity): Boolean {

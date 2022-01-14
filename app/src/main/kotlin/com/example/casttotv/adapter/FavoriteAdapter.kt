@@ -59,9 +59,9 @@ class FavoriteAdapter(
                     R.attr.actionOverflowMenuStyle,
                     0)
 
-                 popup.inflate(R.menu.options_menu)
+                popup.inflate(R.menu.favorite_options_menu)
                 popup.setOnMenuItemClickListener { item ->
-                    optionMenuListener.item(item.itemId,favoritesEntity)
+                    optionMenuListener.item(item.itemId, favoritesEntity)
                     true
                 }
 

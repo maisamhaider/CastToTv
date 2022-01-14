@@ -59,18 +59,14 @@ class BookmarkAdapter(
                     R.attr.actionOverflowMenuStyle,
                     0)
 
-//                val popup = PopupMenu(context, binding.appCompatImageView12,Gravity.CENTER )
-                popup.inflate(R.menu.options_menu)
+                popup.inflate(R.menu.bookmark_options_menu)
                 popup.setOnMenuItemClickListener { item ->
                     optionMenuListener.item(item.itemId, bookmarkEntity)
                     true
                 }
-
                 popup.show()
             }
         }
-
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
@@ -84,8 +80,6 @@ class BookmarkAdapter(
             onItemClicked(getItem(viewHolder.absoluteAdapterPosition), true)
             true
         }
-
-
         return viewHolder
     }
 

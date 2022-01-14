@@ -38,6 +38,21 @@ class BrowserContainerFragment : Fragment() {
                 childFragmentManager,
                 R.id.browser_container)
 
+            viewBack.setOnClickListener {
+                if (viewModel.canGoBack()) {
+                    viewModel.back()
+                } else {
+                    viewModel.showBroswerHome(true)
+                }
+            }
+
+//            viewNext.setOnClickListener {
+//                if (viewModel.canGoForword()) {
+//                    viewModel.forward()
+//                    viewModel.showBroswerHome(false)
+//                }
+//            }
+
             viewProfile.setOnClickListener {
                 viewModel.showBottomSheet(requireActivity().supportFragmentManager,
                     MenuBottomSheetFragment())
@@ -56,7 +71,20 @@ class BrowserContainerFragment : Fragment() {
             }
 
         }
+        viewModel.liveTabs.observe(viewLifecycleOwner) {
+            it.size.let { size ->
+                if (size > 9) {
+                    binding.textviewTabsAmount.text = "*"
+                } else {
+                    binding.textviewTabsAmount.text = size.toString()
+                }
+            }
+        }
 
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        viewModel.mainBackPress(false)
+    }
 }

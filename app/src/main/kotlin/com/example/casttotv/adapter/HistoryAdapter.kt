@@ -15,10 +15,10 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 class HistoryAdapter(
+    private val onClick: (HistoryEntity) -> Unit,
     private var context: Context,
     private val optionMenuListener: OptionMenuListener,
-) :
-    ListAdapter<History, HistoryAdapter.Holder>(DIF_UTIL) {
+) : ListAdapter<History, HistoryAdapter.Holder>(DIF_UTIL) {
 
     companion object {
         val DIF_UTIL = object : DiffUtil.ItemCallback<History>() {
@@ -26,7 +26,7 @@ class HistoryAdapter(
                 oldItem: History,
                 newItem: History,
             ): Boolean {
-                return oldItem.date == newItem.date
+                return oldItem == newItem
             }
 
             override fun areContentsTheSame(
@@ -40,7 +40,9 @@ class HistoryAdapter(
     }
 
     class Holder(
-        private val binding: HistoryItemBinding, private val optionMenuListener: OptionMenuListener,
+        private val binding: HistoryItemBinding,
+        private val optionMenuListener: OptionMenuListener,
+        private val onClick: (HistoryEntity) -> Unit,
     ) : RecyclerView.ViewHolder(binding.root),
         OptionMenuListener {
         fun bind(context: Context, history: History) {
@@ -49,7 +51,7 @@ class HistoryAdapter(
             } else {
                 binding.textViewText.text = history.date
             }
-            val adapter = HistoryGroupsAdapter(context, this)
+            val adapter = HistoryGroupsAdapter(::onClickLocal, context, this)
             binding.recyclerView.adapter = adapter
             adapter.submitList(history.list)
 //            binding.textViewDate.text = historyEntity.getDate()
@@ -62,38 +64,32 @@ class HistoryAdapter(
             return sFormat.format(Date())
         }
 
-        private var _listener: ((int: Int) -> Unit)? = null
-
-        fun removeAtPos(removeAt: (int: Int) -> Unit) {
-            _listener = removeAt
+        fun onClickLocal(item: HistoryEntity) {
+            onClick(item)
         }
 
         override fun <T> item(itemId: Int, dataClass: T) {
             val historyEntity: HistoryEntity = dataClass as HistoryEntity
             optionMenuListener.item(itemId, historyEntity)
-            if (itemId == R.id.item_delete) {
-                _listener?.invoke(absoluteAdapterPosition)
-            }
-
         }
 
+    }
+
+    fun onClickLocal(item: HistoryEntity) {
+        onClick(item)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
 
         return Holder(
             HistoryItemBinding.inflate(LayoutInflater.from(parent.context), parent, false),
-            optionMenuListener)
+            optionMenuListener, ::onClickLocal)
     }
 
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(context, getItem(holder.absoluteAdapterPosition))
-        holder.removeAtPos(::removeAtPos)
     }
 
-    private fun removeAtPos(pos: Int) {
-        notifyItemRemoved(pos)
-    }
 
 }

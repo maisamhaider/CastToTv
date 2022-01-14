@@ -43,7 +43,7 @@ class FavoritesActivity : AppCompatActivity(), OptionMenuListener {
 
         if (longClick) {
 //            browserViewModel.deleteBookMarkDialog(bookmark)
-            browserViewModel.editBottomSheet(favorite, false)
+            browserViewModel.editBottomSheet(favorite, true)
         } else {
             toastShort(favorite.link)
 //            startActivity(Intent(this,))
@@ -60,8 +60,9 @@ class FavoritesActivity : AppCompatActivity(), OptionMenuListener {
         val favoritesEntity: FavoritesEntity = dataClass as FavoritesEntity
         when (itemId) {
             R.id.item_edit -> {
+                browserViewModel.editBottomSheet(favoritesEntity, true)
             }
-            R.id.item_delete -> {
+            R.id.item_unfavorite -> {
                 browserViewModel.deleteFavorites(favoritesEntity)
             }
             R.id.item_share -> {

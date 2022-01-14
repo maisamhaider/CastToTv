@@ -39,6 +39,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/view_back"
                 style="@style/w_0_h_0"
+                android:background="?attr/selectableItemBackground"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/view_next"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -60,6 +61,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/view_next"
                 style="@style/w_0_h_0"
+                android:background="?attr/selectableItemBackground"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/view_profile"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -81,6 +83,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/view_profile"
                 style="@style/w_0_h_0"
+                android:background="?attr/selectableItemBackground"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/view_downloads"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -103,6 +106,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/view_downloads"
                 style="@style/w_0_h_0"
+                android:background="?attr/selectableItemBackground"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/view_tab"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -125,6 +129,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/view_tab"
                 style="@style/w_0_h_0"
+                android:background="?attr/selectableItemBackground"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -146,6 +151,7 @@
                     android:id="@+id/textview_tabs_amount"
                     style="@style/w_0_h_0"
                     android:gravity="center"
+                    android:text="@string/_0"
                     android:textColor="?attr/l_emperor_b_silver_chalice"
                     app:layout_constraintBottom_toBottomOf="@+id/imageview_tab"
                     app:layout_constraintEnd_toEndOf="@+id/imageview_tab"

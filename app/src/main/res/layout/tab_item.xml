@@ -38,9 +38,12 @@
                     tool:src="@drawable/ic_google" />
 
                 <com.google.android.material.textview.MaterialTextView
-                    style="@style/header_text_view"
-                    android:ellipsize="end"
                     android:id="@+id/textview"
+                    style="@style/header_text_view"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:ellipsize="end"
+                    android:gravity="start|center"
+                    android:maxLength="15"
                     android:maxLines="1"
                     app:layout_constraintBottom_toTopOf="@+id/guideline397"
                     app:layout_constraintEnd_toStartOf="@+id/imageviewRemove"

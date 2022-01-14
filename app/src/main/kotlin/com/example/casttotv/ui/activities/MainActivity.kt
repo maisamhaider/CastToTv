@@ -104,7 +104,8 @@ class MainActivity : BaseActivity() {
 
     fun print() {
         if (browserVM.webViewVisisble()) {
-            val printManager = originalContext?.getSystemService(Context.PRINT_SERVICE) as PrintManager
+            val printManager =
+                originalContext?.getSystemService(Context.PRINT_SERVICE) as PrintManager
             val printAdapter: PrintDocumentAdapter? =
                 browserVM.webView.value?.run { createPrintDocumentAdapter("MyDocument") }
             val jobName = " Print Test"
@@ -121,9 +122,8 @@ class MainActivity : BaseActivity() {
     }
 
 
-    fun browserBack() = browserVM.back()
     fun fromBrowserBack() =
-        controller.navigate(com.example.casttotv.R.id.action_browserContainerFragment_to_homeFragment)
+        controller.navigate(R.id.action_browserContainerFragment_to_homeFragment)
 
     private val FragmentManager.currentNavigationFragment: Fragment?
         get() = primaryNavigationFragment?.childFragmentManager?.fragments?.first()
@@ -132,13 +132,15 @@ class MainActivity : BaseActivity() {
     override fun onBackPressed() {
         val currentFragment = supportFragmentManager.currentNavigationFragment
 
-
         when {
-            browserVM.canGoBack() -> {
-                browserBack()
-            }
-            currentFragment is BrowserContainerFragment -> {
-                browserVM.exitDialog(this)
+            (currentFragment is BrowserContainerFragment) -> {
+                if (browserVM.canGoBack() || !browserVM.showBroswerHome.value!! ||
+                    browserVM.tabFragmentIsShowing()) {
+                    browserVM.mainBackPress(true)
+                } else {
+                    browserVM.exitDialog(this)
+                }
+
             }
             viewModel.languageDialogIsShowing() -> {
                 viewModel.cancelLanguageDialog()

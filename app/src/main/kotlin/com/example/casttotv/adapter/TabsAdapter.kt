@@ -36,7 +36,8 @@ class TabsAdapter(
         var i = 0
         fun bind(context: Context, tab: Tabs, browserVm: BrowserViewModel) {
             binding.textview.text = tab.webView.title ?: "empty"
-            Glide.with(context).load(tab.webView.url).placeholder(R.drawable.ic_browser).into(binding.imageviewTabSiteLogo)
+            Glide.with(context).load(tab.webView.url).placeholder(R.drawable.ic_browser)
+                .into(binding.imageviewTabSiteLogo)
             i = i.inc()
             binding.imageviewRemove.setOnClickListener {
                 browserVm.closTabDialog(this.absoluteAdapterPosition)
@@ -51,8 +52,6 @@ class TabsAdapter(
         viewHolder.itemView.setOnClickListener {
             onItemClick(viewHolder.absoluteAdapterPosition)
         }
-
-
         return viewHolder
     }
 
