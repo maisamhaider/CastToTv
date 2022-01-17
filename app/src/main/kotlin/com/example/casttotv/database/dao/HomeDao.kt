@@ -22,6 +22,9 @@ interface HomeDao {
     @Query("delete from home")
     fun delete()
 
+    @Query("delete from home where id =:id")
+    fun delete(id: Int)
+
     @Delete
     fun delete(homeEntity: HomeEntity)
 }

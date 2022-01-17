@@ -58,6 +58,8 @@ const val QWANT_ENGINE_URL = "https://www.qwant.com/?q="
 const val ECOSIA_ENGINE_URL = "https://www.ecosia.org/search?q="
 
 object MySingleton {
+
+    var historyBookFavClose = ""
     var LANGUAGE_DIALOG_SHOWING = false
     var localeLanguage = "en"
     var tabs: MutableList<Tabs> = ArrayList<Tabs>()

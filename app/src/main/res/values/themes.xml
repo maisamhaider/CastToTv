@@ -26,6 +26,8 @@
         <item name="l_emperor_b_silver_chalice">@color/cr_emperor</item>
         <item name="l_white_b_ebony_clay">@color/cr_white</item>
         <item name="l_white_b_firefly">@color/cr_white</item>
+        <item name="l_pattens_blue_b_primary">@color/cr_pattens_blue</item>
+
 
 
     </style>

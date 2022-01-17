@@ -10,6 +10,7 @@ import com.example.casttotv.R
 import com.example.casttotv.databinding.FragmentDeleteHistoryBottomSheetBinding
 import com.example.casttotv.viewmodel.BrowserViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import java.util.*
 
 class DeleteHistoryBottomSheetFragment : BottomSheetDialogFragment() {
 
@@ -37,12 +38,54 @@ class DeleteHistoryBottomSheetFragment : BottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
-            clLastHour.setOnClickListener { browserViewModel.setHistoryTimeConstraint(1) }
-            clToday.setOnClickListener { browserViewModel.setHistoryTimeConstraint(2) }
-            clLastWeek.setOnClickListener { browserViewModel.setHistoryTimeConstraint(3) }
-            clLastMonth.setOnClickListener { browserViewModel.setHistoryTimeConstraint(4) }
-            clClearAll.setOnClickListener { browserViewModel.setHistoryTimeConstraint(5) }
+            clLastHour.setOnClickListener {
+                setHistoryTimeConstraint(1)
+            }
+            clToday.setOnClickListener {
+                setHistoryTimeConstraint(2)
+            }
+            clLastWeek.setOnClickListener {
+                setHistoryTimeConstraint(3)
+            }
+            clLastMonth.setOnClickListener {
+                setHistoryTimeConstraint(4)
+            }
+            clClearAll.setOnClickListener {
+                setHistoryTimeConstraint(5)
+            }
         }
     }
+
+    private fun setHistoryTimeConstraint(timeConstraint: Int) {
+        val cal = Calendar.getInstance()
+        val to = cal.timeInMillis
+        var from = 0L
+        when (timeConstraint) {
+            1 -> {//hourly
+                cal.add(Calendar.HOUR, -1)
+                from = cal.timeInMillis
+                browserViewModel.deleteHistory(from, to)
+            }
+            2 -> { //today
+                cal.add(Calendar.DAY_OF_YEAR, -1)
+                from = cal.timeInMillis
+                browserViewModel.deleteHistory(from, to)
+            }
+            3 -> { //week
+                cal.add(Calendar.WEEK_OF_MONTH, -1)
+                from = cal.timeInMillis
+                browserViewModel.deleteHistory(from, to)
+            }
+            4 -> { //month
+                cal.add(Calendar.MONTH, -1)
+                from = cal.timeInMillis
+                browserViewModel.deleteHistory(from, to)
+            }
+            5 -> { //all
+                browserViewModel.deleteHistory()
+            }
+        }
+    }
+
 
 }

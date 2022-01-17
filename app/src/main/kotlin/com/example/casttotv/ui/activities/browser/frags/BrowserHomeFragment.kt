@@ -22,7 +22,7 @@ import com.example.casttotv.databinding.FragmentBrowserHomeBinding
 import com.example.casttotv.ui.activities.MainActivity
 import com.example.casttotv.ui.activities.browser.BrowserSettingsActivity
 import com.example.casttotv.utils.*
-import com.example.casttotv.utils.MySingleton.toastShort
+import com.example.casttotv.utils.MySingleton.historyBookFavClose
 import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.viewmodel.BrowserViewModel
 import com.example.casttotv.viewmodel.MainViewModel
@@ -35,7 +35,6 @@ class BrowserHomeFragment : Fragment() {
     private val viewModel: BrowserViewModel by activityViewModels {
         BrowserViewModel.BrowserViewModelFactory(requireContext())
     }
-
     private val homeVM: MainViewModel by activityViewModels()
 
 
@@ -50,7 +49,8 @@ class BrowserHomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel.initWebViewContainer(binding.webViewContainer, binding.clWeb)
+        viewModel.initWebViewContainer(binding.webViewContainer)
+
         viewModel.showTabFragment.observe(viewLifecycleOwner, {
             if (it) {
                 binding.includeTabs.clTabs.visibility = View.VISIBLE
@@ -78,6 +78,7 @@ class BrowserHomeFragment : Fragment() {
 
         viewModel.showBroswerHome.observe(viewLifecycleOwner) { show ->
             if (show) {
+                viewModel.setSearchText("")
                 binding.clHome.visibility = View.VISIBLE
                 binding.clWeb.visibility = View.GONE
                 binding.webViewContainer.visibility = View.GONE
@@ -132,12 +133,6 @@ class BrowserHomeFragment : Fragment() {
                     viewModel.searchReload(mInputEdittext.text.toString())
                 }
             }
-//            imageviewMore.setOnClickListener {
-//                viewModel.bottomSheetMenu(requireActivity())
-//            }
-//            view.setOnClickListener {
-//                viewModel.showBottomSheetTabPreview(requireActivity().supportFragmentManager)
-//            }
             val engine = viewModel.engines[viewModel.getPrefs(SELECTED_ENGINE, "").lowercase()]
             Glide.with(requireContext()).load((engine?.engineLogo))
                 .placeholder(R.drawable.ic_browser)
@@ -177,6 +172,11 @@ class BrowserHomeFragment : Fragment() {
             }
             false
         })
+
+        if (historyBookFavClose != "") {
+            viewModel.searchFromHistory(historyBookFavClose)
+            historyBookFavClose = ""
+        }
 
 
     }
@@ -238,7 +238,7 @@ class BrowserHomeFragment : Fragment() {
                     .let { results ->
                         results!![0]
                     }?.let { query ->
-                        viewModel.setSeachText(query)
+                        viewModel.setSearchText(query)
                         viewModel.search(query)
                     }
 
@@ -247,12 +247,23 @@ class BrowserHomeFragment : Fragment() {
         }
     }
 
-    fun onClick(homeEntity: HomeEntity) {
-        if (homeEntity.id == -1) {
-            requireContext().toastShort("click")
+    fun onClick(homeEntity: HomeEntity, longClick: Boolean) {
+        if (longClick) {
+            if (homeEntity.id != -1) {
+                viewModel.deleteDialog(homeEntity.id)
+            }
         } else {
-            viewModel.search(homeEntity.link)
+            if (homeEntity.id == -1) {
+                viewModel.inputHomeDialog(getString(R.string.website_link))
+            } else {
+                viewModel.search(homeEntity.link)
+            }
         }
 
+
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
     }
 }

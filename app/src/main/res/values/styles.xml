@@ -314,5 +314,10 @@
         <item name="android:background">@drawable/bottom_sheet_bg</item>
     </style>
 
-
+    <style name="ShapeAppearanceOverlay.App.Card.Media" parent="Theme.CastToTv">
+        <item name="cornerSizeBottomLeft">@dimen/dp_10</item>
+        <item name="cornerSizeBottomRight">@dimen/dp_10</item>
+        <item name="cornerSizeTopLeft">@dimen/dp_0</item>
+        <item name="cornerSizeTopRight">@dimen/dp_0</item>
+    </style>
 </resources>

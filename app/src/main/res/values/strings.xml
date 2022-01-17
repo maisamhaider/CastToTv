@@ -327,7 +327,10 @@ data. Third party cookies are always disabled.</string>
     <string name="download_complete_share_image">Download complete. Share image</string>
     <string name="_0">0</string>
     <string name="update">Update</string>
-    <string name="unfavorite">Unfavorite</string>
+    <string name="unfavorite">Un favorite</string>
+    <string name="no_input_provided">No input provided</string>
+    <string name="input">Input</string>
+    <string name="website_link">Website link</string>
 
 
 </resources>

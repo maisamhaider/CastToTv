@@ -14,7 +14,7 @@ interface HistoryDao {
     fun getHistory(): Flow<List<HistoryEntity>>
 
     @Query("select * from history")
-    fun getHistoryList():  List<HistoryEntity>
+    fun getHistoryList(): List<HistoryEntity>
 
     @Query("select * from history group by days")
     fun getDateMilli(): Flow<List<HistoryEntity>>
@@ -30,4 +30,7 @@ interface HistoryDao {
 
     @Query("delete from history where id = :id")
     fun delete(id: Int)
+
+    @Query("delete from history where date BETWEEN :from AND :to")
+    fun delete(from: Long, to: Long)
 }

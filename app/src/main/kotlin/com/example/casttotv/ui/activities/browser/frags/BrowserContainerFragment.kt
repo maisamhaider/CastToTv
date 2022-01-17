@@ -4,11 +4,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.example.casttotv.R
 import com.example.casttotv.databinding.FragmentBrowserContainerBinding
-
+import com.example.casttotv.utils.Pref.getPrefs
+import com.example.casttotv.utils.THEME_DARK
 import com.example.casttotv.viewmodel.BrowserViewModel
 
 
@@ -39,17 +41,25 @@ class BrowserContainerFragment : Fragment() {
                 childFragmentManager,
                 R.id.browser_container)
 
-            viewBack.setOnClickListener {
-                if (viewModel.canGoBack()) {
-                    viewModel.back()
-                } else {
-                    viewModel.showBroswerHome(true)
-                }
-            }
+//            viewBack.setOnClickListener {
+//                val cIndex = viewModel._currentTabIndex
+//                if (!viewModel.getTabs().isNullOrEmpty() &&
+//                    viewModel.getTabs()!!.size > 2 &&
+//                    cIndex > 1
+//                ) {
+//                    viewModel.switchToTab(cIndex - 1)
+//                } else {
+//                    viewModel.showBroswerHome(true)
+//                }
+//            }
 
 //            viewNext.setOnClickListener {
-//                if (viewModel.canGoForword()) {
-//                    viewModel.forward()
+//                val cIndex = viewModel._currentTabIndex
+//                if (!viewModel.getTabs().isNullOrEmpty() &&
+//                    viewModel.getTabs()!!.size > 2 &&
+//                    cIndex < viewModel.getTabs()!!.size+1
+//                ) {
+//                    viewModel.switchToTab(cIndex + 1)
 //                    viewModel.showBroswerHome(false)
 //                }
 //            }
@@ -57,15 +67,19 @@ class BrowserContainerFragment : Fragment() {
             viewProfile.setOnClickListener {
                 viewModel.showBottomSheet(requireActivity().supportFragmentManager,
                     MenuBottomSheetFragment())
+                if (viewModel.tabFragmentIsShowing()) {
+                    viewModel.clickTabLayout()
+                }
 //                viewModel.cancelBottomSheet(requireActivity().supportFragmentManager,
 //                    SaveActionFragment())
             }
 
             viewDownloads.setOnClickListener {
-//                viewModel.cancelBottomSheet(requireActivity().supportFragmentManager,
-//                    MenuBottomSheetFragment())
                 viewModel.showBottomSheet(requireActivity().supportFragmentManager,
                     SaveActionFragment())
+                if (viewModel.tabFragmentIsShowing()) {
+                    viewModel.clickTabLayout()
+                }
             }
             viewTab.setOnClickListener {
                 viewModel.clickTabLayout()
@@ -82,6 +96,21 @@ class BrowserContainerFragment : Fragment() {
             }
         }
 
+
+//        }
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        val themeDark = requireContext().getPrefs(THEME_DARK, false)
+        if (themeDark) {
+            binding.imageviewDownloads.setColorFilter(ContextCompat.getColor(requireContext(),
+                R.color.cr_silver_chalice))
+        } else {
+            binding.imageviewDownloads.setColorFilter(ContextCompat.getColor(requireContext(),
+                R.color.cr_emperor))
+        }
     }
 
     override fun onDestroy() {

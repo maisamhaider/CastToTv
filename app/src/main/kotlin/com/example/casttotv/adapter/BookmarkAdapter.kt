@@ -16,7 +16,7 @@ import com.example.casttotv.interfaces.OptionMenuListener
 
 
 class BookmarkAdapter(
-    val onItemClicked: (BookmarkEntity, Boolean) -> Unit,
+    val onItemClicked: (BookmarkEntity) -> Unit,
     private val context: Context,
     private val optionMenuListener: OptionMenuListener,
 ) : ListAdapter<BookmarkEntity, BookmarkAdapter.Holder>(DIF_UTIL) {
@@ -74,12 +74,9 @@ class BookmarkAdapter(
             BookmarkItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         )
         viewHolder.itemView.setOnClickListener {
-            onItemClicked(getItem(viewHolder.absoluteAdapterPosition), false)
+            onItemClicked(getItem(viewHolder.absoluteAdapterPosition))
         }
-        viewHolder.itemView.setOnLongClickListener {
-            onItemClicked(getItem(viewHolder.absoluteAdapterPosition), true)
-            true
-        }
+
         return viewHolder
     }
 

@@ -9,15 +9,15 @@ import com.example.casttotv.adapter.HistoryAdapter
 import com.example.casttotv.database.entities.HistoryEntity
 import com.example.casttotv.databinding.ActivityHistoryBinding
 import com.example.casttotv.dataclasses.History
-import com.example.casttotv.interfaces.MyCallBack
-import com.example.casttotv.interfaces.OptionMenuListener
+ import com.example.casttotv.interfaces.OptionMenuListener
 import com.example.casttotv.ui.activities.browser.frags.DeleteHistoryBottomSheetFragment
+import com.example.casttotv.utils.MySingleton.historyBookFavClose
 import com.example.casttotv.viewmodel.BrowserViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class HistoryActivity : AppCompatActivity(), MyCallBack, OptionMenuListener {
+class HistoryActivity : AppCompatActivity(),  OptionMenuListener {
     private lateinit var _binding: ActivityHistoryBinding
     private val binding get() = _binding
     private val map: MutableMap<String, MutableList<HistoryEntity>> = HashMap()
@@ -40,13 +40,11 @@ class HistoryActivity : AppCompatActivity(), MyCallBack, OptionMenuListener {
             }
         }
         loadHistory()
-        browserViewModel.myCallback(this)
 
 
     }
 
     private fun loadHistory() {
-
         val adapter = HistoryAdapter(::onClick, this, this)
         binding.recyclerView.adapter = adapter
         browserViewModel.getHistory().asLiveData().observe(this) {
@@ -80,13 +78,11 @@ class HistoryActivity : AppCompatActivity(), MyCallBack, OptionMenuListener {
         finish()
     }
 
-    override fun callback() {
-        loadHistory()
-    }
+
 
     fun onClick(historyEntity: HistoryEntity) {
-//         back()
-//        browserViewModel.searchFromHistory(historyEntity.link)
+        historyBookFavClose = historyEntity.link
+        back()
     }
 
     override fun <T> item(itemId: Int, dataClass: T) {

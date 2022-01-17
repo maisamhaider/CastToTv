@@ -8,9 +8,6 @@ import android.graphics.Bitmap
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.net.Uri
-import android.print.PrintAttributes
-import android.print.PrintDocumentAdapter
-import android.print.PrintManager
 import android.text.TextUtils
 import android.util.Log
 import android.view.LayoutInflater
@@ -20,8 +17,6 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.FrameLayout
 import androidx.appcompat.app.AlertDialog
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.FileProvider
 import androidx.core.view.drawToBitmap
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
@@ -29,17 +24,14 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.*
 import com.example.casttotv.R
-import com.example.casttotv.adapter.HistoryAdapter
 import com.example.casttotv.adapter.SearchEngineAdapter
 import com.example.casttotv.database.entities.BookmarkEntity
 import com.example.casttotv.database.entities.FavoritesEntity
 import com.example.casttotv.database.entities.HistoryEntity
 import com.example.casttotv.database.entities.HomeEntity
 import com.example.casttotv.databinding.*
-import com.example.casttotv.dataclasses.History
 import com.example.casttotv.dataclasses.Tabs
 import com.example.casttotv.datasource.DataSource
-import com.example.casttotv.interfaces.MyCallBack
 import com.example.casttotv.ui.activities.MainActivity
 import com.example.casttotv.utils.*
 import com.example.casttotv.utils.MySingleton.funCopy
@@ -50,10 +42,7 @@ import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.Pref.putPrefs
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import java.io.File
 import java.io.FileOutputStream
@@ -63,7 +52,6 @@ import java.util.*
 
 
 class BrowserViewModel(private var cxt: Context) : ViewModel() {
-    lateinit var myCallBack: MyCallBack
     private val TAG = "BrowserViewModel"
     private val bookmarkDao = (cxt.applicationContext as AppApplication).database.bookmarkDao()
     private val favoritesDao = (cxt.applicationContext as AppApplication).database.favoriteDao()
@@ -79,11 +67,12 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     private val _showTabFragment: MutableLiveData<Boolean> = MutableLiveData(false)
     val showTabFragment: LiveData<Boolean> = _showTabFragment
 
-   private val _showBroswerHome: MutableLiveData<Boolean> = MutableLiveData(true)
+    private val _showBroswerHome: MutableLiveData<Boolean> = MutableLiveData(true)
     val showBroswerHome: LiveData<Boolean> = _showBroswerHome
 
     private val _mainActivityBackPress: MutableLiveData<Boolean> = MutableLiveData(false)
     val mainActivityBackPress: LiveData<Boolean> = _mainActivityBackPress
+
 
     private val _webView: MutableLiveData<ObservableWebView> = MutableLiveData()
     val webView: MutableLiveData<ObservableWebView> get() = _webView
@@ -93,7 +82,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     val historyInt: MutableLiveData<Int> = MutableLiveData(1)
     private val _searchText: MutableLiveData<String> = MutableLiveData("")
     val searchText: LiveData<String> = _searchText
-    private var _currentTabIndex = 0
+    var _currentTabIndex = 0
 
 
     private var bookmarkItem: MutableLiveData<BookmarkEntity> = MutableLiveData()
@@ -128,7 +117,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         return getCurrentTab().webView
     }
 
-    fun initWebViewContainer(container: FrameLayout, clWeb: ConstraintLayout) {
+    fun initWebViewContainer(container: FrameLayout) {
         this.container = container
     }
 
@@ -146,6 +135,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     fun clickTabLayout() {
         _showTabFragment.value = !_showTabFragment.value!!
     }
+
     fun tabFragmentIsShowing() = _showTabFragment.value!!
 
 
@@ -153,36 +143,40 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
     @SuppressLint("SimpleDateFormat")
     fun day(): String {
-        val sFormat = SimpleDateFormat("DD.MM.yyyy")
+        val sFormat = SimpleDateFormat("dd.MM.yyyy")
         sFormat.isLenient = false
 
         return sFormat.format(Date())
     }
 
-    fun showBroswerHome(value: Boolean){
+    fun showBroswerHome(value: Boolean) {
         _showBroswerHome.value = value
     }
-    fun mainBackPress(value: Boolean){
+
+    fun mainBackPress(value: Boolean) {
         _mainActivityBackPress.value = value
     }
-    fun setSeachText(value: String){
+
+    fun setSearchText(value: String) {
         _searchText.value = value
     }
 
+    fun getTabs() = _tabs.value
 
 
     /**
      * set web view properties
      */
     @SuppressLint("SetJavaScriptEnabled")
-     fun newTabWebView(wv: ObservableWebView) {
+    fun newTabWebView(wv: ObservableWebView) {
         _webView.value = wv
         _webView.value!!.webViewClient = MyBrowser()
         _webView.value!!.settings.javaScriptEnabled = getPrefs(START_CONTROL_JAVASCRIPT, true)
         _webView.value!!.settings.loadsImagesAutomatically = getPrefs(START_CONTROL_IMAGE, true)
         _webView.value!!.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
         _webView.value!!.settings.setGeolocationEnabled(getPrefs(START_CONTROL_LOCATION, false))
-        cookieManager.setAcceptThirdPartyCookies(_webView.value!!, getPrefs(START_CONTROL_COOKIES, false))
+        cookieManager.setAcceptThirdPartyCookies(_webView.value!!,
+            getPrefs(START_CONTROL_COOKIES, false))
 
         container!!.addView(wv)
 
@@ -197,7 +191,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
                 home(url, url, date())
 
                 Log.e(TAG, "title---->${view.title.toString()}\n url----->${view.url.toString()}")
-                 setSeachText(url)
+                setSearchText(url)
                 if (getPrefs(START_CONTROL_HISTORY, true)) {
                     insertHistory()
                 }
@@ -210,12 +204,12 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         val engine = engines[getPrefs(SELECTED_ENGINE, "google").lowercase()]?.link
             ?: "https://www.google.com/search?q="
 //        if (getPrefs(FAVORITE_DEFAULT_SITE, "") == "") {
-            _webView.value!!.loadUrl(engine)
+        _webView.value!!.loadUrl(engine)
         /*  } else {
               _webView.value!!.loadUrl(getPrefs(FAVORITE_DEFAULT_SITE, ""))
           }*/
-        setSeachText(_webView.value!!.url.toString())
-         tabs.add(Tabs(_webView.value!!))
+        setSearchText(_webView.value!!.url.toString())
+        tabs.add(Tabs(_webView.value!!, _webView.value!!.url.toString()))
         _tabs.value = tabs // set tabs to mutablelive list
         _currentTabIndex = tabs.size.minus(1)
     }
@@ -227,7 +221,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         getCurrentWebView().visibility = View.GONE
         _currentTabIndex = tab
         getCurrentWebView().visibility = View.VISIBLE
-        setSeachText(getCurrentWebView().url.toString())
+        setSearchText(getCurrentWebView().url.toString())
         getCurrentWebView().requestFocus()
     }
 
@@ -248,7 +242,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
                 if (_currentTabIndex != -1) {
                     getCurrentWebView().visibility = View.VISIBLE
                     getCurrentWebView().requestFocus()
-                    setSeachText(getCurrentWebView().url.toString())
+                    setSearchText(getCurrentWebView().url.toString())
                 }
             } else {
                 if (getPrefs(BEHAVIOR_UI_REOPEN_LAST_TAB, false)) {
@@ -280,7 +274,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
                 if (_currentTabIndex != -1) {
                     getCurrentWebView().visibility = View.VISIBLE
                     getCurrentWebView().requestFocus()
-                    setSeachText(getCurrentWebView().url.toString())
+                    setSearchText(getCurrentWebView().url.toString())
 
 
                 }
@@ -330,6 +324,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
             _webView.value!!.goBack()
         }
     }
+
     fun forward() {
         if (_webView.value!!.isFocused && _webView.value!!.canGoBack()) {
             _webView.value!!.goBack()
@@ -339,6 +334,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     fun canGoBack(): Boolean {
         return (_webView.value != null && _webView.value!!.isFocused && _webView.value!!.canGoBack())
     }
+
     fun canGoForword(): Boolean {
         return (_webView.value != null && _webView.value!!.isFocused && _webView.value!!.canGoForward())
     }
@@ -365,7 +361,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         home(searchText, url, date())
 
         Log.e(TAG, "title---->$searchText\n url----->${_webView.value!!.url.toString()}")
-        setSeachText(url)
+        setSearchText(url)
 
         if (getPrefs(START_CONTROL_HISTORY, true)) {
             insertHistory()
@@ -383,32 +379,13 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         home(searchText, _webView.value!!.url.toString(), date())
 
         Log.e(TAG, "title---->$searchText\n url----->${_webView.value!!.url.toString()}")
-         setSeachText(searchText)
+        setSearchText(searchText)
         if (getPrefs(START_CONTROL_HISTORY, true)) {
             if (searchText.isNotBlank()) {
                 insertHistory()
             }
         }
-    }
-
-    fun searchInBackground(searchText: String) {
-        val web = WebView(cxt)
-        web.loadUrl(searchText)
-
-        history(searchText, _webView.value!!.url.toString(), date(), day())
-        bookmark(searchText, _webView.value!!.url.toString(), date())
-        favorite(searchText, _webView.value!!.url.toString(), date())
-        home(searchText, _webView.value!!.url.toString(), date())
-
-        Log.e(TAG, "title---->$searchText\n url----->${_webView.value!!.url.toString()}")
-         setSeachText(searchText)
-        if (getPrefs(START_CONTROL_HISTORY, true)) {
-            if (searchText.isNotBlank()) {
-                insertHistory()
-            }
-        }
-        tabs.add(Tabs(web))
-        _tabs.value = tabs
+        _showBroswerHome.value = false
     }
 
     fun searchReload(searchText: String) {
@@ -423,7 +400,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         home(searchText, _webView.value!!.url.toString(), date())
 
         Log.e(TAG, "title---->$searchText\n url----->${_webView.value!!.url.toString()}")
-         setSeachText(searchText)
+        setSearchText(searchText)
         if (getPrefs(START_CONTROL_HISTORY, true)) {
             if (searchText.isNotBlank()) {
                 insertHistory()
@@ -435,7 +412,9 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         return searchText.isNotBlank()
     }
 
-    fun webViewVisisble() :Boolean { return  container != null && container!!.isVisible }
+    fun webViewVisisble(): Boolean {
+        return container != null && container!!.isVisible
+    }
 
     fun shareLink() {
         val sendIntent: Intent = Intent().apply {
@@ -466,7 +445,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     fun openDownload() {
         val intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
         intent.addCategory(Intent.CATEGORY_DEFAULT)
-         intent.type = "*/*"
+        intent.type = "*/*"
         cxt.startActivity(intent)
     }
 
@@ -484,20 +463,13 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         cxt.startActivity(i)
     }
 
-    fun openFavorite() {
-        val url = getPrefs(FAVORITE_DEFAULT_SITE, "")
-        searchFromHistory(url)
-    }
-
-    fun addToFavorite() {
-        putPrefs(FAVORITE_DEFAULT_SITE, _webView.value!!.url.toString())
-    }
 
     fun saveScreenShot(isShare: Boolean): String {
         return try {
-            if (webViewVisisble())
-            { val bitmap = _webView.value!!.drawToBitmap()
-                val time = SimpleDateFormat("EEE-dd-yyyy h:mm s a", Locale.getDefault()).format(Date())
+            if (webViewVisisble()) {
+                val bitmap = _webView.value!!.drawToBitmap()
+                val time =
+                    SimpleDateFormat("EEE-dd-yyyy h:mm s a", Locale.getDefault()).format(Date())
 
                 val dir = if (isShare) {
                     cxt.filesDir
@@ -511,15 +483,14 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
                 out.flush()
                 out.close()
                 file.absolutePath
-            }else
-            {
+            } else {
                 "error"
             }
 
         } catch (e: IOException) {
             e.printStackTrace()
             "error"
-         }
+        }
 
     }
 
@@ -557,12 +528,12 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
     fun shareSS(path: String) {
         val binding = LayoutBodyPosAndNegButtonBinding.inflate(LayoutInflater.from(cxt), null,
-                false)
+            false)
         val bottomSheetDialog = BottomSheetDialog(cxt)
         bottomSheetDialog.setContentView(binding.root)
 
         binding.apply {
-            textviewBody.text =  cxt.getText(R.string.download_complete_share_image)
+            textviewBody.text = cxt.getText(R.string.download_complete_share_image)
             textviewPositive.text = cxt.getText(R.string.yes_2)
             textviewNegative.text = cxt.getText(R.string.no_2)
             textviewPositive.setOnClickListener {
@@ -576,96 +547,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
 
-    fun deleteDialog(int: Int) {
-        val binding = DeleteLayoutBinding.inflate(LayoutInflater.from(cxt), null,
-            false)
-
-        val bottomSheet = BottomSheetDialog(cxt)
-        bottomSheet.setContentView(binding.root)
-        bottomSheet.create()
-        binding.apply {
-            textviewDelete.setOnClickListener {
-                when (int) {
-                    1 -> {
-                        deleteBookmarks()
-                    }
-                    3 -> {
-                        deleteFavorite()
-                    }
-                }
-                bottomSheet.dismiss()
-            }
-        }
-        if (int == 1 || int == 2 || int == 3) {
-            bottomSheet.show()
-        }
-
-    }
-
-    fun setHistoryTimeConstraint(timeConstraint: Int) {
-        historyInt.value = timeConstraint
-        when (timeConstraint) {
-            1 -> {//hourly
-                deleteHistory()
-            }
-            2 -> { //today
-                deleteHistory()
-            }
-            3 -> { //week
-                deleteHistory()
-            }
-            4 -> { //month
-                deleteHistory()
-            }
-            5 -> { //month
-                deleteHistory()
-            }
-        }
-        caller()
-    }
-
-
-    fun myCallback(myCallBack: MyCallBack) {
-        this.myCallBack = myCallBack
-    }
-
-    fun caller() {
-        myCallBack.callback()
-    }
-
-    fun deleteHistoryDialog(historyEntity: HistoryEntity) {
-        val binding = DeleteLayoutBinding.inflate(LayoutInflater.from(cxt), null,
-            false)
-        val bottomSheet = BottomSheetDialog(cxt)
-        bottomSheet.setContentView(binding.root)
-        bottomSheet.create()
-        binding.apply {
-            textviewDelete.setOnClickListener {
-                deleteHistory(historyEntity)
-                bottomSheet.dismiss()
-            }
-        }
-        bottomSheet.show()
-
-    }
-
-    fun deleteBookMarkDialog(bookmarkEntity: BookmarkEntity) {
-        val binding = DeleteLayoutBinding.inflate(LayoutInflater.from(cxt), null,
-            false)
-        val bottomSheet = BottomSheetDialog(cxt)
-        bottomSheet.setContentView(binding.root)
-        bottomSheet.create()
-        binding.apply {
-            textviewDelete.setOnClickListener {
-                deleteBookmark(bookmarkEntity)
-                bottomSheet.dismiss()
-            }
-        }
-        bottomSheet.show()
-
-    }
-
-    fun <T> editBottomSheet(input: T, fav :Boolean) {
+    fun <T> editBottomSheet(input: T, fav: Boolean) {
         val binding = BottomSheetEditLayoutBinding.inflate(LayoutInflater.from(cxt), null,
             false)
         val bottomSheet = BottomSheetDialog(cxt)
@@ -674,29 +556,23 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         var favEntity: FavoritesEntity? = null
         var book: BookmarkEntity? = null
         binding.apply {
-            if(fav)
-            {
+            if (fav) {
                 favEntity = (input as FavoritesEntity)
                 edittextTitle.setText(favEntity!!.title)
                 edittextUrl.setText(favEntity!!.link)
-            }else
-            {
+            } else {
                 book = (input as BookmarkEntity)
                 edittextTitle.setText(book!!.title)
                 edittextUrl.setText(book!!.link)
             }
 
-
-
-
             textviewUpdate.setOnClickListener {
-                if (fav)
-                {
+                if (fav) {
                     favoriteItem.value =
                         FavoritesEntity(id = favEntity!!.id, title = edittextTitle.text.toString(),
                             link = edittextUrl.text.toString(), date = Date().time.toString())
                     updateFavorites()
-                }else{
+                } else {
                     bookmarkItem.value =
                         BookmarkEntity(id = book!!.id, title = edittextTitle.text.toString(),
                             link = edittextUrl.text.toString(), date = Date().time.toString())
@@ -714,14 +590,6 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         bottomSheet.show(fragmentManager, null)
     }
 
-    fun cancelBottomSheet(
-        fragmentManager: FragmentManager,
-        bottomSheet: BottomSheetDialogFragment,
-    ) {
-        if (bottomSheet.isVisible) {
-            bottomSheet.dismiss()
-        }
-    }
 
     fun engineDialog() {
         val binding = LayoutSearchEnginesBinding.inflate(LayoutInflater.from(cxt), null,
@@ -772,7 +640,8 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
     fun closTabDialog(tab: Int) {
         if (getPrefs(BEHAVIOR_UI_CONFIRM_TAB_CLOSE, false)) {
-            val binding = LayoutTitleBodyPosAndNegButtonBinding.inflate(LayoutInflater.from(cxt), null,
+            val binding =
+                LayoutTitleBodyPosAndNegButtonBinding.inflate(LayoutInflater.from(cxt), null,
                     false)
             val builder = AlertDialog.Builder(cxt)
             builder.setView(binding.root)
@@ -817,7 +686,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
                 textviewPositiveClick.setOnClickListener {
                     dialog.dismiss()
                     onBrowserExit()
-                     mainActivity.fromBrowserBack()
+                    mainActivity.fromBrowserBack()
                 }
                 textviewNegativeClick.setOnClickListener { dialog.dismiss() }
             }
@@ -857,6 +726,61 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
                     } else
                         cxt.putPrefs(prefKey, input)
                 }
+                dialog.dismiss()
+            }
+            textviewCancelClick.setOnClickListener {
+                dialog.dismiss()
+            }
+        }
+        dialog.show()
+    }
+
+    fun inputHomeDialog(title: String) {
+        val binding = InputDialogLayoutBinding.inflate(LayoutInflater.from(cxt), null,
+            false)
+        val builder = AlertDialog.Builder(cxt)
+        builder.setView(binding.root)
+        val dialog = builder.create()
+        dialog.window?.apply {
+            setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        }
+        binding.apply {
+            textviewTitle.text = title
+            textviewOkText.text = cxt.getString(R.string.add)
+            textviewCancelText.text = cxt.getString(R.string.cancel)
+
+            textviewOkClick.setOnClickListener {
+                val input = textInputEditText.text.toString()
+                if (TextUtils.isEmpty(input)) {
+                    cxt.toastShort(cxt.getString(R.string.no_input_provided))
+                } else {
+                    home(input, input, date())
+                    insertHome()
+                }
+                dialog.dismiss()
+            }
+            textviewCancelClick.setOnClickListener {
+                dialog.dismiss()
+            }
+        }
+        dialog.show()
+    }
+
+    fun deleteDialog(id: Int) {
+        val binding = DeleteDialogLayoutBinding.inflate(LayoutInflater.from(cxt), null,
+            false)
+        val builder = AlertDialog.Builder(cxt)
+        builder.setView(binding.root)
+        val dialog = builder.create()
+        dialog.window?.apply {
+            setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        }
+        binding.apply {
+            textviewOkText.text = cxt.getString(R.string.delete)
+            textviewCancelText.text = cxt.getString(R.string.cancel)
+
+            textviewOkClick.setOnClickListener {
+                deleteHome(id)
                 dialog.dismiss()
             }
             textviewCancelClick.setOnClickListener {
@@ -952,7 +876,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
 
     // home data functions
-    fun getHome():LiveData<List<HomeEntity>> = homeDao.getHome().asLiveData()
+    fun getHome(): LiveData<List<HomeEntity>> = homeDao.getHome().asLiveData()
 
 
     fun getHome(id: Int) = homeDao.getHome(id)
@@ -993,10 +917,15 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         }
     }
 
+    fun deleteHome(id: Int) {
+        viewModelScope.launch(Dispatchers.IO) {
+            homeDao.delete(id)
+        }
+    }
+
     // History data functions
     fun getHistoryGroupBtDay() = historyDao.getDateMilli()
     fun getHistory() = historyDao.getHistory()
-
 
 
     fun getHistory(id: Int) = historyDao.getHistory(id)
@@ -1019,6 +948,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
             historyDao.delete(historyEntity)
         }
     }
+
     /**
      * delete a single History record by id
      * */
@@ -1038,6 +968,12 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
     }
 
+    fun deleteHistory(from: Long, to: Long) {
+        viewModelScope.launch(Dispatchers.IO) {
+            historyDao.delete(from, to)
+        }
+    }
+
 
     class BrowserViewModelFactory(
         private val context: Context,
@@ -1052,11 +988,3 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 }
 
-class MyBrowser : WebViewClient() {
-    val TAG = "MyBrowser"
-    override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
-//        view.loadUrl(url)
-        Log.e(TAG, "title---->${view.title.toString()}\n url----->${view.url.toString()}")
-        return true
-    }
-}

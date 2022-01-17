@@ -9,7 +9,7 @@ import com.example.casttotv.adapter.FavoriteAdapter
 import com.example.casttotv.database.entities.FavoritesEntity
 import com.example.casttotv.databinding.ActivityFavoritesBinding
 import com.example.casttotv.interfaces.OptionMenuListener
-import com.example.casttotv.utils.MySingleton.toastShort
+import com.example.casttotv.utils.MySingleton.historyBookFavClose
 import com.example.casttotv.viewmodel.BrowserViewModel
 
 class FavoritesActivity : AppCompatActivity(), OptionMenuListener {
@@ -39,17 +39,9 @@ class FavoritesActivity : AppCompatActivity(), OptionMenuListener {
         }
     }
 
-    private fun onFavoriteClicked(favorite: FavoritesEntity, longClick: Boolean) {
-
-        if (longClick) {
-//            browserViewModel.deleteBookMarkDialog(bookmark)
-            browserViewModel.editBottomSheet(favorite, true)
-        } else {
-            toastShort(favorite.link)
-//            startActivity(Intent(this,))
-//            browserViewModel.searchFromHistory(bookmark.link)
-//            this.dismiss()
-        }
+    private fun onFavoriteClicked(favorite: FavoritesEntity) {
+        historyBookFavClose = favorite.link
+        back()
     }
 
     fun back() {

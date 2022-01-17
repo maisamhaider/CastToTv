@@ -9,7 +9,8 @@ import com.example.casttotv.adapter.BookmarkAdapter
 import com.example.casttotv.database.entities.BookmarkEntity
 import com.example.casttotv.databinding.ActivityBookmarkBinding
 import com.example.casttotv.interfaces.OptionMenuListener
-import com.example.casttotv.utils.MySingleton.toastShort
+import com.example.casttotv.ui.activities.browser.frags.BrowserHomeFragment
+import com.example.casttotv.utils.MySingleton.historyBookFavClose
 import com.example.casttotv.viewmodel.BrowserViewModel
 
 class BookmarkActivity : AppCompatActivity(), OptionMenuListener {
@@ -21,7 +22,7 @@ class BookmarkActivity : AppCompatActivity(), OptionMenuListener {
         BrowserViewModel.BrowserViewModelFactory(this)
 
     }
-
+    val browHome = BrowserHomeFragment()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _binding = ActivityBookmarkBinding.inflate(layoutInflater)
@@ -40,14 +41,9 @@ class BookmarkActivity : AppCompatActivity(), OptionMenuListener {
         }
     }
 
-    private fun onBookmarkClicked(bookmark: BookmarkEntity, longClick: Boolean) {
-
-        if (longClick) {
-//            browserViewModel.deleteBookMarkDialog(bookmark)
-//            browserViewModel.editBottomSheet(bookmark, false)
-        } else {
-            toastShort(bookmark.link)
-        }
+    private fun onBookmarkClicked(bookmark: BookmarkEntity) {
+        historyBookFavClose = bookmark.link
+        back()
     }
 
     fun back() {

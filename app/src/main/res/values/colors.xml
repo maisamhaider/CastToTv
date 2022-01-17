@@ -42,7 +42,9 @@
     <color name="cr_alto">#4DCECECE</color>
     <color name="cr_ebony_clay">#2B3547</color>
     <color name="cr_firefly">#0C1930</color>
-
+    <color name="cr_pattens_blue">#E1F1FF</color>
+    <color name="cr_cornflower_blue_1">#4B7BF5</color>
+    <color name="cr_royal_blue">#2D60E3</color>
 
     //dark theme
     <color name="cr_mirage">#1C2536</color>

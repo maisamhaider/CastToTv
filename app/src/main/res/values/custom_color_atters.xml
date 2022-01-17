@@ -14,4 +14,5 @@
     <attr name="l_emperor_b_silver_chalice" format="reference" />
     <attr name="l_white_b_ebony_clay" format="reference" />
     <attr name="l_white_b_firefly" format="reference" />
+    <attr name="l_pattens_blue_b_primary" format="reference" />
 </resources>

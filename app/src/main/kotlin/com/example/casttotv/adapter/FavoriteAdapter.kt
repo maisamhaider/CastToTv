@@ -16,7 +16,7 @@ import com.example.casttotv.interfaces.OptionMenuListener
 
 
 class FavoriteAdapter(
-    val onItemClicked: (FavoritesEntity, Boolean) -> Unit,
+    val onItemClicked: (FavoritesEntity) -> Unit,
     private var context: Context,
     private val optionMenuListener: OptionMenuListener,
 ) : ListAdapter<FavoritesEntity, FavoriteAdapter.Holder>(DIF_UTIL) {
@@ -77,13 +77,8 @@ class FavoriteAdapter(
             BookmarkItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         )
         viewHolder.itemView.setOnClickListener {
-            onItemClicked(getItem(viewHolder.absoluteAdapterPosition), false)
+            onItemClicked(getItem(viewHolder.absoluteAdapterPosition))
         }
-        viewHolder.itemView.setOnLongClickListener {
-            onItemClicked(getItem(viewHolder.absoluteAdapterPosition), true)
-            true
-        }
-
 
         return viewHolder
     }

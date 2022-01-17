@@ -15,6 +15,7 @@
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/card_view"
             style="@style/card_view_1"
+            app:cardBackgroundColor="?attr/l_pattens_blue_b_primary"
             app:cardCornerRadius="@dimen/dp_11"
             app:layout_constraintBottom_toTopOf="@+id/guideline392"
             app:layout_constraintDimensionRatio="h,25:30"
@@ -24,9 +25,10 @@
             app:layout_constraintTop_toTopOf="@+id/guideline391">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="?attr/colorPrimary">
+                android:background="?attr/l_pattens_blue_b_primary">
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/imageview_tab_site_logo"
@@ -117,20 +119,22 @@
                     android:orientation="horizontal"
                     app:layout_constraintGuide_percent="0.14" />
 
-
-                <FrameLayout
-                    android:id="@+id/frameLayout"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageview"
                     style="@style/w_0_h_0"
                     android:layout_marginStart="@dimen/dp_4"
                     android:layout_marginEnd="@dimen/dp_4"
                     android:layout_marginBottom="@dimen/dp_4"
-                    android:background="@drawable/shape_below_curve"
-                    android:scaleType="centerCrop"
+                    android:scaleType="fitXY"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/guideline382"
-                    app:layout_constraintVertical_bias="1.0" />
+                    app:layout_constraintVertical_bias="0.0"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Card.Media"
+                    tool:src="@tools:sample/backgrounds/scenic" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 

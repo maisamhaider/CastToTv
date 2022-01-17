@@ -13,7 +13,7 @@ import com.example.casttotv.database.entities.HomeEntity
 import com.example.casttotv.databinding.BrowserShortcutsItemBinding
 
 class HomeAdapter(
-    val onItemClicked: (HomeEntity) -> Unit,
+    val onItemClicked: (HomeEntity, Boolean) -> Unit,
     private var context: Context,
 ) :
     ListAdapter<HomeEntity, HomeAdapter.Holder>(DIF_UTIL) {
@@ -51,7 +51,11 @@ class HomeAdapter(
             BrowserShortcutsItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         )
         viewHolder.itemView.setOnClickListener {
-            onItemClicked(getItem(viewHolder.absoluteAdapterPosition))
+            onItemClicked(getItem(viewHolder.absoluteAdapterPosition), false)
+        }
+        viewHolder.itemView.setOnLongClickListener {
+            onItemClicked(getItem(viewHolder.absoluteAdapterPosition), true)
+            true
         }
 
         return viewHolder
