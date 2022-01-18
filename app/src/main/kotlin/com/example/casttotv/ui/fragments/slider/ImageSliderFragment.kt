@@ -31,7 +31,6 @@ class ImageSliderFragment : Fragment() {
     private lateinit var imageVideosAdapter: ImageVideosAdapter
 
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
@@ -44,7 +43,7 @@ class ImageSliderFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        imageVideosAdapter = ImageVideosAdapter(::onImageClick, requireContext(), SLIDE)
+        imageVideosAdapter = ImageVideosAdapter(::onImageClick, SLIDE)
         imageVideosAdapter.setVM(sharedViewModel)
 
 
@@ -68,6 +67,7 @@ class ImageSliderFragment : Fragment() {
 
     private fun onImageClick(fileModel: FileModel, int: Int) {
     }
+
     fun enablingWiFiDisplay() {
         requireContext().enablingWiFiDisplay()
     }
@@ -75,8 +75,6 @@ class ImageSliderFragment : Fragment() {
     fun next() {
         if (sharedViewModel.selectedImages.value != null) {
             findNavController().navigate(R.id.action_imageSliderFragment_to_imageSliderViewerFragment)
-        } else {
-            requireContext().toastShort("select image first please")
         }
     }
 

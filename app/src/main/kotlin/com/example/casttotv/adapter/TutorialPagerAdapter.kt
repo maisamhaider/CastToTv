@@ -73,7 +73,7 @@ class TutorialPagerAdapter(private var context: Context) :
             }
         }
 
-        fun onContactClick(context: Context, textView: TextView) {
+        private fun onContactClick(context: Context, textView: TextView) {
             val text: String = context.getString(R.string.tutorial_support_body)
 
             val spannableString = SpannableString(text)

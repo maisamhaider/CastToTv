@@ -59,22 +59,6 @@ class BrowserHomeFragment : Fragment() {
                 binding.includeTabs.clTabs.visibility = View.GONE
             }
         })
-        viewModel.webScrollObserver()?.let {
-            if (requireContext().getPrefs(BEHAVIOR_UI_HIDE_TOOLBAR, false)) {
-                it.setOnScrollChangedCallback(object :
-                    ObservableWebView.OnScrollChangedCallback {
-                    override fun onScroll(l: Int, t: Int, oldl: Int, oldt: Int) {
-                        if (t == 0) {
-                            //Do stuff
-                            binding.clSearchInput2Header.visibility = View.VISIBLE
-                            //Do stuff
-                        } else if (t > 40) {
-                            binding.clSearchInput2Header.visibility = View.GONE
-                        }
-                    }
-                })
-            }
-        }
 
         viewModel.showBroswerHome.observe(viewLifecycleOwner) { show ->
             if (show) {
@@ -106,11 +90,27 @@ class BrowserHomeFragment : Fragment() {
                         viewModel.back()
                     }
                     !viewModel.showBroswerHome.value!! -> {
-                        viewModel.showBroswerHome(true)
+                        viewModel.closTabDialog(viewModel._currentTabIndex)
                     }
                 }
             }
         }
+        viewModel.webView.observe(viewLifecycleOwner) {
+            if (requireContext().getPrefs(BEHAVIOR_UI_HIDE_TOOLBAR, false)) {
+                it?.setOnScrollChangedCallback(object : ObservableWebView.OnScrollChangedCallback {
+                    override fun onScroll(l: Int, t: Int, oldl: Int, oldt: Int) {
+                        if (t == 0) {
+                            //Do stuff
+                            binding.clSearchInput2Header.visibility = View.VISIBLE
+                            //Do stuff
+                        } else if (t > 20) {
+                            binding.clSearchInput2Header.visibility = View.GONE
+                        }
+                    }
+                })
+            }
+        }
+
     }
 
     fun settings() {
@@ -177,7 +177,6 @@ class BrowserHomeFragment : Fragment() {
             viewModel.searchFromHistory(historyBookFavClose)
             historyBookFavClose = ""
         }
-
 
     }
 

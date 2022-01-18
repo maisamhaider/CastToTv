@@ -44,8 +44,8 @@ class ViewImagesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        adapter = ImageHorizonAdapter2(::onItemClick, requireContext(),false)
-        adapterSlider = ImageViewPagerAdapter(requireContext()) { }
+        adapter = ImageHorizonAdapter2(::onItemClick,false)
+        adapterSlider = ImageViewPagerAdapter() { }
 
         binding.recyclerView.adapter = adapter
         binding.viewpager2.adapter = adapterSlider
@@ -57,8 +57,6 @@ class ViewImagesFragment : Fragment() {
                     adapterSlider.submitList(it)
                     list.addAll(it)
 
-                } else {
-                    requireContext().toastLong("Image not found.")
                 }
             }
         binding.apply {

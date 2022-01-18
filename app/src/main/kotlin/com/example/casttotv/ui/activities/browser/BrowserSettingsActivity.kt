@@ -8,12 +8,13 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.casttotv.R
 import com.example.casttotv.databinding.ActivityBrowserSettingsBinding
+import com.example.casttotv.ui.activities.BaseActivity
 import com.example.casttotv.utils.CUSTOM_SEARCH_ENGINE
 import com.example.casttotv.utils.CUSTOM_USER_AGENT
 import com.example.casttotv.utils.FAVORITE_DEFAULT_SITE
 import com.example.casttotv.viewmodel.BrowserViewModel
 
-class BrowserSettingsActivity : AppCompatActivity() {
+class BrowserSettingsActivity : BaseActivity() {
     private lateinit var _binding: ActivityBrowserSettingsBinding
     private val binding get() = _binding
 
@@ -36,10 +37,6 @@ class BrowserSettingsActivity : AppCompatActivity() {
             includeBrowserSettings.clCustomSearch.setOnClickListener {
                 browserViewModel.inputDialog(getString(R.string.custom_search_engine),
                     CUSTOM_SEARCH_ENGINE)
-            }
-            includeBrowserSettings.clCustomUserAgent.setOnClickListener {
-                browserViewModel.inputDialog(getString(R.string.custom_user_agent),
-                    CUSTOM_USER_AGENT)
             }
 
             includeBrowserSettings.clDataControl.setOnClickListener {

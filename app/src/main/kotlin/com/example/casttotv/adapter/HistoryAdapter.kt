@@ -75,7 +75,7 @@ class HistoryAdapter(
 
     }
 
-    fun onClickLocal(item: HistoryEntity) {
+    private fun onClickLocal(item: HistoryEntity) {
         onClick(item)
     }
 

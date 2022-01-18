@@ -21,57 +21,19 @@
 
 
     <string name="app_name">Screen Mirroring</string>
-    <string name="title_activity_main_second">MainSecondActivity</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
 
-    <string name="menu_transform">Transform</string>
-    <string name="menu_reflow">Reflow</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_settings">Settings</string>
-
-    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
     <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
         typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
         since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
         type specimen book"
     </string>
-    <string name="address">Server Address:</string>
-    <string name="port">Server Port:</string>
-    <string name="secret">Shared Secret:</string>
-    <string name="proxyhost">HTTP proxy hostname</string>
-    <string name="proxyport">HTTP proxy port</string>
 
-    <string name="packages">Packages (comma separated):</string>
-    <string name="allowed">Allow</string>
-    <string name="disallowed">Disallow</string>
 
-    <string name="connected">ToyVPN is connected!</string>
-    <string name="disconnected">ToyVPN is disconnected!</string>
-    <string name="incomplete_proxy_settings">
-        Incomplete proxy settings. For HTTP proxy we require both hostname and port settings.
-    </string>
-    <string name="unknown_package_names">
-        Some of the specified package names do not correspond to any installed packages.
-    </string>
-
-    <string name="vpn_on">VPN ON</string>
-    <string name="vpn_off">VPN OFF</string>
-    <string name="navigation_drawer_close">drawer close</string>
-    <string name="connect">Connect</string>
-    <string name="connecting">Connecting</string>
-    <string name="disconnect">Disconnect</string>
     <string name="connection_close_confirm">Would you like to cancel the current VPN Connection?</string>
     <string name="yes">YES</string>
     <string name="no">NO</string>
     <string name="yes_2">Yes</string>
     <string name="no_2">No</string>
-    <string name="gps_network_not_enabled">Gps network is not enabled</string>
-    <string name="enable">Enable</string>
-    <string name="location_is_already_enabled">Location is already enabled.</string>
-    <string name="end_time_00_00">00:00</string>
     <string name="speed">%d</string>
     <string name="select_images">Select Images</string>
     <string name="tabs">Tabs</string>
@@ -82,66 +44,39 @@
     <string name="cancel">Cancel</string>
 
     <string name="favorite_site">Change the default website which loads on\nstart of Browser</string>
-    <string name="custom_user_agent_body">Here you can enter a custom user agent. Let empty to use default one</string>
     <string name="custom_search_engine_body">Add custom search url also choose “Custom\nsearch engine” as search provider</string>
     <string name="search_engine_body">Choose your preferred search engine or\nset a custom one</string>
     <string name="data_control_body">Clear your browser data or decide what data\nwill be cleared when you leave the app</string>
     <string name="start_control_body">Decide which components of the browser\nwill be on start</string>
     <string name="behavior_ui_body">Change the behavior and ui of the app to\nsuit your preferences</string>
     <string name="book_mark_body">To show the filter dialog long press on the bookmark icon in the overview. Decide which filters you will use</string>
-    <string name="gestures_body">Use gestures on the toolbar and the \"Navigation button\"</string>
-    <string name="backup_body">Import and export several app data(whitelist, bookmarks)</string>
     <string name="app_settings_body">Browser settings, there you can depending on\nyour android version grant permission.</string>
-    <string name="delete_database_body">Delete the whole database (Start page, bookmarks,history and all whitelist)</string>
-    <string name="clear_when_application_exits_body">Every time you quit all above checked data will be deleted</string>
-    <string name="this_will_delete_all_settings">This will delete all your current settings and data. Will you proceed?</string>
     <string name="start_control_image_body">Enable Network images, Disabling could be useful\nto save mobile data and load website faster</string>
     <string name="start_control_location_body">Allow websites to access your location. Some\nwebsites {google, maps for nav) need this enable</string>
     <string name="start_control_history_body">Save the history of visited websites</string>
-    <string name="start_control_request_save_data_body">Tell websites that you would prefer to save data. Supported websites will load faster</string>
-    <string name="javascript_whitelist">JavaScript whitelist</string>
     <string name="start_control_java_script_body">Enable JavaScript. Many websites need\nJavaScript for their functionality. But they are\nalso rest and can be used for attacks</string>
-    <string name="start_control_adblock_body">Enable AdBlockto block annoying ads. Sites also load faster when enabled</string>
-    <string name="adblock_whitelist">AdBlock whitelist</string>
     <string name="start_control_cookies_body">Enable Cookies. Cookies are small text files,
 which are stored on your device. Websites use
 them for example to store user settings. But
 they could also be used to collect personal user
 data. Third party cookies are always disabled.</string>
-    <string name="cookies_whitelist">Cookies whitelist</string>
     <string name="confirmation_browser_exit_body">Confirmation dialog when\nclosing browser</string>
     <string name="confirmation_tab_close_body">Confirmation dialog when closing a tab</string>
     <string name="confirmation_reopen_last_body">Reopen a new tab when the last tab is closed instead of exiting the browser</string>
-    <string name="theme_body">Set the app theme</string>
-    <string name="font_size_body">Charge the font size for displaying websites</string>
-    <string name="inverted_colors_body">if checked, content will be rendered in a inverted gray scale mode. This is a kind of night mode</string>
     <string name="hide_toolbar_body">Use the whole screen when scrolling through website if you press the back button you will leave fullscreen mode</string>
-    <string name="first_toolbar_body">Pressing back will make the toolbar visible, before going back in history</string>
-    <string name="position_body">Decide where the Navigation button will be\nplaced</string>
-    <string name="overview_body">What should be shown at the start of the Overview? The Start Page, your bookmarks,…</string>
-    <string name="Show_on_start_body">Open the Overview on every app start</string>
-    <string name="backup_text">All files will be exportednto the directory of your sd: card. This directory will be DELETE.D if you uninstall \"Screen Mirroring\". So make a backup regularly on a save place.</string>
-    <string name="backup_export_app_data_body">Export app data(Storage + previews, History Bookmarks) and uour personal settings</string>
     <string name="images">Images</string>
     <string name="videos">Videos</string>
     <string name="web_browser">Web Browser</string>
     <string name="image_slider">Image Slider</string>
-    <string name="language_changed">Language Changed</string>
-    <string name="title_activity_main2">Main2Activity</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="help">Help</string>
     <string name="settings">Settings</string>
     <string name="language">Languages</string>
     <string name="more_app">More Apps</string>
     <string name="rate_us">Rate Us</string>
-    <string name="title_activity_main">MainActivity</string>
     <string name="screen_mirroring">Screen Mirroring</string>
     <string name="home_screen_text">Make sure your phone and TV are connected to the same Wi-Fi network.</string>
     <string name="wifi_connected">Wi-Fi Connected</string>
@@ -243,6 +178,7 @@ data. Third party cookies are always disabled.</string>
     <string name="wi_fi">WI-FI</string>
     <string name="miracast">MIRACAST</string>
     <string name="install">INSTALL</string>
+    <string name="install_small">Install</string>
     <string name="manual">Manual</string>
     <string name="make_sure_your_phone_and_tv_are_connected">Make sure your phone and TV are connected\nto the same Wi-Fi network.</string>
     <string name="hd_streaming">HD Streaming</string>
@@ -323,7 +259,6 @@ data. Third party cookies are always disabled.</string>
     <string name="add_shortcut">Add Shortcut</string>
     <string name="tab_exit">Tab Exit</string>
     <string name="do_you_want_to_close">Do you want to close</string>
-    <string name="make_sure_you_are_in_browser_view">Make sure you are in browser view</string>
     <string name="download_complete_share_image">Download complete. Share image</string>
     <string name="_0">0</string>
     <string name="update">Update</string>
@@ -331,6 +266,12 @@ data. Third party cookies are always disabled.</string>
     <string name="no_input_provided">No input provided</string>
     <string name="input">Input</string>
     <string name="website_link">Website link</string>
+    <string name="for_you">For You</string>
+    <string name="website">Website:</string>
+    <string name="url">Url:</string>
+    <string name="date">Date</string>
+    <string name="no_site_loaded">you do not have loaded website</string>
+    <string name="more_then_5_images_can_not_be_picked">More then five images can not be picked</string>
 
 
 </resources>

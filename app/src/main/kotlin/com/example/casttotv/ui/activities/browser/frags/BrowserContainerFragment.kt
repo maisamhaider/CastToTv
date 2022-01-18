@@ -41,28 +41,13 @@ class BrowserContainerFragment : Fragment() {
                 childFragmentManager,
                 R.id.browser_container)
 
-//            viewBack.setOnClickListener {
-//                val cIndex = viewModel._currentTabIndex
-//                if (!viewModel.getTabs().isNullOrEmpty() &&
-//                    viewModel.getTabs()!!.size > 2 &&
-//                    cIndex > 1
-//                ) {
-//                    viewModel.switchToTab(cIndex - 1)
-//                } else {
-//                    viewModel.showBroswerHome(true)
-//                }
-//            }
+            viewBack.setOnClickListener {
+                viewModel.switchToTabBack()
+            }
 
-//            viewNext.setOnClickListener {
-//                val cIndex = viewModel._currentTabIndex
-//                if (!viewModel.getTabs().isNullOrEmpty() &&
-//                    viewModel.getTabs()!!.size > 2 &&
-//                    cIndex < viewModel.getTabs()!!.size+1
-//                ) {
-//                    viewModel.switchToTab(cIndex + 1)
-//                    viewModel.showBroswerHome(false)
-//                }
-//            }
+            viewNext.setOnClickListener {
+                viewModel.switchToTabForward()
+            }
 
             viewProfile.setOnClickListener {
                 viewModel.showBottomSheet(requireActivity().supportFragmentManager,

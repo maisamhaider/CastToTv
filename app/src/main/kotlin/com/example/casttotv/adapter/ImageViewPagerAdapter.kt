@@ -12,8 +12,7 @@ import com.example.casttotv.databinding.ImageSlidingBinding
 import com.example.casttotv.dataclasses.FileModel
 
 
-class ImageViewPagerAdapter(
-    private var context: Context, private val onItemClick: () -> Unit,
+class ImageViewPagerAdapter(private val onItemClick: () -> Unit,
 ) : ListAdapter<FileModel, ImageViewPagerAdapter.Holder>(DIF_UTIL) {
 
     companion object {
@@ -30,8 +29,8 @@ class ImageViewPagerAdapter(
     }
 
     class Holder(private val binding: ImageSlidingBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(context: Context, fileModel: FileModel) {
-            Glide.with(context).load(fileModel.filePath).into(binding.imageView)
+        fun bind(fileModel: FileModel) {
+            Glide.with(itemView).load(fileModel.filePath).into(binding.imageView)
         }
     }
 
@@ -49,7 +48,7 @@ class ImageViewPagerAdapter(
     }
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.bind(context, getItem(holder.absoluteAdapterPosition))
+        holder.bind(getItem(holder.absoluteAdapterPosition))
     }
 
 }

@@ -55,17 +55,14 @@ class ImageSliderViewerFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        adapter = ImageHorizonAdapter2(::onItemClick, requireContext(), true)
+        adapter = ImageHorizonAdapter2(::onItemClick, true)
 
-        adapterSlider = ImageViewPagerAdapter(requireContext(), ::onPagerClicked)
+        adapterSlider = ImageViewPagerAdapter(::onPagerClicked)
         viewPager2AnimationsAdapter = ViewPager2AnimationsAdapter(::onAnimationSelected)
-
 
         CoroutineScope(Dispatchers.IO).launch {
             sharedViewModel.pagerAnimations().collect {
-                launch(Dispatchers.Main) {
-                    viewPager2AnimationsAdapter.submitList(it)
-                }
+                launch(Dispatchers.Main) { viewPager2AnimationsAdapter.submitList(it) }
             }
         }
         binding.apply {
@@ -76,7 +73,6 @@ class ImageSliderViewerFragment : Fragment() {
             recyclerView.adapter = viewPager2AnimationsAdapter
             viewPager = null
             viewPager = binding.viewpager2
-
         }
         viewPager!!.adapter = adapterSlider
         viewPager!!.scrollBarFadeDuration = 2000

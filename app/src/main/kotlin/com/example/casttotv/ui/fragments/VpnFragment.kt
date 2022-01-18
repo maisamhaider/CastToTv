@@ -303,11 +303,11 @@ VpnFragment : Fragment(), View.OnClickListener, NavItemClickListener {
      */
     fun status(status: String) {
         if (status == "connect") {
-            binding.vpnBtn.text = requireContext().getString(R.string.connect)
+            binding.vpnBtn.text = "connect"
         } else if (status == "connecting") {
-            binding.vpnBtn.text = requireContext().getString(R.string.connecting)
+            binding.vpnBtn.text = "connecting"
         } else if (status == "connected") {
-            binding.vpnBtn.text = requireContext().getString(R.string.disconnect)
+            binding.vpnBtn.text = "disconnect"
         } else if (status == "tryDifferentServer") {
             binding.vpnBtn.setBackgroundResource(R.drawable.button_connected)
             binding.vpnBtn.text = "Try Different\nServer"

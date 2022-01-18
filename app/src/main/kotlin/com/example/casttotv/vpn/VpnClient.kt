@@ -113,8 +113,7 @@ class VpnClient : AppCompatActivity() {
     private fun checkProxyConfigs(proxyHost: String, proxyPort: String): Boolean {
         val hasIncompleteProxyConfigs = proxyHost.isEmpty() != proxyPort.isEmpty()
         if (hasIncompleteProxyConfigs) {
-            Toast.makeText(this, R.string.incomplete_proxy_settings, Toast.LENGTH_SHORT).show()
-        }
+         }
         return !hasIncompleteProxyConfigs
     }
 
@@ -128,8 +127,7 @@ class VpnClient : AppCompatActivity() {
                         .containsAll(packageNames)
         }
         if (!hasCorrectPackageNames) {
-            Toast.makeText(this, R.string.unknown_package_names, Toast.LENGTH_SHORT).show()
-        }
+         }
         return hasCorrectPackageNames
     }
 

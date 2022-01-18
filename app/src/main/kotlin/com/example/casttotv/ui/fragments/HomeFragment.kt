@@ -19,7 +19,7 @@ import com.example.casttotv.R
 import com.example.casttotv.databinding.HomeFragmentBinding
 import com.example.casttotv.interfaces.MyCallBack
 import com.example.casttotv.ui.activities.MainActivity
-import com.example.casttotv.utils.MySingleton.toastShort
+import com.example.casttotv.utils.MySingleton.shareApp
 import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.THEME_DARK
 import com.example.casttotv.viewmodel.MainViewModel
@@ -54,6 +54,9 @@ class HomeFragment : Fragment(), MyCallBack {
         binding.apply {
             homeFragment = this@HomeFragment
             includedDrawer.homeFrag = this@HomeFragment
+            includedDrawer.clShare.setOnClickListener {
+                requireContext().shareApp()
+            }
         }
 
         val mainActivity = activity as MainActivity
@@ -98,7 +101,6 @@ class HomeFragment : Fragment(), MyCallBack {
 
     fun goToImages() {
         navController.navigate(R.id.action_homeFragment_to_imagesFoldersFragment)
-        requireContext().toastShort("click")
     }
 
     fun goToVideos() {
@@ -137,14 +139,6 @@ class HomeFragment : Fragment(), MyCallBack {
         goToFeedBack()
     }
 
-//    fun goToVpn() {
-//        navController.navigate(R.id.action_homeFragment_to_vpnFragment)
-//    }
-
-    //    fun goToAudios() {
-//        navController.navigate(R.id.action_homeFragment_to_audiosFoldersFragment)
-//    }
-//
     private var networkCallbackWiFi = object : ConnectivityManager.NetworkCallback() {
         override fun onLost(network: Network) {
             CoroutineScope(Dispatchers.Main).launch {

@@ -27,7 +27,7 @@
 
         <TextView
             style="@style/item"
-            android:text="@string/secret" />
+              />
 
         <EditText
             android:id="@+id/secret"
@@ -36,7 +36,7 @@
 
         <TextView
             style="@style/item"
-            android:text="@string/proxyhost" />
+   />
 
         <EditText
             android:id="@+id/proxyhost"
@@ -44,7 +44,7 @@
 
         <TextView
             style="@style/item"
-            android:text="@string/proxyport" />
+              />
 
         <EditText
             android:id="@+id/proxyport"
@@ -53,7 +53,7 @@
 
         <TextView
             style="@style/item"
-            android:text="@string/packages" />
+             />
 
         <RadioGroup
             style="@style/item"
@@ -65,12 +65,12 @@
                 android:id="@+id/allowed"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/allowed" />
+                 />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/disallowed" />
+                 />
         </RadioGroup>
 
         <EditText
@@ -80,11 +80,11 @@
         <Button
             android:id="@+id/connect"
             style="@style/item"
-            android:text="@string/connect" />
+            />
 
         <Button
             android:id="@+id/disconnect"
             style="@style/item"
-            android:text="@string/disconnect" />
+             />
     </LinearLayout>
 </ScrollView>

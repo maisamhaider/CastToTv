@@ -79,7 +79,6 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     private var _tabs: MutableLiveData<List<Tabs>> = MutableLiveData()
     var liveTabs: LiveData<List<Tabs>> = _tabs
 
-    val historyInt: MutableLiveData<Int> = MutableLiveData(1)
     private val _searchText: MutableLiveData<String> = MutableLiveData("")
     val searchText: LiveData<String> = _searchText
     var _currentTabIndex = 0
@@ -111,6 +110,10 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
     fun getCurrentTab(): Tabs {
         return tabs.get(index = _currentTabIndex)
+    }
+
+    fun getCurrentTab(int: Int): Tabs {
+        return tabs.get(index = int)
     }
 
     private fun getCurrentWebView(): WebView {
@@ -161,8 +164,6 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         _searchText.value = value
     }
 
-    fun getTabs() = _tabs.value
-
 
     /**
      * set web view properties
@@ -180,7 +181,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
         container!!.addView(wv)
 
-        _showBroswerHome.value = false
+        showBroswerHome(false)
 
         _webView.value!!.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
@@ -203,13 +204,10 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         }
         val engine = engines[getPrefs(SELECTED_ENGINE, "google").lowercase()]?.link
             ?: "https://www.google.com/search?q="
-//        if (getPrefs(FAVORITE_DEFAULT_SITE, "") == "") {
         _webView.value!!.loadUrl(engine)
-        /*  } else {
-              _webView.value!!.loadUrl(getPrefs(FAVORITE_DEFAULT_SITE, ""))
-          }*/
+
         setSearchText(_webView.value!!.url.toString())
-        tabs.add(Tabs(_webView.value!!, _webView.value!!.url.toString()))
+        tabs.add(Tabs(_webView.value!!))
         _tabs.value = tabs // set tabs to mutablelive list
         _currentTabIndex = tabs.size.minus(1)
     }
@@ -220,48 +218,19 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     fun switchToTab(tab: Int) {
         getCurrentWebView().visibility = View.GONE
         _currentTabIndex = tab
+        _tabs.value?.let {
+            _webView.value = it[_currentTabIndex].webView
+        }
         getCurrentWebView().visibility = View.VISIBLE
         setSearchText(getCurrentWebView().url.toString())
         getCurrentWebView().requestFocus()
+        showBroswerHome(false)
     }
-
-
-    fun closeCurrentTab() {
-        if (_currentTabIndex != -1) {
-            container!!.removeView(getCurrentWebView())
-            getCurrentWebView().destroy()
-
-            tabs.removeAt(_currentTabIndex)
-            _tabs.value = tabs
-
-            if (tabs.size != 0) {
-                if (_currentTabIndex >= tabs.size) {
-                    _currentTabIndex = tabs.size - 1
-                }
-
-                if (_currentTabIndex != -1) {
-                    getCurrentWebView().visibility = View.VISIBLE
-                    getCurrentWebView().requestFocus()
-                    setSearchText(getCurrentWebView().url.toString())
-                }
-            } else {
-                if (getPrefs(BEHAVIOR_UI_REOPEN_LAST_TAB, false)) {
-                    newTabWebView(ObservableWebView(cxt))
-                } else {
-                    exitDialog(cxt as Activity)
-                    _showBroswerHome.value = true
-                    _currentTabIndex = -1
-                }
-
-            }
-        }
-    }
-
 
     private fun closeTab(tab: Int) {
         if (tabs.contains(tabs[tab])) {
-            container!!.removeView(getCurrentWebView())
-            getCurrentWebView().destroy()
+            container!!.removeView(getCurrentTab(tab).webView)
+            getCurrentTab(tab).webView.destroy()
 
             tabs.removeAt(tab)
             _tabs.value = tabs
@@ -275,15 +244,12 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
                     getCurrentWebView().visibility = View.VISIBLE
                     getCurrentWebView().requestFocus()
                     setSearchText(getCurrentWebView().url.toString())
-
-
                 }
             } else {
 
                 if (getPrefs(BEHAVIOR_UI_REOPEN_LAST_TAB, false)) {
                     newTabWebView(ObservableWebView(cxt))
                 } else {
-                    exitDialog(cxt as Activity)
                     _showBroswerHome.value = true
                     _currentTabIndex = -1
                 }
@@ -292,7 +258,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         }
     }
 
-    fun onBrowserExit() {
+    private fun onBrowserExit() {
         tabs.clear()
         _tabs.value = tabs
         if (getPrefs(DATA_CLEAR_APPLICATION_EXIT, false)) {
@@ -325,31 +291,47 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         }
     }
 
-    fun forward() {
-        if (_webView.value!!.isFocused && _webView.value!!.canGoBack()) {
-            _webView.value!!.goBack()
-        }
-    }
-
     fun canGoBack(): Boolean {
         return (_webView.value != null && _webView.value!!.isFocused && _webView.value!!.canGoBack())
     }
 
-    fun canGoForword(): Boolean {
-        return (_webView.value != null && _webView.value!!.isFocused && _webView.value!!.canGoForward())
+    fun switchToTabBack() {
+        if (_tabs.value !=null &&
+            _currentTabIndex >= 1
+        ) {
+            switchToTab(_currentTabIndex - 1)
+        } else {
+            showBroswerHome(true)
+        }
+    }
+
+    fun switchToTabForward() {
+        if (_tabs.value !=null &&
+            _currentTabIndex < _tabs.value!!.size - 1
+        ) {
+            switchToTab(_currentTabIndex + 1)
+            showBroswerHome(false)
+        } else if (_tabs.value !=null && _currentTabIndex == 0) {
+            switchToTab(_currentTabIndex)
+            showBroswerHome(false)
+        }
     }
 
     fun search(searchText: String) {
-//        if (_currentTabIndex == -1) {
-//            newTabWebView(ObservableWebView(cxt))
-//        }
+
         val engine = engines[getPrefs(SELECTED_ENGINE, "google").lowercase()]?.link
             ?: "https://www.google.com/search?q="
 
-        val url = if (engine.isEmpty()) {
-            "https://www.google.com/search?q=$searchText"
-        } else {
-            engine + searchText
+        val url = when {
+            engine.isEmpty() -> {
+                "https://www.google.com/search?q=$searchText"
+            }
+            searchText.contains(engine) -> {
+                searchText
+            }
+            else -> {
+                engine + searchText
+            }
         }
         newTabWebView(ObservableWebView(cxt))
 
@@ -417,14 +399,21 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
     fun shareLink() {
-        val sendIntent: Intent = Intent().apply {
-            action = Intent.ACTION_SEND
-            putExtra(Intent.EXTRA_TEXT, _webView.value!!.url.toString())
-            type = "text/plain"
+        if (_webView.value == null ||_webView.value?.url.toString() == "null" || _webView.value?.url.toString()
+                .isEmpty()
+        ) {
+            cxt.toastShort(cxt.getString(R.string.no_site_loaded))
+        } else {
+            val sendIntent: Intent = Intent().apply {
+                action = Intent.ACTION_SEND
+                putExtra(Intent.EXTRA_TEXT, _webView.value!!.url.toString())
+                type = "text/plain"
+            }
+            val shareIntent = Intent.createChooser(sendIntent, "share with")
+            cxt.startActivity(shareIntent)
         }
 
-        val shareIntent = Intent.createChooser(sendIntent, "share with")
-        cxt.startActivity(shareIntent)
+
     }
 
     fun share(string: String) {
@@ -439,7 +428,15 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
     fun copyToClipBoard() {
-        cxt.funCopy(_webView.value!!.url.toString())
+        if (_webView.value == null ||_webView.value?.url.toString() == "null" || _webView.value?.url.toString()
+                .isEmpty()
+        ) {
+            cxt.toastShort(cxt.getString(R.string.no_site_loaded))
+        } else {
+            cxt.funCopy(_webView.value!!.url.toString())
+            cxt.toastShort(cxt.getString(R.string.copied))
+        }
+
     }
 
     fun openDownload() {
@@ -493,38 +490,6 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         }
 
     }
-
-//    fun openSS(path: String) {
-//        val binding =
-//            LayoutBodyPosAndNegButtonBinding.inflate(LayoutInflater.from(cxt), null,
-//                false)
-//        val bottomSheetDialog = BottomSheetDialog(cxt)
-//        bottomSheetDialog.setContentView(binding.root)
-//
-//        binding.apply {
-//            textviewBody.text = "Download complete. Preview image"
-//            textviewPositive.text = "Yes"
-//            textviewNegative.text = "No"
-//            textviewPositive.setOnClickListener {
-//                bottomSheetDialog.dismiss()
-//                val intent = Intent()
-//                intent.action = Intent.ACTION_VIEW
-//                intent.type = "image/*"
-//
-//                val photoURI = FileProvider.getUriForFile(cxt, "${cxt.packageName}.provider",
-//                    File(path)
-//                )
-//                intent.data = photoURI
-//
-//                cxt.startActivity(Intent.createChooser(intent, "share with"))
-//                cxt.toastShort(path)
-//
-//            }
-//            textviewNegative.setOnClickListener { bottomSheetDialog.dismiss() }
-//        }
-//        bottomSheetDialog.create()
-//        bottomSheetDialog.show()
-//    }
 
     fun shareSS(path: String) {
         val binding = LayoutBodyPosAndNegButtonBinding.inflate(LayoutInflater.from(cxt), null,
@@ -611,33 +576,6 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         dialog.show()
     }
 
-//    fun closeCurrentTabDialog() {
-//        if (getPrefs(BEHAVIOR_UI_CONFIRM_TAB_CLOSE, false)) {
-//            val binding =
-//                LayoutTitleBodyPosAndNegButtonBinding.inflate(LayoutInflater.from(cxt), null,
-//                    false)
-//            val builder = AlertDialog.Builder(cxt)
-//            builder.setView(binding.root)
-//            val dialog = builder.create()
-//
-//            binding.apply {
-//                textviewTitle.text = "Tab Exit"
-//                textviewBody.text = "Do you want to close"
-//                textviewPositive.text = "Yes"
-//                textviewNegative.text = "No"
-//                textviewPositive.setOnClickListener {
-//                    closeCurrentTab()
-//                    dialog.dismiss()
-//                }
-//                textviewNegative.setOnClickListener { dialog.dismiss() }
-//            }
-//
-//            dialog.show()
-//        } else {
-//            closeCurrentTab()
-//        }
-//    }
-
     fun closTabDialog(tab: Int) {
         if (getPrefs(BEHAVIOR_UI_CONFIRM_TAB_CLOSE, false)) {
             val binding =
@@ -658,7 +596,6 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
                 }
                 textviewNegativeClick.setOnClickListener { dialog.dismiss() }
             }
-
             dialog.show()
         } else {
             closeTab(tab)

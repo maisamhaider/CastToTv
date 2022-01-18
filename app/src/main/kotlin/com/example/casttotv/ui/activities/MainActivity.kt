@@ -2,7 +2,6 @@ package com.example.casttotv.ui.activities
 
 import android.Manifest.permission
 import android.content.Context
-import android.content.ContextWrapper
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -14,10 +13,12 @@ import android.print.PrintAttributes
 import android.print.PrintDocumentAdapter
 import android.print.PrintManager
 import android.provider.Settings
+import android.view.View
 import android.view.WindowManager
 import androidx.activity.viewModels
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.navigation.NavController
@@ -25,8 +26,8 @@ import androidx.navigation.fragment.NavHostFragment
 import com.example.casttotv.R
 import com.example.casttotv.databinding.ActivityMainBinding
 import com.example.casttotv.ui.activities.browser.frags.BrowserContainerFragment
-import com.example.casttotv.utils.MySingleton
-import com.example.casttotv.utils.MySingleton.setAppLocale
+import com.example.casttotv.ui.fragments.HomeFragment
+import com.example.casttotv.utils.Internet
 import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.viewmodel.BrowserViewModel
 import com.example.casttotv.viewmodel.MainViewModel
@@ -36,7 +37,6 @@ import kotlinx.coroutines.launch
 
 
 class MainActivity : BaseActivity() {
-    private var originalContext: Context? = null
 
 
     private lateinit var binding: ActivityMainBinding
@@ -54,10 +54,22 @@ class MainActivity : BaseActivity() {
         window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_NOTHING)
 
         navHostFragment =
-            supportFragmentManager.findFragmentById(com.example.casttotv.R.id.nav_host) as NavHostFragment
+            supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
         controller = navHostFragment.navController
 
+        binding.apply {
+            layoutExitButton.textViewNotNow.setOnClickListener {
+                clBottomSheet.visibility = View.GONE
+            }
+            layoutExitButton.textViewExit.setOnClickListener { finish() }
+            refreshAd2(layoutExitAd.flAdplaceholder, ::close)
+        }
 
+
+    }
+
+    fun close() {
+        binding.clBottomSheet.visibility = View.GONE
     }
 
 
@@ -96,11 +108,6 @@ class MainActivity : BaseActivity() {
 
     }
 
-    override fun attachBaseContext(newBase: Context) {
-        super.attachBaseContext(ContextWrapper(newBase.setAppLocale(MySingleton.localeLanguage)))
-        this.originalContext = newBase;
-
-    }
 
     fun print() {
         if (browserVM.webViewVisisble()) {
@@ -108,7 +115,7 @@ class MainActivity : BaseActivity() {
                 originalContext?.getSystemService(Context.PRINT_SERVICE) as PrintManager
             val printAdapter: PrintDocumentAdapter? =
                 browserVM.webView.value?.run { createPrintDocumentAdapter("MyDocument") }
-            val jobName = " Print Test"
+            val jobName = "Print Test"
             printAdapter?.let {
                 CoroutineScope(Dispatchers.Main).launch {
                     printManager.print(jobName, it, PrintAttributes.Builder().build())
@@ -116,7 +123,7 @@ class MainActivity : BaseActivity() {
             }
         } else {
             CoroutineScope(Dispatchers.Main).launch {
-                toastShort(getString(R.string.make_sure_you_are_in_browser_view))
+                toastShort(getString(R.string.no_site_loaded))
             }
         }
     }
@@ -135,7 +142,8 @@ class MainActivity : BaseActivity() {
         when {
             (currentFragment is BrowserContainerFragment) -> {
                 if (browserVM.canGoBack() || !browserVM.showBroswerHome.value!! ||
-                    browserVM.tabFragmentIsShowing()) {
+                    browserVM.tabFragmentIsShowing()
+                ) {
                     browserVM.mainBackPress(true)
                 } else {
                     browserVM.exitDialog(this)
@@ -145,9 +153,23 @@ class MainActivity : BaseActivity() {
             viewModel.languageDialogIsShowing() -> {
                 viewModel.cancelLanguageDialog()
             }
-            else -> {
-                super.onBackPressed()
+            (currentFragment is HomeFragment) -> {
+                if (binding.clBottomSheet.isVisible) {
+                    binding.clBottomSheet.visibility = View.GONE
+                } else {
+                    binding.clBottomSheet.visibility = View.VISIBLE
+                }
+                if (Internet(this).isInternetAvailable()) {
+                    binding.layoutExitAd.clAd.visibility = View.VISIBLE
+                    binding.layoutExitForYou.clForYou.visibility = View.VISIBLE
+                } else {
+                    binding.layoutExitAd.clAd.visibility = View.GONE
+                    binding.layoutExitForYou.clForYou.visibility = View.GONE
+                }
             }
+            else -> super.onBackPressed()
+
+
         }
 
     }

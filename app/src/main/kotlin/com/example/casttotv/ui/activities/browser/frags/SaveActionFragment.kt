@@ -46,7 +46,7 @@ class SaveActionFragment : BottomSheetDialogFragment() {
                 if (ssPath != "error") {
                     requireContext().toastShort("${getString(R.string.save)}\n$ssPath")
                 } else {
-                    requireContext().toastShort(getString(R.string.make_sure_you_are_in_browser_view))
+                    requireContext().toastShort(getString(R.string.no_site_loaded))
                 }
             }
             clSaveAsPdf.setOnClickListener {

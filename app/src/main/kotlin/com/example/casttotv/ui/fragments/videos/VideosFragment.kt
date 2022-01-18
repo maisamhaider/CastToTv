@@ -43,7 +43,7 @@ class VideosFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapter = ImageVideosAdapter(::onItemClick, requireContext(), VIDEO)
+        val adapter = ImageVideosAdapter(::onItemClick, VIDEO)
 
         binding.apply {
             videosFrag = this@VideosFragment
@@ -54,8 +54,6 @@ class VideosFragment : Fragment() {
                 CoroutineScope(Dispatchers.Main).launch {
                     if (!it.isNullOrEmpty()) {
                         adapter.submitList(it)
-                    } else {
-                        requireContext().toastLong("video not found.")
                     }
                 }
             }

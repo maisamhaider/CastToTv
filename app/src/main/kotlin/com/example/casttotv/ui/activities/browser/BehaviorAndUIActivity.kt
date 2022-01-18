@@ -4,9 +4,10 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.casttotv.databinding.ActivityBehaviorAndUiactivityBinding
+import com.example.casttotv.ui.activities.BaseActivity
 import com.example.casttotv.viewmodel.BrowserViewModel
 
-class BehaviorAndUIActivity : AppCompatActivity() {
+class BehaviorAndUIActivity : BaseActivity() {
     private lateinit var _binding: ActivityBehaviorAndUiactivityBinding
     private val binding get() = _binding
 

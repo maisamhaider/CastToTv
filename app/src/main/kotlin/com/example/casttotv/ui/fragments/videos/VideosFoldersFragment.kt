@@ -35,7 +35,7 @@ class VideosFoldersFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         _binding = FragmentVideosFoldersBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -57,8 +57,6 @@ class VideosFoldersFragment : Fragment() {
             CoroutineScope(Dispatchers.Main).launch {
                 if (!it.isNullOrEmpty()) {
                     adapter.submitList(it)
-                } else {
-                    requireContext().toastLong("Image not found.")
                 }
             }
         }

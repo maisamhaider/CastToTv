@@ -16,6 +16,7 @@ import androidx.annotation.ColorInt
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
+import com.example.casttotv.BuildConfig
 import com.example.casttotv.dataclasses.FileModel
 import com.example.casttotv.dataclasses.FolderModel
 import com.example.casttotv.dataclasses.Lang
@@ -62,7 +63,7 @@ object MySingleton {
     var historyBookFavClose = ""
     var LANGUAGE_DIALOG_SHOWING = false
     var localeLanguage = "en"
-    var tabs: MutableList<Tabs> = ArrayList<Tabs>()
+    var tabs: MutableList<Tabs> = ArrayList()
 
 //    fun Context.themeDark(): Boolean = getPrefs(THEME_DARK, false)
 
@@ -84,7 +85,14 @@ object MySingleton {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         }
     }
-
+    fun Context.shareApp() {
+        val sendIntent = Intent()
+        sendIntent.action = Intent.ACTION_SEND
+        sendIntent.putExtra(Intent.EXTRA_TEXT,
+            "Hey check out my app at: https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID)
+        sendIntent.type = "text/plain"
+        startActivity(sendIntent)
+    }
     fun Context.shareWithText(image: String) {
         val share = Intent()
         share.action = Intent.ACTION_SEND
@@ -94,7 +102,6 @@ object MySingleton {
             File(image)
         )
         share.putExtra(Intent.EXTRA_STREAM, photoURI)
-//        share.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
 
         startActivity(Intent.createChooser(share, "share with"))
 

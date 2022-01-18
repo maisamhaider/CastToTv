@@ -13,6 +13,7 @@ import com.example.casttotv.ui.activities.MainActivity
 import com.example.casttotv.ui.activities.browser.BookmarkActivity
 import com.example.casttotv.ui.activities.browser.FavoritesActivity
 import com.example.casttotv.ui.activities.browser.HistoryActivity
+import com.example.casttotv.utils.MySingleton.shareApp
 import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.viewmodel.BrowserViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
@@ -57,13 +58,18 @@ class MenuBottomSheetFragment : BottomSheetDialogFragment() {
                 dismiss()
             }
 
+            clShareApp.setOnClickListener {
+                requireContext().shareApp()
+            }
+            clExit.setOnClickListener {
+                browserViewModel.exitDialog(requireActivity())
+            }
             clShareUrl.setOnClickListener {
                 browserViewModel.shareLink()
             }
             clCopyUrl.setOnClickListener {
                 browserViewModel.copyToClipBoard()
-                requireContext().toastShort(getString(R.string.copied))
-            }
+             }
             clSharePdf.setOnClickListener {
                 if (activity is MainActivity) {
                     (activity as MainActivity).print()
@@ -74,7 +80,7 @@ class MenuBottomSheetFragment : BottomSheetDialogFragment() {
                 if (ssPath != "error") {
                     browserViewModel.shareSS(ssPath)
                 } else {
-                    requireContext().toastShort(getString(R.string.make_sure_you_are_in_browser_view))
+                    requireContext().toastShort(getString(R.string.no_site_loaded))
                 }
             }
             clDownloads.setOnClickListener {

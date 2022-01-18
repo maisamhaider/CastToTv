@@ -39,19 +39,19 @@ class WelcomeViewModel(context: Activity) : ViewModel() {
     fun isLocationEnabled() = LocationManagerCompat.isLocationEnabled(lm)
 
 
-    fun showLocationDialog(context: Activity) {
-        MaterialAlertDialogBuilder(context).setMessage(R.string.gps_network_not_enabled)
-            .setCancelable(false)
-            .setPositiveButton(R.string.enable) { dialog, _ ->
-                run {
-                    dialog.cancel()
-                    context.startActivity(Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS))
-                }
-            }.setNegativeButton(R.string.cancel) { dialog, _ ->
-                dialog.cancel()
-            }.show()
-
-    }
+//    fun showLocationDialog(context: Activity) {
+//        MaterialAlertDialogBuilder(context).setMessage(R.string.gps_network_not_enabled)
+//            .setCancelable(false)
+//            .setPositiveButton(R.string.enable) { dialog, _ ->
+//                run {
+//                    dialog.cancel()
+//                    context.startActivity(Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS))
+//                }
+//            }.setNegativeButton(R.string.cancel) { dialog, _ ->
+//                dialog.cancel()
+//            }.show()
+//
+//    }
 
     fun checkLocationPermission(activity: Activity): Boolean {
         if (ActivityCompat.checkSelfPermission(

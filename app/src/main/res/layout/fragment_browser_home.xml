@@ -473,9 +473,9 @@
             <FrameLayout
                 android:id="@+id/web_view_container"
                 style="@style/w_0_h_0"
-                android:visibility="gone"
                 android:background="?attr/colorPrimaryVariant"
                 android:elevation="@dimen/dp_5"
+                android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"

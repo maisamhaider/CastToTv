@@ -45,10 +45,10 @@ class CustomVideoPlayerFragment : Fragment() {
     private var mTimeNextInMillis: Double = 0.0
     private var locked = false
 
-    var videoSpeed = 100
+    private var videoSpeed = 100
     private var cropState = 0
-    var firstHeight = 0
-    var firstWeight = 0
+    private var firstHeight = 0
+    private var firstWeight = 0
     lateinit var videoPlayer: VideoView
 
 
@@ -83,8 +83,6 @@ class CustomVideoPlayerFragment : Fragment() {
                     if (!it.isNullOrEmpty()) {
                         videosModelList.clear()
                         videosModelList.addAll(it)
-                    } else {
-                        requireContext().toastLong("videos not found.")
                     }
                 }
             }
@@ -220,14 +218,6 @@ class CustomVideoPlayerFragment : Fragment() {
         binding.llcVideoView.layoutParams = lp
     }
 
-    // This method gets the proportion of the video that you want to display.
-    // I already know this ratio since my video is hardcoded, you can get the
-    // height and width of your video and appropriately generate  the proportion
-    //    as :height/width
-    private fun getVideoProportion(): Float {
-        return 2.0f
-    }
-
     private fun setTime(milliseconds: Long) {
         mStartTimeInMillis = milliseconds
         resetTimer()
@@ -318,16 +308,12 @@ class CustomVideoPlayerFragment : Fragment() {
                 videoPlayer.pause()
                 sharedViewModel.adjustPlayerSpeed(videoSpeed)
 
-            } else {
-                requireContext().toastLong("max speed is 4.0x")
             }
         } else {
             if (videoSpeed > 10) {
                 videoSpeed -= 10
                 videoPlayer.pause()
                 sharedViewModel.adjustPlayerSpeed(videoSpeed)
-            } else {
-                requireContext().toastLong("min speed is 0.25x")
             }
         }
         sharedViewModel.playingVideoCurrentPosBeforeDestroy(videoPlayer.currentPosition)

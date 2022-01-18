@@ -3,12 +3,12 @@ package com.example.casttotv.ui.activities.browser
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatActivity
 import com.example.casttotv.databinding.*
+import com.example.casttotv.ui.activities.BaseActivity
 import com.example.casttotv.utils.*
 import com.example.casttotv.viewmodel.BrowserViewModel
 
-class StartControlActivity : AppCompatActivity() {
+class StartControlActivity : BaseActivity() {
     private lateinit var _binding: ActivityStartControlBinding
     private val binding get() = _binding
 
@@ -23,8 +23,6 @@ class StartControlActivity : AppCompatActivity() {
         _binding = ActivityStartControlBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
         binding.apply {
             thisActivity = this@StartControlActivity
             includeJavascriptCookies.browserVM = browserViewModel
@@ -37,9 +35,5 @@ class StartControlActivity : AppCompatActivity() {
         finish()
     }
 
-    fun intent(whiteListType: String) {
-        startActivity(Intent(this@StartControlActivity, WhitelistActivity()::class.java).apply {
-            putExtra(WHITE_LIST_TYPE, whiteListType)
-        })
-    }
+
 }

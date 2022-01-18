@@ -2,8 +2,8 @@ package com.example.casttotv.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.graphics.*
-import android.graphics.drawable.PictureDrawable
+import android.graphics.Bitmap
+import android.graphics.Canvas
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -77,30 +77,18 @@ class TabsAdapter(
 
                 imageview.setImageBitmap(sBitmap)
 
-
-
                 if (browserVm._currentTabIndex == absoluteAdapterPosition) {
                     cl.setBackgroundResource(R.drawable.selected_tab_bg)
                     textview.setTextColor(ContextCompat.getColor(context, R.color.cr_white))
                     imageviewRemove.setColorFilter(ContextCompat.getColor(context,
                         R.color.cr_white))
                 }
-                imageviewRemove.setOnClickListener {
+                imageviewRemoveClick.setOnClickListener {
                     browserVm.closTabDialog(absoluteAdapterPosition)
                 }
             }
-
-
         }
 
-        private fun pictureDrawable2Bitmap(picture: Picture): Bitmap? {
-            val pd = PictureDrawable(picture)
-            val bitmap =
-                Bitmap.createBitmap(pd.intrinsicWidth, pd.intrinsicHeight, Bitmap.Config.ARGB_8888)
-            val canvas = Canvas(bitmap)
-            canvas.drawPicture(pd.picture)
-            return bitmap
-        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {

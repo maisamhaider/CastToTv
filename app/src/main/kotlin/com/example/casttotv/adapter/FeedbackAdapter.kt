@@ -39,9 +39,9 @@ class FeedbackAdapter(val context: Context, val onItemClicked: (Feedback) -> Uni
     }
 
     class Holder(private val binding: FeedbackItemBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(context: Context, feedback: Feedback, int: Int) {
+        fun bind(context: Context, feedback: Feedback) {
             when {
-                int == 0 -> {
+                absoluteAdapterPosition == 0 -> {
                     binding.cvAdd.visibility = View.VISIBLE
                     val dark = context.getPrefs(THEME_DARK, false)
 
@@ -81,8 +81,6 @@ class FeedbackAdapter(val context: Context, val onItemClicked: (Feedback) -> Uni
 
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.bind(context,
-            getItem(holder.absoluteAdapterPosition),
-            holder.absoluteAdapterPosition)
+        holder.bind(context, getItem(holder.absoluteAdapterPosition))
     }
 }

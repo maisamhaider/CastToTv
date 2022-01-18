@@ -2,14 +2,14 @@ package com.example.casttotv.ui.activities.browser
 
 import android.os.Bundle
 import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.asLiveData
 import com.example.casttotv.R
 import com.example.casttotv.adapter.HistoryAdapter
 import com.example.casttotv.database.entities.HistoryEntity
 import com.example.casttotv.databinding.ActivityHistoryBinding
 import com.example.casttotv.dataclasses.History
- import com.example.casttotv.interfaces.OptionMenuListener
+import com.example.casttotv.interfaces.OptionMenuListener
+import com.example.casttotv.ui.activities.BaseActivity
 import com.example.casttotv.ui.activities.browser.frags.DeleteHistoryBottomSheetFragment
 import com.example.casttotv.utils.MySingleton.historyBookFavClose
 import com.example.casttotv.viewmodel.BrowserViewModel
@@ -17,7 +17,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class HistoryActivity : AppCompatActivity(),  OptionMenuListener {
+class HistoryActivity : BaseActivity(), OptionMenuListener {
     private lateinit var _binding: ActivityHistoryBinding
     private val binding get() = _binding
     private val map: MutableMap<String, MutableList<HistoryEntity>> = HashMap()
@@ -79,7 +79,6 @@ class HistoryActivity : AppCompatActivity(),  OptionMenuListener {
     }
 
 
-
     fun onClick(historyEntity: HistoryEntity) {
         historyBookFavClose = historyEntity.link
         back()
@@ -98,9 +97,9 @@ class HistoryActivity : AppCompatActivity(),  OptionMenuListener {
                 browserViewModel.deleteHistory(historyEntity)
             }
             R.id.item_share -> {
-                val string = "Website: ${historyEntity.title}" +
-                        "\nUrl: ${historyEntity.link}" +
-                        "\nDate: ${historyEntity.day}"
+                val string = "${getString(R.string.website)} ${historyEntity.title}\n" +
+                        "${getString(R.string.url)} ${historyEntity.link}" +
+                        "\n${getString(R.string.date)} ${historyEntity.day}"
                 browserViewModel.share(string)
             }
             else -> {

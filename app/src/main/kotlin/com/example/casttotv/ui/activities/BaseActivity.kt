@@ -1,6 +1,8 @@
 package com.example.casttotv.ui.activities
 
 import android.annotation.SuppressLint
+import android.content.Context
+import android.content.ContextWrapper
 import android.os.Bundle
 import android.view.View
 import android.widget.FrameLayout
@@ -9,6 +11,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.example.casttotv.R
+import com.example.casttotv.utils.MySingleton
+import com.example.casttotv.utils.MySingleton.setAppLocale
 import com.google.android.gms.ads.*
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.nativead.MediaView
@@ -17,6 +21,8 @@ import com.google.android.gms.ads.nativead.NativeAdOptions
 import com.google.android.gms.ads.nativead.NativeAdView
 
 open class BaseActivity : AppCompatActivity() {
+    var originalContext: Context? = null
+
     var mInterstitialAd: InterstitialAd? = null
     private var nativeAd: NativeAd? = null
 
@@ -28,6 +34,11 @@ open class BaseActivity : AppCompatActivity() {
 //        MobileAds.initialize(this) { createPersonalizedInterstitial() }
     }
 
+    override fun attachBaseContext(newBase: Context) {
+        super.attachBaseContext(ContextWrapper(newBase.setAppLocale(MySingleton.localeLanguage)))
+        this.originalContext = newBase;
+
+    }
 
     private fun createPersonalizedInterstitial() {
         val adRequest = AdRequest.Builder().build()
@@ -285,10 +296,10 @@ open class BaseActivity : AppCompatActivity() {
 //        adView.setMediaView((MediaView) adView.findViewById(R.id.ad_media));
 
         // Set other ad assets.
-        adView.setHeadlineView(adView.findViewById(R.id.ad_headline))
-        adView.setBodyView(adView.findViewById(R.id.ad_body))
-        adView.setCallToActionView(adView.findViewById(R.id.ad_call_to_action))
-        adView.setIconView(adView.findViewById(R.id.ad_app_icon))
+        adView.headlineView = adView.findViewById(R.id.ad_headline)
+        adView.bodyView = adView.findViewById(R.id.ad_body)
+        adView.callToActionView = adView.findViewById(R.id.ad_call_to_action)
+        adView.iconView = adView.findViewById(R.id.ad_app_icon)
 
         // The headline and mediaContent are guaranteed to be in every NativeAd.
         (adView.headlineView as TextView).text = nativeAd.headline
@@ -366,9 +377,9 @@ open class BaseActivity : AppCompatActivity() {
                     override fun onAdFailedToLoad(loadAdError: LoadAdError) {
 //                                refresh.setEnabled(true);
                         val error = String.format("domain: %s, code: %d, message: %s",
-                            loadAdError.getDomain(),
-                            loadAdError.getCode(),
-                            loadAdError.getMessage())
+                            loadAdError.domain,
+                            loadAdError.code,
+                            loadAdError.message)
                     }
                 })
             .build()
@@ -410,15 +421,15 @@ open class BaseActivity : AppCompatActivity() {
 //                                refresh.setEnabled(true);
                         val error = String.format("domain: %s, code: %d, message: %s",
                             loadAdError.domain,
-                            loadAdError.getCode(),
-                            loadAdError.getMessage())
+                            loadAdError.code,
+                            loadAdError.message)
                     }
                 })
             .build()
         adLoader.loadAd(AdRequest.Builder().build())
     }
 
-    fun refreshAd2(frameLayout: FrameLayout) {
+    fun refreshAd2(frameLayout: FrameLayout, finish: () -> Unit) {
 //        refresh.setEnabled(false);
         val builder = AdLoader.Builder(this, getString(R.string.native_advanced))
 
@@ -444,7 +455,11 @@ open class BaseActivity : AppCompatActivity() {
             populateNativeAdView2(nativeAd, adView)
             frameLayout.removeAllViews()
             frameLayout.addView(adView)
+            adView.findViewById<View>(R.id.view_close_add).setOnClickListener {
+                finish()
+            }
         }
+
         val videoOptions = VideoOptions.Builder().setStartMuted(true).build()
         val adOptions = NativeAdOptions.Builder().setVideoOptions(videoOptions).build()
         builder.withNativeAdOptions(adOptions)
@@ -453,18 +468,17 @@ open class BaseActivity : AppCompatActivity() {
                 object : AdListener() {
                     @SuppressLint("DefaultLocale")
                     override fun onAdFailedToLoad(loadAdError: LoadAdError) {
-//                                refresh.setEnabled(true);
-//                        val error = String.format("domain: %s, code: %d, message: %s",
-//                        loadAdError.domain,
-//                        loadAdError.code,
-//                        loadAdError.message)
+                        val error = String.format("domain: %s, code: %d, message: %s",
+                            loadAdError.domain,
+                            loadAdError.code,
+                            loadAdError.message)
                     }
                 })
             .build()
         adLoader.loadAd(AdRequest.Builder().build())
     }
 
-    fun refreshAdSmallNative(frameLayout: FrameLayout) {
+    fun refreshAdSmallNative(frameLayout: CardView) {
         val builder = AdLoader.Builder(this, getString(R.string.native_advanced))
 
         builder.forNativeAd { nativeAd ->
@@ -495,11 +509,10 @@ open class BaseActivity : AppCompatActivity() {
             .withAdListener(
                 object : AdListener() {
                     override fun onAdFailedToLoad(loadAdError: LoadAdError) {
-//                                refresh.setEnabled(true);
-//                        val error = String.format("domain: %s, code: %d, message: %s",
-//                            loadAdError.domain,
-//                            loadAdError.getCode(),
-//                            loadAdError.getMessage())
+                        val error = String.format("domain: %s, code: %d, message: %s",
+                            loadAdError.domain,
+                            loadAdError.code,
+                            loadAdError.message)
                     }
                 })
             .build()

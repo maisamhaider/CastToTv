@@ -2,18 +2,18 @@ package com.example.casttotv.ui.activities.browser
 
 import android.os.Bundle
 import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.asLiveData
 import com.example.casttotv.R
 import com.example.casttotv.adapter.BookmarkAdapter
 import com.example.casttotv.database.entities.BookmarkEntity
 import com.example.casttotv.databinding.ActivityBookmarkBinding
 import com.example.casttotv.interfaces.OptionMenuListener
+import com.example.casttotv.ui.activities.BaseActivity
 import com.example.casttotv.ui.activities.browser.frags.BrowserHomeFragment
 import com.example.casttotv.utils.MySingleton.historyBookFavClose
 import com.example.casttotv.viewmodel.BrowserViewModel
 
-class BookmarkActivity : AppCompatActivity(), OptionMenuListener {
+class BookmarkActivity : BaseActivity(), OptionMenuListener {
 
     private lateinit var _binding: ActivityBookmarkBinding
     private val binding get() = _binding
@@ -60,7 +60,8 @@ class BookmarkActivity : AppCompatActivity(), OptionMenuListener {
                 browserViewModel.deleteBookmark(bookmarkEntity)
             }
             R.id.item_share -> {
-                val string = "Website: ${bookmarkEntity.title}\nUrl: ${bookmarkEntity.link}"
+                val string = "${getString(R.string.website)} ${bookmarkEntity.title}\n" +
+                        "${getString(R.string.url)} ${bookmarkEntity.link}"
                 browserViewModel.share(string)
             }
             else -> {

@@ -28,7 +28,7 @@ class TutorialFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentTutorialBinding.inflate(layoutInflater, container, false)
         return binding.root
@@ -65,7 +65,6 @@ class TutorialFragment : Fragment() {
             dotsIndicator.setViewPager2(viewPager)
         }
         viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
-
 
             override fun onPageScrolled(
                 position: Int,

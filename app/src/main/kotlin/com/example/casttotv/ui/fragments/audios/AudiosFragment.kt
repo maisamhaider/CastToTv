@@ -29,7 +29,7 @@ class AudiosFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentAudiosBinding.inflate(inflater, container, false)
         return binding.root
@@ -38,7 +38,7 @@ class AudiosFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapter = ImageVideosAdapter(::onItemClick, requireContext(), AUDIO)
+        val adapter = ImageVideosAdapter(::onItemClick, AUDIO)
 
         binding.recyclerView.adapter = adapter
 
@@ -47,8 +47,6 @@ class AudiosFragment : Fragment() {
                 CoroutineScope(Dispatchers.Main).launch {
                     if (!it.isNullOrEmpty()) {
                         adapter.submitList(it)
-                    } else {
-                        requireContext().toastLong("video not found.")
                     }
                 }
             }

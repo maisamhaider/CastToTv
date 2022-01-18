@@ -1,16 +1,12 @@
 package com.example.casttotv.ui.activities.browser
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.widget.CheckBox
 import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatActivity
 import com.example.casttotv.databinding.ActivityDataControlBinding
-import com.example.casttotv.databinding.LayoutBodyPosAndNegButtonBinding
+import com.example.casttotv.ui.activities.BaseActivity
 import com.example.casttotv.viewmodel.BrowserViewModel
-import com.google.android.material.bottomsheet.BottomSheetDialog
 
-class DataControlActivity : AppCompatActivity() {
+class DataControlActivity : BaseActivity() {
     private lateinit var _binding: ActivityDataControlBinding
     private val binding get() = _binding
 
@@ -28,27 +24,6 @@ class DataControlActivity : AppCompatActivity() {
             dataControlLayout2.browserVM = browserViewModel
             dataControlActivity = this@DataControlActivity
         }
-    }
-
-
-    fun deleteDatabaseBottomSheet(body: String, pos: String, nag: String) {
-        val bottomSheet = BottomSheetDialog(this)
-        val view = LayoutBodyPosAndNegButtonBinding.inflate(LayoutInflater.from(this), null, false)
-        bottomSheet.setContentView(view.root)
-        view.apply {
-            textviewBody.text = body
-            textviewPositive.text = pos
-            textviewNegative.text = nag
-            textviewPositive.setOnClickListener {
-                bottomSheet.cancel()
-            }
-            textviewNegative.setOnClickListener {
-                bottomSheet.cancel()
-            }
-        }
-
-
-        bottomSheet.show()
     }
 
     fun back() {

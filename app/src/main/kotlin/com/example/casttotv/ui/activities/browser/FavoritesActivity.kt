@@ -2,17 +2,17 @@ package com.example.casttotv.ui.activities.browser
 
 import android.os.Bundle
 import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.asLiveData
 import com.example.casttotv.R
 import com.example.casttotv.adapter.FavoriteAdapter
 import com.example.casttotv.database.entities.FavoritesEntity
 import com.example.casttotv.databinding.ActivityFavoritesBinding
 import com.example.casttotv.interfaces.OptionMenuListener
+import com.example.casttotv.ui.activities.BaseActivity
 import com.example.casttotv.utils.MySingleton.historyBookFavClose
 import com.example.casttotv.viewmodel.BrowserViewModel
 
-class FavoritesActivity : AppCompatActivity(), OptionMenuListener {
+class FavoritesActivity : BaseActivity(), OptionMenuListener {
     private lateinit var _binding: ActivityFavoritesBinding
     private val binding get() = _binding
 
@@ -58,7 +58,9 @@ class FavoritesActivity : AppCompatActivity(), OptionMenuListener {
                 browserViewModel.deleteFavorites(favoritesEntity)
             }
             R.id.item_share -> {
-                val string = "Website: ${favoritesEntity.title}\nUrl: ${favoritesEntity.link}"
+                val string = "${getString(R.string.website)} ${favoritesEntity.title}\n" +
+                        "${getString(R.string.url)} ${favoritesEntity.link}"
+
                 browserViewModel.share(string)
             }
             else -> {

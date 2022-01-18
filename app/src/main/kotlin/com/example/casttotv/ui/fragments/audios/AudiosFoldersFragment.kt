@@ -53,8 +53,6 @@ class AudiosFoldersFragment : Fragment() {
             CoroutineScope(Dispatchers.Main).launch {
                 if (!it.isNullOrEmpty()) {
                     adapter.submitList(it)
-                } else {
-                    requireContext().toastLong("Image not found.")
                 }
             }
         }

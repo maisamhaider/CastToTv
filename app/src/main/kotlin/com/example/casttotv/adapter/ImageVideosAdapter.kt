@@ -18,8 +18,7 @@ import com.example.casttotv.viewmodel.SharedViewModel
 
 class ImageVideosAdapter(
     val onItemClicked: (FileModel, Int) -> Unit,
-    private var context: Context,
-    private val mimType: String,
+     private val mimType: String,
 ) :
     ListAdapter<FileModel, ImageVideosAdapter.Holder>(DIF_UTIL) {
     private val sliderImageList: MutableList<FileModel> = ArrayList()
@@ -41,8 +40,7 @@ class ImageVideosAdapter(
     class Holder(private val binding: ImagesVideosItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(
-            context: Context,
-            fileModel: FileModel,
+             fileModel: FileModel,
             mimType: String,
             sliderImageList: MutableList<FileModel>,
             onItemClicked: (FileModel, Int) -> Unit,
@@ -53,26 +51,26 @@ class ImageVideosAdapter(
                 VIDEO -> {
                     binding.imageViewPlay.visibility = View.VISIBLE
 
-                    Glide.with(context).load(fileModel.filePath).into(binding.imageView)
+                    Glide.with(itemView).load(fileModel.filePath).into(binding.imageView)
                 }
                 IMAGE -> {
                     binding.imageViewPlay.visibility = View.GONE
 
-                    Glide.with(context).load(fileModel.filePath).into(binding.imageView)
+                    Glide.with(itemView).load(fileModel.filePath).into(binding.imageView)
 //                    binding.imageView.setImageURI(Uri.parse(fileModel.filePath))
                 }
                 SLIDE -> {
                     binding.checkBox.visibility = View.VISIBLE
                     binding.checkBox.isChecked = sliderImageList.contains(fileModel)
                     binding.imageViewPlay.visibility = View.GONE
-                    Glide.with(context).load(fileModel.filePath).into(binding.imageView)
+                    Glide.with(itemView).load(fileModel.filePath).into(binding.imageView)
                     binding.checkBox.setOnClickListener {
                         onItemClicked(fileModel, absoluteAdapterPosition)
                     }
 
                 }
                 else -> {
-                    Glide.with(context).load(R.drawable.ic_launcher_background)
+                    Glide.with(itemView).load(R.drawable.ic_launcher_background)
                         .into(binding.imageView)
                 }
             }
@@ -105,7 +103,7 @@ class ImageVideosAdapter(
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
 
-        holder.bind(context,
+        holder.bind(
             getItem(holder.absoluteAdapterPosition),
             mimType,
             sliderImageList,

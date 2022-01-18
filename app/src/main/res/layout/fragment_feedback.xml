@@ -61,12 +61,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="?attr/colorPrimary"
-                android:fontFamily="@font/ubuntu"
-                android:hint="@string/type_here"
-                app:expandedHintEnabled="true"
-                app:hintAnimationEnabled="true"
-                app:hintEnabled="true">
+                android:background="?attr/colorPrimary">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_input"
@@ -74,7 +69,8 @@
                     android:layout_height="match_parent"
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/ubuntu"
-                    android:gravity="top" />
+                    android:gravity="top"
+                    android:hint="@string/type_here" />
             </com.google.android.material.textfield.TextInputLayout>
 
         </com.google.android.material.card.MaterialCardView>
@@ -91,18 +87,14 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="?attr/colorPrimary"
-                android:fontFamily="@font/ubuntu"
-                android:hint="@string/enter_your_email_optional"
-                app:expandedHintEnabled="true"
-                app:hintAnimationEnabled="true"
-                app:hintEnabled="true">
+                android:background="?attr/colorPrimary">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_email"
                     style="@style/w_m_h_m"
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/ubuntu"
+                    android:hint="@string/enter_your_email_optional"
                     android:maxLines="1" />
             </com.google.android.material.textfield.TextInputLayout>
         </com.google.android.material.card.MaterialCardView>

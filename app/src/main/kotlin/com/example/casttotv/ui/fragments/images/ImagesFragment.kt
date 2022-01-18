@@ -35,7 +35,7 @@ class ImagesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapter = ImageVideosAdapter(::onItemClick, requireContext(), IMAGE)
+        val adapter = ImageVideosAdapter(::onItemClick, IMAGE)
 
         binding.apply {
             imagesFrag = this@ImagesFragment
@@ -44,8 +44,6 @@ class ImagesFragment : Fragment() {
         sharedViewModel.imagesByFolder(singletonFolderModel.folderPath).observe(viewLifecycleOwner) {
             if (!it.isNullOrEmpty()) {
                 adapter.submitList(it)
-            } else {
-                requireContext().toastLong("Image not found.")
             }
         }
 

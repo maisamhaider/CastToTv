@@ -47,7 +47,6 @@ class LanguagesAdapter(
             binding.checkbox.isChecked = context.getPrefs(LOCALE_LANGUAGE, "en") == lang.code
 
 
-
             if (context.getPrefs(LOCALE_LANGUAGE, "en") == lang.code) {
                 binding.textview.setTextColor(ContextCompat.getColor(context,
                     R.color.cr_dodger_blue_light_2))

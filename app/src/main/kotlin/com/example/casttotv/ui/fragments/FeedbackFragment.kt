@@ -19,7 +19,11 @@ import com.example.casttotv.dataclasses.Feedback
 import com.example.casttotv.utils.Internet
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.viewmodel.MainViewModel
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import java.util.*
+import kotlin.collections.ArrayList
 
 class FeedbackFragment : Fragment() {
     private lateinit var _binding: FragmentFeedbackBinding
@@ -32,11 +36,11 @@ class FeedbackFragment : Fragment() {
     private val adapterList: MutableList<Feedback> = mutableListOf(Feedback("Add".toUri()),
         Feedback(null), Feedback(null))
 
-    val adapterList2: MutableList<Feedback> = mutableListOf(Feedback("Add".toUri()))
+    private val adapterList2: MutableList<Feedback> = mutableListOf(Feedback("Add".toUri()))
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentFeedbackBinding.inflate(inflater, container, false)
         return binding.root
@@ -63,31 +67,32 @@ class FeedbackFragment : Fragment() {
 
     }
 
-
     private var someActivityResultLauncher = registerForActivityResult(
         StartActivityForResult()
     ) { result ->
         if (result.resultCode == Activity.RESULT_OK && result.data?.clipData != null
         ) {
-            if (imagesUriArrayList.isNotEmpty()) {
-                imagesUriArrayList.clear()
-            }
-            if (adapterList2[adapterList2.size - 1].uri == null) {
-                adapterList2.removeAt(adapterList2.size - 1)
-                adapterList2.removeAt(adapterList2.size - 1)
-            }
             val clipData = result.data!!.clipData
             for (i in 0 until clipData!!.itemCount) {
-                val uri: Uri = clipData.getItemAt(i).uri
-
-                adapterList2.add(Feedback(uri = uri))
+                if (adapterList2.size < 6) {
+                    val uri = clipData.getItemAt(i).uri
+                    uri?.let {
+                        adapterList2.add(Feedback(uri = uri))
+                    }
+                } else {
+                    break
+                }
             }
-            val filteredList =
-                adapterList2.filter { !it.uri.toString().contains("Add") && it.uri != null }
-            filteredList.forEach {
-                imagesUriArrayList.add(it.uri!!)
-            }
 
+
+            CoroutineScope(Dispatchers.IO).launch {
+                val filteredList =
+                    adapterList2.filter { !it.uri.toString().contains("Add") && it.uri != null }
+                filteredList.forEach {
+                    imagesUriArrayList.add(it.uri!!)
+                }
+
+            }
             adapter.submitList(adapterList2)
             adapter.notifyDataSetChanged()
         }
@@ -98,12 +103,17 @@ class FeedbackFragment : Fragment() {
     }
 
     fun onItemClick(feedback: Feedback) {
-        val intent = Intent()
-        intent.type = "image/*"
-        intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true)
-        intent.action = Intent.ACTION_GET_CONTENT
-        someActivityResultLauncher.launch(Intent.createChooser(intent,
-            getString(R.string.select_picture)))
+        if (adapterList2.size < 5) {
+            val intent = Intent()
+            intent.type = "image/*"
+            intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true)
+            intent.action = Intent.ACTION_GET_CONTENT
+            someActivityResultLauncher.launch(Intent.createChooser(intent,
+                getString(R.string.select_picture)))
+        } else {
+            requireContext().toastLong(getString(R.string.more_then_5_images_can_not_be_picked))
+        }
+
     }
 
 }

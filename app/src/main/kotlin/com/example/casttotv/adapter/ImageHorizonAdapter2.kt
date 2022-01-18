@@ -14,8 +14,7 @@ import com.example.casttotv.dataclasses.FileModel
 
 class ImageHorizonAdapter2(
     val onItemClicked: (FileModel, Int) -> Unit,
-    private var context: Context,
-    private val isSlider: Boolean,
+     private val isSlider: Boolean,
 ) : ListAdapter<FileModel, ImageHorizonAdapter2.Holder>(DIF_UTIL) {
     private var selected = 0
 
@@ -34,8 +33,8 @@ class ImageHorizonAdapter2(
 
     class Holder(private val binding: ImagesItem2Binding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun bind(context: Context, fileModel: FileModel, isSlider: Boolean) {
-            Glide.with(context).load(fileModel.filePath).into(binding.imageView)
+        fun bind(fileModel: FileModel, isSlider: Boolean) {
+            Glide.with(itemView).load(fileModel.filePath).into(binding.imageView)
             if (isSlider) {
                 binding.imageviewSelect.setImageResource(R.drawable.ic_eye)
             } else {
@@ -43,7 +42,7 @@ class ImageHorizonAdapter2(
             }
         }
 
-        fun setBack(context: Context, boolean: Boolean) {
+        fun setBack(boolean: Boolean) {
             if (boolean) {
                 binding.clSelect.visibility = View.VISIBLE
             } else {
@@ -70,8 +69,8 @@ class ImageHorizonAdapter2(
     }
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.bind(context, getItem(holder.absoluteAdapterPosition), isSlider)
-        holder.setBack(context, holder.absoluteAdapterPosition == selected)
+        holder.bind(getItem(holder.absoluteAdapterPosition), isSlider)
+        holder.setBack(holder.absoluteAdapterPosition == selected)
 
 
     }

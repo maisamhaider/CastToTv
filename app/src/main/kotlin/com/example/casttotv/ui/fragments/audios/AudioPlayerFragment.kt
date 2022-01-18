@@ -82,7 +82,6 @@ class AudioPlayerFragment : Fragment() {
                 CoroutineScope(Dispatchers.Main).launch {
                     if (!it.isNullOrEmpty()) {
                         audiosModelList.clear()
-
                         audiosModelList.addAll(it)
                     } else {
                         requireContext().toastLong("videos not found.")
@@ -259,16 +258,13 @@ class AudioPlayerFragment : Fragment() {
                 audioSpeed += 10
                 sharedViewModel.adjustPlayerSpeed(audioSpeed)
 
-            } else {
-                requireContext().toastLong("max speed is 4.0x")
             }
+
         } else {
             if (audioSpeed > 10) {
                 audioSpeed -= 10
                 sharedViewModel.adjustPlayerSpeed(audioSpeed)
 
-            } else {
-                requireContext().toastLong("min speed is 0.25x")
             }
         }
 
