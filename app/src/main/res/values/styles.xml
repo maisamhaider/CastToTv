@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="button1">
-        <item name="android:padding">10dp</item>
-        <item name="cornerRadius">10dp</item>
-        <item name="android:textColor">@color/cr_white</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-    </style>
-
-    <style name="button_w0_hw">
-        <item name="android:padding">10dp</item>
-        <item name="cornerRadius">10dp</item>
-        <item name="android:layout_width">@dimen/dp_0</item>
-        <item name="android:layout_height">wrap_content</item>
-    </style>
     <!--//-->
     <style name="w_0_h_0">
         <item name="android:layout_width">0dp</item>

@@ -19,6 +19,8 @@ import com.example.casttotv.R
 import com.example.casttotv.databinding.HomeFragmentBinding
 import com.example.casttotv.interfaces.MyCallBack
 import com.example.casttotv.ui.activities.MainActivity
+import com.example.casttotv.utils.Internet
+import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
 import com.example.casttotv.utils.MySingleton.shareApp
 import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.THEME_DARK
@@ -40,6 +42,8 @@ class HomeFragment : Fragment(), MyCallBack {
 
     val version = BuildConfig.VERSION_NAME
     private var connection: ConnectivityManager? = null
+    lateinit var mainActivity: MainActivity
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
@@ -58,16 +62,19 @@ class HomeFragment : Fragment(), MyCallBack {
                 requireContext().shareApp()
             }
         }
-
-        val mainActivity = activity as MainActivity
+        mainActivity = activity as MainActivity
         mainActivity.refreshAd(binding.adContainerBig)
         mainActivity.refreshAdSmallNative(binding.adContainerSmall)
 
     }
 
     fun languagesDialog() {
-        viewModel.languageDialog(requireContext())
+        viewModel.languageDialog(requireContext(),::click)
     }
+
+    fun click() {
+        mainActivity.restartActivity()
+     }
 
 
     fun rateUs() {
@@ -96,7 +103,7 @@ class HomeFragment : Fragment(), MyCallBack {
 
 
     fun goToScreenMirroring() {
-        navController.navigate(R.id.action_homeFragment_to_screenMirroringFragment)
+        requireContext().enablingWiFiDisplay()
     }
 
     fun goToImages() {
@@ -146,7 +153,6 @@ class HomeFragment : Fragment(), MyCallBack {
                 binding.imageviewWifiState.setImageDrawable(ContextCompat.getDrawable(requireContext(),
                     R.drawable.ic_wifi_disconnected))
             }
-
         }
 
         override fun onAvailable(network: Network) {
@@ -154,6 +160,8 @@ class HomeFragment : Fragment(), MyCallBack {
                 binding.textviewWifiState.text = getString(R.string.wifi_connected)
                 binding.imageviewWifiState.setImageDrawable(ContextCompat.getDrawable(requireContext(),
                     R.drawable.ic_wifi_connected))
+                mainActivity.refreshAd(binding.adContainerBig)
+                mainActivity.refreshAdSmallNative(binding.adContainerSmall)
             }
         }
     }
@@ -170,6 +178,19 @@ class HomeFragment : Fragment(), MyCallBack {
         connection!!.registerNetworkCallback(networkRequestWiFi, networkCallbackWiFi)
 
         setIcons()
+        if (Internet(requireContext()).isInternetAvailable()) {
+            CoroutineScope(Dispatchers.Main).launch {
+                binding.textviewWifiState.text = getString(R.string.wifi_connected)
+                binding.imageviewWifiState.setImageDrawable(ContextCompat.getDrawable(requireContext(),
+                    R.drawable.ic_wifi_connected))
+            }
+        } else {
+            CoroutineScope(Dispatchers.Main).launch {
+                binding.textviewWifiState.text = getString(R.string.wifi_disconnected)
+                binding.imageviewWifiState.setImageDrawable(ContextCompat.getDrawable(requireContext(),
+                    R.drawable.ic_wifi_disconnected))
+            }
+        }
     }
 
     override fun onDestroy() {

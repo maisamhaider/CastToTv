@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Gujarati-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+
+    <string name="location">સ્થાન</string>
+    <string name="connection_close_confirm">શું તમે વર્તમાન VPN કનેક્શનને રદ કરવા માંગો છો?</string>
+    <string name="yes">હા</string>
+    <string name="no">ના</string>
+    <string name="yes_2">હા</string>
+    <string name="no_2">ના</string>
+    <string name="select_images">છબીઓ પસંદ કરો</string>
+    <string name="tabs">ટૅબ્સ</string>
+    <string name="share">શેર કરો</string>
+    <string name="save">સાચવો</string>
+    <string name="more">વધુ</string>
+    <string name="ok">બરાબર</string>
+    <string name="cancel">રદ કરો</string>
+    <string name="favorite_site">ડિફૉલ્ટ વેબસાઇટ બદલો જે બ્રાઉઝરના પ્રારંભ પર\nલોડ થાય છે</string>
+    <string name="custom_search_engine_body">કસ્ટમ શોધ url ઉમેરો પણ શોધ પ્રદાતા તરીકે “કસ્ટમ\nસર્ચ એન્જિન” પસંદ કરો</string>
+    <string name="search_engine_body">તમારું મનપસંદ શોધ એંજીન પસંદ કરો અથવા\nકસ્ટમ એક સેટ કરો</string>
+    <string name="data_control_body">તમારો બ્રાઉઝર ડેટા સાફ કરો અથવા નક્કી કરો કે કયો ડેટા\nજ્યારે તમે ઍપ છોડો ત્યારે સાફ કરવામાં આવશે</string>
+    <string name="start_control_body">બ્રાઉઝરના કયા ઘટકો\nશરૂ થશે તે નક્કી કરો</string>
+    <string name="behavior_ui_body">તમારી પસંદગીઓને અનુરૂપ\nએપનું વર્તન અને UI બદલો</string>
+    <string name="book_mark_body">ફિલ્ટર સંવાદ બતાવવા માટે વિહંગાવલોકનમાં બુકમાર્ક આઇકોન પર લાંબો સમય દબાવો. તમે કયા ફિલ્ટર્સનો ઉપયોગ કરશો તે નક્કી કરો</string>
+    <string name="app_settings_body">બ્રાઉઝર સેટિંગ્સ, ત્યાં તમે તમારા એન્ડ્રોઇડ વર્ઝનના આધારે પરવાનગી આપી શકો છો.</string>
+    <string name="start_control_image_body">નેટવર્ક ઈમેજીસને સક્ષમ કરો, મોબાઈલ ડેટા બચાવવા અને વેબસાઈટ ઝડપથી લોડ કરવા માટે\nઅક્ષમ કરવું ઉપયોગી થઈ શકે છે</string>
+    <string name="start_control_location_body">વેબસાઇટ્સને તમારું સ્થાન ઍક્સેસ કરવાની મંજૂરી આપો. કેટલીક\nવેબસાઇટ્સ {google, maps for nav) ને આ સક્ષમ કરવાની જરૂર છે</string>
+    <string name="start_control_history_body">મુલાકાત લીધેલ વેબસાઇટ્સનો ઇતિહાસ સાચવો</string>
+    <string name="start_control_java_script_body">JavaScript સક્ષમ કરો. ઘણી વેબસાઇટ્સને તેમની કાર્યક્ષમતા માટે\nજાવાસ્ક્રિપ્ટની જરૂર છે. પરંતુ તેઓ આરામ પણ કરે છે અને હુમલા માટે તેનો ઉપયોગ કરી શકાય છે</string>
+    <string name="start_control_cookies_body">કૂકીઝ સક્ષમ કરો. કૂકીઝ નાની ટેક્સ્ટ ફાઇલો છે,
+જે તમારા ઉપકરણ પર સંગ્રહિત છે. વેબસાઇટ્સનો ઉપયોગ કરે છે
+તેમને ઉદાહરણ તરીકે વપરાશકર્તા સેટિંગ્સ સંગ્રહિત કરવા માટે. પણ
+તેઓનો ઉપયોગ વ્યક્તિગત વપરાશકર્તાને એકત્રિત કરવા માટે પણ થઈ શકે છે
+ડેટા તૃતીય પક્ષ કૂકીઝ હંમેશા અક્ષમ હોય છે.</string>
+    <string name="confirmation_browser_exit_body">બ્રાઉઝરને\nબંધ કરતી વખતે પુષ્ટિકરણ સંવાદ</string>
+    <string name="confirmation_tab_close_body">ટેબ બંધ કરતી વખતે પુષ્ટિકરણ સંવાદ</string>
+    <string name="confirmation_reopen_last_body">જ્યારે છેલ્લી ટેબ બંધ હોય ત્યારે બ્રાઉઝરમાંથી બહાર નીકળવાને બદલે નવી ટેબ ફરીથી ખોલો</string>
+    <string name="hide_toolbar_body">વેબસાઇટ પર સ્ક્રોલ કરતી વખતે આખી સ્ક્રીનનો ઉપયોગ કરો જો તમે પાછળનું બટન દબાવશો તો તમે પૂર્ણસ્ક્રીન મોડ છોડી જશો</string>
+    <string name="images">છબીઓ</string>
+    <string name="videos">વિડિઓઝ</string>
+    <string name="web_browser">વેબ બ્રાઉઝર</string>
+    <string name="image_slider">છબી સ્લાઇડર</string>
+    <string name="next">આગળ</string>
+    <string name="previous">અગાઉના</string>
+    <string name="help">મદદ</string>
+    <string name="settings">સેટિંગ્સ</string>
+    <string name="language">ભાષાઓ</string>
+    <string name="more_app">વધુ એપ્સ</string>
+    <string name="rate_us">અમને રેટ કરો</string>
+    <string name="screen_mirroring">સ્ક્રીન મિરરિંગ</string>
+    <string name="home_screen_text">ખાતરી કરો કે તમારો ફોન અને ટીવી એક જ Wi-Fi નેટવર્ક સાથે જોડાયેલા છે.</string>
+    <string name="wifi_connected">Wi-Fi કનેક્ટેડ</string>
+    <string name="wifi_disconnected">Wi-Fi ડિસ્કનેક્ટ થયું</string>
+    <string name="general">જનરલ</string>
+    <string name="communicate">વાતચીત કરો</string>
+    <string name="send_feedback">પ્રતિસાદ મોકલ</string>
+    <string name="tutorial">ટ્યુટોરીયલ</string>
+    <string name="how_to_use">કેવી રીતે વાપરવું?</string>
+    <string name="streaming">સ્ટ્રીમિંગ</string>
+    <string name="streaming_quality">સ્ટ્રીમિંગ ગુણવત્તા</string>
+    <string name="auto_stop">ઓટો સ્ટોપ</string>
+    <string name="auto_minimize">સ્વતઃ નાનું કરો</string>
+    <string name="advance">એડવાન્સ</string>
+    <string name="orientation_mode">ઓરિએન્ટેશન મોડ</string>
+    <string name="auto_stop_body_text">લક્ષ્‍ય સાથે\nકનેક્શન ખોવાઈ જાય ત્યારે વિડિયો બંધ કરો</string>
+    <string name="auto_minimize_body_text">જ્યારે મિરરિંગ શરૂ થાય ત્યારે એપ્લિકેશન છુપાવો</string>
+    <string name="casting_orientation_body_text">કાસ્ટિંગ ઓરિએન્ટેશન</string>
+    <string name="mirroring_mode">મિરરિંગ મોડ</string>
+    <string name="screen_mirroring_privacy_policy">સ્ક્રીન મિરરિંગ ગોપનીયતા નીતિ</string>
+    <string name="privacy_policy">ગોપનીયતા નીતિ</string>
+    <string name="supporting_devices">સહાયક ઉપકરણો</string>
+    <string name="see_which_devices_support_mirroring">જુઓ કે કયા ઉપકરણો મિરરિંગને સપોર્ટ કરે છે</string>
+    <string name="color_theme">રંગ થીમ</string>
+    <string name="dark">શ્યામ</string>
+    <string name="light">પ્રકાશ</string>
+    <string name="auto">ઓટો</string>
+    <string name="select_language">ભાષા પસંદ કરો</string>
+    <string name="close">બંધ</string>
+    <string name="images_slider">છબીઓ સ્લાઇડર</string>
+    <string name="screen_mirror">સ્ક્રીન મિરર</string>
+    <string name="tutorial_screen_setup_body">તમારું લક્ષ્ય ઉપકરણ આ ઉપકરણ જેવા જ Wi-Fi નેટવર્કમાં હોવું જોઈએ, કારણ કે સ્ક્રીન મિરર તમારી સ્ક્રીનને પ્રસારિત કરી રહ્યું છે.</string>
+    <string name="tutorial_screen_mirror_body">તમારા ઉપકરણની સ્ક્રીનને તમારા કમ્પ્યુટર, નોટબુક અથવા ટેબ્લેટ પર Wi-Fi પર સ્ટ્રીમ કરો.</string>
+    <string name="tutorial_device_hotspot_body">તમે તમારા ઉપકરણના હોટસ્પોટ (ટીથરિંગ મોડ) નો પણ ઉપયોગ કરી શકો છો અને તમારા લક્ષ્ય ઉપકરણને તમારા હોટસ્પોટ સાથે કનેક્ટ કરી શકો છો.</string>
+    <string name="tutorial_scan_code_body">તમારા લક્ષ્ય ઉપકરણ પર સાઇટ ખોલો. QR કોડ સ્કેન કરીને કનેક્શન કન્ફિગરેશન ટ્રાન્સમિટ થાય છે અને મિરરિંગ શરૂ થાય છે.</string>
+    <string name="tutorial_support_body">કૃપા કરીને ધ્યાન રાખો કે સ્ક્રીન મિરર માત્ર ત્યારે જ કામ કરે છે જ્યારે યોગ્ય રીતે સેટઅપ થાય. સ્ક્રીન મિરર તમારી સ્ક્રીનને ટ્રાન્સમિટ કરે છે, પરંતુ તમારા ઉપકરણના ઑડિયો સિગ્નલને નહીં. જો તમને કોઈ સમસ્યા આવે તો અમારો સંપર્ક કરો.</string>
+    <string name="walk_through_body_1">સરળ અને ઉચ્ચ ગુણવત્તાની સ્ટ્રીમિંગનો આનંદ લો\nકોઈપણ વિલંબ વિના</string>
+    <string name="walk_through_body_2">કોઈપણ સ્માર્ટ ઉપકરણ સાથે કનેક્ટ થાઓ અને કોઈપણ સ્ક્રીન પર\nશોનો આનંદ લો</string>
+    <string name="walk_through_body_3">કોઈ મર્યાદાઓ વિના એપ્લિકેશનમાં ખાનગી બ્રાઉઝરનો આનંદ માણો</string>
+    <string name="screen_setup">સ્ક્રીન સેટઅપ</string>
+    <string name="device_hotspot">ઉપકરણનું હોટસ્પોટ</string>
+    <string name="scan_code">સ્કેન કોડ</string>
+    <string name="support">આધાર</string>
+    <string name="finish">સમાપ્ત કરો</string>
+    <string name="our_policies">અમારી નીતિઓ</string>
+    <string name="privacy_policy_text">તમારી ગોપનીયતાનું રક્ષણ કરવું અમારા માટે મહત્વપૂર્ણ છે. અમે આશા રાખીએ છીએ કે નીચેનું નિવેદન તમને એ સમજવામાં મદદ કરશે કે અમે વ્યક્તિગત ઓળખી શકાય તેવી માહિતી સાથે કેવી રીતે વ્યવહાર કરીએ છીએ, તમે અવારનવાર અમને ઇન્ટરનેટ (Google Play પ્લેટફોર્મ) દ્વારા પ્રદાન કરી શકો છો.\n\nસામાન્ય રીતે. જ્યારે તમે અમારી Android એપ્લિકેશનો ડાઉનલોડ કરો છો ત્યારે અમે તમારી પાસેથી કોઈ PII એકત્રિત કરતા નથી. ચોક્કસ કહેવા માટે, અમને અમારી એપ્લિકેશનની ઉપભોક્તાઓની મુલાકાતની જરૂર નથી, અમારી પાસે આવા PII સંગ્રહવા માટે સર્વર પણ નથી.\n\nસ્ક્રીન મિરરિંગ ફેસબુકનો ઉપયોગ જાહેરાત પ્રદાતા તરીકે કરે છે. Facebook તમને સંબંધિત હોય તેવી જાહેરાતો બતાવવા માંગે છે. વધુ માહિતી માટે કૃપા કરીને\nhttps://m.facebook.com/ads/ad_choices ની મુલાકાત લો.\n\nજ્યારે તમે વ્યક્તિગત રૂપે અમને તમારો પ્રતિસાદ મોકલવાનું અથવા અમને બગ આપવાનું નક્કી કરો ત્યારે જ અમે તમારી PII ઍક્સેસ મેળવી શકીએ છીએ. અહેવાલ તે પરિસ્થિતિમાં અમે તમારી પાસેથી જે PII મેળવી શકીએ છીએ તે ફક્ત તમારા નામ, ઇમેઇલ સરનામું અને તમારા સર્વેક્ષણ પ્રતિસાદ સુધી જ મર્યાદિત છે.\n\nઉપરની પરિસ્થિતિમાં, અમે બાંહેધરી આપીએ છીએ કે તમારો PII ફક્ત તમારો સંપર્ક કરવા અને અમારી સેવાઓ સુધારવા માટે જ કરવામાં આવશે. અમે આવી માહિતીનો ઉપયોગ ક્યારેય નહીં કરીએ (દા.ત. તમારું નામ અને ઈમેલ સરનામું_ અન્ય કોઈપણ હેતુઓ માટે, જેમ કે અમારા ઉત્પાદનોનું વધુ માર્કેટિંગ કરવા, અથવા તમારી વ્યક્તિગત માહિતીને વ્યાપારી લાભ માટે તૃતીય પક્ષને જાહેર કરવા.\n\nતેની નોંધ લેવી જોઈએ કે અમને તમારો પ્રતિસાદ અથવા બગ રિપોર્ટ ન મોકલવો એ તમારા પોતાના નિર્ણય પર એક સંપૂર્ણપણે સ્વૈચ્છિક પહેલ છે. જો તમને તમારા PII નો દુરુપયોગ થઈ રહ્યો હોવાની ચિંતા હોય, અથવા જો તમે અમારી ગોપનીયતા નીતિ અને તેનો અર્થ શું છે તે વિશે વધુ માહિતી માંગતા હો, તો કૃપા કરીને અમને ઇમેઇલ કરો screenmirroring.feedback@gmail.com પર, અમે તમારા પ્રશ્નોના સ્પષ્ટ જવાબો સમયસર આપવાનો પ્રયત્ન કરીશું.</string>
+    <string name="please_write_your_feedback">કૃપા કરીને તમારો પ્રતિભાવ લખો</string>
+    <string name="system_info">તમારી સિસ્ટમની માહિતી સ્ક્રીન મિરરિંગ ટેક વિભાગને મોકલવામાં આવશે</string>
+    <string name="send">મોકલો</string>
+    <string name="provide_feedback">પ્રતિક્રિયા આપવા</string>
+    <string name="invalid_email_provided">અમાન્ય ઇમેઇલ પ્રદાન કરેલ છે</string>
+    <string name="check_your_internet_connection">તમારું ઇન્ટરનેટ કનેક્શન તપાસો</string>
+    <string name="type_here">અહી લખો…</string>
+    <string name="enter_your_email_optional">તમારું ઇમેઇલ દાખલ કરો (વૈકલ્પિક)</string>
+    <string name="enjoy_the_app">એપ્લિકેશનનો આનંદ માણો છો?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">સ્ક્રીનનો ઉપયોગ કરીને તમારા અનુભવને રેટ કરો\nમિરરિંગ એપ્લિકેશન.</string>
+    <string name="not_now">અત્યારે નહિ</string>
+    <string name="feedback">પ્રતિસાદ:</string>
+    <string name="model">મોડલ:</string>
+    <string name="brand">બ્રાન્ડ:</string>
+    <string name="os_version">OS સંસ્કરણ:</string>
+    <string name="manufacturer">ઉત્પાદક:</string>
+    <string name="ram">રામ:</string>
+    <string name="send_email">સંદેશો મોકલો</string>
+    <string name="select_picture">ચિત્ર પસંદ કરો</string>
+    <string name="help_center">મદદ કેન્દ્ર</string>
+    <string name="question_1">ટીવી સાથે જોડી બનાવતી વખતે મારો ફોન \n"કનેક્ટિંગ" પર અટકી જાય છે.</string>
+    <string name="question_2">તે પહેલા મારા માટે કામ કરતું હતું, પરંતુ હવે \nતે કામ કરતું નથી.</string>
+    <string name="question_3">તે બતાવે છે કે મારું ઉપકરણ સમર્થિત \nનથી.</string>
+    <string name="question_4">મારું ટીવી જૂનું ટીવી છે અને તે વાઇ-ફાઇને \nસપોર્ટ કરતું નથી.</string>
+    <string name="question_5">ટીવી પરની છબી કાળી છે, પરંતુ અવાજ \nસાંભળી શકાય છે.</string>
+    <string name="question_6">કનેક્શન થોડા સમય પછી વિક્ષેપિત \nથશે.</string>
+    <string name="question_7">શું મારી અંગત માહિતી અથવા મોબાઈલ ડેટા \nસંપૂર્ણપણે સુરક્ષિત છે?</string>
+    <string name="q_answer_1_1">સ્માર્ટ ફોનનું Wi-Fi રીસ્ટાર્ટ કરો અને જુઓ કે કનેક્શન સફળ છે કે નહીં.</string>
+    <string name="q_answer_1_2">ટીવી બંધ કરો અને તેના પાવર કોર્ડને સોકેટમાંથી પણ દૂર કરો. 1 મિનિટ રાહ જુઓ અને ટીવી રીસ્ટાર્ટ કરો.</string>
+    <string name="q_answer_1_3">તમારા ફોન અને ટીવી વચ્ચેનું અંતર ઓછું કરો. તેને નજીક લઈ જાઓ.</string>
+    <string name="q_answer_2_1">જો તે પહેલા કામ કરે છે, તો તે ચોક્કસપણે ફરીથી ઉપયોગ કરી શકાય છે.</string>
+    <string name="q_answer_2_2">મોટાભાગની કનેક્શન સમસ્યાઓ ઉપકરણોને પુનઃપ્રારંભ કરીને ઉકેલી શકાય છે. બસ તમારા ફોન અને ટીવી બંનેને ફરીથી શરૂ કરો, ફરી પ્રયાસ કરવા માટે નિયમિત કનેક્શન પ્રક્રિયાને અનુસરો.</string>
+    <string name="q_answer_3_1">આનો અર્થ એ છે કે તમારો ફોન સ્ક્રીન મિરરિંગ ફંક્શનને સપોર્ટ કરતું નથી.</string>
+    <string name="q_answer_3_2">તમે ટીવી પર વિડિયો, ઓડિયો અને ફોટો કાસ્ટ કરવા માટે XCast નો ઉપયોગ કરી શકો છો. XCast સાથે, તમે ટીવી પર કાસ્ટ કરતી વખતે તમારા ફોનથી અન્ય વસ્તુઓ કરી શકો છો.</string>
+    <string name="q_answer_4_1">જો તમારું ટીવી HDMI ઇન્ટરફેસને સપોર્ટ કરે છે, તો અમે ભલામણ કરીએ છીએ કે તમે સ્ક્રીન મિરરિંગ માટે બાહ્ય રીસીવર ખરીદો. જેમ કે Chromecast, Anycast વગેરે.</string>
+    <string name="q_answer_5_1">કેટલીક સામગ્રીમાં કૉપિરાઇટ સુરક્ષા શામેલ હોય છે અને તે તૃતીય પક્ષ ઉપકરણો પર પ્રદર્શિત કરી શકાતી નથી, જેમ કે Netflix, Disney Plus વગેરે.</string>
+    <string name="q_answer_5_2">તમે વિડિઓ ડાઉનલોડ કરી શકો છો અથવા પ્રયાસ કરવા માટે અન્ય એપ્લિકેશનો પર સમાન સંસાધન શોધી શકો છો.</string>
+    <string name="q_answer_6_1">તમે તમારા Wi-Fi સેટિંગ્સમાં સ્માર્ટ કનેક્ટને ચાલુ કરી શકો છો. તે વધુ સારા Wi-Fi કનેક્શન્સ માટે સતત શોધ કરશે, અને હંમેશા આગળ અને પાછળ કનેક્ટ થશે.</string>
+    <string name="q_answer_6_2">કૃપા કરીને ખાતરી કરો કે મોબાઇલ ફોન અને ટીવીનું Wi-Fi SAM અને શ્રેષ્ઠ સિગ્નલ છે.</string>
+    <string name="q_answer_7_1">અમે તમારા અને તમારા મોબાઇલ ફોન પરની કોઈપણ માહિતીને મોનિટર કે એકત્રિત કરીશું નહીં. તમે કોઈપણ ચિંતા વગર તમારી સ્ક્રીન કાસ્ટ કરી શકો છો.</string>
+    <string name="q_answer_7_2">સિસ્ટમ તમને ચેતવણી આપી શકે છે કે સ્ક્રીન મિરરિંગ પહેલાં સલામતીનું જોખમ છે. આ માત્ર નિયમિત રીમાઇન્ડર છે, તે રહેશે</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">મિરાકાસ્ટ</string>
+    <string name="install">ઇન્સ્ટોલ કરો</string>
+    <string name="install_small">ઇન્સ્ટોલ કરો</string>
+    <string name="manual">મેન્યુઅલ</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">ખાતરી કરો કે તમારો ફોન અને ટીવી\nસમાન Wi-Fi નેટવર્કથી કનેક્ટેડ છે.</string>
+    <string name="hd_streaming">એચડી સ્ટ્રીમિંગ</string>
+    <string name="smart_devices">સ્માર્ટ ઉપકરણો</string>
+    <string name="private_browser">ખાનગી બ્રાઉઝર</string>
+    <string name="effects">અસરો</string>
+    <string name="slider">સ્લાઇડર</string>
+    <string name="search_or_type_web_address">વેબ સરનામું શોધો અથવા લખો</string>
+    <string name="install_2">ઇન્સ્ટોલ કરો</string>
+    <string name="bookmark">બુકમાર્ક</string>
+    <string name="downloads">ડાઉનલોડ્સ</string>
+    <string name="download">ડાઉનલોડ કરો</string>
+    <string name="favorites">મનપસંદ</string>
+    <string name="favorite">મનપસંદ</string>
+    <string name="history">ઇતિહાસ</string>
+    <string name="share_pdf">પીડીએફ શેર કરો</string>
+    <string name="copy_url">URL કૉપિ કરો</string>
+    <string name="share_app">એપ શેર કરો</string>
+    <string name="share_url">url શેર કરો</string>
+    <string name="exit">બહાર નીકળો</string>
+    <string name="new_tab">નવું ટેબ</string>
+    <string name="google">Google</string>
+    <string name="startpage">સ્ટાર્ટપેજ</string>
+    <string name="bing">બિંગ</string>
+    <string name="duckduckgo">ડકડકગો</string>
+    <string name="searx">સીઅરક્સ</string>
+    <string name="baidu">બાયડુ</string>
+    <string name="qwant">કવાંટ</string>
+    <string name="ecosia">ઇકોસિયા</string>
+    <string name="custom_search_engine">કસ્ટમ સર્ચ એન્જિન</string>
+    <string name="add_shortcut_to_home">ઘરમાં શોર્ટકટ ઉમેરો</string>
+    <string name="save_screenshot">સ્ક્રીનશોટ સાચવો</string>
+    <string name="add_to_bookmark">બુકમાર્કમાં ઉમેરો</string>
+    <string name="save_as_pdf">પીડીએફ તરીકે સાચવો</string>
+    <string name="save_action">ક્રિયા સાચવો</string>
+    <string name="add_to_favorite">મનપસંદમાં ઉમેરો</string>
+    <string name="search_engine">શોધ એન્જિન</string>
+    <string name="browser_exit_body">શું તમે ખરેખર બ્રાઉઝરથી બહાર નીકળવા માંગો છો</string>
+    <string name="exit_browser">બ્રાઉઝરથી બહાર નીકળો</string>
+    <string name="custom_user_agent">કસ્ટમ વપરાશકર્તા એજન્ટ</string>
+    <string name="start_control">નિયંત્રણ શરૂ કરો</string>
+    <string name="data_control">ડેટા નિયંત્રણ</string>
+    <string name="app_settings">એપ્લિકેશન સેટિંગ્સ</string>
+    <string name="browser_settings">બ્રાઉઝર સેટિંગ્સ</string>
+    <string name="behavior_ui">વર્તન/UI</string>
+    <string name="clear_cache">કેશ સાફ કરો</string>
+    <string name="clear_history">ઇતિહાસ સાફ કરો</string>
+    <string name="clear_browsing_history">બ્રાઉઝિંગ ઇતિહાસ સાફ કરો</string>
+    <string name="clear_all_cache">બધી કેશ સાફ કરો</string>
+    <string name="clear_database_body">"અનુક્રમિત ડેટાબેસેસ" અને "સ્થાનિક\ndટા આધારો" સાફ કરો</string>
+    <string name="clear_cookies_body">જો સક્ષમ હોય, તો બધી કૂકીઝ કાઢી નાખવામાં આવશે. તેમજ\nવિશ્વસનીય વેબસાઇટ્સની કૂકીઝ</string>
+    <string name="clear_databases">ડેટાબેસેસ સાફ કરો</string>
+    <string name="clear_cookies">કૂકીઝ સાફ કરો</string>
+    <string name="clear_when_application_exit">જ્યારે એપ્લિકેશન બહાર નીકળે છે ત્યારે સાફ કરો</string>
+    <string name="clear_when_application_exit_body">દર વખતે તમે ઉપરોક્ત તમામ ચેક કરેલ ડેટા\nડિલીટ કરવામાં આવશે</string>
+    <string name="image">છબી</string>
+    <string name="javascript">જાવાસ્ક્રિપ્ટ</string>
+    <string name="cookies">કૂકીઝ</string>
+    <string name="reopen_last_tab">છેલ્લું ટેબ ફરીથી ખોલો</string>
+    <string name="confirm_tab_close">ટેબ બંધ કરવાની પુષ્ટિ કરો</string>
+    <string name="confirm_browser_exit">બ્રાઉઝર બહાર નીકળવાની પુષ્ટિ કરો</string>
+    <string name="position">પદ</string>
+    <string name="first_toolbar">પ્રથમ ટૂલબાર</string>
+    <string name="hide_toolbar">ટૂલબાર છુપાવો</string>
+    <string name="toolbar">ટૂલબાર</string>
+    <string name="bookmarks">બુકમાર્ક્સ</string>
+    <string name="edit">સંપાદિત કરો</string>
+    <string name="today">આજે</string>
+    <string name="the_last_hour">છેલ્લો કલાક</string>
+    <string name="last_week">ગયા સપ્તાહે</string>
+    <string name="last_month">ગયા મહિને</string>
+    <string name="delete_all_history">બધો ઇતિહાસ કાઢી નાખો</string>
+    <string name="copied">નકલ કરેલ</string>
+    <string name="share_ss">શેર એસએસ</string>
+    <string name="file_manager">ફાઇલ મેનેજર</string>
+    <string name="search_on">શોધ ચાલુ</string>
+    <string name="add_shortcut">શોર્ટકટ ઉમેરો</string>
+    <string name="tab_exit">ટૅબ બહાર નીકળો</string>
+    <string name="do_you_want_to_close">તમે બંધ કરવા માંગો છો</string>
+    <string name="download_complete_share_image">ડાઉનલોડ પૂર્ણ. છબી શેર કરો</string>
+    <string name="update">અપડેટ કરો</string>
+    <string name="unfavorite">મનપસંદ</string>
+    <string name="no_input_provided">કોઈ ઇનપુટ આપવામાં આવ્યું નથી</string>
+    <string name="input">ઇનપુટ</string>
+    <string name="website_link">વેબસાઇટ લિંક</string>
+    <string name="for_you">તમારા માટે</string>
+    <string name="website">વેબસાઇટ:</string>
+    <string name="url">Url:</string>
+    <string name="date">તારીખ</string>
+    <string name="no_site_loaded">તમે લોડ કરેલી વેબસાઇટ નથી</string>
+    <string name="more_then_5_images_can_not_be_picked">પાંચથી વધુ છબીઓ પસંદ કરી શકાતી નથી</string>
+</resources>

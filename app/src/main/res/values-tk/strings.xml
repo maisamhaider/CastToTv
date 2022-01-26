@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Turkmen-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">Häzirki VPN birikmesini ýatyrmak isleýärsiňizmi?</string>
+    <string name="yes">Hawa</string>
+    <string name="no">NOOK</string>
+    <string name="yes_2">Hawa</string>
+    <string name="no_2">.Ok</string>
+    <string name="select_images">Suratlary saýlaň</string>
+    <string name="tabs">Salgylar</string>
+    <string name="share">Paýlaş</string>
+    <string name="save">Saklaň</string>
+    <string name="more">Has köp</string>
+    <string name="ok">Bolýar</string>
+    <string name="cancel">Elatyr</string>
+    <string name="favorite_site">Brauzeriň \ nstart-a ýüklenýän deslapky web sahypasyny üýtgediň</string>
+    <string name="custom_search_engine_body">Customörite gözleg url goşuň, gözleg üpjünçisi hökmünde “Custom \ nsearch motor” -y saýlaň</string>
+    <string name="search_engine_body">Halaýan gözleg motoryňyzy saýlaň ýa-da adaty birini guruň</string>
+    <string name="data_control_body">Brauzer maglumatlaryňyzy arassalaň ýa-da programmadan çykanyňyzda haýsy maglumatlaryň arassalanjakdygyny kesgitläň</string>
+    <string name="start_control_body">Brauzeriň haýsy bölekleriniň işe başlajakdygyny çözüň</string>
+    <string name="behavior_ui_body">Islegleriňizi kanagatlandyrmak üçin programmanyň özüni alyp barşyny we ui üýtgediň</string>
+    <string name="book_mark_body">Süzgüç gepleşik penjiresini görkezmek üçin umumy syndaky bellik belligine uzak basyň. Haýsy süzgüçleri ulanjakdygyňyzy çözüň</string>
+    <string name="app_settings_body">Brauzer sazlamalary, şol ýerde android wersiýasynyň rugsatnamasyna baglylykda edip bilersiňiz.</string>
+    <string name="start_control_image_body">Tor şekillerini işletmek, Öçürmek peýdaly bolup biler, ykjam maglumatlary tygşytlamak we web sahypasyny has çalt ýüklemek</string>
+    <string name="start_control_location_body">Web sahypalaryna ýerleşýän ýeriňize girmäge rugsat beriň. Käbir \ nwebsites {google, nav üçin kartalar) bu mümkinçilige mätäç</string>
+    <string name="start_control_history_body">Girilen web sahypalarynyň taryhyny ýazdyryň</string>
+    <string name="start_control_java_script_body">JavaScript-i işlediň. Köp web sahypalarynyň işlemegi üçin \ nJavaScript gerek. Theyöne olar dynç alýarlar we hüjümler üçin ulanylyp bilner</string>
+    <string name="start_control_cookies_body">Kukileri işletmek. Kukiler kiçi tekst faýllarydyr,
+enjamyňyzda saklanýar. Web sahypalary ulanýar
+mysal üçin ulanyjy sazlamalaryny saklamak üçin. Emma
+şahsy ulanyjy ýygnamak üçin hem ulanylyp bilner
+maglumatlary. Üçünji tarap gutapjyklary elmydama ýapyk.</string>
+    <string name="confirmation_browser_exit_body">Brauzeri ýapanyňyzda tassyklama gepleşik</string>
+    <string name="confirmation_tab_close_body">Salgy ýapylanda tassyklama gepleşik penjiresi</string>
+    <string name="confirmation_reopen_last_body">Brauzerden çykmagyň ýerine iň soňky tab ýapylanda täze goýmany açyň</string>
+    <string name="hide_toolbar_body">Web sahypasynda aýlananyňyzda tutuş ekrany ulanyň, yzky düwmä bassaňyz, doly ekran re modeiminden çykarsyňyz</string>
+    <string name="images">Suratlar</string>
+    <string name="videos">Wideo</string>
+    <string name="web_browser">Web brauzeri</string>
+    <string name="image_slider">Surat slaýderi</string>
+    <string name="next">Indiki</string>
+    <string name="previous">Öňki</string>
+    <string name="help">Kömek ediň</string>
+    <string name="settings">Sazlamalar</string>
+    <string name="language">Diller</string>
+    <string name="more_app">Has köp programma</string>
+    <string name="rate_us">Bize baha beriň</string>
+    <string name="screen_mirroring">Ekranyň aýnasy</string>
+    <string name="home_screen_text">Telefonyňyzyň we telewizoryňyzyň bir Wi-Fi toruna birikdirilendigine göz ýetiriň.</string>
+    <string name="wifi_connected">Wi-Fi birikdirildi</string>
+    <string name="wifi_disconnected">Wi-Fi kesildi</string>
+    <string name="general">General</string>
+    <string name="communicate">Aragatnaşyk</string>
+    <string name="send_feedback">Seslenme iber</string>
+    <string name="tutorial">Talyplyk</string>
+    <string name="how_to_use">Nähili ulanmaly?</string>
+    <string name="streaming">Akym</string>
+    <string name="streaming_quality">Akymyň hili</string>
+    <string name="auto_stop">Awto duralga</string>
+    <string name="auto_minimize">Awto kiçeltmek</string>
+    <string name="advance">Awans</string>
+    <string name="orientation_mode">Ugur tertibi</string>
+    <string name="auto_stop_body_text">Baglanyşyk \ nto ýitirilende wideo saklaň</string>
+    <string name="auto_minimize_body_text">Aýna başlanda programmany gizläň</string>
+    <string name="casting_orientation_body_text">Kasting ugry</string>
+    <string name="mirroring_mode">Aýna tertibi</string>
+    <string name="screen_mirroring_privacy_policy">Ekranda aýna gizlinlik syýasaty</string>
+    <string name="privacy_policy">Gizlinlik syýasaty</string>
+    <string name="supporting_devices">Goldaw enjamlary</string>
+    <string name="see_which_devices_support_mirroring">Haýsy enjamlaryň aýnany goldaýandygyny görüň</string>
+    <string name="color_theme">Reňk mowzugy</string>
+    <string name="dark">Garaňky</string>
+    <string name="light">Lightagtylyk</string>
+    <string name="auto">Awto</string>
+    <string name="select_language">Dil saýlaň</string>
+    <string name="close">ýakyn</string>
+    <string name="images_slider">Suratlar Slaýder</string>
+    <string name="screen_mirror">Ekranyň aýnasy</string>
+    <string name="tutorial_screen_setup_body">Maksatly enjamyňyz, bu enjam bilen birmeňzeş Wi-Fi ulgamynda bolmaly, sebäbi Ekranyň aýnasy ekrany geçirýär.</string>
+    <string name="tutorial_screen_mirror_body">Enjamyňyzyň ekranyny Wi-Fi arkaly kompýuteriňize, depderiňize ýa-da planşetiňize akdyryň.</string>
+    <string name="tutorial_device_hotspot_body">Şeýle hem, enjamyňyzyň iň nokat nokadyny (birikdirme tertibi) ulanyp, maksatly enjamyňyzy iň köp nokadyňyza birikdirip bilersiňiz.</string>
+    <string name="tutorial_scan_code_body">Maksatly enjamyňyzda sahypa açyň. QR koduny skanirlemek bilen birikme konfigurasiýasy geçirilýär we aýna başlaýar.</string>
+    <string name="tutorial_support_body">Ekranyň aýnasy diňe dogry gurlanda işleýär. Ekranyň aýnasy ekranyňyzy iberýär, ýöne enjamyňyzyň ses signallaryny däl. Haýsydyr bir kynçylyk bilen ýüzbe-ýüz bolsaňyz, biziň bilen habarlaşyň.</string>
+    <string name="walk_through_body_1">Yzygiderli we ýokary hilli akymdan lezzet alyň</string>
+    <string name="walk_through_body_2">Islendik akylly enjam bilen birikdiriň we islendik ekranda \ nshow-dan lezzet alyň</string>
+    <string name="walk_through_body_3">Çäklendirmesiz programma içindäki şahsy brauzerden lezzet alyň</string>
+    <string name="screen_setup">Ekrany gurnamak</string>
+    <string name="device_hotspot">Enjamyň iň köp nokady</string>
+    <string name="scan_code">Kod skaner</string>
+    <string name="support">Goldaw</string>
+    <string name="finish">Tamamla</string>
+    <string name="our_policies">Syýasatlarymyz</string>
+    <string name="privacy_policy_text">Şahsy durmuşyňy goramak biziň üçin möhümdir. Aşakdaky jümle şahsy kesgitlenýän maglumatlar bilen iş salyşýandygymyza düşünmäge kömek eder diýip umyt edýäris, wagtal-wagtal internet arkaly (Google Play platformasy) bize berip bilersiňiz. \ N \ n Umuman alanyňda. Android programmalarymyzy göçürip alanyňyzda sizden PII ýygnamarys. Has takygy, sarp edijilerimiziň programmamyza baryp görmegini talap etmeýäris, hatda şeýle PII-ni saklamak üçin Serwerimizem ýok. \ N \ nScreen Mirroring “Facebook” -y mahabat üpjünçisi hökmünde ulanýar. “Facebook” size degişli mahabatlary görkezmek isleýär. Has giňişleýin maglumat üçin \ nhttps: //m.facebook.com/ads/ad_choices girip görmegiňizi haýyş edýäris. hasabat beriň. Bu ýagdaýda sizden alyp biljek PII-iňiz diňe adyňyz, e-poçta salgyňyz we diňe anketa jogaplaryňyz bilen çäklenýär. \ N \ n aboveokardaky ýagdaýda, PII-iň diňe siziň bilen habarlaşmak we hyzmatlarymyzy gowulandyrmak üçin ulanyljakdygyna kepil geçýäris. Şeýle maglumatlary hiç haçan ulanmarys (mysal üçin adyňyzy we e-poçta salgyňyzy_ önümlerimizi has köp satmak ýa-da şahsy maglumatlaryňyzy täjirçilik gazançlary üçin üçünji tarapa aýan etmek üçin başga maksatlar üçin ulanmarys. \ N \ nBu bellemeli zat Pikirleriňizi ýa-da näsazlyk hasabyňyzy ibermezlik, öz kararyňyz boýunça düýbünden meýletin başlangyçdyr. PII-iňiziň nädogry ulanylmagy barada alada edýän bolsaňyz ýa-da gizlinlik syýasatymyz we onuň manysy barada goşmaça maglumat isleseňiz, bize e-poçta iberip bilersiňiz. screenmirroring.feedback@gmail.com sahypasynda, soraglaryňyza anyk jogaplary wagtynda bermäge synanyşarys.</string>
+    <string name="please_write_your_feedback">Pikirleriňizi ýazmagyňyzy haýyş edýäris</string>
+    <string name="system_info">Ulgam maglumatyňyz “Ekran aýnasy” tehnologiýa bölümine iberiler</string>
+    <string name="send">Iber</string>
+    <string name="provide_feedback">seslenme beriň</string>
+    <string name="invalid_email_provided">Nädogry e-poçta berilýär</string>
+    <string name="check_your_internet_connection">Internet birikmäňizi barlaň</string>
+    <string name="type_here">şu ýere ýazyň…</string>
+    <string name="enter_your_email_optional">E-poçtaňyzy giriziň (islege görä)</string>
+    <string name="enjoy_the_app">Programmadan lezzet alýarsyňyzmy?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Ekran \ nMirroring programmasyny ulanyp, tejribäňize baha beriň.</string>
+    <string name="not_now">Häzir däl</string>
+    <string name="feedback">Seslenme:</string>
+    <string name="model">Model:</string>
+    <string name="brand">Marka:</string>
+    <string name="os_version">OS wersiýasy:</string>
+    <string name="manufacturer">Öndüriji:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Poçta iber</string>
+    <string name="select_picture">Surat saýlaň</string>
+    <string name="help_center">Kömek merkezi</string>
+    <string name="question_1">Telefonym telewizor bilen jübütlenende “Birikmek” -e ýapyşýar.</string>
+    <string name="question_2">Öň meniň üçin işledi, ýöne \nindi işlemeýär.</string>
+    <string name="question_3">Enjamymyň goldanmaýandygyny \ngörkezýär.</string>
+    <string name="question_4">Meniň telewizorym köne telewizor \nwe wi-fi-ni goldamaýar.</string>
+    <string name="question_5">Telewizorda şekil gara, ýöne \nses eşidilýär.</string>
+    <string name="question_6">Birnäçe wagtdan soň birikme \nkesiler.</string>
+    <string name="question_7">Şahsy maglumatlarym ýa-da ykjam maglumatlarym düýbünden ygtybarlymy?</string>
+    <string name="q_answer_1_1">Akylly telefonyň Wi-Fi-ny täzeden açyň we birikmäniň üstünlikli bolandygyny görüň.</string>
+    <string name="q_answer_1_2">Telewizory öçüriň we set şnuruny rozetkadan çykaryň. 1 minut garaşyň we telewizory täzeden açyň.</string>
+    <string name="q_answer_1_3">Telefonyňyz bilen telewizoryň arasyndaky aralygy gysgaldyň. Closeakynlaşdyryň.</string>
+    <string name="q_answer_2_1">Öň işlän bolsa, hökman gaýtadan ulanyp bolar.</string>
+    <string name="q_answer_2_2">Birikdiriş meseleleriniň köpüsini enjamlary täzeden açmak arkaly çözüp bolýar. Telefonyňyzy we telewizoryňyzy täzeden açyň, gaýtadan synanyşmak üçin yzygiderli birikme amalyny ýerine ýetiriň.</string>
+    <string name="q_answer_3_1">Bu, telefonyňyzyň özi ekranyň aýna funksiýasyny goldamaýandygyny aňladýar.</string>
+    <string name="q_answer_3_2">Wideo, ses we suraty telewizora düşürmek üçin XCast ulanyp bilersiňiz. XCast bilen, telewizora düşürilende telefonyňyz bilen başga zatlar edip bilersiňiz.</string>
+    <string name="q_answer_4_1">Telewizoryňyz HDMI interfeýsini goldaýan bolsa, ekrany aýna etmek üçin daşarky kabul edijini satyn almagyňyzy maslahat berýäris. Chromecast, Anycast we ş.m.</string>
+    <string name="q_answer_5_1">Käbir mazmun awtorlyk hukugyny goramagy öz içine alýar we Netflix, Disney Plus we ş.m. üçünji tarap enjamlarynda görkezilip bilinmez.</string>
+    <string name="q_answer_5_2">Wideony göçürip alyp ýa-da synap görmek üçin beýleki programmalarda şol bir çeşmäni gözläp bilersiňiz.</string>
+    <string name="q_answer_6_1">“Wi-Fi” sazlamalarynda “Smart Connect” -i açyp bilersiňiz. Elmydama has gowy Wi-fi birikmelerini gözlär we hemişe yza we yza birikdiriler.</string>
+    <string name="q_answer_6_2">Jübi telefonynyň we telewizoryň Wi-Fi-yň SAM we iň gowy signaldygyna göz ýetiriň.</string>
+    <string name="q_answer_7_1">Size we jübi telefonyňyza hiç hili maglumat gözegçilik etmeris ýa-da ýygnamarys. Hiç hili aladalanman ekranyňyzy taşlap bilersiňiz.</string>
+    <string name="q_answer_7_2">Ulgam, ekrany aýnalamazdan ozal howpsuzlyk howpunyň bardygyny duýdurmagy mümkin. Bu diňe yzygiderli ýatlatma, bolar</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">Gudrat</string>
+    <string name="install">GURMAK</string>
+    <string name="install_small">Gurnamak</string>
+    <string name="manual">Gollanma</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Telefonyňyzyň we telewizoryňyzyň şol bir Wi-Fi toruna birikdirilendigine göz ýetiriň.</string>
+    <string name="hd_streaming">HD akym</string>
+    <string name="smart_devices">akylly enjamlar</string>
+    <string name="private_browser">Hususy brauzer</string>
+    <string name="effects">Effektler</string>
+    <string name="slider">Slaýder</string>
+    <string name="search_or_type_web_address">Web salgysyny gözläň ýa-da ýazyň</string>
+    <string name="install_2">Gurnamak</string>
+    <string name="bookmark">Bellik</string>
+    <string name="downloads">.Üklemeler</string>
+    <string name="download">Göçürip al</string>
+    <string name="favorites">Halanýanlar</string>
+    <string name="favorite">Halaýan</string>
+    <string name="history">Taryh</string>
+    <string name="share_pdf">Pdf paýlaş</string>
+    <string name="copy_url">URL-ni göçüriň</string>
+    <string name="share_app">Programmany paýlaşyň</string>
+    <string name="share_url">Url paýlaşyň</string>
+    <string name="exit">Çyk</string>
+    <string name="new_tab">Täze goýma</string>
+    <string name="google">Google</string>
+    <string name="startpage">Başlangyç sahypasy</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Kwant</string>
+    <string name="ecosia">Ekosiýa</string>
+    <string name="custom_search_engine">Searchörite gözleg motory</string>
+    <string name="add_shortcut_to_home">Öýüňize gysga ýol goşuň</string>
+    <string name="save_screenshot">Ekrany ýazdyryň</string>
+    <string name="add_to_bookmark">Sahypa belligine goşuň</string>
+    <string name="save_as_pdf">Pdf görnüşinde ýazdyryň</string>
+    <string name="save_action">Hereketi ýatda saklaň</string>
+    <string name="add_to_favorite">Halaýanlara goşuň</string>
+    <string name="search_engine">Gözleg motory</string>
+    <string name="browser_exit_body">Brauzerden çykmak isleýändigiňize ynanýarsyňyzmy?</string>
+    <string name="exit_browser">Brauzerden çyk</string>
+    <string name="custom_user_agent">Userörite ulanyjy agenti</string>
+    <string name="start_control">Dolandyryşy başlaň</string>
+    <string name="data_control">Maglumatlara gözegçilik</string>
+    <string name="app_settings">Programma sazlamalary</string>
+    <string name="browser_settings">Brauzer sazlamalary</string>
+    <string name="behavior_ui">Özüňi alyp baryş / UI</string>
+    <string name="clear_cache">Keşi arassalaň</string>
+    <string name="clear_history">Taryhy arassala</string>
+    <string name="clear_browsing_history">Göz aýlamagyň taryhyny arassala</string>
+    <string name="clear_all_cache">Acheshli keşi arassalaň</string>
+    <string name="clear_database_body">“Indekslenen maglumat bazalaryny” we “ýerli \ ndata esaslaryny” arassalaň</string>
+    <string name="clear_cookies_body">Işledilen bolsa, ähli gutapjyklar pozular. Şeýle hem, ygtybarly web sahypalarynyň gutapjyklary</string>
+    <string name="clear_databases">Maglumatlar bazalaryny arassalaň</string>
+    <string name="clear_cookies">Gutapjyklary arassalaň</string>
+    <string name="clear_when_application_exit">Programma çykanda arassalaň</string>
+    <string name="clear_when_application_exit_body">Her gezek ýokardaky barlanan maglumatlary taşlanyňyzda \ n ýok ediler</string>
+    <string name="image">Surat</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Kukiler</string>
+    <string name="reopen_last_tab">Soňky goýmany açyň</string>
+    <string name="confirm_tab_close">Salgynyň ýapylýandygyny tassyklaň</string>
+    <string name="confirm_browser_exit">Brauzeriň çykyşyny tassyklaň</string>
+    <string name="position">Positionerleşişi</string>
+    <string name="first_toolbar">Ilkinji gurallar paneli</string>
+    <string name="hide_toolbar">Gurallar panelini gizläň</string>
+    <string name="toolbar">Gurallar paneli</string>
+    <string name="bookmarks">Bellikler</string>
+    <string name="edit">Redaktirläň</string>
+    <string name="today">Şu gün</string>
+    <string name="the_last_hour">Soňky sagat</string>
+    <string name="last_week">Geçen hepde</string>
+    <string name="last_month">Geçen aý</string>
+    <string name="delete_all_history">Historyhli taryhy pozuň</string>
+    <string name="copied">göçürildi</string>
+    <string name="share_ss">SS paýlaşyň</string>
+    <string name="file_manager">Faýl dolandyryjysy</string>
+    <string name="search_on">Gözlemek</string>
+    <string name="add_shortcut">Salgylanma düwmesini goşuň</string>
+    <string name="tab_exit">Salgydan çykmak</string>
+    <string name="do_you_want_to_close">Toapmak isleýärsiňizmi?</string>
+    <string name="download_complete_share_image">Göçürip alyň. Suraty paýlaşyň</string>
+    <string name="update">Täzelen</string>
+    <string name="unfavorite">Halamaýan</string>
+    <string name="no_input_provided">Giriş ýok</string>
+    <string name="input">Giriş</string>
+    <string name="website_link">Sahypa baglanyşygy</string>
+    <string name="for_you">Seniň üçin</string>
+    <string name="website">Sahypa:</string>
+    <string name="url">Url:</string>
+    <string name="date">Sene</string>
+    <string name="no_site_loaded">Web sahypa ýüklemediňiz</string>
+    <string name="more_then_5_images_can_not_be_picked">Ondan soň bäş sany suraty saýlap bolmaz</string>
+    <string name="location">"Locationerleşýän ýeri "</string>
+
+</resources>

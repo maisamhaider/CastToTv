@@ -18,6 +18,7 @@ import com.example.casttotv.dataclasses.FileModel
 import com.example.casttotv.utils.*
 import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
 import com.example.casttotv.utils.MySingleton.toastLong
+import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.viewmodel.SharedViewModel
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.collect
@@ -84,6 +85,17 @@ class CustomVideoPlayerFragment : Fragment() {
                         videosModelList.clear()
                         videosModelList.addAll(it)
                     }
+                }
+            }
+        }
+        sharedViewModel.wifiConnection.observe(viewLifecycleOwner) {
+            if (requireContext().getPrefs(AUTO_STOP,false))
+            {
+                if (!it){
+
+                   if (videoPlayer.isPlaying)
+                   { playPauseVideo()
+                   }
                 }
             }
         }

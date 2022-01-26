@@ -163,10 +163,11 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView6"
                 style="@style/header_text_3"
                 android:text="@string/auto_minimize"
                 app:layout_constraintBottom_toTopOf="@+id/guideline122"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/checkbox_auto_minimize"
                 app:layout_constraintStart_toStartOf="@+id/guideline120"
                 app:layout_constraintTop_toTopOf="@+id/guideline121" />
 
@@ -174,7 +175,7 @@
                 style="@style/subheading_w0_h0"
                 android:text="@string/auto_minimize_body_text"
                 app:layout_constraintBottom_toTopOf="@+id/guideline124"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/checkbox_auto_minimize"
                 app:layout_constraintStart_toStartOf="@+id/guideline120"
                 app:layout_constraintTop_toTopOf="@+id/guideline123" />
 
@@ -258,16 +259,17 @@
                 style="@style/header_text_3"
                 android:text="@string/auto_stop"
                 app:layout_constraintBottom_toTopOf="@+id/guideline130"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/checkbox_auto_stop"
                 app:layout_constraintStart_toStartOf="@+id/guideline128"
                 app:layout_constraintTop_toTopOf="@+id/guideline129" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/materialTextView23"
                 style="@style/subheading_w0_h0"
+                android:layout_marginEnd="@dimen/dp_10"
                 android:text="@string/auto_stop_body_text"
                 app:layout_constraintBottom_toTopOf="@+id/guideline132"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/checkbox_auto_stop"
                 app:layout_constraintStart_toStartOf="@+id/guideline128"
                 app:layout_constraintTop_toTopOf="@+id/guideline131" />
 
@@ -351,7 +353,7 @@
                 style="@style/header_text_3"
                 android:text="@string/orientation_mode"
                 app:layout_constraintBottom_toTopOf="@+id/guideline142"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline145"
                 app:layout_constraintStart_toStartOf="@+id/guideline140"
                 app:layout_constraintTop_toTopOf="@+id/guideline141" />
 
@@ -360,7 +362,7 @@
                 style="@style/subheading_w0_h0"
                 android:text="@{mainVM.orientation}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline144"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline145"
                 app:layout_constraintStart_toStartOf="@+id/guideline140"
                 app:layout_constraintTop_toTopOf="@+id/guideline143" />
 
@@ -513,7 +515,7 @@
                 style="@style/header_text_3"
                 android:text="@string/color_theme"
                 app:layout_constraintBottom_toTopOf="@+id/guideline156"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline157"
                 app:layout_constraintStart_toStartOf="@+id/guideline125"
                 app:layout_constraintTop_toTopOf="@+id/guideline155" />
 
@@ -522,7 +524,7 @@
                 style="@style/subheading_w0_h0"
                 android:text="@{mainVM.darkAndLight}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline158"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline157"
                 app:layout_constraintStart_toStartOf="@+id/guideline125"
                 app:layout_constraintTop_toTopOf="@+id/guideline159"
                 tools:text="@string/light" />
@@ -577,6 +579,7 @@
             style="@style/w_0_h_0"
             android:background="?attr/selectableItemBackground"
             android:onClick="@{()->thisFrag.goToSupportedDevices()}"
+            android:visibility="gone"
             app:layout_constraintBottom_toTopOf="@+id/guideline160"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -597,7 +600,7 @@
                 style="@style/header_text_3"
                 android:text="@string/supporting_devices"
                 app:layout_constraintBottom_toTopOf="@+id/guideline173"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline170"
                 app:layout_constraintStart_toStartOf="@+id/guideline171"
                 app:layout_constraintTop_toTopOf="@+id/guideline172" />
 
@@ -606,7 +609,7 @@
                 style="@style/subheading_w0_h0"
                 android:text="@string/see_which_devices_support_mirroring"
                 app:layout_constraintBottom_toTopOf="@+id/guideline175"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline170"
                 app:layout_constraintStart_toStartOf="@+id/guideline171"
                 app:layout_constraintTop_toTopOf="@+id/guideline174" />
 
@@ -659,11 +662,11 @@
             android:id="@+id/cl_privacy_policy"
             style="@style/w_0_h_0"
             android:onClick="@{()->thisFrag.goToPrivacyPolicy()}"
-            app:layout_constraintBottom_toTopOf="@+id/guideline169"
+            app:layout_constraintBottom_toTopOf="@+id/guideline160"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="@+id/guideline105"
-            app:layout_constraintTop_toTopOf="@+id/guideline160">
+            app:layout_constraintTop_toTopOf="@+id/guideline116">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imageview_pp"
@@ -679,7 +682,7 @@
                 style="@style/header_text_3"
                 android:text="@string/privacy_policy"
                 app:layout_constraintBottom_toTopOf="@+id/guideline164"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline165"
                 app:layout_constraintStart_toStartOf="@+id/guideline161"
                 app:layout_constraintTop_toTopOf="@+id/guideline162" />
 

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Basque-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">Kokapena</string>
+    <string name="connection_close_confirm">Uneko VPN konexioa bertan behera utzi nahi duzu?</string>
+    <string name="yes">BAI</string>
+    <string name="no">EZ</string>
+    <string name="yes_2">Bai</string>
+    <string name="no_2">Ez</string>
+    <string name="select_images">Hautatu Irudiak</string>
+    <string name="tabs">Fitxak</string>
+    <string name="share">Partekatu</string>
+    <string name="save">Gorde</string>
+    <string name="more">Gehiago</string>
+    <string name="ok">Ados</string>
+    <string name="cancel">Utzi</string>
+    <string name="favorite_site">Aldatu arakatzailearen\nhasieran kargatzen den webgune lehenetsia</string>
+    <string name="custom_search_engine_body">Gehitu bilaketa-url pertsonalizatua ere aukeratu "Pertsonalizatua\nbilatzailea" bilaketa-hornitzaile gisa</string>
+    <string name="search_engine_body">Aukeratu zure bilatzaile gogokoena edo\nezarri pertsonalizatu bat</string>
+    <string name="data_control_body">Garbitu arakatzailearen datuak edo erabaki zer datu garbituko diren\n aplikaziotik irtetean</string>
+    <string name="start_control_body">Erabaki arakatzailearen zein osagai izango diren abiarazteko</string>
+    <string name="behavior_ui_body">Aldatu aplikazioaren portaera eta interfazea zure hobespenetara\negokitzeko</string>
+    <string name="book_mark_body">Iragazkien elkarrizketa-koadroa erakusteko, luze sakatu ikuspegi orokorreko laster-markaren ikonoa. Erabaki zein iragazki erabiliko dituzun</string>
+    <string name="app_settings_body">Arakatzailearen ezarpenak, bertan\zure Android bertsioaren araberako baimena eman dezakezu.</string>
+    <string name="start_control_image_body">Gaitu Sareko irudiak, desgaitzea erabilgarria izan liteke\mugikorren datuak gordetzeko eta webgunea azkarrago kargatzeko</string>
+    <string name="start_control_location_body">Eman webguneei zure kokapena atzitzea. Zenbait\nwebgune {google, maps for nav) gaitu hau behar dute</string>
+    <string name="start_control_history_body">Gorde bisitatutako webguneen historia</string>
+    <string name="start_control_java_script_body">Gaitu JavaScript. Webgune askok\nJavaScript behar dute beren funtzionaltasunerako. Baina atseden hartzen dute\na eta erasoetarako erabil daitezke</string>
+    <string name="start_control_cookies_body">Gaitu cookieak. Cookieak testu fitxategi txikiak dira,
+zure gailuan gordetzen direnak. Webguneak erabiltzea
+adibidez, erabiltzaileen ezarpenak gordetzeko. Baina
+erabiltzaile pertsonalak biltzeko ere erabil litezke
+datuak. Hirugarrenen cookieak beti desgaituta daude.</string>
+    <string name="confirmation_browser_exit_body">Berrespen elkarrizketa-koadroa\narakatzailea ixtean</string>
+    <string name="confirmation_tab_close_body">Fitxa bat ixtean berresteko elkarrizketa-koadroa</string>
+    <string name="confirmation_reopen_last_body">Ireki berriro fitxa berri bat azken fitxa ixten denean arakatzailetik irten beharrean</string>
+    <string name="hide_toolbar_body">Erabili pantaila osoa webgunean mugitzean Atzera botoia sakatzen baduzu pantaila osoko modua utziko duzu</string>
+    <string name="images">Irudiak</string>
+    <string name="videos">Bideoak</string>
+    <string name="web_browser">Web arakatzailea</string>
+    <string name="image_slider">Irudiaren graduatzailea</string>
+    <string name="next">Hurrengoa</string>
+    <string name="previous">Aurrekoa</string>
+    <string name="help">Laguntza</string>
+    <string name="settings">Ezarpenak</string>
+    <string name="language">Hizkuntzak</string>
+    <string name="more_app">Aplikazio gehiago</string>
+    <string name="rate_us">Baloratu gaitzazu</string>
+    <string name="screen_mirroring">Pantaila islatzea</string>
+    <string name="home_screen_text">Ziurtatu telefonoa eta telebista Wi-Fi sare berera konektatuta daudela.</string>
+    <string name="wifi_connected">Wi-Fi konektatuta</string>
+    <string name="wifi_disconnected">Wi-Fi deskonektatuta</string>
+    <string name="general">Orokorra</string>
+    <string name="communicate">Komunikatu</string>
+    <string name="send_feedback">Bidali Iritzia</string>
+    <string name="tutorial">Tutoretza</string>
+    <string name="how_to_use">Nola erabili?</string>
+    <string name="streaming">Streaming</string>
+    <string name="streaming_quality">Streaming kalitatea</string>
+    <string name="auto_stop">Auto Stop</string>
+    <string name="auto_minimize">Minimizatu automatikoa</string>
+    <string name="advance">Aurrera</string>
+    <string name="orientation_mode">Orientazio modua</string>
+    <string name="auto_stop_body_text">Gelditu bideoa konexioa\n xedea galtzen denean</string>
+    <string name="auto_minimize_body_text">Ezkutatu aplikazioa ispilua hasten denean</string>
+    <string name="casting_orientation_body_text">Galdaketa orientazioa</string>
+    <string name="mirroring_mode">Ispilu modua</string>
+    <string name="screen_mirroring_privacy_policy">Pantaila islatzeko pribatutasun politika</string>
+    <string name="privacy_policy">Pribatutasun-politika</string>
+    <string name="supporting_devices">Laguntza gailuak</string>
+    <string name="see_which_devices_support_mirroring">Ikusi zein gailu onartzen duten ispilua</string>
+    <string name="color_theme">Kolore Gaia</string>
+    <string name="dark">Iluna</string>
+    <string name="light">Argia</string>
+    <string name="auto">Autoa</string>
+    <string name="select_language">Hautatu Hizkuntza</string>
+    <string name="close">itxi</string>
+    <string name="images_slider">Irudiak Graduatzailea</string>
+    <string name="screen_mirror">Pantaila ispilua</string>
+    <string name="tutorial_screen_setup_body">Zure xede gailuak gailu honen Wi-Fi sare berean egon behar du, Screen Mirror zure pantaila transmititzen ari delako.</string>
+    <string name="tutorial_screen_mirror_body">Igorri zure gailuaren pantaila Wi-Fi bidez zure ordenagailura, koadernora edo tabletera.</string>
+    <string name="tutorial_device_hotspot_body">Zure gailuaren hotspot-a ere erabil dezakezu (tethering modua) eta zure xede gailua zure hotspot-era konekta dezakezu.</string>
+    <string name="tutorial_scan_code_body">Ireki gunea zure xede gailuan. QR kodea eskaneatzean konexioaren konfigurazioa transmititzen da eta ispilua hasten da.</string>
+    <string name="tutorial_support_body">Kontuan izan Screen Mirror-ek behar bezala konfiguratzen denean bakarrik funtzionatzen duela. Screen Mirror-ek zure pantaila transmititzen du, baina ez zure gailuaren audio-seinaleak. Arazoren bat aurkitzen baduzu, jarri gurekin harremanetan.</string>
+    <string name="walk_through_body_1">Gozatu erreprodukzio leun eta kalitate handiko\n atzerapenik gabe</string>
+    <string name="walk_through_body_2">Konektatu edozein gailu adimendun eta gozatu\nikuskizunaz edozein pantailatan</string>
+    <string name="walk_through_body_3">Gozatu aplikazioko arakatzaile pribatua mugarik gabe</string>
+    <string name="screen_setup">Pantailaren konfigurazioa</string>
+    <string name="device_hotspot">Gailuaren Hotspot-a</string>
+    <string name="scan_code">Eskaneatu kodea</string>
+    <string name="support">Laguntza</string>
+    <string name="finish">Amaitu</string>
+    <string name="our_policies">Gure Politikak</string>
+    <string name="privacy_policy_text">Zure pribatutasuna babestea garrantzitsua da guretzat. Espero dugu hurrengo adierazpenak identifikagarri den informazio pertsonala nola tratatzen dugun ulertzen lagunduko dizula. Tarteka Internet bidez (Google Play plataforma) eman diezagukezu.\n\nOro har. ez dugu zuregandik PIIrik jasotzen gure Android aplikazioak deskargatzen dituzunean. Zehazki, ez ditugu gure aplikazioko kontsumitzaileen bisitak eskatzen, ez dugu zerbitzaririk ere PII horiek gordetzeko.\n\nScreen Mirroring Facebook erabiltzen du iragarkien hornitzaile gisa. Facebookek zuretzat garrantzitsuak diren iragarkiak erakutsi nahi ditu. Informazio gehiago nahi izanez gero, bisitatu\nhttps://m.facebook.com/ads/ad_choices.\n\nZure PII atzitu dezakegun egoera bakarra zure iritzia posta elektronikoz bidaltzea edo akatsen bat ematea erabakitzen duzunean da. txostena. Egoera horretan zuregandik jaso ditzakegun PII zure izena, helbide elektronikoa eta inkesten erantzuna soilik mugatzen dira.\n\nGoiko egoeran, bermatzen dugu zure PII zurekin harremanetan jartzeko eta gure zerbitzuak hobetzeko soilik erabiliko duzula. Inoiz ez dugu informazio hori erabiliko (adibidez, zure izena eta helbide elektronikoa_ beste edozein helburutarako, hala nola gure produktuak gehiago merkaturatzeko edo zure informazio pertsonala hirugarren bati helarazteko irabazi komertzialak lortzeko.\n\nKontuan izan behar da ala ez. zure iritzia edo akatsen txostena ez bidaltzea zure erabakiaren arabera guztiz borondatezko ekimena da. Zure PII gaizki erabiltzeagatik kezka baduzu, edo gure pribatutasun-politikari eta horrek esan nahi duenari buruzko informazio gehiago nahi baduzu, mesedez, jar iezaguzu posta elektronikoz. screenmirroring.feedback@gmail.com helbidean, zure galderei erantzun argiak garaiz ematen ahaleginduko gara. </string>
+    <string name="please_write_your_feedback">Mesedez, idatzi zure iritzia</string>
+    <string name="system_info">Zure sistemaren informazioa Screen Mirroring teknologien sailera bidaliko da</string>
+    <string name="send">Bidali</string>
+    <string name="provide_feedback">iritzia eman</string>
+    <string name="invalid_email_provided">Emandako mezu elektroniko baliogabea</string>
+    <string name="check_your_internet_connection">Egiaztatu Interneteko konexioa</string>
+    <string name="type_here">idatzi hemen…</string>
+    <string name="enter_your_email_optional">Sartu zure helbide elektronikoa (aukerakoa)</string>
+    <string name="enjoy_the_app">Gozatu aplikazioa?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Baloratu zure esperientzia Screen\nMirroring aplikazioa erabiliz.</string>
+    <string name="not_now">Orain ez</string>
+    <string name="feedback">Iritzia:</string>
+    <string name="model">Eredua:</string>
+    <string name="brand">Marka:</string>
+    <string name="os_version">OS bertsioa:</string>
+    <string name="manufacturer">Fabrikatzailea:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Bidali posta</string>
+    <string name="select_picture">Hautatu Irudia</string>
+    <string name="help_center">Laguntza Zentroa</string>
+    <string name="question_1">Nire telefonoa "Konektatzen" aukeran trabatu \negiten da telebistarekin parekatzean.</string>
+    <string name="question_2">Lehen balio zidan, baina orain ez \ndabil.</string>
+    <string name="question_3">Nire gailua ez dela onartzen \nerakusten du.</string>
+    <string name="question_4">Nire telebista telebista zaharra da eta \nez du wi-fia onartzen.</string>
+    <string name="question_5">Telebistan irudia beltza da, baina \nsoinua entzuten da.</string>
+    <string name="question_6">Konexioa pixka bat igaro ondoren eten \negingo da.</string>
+    <string name="question_7">Nire informazio pertsonala edo datu mugikorrak \nguztiz seguruak al dira?</string>
+    <string name="q_answer_1_1">Berrabiarazi telefono adimendunaren Wi-Fi eta ikusi konexioa arrakastatsua den.</string>
+    <string name="q_answer_1_2">Itzali telebista eta kendu korronte-kablea entxufetik ere. Itxaron minutu bat eta berrabiarazi telebista.</string>
+    <string name="q_answer_1_3">Laburtu zure telefonoaren eta telebistaren arteko distantzia. Hartu hurbiletik.</string>
+    <string name="q_answer_2_1">Aurretik funtzionatu bazuen, behin betiko berriro erabil daiteke.</string>
+    <string name="q_answer_2_2">Konexio-arazo gehienak gailuak berrabiaraziz konpon daitezke. Berrabiarazi telefonoa eta telebista, jarraitu ohiko konexio-prozesua berriro saiatzeko.</string>
+    <string name="q_answer_3_1">Horrek esan nahi du zure telefonoak berak ez duela pantaila ispilu funtzioa onartzen.</string>
+    <string name="q_answer_3_2">XCast erabil dezakezu bideoak, audioak eta argazkiak telebistara igortzeko. XCast-ekin, beste gauza batzuk egin ditzakezu telefonoarekin telebistara igortzen duzun bitartean.</string>
+    <string name="q_answer_4_1">Zure telebistak HDMI interfazea onartzen badu, pantaila islatzeko kanpoko hargailu bat erostea gomendatzen dizugu. Esaterako, Chromecast, Anycast etab.</string>
+    <string name="q_answer_5_1">Eduki batzuek egile-eskubideen babesa dute eta ezin dira hirugarrenen gailuetan bistaratu, hala nola Netflix, Disney Plus etab.</string>
+    <string name="q_answer_5_2">Bideoa deskargatu edo baliabide bera bilatu dezakezu beste aplikazio batzuetan probatzeko.</string>
+    <string name="q_answer_6_1">Smart Connect aktibatu dezakezu zure Wi-Fi ezarpenetan. Wi-fi konexio hobeak bilatuko ditu etengabe, eta beti konektatuko da aurrera eta atzera.</string>
+    <string name="q_answer_6_2">Mesedez, ziurtatu telefono mugikorraren eta telebistaren Wi-Fi SAM dela eta seinale onena dela.</string>
+    <string name="q_answer_7_1">Ez dugu zure eta zure telefono mugikorraren gaineko informaziorik kontrolatuko edo bilduko. Pantaila igorri dezakezu inolako kezkarik gabe.</string>
+    <string name="q_answer_7_2">Pantaila islatu aurretik segurtasun arrisku bat dagoela ohartarazi dezake sistemak. Hau ohiko abisua besterik ez da, hala izango da</string>
+    <string name="wi_fi">WIFI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">INSTALATU</string>
+    <string name="install_small">Instalatu</string>
+    <string name="manual">Eskuliburua</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Ziurtatu telefonoa eta telebista Wi-Fi sare berera konektatuta daudela.</string>
+    <string name="hd_streaming">HD erreprodukzioa</string>
+    <string name="smart_devices">gailu adimendunak</string>
+    <string name="private_browser">Arakatzaile pribatua</string>
+    <string name="effects">Eraginak</string>
+    <string name="slider">Graduatzailea</string>
+    <string name="search_or_type_web_address">Bilatu edo idatzi web helbidea</string>
+    <string name="install_2">Instalatu</string>
+    <string name="bookmark">Laster-marka</string>
+    <string name="downloads">Deskargak</string>
+    <string name="download">Deskargatu</string>
+    <string name="favorites">Gogokoak</string>
+    <string name="favorite">Gogokoena</string>
+    <string name="history">Historia</string>
+    <string name="share_pdf">Partekatu Pdf</string>
+    <string name="copy_url">Kopiatu URLa</string>
+    <string name="share_app">Partekatu aplikazioa</string>
+    <string name="share_url">Partekatu URLa</string>
+    <string name="exit">Irten</string>
+    <string name="new_tab">Fitxa berria</string>
+    <string name="google">Google</string>
+    <string name="startpage">Hasiera orria</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Bilatu</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ekosia</string>
+    <string name="custom_search_engine">Bilatzaile pertsonalizatua</string>
+    <string name="add_shortcut_to_home">Gehitu lasterbidea etxera</string>
+    <string name="save_screenshot">Gorde pantaila-argazkia</string>
+    <string name="add_to_bookmark">Gehitu laster-markara</string>
+    <string name="save_as_pdf">Gorde pdf gisa</string>
+    <string name="save_action">Gorde ekintza</string>
+    <string name="add_to_favorite">Gehitu gogokoetara</string>
+    <string name="search_engine">Bilatzailea</string>
+    <string name="browser_exit_body">Ziur al zaude arakatzailetik irten nahi duzula</string>
+    <string name="exit_browser">Irten arakatzailea</string>
+    <string name="custom_user_agent">Erabiltzaile-agente pertsonalizatua</string>
+    <string name="start_control">Hasi Kontrola</string>
+    <string name="data_control">Datuen Kontrola</string>
+    <string name="app_settings">Aplikazioaren ezarpenak</string>
+    <string name="browser_settings">Arakatzailearen ezarpenak</string>
+    <string name="behavior_ui">Portaera/UI</string>
+    <string name="clear_cache">Garbitu cachea</string>
+    <string name="clear_history">Garbitu Historia</string>
+    <string name="clear_browsing_history">Garbitu nabigazio-historia</string>
+    <string name="clear_all_cache">Garbitu cache guztia</string>
+    <string name="clear_database_body">Garbitu "indexatutako datu-baseak" eta "tokiko\ndatu-baseak"</string>
+    <string name="clear_cookies_body">Gaituta badago, cookie guztiak ezabatuko dira. Webgune fidagarrien cookieak ere\n</string>
+    <string name="clear_databases">Garbitu datu-baseak</string>
+    <string name="clear_cookies">Garbitu cookieak</string>
+    <string name="clear_when_application_exit">Garbitu aplikazioa irteten denean</string>
+    <string name="clear_when_application_exit_body">Goiko egiaztatutako datu guztiak irteten dituzun bakoitzean\nezabatu egingo dira</string>
+    <string name="image">Irudia</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Cookieak</string>
+    <string name="reopen_last_tab">Ireki berriro azken fitxa</string>
+    <string name="confirm_tab_close">Berretsi fitxa ixtea</string>
+    <string name="confirm_browser_exit">Berretsi arakatzailearen irteera</string>
+    <string name="position">Posizioa</string>
+    <string name="first_toolbar">Lehenengo tresna-barra</string>
+    <string name="hide_toolbar">Ezkutatu tresna-barra</string>
+    <string name="toolbar">Tresna-barra</string>
+    <string name="bookmarks">Laster-markak</string>
+    <string name="edit">Editatu</string>
+    <string name="today">Gaur</string>
+    <string name="the_last_hour">Azken ordua</string>
+    <string name="last_week">Lehengo astean</string>
+    <string name="last_month">Azken hilabetean</string>
+    <string name="delete_all_history">Ezabatu historia guztia</string>
+    <string name="copied">kopiatu</string>
+    <string name="share_ss">Partekatu SS</string>
+    <string name="file_manager">Fitxategien kudeatzailea</string>
+    <string name="search_on">Bilaketa aktibatuta</string>
+    <string name="add_shortcut">Gehitu lasterbidea</string>
+    <string name="tab_exit">Fitxa Irten</string>
+    <string name="do_you_want_to_close">Itxi nahi al duzu</string>
+    <string name="download_complete_share_image">Deskarga osatuta. Partekatu irudia</string>
+    <string name="update">Eguneratu</string>
+    <string name="unfavorite">Gogoko bat</string>
+    <string name="no_input_provided">Ez da sarrerarik eman</string>
+    <string name="input">Sarrera</string>
+    <string name="website_link">Webgunearen esteka</string>
+    <string name="for_you">Zuretzat</string>
+    <string name="website">Webgunea:</string>
+    <string name="url">Url:</string>
+    <string name="date">Data</string>
+    <string name="no_site_loaded">Ez duzu webgunea kargatu</string>
+    <string name="more_then_5_images_can_not_be_picked">Bost irudi baino gehiago ezin dira aukeratu</string>
+</resources>

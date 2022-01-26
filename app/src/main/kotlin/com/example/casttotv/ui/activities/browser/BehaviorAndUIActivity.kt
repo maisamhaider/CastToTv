@@ -2,7 +2,6 @@ package com.example.casttotv.ui.activities.browser
 
 import android.os.Bundle
 import androidx.activity.viewModels
-import androidx.appcompat.app.AppCompatActivity
 import com.example.casttotv.databinding.ActivityBehaviorAndUiactivityBinding
 import com.example.casttotv.ui.activities.BaseActivity
 import com.example.casttotv.viewmodel.BrowserViewModel
@@ -21,6 +20,7 @@ class BehaviorAndUIActivity : BaseActivity() {
         setContentView(binding.root)
 
         binding.apply {
+            thisActivity = this@BehaviorAndUIActivity
             includeBehaviorUi1.browserVM = browserViewModel
             includeBehaviorUi2.browserVM = browserViewModel
         }

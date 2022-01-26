@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Danish-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">Beliggenhed</string>
+
+    <string name="connection_close_confirm">Vil du annullere den nuværende VPN-forbindelse?</string>
+    <string name="yes">JA</string>
+    <string name="no">INGEN</string>
+    <string name="yes_2">Ja</string>
+    <string name="no_2">Ingen</string>
+    <string name="select_images">Vælg Billeder</string>
+    <string name="tabs">Faner</string>
+    <string name="share">Del</string>
+    <string name="save">Gemme</string>
+    <string name="more">Mere</string>
+    <string name="ok">Okay</string>
+    <string name="cancel">Afbestille</string>
+    <string name="favorite_site">Skift standardwebstedet, som indlæses ved\nstart af browser</string>
+    <string name="custom_search_engine_body">Tilføj tilpasset søge-url, vælg også "Tilpasset\nsøgemaskine" som søgeudbyder</string>
+    <string name="search_engine_body">Vælg din foretrukne søgemaskine eller\nindstil en brugerdefineret</string>
+    <string name="data_control_body">Ryd dine browserdata, eller beslut hvilke data\nder skal ryddes, når du forlader appen</string>
+    <string name="start_control_body">Beslut hvilke komponenter i browseren\nvil være ved start</string>
+    <string name="behavior_ui_body">Skift appens adfærd og brugergrænseflade, så den passer til dine præferencer</string>
+    <string name="book_mark_body">For at vise filterdialogen, tryk længe på bogmærkeikonet i oversigten. Beslut hvilke filtre du vil bruge</string>
+    <string name="app_settings_body">Browserindstillinger, der kan du afhængigt af\din Android-version give tilladelse.</string>
+    <string name="start_control_image_body">Aktiver netværksbilleder. Deaktivering kan være nyttig\nfor at gemme mobildata og indlæse webstedet hurtigere</string>
+    <string name="start_control_location_body">Tillad websteder at få adgang til din placering. Nogle\nwebsteder {google, maps for nav) har brug for denne aktivering</string>
+    <string name="start_control_history_body">Gem historikken for besøgte websteder</string>
+    <string name="start_control_java_script_body">Aktiver JavaScript. Mange websteder har brug for\nJavaScript for deres funktionalitet. Men de er\nogså hvile og kan bruges til angreb</string>
+    <string name="start_control_cookies_body">Aktiver cookies. Cookies er små tekstfiler,
+som er gemt på din enhed. Hjemmesider bruger
+dem for for eksempel at gemme brugerindstillinger. Men
+de kan også bruges til at indsamle personlige brugere
+data. Tredjepartscookies er altid deaktiveret.</string>
+    <string name="confirmation_browser_exit_body">Bekræftelsesdialog, når browseren lukkes</string>
+    <string name="confirmation_tab_close_body">Bekræftelsesdialog ved lukning af en fane</string>
+    <string name="confirmation_reopen_last_body">Genåbn en ny fane, når den sidste fane er lukket i stedet for at forlade browseren</string>
+    <string name="hide_toolbar_body">Brug hele skærmen, når du ruller gennem webstedet, hvis du trykker på tilbage-knappen, forlader du fuldskærmstilstand</string>
+    <string name="images">Billeder</string>
+    <string name="videos">Videoer</string>
+    <string name="web_browser">Webbrowser</string>
+    <string name="image_slider">Billedskyder</string>
+    <string name="next">Næste</string>
+    <string name="previous">Tidligere</string>
+    <string name="help">Hjælp</string>
+    <string name="settings">Indstillinger</string>
+    <string name="language">Sprog</string>
+    <string name="more_app">Flere apps</string>
+    <string name="rate_us">Bedøm os</string>
+    <string name="screen_mirroring">Skærmspejling</string>
+    <string name="home_screen_text">Sørg for, at din telefon og dit tv er forbundet til det samme Wi-Fi-netværk.</string>
+    <string name="wifi_connected">Wi-Fi tilsluttet</string>
+    <string name="wifi_disconnected">Wi-Fi afbrudt</string>
+    <string name="general">Generel</string>
+    <string name="communicate">Kommunikere</string>
+    <string name="send_feedback">Send feedback</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="how_to_use">Hvordan bruges?</string>
+    <string name="streaming">Streaming</string>
+    <string name="streaming_quality">Streaming kvalitet</string>
+    <string name="auto_stop">Auto stop</string>
+    <string name="auto_minimize">Automatisk minimer</string>
+    <string name="advance">Rykke</string>
+    <string name="orientation_mode">Orienteringstilstand</string>
+    <string name="auto_stop_body_text">Stop video, når forbindelsen\ntil målet mistes</string>
+    <string name="auto_minimize_body_text">Skjul app, når spejlingen begynder</string>
+    <string name="casting_orientation_body_text">Casting orientering</string>
+    <string name="mirroring_mode">Spejlingstilstand</string>
+    <string name="screen_mirroring_privacy_policy">Skærmspejling privatlivspolitik</string>
+    <string name="privacy_policy">Fortrolighedspolitik</string>
+    <string name="supporting_devices">Understøttende enheder</string>
+    <string name="see_which_devices_support_mirroring">Se, hvilke enheder der understøtter spejling</string>
+    <string name="color_theme">Farvetema</string>
+    <string name="dark">Mørk</string>
+    <string name="light">Lys</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Vælg sprog</string>
+    <string name="close">tæt</string>
+    <string name="images_slider">Billeder Skyder</string>
+    <string name="screen_mirror">Skærmspejl</string>
+    <string name="tutorial_screen_setup_body">Din målenhed skal være i det samme Wi-Fi-netværk som denne enhed, fordi Screen Mirror sender din skærm.</string>
+    <string name="tutorial_screen_mirror_body">Stream din enheds skærm over Wi-Fi til din computer, notebook eller tablet.</string>
+    <string name="tutorial_device_hotspot_body">Du kan også bruge din enheds hotspot (tethering-tilstand) og forbinde din målenhed til dit hotspot.</string>
+    <string name="tutorial_scan_code_body">Åbn webstedet på din målenhed. Ved at scanne QR-koden sendes forbindelseskonfigurationen, og spejlingen starter.</string>
+    <string name="tutorial_support_body">Vær opmærksom på, at Screen Mirror kun virker, når den er konfigureret korrekt. Screen Mirror sender din skærm, men ikke din enheds lydsignaler. Hvis du støder på problemer, kontakt os.</string>
+    <string name="walk_through_body_1">Nyd jævn streaming af høj kvalitet\nuden forsinkelse</string>
+    <string name="walk_through_body_2">Opret forbindelse til enhver smartenhed, og nyd\nshowet på enhver skærm</string>
+    <string name="walk_through_body_3">Nyd privat browser i appen uden begrænsninger</string>
+    <string name="screen_setup">Skærmopsætning</string>
+    <string name="device_hotspot">Enhedens hotspot</string>
+    <string name="scan_code">Scan kode</string>
+    <string name="support">Support</string>
+    <string name="finish">Afslut</string>
+    <string name="our_policies">Vores politikker</string>
+    <string name="privacy_policy_text">Det er vigtigt for os at beskytte dit privatliv. Vi håber, at følgende erklæring vil hjælpe dig med at forstå, hvordan vi håndterer de personlige identificerbare oplysninger, som du lejlighedsvis giver os via internettet (Google Play-platformen).\n\nGenerelt. vi indsamler ingen PII fra dig, når du downloader vores Android-applikationer. For at være specifik, kræver vi ikke, at forbrugerne besøger vores applikation, vi har endda ikke en server til at gemme sådanne PII.\n\nSkærmspejling bruger Facebook som annonceudbyder. Facebook vil gerne vise annoncer, der er relevante for dig. For mere information besøg venligst\nhttps://m.facebook.com/ads/ad_choices.\n\nDen eneste situation, vi kan få adgang til din PII, er, når du personligt beslutter dig for at sende os din feedback via e-mail eller give os en fejl rapport. Den PII, vi kan få fra dig i den situation, er strengt begrænset til kun dit navn, e-mailadresse og dit spørgeskemasvar.\n\nI ovenstående situation garanterer vi, at din PII kun vil blive brugt til at kontakte dig og forbedre vores tjenester. Vi vil aldrig bruge sådanne oplysninger (f.eks. dit navn og din e-mailadresse_ til andre formål, såsom til yderligere at markedsføre vores produkter, eller til at videregive dine personlige oplysninger til en tredjepart til kommercielle fordele.\n\nDet skal bemærkes, at uanset om eller ikke at sende os din feedback eller fejlrapport er et helt frivilligt initiativ efter din egen beslutning. Hvis du er bekymret for, om din PII bliver misbrugt, eller hvis du ønsker yderligere information om vores privatlivspolitik og hvad det betyder, er du velkommen til at sende os en e-mail på screenmirroring.feedback@gmail.com vil vi bestræbe os på at give klare svar på dine spørgsmål rettidigt.</string>
+    <string name="please_write_your_feedback">Skriv venligst din feedback</string>
+    <string name="system_info">Dine systemoplysninger vil blive sendt til Screen Mirroring Tech Department</string>
+    <string name="send">Sende</string>
+    <string name="provide_feedback">give feedback</string>
+    <string name="invalid_email_provided">Ugyldig e-mail angivet</string>
+    <string name="check_your_internet_connection">Tjek din internetforbindelse</string>
+    <string name="type_here">Skriv her…</string>
+    <string name="enter_your_email_optional">Indtast din e-mail (valgfrit)</string>
+    <string name="enjoy_the_app">Nyder du appen?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Bedøm din oplevelse ved at bruge Screen\nMirroring App.</string>
+    <string name="not_now">Ikke nu</string>
+    <string name="feedback">Feedback:</string>
+    <string name="model">Model:</string>
+    <string name="brand">Mærke:</string>
+    <string name="os_version">OS version:</string>
+    <string name="manufacturer">Fabrikant:</string>
+    <string name="ram">VÆDDER:</string>
+    <string name="send_email">Send mail</string>
+    <string name="select_picture">Vælg Billede</string>
+    <string name="help_center">Hjælpecenter</string>
+    <string name="question_1">Min telefon sætter sig fast ved "Connecting", når den parrer med tv.</string>
+    <string name="question_2">Det virkede for mig før, men det \nvirker ikke nu.</string>
+    <string name="question_3">Det viser, at min enhed ikke \nunderstøttes.</string>
+    <string name="question_4">Mit tv er et gammelt tv og understøtter \nikke wi-fi.</string>
+    <string name="question_5">Billedet på tv er sort, men lyden \nkan høres.</string>
+    <string name="question_6">Forbindelsen afbrydes efter et \nstykke tid.</string>
+    <string name="question_7">Er mine personlige oplysninger eller \nmobildata absolut sikre?</string>
+    <string name="q_answer_1_1">Genstart smarttelefonens Wi-Fi og se, om forbindelsen er vellykket.</string>
+    <string name="q_answer_1_2">Sluk for tv\'et, og tag også dets netledning ud af stikkontakten. Vent 1 minut og genstart TV\'et.</string>
+    <string name="q_answer_1_3">Forkort afstanden mellem din telefon og tv\'et. Tag det tæt på.</string>
+    <string name="q_answer_2_1">Hvis det virkede før, så kan det helt sikkert bruges igen.</string>
+    <string name="q_answer_2_2">De fleste forbindelsesproblemer kan løses ved at genstarte enheder. Bare genstart både din telefon og dit TV, følg den almindelige forbindelsesproces for at prøve igen.</string>
+    <string name="q_answer_3_1">Det betyder, at din telefon i sig selv ikke understøtter skærmspejlingsfunktionen.</string>
+    <string name="q_answer_3_2">Du kan bruge XCast til at caste video, lyd og foto til TV. Med XCast kan du gøre andre ting med din telefon, mens du caster til TV.</string>
+    <string name="q_answer_4_1">Hvis dit TV understøtter HDMI-interface, anbefaler vi, at du køber en ekstern modtager til skærmspejling. Såsom Chromecast, Anycast osv.</string>
+    <string name="q_answer_5_1">Noget indhold involverer copyright-beskyttelse og kan ikke vises på tredjepartsenheder, såsom Netflix, Disney Plus osv.</string>
+    <string name="q_answer_5_2">Du kan downloade videoen eller se efter den samme ressource på andre apps for at prøve.</string>
+    <string name="q_answer_6_1">Du kan tænde for Smart Connect i dine Wi-Fi-indstillinger. Den søger konstant efter bedre Wi-fi-forbindelser og forbinder altid frem og tilbage.</string>
+    <string name="q_answer_6_2">Sørg for, at Wi-Fi på mobiltelefonen og tv\'et er SAM og det bedste signal.</string>
+    <string name="q_answer_7_1">Vi vil ikke overvåge eller indsamle oplysninger om dig og din mobiltelefon. Du kan caste din skærm uden bekymringer.</string>
+    <string name="q_answer_7_2">Systemet kan advare dig om, at der er en sikkerhedsrisiko før skærmspejling. Dette er bare en almindelig påmindelse, det vil den være</string>
+    <string name="wi_fi">TRÅDLØST INTERNET</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">INSTALLERE</string>
+    <string name="install_small">Installere</string>
+    <string name="manual">brugervejledning</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Sørg for, at din telefon og dit tv er forbundet\ntil det samme Wi-Fi-netværk.</string>
+    <string name="hd_streaming">HD streaming</string>
+    <string name="smart_devices">smarte enheder</string>
+    <string name="private_browser">Privat browser</string>
+    <string name="effects">Effekter</string>
+    <string name="slider">Skyder</string>
+    <string name="search_or_type_web_address">Søg eller skriv webadresse</string>
+    <string name="install_2">Installere</string>
+    <string name="bookmark">Bogmærke</string>
+    <string name="downloads">Downloads</string>
+    <string name="download">Hent</string>
+    <string name="favorites">Favoritter</string>
+    <string name="favorite">Favorit</string>
+    <string name="history">Historie</string>
+    <string name="share_pdf">Del pdf</string>
+    <string name="copy_url">Kopiér URL</string>
+    <string name="share_app">Del app</string>
+    <string name="share_url">Del url</string>
+    <string name="exit">Afslut</string>
+    <string name="new_tab">Ny fane</string>
+    <string name="google">Google</string>
+    <string name="startpage">Startside</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Tilpasset søgemaskine</string>
+    <string name="add_shortcut_to_home">Tilføj genvej til hjemmet</string>
+    <string name="save_screenshot">Gem skærmbillede</string>
+    <string name="add_to_bookmark">Tilføj til bogmærke</string>
+    <string name="save_as_pdf">Gem som pdf</string>
+    <string name="save_action">Gem handling</string>
+    <string name="add_to_favorite">Tilføj til favorit</string>
+    <string name="search_engine">Søgemaskine</string>
+    <string name="browser_exit_body">Er du sikker på, at du vil afslutte browseren</string>
+    <string name="exit_browser">Afslut browser</string>
+    <string name="custom_user_agent">Tilpasset brugeragent</string>
+    <string name="start_control">Start kontrol</string>
+    <string name="data_control">Datakontrol</string>
+    <string name="app_settings">App-indstillinger</string>
+    <string name="browser_settings">Browserindstillinger</string>
+    <string name="behavior_ui">Adfærd/UI</string>
+    <string name="clear_cache">Ryd cache</string>
+    <string name="clear_history">Ryd historik</string>
+    <string name="clear_browsing_history">Ryd browserhistorik</string>
+    <string name="clear_all_cache">Ryd al cache</string>
+    <string name="clear_database_body">Ryd "indekserede databaser" og "lokale\ndatabaser"</string>
+    <string name="clear_cookies_body">Hvis aktiveret, vil alle cookies blive slettet. Også\ncookies på betroede websteder</string>
+    <string name="clear_databases">Ryd databaser</string>
+    <string name="clear_cookies">Ryd cookies</string>
+    <string name="clear_when_application_exit">Ryd, når applikationen afsluttes</string>
+    <string name="clear_when_application_exit_body">Hver gang du afslutter alle ovennævnte kontrollerede data\nvil blive slettet</string>
+    <string name="image">Billede</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Cookies</string>
+    <string name="reopen_last_tab">Åbn sidste fane igen</string>
+    <string name="confirm_tab_close">Bekræft fanelukning</string>
+    <string name="confirm_browser_exit">Bekræft browserafslutning</string>
+    <string name="position">Position</string>
+    <string name="first_toolbar">Første værktøjslinje</string>
+    <string name="hide_toolbar">Skjul værktøjslinjen</string>
+    <string name="toolbar">Værktøjslinje</string>
+    <string name="bookmarks">Bogmærker</string>
+    <string name="edit">Redigere</string>
+    <string name="today">I dag</string>
+    <string name="the_last_hour">Den sidste time</string>
+    <string name="last_week">Sidste uge</string>
+    <string name="last_month">Sidste måned</string>
+    <string name="delete_all_history">Slet al historik</string>
+    <string name="copied">kopieret</string>
+    <string name="share_ss">Del SS</string>
+    <string name="file_manager">Filhåndtering</string>
+    <string name="search_on">Søg på</string>
+    <string name="add_shortcut">Tilføj genvej</string>
+    <string name="tab_exit">Tab Afslut</string>
+    <string name="do_you_want_to_close">Vil du lukke</string>
+    <string name="download_complete_share_image">Download fuldført. Del billede</string>
+    <string name="update">Opdatering</string>
+    <string name="unfavorite">En favorit</string>
+    <string name="no_input_provided">Ingen input angivet</string>
+    <string name="input">Input</string>
+    <string name="website_link">Website link</string>
+    <string name="for_you">For dig</string>
+    <string name="website">Internet side:</string>
+    <string name="url">URL:</string>
+    <string name="date">Dato</string>
+    <string name="no_site_loaded">Du har ikke indlæst hjemmeside</string>
+    <string name="more_then_5_images_can_not_be_picked">Mere end fem billeder kan ikke vælges</string>
+</resources>

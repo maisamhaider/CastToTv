@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--hmong-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">"Qhov chaw "</string>
+    <string name="connection_close_confirm">Koj puas xav thim qhov kev sib txuas VPN tam sim no?</string>
+    <string name="yes">YOG</string>
+    <string name="no">TSIS MUAJ</string>
+    <string name="yes_2">Yog lawm</string>
+    <string name="no_2">Tsis muaj</string>
+    <string name="select_images">Xaiv cov duab</string>
+    <string name="tabs">Tabs</string>
+    <string name="share">Qhia</string>
+    <string name="save">Txuag</string>
+    <string name="more">Ntau</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Tso tseg</string>
+    <string name="favorite_site">Hloov lub vev xaib qub uas thauj khoom ntawm\n pib ntawm Browser</string>
+    <string name="custom_search_engine_body">Ntxiv kev cai tshawb nrhiav url kuj xaiv "Custom\nsearch engine" raws li kev tshawb nrhiav</string>
+    <string name="search_engine_body">Xaiv lub tshuab tshawb nrhiav uas koj nyiam lossis\n teem ib qho kev cai</string>
+    <string name="data_control_body">Tshem koj cov ntaub ntawv browser lossis txiav txim siab seb cov ntaub ntawv yuav raug tshem tawm thaum koj tawm hauv lub app</string>
+    <string name="start_control_body">Txiav txim siab seb qhov twg ntawm qhov browser\n yuav pib</string>
+    <string name="behavior_ui_body">Hloov tus cwj pwm thiab ui ntawm lub app kom\n haum koj nyiam</string>
+    <string name="book_mark_body">Txhawm rau qhia qhov lim dialog ntev nias ntawm lub cim bookmark hauv lub ntsiab lus. Txiav txim siab seb koj yuav siv cov lim dej twg</string>
+    <string name="app_settings_body">Kev teeb tsa browser, nyob ntawd koj tuaj yeem nyob ntawm\nkoj Android version tso cai tso cai.</string>
+    <string name="start_control_image_body">Qhib cov duab Network, Disabling yuav pab tau\n txuag cov ntaub ntawv mobile thiab thauj lub vev xaib sai dua</string>
+    <string name="start_control_location_body">Tso cai rau cov vev xaib nkag mus rau koj qhov chaw. Qee lub vev xaib {google, maps rau nav) xav tau qhov no</string>
+    <string name="start_control_history_body">Txuag keeb kwm ntawm cov vev xaib uas tau mus xyuas</string>
+    <string name="start_control_java_script_body">Qhib JavaScript. Ntau lub vev xaib xav tau\nJavaScript rau lawv txoj haujlwm. Tab sis lawv tau so thiab tuaj yeem siv rau kev tawm tsam</string>
+    <string name="start_control_cookies_body">Qhib cov ncuav qab zib. Cov ncuav qab zib yog cov ntawv me me,
+uas tau khaws cia rau hauv koj lub cuab yeej. Cov vev xaib siv
+lawv piv txwv los khaws cov neeg siv kev teeb tsa. Tab sis
+lawv kuj tuaj yeem siv los sau cov neeg siv tus kheej
+cov ntaub ntawv. Cov ncuav qab zib thib peb yeej ib txwm ua tsis taus.</string>
+    <string name="confirmation_browser_exit_body">Confirmation dialog when\nlosing browser</string>
+    <string name="confirmation_tab_close_body">Kev lees paub dialog thaum kaw ib lub tab</string>
+    <string name="confirmation_reopen_last_body">Rov qhib lub tab tshiab thaum lub tab kawg raug kaw es tsis txhob tawm ntawm qhov browser</string>
+    <string name="hide_toolbar_body">Siv tag nrho lub vijtsam thaum scrolling hauv lub vev xaib yog tias koj nias lub pob rov qab koj yuav tawm hauv hom puv npo</string>
+    <string name="images">Duab</string>
+    <string name="videos">Yeeb yaj duab</string>
+    <string name="web_browser">Web Browser</string>
+    <string name="image_slider">Duab Slider</string>
+    <string name="next">Tom ntej no</string>
+    <string name="previous">Yav dhau los</string>
+    <string name="help">Pab</string>
+    <string name="settings">Chaw</string>
+    <string name="language">Lus</string>
+    <string name="more_app">Ntau Apps</string>
+    <string name="rate_us">Ntsuas peb</string>
+    <string name="screen_mirroring">Screen Mirroring</string>
+    <string name="home_screen_text">Xyuas kom koj lub xov tooj thiab TV txuas nrog tib lub Wi-Fi network.</string>
+    <string name="wifi_connected">Txuas Wi-Fi</string>
+    <string name="wifi_disconnected">Wi-Fi Disconnected</string>
+    <string name="general">General</string>
+    <string name="communicate">Sib txuas lus</string>
+    <string name="send_feedback">Xa lus tawm tswv yim</string>
+    <string name="tutorial">Kev qhia</string>
+    <string name="how_to_use">Yuav siv li cas?</string>
+    <string name="streaming">Tshaj tawm</string>
+    <string name="streaming_quality">Streaming Quality</string>
+    <string name="auto_stop">Nws pib nres</string>
+    <string name="auto_minimize">Auto Minimize</string>
+    <string name="advance">Ua ntej</string>
+    <string name="orientation_mode">Hom kev taw qhia</string>
+    <string name="auto_stop_body_text">Nres video thaum kev sib txuas\n mus rau lub hom phiaj ploj</string>
+    <string name="auto_minimize_body_text">Nkaum app thaum mirroring pib</string>
+    <string name="casting_orientation_body_text">Casting orientation</string>
+    <string name="mirroring_mode">Mirroring hom</string>
+    <string name="screen_mirroring_privacy_policy">Screen mirroring txoj cai ntiag tug</string>
+    <string name="privacy_policy">Txoj Cai Tswjfwm Ntiag Tug</string>
+    <string name="supporting_devices">Txhawb Devices</string>
+    <string name="see_which_devices_support_mirroring">Saib cov cuab yeej twg txhawb nqa mirroring</string>
+    <string name="color_theme">Xim Ntsiab Lus</string>
+    <string name="dark">Tsaus</string>
+    <string name="light">Teeb</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Xaiv hom lus</string>
+    <string name="close">kaw</string>
+    <string name="images_slider">Duab Slider</string>
+    <string name="screen_mirror">Daim iav</string>
+    <string name="tutorial_screen_setup_body">Koj lub hom phiaj ntaus ntawv yuav tsum nyob rau hauv tib lub Wi-nkaus network li no ntaus ntawv, vim hais tias Screen Mirror yog kis koj lub vijtsam.</string>
+    <string name="tutorial_screen_mirror_body">kwj koj lub vijtsam hauv Wi-nkaus rau koj lub computer, phau ntawv lossis ntsiav tshuaj.</string>
+    <string name="tutorial_device_hotspot_body">Koj tuaj yeem siv koj lub cuab yeej hotspot (tethering hom) thiab txuas koj lub hom phiaj ntaus ntawv rau koj lub hotspot.</string>
+    <string name="tutorial_scan_code_body">Qhib qhov chaw ntawm koj lub hom phiaj ntaus ntawv. Los ntawm kev luam theej duab QR code, qhov kev sib txuas teeb tsa tau raug xa mus thiab mirroring pib.</string>
+    <string name="tutorial_support_body">Thov nco ntsoov tias Screen Mirror tsuas ua haujlwm thaum teeb tsa kom raug. Screen Mirror xa koj lub vijtsam, tab sis tsis yog koj lub cuab yeej lub suab teeb liab. Yog tias koj ntsib teeb meem tiv tauj peb.</string>
+    <string name="walk_through_body_1">Txaus siab rau kev sib tw thiab zoo streaming\n tsis muaj kev lag luam</string>
+    <string name="walk_through_body_2">Txuas nrog txhua lub cuab yeej ntse thiab txaus siab rau \nshow ntawm ib qho screen</string>
+    <string name="walk_through_body_3">Txaus siab rau hauv-app ntiag tug browser yam tsis muaj kev txwv</string>
+    <string name="screen_setup">Kev teeb tsa screen</string>
+    <string name="device_hotspot">Device\'s Hotspot</string>
+    <string name="scan_code">Luam theej duab</string>
+    <string name="support">Txhawb nqa</string>
+    <string name="finish">Ua kom tiav</string>
+    <string name="our_policies">Peb Txoj Cai</string>
+    <string name="privacy_policy_text">Tiv thaiv koj tus kheej yog qhov tseem ceeb rau peb. Peb cia siab tias cov lus hauv qab no yuav pab koj nkag siab tias peb cuam tshuam nrog cov ntaub ntawv txheeb xyuas tus kheej li cas, qee zaum koj tuaj yeem muab rau peb ntawm Is Taws Nem (Google Play platform).\n\n Feem ntau. peb tsis sau ib qho PII los ntawm koj thaum koj rub tawm peb cov ntawv thov hauv Android. Yuav kom paub meej, peb tsis xav kom cov neeg siv khoom tuaj xyuas peb daim ntawv thov, peb txawm tsis muaj Server los khaws cov PII.\n\nScreen Mirroring siv Facebook ua tus muab kev tshaj tawm. Facebook xav qhia kev tshaj tawm uas cuam tshuam rau koj. Yog xav paub ntxiv thov mus saib \nhttps://m.facebook.com/ads/ad_choices.\n\nQhov xwm txheej tsuas yog peb tuaj yeem nkag tau rau koj PII yog thaum koj tus kheej txiav txim siab xa email rau peb koj cov lus teb lossis muab cov kab laum rau peb qhia. PII tej zaum peb yuav tau txais los ntawm koj nyob rau hauv qhov xwm txheej yog nruj me ntsis txwv rau koj lub npe, email chaw nyob thiab koj cov lus teb cov lus nug nkaus xwb.\n\n nyob rau hauv cov xwm txheej saum toj no, peb lav tias koj PII tsuas yog siv los tiv tauj koj thiab txhim kho peb cov kev pabcuam. Peb yuav tsis siv cov ntaub ntawv no (xws li koj lub npe thiab email chaw nyob_ rau lwm lub hom phiaj, xws li kev lag luam ntxiv rau peb cov khoom, lossis nthuav tawm koj cov ntaub ntawv ntiag tug rau lwm tus neeg sab nrauv kom tau txais txiaj ntsig kev lag luam.\n\nNws yuav tsum tau muab sau tseg tias txawm los yog Yog tias koj muaj kev txhawj xeeb txog koj qhov PII raug siv tsis raug, lossis yog tias koj xav paub ntxiv txog peb txoj cai ntiag tug thiab nws txhais li cas, thov koj xa email rau peb. ntawm screenmirroring.feedback@gmail.com, peb yuav sim muab cov lus teb meej rau koj cov lus nug raws sijhawm.</string>
+    <string name="please_write_your_feedback">Thov sau koj lub tswv yim</string>
+    <string name="system_info">Koj cov ntaub ntawv System yuav raug xa mus rau Screen Mirroring tech Department</string>
+    <string name="send">Xa</string>
+    <string name="provide_feedback">muab tswv yim</string>
+    <string name="invalid_email_provided">Invalid Email muab</string>
+    <string name="check_your_internet_connection">Tshawb xyuas koj qhov kev sib txuas hauv internet</string>
+    <string name="type_here">ntaus ntawm no…</string>
+    <string name="enter_your_email_optional">Sau koj tus email (yeem)</string>
+    <string name="enjoy_the_app">Txaus siab rau App?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Ntsuas koj qhov kev paub dhau los siv Screen\nMirroring App.</string>
+    <string name="not_now">Tsis yog tam sim no</string>
+    <string name="feedback">Cov lus teb:</string>
+    <string name="model">Qauv:</string>
+    <string name="brand">Hom Tshuaj:</string>
+    <string name="os_version">OS Version:</string>
+    <string name="manufacturer">Chaw tsim tshuaj paus:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Xa ntawv</string>
+    <string name="select_picture">Xaiv daim duab</string>
+    <string name="help_center">Chaw Pabcuam</string>
+    <string name="question_1">Kuv lub xov tooj tau daig ntawm "Txuas" \nthaum txuas nrog TV.</string>
+    <string name="question_2">Nws ua haujlwm rau kuv ua ntej, tab sis tam sim no tsis ua haujlwm.</string>
+    <string name="question_3">Nws qhia tau tias kuv lub cuab yeej \ntsis txhawb nqa.</string>
+    <string name="question_4">Kuv lub TV yog TV qub thiab tsis \ntxhawb wi-fi.</string>
+    <string name="question_5">Cov duab hauv TV yog xim dub, tab sis \nlub suab tuaj yeem hnov.</string>
+    <string name="question_6">Kev sib txuas yuav raug cuam tshuam \ntom qab ib ntus.</string>
+    <string name="question_7">Puas yog kuv cov ntaub ntawv ntiag tug lossis cov ntaub ntawv xov tooj ntawm tes muaj kev nyab xeeb tiag tiag?</string>
+    <string name="q_answer_1_1">Rov pib lub xov tooj ntse Wi-Fi thiab saib seb qhov kev sib txuas puas ua tiav.</string>
+    <string name="q_answer_1_2">Tua lub TV thiab tshem tawm nws txoj hlua hluav taws xob los ntawm lub qhov (socket). Tos 1 feeb thiab rov pib lub TV.</string>
+    <string name="q_answer_1_3">Txo qhov kev ncua deb ntawm koj lub xov tooj thiab TV. Nqa nws mus ze.</string>
+    <string name="q_answer_2_1">Yog tias nws ua haujlwm ua ntej, ces nws yeej siv tau dua.</string>
+    <string name="q_answer_2_2">Feem ntau cov teeb meem kev sib txuas tuaj yeem daws tau los ntawm kev pib dua cov khoom siv. Tsuas yog rov pib dua koj lub xov tooj thiab TV, ua raws li cov txheej txheem txuas mus tas li kom rov sim dua.</string>
+    <string name="q_answer_3_1">Qhov no txhais tau tias koj lub xov tooj nws tus kheej tsis txhawb lub vijtsam mirroring muaj nuj nqi.</string>
+    <string name="q_answer_3_2">Koj tuaj yeem siv XCast los tso video, suab thiab duab rau TV. Nrog XCast, koj tuaj yeem ua lwm yam nrog koj lub xov tooj thaum muab tso rau TV.</string>
+    <string name="q_answer_4_1">Yog tias koj lub TV txhawb HDMI interface, peb xav kom koj yuav ib lub receiver sab nraud rau kev tshuaj ntsuam mirroring. Xws li Chromecast, Anycast thiab lwm yam.</string>
+    <string name="q_answer_5_1">Qee cov ntsiab lus cuam tshuam txog kev tiv thaiv kev cai lij choj thiab tsis tuaj yeem tso tawm ntawm cov khoom siv thib peb, xws li Netflix, Disney Plus thiab lwm yam.</string>
+    <string name="q_answer_5_2">Koj tuaj yeem rub tawm cov vis dis aus lossis nrhiav tib cov peev txheej ntawm lwm cov apps kom muaj kev sim.</string>
+    <string name="q_answer_6_1">Koj tuaj yeem qhib Smart Connect hauv koj qhov chaw Wi-Fi. Nws yuav tshawb nrhiav kev sib txuas zoo Wi-nkaus tas li, thiab ib txwm txuas rov qab thiab tawm mus.</string>
+    <string name="q_answer_6_2">Thov nco ntsoov tias Wi-Fi ntawm lub xov tooj ntawm tes thiab TV yog SAM thiab cov teeb liab zoo tshaj plaws.</string>
+    <string name="q_answer_7_1">Peb yuav tsis saib xyuas lossis sau cov ntaub ntawv ntawm koj thiab koj lub xov tooj ntawm tes. Koj tuaj yeem pov koj lub vijtsam yam tsis muaj kev txhawj xeeb.</string>
+    <string name="q_answer_7_2">Lub kaw lus yuav ceeb toom koj tias muaj kev nyab xeeb kev nyab xeeb ua ntej qhov screen mirroring. Qhov no tsuas yog ceeb toom tsis tu ncua, nws yuav yog</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRA UAS</string>
+    <string name="install">INSTALL</string>
+    <string name="install_small">Nruab</string>
+    <string name="manual">Phau ntawv</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Xyuas kom koj lub xov tooj thiab TV txuas nrog\n mus rau tib lub Wi-Fi network.</string>
+    <string name="hd_streaming">HD Streaming</string>
+    <string name="smart_devices">cov khoom siv ntse</string>
+    <string name="private_browser">Private Browser</string>
+    <string name="effects">Cov teebmeem</string>
+    <string name="slider">Slider</string>
+    <string name="search_or_type_web_address">Nrhiav los yog ntaus lub vev xaib</string>
+    <string name="install_2">Nruab</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="downloads">Downloads</string>
+    <string name="download">Download tau</string>
+    <string name="favorites">Nyiam</string>
+    <string name="favorite">Nyiam</string>
+    <string name="history">Keeb kwm</string>
+    <string name="share_pdf">Qhia Pdf</string>
+    <string name="copy_url">Luam URL</string>
+    <string name="share_app">Qhia App</string>
+    <string name="share_url">Qhia url</string>
+    <string name="exit">Tawm</string>
+    <string name="new_tab">New Tab</string>
+    <string name="google">Google</string>
+    <string name="startpage">PibPage</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Kev cai tshawb nrhiav cav</string>
+    <string name="add_shortcut_to_home">Ntxiv shortcut rau tsev</string>
+    <string name="save_screenshot">Txuag Screenshot</string>
+    <string name="add_to_bookmark">Ntxiv rau bookmark</string>
+    <string name="save_as_pdf">Txuag li pdf</string>
+    <string name="save_action">Txuag Action</string>
+    <string name="add_to_favorite">Ntxiv rau qhov nyiam</string>
+    <string name="search_engine">Tshawb nrhiav cav</string>
+    <string name="browser_exit_body">Koj puas paub tseeb tias koj xav tawm Browser</string>
+    <string name="exit_browser">Tawm Browser</string>
+    <string name="custom_user_agent">Custom user agent</string>
+    <string name="start_control">Pib Tswj</string>
+    <string name="data_control">Cov Ntaub Ntawv Tswj</string>
+    <string name="app_settings">App nqis</string>
+    <string name="browser_settings">Browser Settings</string>
+    <string name="behavior_ui">Cwj Pwm/UI</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="clear_history">Clear History</string>
+    <string name="clear_browsing_history">Clear browsing keeb kwm</string>
+    <string name="clear_all_cache">Tshem tag nrho cov cache</string>
+    <string name="clear_database_body">Clear “indexed databases” thiab “local\ndata bases”</string>
+    <string name="clear_cookies_body">Yog tias enabled, tag nrho cov ncuav qab zib yuav raug muab tshem tawm. Kuj\n Cov ncuav qab zib ntawm cov vev xaib ntseeg siab</string>
+    <string name="clear_databases">Clear databases</string>
+    <string name="clear_cookies">Clear ncuav qab zib</string>
+    <string name="clear_when_application_exit">Clear thaum daim ntawv thov tawm</string>
+    <string name="clear_when_application_exit_body">Txhua zaus koj tawm tag nrho saum toj no cov ntaub ntawv txheeb xyuas\n yuav raug tshem tawm</string>
+    <string name="image">Duab</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">ncuav qab zib</string>
+    <string name="reopen_last_tab">Rov qhib tab kawg</string>
+    <string name="confirm_tab_close">Confirm tab close</string>
+    <string name="confirm_browser_exit">Paub meej tias browser tawm</string>
+    <string name="position">Txoj hauj lwm</string>
+    <string name="first_toolbar">Thawj toolbar</string>
+    <string name="hide_toolbar">Nkaum toolbar</string>
+    <string name="toolbar">Toolbar</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="edit">Kho kom raug</string>
+    <string name="today">Hnub no</string>
+    <string name="the_last_hour">Lub sijhawm kawg</string>
+    <string name="last_week">Lub lim tiam dhau los</string>
+    <string name="last_month">Lub hli tas los</string>
+    <string name="delete_all_history">Rho tawm tag nrho cov keeb kwm</string>
+    <string name="copied">luam</string>
+    <string name="share_ss">Share SS</string>
+    <string name="file_manager">Tus Thawj Tswj Ntaub Ntawv</string>
+    <string name="search_on">Nrhiav rau</string>
+    <string name="add_shortcut">Ntxiv Shortcut</string>
+    <string name="tab_exit">Tab Exit</string>
+    <string name="do_you_want_to_close">Koj puas xav kaw</string>
+    <string name="download_complete_share_image">Download tau tiav. Qhia duab</string>
+    <string name="update">Hloov tshiab</string>
+    <string name="unfavorite">Tsis nyiam</string>
+    <string name="no_input_provided">Tsis muaj tswv yim muab</string>
+    <string name="input">Tswv yim</string>
+    <string name="website_link">Lub vev xaib txuas</string>
+    <string name="for_you">Rau Koj</string>
+    <string name="website">Lub Vev Xaib:</string>
+    <string name="url">Url:</string>
+    <string name="date">Hnub tim</string>
+    <string name="no_site_loaded">Koj tsis muaj lub website loaded</string>
+    <string name="more_then_5_images_can_not_be_picked">Ntau tshaj tsib daim duab tuaj yeem xaiv tsis tau</string>
+</resources>

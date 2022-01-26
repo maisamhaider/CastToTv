@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Vietnamese-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+
+    <string name="connection_close_confirm">Bạn có muốn hủy Kết nối VPN hiện tại không?</string>
+    <string name="yes">ĐÚNG</string>
+    <string name="no">KHÔNG</string>
+    <string name="yes_2">Đúng</string>
+    <string name="no_2">Không</string>
+    <string name="select_images">Chọn hình ảnh</string>
+    <string name="tabs">Các tab</string>
+    <string name="share">Chia sẻ</string>
+    <string name="save">Cứu</string>
+    <string name="more">Hơn</string>
+    <string name="ok">VÂNG</string>
+    <string name="cancel">Hủy bỏ</string>
+    <string name="favorite_site">Thay đổi trang web mặc định tải khi \n khởi động Trình duyệt</string>
+    <string name="custom_search_engine_body">Thêm url tìm kiếm tùy chỉnh cũng chọn “Custom \nsearch engine” làm nhà cung cấp dịch vụ tìm kiếm</string>
+    <string name="search_engine_body">Chọn công cụ tìm kiếm ưa thích của bạn hoặc \n đặt một công cụ tùy chỉnh</string>
+    <string name="data_control_body">Xóa dữ liệu trình duyệt của bạn hoặc quyết định dữ liệu nào \n sẽ bị xóa khi bạn rời khỏi ứng dụng</string>
+    <string name="start_control_body">Quyết định thành phần nào của trình duyệt \n sẽ được khởi động</string>
+    <string name="behavior_ui_body">Thay đổi hành vi và ui của ứng dụng để \n phù hợp với tùy chọn của bạn</string>
+    <string name="book_mark_body">Để hiển thị hộp thoại bộ lọc, hãy nhấn và giữ biểu tượng dấu trang trong phần tổng quan. Quyết định bộ lọc nào bạn sẽ sử dụng</string>
+    <string name="app_settings_body">Cài đặt trình duyệt, ở đó bạn có thể tùy thuộc vào quyền cấp cho phiên bản android của bạn.</string>
+    <string name="start_control_image_body">Bật Hình ảnh mạng, Việc tắt có thể hữu ích \n sể tiết kiệm dữ liệu di động và tải trang web nhanh hơn</string>
+    <string name="start_control_location_body">Cho phép các trang web truy cập vị trí của bạn. Một số \nwebsites {google, maps for nav) cần bật tính năng này</string>
+    <string name="start_control_history_body">Lưu lịch sử của các trang web đã truy cập</string>
+    <string name="start_control_java_script_body">Bật JavaScript. Nhiều trang web cần \nJavaScript cho chức năng của chúng. Nhưng chúng vẫn được nghỉ ngơi và có thể được sử dụng để tấn công</string>
+    <string name="start_control_cookies_body">Bật cookie. Cookie là các tệp văn bản nhỏ,
+được lưu trữ trên thiết bị của bạn. Các trang web sử dụng
+chúng chẳng hạn để lưu trữ các cài đặt của người dùng. Nhưng
+chúng cũng có thể được sử dụng để thu thập người dùng cá nhân
+dữ liệu. Cookie của bên thứ ba luôn bị vô hiệu hóa.</string>
+    <string name="confirmation_browser_exit_body">Hộp thoại xác nhận khi \nđóng trình duyệt</string>
+    <string name="confirmation_tab_close_body">Hộp thoại xác nhận khi đóng tab</string>
+    <string name="confirmation_reopen_last_body">Mở lại tab mới khi tab cuối cùng bị đóng thay vì thoát khỏi trình duyệt</string>
+    <string name="hide_toolbar_body">Sử dụng toàn màn hình khi cuộn qua trang web nếu bạn nhấn nút quay lại, bạn sẽ thoát khỏi chế độ toàn màn hình</string>
+    <string name="images">Hình ảnh</string>
+    <string name="videos">Video</string>
+    <string name="web_browser">Trình duyệt web</string>
+    <string name="image_slider">Thanh trượt hình ảnh</string>
+    <string name="next">Kế tiếp</string>
+    <string name="previous">Trước</string>
+    <string name="help">Cứu giúp</string>
+    <string name="settings">Cài đặt</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="more_app">Thêm nhiều ứng dụng</string>
+    <string name="rate_us">Đánh giá chúng tôi</string>
+    <string name="screen_mirroring">Phản chiếu màn hình</string>
+    <string name="home_screen_text">Đảm bảo rằng điện thoại và TV của bạn được kết nối với cùng một mạng Wi-Fi.</string>
+    <string name="wifi_connected">Đã kết nối Wi-Fi</string>
+    <string name="wifi_disconnected">Đã ngắt kết nối Wi-Fi</string>
+    <string name="general">Tổng quan</string>
+    <string name="communicate">Giao tiếp</string>
+    <string name="send_feedback">Gửi thông tin phản hồi</string>
+    <string name="tutorial">Hướng dẫn</string>
+    <string name="how_to_use">Làm thế nào để sử dụng?</string>
+    <string name="streaming">Truyền trực tuyến</string>
+    <string name="streaming_quality">Chất lượng phát trực tuyến</string>
+    <string name="auto_stop">Tự động dừng</string>
+    <string name="auto_minimize">Tự động thu nhỏ</string>
+    <string name="advance">Tiến bộ</string>
+    <string name="orientation_mode">Chế độ định hướng</string>
+    <string name="auto_stop_body_text">Dừng video khi mất kết nối \ nto target</string>
+    <string name="auto_minimize_body_text">Ẩn ứng dụng khi bắt đầu phản chiếu</string>
+    <string name="casting_orientation_body_text">Định hướng đúc</string>
+    <string name="mirroring_mode">Chế độ phản chiếu</string>
+    <string name="screen_mirroring_privacy_policy">Chính sách về quyền riêng tư của phản chiếu màn hình</string>
+    <string name="privacy_policy">Chính sách bảo mật</string>
+    <string name="supporting_devices">Thiết bị hỗ trợ</string>
+    <string name="see_which_devices_support_mirroring">Xem thiết bị nào hỗ trợ phản chiếu</string>
+    <string name="color_theme">Chủ đề màu sắc</string>
+    <string name="dark">Tối tăm</string>
+    <string name="light">Nhẹ</string>
+    <string name="auto">Tự động</string>
+    <string name="select_language">Chọn ngôn ngữ</string>
+    <string name="close">gần</string>
+    <string name="images_slider">Thanh trượt hình ảnh</string>
+    <string name="screen_mirror">Gương màn hình</string>
+    <string name="tutorial_screen_setup_body">Thiết bị mục tiêu của bạn phải ở trong cùng một mạng Wi-Fi với thiết bị này vì Screen Mirror đang truyền màn hình của bạn.</string>
+    <string name="tutorial_screen_mirror_body">Truyền trực tuyến màn hình thiết bị của bạn qua Wi-Fi tới máy tính, máy tính xách tay hoặc máy tính bảng của bạn.</string>
+    <string name="tutorial_device_hotspot_body">Bạn cũng có thể sử dụng điểm phát sóng của thiết bị (chế độ chia sẻ kết nối) và kết nối thiết bị mục tiêu với điểm phát sóng của bạn.</string>
+    <string name="tutorial_scan_code_body">Mở trang web trên thiết bị mục tiêu của bạn. Bằng cách quét mã QR, cấu hình kết nối sẽ được truyền đi và quá trình phản chiếu bắt đầu.</string>
+    <string name="tutorial_support_body">Xin lưu ý rằng Screen Mirror chỉ hoạt động khi được thiết lập đúng cách. Screen Mirror truyền màn hình của bạn, nhưng không truyền tín hiệu âm thanh của thiết bị. Nếu bạn phải đối mặt với bất kỳ vấn đề liên hệ với chúng tôi.</string>
+    <string name="walk_through_body_1">Tận hưởng quá trình phát trực tuyến chất lượng cao và mượt mà \ n không có độ trễ</string>
+    <string name="walk_through_body_2">Kết nối với bất kỳ thiết bị thông minh nào và thưởng thức \ nshow trên bất kỳ màn hình nào</string>
+    <string name="walk_through_body_3">Tận hưởng trình duyệt riêng tư trong ứng dụng không có giới hạn</string>
+    <string name="screen_setup">Thiết lập màn hình</string>
+    <string name="device_hotspot">Điểm phát sóng của thiết bị</string>
+    <string name="scan_code">Quét mã</string>
+    <string name="support">Hỗ trợ</string>
+    <string name="finish">Hoàn thành</string>
+    <string name="our_policies">Chính sách của chúng tôi</string>
+    <string name="privacy_policy_text">Bảo vệ sự riêng tư của bạn là điều quan trọng đối với chúng tôi. Chúng tôi hy vọng tuyên bố sau đây sẽ giúp bạn hiểu cách chúng tôi xử lý thông tin nhận dạng cá nhân, đôi khi bạn có thể cung cấp cho chúng tôi qua Internet (nền tảng Google Play). \ N \ n Nói chung. chúng tôi không thu thập bất kỳ PII nào từ bạn khi bạn tải xuống các ứng dụng Android của chúng tôi. Cụ thể, chúng tôi không yêu cầu người tiêu dùng truy cập ứng dụng của chúng tôi, thậm chí chúng tôi không có Máy chủ để lưu trữ PII đó. \ N \ nScreen Mirroring sử dụng Facebook làm nhà cung cấp quảng cáo. Facebook muốn hiển thị quảng cáo có liên quan đến bạn. Để biết thêm thông tin, vui lòng truy cập \ nhttps: //m.facebook.com/ads/ad_choices. \ N \ nTrường hợp duy nhất chúng tôi có thể tiếp cận PII của bạn là khi cá nhân bạn quyết định gửi cho chúng tôi phản hồi của bạn hoặc cung cấp lỗi cho chúng tôi báo cáo. PII chúng tôi có thể nhận được từ bạn trong tình huống đó chỉ giới hạn ở tên bạn, địa chỉ email và câu trả lời khảo sát của bạn. \ N \ nTrong tình huống trên, chúng tôi đảm bảo rằng PII của bạn sẽ chỉ được sử dụng để liên hệ với bạn và cải thiện dịch vụ của chúng tôi. Chúng tôi sẽ không bao giờ sử dụng những thông tin đó (ví dụ: tên và địa chỉ email_ của bạn cho bất kỳ mục đích nào khác, chẳng hạn như để tiếp thị thêm sản phẩm của chúng tôi hoặc để tiết lộ thông tin cá nhân của bạn cho bên thứ ba vì lợi ích thương mại. \ N \ nCần lưu ý rằng liệu hoặc không gửi cho chúng tôi phản hồi của bạn hoặc báo cáo lỗi là một sáng kiến ​​hoàn toàn tự nguyện theo quyết định của riêng bạn. Nếu bạn lo lắng về việc PII của mình bị lạm dụng hoặc nếu bạn muốn biết thêm thông tin về chính sách bảo mật của chúng tôi và ý nghĩa của nó, vui lòng gửi email cho chúng tôi tại screenmirroring.feedback@gmail.com, chúng tôi sẽ cố gắng cung cấp câu trả lời rõ ràng cho các câu hỏi của bạn một cách kịp thời.</string>
+    <string name="please_write_your_feedback">Vui lòng viết phản hồi của bạn</string>
+    <string name="system_info">Thông tin hệ thống của bạn sẽ được gửi đến Phòng công nghệ phản chiếu màn hình</string>
+    <string name="send">Gửi</string>
+    <string name="provide_feedback">cung cấp phản hồi</string>
+    <string name="invalid_email_provided">Email không hợp lệ được cung cấp</string>
+    <string name="check_your_internet_connection">Kiểm tra kết nối Internet của bạn</string>
+    <string name="type_here">nhập ở đây…</string>
+    <string name="enter_your_email_optional">Nhập email của bạn (tùy chọn)</string>
+    <string name="enjoy_the_app">Thích ứng dụng?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Đánh giá trải nghiệm của bạn bằng ứng dụng Screen \ nMirroring.</string>
+    <string name="not_now">Không phải bây giờ</string>
+    <string name="feedback">Phản hồi:</string>
+    <string name="model">Mô hình:</string>
+    <string name="brand">Nhãn hiệu:</string>
+    <string name="os_version">Phiên bản của hệ điều hành:</string>
+    <string name="manufacturer">Nhà chế tạo:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Gửi thư</string>
+    <string name="select_picture">Chọn ảnh</string>
+    <string name="help_center">Trung tâm trợ giúp</string>
+    <string name="question_1">Điện thoại của tôi bị kẹt ở “Đang kết nối” khi ghép nối với TV.</string>
+    <string name="question_2">Nó hoạt động với tôi trước đây, nhưng nó không hoạt động bây giờ.</string>
+    <string name="question_3">Nó cho thấy rằng thiết bị của tôi \nkhông được hỗ trợ.</string>
+    <string name="question_4">TV của tôi là TV cũ và không \nhỗ trợ wi-fi.</string>
+    <string name="question_5">Hình ảnh trên TV màu đen, nhưng có thể nghe thấy âm thanh.</string>
+    <string name="question_6">Kết nối sẽ bị gián đoạn sau một \nthời gian.</string>
+    <string name="question_7">Thông tin cá nhân hoặc dữ liệu di động của tôi có an toàn tuyệt đối không?</string>
+    <string name="q_answer_1_1">Khởi động lại Wi-Fi của điện thoại thông minh và xem kết nối có thành công hay không.</string>
+    <string name="q_answer_1_2">Tắt TV và rút dây nguồn khỏi ổ cắm. Chờ 1 phút và khởi động lại TV.</string>
+    <string name="q_answer_1_3">Rút ngắn khoảng cách giữa điện thoại và TV. Cận cảnh.</string>
+    <string name="q_answer_2_1">Nếu nó hoạt động trước đó, thì nó chắc chắn có thể được sử dụng lại.</string>
+    <string name="q_answer_2_2">Hầu hết các vấn đề kết nối có thể được giải quyết bằng cách khởi động lại thiết bị. Chỉ cần khởi động lại cả điện thoại và TV của bạn, làm theo quy trình kết nối thông thường để thử lại.</string>
+    <string name="q_answer_3_1">Điều này có nghĩa là bản thân điện thoại của bạn không hỗ trợ chức năng phản chiếu màn hình.</string>
+    <string name="q_answer_3_2">Bạn có thể sử dụng XCast để truyền video, âm thanh và hình ảnh tới TV. Với XCast, bạn có thể làm những việc khác với điện thoại của mình trong khi truyền tới TV.</string>
+    <string name="q_answer_4_1">Nếu TV của bạn hỗ trợ giao diện HDMI, chúng tôi khuyên bạn nên mua một bộ thu bên ngoài để phản chiếu màn hình. Chẳng hạn như Chromecast, Anycast, v.v.</string>
+    <string name="q_answer_5_1">Một số nội dung liên quan đến bảo vệ bản quyền và không thể hiển thị trên các thiết bị của bên thứ ba, chẳng hạn như Netflix, Disney Plus, v.v.</string>
+    <string name="q_answer_5_2">Bạn có thể tải video xuống hoặc tìm tài nguyên tương tự trên các ứng dụng khác để dùng thử.</string>
+    <string name="q_answer_6_1">Bạn có thể bật Kết nối thông minh trong cài đặt Wi-Fi của mình. Nó sẽ liên tục tìm kiếm các kết nối Wi-fi tốt hơn và luôn kết nối qua lại.</string>
+    <string name="q_answer_6_2">Hãy đảm bảo rằng Wi-Fi của điện thoại di động và TV là SAM và tín hiệu tốt nhất.</string>
+    <string name="q_answer_7_1">Chúng tôi sẽ không theo dõi hoặc thu thập bất kỳ thông tin nào về bạn và điện thoại di động của bạn. Bạn có thể truyền màn hình của mình mà không cần lo lắng gì.</string>
+    <string name="q_answer_7_2">Hệ thống có thể cảnh báo bạn rằng có nguy cơ an toàn trước khi phản chiếu màn hình. Đây chỉ là một lời nhắc nhở thông thường, nó sẽ</string>
+    <string name="wi_fi">WIFI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">TẢI VỀ</string>
+    <string name="install_small">Cài đặt</string>
+    <string name="manual">Thủ công</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Đảm bảo rằng điện thoại và TV của bạn được kết nối \ với cùng một mạng Wi-Fi.</string>
+    <string name="hd_streaming">Truyền trực tuyến HD</string>
+    <string name="smart_devices">thiết bị thông minh</string>
+    <string name="private_browser">Trình duyệt Riêng tư</string>
+    <string name="effects">Các hiệu ứng</string>
+    <string name="slider">Con trượt</string>
+    <string name="search_or_type_web_address">Tìm kiếm hoặc nhập địa chỉ web</string>
+    <string name="install_2">Cài đặt</string>
+    <string name="bookmark">Dấu trang</string>
+    <string name="downloads">Tải xuống</string>
+    <string name="download">Tải xuống</string>
+    <string name="favorites">Yêu thích</string>
+    <string name="favorite">Yêu thích</string>
+    <string name="history">Môn lịch sử</string>
+    <string name="share_pdf">Chia sẻ Pdf</string>
+    <string name="copy_url">Sao chép URL</string>
+    <string name="share_app">Chia sẻ ứng dụng</string>
+    <string name="share_url">Chia sẻ url</string>
+    <string name="exit">Lối ra</string>
+    <string name="new_tab">Tab mới</string>
+    <string name="google">Google</string>
+    <string name="startpage">StartPage</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Công cụ tìm kiếm tùy chỉnh</string>
+    <string name="add_shortcut_to_home">Thêm lối tắt vào trang chủ</string>
+    <string name="save_screenshot">Lưu ảnh chụp màn hình</string>
+    <string name="add_to_bookmark">Thêm vào dấu trang</string>
+    <string name="save_as_pdf">Lưu dưới dạng pdf</string>
+    <string name="save_action">Lưu hành động</string>
+    <string name="add_to_favorite">Thêm vào ưa thích</string>
+    <string name="search_engine">Máy tìm kiếm</string>
+    <string name="browser_exit_body">Bạn có chắc chắn muốn thoát Trình duyệt không</string>
+    <string name="exit_browser">Thoát trình duyệt</string>
+    <string name="custom_user_agent">Tác nhân người dùng tùy chỉnh</string>
+    <string name="start_control">Bắt đầu kiểm soát</string>
+    <string name="data_control">Kiểm soát dữ liệu</string>
+    <string name="app_settings">Cài đặt ứng dụng</string>
+    <string name="browser_settings">Cài đặt trình duyệt</string>
+    <string name="behavior_ui">Hành vi / Giao diện người dùng</string>
+    <string name="clear_cache">Xóa bộ nhớ đệm</string>
+    <string name="clear_history">Xóa lịch sử</string>
+    <string name="clear_browsing_history">xoá lịch sử truy cập</string>
+    <string name="clear_all_cache">Xóa tất cả bộ nhớ cache</string>
+    <string name="clear_database_body">Xóa "cơ sở dữ liệu được lập chỉ mục" và "cơ sở dữ liệu cục bộ"</string>
+    <string name="clear_cookies_body">Nếu được bật, tất cả cookie sẽ bị xóa. Ngoài ra \ nthe Cookie của các trang web đáng tin cậy</string>
+    <string name="clear_databases">Xóa cơ sở dữ liệu</string>
+    <string name="clear_cookies">Xoá cookies</string>
+    <string name="clear_when_application_exit">Xóa khi thoát ứng dụng</string>
+    <string name="clear_when_application_exit_body">Mỗi khi bạn thoát khỏi tất cả dữ liệu đã kiểm tra ở trên \ n sẽ bị xóa</string>
+    <string name="image">Hình ảnh</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Bánh quy</string>
+    <string name="reopen_last_tab">Mở lại tab cuối cùng</string>
+    <string name="confirm_tab_close">Xác nhận đóng tab</string>
+    <string name="confirm_browser_exit">Xác nhận thoát trình duyệt</string>
+    <string name="position">Chức vụ</string>
+    <string name="first_toolbar">Thanh công cụ đầu tiên</string>
+    <string name="hide_toolbar">Ẩn thanh công cụ</string>
+    <string name="toolbar">Thanh công cụ</string>
+    <string name="bookmarks">Dấu trang</string>
+    <string name="edit">Biên tập</string>
+    <string name="today">Hôm nay</string>
+    <string name="the_last_hour">Giờ trước</string>
+    <string name="last_week">Tuần trước</string>
+    <string name="last_month">Tháng trước</string>
+    <string name="delete_all_history">Xóa tất cả lịch sử</string>
+    <string name="copied">đã sao chép</string>
+    <string name="share_ss">Chia sẻ SS</string>
+    <string name="file_manager">Quản lý tập tin</string>
+    <string name="search_on">Tìm kiếm trên</string>
+    <string name="add_shortcut">Thêm shortcut</string>
+    <string name="tab_exit">Tab Thoát</string>
+    <string name="do_you_want_to_close">Bạn có muốn đóng không</string>
+    <string name="download_complete_share_image">Hoan thanh tải. Chia sẻ hình ảnh</string>
+    <string name="update">Cập nhật</string>
+    <string name="unfavorite">Không yêu thích</string>
+    <string name="no_input_provided">Không có đầu vào được cung cấp</string>
+    <string name="input">Đầu vào</string>
+    <string name="website_link">Địa chỉ website</string>
+    <string name="for_you">Cho bạn</string>
+    <string name="website">Trang mạng:</string>
+    <string name="url">Url:</string>
+    <string name="date">Ngày</string>
+    <string name="no_site_loaded">Bạn chưa tải trang web</string>
+    <string name="more_then_5_images_can_not_be_picked">Không thể chọn thêm năm hình ảnh nữa</string>
+    <string name="location">"Địa điểm "</string>
+</resources>

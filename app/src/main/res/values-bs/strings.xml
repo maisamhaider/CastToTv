@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Bosnian-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="location">"Lokacija "</string>
+
+    <string name="connection_close_confirm">Želite li otkazati trenutnu VPN vezu?</string>
+    <string name="yes">DA</string>
+    <string name="no">NO</string>
+    <string name="yes_2">Da</string>
+    <string name="no_2">br</string>
+    <string name="select_images">Odaberite Slike</string>
+    <string name="tabs">Tabs</string>
+    <string name="share">Dijeli</string>
+    <string name="save">Sačuvaj</string>
+    <string name="more">Više</string>
+    <string name="ok">uredu</string>
+    <string name="cancel">Otkaži</string>
+    <string name="favorite_site">Promijenite zadanu web stranicu koja se učitava na\npokretanju pretraživača</string>
+    <string name="custom_search_engine_body">Dodajte prilagođeni URL za pretraživanje također odaberite "Prilagođeni\nsearch engine" kao dobavljač pretrage</string>
+    <string name="search_engine_body">Odaberite željeni pretraživač ili\npostavite prilagođeni</string>
+    <string name="data_control_body">Obrišite podatke vašeg preglednika ili odlučite koji će podaci\n biti obrisani kada napustite aplikaciju</string>
+    <string name="start_control_body">Odlučite koje komponente pretraživača\nće biti na početku</string>
+    <string name="behavior_ui_body">Promijenite ponašanje i korisničko sučelje aplikacije da\nodgovaraju vašim željama</string>
+    <string name="book_mark_body">Da biste prikazali dijalog filtera, dugo pritisnite ikonu obeleživača u pregledu. Odlučite koje ćete filtere koristiti</string>
+    <string name="app_settings_body">Postavke pretraživača, tamo možete u zavisnosti od\nvaše verzije androida dati dozvolu.</string>
+    <string name="start_control_image_body">Omogućite mrežne slike, Onemogućavanje bi moglo biti korisno\nza uštedu mobilnih podataka i brže učitavanje web stranice</string>
+    <string name="start_control_location_body">Dozvolite web lokacijama da pristupe vašoj lokaciji. Neke\nweb stranice {google, mape za navigaciju) trebaju ovo omogućiti</string>
+    <string name="start_control_history_body">Sačuvajte historiju posjećenih web stranica</string>
+    <string name="start_control_java_script_body">Omogućite JavaScript. Mnoge web stranice trebaju\nJavaScript za svoju funkcionalnost. Ali oni su\na i mirni i mogu se koristiti za napade</string>
+    <string name="start_control_cookies_body">Omogući kolačiće. Kolačići su male tekstualne datoteke,
+koji su pohranjeni na vašem uređaju. Web stranice koriste
+na primjer za pohranjivanje korisničkih postavki. Ali
+mogu se koristiti i za prikupljanje ličnih korisnika
+podaci. Kolačići treće strane su uvijek onemogućeni.</string>
+    <string name="confirmation_browser_exit_body">Dijalog za potvrdu prilikom\nzatvaranja pretraživača</string>
+    <string name="confirmation_tab_close_body">Dijalog za potvrdu prilikom zatvaranja kartice</string>
+    <string name="confirmation_reopen_last_body">Ponovo otvorite novu karticu kada se zatvori posljednja kartica umjesto da izađete iz pretraživača</string>
+    <string name="hide_toolbar_body">Koristite cijeli ekran kada se krećete kroz web stranicu, ako pritisnete dugme za povratak napustićete režim preko celog ekrana</string>
+    <string name="images">Slike</string>
+    <string name="videos">Video zapisi</string>
+    <string name="web_browser">Web preglednik</string>
+    <string name="image_slider">Klizač slike</string>
+    <string name="next">Sljedeći</string>
+    <string name="previous">Prethodno</string>
+    <string name="help">Upomoć</string>
+    <string name="settings">Postavke</string>
+    <string name="language">Jezici</string>
+    <string name="more_app">Više aplikacija</string>
+    <string name="rate_us">Ocjeni nas</string>
+    <string name="screen_mirroring">Screen Mirroring</string>
+    <string name="home_screen_text">Provjerite jesu li vaš telefon i TV povezani na istu Wi-Fi mrežu.</string>
+    <string name="wifi_connected">Wi-Fi povezan</string>
+    <string name="wifi_disconnected">Wi-Fi je prekinut</string>
+    <string name="general">Generale</string>
+    <string name="communicate">Komunicirajte</string>
+    <string name="send_feedback">Pošalji povratne informacije</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="how_to_use">Kako koristiti?</string>
+    <string name="streaming">Streaming</string>
+    <string name="streaming_quality">Kvaliteta strujanja</string>
+    <string name="auto_stop">Auto Stop</string>
+    <string name="auto_minimize">Automatsko minimiziranje</string>
+    <string name="advance">Napred</string>
+    <string name="orientation_mode">Orientation Mode</string>
+    <string name="auto_stop_body_text">Zaustavite video kada se izgubi\nveza sa ciljem</string>
+    <string name="auto_minimize_body_text">Sakrij aplikaciju kada preslikavanje počne</string>
+    <string name="casting_orientation_body_text">Orijentacija livenja</string>
+    <string name="mirroring_mode">Režim preslikavanja</string>
+    <string name="screen_mirroring_privacy_policy">Politika privatnosti preslikavanja ekrana</string>
+    <string name="privacy_policy">Politika privatnosti</string>
+    <string name="supporting_devices">Podržavajući uređaji</string>
+    <string name="see_which_devices_support_mirroring">Pogledajte koji uređaji podržavaju preslikavanje</string>
+    <string name="color_theme">Tema u boji</string>
+    <string name="dark">Dark</string>
+    <string name="light">Light</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Odaberite Jezik</string>
+    <string name="close">zatvori</string>
+    <string name="images_slider">Slike Slider</string>
+    <string name="screen_mirror">Screen Mirror</string>
+    <string name="tutorial_screen_setup_body">Vaš ciljni uređaj mora biti na istoj Wi-Fi mreži kao i ovaj uređaj, jer Screen Mirror prenosi vaš ekran.</string>
+    <string name="tutorial_screen_mirror_body">Prenesite ekran svog uređaja preko Wi-Fi mreže na svoj računar, notebook ili tablet.</string>
+    <string name="tutorial_device_hotspot_body">Također možete koristiti pristupnu tačku svog uređaja (tethering mode) i povezati svoj ciljni uređaj na svoju pristupnu tačku.</string>
+    <string name="tutorial_scan_code_body">Otvorite web lokaciju na svom ciljnom uređaju. Skeniranjem QR koda prenosi se konfiguracija veze i počinje zrcaljenje.</string>
+    <string name="tutorial_support_body">Imajte na umu da Screen Mirror radi samo kada je ispravno podešen. Screen Mirror prenosi vaš ekran, ali ne i audio signale vašeg uređaja. Ako naiđete na bilo kakve probleme kontaktirajte nas.</string>
+    <string name="walk_through_body_1">Uživajte u glatkom i visokokvalitetnom prijenosu\nbez kašnjenja</string>
+    <string name="walk_through_body_2">Povežite se sa bilo kojim pametnim uređajem i uživajte u\nšou na bilo kom ekranu</string>
+    <string name="walk_through_body_3">Uživajte u privatnom pretraživaču unutar aplikacije bez ograničenja</string>
+    <string name="screen_setup">Podešavanje ekrana</string>
+    <string name="device_hotspot">Hotspot uređaja</string>
+    <string name="scan_code">Scan Code</string>
+    <string name="support">Podrška</string>
+    <string name="finish">Završi</string>
+    <string name="our_policies">Naše politike</string>
+    <string name="privacy_policy_text">Zaštita vaše privatnosti nam je važna. Nadamo se da će vam sljedeća izjava pomoći da shvatite kako postupamo s ličnim podacima koji nam omogućavaju identifikaciju, koje nam povremeno možete dati putem interneta (Google Play platforma).\n\nOpćenito. ne prikupljamo nikakve lične identifikacijske informacije od vas kada preuzmete naše Android aplikacije. Da budemo precizni, ne zahtijevamo posjete potrošača našoj aplikaciji, čak nemamo server za pohranu takvih ličnih identifikacijskih informacija.\n\nScreen Mirroring koristi Facebook kao dobavljača oglasa. Facebook želi prikazati oglase koji su relevantni za vas. Za više informacija posjetite\nhttps://m.facebook.com/ads/ad_choices.\n\nJedina situacija u kojoj možemo dobiti pristup vašim ličnim identifikacijskim podacima je kada lično odlučite da nam pošaljete povratne informacije putem e-pošte ili da nam dostavite izvještaj o grešci. Lični identifikacijski podaci koje možemo dobiti od vas u toj situaciji striktno su ograničeni na vaše ime, adresu e-pošte i vaš odgovor na anketu.\n\nU gore navedenoj situaciji, garantiramo da će se vaši osobni identifikacijski podaci koristiti samo za kontaktiranje i poboljšanje naše usluge. Nikada nećemo koristiti takve informacije (npr. vaše ime i adresu e-pošte_ u bilo koje druge svrhe, kao što je daljnje plasiranje naših proizvoda, ili da otkrijemo vaše lične podatke trećoj strani za komercijalnu dobit.\n\nTreba napomenuti da li ili da nam ne šaljete povratne informacije ili izvještaj o grešci je potpuno dobrovoljna inicijativa na osnovu vaše vlastite odluke. Ako ste zabrinuti zbog zloupotrebe vaših osobnih podataka ili ako želite dodatne informacije o našoj politici privatnosti i šta to znači, slobodno pošaljite nam e-poštu na screenmirroring.feedback@gmail.com, mi ćemo nastojati da pružimo jasne odgovore na vaša pitanja na vrijeme.</string>
+    <string name="please_write_your_feedback">Molimo napišite svoje povratne informacije</string>
+    <string name="system_info">Informacije o vašem sistemu će biti poslane u tehničku službu za preslikavanje ekrana</string>
+    <string name="send">Pošalji</string>
+    <string name="provide_feedback">pružiti povratnu informaciju</string>
+    <string name="invalid_email_provided">Navedena je nevažeća adresa e-pošte</string>
+    <string name="check_your_internet_connection">Provjerite internetsku vezu</string>
+    <string name="type_here">ukucaj ovdje…</string>
+    <string name="enter_your_email_optional">Unesite svoju e-poštu (opcionalno)</string>
+    <string name="enjoy_the_app">Uživajte u aplikaciji?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Ocijenite svoje iskustvo pomoću aplikacije Screen\nMiroring.</string>
+    <string name="not_now">Ne sada</string>
+    <string name="feedback">Povratne informacije:</string>
+    <string name="model">Model:</string>
+    <string name="brand">Brand:</string>
+    <string name="os_version">OS verzija:</string>
+    <string name="manufacturer">Proizvođač:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Pošalji mail</string>
+    <string name="select_picture">Odaberite Slika</string>
+    <string name="help_center">Centar za pomoć</string>
+    <string name="question_1">Moj telefon se zaglavi na "Povezivanje" \nprilikom uparivanja s TV-om.</string>
+    <string name="question_2">Prije mi je funkcioniralo, ali \nsada ne funkcionira.</string>
+    <string name="question_3">Pokazuje da moj uređaj nije \npodržan.</string>
+    <string name="question_4">Moj TV je stari TV i ne podržava \nwi-fi.</string>
+    <string name="question_5">Slika na TV-u je crna, ali se zvuk \nmože čuti.</string>
+    <string name="question_6">Veza će se prekinuti nakon nekog \nvremena.</string>
+    <string name="question_7">Jesu li moji lični podaci ili mobilni \npodaci apsolutno sigurni?</string>
+    <string name="q_answer_1_1">Ponovo pokrenite Wi-Fi pametnog telefona i provjerite je li veza uspješna.</string>
+    <string name="q_answer_1_2">Isključite TV i izvucite kabl za napajanje iz utičnice. Sačekajte 1 minut i ponovo pokrenite TV.</string>
+    <string name="q_answer_1_3">Skratite udaljenost između telefona i TV-a. Pogledaj izbliza.</string>
+    <string name="q_answer_2_1">Ako je ranije radio, onda se definitivno može ponovo koristiti.</string>
+    <string name="q_answer_2_2">Većina problema s vezom može se riješiti ponovnim pokretanjem uređaja. Samo ponovo pokrenite telefon i TV, slijedite uobičajeni proces povezivanja da biste pokušali ponovo.</string>
+    <string name="q_answer_3_1">To znači da sam vaš telefon ne podržava funkciju preslikavanja ekrana.</string>
+    <string name="q_answer_3_2">Možete koristiti XCast za emitiranje videa, zvuka i fotografija na TV. Uz XCast, možete raditi druge stvari sa svojim telefonom dok prenosite na TV.</string>
+    <string name="q_answer_4_1">Ako vaš TV podržava HDMI interfejs, preporučujemo da kupite eksterni risiver za preslikavanje ekrana. Kao što su Chromecast, Anycast itd.</string>
+    <string name="q_answer_5_1">Neki sadržaji uključuju zaštitu autorskih prava i ne mogu se prikazati na uređajima trećih strana, kao što su Netflix, Disney Plus itd.</string>
+    <string name="q_answer_5_2">Možete preuzeti video ili potražiti isti resurs u drugim aplikacijama da isprobate.</string>
+    <string name="q_answer_6_1">Možete uključiti Smart Connect u svojim Wi-Fi postavkama. Stalno će tražiti bolje Wi-Fi veze i uvijek se povezivati ​​naprijed-natrag.</string>
+    <string name="q_answer_6_2">Uvjerite se da je Wi-Fi mobilnog telefona i TV-a SAM i najbolji signal.</string>
+    <string name="q_answer_7_1">Nećemo nadzirati niti prikupljati nikakve informacije o vama i vašem mobilnom telefonu. Možete emitirati svoj ekran bez ikakve brige.</string>
+    <string name="q_answer_7_2">Sistem vas može upozoriti da postoji opasnost po sigurnost prije preslikavanja ekrana. Ovo je samo redovni podsjetnik, bit će</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">INSTALL</string>
+    <string name="install_small">Instaliraj</string>
+    <string name="manual">Manual</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Provjerite jesu li vaš telefon i TV povezani\nna istu Wi-Fi mrežu.</string>
+    <string name="hd_streaming">HD Streaming</string>
+    <string name="smart_devices">pametnih uređaja</string>
+    <string name="private_browser">Privatni pretraživač</string>
+    <string name="effects">Efekti</string>
+    <string name="slider">Klizač</string>
+    <string name="search_or_type_web_address">Pretražite ili upišite web adresu</string>
+    <string name="install_2">Instaliraj</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="downloads">Preuzimanja</string>
+    <string name="download">Skinuti</string>
+    <string name="favorites">Favoriti</string>
+    <string name="favorite">Favorite</string>
+    <string name="history">istorija</string>
+    <string name="share_pdf">Podijeli Pdf</string>
+    <string name="copy_url">Kopiraj URL</string>
+    <string name="share_app">Dijeli aplikaciju</string>
+    <string name="share_url">Dijeli url</string>
+    <string name="exit">Izlaz</string>
+    <string name="new_tab">Novi tab</string>
+    <string name="google">Google</string>
+    <string name="startpage">StartPage</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Prilagođeni pretraživač</string>
+    <string name="add_shortcut_to_home">Dodajte prečicu do kuće</string>
+    <string name="save_screenshot">Sačuvaj snimak ekrana</string>
+    <string name="add_to_bookmark">Dodaj u bookmark</string>
+    <string name="save_as_pdf">Sačuvaj kao pdf</string>
+    <string name="save_action">Save Action</string>
+    <string name="add_to_favorite">Dodaj u favorite</string>
+    <string name="search_engine">Pretraživač</string>
+    <string name="browser_exit_body">Jeste li sigurni da želite izaći iz pretraživača</string>
+    <string name="exit_browser">Izađi iz pretraživača</string>
+    <string name="custom_user_agent">Prilagođeni korisnički agent</string>
+    <string name="start_control">Start Control</string>
+    <string name="data_control">Kontrola podataka</string>
+    <string name="app_settings">Postavke aplikacije</string>
+    <string name="browser_settings">Postavke pretraživača</string>
+    <string name="behavior_ui">Ponašanje/UI</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="clear_history">Clear History</string>
+    <string name="clear_browsing_history">Obriši historiju pretraživanja</string>
+    <string name="clear_all_cache">Obriši sav keš</string>
+    <string name="clear_database_body">Obrišite "indeksirane baze podataka" i "lokalne\ndabaze"</string>
+    <string name="clear_cookies_body">Ako je omogućeno, svi kolačići će biti izbrisani. Također\nkolačići pouzdanih web stranica</string>
+    <string name="clear_databases">Obriši baze podataka</string>
+    <string name="clear_cookies">Obriši kolačiće</string>
+    <string name="clear_when_application_exit">Obriši kada se aplikacija zatvori</string>
+    <string name="clear_when_application_exit_body">Svaki put kada izađete, svi gore označeni podaci\nbiće obrisani</string>
+    <string name="image">Slika</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Kolačići</string>
+    <string name="reopen_last_tab">Ponovo otvori posljednju karticu</string>
+    <string name="confirm_tab_close">Potvrdite zatvaranje kartice</string>
+    <string name="confirm_browser_exit">Potvrdite izlaz iz pretraživača</string>
+    <string name="position">Pozicija</string>
+    <string name="first_toolbar">Prva traka sa alatkama</string>
+    <string name="hide_toolbar">Sakrij traku sa alatkama</string>
+    <string name="toolbar">Traka sa alatkama</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="edit">Uredi</string>
+    <string name="today">Danas</string>
+    <string name="the_last_hour">Poslednji sat</string>
+    <string name="last_week">Prošle sedmice</string>
+    <string name="last_month">Prošli mjesec</string>
+    <string name="delete_all_history">Izbriši svu historiju</string>
+    <string name="copied">kopirano</string>
+    <string name="share_ss">Podijeli SS</string>
+    <string name="file_manager">File Manager</string>
+    <string name="search_on">Search On</string>
+    <string name="add_shortcut">Dodaj prečicu</string>
+    <string name="tab_exit">Tab Izlaz</string>
+    <string name="do_you_want_to_close">Da li želite da zatvorite</string>
+    <string name="download_complete_share_image">Preuzimanje je završeno. Podijelite sliku</string>
+    <string name="update">Ažuriraj</string>
+    <string name="unfavorite">Un favorite</string>
+    <string name="no_input_provided">Nije naveden unos</string>
+    <string name="input">Input</string>
+    <string name="website_link">Website link</string>
+    <string name="for_you">Za tebe</string>
+    <string name="website">web stranica:</string>
+    <string name="url">URL:</string>
+    <string name="date">Datum</string>
+    <string name="no_site_loaded">Nemate učitanu web stranicu</string>
+    <string name="more_then_5_images_can_not_be_picked">Ne može se odabrati više od pet slika</string>
+</resources>

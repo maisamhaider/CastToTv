@@ -23,6 +23,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.*
+import androidx.paging.*
 import com.example.casttotv.R
 import com.example.casttotv.adapter.SearchEngineAdapter
 import com.example.casttotv.database.entities.BookmarkEntity
@@ -30,6 +31,7 @@ import com.example.casttotv.database.entities.FavoritesEntity
 import com.example.casttotv.database.entities.HistoryEntity
 import com.example.casttotv.database.entities.HomeEntity
 import com.example.casttotv.databinding.*
+import com.example.casttotv.dataclasses.History
 import com.example.casttotv.dataclasses.Tabs
 import com.example.casttotv.datasource.DataSource
 import com.example.casttotv.ui.activities.MainActivity
@@ -42,7 +44,11 @@ import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.Pref.putPrefs
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.launch
 import java.io.File
 import java.io.FileOutputStream
@@ -62,7 +68,6 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     val historyLive: LiveData<HistoryEntity> = _history
 
     private var container: FrameLayout? = null
-    private val cookieManager: CookieManager = CookieManager.getInstance()!!
 
     private val _showTabFragment: MutableLiveData<Boolean> = MutableLiveData(false)
     val showTabFragment: LiveData<Boolean> = _showTabFragment
@@ -171,14 +176,6 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     @SuppressLint("SetJavaScriptEnabled")
     fun newTabWebView(wv: ObservableWebView) {
         _webView.value = wv
-        _webView.value!!.webViewClient = MyBrowser()
-        _webView.value!!.settings.javaScriptEnabled = getPrefs(START_CONTROL_JAVASCRIPT, true)
-        _webView.value!!.settings.loadsImagesAutomatically = getPrefs(START_CONTROL_IMAGE, true)
-        _webView.value!!.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
-        _webView.value!!.settings.setGeolocationEnabled(getPrefs(START_CONTROL_LOCATION, false))
-        cookieManager.setAcceptThirdPartyCookies(_webView.value!!,
-            getPrefs(START_CONTROL_COOKIES, false))
-
         container!!.addView(wv)
 
         showBroswerHome(false)
@@ -218,9 +215,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     fun switchToTab(tab: Int) {
         getCurrentWebView().visibility = View.GONE
         _currentTabIndex = tab
-        _tabs.value?.let {
-            _webView.value = it[_currentTabIndex].webView
-        }
+        _tabs.value?.let { _webView.value = it[_currentTabIndex].webView }
         getCurrentWebView().visibility = View.VISIBLE
         setSearchText(getCurrentWebView().url.toString())
         getCurrentWebView().requestFocus()
@@ -277,8 +272,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
     private fun clearCookies() {
-        cookieManager.removeAllCookies(null)
-        cookieManager.flush()
+        _webView.value?.clearCookies()
     }
 
     private fun clearCache() {
@@ -296,7 +290,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
     fun switchToTabBack() {
-        if (_tabs.value !=null &&
+        if (_tabs.value != null &&
             _currentTabIndex >= 1
         ) {
             switchToTab(_currentTabIndex - 1)
@@ -306,12 +300,12 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
     fun switchToTabForward() {
-        if (_tabs.value !=null &&
+        if (_tabs.value != null &&
             _currentTabIndex < _tabs.value!!.size - 1
         ) {
             switchToTab(_currentTabIndex + 1)
             showBroswerHome(false)
-        } else if (_tabs.value !=null && _currentTabIndex == 0) {
+        } else if (_tabs.value != null && _currentTabIndex == 0) {
             switchToTab(_currentTabIndex)
             showBroswerHome(false)
         }
@@ -399,7 +393,7 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
     }
 
     fun shareLink() {
-        if (_webView.value == null ||_webView.value?.url.toString() == "null" || _webView.value?.url.toString()
+        if (_webView.value == null || _webView.value?.url.toString() == "null" || _webView.value?.url.toString()
                 .isEmpty()
         ) {
             cxt.toastShort(cxt.getString(R.string.no_site_loaded))
@@ -422,13 +416,12 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
             putExtra(Intent.EXTRA_TEXT, string)
             type = "text/plain"
         }
-
         val shareIntent = Intent.createChooser(sendIntent, "share with")
         cxt.startActivity(shareIntent)
     }
 
     fun copyToClipBoard() {
-        if (_webView.value == null ||_webView.value?.url.toString() == "null" || _webView.value?.url.toString()
+        if (_webView.value == null || _webView.value?.url.toString() == "null" || _webView.value?.url.toString()
                 .isEmpty()
         ) {
             cxt.toastShort(cxt.getString(R.string.no_site_loaded))
@@ -452,7 +445,6 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
         intent.type = "*/*"
         cxt.startActivity(intent)
     }
-
 
     fun openWith() {
         val i = Intent(Intent.ACTION_VIEW)
@@ -862,8 +854,42 @@ class BrowserViewModel(private var cxt: Context) : ViewModel() {
 
     // History data functions
     fun getHistoryGroupBtDay() = historyDao.getDateMilli()
+    private val map: MutableMap<String, MutableList<HistoryEntity>> = HashMap()
     fun getHistory() = historyDao.getHistory()
+//    val getHistory(): Flow<PagingData<HistoryEntity>> {
+//      return  getSearchResultStream().map {
+//          if (map.isNotEmpty()) {
+//              map.clear()
+//          }
+//          CoroutineScope(Dispatchers.IO).launch {
+//              it?.let { item ->
+//                  for (hist in item) {
+//                      if (map[hist.day].isNullOrEmpty()) {
+//                          map[hist.day] = mutableListOf(hist)
+//                      } else {
+//                          val oldList: MutableList<HistoryEntity> = map[hist.day]!!
+//                          oldList.add(0, hist)
+//                          map[hist.day] = oldList
+//                      }
+//                  }
+//              }
+//              val list: MutableList<History> = ArrayList()
+//              map.forEach { m -> list.add(0, History(m.key, m.value)) }
+//              Pagin
+//          }
+//      }
+//    }
 
+//      private fun getSearchResultStream(): Flow<PagingData<HistoryEntity>> {
+//        return Pager(
+//            config = PagingConfig(
+//                pageSize = 15,
+//                maxSize = 100,
+//                enablePlaceholders = false
+//            ),
+//            pagingSourceFactory = { historyDao.getHistory()}
+//        ).flow.
+//    }
 
     fun getHistory(id: Int) = historyDao.getHistory(id)
 

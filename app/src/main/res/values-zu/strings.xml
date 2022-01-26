@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Zulu-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+
+    <string name="connection_close_confirm">Ungathanda ukukhansela uxhumano lwe-VPN lwamanje?</string>
+    <string name="yes">YEBO</string>
+    <string name="no">CHA</string>
+    <string name="yes_2">Yebo</string>
+    <string name="no_2">Cha</string>
+    <string name="select_images">Khetha Izithombe</string>
+    <string name="tabs">Amathebhu</string>
+    <string name="share">Yabelana</string>
+    <string name="save">Londoloza</string>
+    <string name="more">Okuningi</string>
+    <string name="ok">KULUNGILE</string>
+    <string name="cancel">Khansela</string>
+    <string name="favorite_site">Shintsha iwebhusayithi ezenzakalelayo elayisha\nkuqaleni Kwesiphequluli</string>
+    <string name="custom_search_engine_body">Engeza i-url yokusesha yangokwezifiso futhi ukhethe "Injini yokusesha yangokwezifiso" njengomhlinzeki wosesho</string>
+    <string name="search_engine_body">Khetha injini yakho yosesho oyincamelayo noma\nsethe ngokwezifiso</string>
+    <string name="data_control_body">Sula idatha yesiphequluli sakho noma unqume ukuthi iyiphi idatha\ezosulwa uma ushiya uhlelo lokusebenza</string>
+    <string name="start_control_body">Nquma ukuthi yiziphi izingxenye zesiphequluli\ezizoba ekuqaleni</string>
+    <string name="behavior_ui_body">Shintsha ukuziphatha kanye ne-ui yohlelo lokusebenza ukuze\nvumelane nezintandokazi zakho</string>
+    <string name="book_mark_body">Ukuze ubonise ibhokisi lesihlungi cindezela isikhathi eside kusithonjana sebhukhimakhi ekubukezweni konke. Nquma ukuthi yiziphi izihlungi ozozisebenzisa</string>
+    <string name="app_settings_body">Izilungiselelo zesiphequluli, lapho ungakwazi kuye ngokuthi\nhlelo lwakho lwe-android lunikeze imvume.</string>
+    <string name="start_control_image_body">Nika amandla izithombe zenethiwekhi, Ukukhubaza kungase kube usizo\nkulondoloza idatha yeselula nokulayisha iwebhusayithi ngokushesha</string>
+    <string name="start_control_location_body">Vumela amawebhusayithi ukuthi afinyelele indawo yakho. Amanye\namawebhusayithi e-{google, amamephu e-nav) adinga lokhu kunikwe amandla</string>
+    <string name="start_control_history_body">Londoloza umlando wamawebhusayithi avakashelwe</string>
+    <string name="start_control_java_script_body">Nika amandla i-JavaScript. Amawebhusayithi amaningi adinga\nI-JavaScript ukuze asebenze. Kodwa\nazo ziyaphumuza futhi zingasetshenziselwa ukuhlasela</string>
+    <string name="start_control_cookies_body">Nika amandla Amakhukhi. Amakhukhi angamafayela ombhalo amancane,
+agcinwe kudivayisi yakho. Amawebhusayithi asetshenziswa
+bona njengesibonelo ukugcina izilungiselelo zomsebenzisi. Kodwa
+zingasetshenziselwa futhi ukuqoqa umsebenzisi womuntu siqu
+idatha. Amakhukhi ezinkampani zangaphandle ahlala engasebenzi.</string>
+    <string name="confirmation_browser_exit_body">Ibhokisi lokuqinisekisa uma\nvala isiphequluli</string>
+    <string name="confirmation_tab_close_body">Ibhokisi lokuqinisekisa lapho uvala ithebhu</string>
+    <string name="confirmation_reopen_last_body">Phinda uvule ithebhu uma ithebhu yokugcina ivaliwe esikhundleni sokuphuma esipheqululini</string>
+    <string name="hide_toolbar_body">Sebenzisa sonke isikrini lapho uskrola kuwebhusayithi uma ucindezela inkinobho yangemuva uzoshiya imodi yesikrini esigcwele</string>
+    <string name="images">Izithombe</string>
+    <string name="videos">Amavidiyo</string>
+    <string name="web_browser">Isiphequluli Sewebhu</string>
+    <string name="image_slider">Isilayidi Sesithombe</string>
+    <string name="next">Olandelayo</string>
+    <string name="previous">Ngaphambilini</string>
+    <string name="help">Usizo</string>
+    <string name="settings">Izilungiselelo</string>
+    <string name="language">Izilimi</string>
+    <string name="more_app">Izinhlelo zokusebenza eziningi</string>
+    <string name="rate_us">Linganisa Us</string>
+    <string name="screen_mirroring">I-Screen Mirroring</string>
+    <string name="home_screen_text">Qiniseka ukuthi ifoni yakho ne-TV kuxhunywe kunethiwekhi efanayo ye-Wi-Fi.</string>
+    <string name="wifi_connected">I-Wi-Fi Ixhunyiwe</string>
+    <string name="wifi_disconnected">I-Wi-Fi Inqanyuliwe</string>
+    <string name="general">Okujwayelekile</string>
+    <string name="communicate">Xhumana</string>
+    <string name="send_feedback">Thumela Impendulo</string>
+    <string name="tutorial">Okokufundisa</string>
+    <string name="how_to_use">Isetshenziswa kanjani?</string>
+    <string name="streaming">Ukusakaza</string>
+    <string name="streaming_quality">Ikhwalithi yokusakaza</string>
+    <string name="auto_stop">I-Auto Stop</string>
+    <string name="auto_minimize">Nciphisa ngokuzenzakalela</string>
+    <string name="advance">Phambili</string>
+    <string name="orientation_mode">Imodi yokuma</string>
+    <string name="auto_stop_body_text">Misa ividiyo uma ukuxhumeka\kokuhlosiwe kulahleka</string>
+    <string name="auto_minimize_body_text">Fihla uhlelo lokusebenza lapho ukwenza isibuko kuqala</string>
+    <string name="casting_orientation_body_text">Umumo wokusakaza</string>
+    <string name="mirroring_mode">Imodi yokulingisa</string>
+    <string name="screen_mirroring_privacy_policy">Inqubomgomo yobumfihlo yokubonisa isikrini</string>
+    <string name="privacy_policy">Inqubomgomo yobumfihlo</string>
+    <string name="supporting_devices">Amadivayisi Asekelayo</string>
+    <string name="see_which_devices_support_mirroring">Bona ukuthi imaphi amadivaysi asekela ukwenza isibuko</string>
+    <string name="color_theme">Itimu yombala</string>
+    <string name="dark">Kumnyama</string>
+    <string name="light">Ukukhanya</string>
+    <string name="auto">Okuzenzakalelayo</string>
+    <string name="select_language">Khetha Ulimi</string>
+    <string name="close">vala</string>
+    <string name="images_slider">Isilayidi Sezithombe</string>
+    <string name="screen_mirror">Isibuko Sesikrini</string>
+    <string name="tutorial_screen_setup_body">Idivayisi yakho oqondiswe kuyo kufanele ibe kunethiwekhi ye-Wi-Fi efanayo nale divayisi, ngoba i-Screen Mirror sithumela isikrini sakho.</string>
+    <string name="tutorial_screen_mirror_body">Sakaza isikrini sedivayisi yakho nge-Wi-Fi kukhompuyutha yakho, incwadi yokubhalela noma ithebhulethi.</string>
+    <string name="tutorial_device_hotspot_body">Ungakwazi futhi ukusebenzisa i-hotspot yedivayisi yakho (imodi yokusebenzisa ifoni njengemodemu) futhi uxhume idivayisi yakho eqondiwe ku-hotspot yakho.</string>
+    <string name="tutorial_scan_code_body">Vula isayithi kudivayisi yakho eqondiwe. Ngokuskena ikhodi ye-QR ukumiswa kokuxhumana kudluliselwa futhi ukwenza isibuko kuyaqala.</string>
+    <string name="tutorial_support_body">Sicela uqaphele ukuthi Isibuko Sesikrini sisebenza kuphela lapho sisethwa kahle. Isibuko Sesikrini sisakaza isikrini sakho, kodwa hhayi amasiginali omsindo wedivayisi yakho. Uma uhlangabezana nanoma yiziphi izinkinga xhumana nathi.</string>
+    <string name="walk_through_body_1">Jabulela ukusakaza-bukhoma okushelelayo nekhwalithi ephezulu\nngaphandle kokubelesela</string>
+    <string name="walk_through_body_2">Xhuma nganoma iyiphi idivayisi ehlakaniphile futhi ujabulele\nbonisa kunoma yisiphi isikrini</string>
+    <string name="walk_through_body_3">Jabulela isiphequluli esiyimfihlo sangaphakathi nohlelo ngaphandle kwemikhawulo</string>
+    <string name="screen_setup">Ukusethwa kwesikrini</string>
+    <string name="device_hotspot">I-Hotspot Yedivayisi</string>
+    <string name="scan_code">Skena Ikhodi</string>
+    <string name="support">Ukusekela</string>
+    <string name="finish">Qeda</string>
+    <string name="our_policies">Izinqubomgomo Zethu</string>
+    <string name="privacy_policy_text">Ukuvikela ubumfihlo bakho kubalulekile kithi. Sithemba ukuthi isitatimende esilandelayo sizokusiza uqonde ukuthi sibhekana kanjani nolwazi lomuntu siqu olukhonjwayo, ongasinikeza lona ngezikhathi ezithile nge-inthanethi (inkundla ye-Google Play).\n\nNgokuvamile. asiqoqi noma iyiphi i-PII kuwe uma ulanda izinhlelo zethu zokusebenza ze-Android. Ukucacisa, asidingi ukuthi abathengi bavakashelwe kuhlelo lwethu lokusebenza, asinayo ngisho neSeva ukuze sigcine i-PII enjalo.\n\nI-Screen Mirroring isebenzisa i-Facebook njengomhlinzeki wezikhangiso. I-Facebook ifuna ukukhombisa izikhangiso ezihambisana nawe. Ukuze uthole ulwazi olwengeziwe sicela uvakashele\nhttps://m.facebook.com/ads/ad_choices.\n\nUkuphela kwesimo esingase sikwazi ukufinyelela kuso i-PII yilapho unquma ukusithumelela impendulo yakho nge-imeyili noma ukusinikeza iphutha. umbiko. I-PII esingase siyithole kuwe ekuleso simo ilinganiselwe kuphela egameni lakho, ikheli le-imeyili kanye nempendulo yakho yenhlolovo kuphela.\n\nEzimeni ezingenhla, siyaqinisekisa ukuthi i-PII yakho izosetshenziselwa kuphela ukuxhumana nawe nokuthuthukisa amasevisi ethu. Asisoze salusebenzisa ulwazi olunjalo (isb. igama lakho nekheli le-imeyili_ nganoma yiziphi ezinye izinjongo, njengokuqhubeka ukumaketha imikhiqizo yethu, noma ukudalula ulwazi lwakho lomuntu siqu kumuntu wesithathu ukuze uthole izinzuzo zentengiso.\n\nKufanele kuqashelwe ukuthi noma ngabe noma ukungasithumeli impendulo yakho noma umbiko wesiphazamisi kuwumzamo wokuzithandela ngokuphelele ngesinqumo sakho. Uma unokukhathazeka mayelana nokusetshenziswa kabi kwe-PII yakho, noma uma ufuna ulwazi olwengeziwe mayelana nenqubomgomo yethu yobumfihlo nokuthi isho ukuthini, sicela ukhululeke ukusithumelela i-imeyili. ku-screenmirroring.feedback@gmail.com, sizozama ukukunikeza izimpendulo ezicacile zemibuzo yakho ngesikhathi esifanele .</string>
+    <string name="please_write_your_feedback">Sicela ubhale impendulo yakho</string>
+    <string name="system_info">Ulwazi Lwesistimu yakho luzothunyelwa eMnyangweni wezobuchwepheshe we-Screen Mirroring</string>
+    <string name="send">Thumela</string>
+    <string name="provide_feedback">nikeza impendulo</string>
+    <string name="invalid_email_provided">I-imeyili engavumelekile inikeziwe</string>
+    <string name="check_your_internet_connection">Hlola ukuxhumeka kwakho kwe-inthanethi</string>
+    <string name="type_here">bhala lapha…</string>
+    <string name="enter_your_email_optional">Faka i-imeyili yakho (uyazikhethela)</string>
+    <string name="enjoy_the_app">Ujabulele uhlelo lokusebenza?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Linganisela umuzwa wakho usebenzisa i-Screen\nMirroring App.</string>
+    <string name="not_now">Hhayi manje</string>
+    <string name="feedback">Impendulo:</string>
+    <string name="model">Imodeli:</string>
+    <string name="brand">Ibhrendi:</string>
+    <string name="os_version">Inguqulo ye-OS:</string>
+    <string name="manufacturer">Umkhiqizi:</string>
+    <string name="ram">I-RAM:</string>
+    <string name="send_email">Thumela imeyili</string>
+    <string name="select_picture">Khetha Isithombe</string>
+    <string name="help_center">Isikhungo Sosizo</string>
+    <string name="question_1">Ucingo lwami lubhajwa kokuthi "Ixhumeka" lapho ibhanqa ne-TV.</string>
+    <string name="question_2">Bekungisebenzela ngaphambili, kepha akusebenzi manje.</string>
+    <string name="question_3">Kubonisa ukuthi idivayisi yami ayisekelwe.</string>
+    <string name="question_4">I-TV yami iyi-TV endala futhi ayisekeli i-wi-fi.</string>
+    <string name="question_5">Isithombe esiku-TV simnyama, kodwa umsindo uzwakala.</string>
+    <string name="question_6">Uxhumano luzophazamiseka ngemva kwesikhashana.</string>
+    <string name="question_7">Ingabe ulwazi lwami lomuntu siqu noma idatha yeselula iphephe ngokuphelele?</string>
+    <string name="q_answer_1_1">Qala kabusha i-Wi-Fi yefoni ehlakaniphile ubone ukuthi uxhumano luphumelele.</string>
+    <string name="q_answer_1_2">Vala i-TV bese ukhipha intambo yayo yamandla kusokhethi futhi. Linda iminithi elingu-1 bese uqala kabusha i-TV.</string>
+    <string name="q_answer_1_3">Nciphisa ibanga phakathi kwefoni yakho ne-TV. Isondeze.</string>
+    <string name="q_answer_2_1">Uma ike yasebenza ngaphambili, khona-ke ingasetshenziswa futhi.</string>
+    <string name="q_answer_2_2">Izinkinga eziningi zokuxhuma zingaxazululwa ngokuqalisa kabusha amadivaysi. Vele uqale kabusha kokubili ifoni yakho ne-TV, landela inqubo evamile yokuxhuma ukuze uzame kabusha.</string>
+    <string name="q_answer_3_1">Lokhu kusho ukuthi ifoni yakho ngokwayo ayisekeli umsebenzi wokubukisa isikrini.</string>
+    <string name="q_answer_3_2">Ungasebenzisa i-XCast ukusakaza ividiyo, umsindo nesithombe ku-TV. Nge-XCast, ungenza ezinye izinto ngefoni yakho ngenkathi usakaza ku-TV.</string>
+    <string name="q_answer_4_1">Uma i-TV yakho isekela isixhumi esibonakalayo se-HDMI, sincoma ukuthi uthenge isamukeli sangaphandle ukuze senze isibuko sesikrini. Njenge-Chromecast, Anycast njll.</string>
+    <string name="q_answer_5_1">Okunye okuqukethwe kuhilela ukuvikelwa kwe-copyright futhi akukwazi ukuboniswa kumadivayisi ezinkampani zangaphandle, njengeNetflix, Disney Plus njll.</string>
+    <string name="q_answer_5_2">Ungalanda ividiyo noma ubheke insiza efanayo kwezinye izinhlelo zokusebenza ukuze uzame.</string>
+    <string name="q_answer_6_1">Ungavula i-Smart Connect kuzilungiselelo zakho ze-Wi-Fi. Izosesha uxhumo olungcono lwe-Wi-fi njalo, futhi ihlale ixhumeka emuva naphambili.</string>
+    <string name="q_answer_6_2">Sicela wenze isiqiniseko sokuthi i-Wi-Fi yeselula ne-TV iyi-SAM nesiginali engcono kakhulu.</string>
+    <string name="q_answer_7_1">Ngeke sigade noma siqoqe noma yiluphi ulwazi ngawe kanye neselula yakho. Ungasakaza isikrini sakho ngaphandle kokukhathazeka.</string>
+    <string name="q_answer_7_2">Isistimu ingase ikuxwayise ukuthi kukhona ingozi yokuphepha ngaphambi kokubukisa kwesikrini. Lesi yisikhumbuzo nje esijwayelekile, kuzoba njalo</string>
+    <string name="wi_fi">I-WI-FI</string>
+    <string name="miracast">ISIMANGALISO</string>
+    <string name="install">FAKA</string>
+    <string name="install_small">Faka</string>
+    <string name="manual">Imanuwali</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Qiniseka ukuthi ifoni yakho ne-TV kuxhunyiwe\kunethiwekhi efanayo ye-Wi-Fi.</string>
+    <string name="hd_streaming">Ukusakaza kwe-HD</string>
+    <string name="smart_devices">amadivaysi ahlakaniphile</string>
+    <string name="private_browser">Isiphequluli Esiyimfihlo</string>
+    <string name="effects">Imiphumela</string>
+    <string name="slider">Isilayidi</string>
+    <string name="search_or_type_web_address">Sesha noma thayipha ikheli lewebhu</string>
+    <string name="install_2">Faka</string>
+    <string name="bookmark">Ibhukhimakhi</string>
+    <string name="downloads">Okulandiwe</string>
+    <string name="download">Landa</string>
+    <string name="favorites">Izintandokazi</string>
+    <string name="favorite">Intandokazi</string>
+    <string name="history">Umlando</string>
+    <string name="share_pdf">Yabelana nge-PDF</string>
+    <string name="copy_url">Kopisha i-URL</string>
+    <string name="share_app">Yabelana ngohlelo lokusebenza</string>
+    <string name="share_url">Yabelana nge-url</string>
+    <string name="exit">Phuma</string>
+    <string name="new_tab">Ithebhu Entsha</string>
+    <string name="google">Google</string>
+    <string name="startpage">I-StartPage</string>
+    <string name="bing">I-Bing</string>
+    <string name="duckduckgo">I-DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">I-Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">I-Ecosia</string>
+    <string name="custom_search_engine">Injini yokusesha yangokwezifiso</string>
+    <string name="add_shortcut_to_home">Engeza isinqamuleli ekhaya</string>
+    <string name="save_screenshot">Londoloza isithombe-skrini</string>
+    <string name="add_to_bookmark">Engeza kubhukhimakhi</string>
+    <string name="save_as_pdf">Londoloza njenge-pdf</string>
+    <string name="save_action">Londoloza Isenzo</string>
+    <string name="add_to_favorite">Engeza kokuthandayo</string>
+    <string name="search_engine">Injini Yokusesha</string>
+    <string name="browser_exit_body">Uqinisekile ukuthi ufuna ukuphuma eSipheqululini</string>
+    <string name="exit_browser">Phuma Esipheqululini</string>
+    <string name="custom_user_agent">I-ejenti yomsebenzisi yangokwezifiso</string>
+    <string name="start_control">Qala Ukulawula</string>
+    <string name="data_control">Ukulawulwa Kwedatha</string>
+    <string name="app_settings">Izilungiselelo zohlelo lokusebenza</string>
+    <string name="browser_settings">Izilungiselelo Zesiphequluli</string>
+    <string name="behavior_ui">Ukuziphatha/I-UI</string>
+    <string name="clear_cache">Sula inqolobane</string>
+    <string name="clear_history">Sula umlando</string>
+    <string name="clear_browsing_history">Sula umlando wokuphequlula</string>
+    <string name="clear_all_cache">Sula yonke inqolobane</string>
+    <string name="clear_database_body">Sula "imininingwane egciniwe enenkomba" kanye "nezisekelo\ndata zendawo"</string>
+    <string name="clear_cookies_body">Uma inikwe amandla, wonke amakhukhi azosuswa. Futhi\namaKhukhi amawebhusayithi athembekile</string>
+    <string name="clear_databases">Sula imininingwane egciniwe</string>
+    <string name="clear_cookies">Sula Amakhukhi</string>
+    <string name="clear_when_application_exit">Sula uma isicelo siphuma</string>
+    <string name="clear_when_application_exit_body">Ngaso sonke isikhathi uma uyeka yonke idatha ehloliwe ngaphezulu\izosuswa</string>
+    <string name="image">Isithombe</string>
+    <string name="javascript">I-JavaScript</string>
+    <string name="cookies">Amakhukhi</string>
+    <string name="reopen_last_tab">Phinda uvule ithebhu yokugcina</string>
+    <string name="confirm_tab_close">Qinisekisa ithebhu vala</string>
+    <string name="confirm_browser_exit">Qinisekisa ukuphuma kwesiphequluli</string>
+    <string name="position">Isikhundla</string>
+    <string name="first_toolbar">Ibha yamathuluzi yokuqala</string>
+    <string name="hide_toolbar">Fihla ibha yamathuluzi</string>
+    <string name="toolbar">Ibha yamathuluzi</string>
+    <string name="bookmarks">Amabhukumaka</string>
+    <string name="edit">Hlela</string>
+    <string name="today">Namuhla</string>
+    <string name="the_last_hour">Ihora lokugcina</string>
+    <string name="last_week">Evikini eledlule</string>
+    <string name="last_month">Ngenyanga edlule</string>
+    <string name="delete_all_history">Susa wonke umlando</string>
+    <string name="copied">ikopishiwe</string>
+    <string name="share_ss">Yabelana nge-SS</string>
+    <string name="file_manager">Isiphathi Sefayela</string>
+    <string name="search_on">Sesha Vuliwe</string>
+    <string name="add_shortcut">Engeza Isinqamuleli</string>
+    <string name="tab_exit">Phuma kuthebhu</string>
+    <string name="do_you_want_to_close">Uyafuna ukuvala</string>
+    <string name="download_complete_share_image">Ukulanda kuqediwe. Yabelana ngesithombe</string>
+    <string name="update">Buyekeza</string>
+    <string name="unfavorite">Okungeyona intandokazi</string>
+    <string name="no_input_provided">Akukho okokufaka okunikeziwe</string>
+    <string name="input">Okokufaka</string>
+    <string name="website_link">Isixhumanisi sewebhusayithi</string>
+    <string name="for_you">Kwakho</string>
+    <string name="website">Iwebhusayithi:</string>
+    <string name="url">I-Url:</string>
+    <string name="date">Usuku</string>
+    <string name="no_site_loaded">Awunayo iwebhusayithi elayishiwe</string>
+    <string name="more_then_5_images_can_not_be_picked">Izithombe ezingaphezu kwalokho ezinhlanu azikwazi ukukhethwa</string>
+    <string name="location">Indawo</string>
+</resources>

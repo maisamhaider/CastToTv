@@ -28,7 +28,7 @@
                 android:text="@string/app_name"
                 android:textColor="@color/cr_white"
                 app:layout_constraintBottom_toTopOf="@+id/guideline42"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline469"
                 app:layout_constraintStart_toStartOf="@+id/guideline45"
                 app:layout_constraintTop_toTopOf="@+id/guideline41" />
 
@@ -38,9 +38,32 @@
                 android:text="@{@string/version(homeFrag.version)}"
                 android:textColor="@color/cr_white"
                 app:layout_constraintBottom_toTopOf="@+id/guideline44"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline469"
                 app:layout_constraintStart_toStartOf="@+id/guideline45"
                 app:layout_constraintTop_toTopOf="@+id/guideline43" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/imageview_w0_h0_ratio11"
+                android:src="@drawable/ic_app_yellow"
+                app:layout_constraintBottom_toTopOf="@+id/guideline13"
+                app:layout_constraintEnd_toStartOf="@+id/guideline469"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline45"
+                app:layout_constraintTop_toTopOf="@+id/guideline455" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline455"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.24" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.53" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline41"
@@ -76,6 +99,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline469"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -90,7 +121,7 @@
                 style="@style/subheading_w0_h0"
                 android:text="@string/general"
                 app:layout_constraintBottom_toTopOf="@+id/guideline49"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline456"
                 app:layout_constraintStart_toStartOf="@+id/guideline50"
                 app:layout_constraintTop_toTopOf="@+id/guideline48" />
 
@@ -100,7 +131,7 @@
                 android:background="?attr/selectableItemBackground"
                 android:onClick="@{()->homeFrag.goToHelpCenter()}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline54"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline456"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="@+id/guideline50"
                 app:layout_constraintTop_toTopOf="@+id/guideline51">
@@ -119,9 +150,10 @@
                 <com.google.android.material.textview.MaterialTextView
                     style="@style/header_text_3"
                     android:text="@string/help"
+                    android:layout_marginStart="@dimen/dp_20"
                     app:layout_constraintBottom_toTopOf="@+id/guideline68"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/guideline63"
+                    app:layout_constraintStart_toEndOf="@+id/appCompatImageView34"
                     app:layout_constraintTop_toTopOf="@+id/guideline69" />
 
                 <androidx.constraintlayout.widget.Guideline
@@ -152,7 +184,7 @@
                 style="@style/w_0_h_0"
                 android:onClick="@{()->homeFrag.goToAppSettings()}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline56"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline456"
                 app:layout_constraintStart_toStartOf="@+id/guideline50"
                 app:layout_constraintTop_toTopOf="@+id/guideline55">
 
@@ -169,10 +201,11 @@
 
                     style="@style/header_text_3"
                     android:text="@string/settings"
+                    android:layout_marginStart="@dimen/dp_20"
                     app:layout_constraintBottom_toTopOf="@+id/guideline75"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="@+id/guideline67"
+                    app:layout_constraintStart_toEndOf="@+id/imageview_settings"
                     app:layout_constraintTop_toTopOf="@+id/guideline74" />
 
                 <androidx.constraintlayout.widget.Guideline
@@ -203,7 +236,7 @@
                 android:background="?attr/selectableItemBackground"
                 android:onClick="@{()->homeFrag.languagesDialog()}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline58"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline456"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="@+id/guideline50"
                 app:layout_constraintTop_toTopOf="@+id/guideline57">
@@ -222,11 +255,11 @@
                 <com.google.android.material.textview.MaterialTextView
                     style="@style/header_text_3"
                     android:text="@string/language"
+                    android:layout_marginStart="@dimen/dp_20"
                     app:layout_constraintBottom_toTopOf="@+id/guideline72"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toEndOf="@+id/appCompatImageView36"
-                    app:layout_constraintStart_toStartOf="@+id/guideline66"
                     app:layout_constraintTop_toTopOf="@+id/guideline73" />
 
                 <androidx.constraintlayout.widget.Guideline
@@ -257,7 +290,7 @@
                 android:background="?attr/selectableItemBackground"
                 android:onClick="@{()->homeFrag.goToMoreApps()}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline60"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline456"
                 app:layout_constraintStart_toStartOf="@+id/guideline50"
                 app:layout_constraintTop_toTopOf="@+id/guideline59">
 
@@ -273,11 +306,13 @@
                 <com.google.android.material.textview.MaterialTextView
                     style="@style/header_text_3"
                     android:text="@string/more_app"
+                    android:layout_marginStart="@dimen/dp_20"
                     app:layout_constraintBottom_toTopOf="@+id/guideline77"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="@+id/guideline65"
-                    app:layout_constraintTop_toTopOf="@+id/guideline76" />
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageview_more_app"
+                    app:layout_constraintTop_toTopOf="@+id/guideline76"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guideline65"
@@ -307,7 +342,7 @@
                 android:background="?attr/selectableItemBackground"
                 android:onClick="@{()->homeFrag.rateUs()}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline62"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline456"
                 app:layout_constraintStart_toStartOf="@+id/guideline50"
                 app:layout_constraintTop_toTopOf="@+id/guideline61">
 
@@ -325,11 +360,11 @@
                 <com.google.android.material.textview.MaterialTextView
                     style="@style/header_text_3"
                     android:text="@string/rate_us"
+                    android:layout_marginStart="@dimen/dp_20"
                     app:layout_constraintBottom_toTopOf="@+id/guideline71"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toEndOf="@+id/appCompatImageView38"
-                    app:layout_constraintStart_toStartOf="@+id/guideline64"
                     app:layout_constraintTop_toTopOf="@+id/guideline70" />
 
                 <androidx.constraintlayout.widget.Guideline
@@ -360,11 +395,12 @@
                 android:background="?attr/selectableItemBackground"
                 android:onClick="@{()->homeFrag.goToFeedBack()}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline85"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline456"
                 app:layout_constraintStart_toStartOf="@+id/guideline50"
                 app:layout_constraintTop_toTopOf="@+id/guideline80">
 
                 <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/appCompatImageView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -377,10 +413,11 @@
                 <com.google.android.material.textview.MaterialTextView
                     style="@style/header_text_3"
                     android:text="@string/send_feedback"
+                    android:layout_marginStart="@dimen/dp_20"
                     app:layout_constraintBottom_toTopOf="@+id/guideline83"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="@+id/guideline81"
+                    app:layout_constraintStart_toEndOf="@+id/appCompatImageView"
                     app:layout_constraintTop_toTopOf="@+id/guideline82" />
 
                 <androidx.constraintlayout.widget.Guideline
@@ -409,11 +446,12 @@
                 android:id="@+id/cl_share"
                 style="@style/w_0_h_0"
                 app:layout_constraintBottom_toTopOf="@+id/guideline87"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline456"
                 app:layout_constraintStart_toStartOf="@+id/guideline50"
                 app:layout_constraintTop_toTopOf="@+id/guideline86">
 
                 <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/appCompatImageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -426,10 +464,11 @@
                 <com.google.android.material.textview.MaterialTextView
                     style="@style/header_text_3"
                     android:text="@string/share"
+                    android:layout_marginStart="@dimen/dp_20"
                     app:layout_constraintBottom_toTopOf="@+id/guideline91"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="@+id/guideline88"
+                    app:layout_constraintStart_toEndOf="@+id/appCompatImageView2"
                     app:layout_constraintTop_toTopOf="@+id/guideline89" />
 
                 <androidx.constraintlayout.widget.Guideline
@@ -460,11 +499,12 @@
                 android:background="?attr/selectableItemBackground"
                 android:onClick="@{()->homeFrag.goToTutorial()}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline93"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline456"
                 app:layout_constraintStart_toStartOf="@+id/guideline50"
                 app:layout_constraintTop_toTopOf="@+id/guideline92">
 
                 <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/appCompatImageView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -477,10 +517,11 @@
                 <com.google.android.material.textview.MaterialTextView
                     style="@style/header_text_3"
                     android:text="@string/tutorial"
+                    android:layout_marginStart="@dimen/dp_20"
                     app:layout_constraintBottom_toTopOf="@+id/guideline96"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="@+id/guideline94"
+                    app:layout_constraintStart_toEndOf="@+id/appCompatImageView3"
                     app:layout_constraintTop_toTopOf="@+id/guideline95" />
 
                 <androidx.constraintlayout.widget.Guideline
@@ -527,7 +568,7 @@
                 style="@style/subheading_w0_h0"
                 android:text="@string/communicate"
                 app:layout_constraintBottom_toTopOf="@+id/guideline84"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline456"
                 app:layout_constraintStart_toStartOf="@+id/guideline50"
                 app:layout_constraintTop_toTopOf="@+id/guideline78" />
 
@@ -691,6 +732,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.065" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline456"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.936" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

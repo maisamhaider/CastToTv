@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Pashto-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">ایا تاسو غواړئ اوسنی VPN اتصال لغوه کړئ؟</string>
+    <string name="yes">هو</string>
+    <string name="no">نه</string>
+    <string name="yes_2">هو</string>
+    <string name="no_2">نه</string>
+    <string name="select_images">انځورونه غوره کړئ</string>
+    <string name="tabs">ټبونه</string>
+    <string name="share">شریکول</string>
+    <string name="save">خوندي کړئ</string>
+    <string name="more">نور</string>
+    <string name="ok">سمه ده</string>
+    <string name="cancel">لغوه کړئ</string>
+    <string name="favorite_site">ډیفالټ ویب پاڼه بدل کړئ کوم چې د براوزر په پیل\nلوډ کیږي</string>
+    <string name="custom_search_engine_body">د دودیز لټون url اضافه کړئ د لټون چمتو کونکي په توګه د "ګمرک\nلټون انجن" هم غوره کړئ</string>
+    <string name="search_engine_body">خپل د خوښې لټون انجن غوره کړئ یا یو دودیز ترتیب کړئ</string>
+    <string name="data_control_body">د خپل براوزر ډیټا پاک کړئ یا پریکړه وکړئ چې کوم ډیټا\nکله چې تاسو اپلیکیشن پریږدئ پاک شي</string>
+    <string name="start_control_body">پریکړه وکړئ چې د براوزر کومې برخې به په پیل کې وي</string>
+    <string name="behavior_ui_body">ستاسو د غوره توبونو سره سم د اپلیکیشن چلند او UI بدل کړئ</string>
+    <string name="book_mark_body">د فلټر ډیالوګ ښودلو لپاره په عمومي لید کې د بک مارک آیکون اوږد فشار ورکړئ. پریکړه وکړئ کوم فلټرونه چې تاسو یې کاروئ</string>
+    <string name="app_settings_body">د براوزر تنظیمات، هلته تاسو کولی شئ د خپل اندروید نسخې اجازه درکړي.</string>
+    <string name="start_control_image_body">د شبکې عکسونه فعال کړئ، غیر فعال کول ګټور کیدی شي\nد ګرځنده ډیټا خوندي کولو او ویب سایټ ګړندی پورته کولو لپاره</string>
+    <string name="start_control_location_body">ویب پاڼو ته اجازه ورکړئ چې خپل ځای ته لاسرسی ومومي. ځینې\nویبپاڼې {google, maps for nav) دې فعالولو ته اړتیا لري</string>
+    <string name="start_control_history_body">د لیدل شویو ویب پاڼو تاریخ خوندي کړئ</string>
+    <string name="start_control_java_script_body">                  جاواسکریپټ فعال کړئ. ډیری ویب پاڼې د خپل فعالیت لپاره جاوا سکریپټ ته اړتیا لري. مګر دوی آرام دي او د بریدونو لپاره کارول کیدی شي</string>
+    <string name="start_control_cookies_body">       کوکیز فعال کړئ. کوکیز کوچني متن فایلونه دي،
+کوم چې ستاسو په وسیله زیرمه شوي. ویب پاڼې کاروي
+دوی د مثال په توګه د کارونکي تنظیماتو ذخیره کولو لپاره. خو
+دوی د شخصي کاروونکي راټولولو لپاره هم کارول کیدی شي
+ډاټا د دریمې ډلې کوکیز تل غیر فعال وي.</string>
+    <string name="confirmation_browser_exit_body">د تایید ډیالوګ کله چې براوزر بند کړئ\n</string>
+    <string name="confirmation_tab_close_body">د تایید ډیالوګ کله چې د ټب بندول</string>
+    <string name="confirmation_reopen_last_body">یو نوی ټب بیا پرانیزئ کله چې وروستی ټب د براوزر څخه د وتلو پرځای تړل شوی وي</string>
+    <string name="hide_toolbar_body">د ویب پاڼې له لارې سکرول کولو پر مهال ټول سکرین وکاروئ که تاسو د شا تڼۍ فشار کړئ نو تاسو به د بشپړ سکرین حالت پریږدئ</string>
+    <string name="images">انځورونه</string>
+    <string name="videos">ویډیوګانې</string>
+    <string name="web_browser">ویب براوزر</string>
+    <string name="image_slider">د انځور سلائیڈر</string>
+    <string name="next">بل</string>
+    <string name="previous">مخکینی</string>
+    <string name="help">مرسته</string>
+    <string name="settings">ترتیبات</string>
+    <string name="language">ژبې</string>
+    <string name="more_app">نور پروګرامونه</string>
+    <string name="rate_us">موږ ته درجه ورکړئ</string>
+    <string name="screen_mirroring">د سکرین عکس العمل</string>
+    <string name="home_screen_text">ډاډ ترلاسه کړئ چې ستاسو تلیفون او تلویزیون د ورته وای فای شبکې سره وصل دي.</string>
+    <string name="wifi_connected">وائی فای وصل دی</string>
+    <string name="wifi_disconnected">Wi-Fi قطع شوی</string>
+    <string name="general">جنرال</string>
+    <string name="communicate">اړیکه</string>
+    <string name="send_feedback">فیډبیک واستوئ</string>
+    <string name="tutorial">ټیوټوریل</string>
+    <string name="how_to_use">څنګه یی استعمال کړو؟</string>
+    <string name="streaming">جریان</string>
+    <string name="streaming_quality">د جریان کیفیت</string>
+    <string name="auto_stop">اتومات بند</string>
+    <string name="auto_minimize">په اتوماتيک ډول کمول</string>
+    <string name="advance">پرمختگ</string>
+    <string name="orientation_mode">د اورینټیشن حالت</string>
+    <string name="auto_stop_body_text">ویډیو بنده کړئ کله چې د هدف سره اړیکه ورکه شي</string>
+    <string name="auto_minimize_body_text">ایپ پټ کړئ کله چې عکس اخیستل پیل شي</string>
+    <string name="casting_orientation_body_text">د کاسټینګ لوری</string>
+    <string name="mirroring_mode">د عکس العمل حالت</string>
+    <string name="screen_mirroring_privacy_policy">د سکرین عکس العمل د محرمیت پالیسي</string>
+    <string name="privacy_policy">د پټتیا تګلاره</string>
+    <string name="supporting_devices">د ملاتړ وسایل</string>
+    <string name="see_which_devices_support_mirroring">وګورئ چې کوم وسایل د عکس کولو ملاتړ کوي</string>
+    <string name="color_theme">د رنګ موضوع</string>
+    <string name="dark">تیاره</string>
+    <string name="light">رڼا</string>
+    <string name="auto"> اتومات</string>
+    <string name="select_language">ژبه غوره کړئ</string>
+    <string name="close">تړل</string>
+    <string name="images_slider">د انځور سلائیڈر</string>
+    <string name="screen_mirror">د سکرین عکس</string>
+    <string name="tutorial_screen_setup_body">ستاسو د هدف وسیله باید د دې وسیله په څیر ورته وای فای شبکه کې وي، ځکه چې د سکرین عکس ستاسو سکرین لیږدوي.</string>
+    <string name="tutorial_screen_mirror_body">خپل کمپیوټر، نوټ بوک یا ټابلیټ ته د Wi-Fi له لارې د خپل وسیله سکرین جریان کړئ.</string>
+    <string name="tutorial_device_hotspot_body">تاسو کولی شئ د خپل وسیله هټ سپټ (ټیټرینګ حالت) هم وکاروئ او خپل هدف وسیله خپل هټ سپټ سره وصل کړئ.</string>
+    <string name="tutorial_scan_code_body">ستاسو په نښه شوي وسیله کې سایټ خلاص کړئ. د QR کوډ سکین کولو سره د پیوستون ترتیب لیږدول کیږي او عکس اخیستل پیل کیږي.</string>
+    <string name="tutorial_support_body">مهرباني وکړئ په یاد ولرئ چې د سکرین عکس یوازې هغه وخت کار کوي کله چې په سمه توګه تنظیم شي. د سکرین عکس ستاسو سکرین لیږدوي، مګر ستاسو د وسیلې آډیو سیګنالونه نه. که تاسو د کومې ستونزې سره مخ شئ موږ سره اړیکه ونیسئ.</string>
+    <string name="walk_through_body_1">د اسانه او لوړ کیفیت سټیمینګ څخه خوند واخلئ\nبې ځنډه</string>
+    <string name="walk_through_body_2">له هر سمارټ وسیلې سره وصل شئ او په هر سکرین کې له نندارې څخه خوند واخلئ</string>
+    <string name="walk_through_body_3">پرته له کوم محدودیت څخه په ایپ کې شخصي براوزر څخه خوند واخلئ</string>
+    <string name="screen_setup">د سکرین تنظیم کول</string>
+    <string name="device_hotspot">د وسیلې هټ سپټ</string>
+    <string name="scan_code">سکین کوډ</string>
+    <string name="support">ملاتړ</string>
+    <string name="finish">ختم</string>
+    <string name="our_policies">زموږ پالیسي</string>
+    <string name="privacy_policy_text">ستاسو د محرمیت ساتنه زموږ لپاره مهمه ده. موږ امید لرو چې لاندې بیان به تاسو سره مرسته وکړي چې پوه شي چې موږ څنګه د شخصي پیژندلو وړ معلوماتو سره معامله کوو، تاسو ممکن کله ناکله موږ ته د انټرنیټ (د ګوګل پلی پلیټ فارم) له لارې چمتو کړئ.\n\nعمومي. موږ ستاسو څخه هیڅ PII نه راټولوو کله چې تاسو زموږ د Android غوښتنلیکونه ډاونلوډ کړئ. د مشخص کولو لپاره، موږ اړتیا نلرو چې زموږ د غوښتنلیک د پیرودونکو لیدنو ته اړتیا ولرو، موږ حتی د داسې PII ذخیره کولو لپاره سرور نلرو.\n\nد سکرین عکس العمل فیسبوک د اعلاناتو چمتو کونکي په توګه کاروي. فیسبوک غواړي هغه اعلانونه وښيي چې ستاسو سره تړاو لري. د نورو معلوماتو لپاره مهرباني وکړئ لیدنه وکړئ\nhttps://m.facebook.com/ads/ad_choices.\n\nیوازینی حالت چې موږ یې تاسو ته د PII لاسرسی موندلی شو هغه دی کله چې تاسو په شخصي توګه پریکړه وکړئ چې موږ ته خپل فیډبیک بریښنالیک یا موږ ته بګ راکړئ راپور هغه PII چې موږ یې په دې حالت کې له تاسو څخه ترلاسه کولی شو یوازې ستاسو نوم، بریښنالیک پته او ستاسو د سروې ځواب پورې محدود دی. موږ به هیڅکله دا ډول معلومات ونه کاروو (د بیلګې په توګه ستاسو نوم او بریښنالیک پته_ د نورو موخو لپاره، لکه زموږ د محصولاتو بازار موندنه، یا د سوداګریزو ګټو لپاره دریم اړخ ته ستاسو شخصي معلومات ښکاره کول.\n\nدا باید په پام کې ونیول شي چې آیا یا موږ ته ستاسو د فیډبیک یا بګ راپور نه لیږل ستاسو په خپله پریکړه کې په بشپړ ډول داوطلبانه نوښت دی. که تاسو د خپل PII د ناوړه ګټه اخیستنې په اړه اندیښنه لرئ ، یا که تاسو زموږ د محرمیت پالیسۍ په اړه نور معلومات غواړئ او دا څه معنی لري ، مهرباني وکړئ موږ ته بریښنالیک وکړئ. په screenmirroring.feedback@gmail.com کې، موږ به هڅه وکړو چې ستاسو پوښتنو ته په وخت سره روښانه ځوابونه وړاندې کړو.</string>
+    <string name="please_write_your_feedback">مهرباني وکړئ خپل نظر ولیکئ</string>
+    <string name="system_info">ستاسو د سیسټم معلومات به د سکرین عکس العمل تخنیکي څانګې ته واستول شي</string>
+    <string name="send">لیږل</string>
+    <string name="provide_feedback">نظر ورکړئ</string>
+    <string name="invalid_email_provided">ناسم بریښنالیک چمتو شوی</string>
+    <string name="check_your_internet_connection">خپل انټرنیټ پیوستون چیک کړئ</string>
+    <string name="type_here">دلته وليکئ…</string>
+    <string name="enter_your_email_optional">خپل بریښنالیک دننه کړئ (اختیاري)</string>
+    <string name="enjoy_the_app">د اپلیکیشن څخه خوند واخلئ؟</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">د سکرین په کارولو سره خپله تجربه راټیټ کړئ\nمیرر کولو ایپ.</string>
+    <string name="not_now">اوس نه</string>
+    <string name="feedback">نظر:</string>
+    <string name="model">ماډل:</string>
+    <string name="brand">نښه:</string>
+    <string name="os_version">د OS نسخه:</string>
+    <string name="manufacturer">جوړونکی:</string>
+    <string name="ram">رام:</string>
+    <string name="send_email">لیک ولېږه</string>
+    <string name="select_picture">انځور غوره کړئ</string>
+    <string name="help_center">د مرستې مرکز</string>
+    <string name="question_1">زما تلیفون د تلویزیون سره جوړه کولو په \nوخت کې په "وصل کیدو" کې بندیږي.</string>
+    <string name="question_2">دا مخکې زما لپاره کار کاوه، مګر دا \nاوس کار نه کوي.</string>
+    <string name="question_3">دا ښیې چې زما وسیله نه ملاتړ \nکیږي.</string>
+    <string name="question_4">زما تلویزیون یو زوړ تلویزیون دی او د وای فای \nملاتړ نه کوي.</string>
+    <string name="question_5">په تلویزیون کې انځور تور دی، مګر غږ \nاوریدل کیدی شي.</string>
+    <string name="question_6">اړیکه به یو څه وروسته \nودرول شي.</string>
+    <string name="question_7">ایا زما شخصي معلومات یا د موبایل ډیټا \nبالکل خوندي دي؟</string>
+    <string name="q_answer_1_1">د سمارټ فون وای فای بیا پیل کړئ او وګورئ چې اړیکه بریالۍ ده.</string>
+    <string name="q_answer_1_2">تلویزیون بند کړئ او د ساکټ څخه یې د بریښنا تار هم لرې کړئ. 1 دقیقه انتظار وکړئ او تلویزیون بیا پیل کړئ.</string>
+    <string name="q_answer_1_3">د خپل تلیفون او تلویزیون ترمینځ فاصله لنډ کړئ. نږدې یې پورته کړئ.</string>
+    <string name="q_answer_2_1">که دا دمخه کار کړی وي ، نو دا یقینا بیا کارول کیدی شي.</string>
+    <string name="q_answer_2_2">د پیوستون ډیری ستونزې د وسیلو بیا پیلولو سره حل کیدی شي. یوازې خپل تلیفون او تلویزیون دواړه بیا پیل کړئ، د بیا هڅه کولو لپاره د منظم پیوستون پروسه تعقیب کړئ.</string>
+    <string name="q_answer_3_1">دا پدې مانا ده چې ستاسو تلیفون پخپله د سکرین عکس العمل فعالیت نه ملاتړ کوي.</string>
+    <string name="q_answer_3_2">تاسو کولی شئ تلویزیون ته د ویډیو ، آډیو او عکس کاسټ کولو لپاره XCast وکاروئ. د XCast سره، تاسو کولی شئ د خپل تلیفون سره نور شیان ترسره کړئ پداسې حال کې چې تلویزیون ته کاسټ کول.</string>
+    <string name="q_answer_4_1">که ستاسو تلویزیون د HDMI انٹرفیس ملاتړ کوي، موږ وړاندیز کوو چې تاسو د سکرین عکس العمل لپاره یو بهرنی ریسیور واخلئ. لکه Chromecast، Anycast etc.</string>
+    <string name="q_answer_5_1">ځینې مینځپانګې د کاپي حق محافظت لري او د دریمې ډلې وسیلو کې نشي ښودل کیدی ، لکه Netflix ، ډیزني پلس وغيره.</string>
+    <string name="q_answer_5_2">تاسو کولی شئ ویډیو ډاونلوډ کړئ یا ورته سرچینې په نورو ایپسونو کې وګورئ ترڅو هڅه وکړئ.</string>
+    <string name="q_answer_6_1">تاسو کولی شئ په خپل Wi-Fi ترتیباتو کې سمارټ کنیکټ فعال کړئ. دا به په دوامداره توګه د غوره وای فای اتصالونو لټون وکړي ، او تل به شاته وصل شي.</string>
+    <string name="q_answer_6_2">مهرباني وکړئ ډاډ ترلاسه کړئ چې د ګرځنده تلیفون او تلویزیون وائی فای SAM او غوره سیګنال دی.</string>
+    <string name="q_answer_7_1">موږ به ستاسو او ستاسو د ګرځنده تلیفون په اړه هیڅ معلومات ونه څارو یا راټول نه کړو. تاسو کولی شئ پرته له کومې اندیښنې خپل سکرین کاسټ کړئ.</string>
+    <string name="q_answer_7_2">سیسټم ممکن تاسو ته خبرداری درکړي چې د سکرین عکس کولو دمخه د خوندیتوب خطر شتون لري. دا یوازې یو منظم یادونه ده، دا به وي</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">نصب کړئ</string>
+    <string name="install_small">نصب کړئ</string>
+    <string name="manual">لارښود</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">ډاډ ترلاسه کړئ چې ستاسو تلیفون او تلویزیون له ورته وای فای شبکې سره وصل دي.</string>
+    <string name="hd_streaming">HD خپرونه</string>
+    <string name="smart_devices">سمارټ وسایل</string>
+    <string name="private_browser">شخصي براوزر</string>
+    <string name="effects">اغیزې</string>
+    <string name="slider">سلائیڈر</string>
+    <string name="search_or_type_web_address">د ویب پته وپلټئ یا ټایپ کړئ</string>
+    <string name="install_2">نصب کړئ</string>
+    <string name="bookmark">بک مارک</string>
+    <string name="downloads">کښته کول</string>
+    <string name="download">ډاونلوډ کړئ</string>
+    <string name="favorites">د خوښې وړ</string>
+    <string name="favorite">د خوښې وړ</string>
+    <string name="history">تاریخ</string>
+    <string name="share_pdf">پی ډی اف شریک کړئ</string>
+    <string name="copy_url">یو آر ایل کاپي کړئ</string>
+    <string name="share_app">اپلیکیشن شریک کړئ</string>
+    <string name="share_url">یو آر ایل شریک کړئ</string>
+    <string name="exit">وتون</string>
+    <string name="new_tab">نوی ټب</string>
+    <string name="google">Google</string>
+    <string name="startpage">د پیل پاڼه</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">سیرکس</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">اکوسیا</string>
+    <string name="custom_search_engine">د ګمرک لټون انجن</string>
+    <string name="add_shortcut_to_home">کور ته شارټ کټ اضافه کړئ</string>
+    <string name="save_screenshot">سکرین شاټ خوندي کړئ</string>
+    <string name="add_to_bookmark">په بک مارک کې اضافه کړئ</string>
+    <string name="save_as_pdf">د pdf په توګه خوندي کړئ</string>
+    <string name="save_action">د عمل خوندي کول</string>
+    <string name="add_to_favorite">په خوښې کې اضافه کړئ</string>
+    <string name="search_engine">د لټون انجن</string>
+    <string name="browser_exit_body">ایا تاسو ډاډه یاست چې تاسو د براوزر څخه وتل غواړئ</string>
+    <string name="exit_browser">د براوزر څخه وتل</string>
+    <string name="custom_user_agent">د ګمرک کارونکي اجنټ</string>
+    <string name="start_control">کنټرول پیل کړئ</string>
+    <string name="data_control">د معلوماتو کنټرول</string>
+    <string name="app_settings">د اپلیکیشن تنظیمات</string>
+    <string name="browser_settings">د براوزر ترتیبات</string>
+    <string name="behavior_ui">چلند/UI</string>
+    <string name="clear_cache">کیچ پاک کړئ</string>
+    <string name="clear_history">تاریخ پاک کړئ</string>
+    <string name="clear_browsing_history">د لټون کولو تاریخ پاک کړئ</string>
+    <string name="clear_all_cache">ټول کیچ پاک کړئ</string>
+    <string name="clear_database_body">"نښه شوي ډیټابیسونه" او "سیمه ایز ډیټابیسونه" پاک کړئ</string>
+    <string name="clear_cookies_body">که فعال شي، ټول کوکیز به حذف شي. همدارنګه\nد باور وړ ویب پاڼو کوکیز</string>
+    <string name="clear_databases">ډیټابیسونه پاک کړئ</string>
+    <string name="clear_cookies">کوکیز پاک کړئ</string>
+    <string name="clear_when_application_exit">پاک کړئ کله چې غوښتنلیک بهر شي</string>
+    <string name="clear_when_application_exit_body">هرکله چې تاسو پورته ټول چک شوي ډاټا پریږدئ\nبه حذف شي</string>
+    <string name="image">انځور</string>
+    <string name="javascript">جاواسکریپټ</string>
+    <string name="cookies">کوکیز</string>
+    <string name="reopen_last_tab">وروستی ټب بیا خلاص کړئ</string>
+    <string name="confirm_tab_close">د ټب تړل تایید کړئ</string>
+    <string name="confirm_browser_exit">د براوزر وتل تایید کړئ</string>
+    <string name="position">موقف</string>
+    <string name="first_toolbar">لومړی اوزار پټه</string>
+    <string name="hide_toolbar">د وسیلې پټول</string>
+    <string name="toolbar">وسیلې پټې</string>
+    <string name="bookmarks">بک مارکونه</string>
+    <string name="edit">سمون</string>
+    <string name="today">نن</string>
+    <string name="the_last_hour">وروستی ساعت</string>
+    <string name="last_week">تېره اونۍ</string>
+    <string name="last_month">تیره میاشت</string>
+    <string name="delete_all_history">ټول تاریخ ړنګ کړئ</string>
+    <string name="copied">کاپي شوی</string>
+    <string name="share_ss">SS شریک کړئ</string>
+    <string name="file_manager">د فایلو منظم کوونکی</string>
+    <string name="search_on">لټون کول</string>
+    <string name="add_shortcut">شارټ کټ اضافه کړئ</string>
+    <string name="tab_exit">ټب د وتلو</string>
+    <string name="do_you_want_to_close">ایا تاسو غواړئ چې وتړئ</string>
+    <string name="download_complete_share_image">ډاونلوډ بشپړ شو. انځور شریک کړئ</string>
+    <string name="update">تازه کول</string>
+    <string name="unfavorite">د خوښې وړ</string>
+    <string name="no_input_provided">هیڅ داخله نه ده ورکړل شوې</string>
+    <string name="input">داخلول</string>
+    <string name="website_link">د ویب پاڼې لینک</string>
+    <string name="for_you">ستاسو لپاره</string>
+    <string name="website">ویب پاڼه:</string>
+    <string name="url">یو آر ایل:</string>
+    <string name="date">نیټه</string>
+    <string name="no_site_loaded">تاسو ډک شوی ویب پاڼه نلرئ</string>
+    <string name="more_then_5_images_can_not_be_picked">د پنځو څخه زیات عکسونه نشي اخیستل کیدی</string>
+    <string name="location">ځای</string>
+</resources>

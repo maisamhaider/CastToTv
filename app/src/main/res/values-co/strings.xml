@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Corsican-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">Locu</string>
+
+    <string name="connection_close_confirm">Vulete annullà a cunnessione VPN attuale?</string>
+    <string name="yes">IÈ</string>
+    <string name="no">INNÒ</string>
+    <string name="yes_2">Iè</string>
+    <string name="no_2">Innò</string>
+    <string name="select_images">Select Images</string>
+    <string name="tabs">Tabs</string>
+    <string name="share">sparte</string>
+    <string name="save">Salvà</string>
+    <string name="more">Più</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancella</string>
+    <string name="favorite_site">Cambia u situ web predeterminatu chì si carica à l\'iniziu di u navigatore</string>
+    <string name="custom_search_engine_body">Aghjunghjite l\'url di ricerca persunalizata sceglite ancu "Custom\nsearch engine" cum\'è fornitore di ricerca</string>
+    <string name="search_engine_body">Sceglite u vostru mutore di ricerca preferitu o\nimpostate un persunalizatu</string>
+    <string name="data_control_body">Sguassate i dati di u vostru navigatore o decide quali dati\nsaranu sbulicati quandu lascià l\'app</string>
+    <string name="start_control_body">Decide chì cumpunenti di u navigatore\nseranu in partenza</string>
+    <string name="behavior_ui_body">Cambia u cumpurtamentu è l\'interfaccia utente di l\'app per\nadatta à e vostre preferenze</string>
+    <string name="book_mark_body">Per vede u dialogu di filtru appughjà longu nantu à l\'icona di marcatura in a panoramica. Decidite quali filtri vi aduprà</string>
+    <string name="app_settings_body">Paràmetri di u navigatore, quì pudete cuncede u permessu di a vostra versione Android.</string>
+    <string name="start_control_image_body">Attivate l\'imaghjini di a rete, a disattivazione puderia esse utile\per salvà e dati mobili è carricà u situ web più veloce</string>
+    <string name="start_control_location_body">Permette à i siti web accede à a vostra situazione. Certi\nsiti web {google, maps for nav) anu bisognu di sta attivazione</string>
+    <string name="start_control_history_body">Salvà a storia di i siti web visitati</string>
+    <string name="start_control_java_script_body">Attivà JavaScript. Parechji siti web necessitanu\nJavaScript per a so funziunalità. Ma sò \nalso riposu è ponu esse aduprati per attacchi</string>
+    <string name="start_control_cookies_body">Attivà i cookies. I cookies sò picculi schedarii di testu,
+chì sò cullucatu in u vostru dispusitivu. I siti web usanu
+elli per esempiu per almacenà i paràmetri di l\'utilizatori. Ma
+Puderanu ancu esse usatu per cullà l\'utilizatori persunale
+dati. I cookies di terzu sò sempre disattivati.</string>
+    <string name="confirmation_browser_exit_body">dialogu di cunferma quandu \nchiude u navigatore</string>
+    <string name="confirmation_tab_close_body">Dialogo di cunferma quandu si chjude una tabulazione</string>
+    <string name="confirmation_reopen_last_body">Riapre una nova tabulazione quandu l\'ultima tabulazione hè chjusa invece di esce da u navigatore</string>
+    <string name="hide_toolbar_body">Aduprate tutta a pantalla quandu scorri u situ web se appughjà u buttone retrocede, lascià u modalità fullscreen</string>
+    <string name="images">Images</string>
+    <string name="videos">Videos</string>
+    <string name="web_browser">Navigatore Web</string>
+    <string name="image_slider">Slider d\'Image</string>
+    <string name="next">Dopu</string>
+    <string name="previous">Previous</string>
+    <string name="help">Aiutu</string>
+    <string name="settings">Settings</string>
+    <string name="language">Lingue</string>
+    <string name="more_app">Più Apps</string>
+    <string name="rate_us">Valutaci</string>
+    <string name="screen_mirroring">Screen Mirroring</string>
+    <string name="home_screen_text">Assicuratevi chì u vostru telefunu è a TV sò cunnessi à a stessa rete Wi-Fi.</string>
+    <string name="wifi_connected">Wi-Fi Cunnessu</string>
+    <string name="wifi_disconnected">Wi-Fi Disconnected</string>
+    <string name="general">Generale</string>
+    <string name="communicate">Comunicate</string>
+    <string name="send_feedback">Mandate Feedback</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="how_to_use">Cumu aduprà?</string>
+    <string name="streaming">Streaming</string>
+    <string name="streaming_quality">Qualità di streaming</string>
+    <string name="auto_stop">Auto Stop</string>
+    <string name="auto_minimize">Auto Minimize</string>
+    <string name="advance">Avanzate</string>
+    <string name="orientation_mode">Modu d\'orientazione</string>
+    <string name="auto_stop_body_text">Arresta u video quandu a cunnessione \nà u destinazione hè persa</string>
+    <string name="auto_minimize_body_text">Oculta l\'app quandu u mirroring principia</string>
+    <string name="casting_orientation_body_text">Orientazione di casting</string>
+    <string name="mirroring_mode">Modu mirroring</string>
+    <string name="screen_mirroring_privacy_policy">Pulitica di privacy di schermu mirroring</string>
+    <string name="privacy_policy">Pulitica di privacy</string>
+    <string name="supporting_devices">Dispositivi di sustegnu</string>
+    <string name="see_which_devices_support_mirroring">Vede chì i dispositi supportanu mirroring</string>
+    <string name="color_theme">Tema di culore</string>
+    <string name="dark">scuru</string>
+    <string name="light">Luce</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Selezziunà a lingua</string>
+    <string name="close">vicinu</string>
+    <string name="images_slider">Kiʻi Slider</string>
+    <string name="screen_mirror">Palena specchiu</string>
+    <string name="tutorial_screen_setup_body">U vostru dispositivu di destinazione deve esse in a stessa rete Wi-Fi cum\'è stu dispusitivu, perchè Screen Mirror trasmette u vostru schermu.</string>
+    <string name="tutorial_screen_mirror_body">Trasmette u screnu di u vostru dispositivu nantu à Wi-Fi à u vostru urdinatore, notebook o tableta.</string>
+    <string name="tutorial_device_hotspot_body">Pudete ancu aduprà u hotspot di u vostru dispositivu (modu tethering) è cunnette u vostru dispositivu di destinazione à u vostru hotspot.</string>
+    <string name="tutorial_scan_code_body">Open situ nant\'à u vostru dispusitivu di destinazione. Scannendu u codice QR, a cunfigurazione di cunnessione hè trasmessa è u mirroring principia.</string>
+    <string name="tutorial_support_body">Per piacè esse cuscenti chì Screen Mirror funziona solu quandu hè stallatu bè. Screen Mirror trasmette u vostru schermu, ma micca i signali audio di u vostru dispositivu. Sè avete qualchì prublema cuntattateci.</string>
+    <string name="walk_through_body_1">Prufittate di streaming fluidu è di alta qualità\nsenza ritardi</string>
+    <string name="walk_through_body_2">Cunnettete cù qualsiasi dispositivu intelligente è gode di u\nshow nantu à qualsiasi schermu</string>
+    <string name="walk_through_body_3">Prufittate u navigatore privatu in-app senza limitazioni</string>
+    <string name="screen_setup">Configurazione di u screnu</string>
+    <string name="device_hotspot">Hotspot di u dispusitivu</string>
+    <string name="scan_code">Scan Code</string>
+    <string name="support">Supportu</string>
+    <string name="finish">Finisci</string>
+    <string name="our_policies">I nostri pulitichi</string>
+    <string name="privacy_policy_text">A prutezzione di a vostra privacy hè impurtante per noi. Speremu chì a seguente dichjarazione vi aiuterà à capisce cumu si tratta di l\'infurmazioni persunali d\'identità, pudete furnisce à noi via Internet (a piattaforma Google Play).\n\nIn generale. ùn avemu micca recullà alcuna PII da voi quandu scaricate e nostre applicazioni Android. Per esse specifichi, ùn avemu micca bisognu di e visite di i cunsumatori di a nostra applicazione, ancu ùn avemu micca un Servitore per almacenà tali PII.\n\nScreen Mirroring usa Facebook cum\'è fornitore di annunci. Facebook vole mostrà annunzii chì sò pertinenti per voi. Per più infurmazione, visitate\nhttps://m.facebook.com/ads/ad_choices.\n\nL\'unica situazione chì pudemu avè accessu à voi PII hè quandu decide personalmente di mandà per email i vostri feedback o di furnisce un bug. rapportu. I PII chì pudemu avè da voi in quella situazione sò strettamente limitati à u vostru nome, l\'indirizzu email è a vostra risposta à l\'indagine solu.\n\nIn a situazione sopra, garantimu chì a vostra PII serà usata solu per cuntattà voi è per migliurà i nostri servizii. Ùn avemu mai aduprà tali informazioni (per esempiu, u vostru nome è indirizzu email_ per qualsiasi altri scopi, cum\'è per u mercatu di i nostri prudutti, o per divulgà a vostra infurmazione persunale à un terzu per guadagnà cummerciale.\n\nSi deve esse nutatu chì sia o per ùn mandà micca u vostru feedback o rapportu di bug hè una iniziativa cumplettamente vuluntaria nantu à a vostra propria decisione. Se avete preoccupatu di l\'abusu di a vostra PII, o se vulete più infurmazione nantu à a nostra pulitica di privacy è ciò chì significa, sentite liberu di mandate un email. à screenmirroring.feedback@gmail.com, faremu un sforzu per furnisce risposte chjaramente à e vostre dumande in tempu puntuale.</string>
+    <string name="please_write_your_feedback">Per piacè scrivite u vostru feedback</string>
+    <string name="system_info">A vostra infurmazione di u sistema serà mandata à u Dipartimentu di tecnulugia di Screen Mirroring</string>
+    <string name="send">Mandate</string>
+    <string name="provide_feedback">furnisce feedback</string>
+    <string name="invalid_email_provided">E-mail invalidu furnitu</string>
+    <string name="check_your_internet_connection">Verificate a vostra cunnessione Internet</string>
+    <string name="type_here">scrive quì…</string>
+    <string name="enter_your_email_optional">Inserite u vostru email (opcional)</string>
+    <string name="enjoy_the_app">Ti piace l\'App?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Valuta a vostra sperienza usendu Screen\nMirroring App.</string>
+    <string name="not_now">Micca avà</string>
+    <string name="feedback">Feedback:</string>
+    <string name="model">Mudellu:</string>
+    <string name="brand">Marca:</string>
+    <string name="os_version">Versione OS:</string>
+    <string name="manufacturer">Produttore:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Mandate mail</string>
+    <string name="select_picture">Selezziunà Picture</string>
+    <string name="help_center">Centru d\'aiutu</string>
+    <string name="question_1">U mo telefuninu si ferma in "Connecting" \nquandu s\'accoppia cù a TV.</string>
+    <string name="question_2">Hè travagliatu per mè prima, ma ùn \nfunziona micca avà.</string>
+    <string name="question_3">Mostra chì u mo dispusitivu ùn hè \nmicca supportatu.</string>
+    <string name="question_4">U mo TV hè un vechju TV è ùn sustene \nmicca u wi-fi.</string>
+    <string name="question_5">L\'imaghjini nantu à a TV hè nera, \nma u sonu pò esse intesu.</string>
+    <string name="question_6">A cunnessione serà interrotta dopu \nun pocu tempu.</string>
+    <string name="question_7">Hè a mo infurmazione persunale o dati \nmobili assolutamente sicuru?</string>
+    <string name="q_answer_1_1">Riavvia u Wi-Fi di u telefuninu intelligente è vede se a cunnessione hè successu.</string>
+    <string name="q_answer_1_2">Spegne a TV è caccià u so cordone di alimentazione da u socket. Aspetta 1 minutu è riavvia a TV.</string>
+    <string name="q_answer_1_3">Accurtà a distanza trà u vostru telefunu è a TV. Pigliate da vicinu.</string>
+    <string name="q_answer_2_1">S\'ellu hà travagliatu prima, allora definitivamente pò esse usatu di novu.</string>
+    <string name="q_answer_2_2">A maiò parte di i prublemi di cunnessione ponu esse risolti riavviendu i dispositi. Basta à riavvia u vostru telefunu è a TV, seguite u prucessu di cunnessione regulare per ripruvà.</string>
+    <string name="q_answer_3_1">Questu significa chì u vostru telefunu stessu ùn sustene micca a funzione mirroring screen.</string>
+    <string name="q_answer_3_2">Pudete aduprà XCast per cast video, audio è foto à TV. Cù XCast, pudete fà altre cose cù u vostru telefunu mentre casting à TV.</string>
+    <string name="q_answer_4_1">Se u vostru TV supporta l\'interfaccia HDMI, ricumandemu di cumprà un receptore esternu per a mirroring di u screnu. Cum\'è Chromecast, Anycast etc.</string>
+    <string name="q_answer_5_1">Certi cuntenuti implicanu a prutezzione di copyright è ùn ponu micca esse visualizati nantu à i dispositi di terzu, cum\'è Netflix, Disney Plus, etc.</string>
+    <string name="q_answer_5_2">Pudete scaricà u video o cercate a stessa risorsa in altre app per pruvà.</string>
+    <string name="q_answer_6_1">Pudete attivà u Smart Connect in i vostri paràmetri Wi-Fi. Cercherà megliu cunnessione Wi-fi constantemente, è sempre cunnetta avanti è avanti.</string>
+    <string name="q_answer_6_2">Per piacè assicuratevi chì u Wi-Fi di u telefuninu è a TV hè u SAM è u megliu signale.</string>
+    <string name="q_answer_7_1">Ùn avemu micca monitorà o cullà alcuna infurmazione nantu à voi è u vostru telefuninu. Pudete cast u vostru schermu senza alcuna preoccupazione.</string>
+    <string name="q_answer_7_2">U sistema pò avvistà chì ci hè un periculu di sicurità prima di mirroring screen. Questu hè solu un ricordu regulare, serà</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">INSTALLA</string>
+    <string name="install_small">Installa</string>
+    <string name="manual">Manuale</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Assicuratevi chì u vostru telefunu è TV sò cunnessi\à a listessa rete Wi-Fi.</string>
+    <string name="hd_streaming">Streaming HD</string>
+    <string name="smart_devices">dispusitivi intelligenti</string>
+    <string name="private_browser">Navigatore privatu</string>
+    <string name="effects">Effetti</string>
+    <string name="slider">Slider</string>
+    <string name="search_or_type_web_address">Cerca o scrive l\'indirizzu web</string>
+    <string name="install_2">Installa</string>
+    <string name="bookmark">Marcatu</string>
+    <string name="downloads">Downloads</string>
+    <string name="download">Scaricate</string>
+    <string name="favorites">Preferiti</string>
+    <string name="favorite">Preferitu</string>
+    <string name="history">Storia</string>
+    <string name="share_pdf">Condividi Pdf</string>
+    <string name="copy_url">Copia l\'URL</string>
+    <string name="share_app">Share App</string>
+    <string name="share_url">Condividi l\'url</string>
+    <string name="exit">Esci</string>
+    <string name="new_tab">Tabulazione nova</string>
+    <string name="google">Google</string>
+    <string name="startpage">Pagina iniziale</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwantu</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Mutore di ricerca persunalizata</string>
+    <string name="add_shortcut_to_home">Aghjunghjite un shortcut à a casa</string>
+    <string name="save_screenshot">Salvà Screenshot</string>
+    <string name="add_to_bookmark">Aghjunghjite à u marcatu</string>
+    <string name="save_as_pdf">Salvà cum\'è pdf</string>
+    <string name="save_action">Salvà Azzione</string>
+    <string name="add_to_favorite">Aghjunghjite à u favuritu</string>
+    <string name="search_engine">Search Engine</string>
+    <string name="browser_exit_body">Sò sicuru chì vulete esce da u Browser</string>
+    <string name="exit_browser">Esci da u navigatore</string>
+    <string name="custom_user_agent">Agente d\'utilizatore persunalizatu</string>
+    <string name="start_control">Start Control</string>
+    <string name="data_control">Cuntrollu Dati</string>
+    <string name="app_settings">Paràmetri di l\'app</string>
+    <string name="browser_settings">Settings di u navigatore</string>
+    <string name="behavior_ui">Cumportamentu / UI</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="clear_history">Storia chjaru</string>
+    <string name="clear_browsing_history">Sguassà a storia di navigazione</string>
+    <string name="clear_all_cache">Sguassà tuttu u cache</string>
+    <string name="clear_database_body">Cancella "base di dati indexate" è "basi di dati lucali"</string>
+    <string name="clear_cookies_body">Se attivatu, tutti i cookies seranu sguassati. Ancu i cookies di i siti di fiducia</string>
+    <string name="clear_databases">Clear databases</string>
+    <string name="clear_cookies">Clear Cookies</string>
+    <string name="clear_when_application_exit">Cancella quandu l\'applicazione esce</string>
+    <string name="clear_when_application_exit_body">Ogni volta chì abbandunete tutti i dati verificati sopra \nsaranu sguassati</string>
+    <string name="image">Image</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Cookies</string>
+    <string name="reopen_last_tab">Riapre l\'ultima tabulazione</string>
+    <string name="confirm_tab_close">Cunfirmà a tabulazione chiusa</string>
+    <string name="confirm_browser_exit">Cunfirmà a surtita di u navigatore</string>
+    <string name="position">pusizioni</string>
+    <string name="first_toolbar">Prima toolbar</string>
+    <string name="hide_toolbar">Oculte a barra di strumenti</string>
+    <string name="toolbar">Toolbar</string>
+    <string name="bookmarks">Segnalibri</string>
+    <string name="edit">Edit</string>
+    <string name="today">Oghje</string>
+    <string name="the_last_hour">L\'ultima ora</string>
+    <string name="last_week">A settimana passata</string>
+    <string name="last_month">U mese passatu</string>
+    <string name="delete_all_history">Sguassà tutta a storia</string>
+    <string name="copied">copiatu</string>
+    <string name="share_ss">Sparte SS</string>
+    <string name="file_manager">File Manager</string>
+    <string name="search_on">Ricerca On</string>
+    <string name="add_shortcut">Aggiungi Shortcut</string>
+    <string name="tab_exit">Tab Exit</string>
+    <string name="do_you_want_to_close">Vulete chjude</string>
+    <string name="download_complete_share_image">Scaricamentu cumpletu. Condividi l\'imagine</string>
+    <string name="update">Actualizazione</string>
+    <string name="unfavorite">Un favuritu</string>
+    <string name="no_input_provided">Nisun input furnitu</string>
+    <string name="input">Input</string>
+    <string name="website_link">Link à u situ web</string>
+    <string name="for_you">Per tè</string>
+    <string name="website">situ web:</string>
+    <string name="url">Url:</string>
+    <string name="date">Data</string>
+    <string name="no_site_loaded">Ùn avete micca caricatu u situ web</string>
+    <string name="more_then_5_images_can_not_be_picked">Più di cinque imagine ùn ponu esse scelte</string>
+</resources>

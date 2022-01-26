@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--kurdish-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">Cîh</string>
+    <string name="connection_close_confirm">Ma hûn dixwazin girêdana VPN ya heyî betal bikin?</string>
+    <string name="yes">ERÊ</string>
+    <string name="no">NA</string>
+    <string name="yes_2">Erê</string>
+    <string name="no_2">Na</string>
+    <string name="select_images">Wêne hilbijêrin</string>
+    <string name="tabs">Tabs</string>
+    <string name="share">Par</string>
+    <string name="save">Rizgarkirin</string>
+    <string name="more">Zêde</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Bişûndekirin</string>
+    <string name="favorite_site">Malpera xwerû ya ku li\ndestpêka Gerokê bar dike biguherîne</string>
+    <string name="custom_search_engine_body">Url-ya lêgerîna xwerû lê zêde bikin û wekî peydakarê lêgerînê jî "Motora Xwerû\nLêgerînê" hilbijêrin</string>
+    <string name="search_engine_body">Motora lêgerîna xweya bijarte hilbijêrin an\nyek xwerû destnîşan bikin</string>
+    <string name="data_control_body">Daneyên geroka xwe paqij bikin an jî biryar bidin ka kîjan dane\nDema hûn ji sepanê derkevin dê werin paqij kirin</string>
+    <string name="start_control_body">Biryarê bide ka kîjan beşên gerokê\ndê dest pê bikin</string>
+    <string name="behavior_ui_body">Tevlihevî û bikarhêneriya sepanê biguherînin ku\nli gorî tercîhên we bin</string>
+    <string name="book_mark_body">Ji bo nîşandana diyaloga parzûnê, li ser îkona nîşankerê ya di pêşangehê de dirêj bikirtînin. Biryarê bidin ka hûn ê kîjan fîlteran bikar bînin</string>
+    <string name="app_settings_body">Mîhengên gerokê, li wir hûn dikarin li gorî\nguhertoya xweya android destûr bidin.</string>
+    <string name="start_control_image_body">Wêneyên Torê çalak bike, neçalakkirin dikare bikêr be\nji bo hilanîna daneya mobîl û bilez barkirina malperê</string>
+    <string name="start_control_location_body">Destûr bidin malperan ku bigihîjin cîhê we. Hin\nmalper {google, nexşeyên ji bo nav-ê) pêdivî bi vê çalakkirinê heye</string>
+    <string name="start_control_history_body">Dîroka malperên serdankirî hilînin</string>
+    <string name="start_control_java_script_body">JavaScript çalak bike. Gelek malper ji bo fonksiyona xwe\nJavaScript hewce ne. Lê ew rehet in û dikarin ji bo êrîşan werin bikar anîn</string>
+    <string name="start_control_cookies_body">Cookies çalak bike. Cookies pelên nivîsê yên piçûk in,
+ku li ser cîhaza we têne hilanîn. Malperan bikar tînin
+ew wek nimûne ji bo hilanîna mîhengên bikarhêner. Lebê
+ew dikarin ji bo berhevkirina bikarhênerek kesane jî werin bikar anîn
+jimare. Kokiyên partiya sêyemîn her gav neçalak in.</string>
+    <string name="confirmation_browser_exit_body">Dema\ngerokê tê girtin diyaloga pejirandinê</string>
+    <string name="confirmation_tab_close_body">Dema girtina tabloyekê diyaloga pejirandinê</string>
+    <string name="confirmation_reopen_last_body">Dema ku tabloya paşîn girtî be li şûna ku hûn ji gerokê derkevin, tabloyek nû vekin</string>
+    <string name="hide_toolbar_body">Dema ku hûn di nav malperê de digerin, ger hûn bişkoja paşdeyê pêl bikin hûn ê ji moda tevahî ekranê derkevin</string>
+    <string name="images">Images</string>
+    <string name="videos">Videos</string>
+    <string name="web_browser">Browser Web</string>
+    <string name="image_slider">Slider Wêne</string>
+    <string name="next">Piştî</string>
+    <string name="previous">Pêşî</string>
+    <string name="help">Alîkarî</string>
+    <string name="settings">Settings</string>
+    <string name="language">Languages</string>
+    <string name="more_app">Zêdetir Serlêdan</string>
+    <string name="rate_us">Binirxînin Us</string>
+    <string name="screen_mirroring">Screen Mirroring</string>
+    <string name="home_screen_text">Piştrast bikin ku têlefon û TV-ya we bi heman tora Wi-Fi ve girêdayî ne.</string>
+    <string name="wifi_connected">Wi-Fi Girêdayî</string>
+    <string name="wifi_disconnected">Wi-Fi Veqetiya</string>
+    <string name="general">Giştî</string>
+    <string name="communicate">Agahdayin</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="how_to_use">Çawa bikar bînin?</string>
+    <string name="streaming">Streaming</string>
+    <string name="streaming_quality">Streaming Quality</string>
+    <string name="auto_stop">Oto Rawestandin</string>
+    <string name="auto_minimize">Auto Minimize</string>
+    <string name="advance">Pêşveçûn</string>
+    <string name="orientation_mode">Moda Orientation</string>
+    <string name="auto_stop_body_text">Dema ku girêdana\nbi hedefê winda bibe vîdyoyê rawestîne</string>
+    <string name="auto_minimize_body_text">Dema ku neynikê dest pê dike sepanê veşêre</string>
+    <string name="casting_orientation_body_text">Orientation Casting</string>
+    <string name="mirroring_mode">Mirroring mode</string>
+    <string name="screen_mirroring_privacy_policy">Siyaseta nepenîtiyê neynika ekranê</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="supporting_devices">Amûrên Piştgiriyê</string>
+    <string name="see_which_devices_support_mirroring">Binêrin ka kîjan amûrên neynikê piştgirî dikin</string>
+    <string name="color_theme">Mijara Rengê</string>
+    <string name="dark">Tarî</string>
+    <string name="light">Sivik</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Ziman hilbijêrin</string>
+    <string name="close">nêzîkî</string>
+    <string name="images_slider">Wêneyên Slider</string>
+    <string name="screen_mirror">Screen Mirror</string>
+    <string name="tutorial_screen_setup_body">Pêdivî ye ku cîhaza weya mebesta vê cîhazê di heman tora Wi-Fi de be, ji ber ku Screen Mirror dîmendera we dişîne.</string>
+    <string name="tutorial_screen_mirror_body">Ekrana cîhaza xwe bi Wi-Fi li ser komputer, notebook an tabletê xwe biherikînin.</string>
+    <string name="tutorial_device_hotspot_body">Her weha hûn dikarin xala cîhêra xwe bikar bînin (moda girêdanê) û cîhaza xweya armancê bi xala xwe ve girêdin.</string>
+    <string name="tutorial_scan_code_body">Malpera li ser cîhaza hedefa xwe vekin. Bi şopandina koda QR-ê veavakirina girêdanê tê veguheztin û neynikê dest pê dike.</string>
+    <string name="tutorial_support_body">Ji kerema xwe hay ji xwe hebin ku Screen Mirror tenê dema ku rast were saz kirin dixebite. Screen Mirror dîmendera we dişîne, lê ne îşaretên dengî yên cîhaza we. Ger tu pirsgirêkek rû bi rû bi me re têkilî.</string>
+    <string name="walk_through_body_1">Ji weşana bêkêmasî û bi kalîte xweş bikin\nbê dereng</string>
+    <string name="walk_through_body_2">Bi her amûrek jîr ve girêdin û ji\npêşandana li ser her ekranê kêfê bikin</string>
+    <string name="walk_through_body_3">Ji geroka taybet a nav-app-ê bêyî ti sînoran kêfê bikin</string>
+    <string name="screen_setup">Setup Screen</string>
+    <string name="device_hotspot">Hotspota cîhazê</string>
+    <string name="scan_code">Scan Code</string>
+    <string name="support">Alîkarî</string>
+    <string name="finish">Qedandin</string>
+    <string name="our_policies">Polîtîkayên me</string>
+    <string name="privacy_policy_text">Parastina nepeniya we ji me re girîng e. Em hêvî dikin ku daxuyaniya jêrîn ji we re bibe alîkar ku hûn fam bikin ka em çawa bi agahdariya kesane ya naskirî re mijûl dibin, hûn dikarin carinan bi riya Înternetê (platforma Google Play) ji me re peyda bikin.\n\nBi gelemperî. Gava ku hûn serîlêdanên me yên Android-ê dakêşin, em ji we PII kom nakin. Bi taybetî, em ne hewce ne ku serdanên serfkarên serîlêdana me, Serverek me jî tune ku PII-ya weha hilîne.\n\nScreen Mirroring Facebook-ê wekî pêşkêşvanê reklamê bikar tîne. Facebook dixwaze reklamên ku ji we re têkildar in nîşan bide. Ji bo bêtir agahdarî ji kerema xwe biçin\nhttps://m.facebook.com/ads/ad_choices.\n\nTenê rewşa ku em dikarin xwe bigihînin PII-ya we ev e ku hûn bixwe biryar didin ku hûn nerînên xwe bi e-nameyê ji me re bişînin an jî xeletiyek ji me re peyda bikin. nûçe. PII-ya ku em dikarin di wê rewşê de ji we bistînin bi tenê bi navê we, navnîşana e-name û bersiva anketa we ve sînorkirî ne.\n\nDi rewşa jorîn de, em garantî dikin ku hûn PII tenê ji bo têkilî bi we û başkirina karûbarên me têne bikar anîn. Em ê tu carî van agahdariyan bikar neynin (mînak nav û navnîşana e-nameya we_ ji bo mebestên din, wek mînak ji bo bêtir bazarêkirina hilberên me, an ji bo eşkerekirina agahdariya kesane ji aliyek sêyemîn re ji bo destkeftiyên bazirganî.\n\nDivê were zanîn ku gelo an ku hûn nerînên xwe an rapora xeletiyê ji me re neşînin li ser biryara we însiyatîfek bi tevahî dilxwaz e. Ger fikarên we hene ku PII-ya we xelet were bikar anîn, an heke hûn agahdariya bêtir li ser siyaseta nepenîtiyê û wateya wê dixwazin, ji kerema xwe ji me re e-nameyê bişînin. li screenmirroring.feedback@gmail.com, em ê hewl bidin ku di wextê xwe de bersivên zelal ji pirsên we re peyda bikin.</string>
+    <string name="please_write_your_feedback">Ji kerema xwe nerînên xwe binivîsin</string>
+    <string name="system_info">Agahdariya Pergala we dê ji Wezareta Teknolojiyê ya Screen Mirroring re were şandin</string>
+    <string name="send">Şandin</string>
+    <string name="provide_feedback">bersivê bidin</string>
+    <string name="invalid_email_provided">Emaila nederbasdar hat dayîn</string>
+    <string name="check_your_internet_connection">Girêdana înternetê ya xwe kontrol bikin</string>
+    <string name="type_here">li vir binivîse…</string>
+    <string name="enter_your_email_optional">E-nameya xwe binivîse (vebijarkî)</string>
+    <string name="enjoy_the_app">Enjoy App?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Bi karanîna Screen\nSerlêdana Mirroring, ezmûna xwe binirxînin.</string>
+    <string name="not_now">Guhê xwe nedenê</string>
+    <string name="feedback">Feedback:</string>
+    <string name="model">Cins:</string>
+    <string name="brand">Şanika şewatê:</string>
+    <string name="os_version">Guhertoya OS:</string>
+    <string name="manufacturer">Çêker:</string>
+    <string name="ram">BERAN:</string>
+    <string name="send_email">E-nameyê bişînin</string>
+    <string name="select_picture">Wêne hilbijêrin</string>
+    <string name="help_center">Navenda Alîkariyê</string>
+    <string name="question_1">Dema ku têlefona min bi TV-yê re têkildar dibe di "Girêdan"ê de asê dibe.</string>
+    <string name="question_2">Berê ji bo min dixebitî, lê \nniha naxebite.</string>
+    <string name="question_3">Ew destnîşan dike ku amûra min \nnayê piştgirî kirin.</string>
+    <string name="question_4">Televizyona min TVyek kevn e û \nwi-fi piştgirî nake.</string>
+    <string name="question_5">Wêneyê televîzyonê reş e, lê deng \ntê bihîstin.</string>
+    <string name="question_6">Têkilî dê piştî demekê \nqut bibe.</string>
+    <string name="question_7">Ma agahdariya kesane ya min an daneyên mobîl bi tevahî ewle ye?</string>
+    <string name="q_answer_1_1">Wi-Fi-ya têlefona smart ji nû ve bidin destpêkirin û bibînin ka girêdan serketî ye.</string>
+    <string name="q_answer_1_2">Televizyonê vemirînin û têleya wê ya elektrîkê jî ji soketê derxînin. 1 hûrdem bisekinin û TV-yê ji nû ve bidin destpêkirin.</string>
+    <string name="q_answer_1_3">Dûrahiya di navbera têlefona xwe û televîzyonê de kurt bikin. Nêzîkî wê bigirin.</string>
+    <string name="q_answer_2_1">Ger ew berê xebitî, wê hingê bê guman ew dikare dîsa were bikar anîn.</string>
+    <string name="q_answer_2_2">Pir pirsgirêkên pêwendiyê bi ji nû ve destpêkirina cîhazan ve têne çareser kirin. Tenê hem têlefona xwe û hem jî TV-ya xwe ji nû ve bidin destpêkirin, pêvajoya pêwendiya birêkûpêk bişopînin da ku ji nû ve biceribînin.</string>
+    <string name="q_answer_3_1">Ev tê vê wateyê ku têlefona we bixwe fonksiyona neynikê ya ekranê piştgirî nake.</string>
+    <string name="q_answer_3_2">Hûn dikarin XCast-ê bikar bînin ku vîdyoyê, deng û wêneyê li TV-yê bişînin. Bi XCast re, hûn dikarin tiştên din bi têlefona xwe re dema ku li TV-yê diavêjin bikin.</string>
+    <string name="q_answer_4_1">Ger TV-ya we pêwendiya HDMI-yê piştgirî dike, em pêşniyar dikin ku hûn ji bo neynika dîmenderê wergirek derveyî bikirin. Wek Chromecast, Anycast hwd.</string>
+    <string name="q_answer_5_1">Hin naverok parastina mafnasiyê vedihewîne û li ser cîhazên partiya sêyemîn, wek Netflix, Disney Plus hwd, nayê xuyang kirin.</string>
+    <string name="q_answer_5_2">Hûn dikarin vîdyoyê dakêşin an li heman çavkaniyê li ser sepanên din bigerin da ku hûn biceribînin.</string>
+    <string name="q_answer_6_1">Hûn dikarin di mîhengên Wi-Fi-ya xwe de Smart Connect vekin. Ew ê bi domdarî li girêdanên Wi-fi çêtir bigere, û her gav paş û paş ve girêdide.</string>
+    <string name="q_answer_6_2">Ji kerema xwe pê ewle bibin ku Wi-Fi ya têlefon û TV-yê SAM û nîşana çêtirîn e.</string>
+    <string name="q_answer_7_1">Em ê li ser we û têlefona weya desta agahiyê bişopînin an berhev nekin. Hûn dikarin dîmendera xwe bêyî xemgîniyê bavêjin.</string>
+    <string name="q_answer_7_2">Dibe ku pergal we hişyar bike ku berî neynikê ekranê xetereyek ewlehiyê heye. Ev tenê bîranînek birêkûpêk e, dê bibe</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRA CAST</string>
+    <string name="install">LÊKIRIN</string>
+    <string name="install_small">Lêkirin</string>
+    <string name="manual">Destî</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Piştrast bike ku têlefon û TV-ya we bi heman tora Wi-Fi ve girêdayî ne.</string>
+    <string name="hd_streaming">HD Streaming</string>
+    <string name="smart_devices">cîhazên jîr</string>
+    <string name="private_browser">Geroka Taybet</string>
+    <string name="effects">Effects</string>
+    <string name="slider">Slider</string>
+    <string name="search_or_type_web_address">Navnîşana malperê bigerin an binivîsin</string>
+    <string name="install_2">Lêkirin</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="downloads">Daxistin</string>
+    <string name="download">Download</string>
+    <string name="favorites">Favorites</string>
+    <string name="favorite">Hezkirî</string>
+    <string name="history">Dîrok</string>
+    <string name="share_pdf">Pdf parve bikin</string>
+    <string name="copy_url">URL kopî bikin</string>
+    <string name="share_app">App Share</string>
+    <string name="share_url">url-ê parve bikin</string>
+    <string name="exit">Derî</string>
+    <string name="new_tab">Tabloya Nû</string>
+    <string name="google">gûgil</string>
+    <string name="startpage">DestpêkPage</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Motora lêgerînê ya Custom</string>
+    <string name="add_shortcut_to_home">Kurtenivîsê li malê zêde bikin</string>
+    <string name="save_screenshot">Screenshot tomar bike</string>
+    <string name="add_to_bookmark">Zêde bikin bo nîşankê</string>
+    <string name="save_as_pdf">Wek pdf tomar bike</string>
+    <string name="save_action">Save Action</string>
+    <string name="add_to_favorite">Zêde bike li favorite</string>
+    <string name="search_engine">Motora Lêgerînê</string>
+    <string name="browser_exit_body">Ma hûn pê ewle ne ku hûn dixwazin ji Gerokê derkevin</string>
+    <string name="exit_browser">Derkeve Browser</string>
+    <string name="custom_user_agent">nûnerê bikarhêner Custom</string>
+    <string name="start_control">Kontrolê dest pê bikin</string>
+    <string name="data_control">Kontrola daneyan</string>
+    <string name="app_settings">Mîhengên app</string>
+    <string name="browser_settings">Mîhengên Browser</string>
+    <string name="behavior_ui">Behavior / UI</string>
+    <string name="clear_cache">Cache paqij bike</string>
+    <string name="clear_history">Dîrokê Paqij bike</string>
+    <string name="clear_browsing_history">Dîroka gerokê paqij bike</string>
+    <string name="clear_all_cache">Hemî cache paqij bike</string>
+    <string name="clear_database_body">"Daneyên pêvekirî" û "bingehên\ndaya herêmî" paqij bikin</string>
+    <string name="clear_cookies_body">Ger çalak be, dê hemî cookie werin jêbirin. Her weha\nCookies malperên pêbawer</string>
+    <string name="clear_databases">Database paqij bikin</string>
+    <string name="clear_cookies">Cookies Paqij bikin</string>
+    <string name="clear_when_application_exit">Dema derketina serîlêdanê paqij bike</string>
+    <string name="clear_when_application_exit_body">Her gava ku hûn dev ji hemî daneyên li jor hatine kontrol kirin\ndê werin jêbirin</string>
+    <string name="image">Wêne</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Cookies</string>
+    <string name="reopen_last_tab">Tabloya paşîn ji nû ve veke</string>
+    <string name="confirm_tab_close">Girtina tabê piştrast bikin</string>
+    <string name="confirm_browser_exit">Derketina gerokê piştrast bikin</string>
+    <string name="position">Rewş</string>
+    <string name="first_toolbar">Darika amûrê ya yekem</string>
+    <string name="hide_toolbar">Veşêre toolbar</string>
+    <string name="toolbar">Toolbar</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="edit">Weşandin</string>
+    <string name="today">Îro</string>
+    <string name="the_last_hour">Saeta dawî</string>
+    <string name="last_week">Hefteya çûyî</string>
+    <string name="last_month">meha borî</string>
+    <string name="delete_all_history">Hemî dîrokê jêbirin</string>
+    <string name="copied">kopî kirin</string>
+    <string name="share_ss">SS parve bikin</string>
+    <string name="file_manager">Rêveberê Pelê</string>
+    <string name="search_on">Search On</string>
+    <string name="add_shortcut">Kurtenivîsê lê zêde bike</string>
+    <string name="tab_exit">Tab Derketin</string>
+    <string name="do_you_want_to_close">Ma hûn dixwazin bigirin</string>
+    <string name="download_complete_share_image">Daxistin temam bû. Wêne parve bikin</string>
+    <string name="update">Nûvekirin</string>
+    <string name="unfavorite">Un favorite</string>
+    <string name="no_input_provided">Input nayê dayîn</string>
+    <string name="input">Beyan</string>
+    <string name="website_link">Girêdana malperê</string>
+    <string name="for_you">Ji were</string>
+    <string name="website">Malper:</string>
+    <string name="url">Url:</string>
+    <string name="date">Rojek</string>
+    <string name="no_site_loaded">We malpera barkirî tune</string>
+    <string name="more_then_5_images_can_not_be_picked">Ji pênc wêneyan zêdetir nayên hilbijartin</string>
+</resources>

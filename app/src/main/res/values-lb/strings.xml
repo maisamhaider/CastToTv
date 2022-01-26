@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Luxembourgish-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">Location</string>
+    <string name="connection_close_confirm">Wëllt Dir déi aktuell VPN Verbindung annuléieren?</string>
+    <string name="yes">JO</string>
+    <string name="no">NEE</string>
+    <string name="yes_2">jo</string>
+    <string name="no_2">Nee</string>
+    <string name="select_images">Wielt Biller</string>
+    <string name="tabs">Tabs</string>
+    <string name="share">Deelen</string>
+    <string name="save">Spueren</string>
+    <string name="more">Méi</string>
+    <string name="ok">ok</string>
+    <string name="cancel">Ofbriechen</string>
+    <string name="favorite_site">Ännert d\'Standard Websäit déi beim Start vum Browser lued</string>
+    <string name="custom_search_engine_body">Füügt eng personaliséiert Sich-URL och wielt "Custom\nSearch Engine" als Sichprovider</string>
+    <string name="search_engine_body">Wielt Är gewënschte Sichmotor oder\nset eng personaliséiert</string>
+    <string name="data_control_body">Läscht Äre Browserdaten oder entscheet wéi eng Date\ngeläscht ginn wann Dir d\'App verléisst</string>
+    <string name="start_control_body">Entscheet wéi eng Komponente vum Browser\n am Start wäerte sinn</string>
+    <string name="behavior_ui_body">Ännert d\'Behuele an d\'Ui vun der App fir Är Astellungen ze passen</string>
+    <string name="book_mark_body">Fir de Filterdialog ze weisen, dréckt laang op d\'Lieszeichen Ikon am Iwwerbléck. Entscheede wéi eng Filtere Dir benotzt</string>
+    <string name="app_settings_body">Browser Astellungen, do kënnt Dir ofhängeg vun Ärer Android Versioun Erlaabnis ginn.</string>
+    <string name="start_control_image_body">Aktivéiert Netzwierkbilder, Desaktivéiere kéint nëtzlech sinn\nfir mobil Daten ze späicheren an d\'Websäit méi séier ze lueden</string>
+    <string name="start_control_location_body">Erlaabt Websäiten Zougang zu Ärem Standuert. E puer\nWebsäiten {google, Kaarten fir nav) brauchen dës Enable</string>
+    <string name="start_control_history_body">Späichert d\'Geschicht vu besichte Websäiten</string>
+    <string name="start_control_java_script_body">Aktivéiert JavaScript. Vill Websäite brauchen\nJavaScript fir hir Funktionalitéit. Awer si sinn \ n och Rescht a kënne fir Attacke benotzt ginn</string>
+    <string name="start_control_cookies_body">Cookies aktivéieren. Cookies si kleng Textdateien,
+déi op Ärem Apparat gespäichert sinn. Websäite benotzen
+hinnen zum Beispill Benotzer Astellungen ze Buttek. Mee
+si kéinten och benotzt ginn perséinlech Benotzer ze sammelen
+daten. Drëtt Partei Cookien sinn ëmmer behënnert.</string>
+    <string name="confirmation_browser_exit_body">Bestätegungsdialog beim\nBrowser zoumaachen</string>
+    <string name="confirmation_tab_close_body">Bestätegungsdialog beim Zoumaachen vun engem Tab</string>
+    <string name="confirmation_reopen_last_body">Reouverture en neien Tab wann déi lescht Tab zougemaach ass amplaz aus dem Browser</string>
+    <string name="hide_toolbar_body">Benotzt de ganzen Écran wann Dir duerch d\'Websäit scrollt, wann Dir op de Back Button dréckt, verléisst Dir de Vollbildmodus</string>
+    <string name="images">Biller</string>
+    <string name="videos">Videoen</string>
+    <string name="web_browser">Web Browser</string>
+    <string name="image_slider">Bild Slider</string>
+    <string name="next">Nächst</string>
+    <string name="previous">Virdrun</string>
+    <string name="help">Hëllef</string>
+    <string name="settings">Astellungen</string>
+    <string name="language">Sproochen</string>
+    <string name="more_app">Méi Apps</string>
+    <string name="rate_us">Bewäert eis</string>
+    <string name="screen_mirroring">Écran Spigelen</string>
+    <string name="home_screen_text">Vergewëssert Iech datt Ären Telefon an den Fernseh mam selwechte Wi-Fi Netzwierk verbonne sinn.</string>
+    <string name="wifi_connected">Wi-Fi ugeschloss</string>
+    <string name="wifi_disconnected">Wi-Fi deconnectéiert</string>
+    <string name="general">General</string>
+    <string name="communicate">Kommunizéieren</string>
+    <string name="send_feedback">Feedback schécken</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="how_to_use">Wéi benotzen?</string>
+    <string name="streaming">Streaming</string>
+    <string name="streaming_quality">Streaming Qualitéit</string>
+    <string name="auto_stop">Auto Stop</string>
+    <string name="auto_minimize">Auto minimiséieren</string>
+    <string name="advance">Viraus</string>
+    <string name="orientation_mode">Orientéierungsmodus</string>
+    <string name="auto_stop_body_text">Stop Video wann d\'Verbindung\nzu Zil verluer ass</string>
+    <string name="auto_minimize_body_text">Verstoppt d\'App wann d\'Spigelung ufänkt</string>
+    <string name="casting_orientation_body_text">Casting Orientatioun</string>
+    <string name="mirroring_mode">Spigelmodus</string>
+    <string name="screen_mirroring_privacy_policy">Écran Spigel Privatsphär Politik</string>
+    <string name="privacy_policy">Privatsphär Politik</string>
+    <string name="supporting_devices">Ënnerstëtzung Apparater</string>
+    <string name="see_which_devices_support_mirroring">Kuckt wéi eng Apparater Spigelen ënnerstëtzen</string>
+    <string name="color_theme">Faarf Thema</string>
+    <string name="dark">Däischter</string>
+    <string name="light">Liicht</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Wielt Sprooch</string>
+    <string name="close">zoumaachen</string>
+    <string name="images_slider">Biller Slider</string>
+    <string name="screen_mirror">Écran Spigel</string>
+    <string name="tutorial_screen_setup_body">Ären Zilapparat muss am selwechte Wi-Fi Netz wéi dësen Apparat sinn, well Screen Mirror Ären Écran iwwerdréit.</string>
+    <string name="tutorial_screen_mirror_body">Stream den Écran vun Ärem Apparat iwwer Wi-Fi op Ärem Computer, Notizbuch oder Tablet.</string>
+    <string name="tutorial_device_hotspot_body">Dir kënnt och Ären Apparat Hotspot (Tethering Modus) benotzen an Ären Zilapparat mat Ärem Hotspot verbannen.</string>
+    <string name="tutorial_scan_code_body">Open Site op Ärem Zil- Apparat. Mam Scannen vum QR Code gëtt d\'Verbindungskonfiguratioun iwwerdroen an d\'Spigelung fänkt un.</string>
+    <string name="tutorial_support_body">W.e.g. bewosst datt den Screen Mirror nëmme funktionnéiert wann Dir richteg konfiguréiert. Screen Mirror iwwerdroen Ären Écran, awer net d\'Audiosignaler vun Ärem Apparat. Wann Dir Probleemer hutt, kontaktéiert eis.</string>
+    <string name="walk_through_body_1">Genéisst glat an héichqualitativ Streaming \n ouni Lagging</string>
+    <string name="walk_through_body_2">Connect mat all Smart Apparat a genéisst d\'Show op all Écran</string>
+    <string name="walk_through_body_3">Genéisst In-App private Browser ouni Aschränkungen</string>
+    <string name="screen_setup">Écran Setup</string>
+    <string name="device_hotspot">Den Apparat Hotspot</string>
+    <string name="scan_code">Scan Code</string>
+    <string name="support">Ënnerstëtzung</string>
+    <string name="finish">Fäerdeg</string>
+    <string name="our_policies">Eis Politiken</string>
+    <string name="privacy_policy_text">Är Privatsphär ze schützen ass fir eis wichteg. Mir hoffen, datt déi folgend Ausso Iech hëlleft ze verstoen, wéi mir mat der perséinlecher identifizéierender Informatioun ëmgoen, Dir kënnt eis heiansdo iwwer Internet (d\'Google Play Plattform) liwweren.\n\nAllgemeng. mir sammelen keng PII vun Iech wann Dir eis Android Uwendungen eroflueden. Fir spezifesch ze sinn, brauche mir net d\'Konsumenten Visite vun eiser Applikatioun, mir hu souguer kee Server fir sou PII ze späicheren.\n\nScreen Mirroring benotzt Facebook als Annonce Provider. Facebook wëll Annoncen weisen, déi fir Iech relevant sinn. Fir méi Informatioun besicht w.e.g.\nhttps://m.facebook.com/ads/ad_choices.\n\nDéi eenzeg Situatioun, déi mir Zougang zu Iech PII kréien, ass wann Dir perséinlech décidéiert eis Äre Feedback per E-Mail ze schécken oder eis e Feeler ze ginn mellen. D\'PII, déi mir an där Situatioun vun Iech kréien, sinn strikt limitéiert op Ären Numm, E-Mailadress an Är Ëmfro-Äntwert nëmmen.\n\nAn dëser Situatioun garantéieren mir datt Dir PII nëmme benotzt gëtt fir Iech ze kontaktéieren an eis Servicer ze verbesseren. Mir wäerten ni sou Informatioune benotzen (z.B. Ären Numm an E-Mail-Adress_ fir all aner Zwecker, wéi fir eis Produkter weider ze vermaarten, oder Är perséinlech Informatioune fir eng Drëtt Partei fir kommerziell Gewënn ze verëffentlechen.\n\nEt sollt bemierkt datt ob oder net fir eis Äre Feedback oder Käfer Bericht ze schécken ass eng komplett fräiwëlleg Initiativ op Är eegen Entscheedung. Wann Dir Suergen hutt datt Äre PII mëssbraucht gëtt, oder wann Dir weider Informatioun iwwer eis Privatsphär Politik wëllt a wat et heescht, w.e.g. um screenmirroring.feedback@gmail.com, wäerte mir beméien kloer Äntwerten op Är Froen zu enger fristgerechter Manéier ze bidden.</string>
+    <string name="please_write_your_feedback">Schreift w.e.g. Äre Feedback</string>
+    <string name="system_info">Är Systeminformatioun gëtt op Screen Mirroring Tech Department geschéckt</string>
+    <string name="send">Schécken</string>
+    <string name="provide_feedback">Feedback ginn</string>
+    <string name="invalid_email_provided">Ongülteg E-Mail geliwwert</string>
+    <string name="check_your_internet_connection">Kontrolléiert Är Internetverbindung</string>
+    <string name="type_here">tippt hei…</string>
+    <string name="enter_your_email_optional">Gitt Är E-Mail un (optional)</string>
+    <string name="enjoy_the_app">Genéisst d\'App?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Bewäert Är Erfahrung mam Screen\nSpigel App.</string>
+    <string name="not_now">Net elo</string>
+    <string name="feedback">Feedback:</string>
+    <string name="model">Modell:</string>
+    <string name="brand">Marke:</string>
+    <string name="os_version">OS Versioun:</string>
+    <string name="manufacturer">Hersteller:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Schécken Mail</string>
+    <string name="select_picture">Wielt Bild</string>
+    <string name="help_center">Hëllef Zentrum</string>
+    <string name="question_1">Mäi Telefon hält beim "Connecting" beim Pairen mam Fernseh.</string>
+    <string name="question_2">Et huet fir mech virdru geschafft, awer et funktionnéiert elo net.</string>
+    <string name="question_3">Et weist datt mäin Apparat net \nënnerstëtzt gëtt.</string>
+    <string name="question_4">Mäi Fernseh ass en alen Fernseh an ënnerstëtzt net Wi-Fi.</string>
+    <string name="question_5">D\'Bild um Fernseh ass schwaarz, awer den Toun kann héieren ginn.</string>
+    <string name="question_6">D\'Verbindung gëtt no enger \nZäit ënnerbrach.</string>
+    <string name="question_7">Ass meng perséinlech Informatioun oder mobil Daten absolut sécher?</string>
+    <string name="q_answer_1_1">Restart de Wi-Fi vum Smartphone a kuckt ob d\'Verbindung erfollegräich ass.</string>
+    <string name="q_answer_1_2">Schalt den Fernseh aus an huelt och säi Stroumkabel aus dem Socket. Waart 1 Minutt a restart de Fernseh.</string>
+    <string name="q_answer_1_3">Verkierzt d\'Distanz tëscht Ärem Telefon an dem Fernseh. Huelt et vun no.</string>
+    <string name="q_answer_2_1">Wann et virdru geschafft huet, da kann et definitiv erëm benotzt ginn.</string>
+    <string name="q_answer_2_2">Déi meescht Verbindungsproblemer kënne geléist ginn andeems Dir Geräter nei start. Restart just Ären Telefon an TV, befollegt de reguläre Verbindungsprozess fir erëm ze probéieren.</string>
+    <string name="q_answer_3_1">Dëst bedeit datt Ären Telefon selwer d\'Bildschirmspigelfunktioun net ënnerstëtzt.</string>
+    <string name="q_answer_3_2">Dir kënnt XCast benotze fir Video, Audio a Foto op Fernseh ze casten. Mat XCast kënnt Dir aner Saachen mat Ärem Telefon maachen wärend Dir op Fernseh cast.</string>
+    <string name="q_answer_4_1">Wann Ären Fernseh HDMI Interface ënnerstëtzt, empfeelen mir Iech en externen Empfänger fir Écran Spigelen ze kafen. Wéi Chromecast, Anycast etc.</string>
+    <string name="q_answer_5_1">E puer Inhalt beinhalt d\'Urheberrechterschutz a kann net op Drëtt Partei Geräter ugewise ginn, wéi Netflix, Disney Plus etc.</string>
+    <string name="q_answer_5_2">Dir kënnt de Video eroflueden oder no der selwechter Ressource op aner Apps kucken fir ze probéieren.</string>
+    <string name="q_answer_6_1">Dir kënnt de Smart Connect an Ären Wi-Fi Astellungen ausschalten. Et sicht dauernd no bessere Wi-Fi Verbindungen, a verbënnt ëmmer hin an hier.</string>
+    <string name="q_answer_6_2">Gitt w.e.g. sécher datt de Wi-Fi vum Handy an dem Fernseh de SAM ass an dat bescht Signal.</string>
+    <string name="q_answer_7_1">Mir iwwerwaachen oder sammelen keng Informatioun iwwer Iech an Ären Handy. Dir kënnt Ären Écran ouni Suergen werfen.</string>
+    <string name="q_answer_7_2">De System kann Iech warnen datt et eng Sécherheetsgefor ass virum Écran Spigelen. Dëst ass just eng reegelméisseg Erënnerung, et wäert sinn</string>
+    <string name="wi_fi">WIFI</string>
+    <string name="miracast">MIRA CAST</string>
+    <string name="install">INSTALLEREN</string>
+    <string name="install_small">Installéieren</string>
+    <string name="manual">Manuell</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Vergewëssert Iech datt Ären Telefon an Ärem Fernseh \nmat deemselwechte Wi-Fi Netzwierk verbonne sinn.</string>
+    <string name="hd_streaming">HD Streaming</string>
+    <string name="smart_devices">Smart Apparater</string>
+    <string name="private_browser">Privat Browser</string>
+    <string name="effects">Effekter</string>
+    <string name="slider">Slider</string>
+    <string name="search_or_type_web_address">Sich oder Typ Web Adress</string>
+    <string name="install_2">Installéieren</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="downloads">Downloads</string>
+    <string name="download">Download</string>
+    <string name="favorites">Favoritten</string>
+    <string name="favorite">Favourite</string>
+    <string name="history">Geschicht</string>
+    <string name="share_pdf">Deelen Pdf</string>
+    <string name="copy_url">URL kopéieren</string>
+    <string name="share_app">Deelen App</string>
+    <string name="share_url">Deelen URL</string>
+    <string name="exit">Sortie</string>
+    <string name="new_tab">Neien Tab</string>
+    <string name="google">Google</string>
+    <string name="startpage">Start Säit</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Benotzerdefinéiert Sich-Moteur</string>
+    <string name="add_shortcut_to_home">Füügt Ofkiirzung fir Heem</string>
+    <string name="save_screenshot">Späicheren Screenshot</string>
+    <string name="add_to_bookmark">Add to Bookmark</string>
+    <string name="save_as_pdf">Späicheren als pdf</string>
+    <string name="save_action">Späicheren Aktioun</string>
+    <string name="add_to_favorite">Add to Favorite</string>
+    <string name="search_engine">Sichmaschinn</string>
+    <string name="browser_exit_body">Sidd Dir sécher datt Dir de Browser ausgoe wëllt</string>
+    <string name="exit_browser">Exit Browser</string>
+    <string name="custom_user_agent">Benotzerdefinéiert Benotzer Agent</string>
+    <string name="start_control">Start Kontroll</string>
+    <string name="data_control">Daten Kontroll</string>
+    <string name="app_settings">App Astellunge</string>
+    <string name="browser_settings">Browser Astellunge</string>
+    <string name="behavior_ui">Behuelen / UI</string>
+    <string name="clear_cache">Cache läschen</string>
+    <string name="clear_history">Kloer Geschicht</string>
+    <string name="clear_browsing_history">Kloer Consultatioun Geschicht</string>
+    <string name="clear_all_cache">All Cache läschen</string>
+    <string name="clear_database_body">"Indexéiert Datenbanken" an "lokal\nDatebasen" läschen</string>
+    <string name="clear_cookies_body">Wann aktivéiert, ginn all Cookien geläscht. Och\nCookie vu vertrauenswürdege Websäiten</string>
+    <string name="clear_databases">Kloer Datenbanken</string>
+    <string name="clear_cookies">Kloer Cookien</string>
+    <string name="clear_when_application_exit">Kloer wann Applikatioun Sortie</string>
+    <string name="clear_when_application_exit_body">All Kéier wann Dir all uewen iwwerpréiften Donnéeën opgitt\nwäert geläscht</string>
+    <string name="image">Bild</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Cookien</string>
+    <string name="reopen_last_tab">Reouverture lescht Tab</string>
+    <string name="confirm_tab_close">Confirméieren Tab zoumaachen</string>
+    <string name="confirm_browser_exit">Confirméieren Browser Sortie</string>
+    <string name="position">Positioun</string>
+    <string name="first_toolbar">Éischt Toolbar</string>
+    <string name="hide_toolbar">Toolbar verstoppen</string>
+    <string name="toolbar">Toolbar</string>
+    <string name="bookmarks">Lieszeeche</string>
+    <string name="edit">Edit</string>
+    <string name="today">Haut</string>
+    <string name="the_last_hour">Déi lescht Stonn</string>
+    <string name="last_week">Lescht Woch</string>
+    <string name="last_month">Leschten Mount</string>
+    <string name="delete_all_history">All Geschicht läschen</string>
+    <string name="copied">kopéiert</string>
+    <string name="share_ss">Deelen SS</string>
+    <string name="file_manager">Datei Manager</string>
+    <string name="search_on">Sichen op</string>
+    <string name="add_shortcut">Ofkiirzung derbäi</string>
+    <string name="tab_exit">Tab Exit</string>
+    <string name="do_you_want_to_close">Wëllt Dir zoumaachen</string>
+    <string name="download_complete_share_image">Download fäerdeg. Deelen Bild</string>
+    <string name="update">Update</string>
+    <string name="unfavorite">E Favorit</string>
+    <string name="no_input_provided">Keen Input geliwwert</string>
+    <string name="input">Input</string>
+    <string name="website_link">Websäit Link</string>
+    <string name="for_you">Fir dech</string>
+    <string name="website">Websäit:</string>
+    <string name="url">URL:</string>
+    <string name="date">Datum</string>
+    <string name="no_site_loaded">Dir hutt keng gelueden Websäit</string>
+    <string name="more_then_5_images_can_not_be_picked">Méi wéi fënnef Biller kënnen net gewielt ginn</string>
+</resources>

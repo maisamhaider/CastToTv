@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Greek-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">Τοποθεσία</string>
+    <string name="connection_close_confirm">Θέλετε να ακυρώσετε την τρέχουσα σύνδεση VPN;</string>
+    <string name="yes">ΝΑΙ</string>
+    <string name="no">ΟΧΙ</string>
+    <string name="yes_2">Ναί</string>
+    <string name="no_2">Οχι</string>
+    <string name="select_images">Επιλέξτε Εικόνες</string>
+    <string name="tabs">Καρτέλες</string>
+    <string name="share">Μερίδιο</string>
+    <string name="save">Σώσει</string>
+    <string name="more">Περισσότερο</string>
+    <string name="ok">Εντάξει</string>
+    <string name="cancel">Ματαίωση</string>
+    <string name="favorite_site">Αλλάξτε τον προεπιλεγμένο ιστότοπο που φορτώνεται στην\nέναρξη του προγράμματος περιήγησης</string>
+    <string name="custom_search_engine_body">Προσθήκη διεύθυνσης URL προσαρμοσμένης αναζήτησης, επιλέξτε επίσης "Προσαρμοσμένη\nμηχανή αναζήτησης" ως πάροχο αναζήτησης</string>
+    <string name="search_engine_body">Επιλέξτε τη μηχανή αναζήτησης που προτιμάτε ή\nορίστε μια προσαρμοσμένη</string>
+    <string name="data_control_body">Διαγράψτε τα δεδομένα του προγράμματος περιήγησής σας ή αποφασίστε ποια δεδομένα\nθα διαγραφούν όταν αποχωρήσετε από την εφαρμογή</string>
+    <string name="start_control_body">Αποφασίστε ποια στοιχεία του προγράμματος περιήγησης\nθα ξεκινήσουν</string>
+    <string name="behavior_ui_body">Αλλάξτε τη συμπεριφορά και τη διεπαφή χρήστη της εφαρμογής ώστε\nνα ταιριάζουν στις προτιμήσεις σας</string>
+    <string name="book_mark_body">Για να εμφανίσετε το παράθυρο διαλόγου φίλτρου, πατήστε παρατεταμένα το εικονίδιο σελιδοδείκτη στην επισκόπηση. Αποφασίστε ποια φίλτρα θα χρησιμοποιήσετε</string>
+    <string name="app_settings_body">Ρυθμίσεις προγράμματος περιήγησης, εκεί μπορείτε ανάλογα με την\nτην έκδοση Android να παραχωρήσετε άδεια.</string>
+    <string name="start_control_image_body">Ενεργοποιήστε τις εικόνες δικτύου. Η απενεργοποίηση θα μπορούσε να είναι χρήσιμη\nγια την αποθήκευση δεδομένων κινητής τηλεφωνίας και τη γρηγορότερη φόρτωση του ιστότοπου</string>
+    <string name="start_control_location_body">Επιτρέψτε στους ιστότοπους να έχουν πρόσβαση στην τοποθεσία σας. Ορισμένοι\nιστότοποι {google, maps for nav) χρειάζονται αυτήν την ενεργοποίηση</string>
+    <string name="start_control_history_body">Αποθηκεύστε το ιστορικό των ιστότοπων που έχετε επισκεφτεί</string>
+    <string name="start_control_java_script_body">Ενεργοποίηση JavaScript. Πολλοί ιστότοποι χρειάζονται\nJavaScript για τη λειτουργικότητά τους. Αλλά είναι επίσης ξεκούραση και μπορούν να χρησιμοποιηθούν για επιθέσεις</string>
+    <string name="start_control_cookies_body">Ενεργοποίηση cookies. Τα cookies είναι μικρά αρχεία κειμένου,
+που είναι αποθηκευμένα στη συσκευή σας. Χρήση ιστοσελίδων
+για παράδειγμα για την αποθήκευση των ρυθμίσεων χρήστη. Αλλά
+Θα μπορούσαν επίσης να χρησιμοποιηθούν για τη συλλογή προσωπικού χρήστη
+δεδομένα. Τα cookie τρίτων είναι πάντα απενεργοποιημένα.</string>
+    <string name="confirmation_browser_exit_body">Παράθυρο διαλόγου επιβεβαίωσης κατά το\nκλείσιμο του προγράμματος περιήγησης</string>
+    <string name="confirmation_tab_close_body">Διάλογος επιβεβαίωσης κατά το κλείσιμο μιας καρτέλας</string>
+    <string name="confirmation_reopen_last_body">Ανοίξτε ξανά μια νέα καρτέλα όταν κλείσει η τελευταία καρτέλα αντί να βγείτε από το πρόγραμμα περιήγησης</string>
+    <string name="hide_toolbar_body">Χρησιμοποιήστε ολόκληρη την οθόνη κατά την κύλιση στον ιστότοπο, εάν πατήσετε το κουμπί πίσω, θα βγείτε από τη λειτουργία πλήρους οθόνης</string>
+    <string name="images">εικόνες</string>
+    <string name="videos">Βίντεο</string>
+    <string name="web_browser">Φυλλομετρητής</string>
+    <string name="image_slider">Ρυθμιστικό εικόνας</string>
+    <string name="next">Επόμενο</string>
+    <string name="previous">Προηγούμενος</string>
+    <string name="help">Βοήθεια</string>
+    <string name="settings">Ρυθμίσεις</string>
+    <string name="language">Γλώσσες</string>
+    <string name="more_app">Περισσότερες εφαρμογές</string>
+    <string name="rate_us">Βαθμολογήστε μας</string>
+    <string name="screen_mirroring">Screen Mirroring</string>
+    <string name="home_screen_text">Βεβαιωθείτε ότι το τηλέφωνο και η τηλεόρασή σας είναι συνδεδεμένα στο ίδιο δίκτυο Wi-Fi.</string>
+    <string name="wifi_connected">Συνδέθηκε Wi-Fi</string>
+    <string name="wifi_disconnected">Το Wi-Fi αποσυνδέθηκε</string>
+    <string name="general">Γενικός</string>
+    <string name="communicate">ΕΠΙΚΟΙΝΩΝΩ</string>
+    <string name="send_feedback">Στείλετε τα σχόλιά σας</string>
+    <string name="tutorial">Φροντιστήριο</string>
+    <string name="how_to_use">Πώς να χρησιμοποιήσετε;</string>
+    <string name="streaming">Ροή</string>
+    <string name="streaming_quality">Ποιότητα ροής</string>
+    <string name="auto_stop">Οτοστόπ</string>
+    <string name="auto_minimize">Αυτόματη ελαχιστοποίηση</string>
+    <string name="advance">Προκαταβολή</string>
+    <string name="orientation_mode">Λειτουργία προσανατολισμού</string>
+    <string name="auto_stop_body_text">Διακοπή βίντεο όταν χαθεί η σύνδεση\nστον στόχο</string>
+    <string name="auto_minimize_body_text">Απόκρυψη εφαρμογής όταν ξεκινά ο κατοπτρισμός</string>
+    <string name="casting_orientation_body_text">Προσανατολισμός χύτευσης</string>
+    <string name="mirroring_mode">Λειτουργία κατοπτρισμού</string>
+    <string name="screen_mirroring_privacy_policy">Πολιτική απορρήτου αντικατοπτρισμού οθόνης</string>
+    <string name="privacy_policy">Πολιτική Απορρήτου</string>
+    <string name="supporting_devices">Υποστηρικτικές Συσκευές</string>
+    <string name="see_which_devices_support_mirroring">Δείτε ποιες συσκευές υποστηρίζουν κατοπτρισμό</string>
+    <string name="color_theme">Χρώμα θέμα</string>
+    <string name="dark">Σκοτάδι</string>
+    <string name="light">Φως</string>
+    <string name="auto">Αυτο</string>
+    <string name="select_language">Επιλέξτε γλώσσα</string>
+    <string name="close">Κλείσε</string>
+    <string name="images_slider">Εικόνες Ολισθητής</string>
+    <string name="screen_mirror">Καθρέφτης οθόνης</string>
+    <string name="tutorial_screen_setup_body">Η συσκευή-στόχος σας πρέπει να βρίσκεται στο ίδιο δίκτυο Wi-Fi με αυτήν τη συσκευή, επειδή το Screen Mirror μεταδίδει την οθόνη σας.</string>
+    <string name="tutorial_screen_mirror_body">Μεταδώστε ροή της οθόνης της συσκευής σας μέσω Wi-Fi στον υπολογιστή, τον φορητό υπολογιστή ή το tablet σας.</string>
+    <string name="tutorial_device_hotspot_body">Μπορείτε επίσης να χρησιμοποιήσετε το hotspot της συσκευής σας (λειτουργία tethering) και να συνδέσετε τη συσκευή προορισμού στο hotspot.</string>
+    <string name="tutorial_scan_code_body">Ανοίξτε τον ιστότοπο στη συσκευή-στόχο σας. Με τη σάρωση του κωδικού QR μεταδίδεται η διαμόρφωση της σύνδεσης και ξεκινά το mirroring.</string>
+    <string name="tutorial_support_body">Λάβετε υπόψη ότι το Screen Mirror λειτουργεί μόνο όταν έχει ρυθμιστεί σωστά. Το Screen Mirror μεταδίδει την οθόνη σας, αλλά όχι τα ηχητικά σήματα της συσκευής σας. Εάν αντιμετωπίζετε οποιοδήποτε πρόβλημα επικοινωνήστε μαζί μας.</string>
+    <string name="walk_through_body_1">Απολαύστε ομαλή και υψηλής ποιότητας ροή\nχωρίς καθυστέρηση</string>
+    <string name="walk_through_body_2">Συνδεθείτε με οποιαδήποτε έξυπνη συσκευή και απολαύστε την\nεμφάνιση σε οποιαδήποτε οθόνη</string>
+    <string name="walk_through_body_3">Απολαύστε ιδιωτικό πρόγραμμα περιήγησης εντός εφαρμογής χωρίς περιορισμούς</string>
+    <string name="screen_setup">Ρύθμιση οθόνης</string>
+    <string name="device_hotspot">Hotspot της συσκευής</string>
+    <string name="scan_code">Σάρωση κώδικα</string>
+    <string name="support">Υποστήριξη</string>
+    <string name="finish">Φινίρισμα</string>
+    <string name="our_policies">Οι Πολιτικές μας</string>
+    <string name="privacy_policy_text">Η προστασία του απορρήτου σας είναι σημαντική για εμάς. Ελπίζουμε ότι η ακόλουθη δήλωση θα σας βοηθήσει να κατανοήσετε τον τρόπο με τον οποίο χειριζόμαστε τις προσωπικές αναγνωρίσιμες πληροφορίες που ενδέχεται να μας παρέχετε περιστασιακά μέσω Διαδικτύου (η πλατφόρμα Google Play).\n\nΓενικά. δεν συλλέγουμε κανένα PII από εσάς όταν κάνετε λήψη των εφαρμογών μας Android. Για να είμαστε συγκεκριμένοι, δεν απαιτούμε τις επισκέψεις των καταναλωτών της εφαρμογής μας, ούτε καν διαθέτουμε διακομιστή για αποθήκευση τέτοιων PII.\n\nΤο Screen Mirroring χρησιμοποιεί το Facebook ως πάροχο διαφημίσεων. Το Facebook θέλει να εμφανίζει διαφημίσεις που είναι σχετικές με εσάς. Για περισσότερες πληροφορίες, επισκεφτείτε το\nhttps://m.facebook.com/ads/ad_choices.\n\nΗ μόνη περίπτωση που ενδέχεται να έχουμε πρόσβαση στα PII σας είναι όταν αποφασίσετε προσωπικά να μας στείλετε τα σχόλιά σας μέσω email ή να μας δώσετε ένα σφάλμα κανω ΑΝΑΦΟΡΑ. Τα PII που ενδέχεται να λάβουμε από εσάς σε αυτήν την περίπτωση περιορίζονται αυστηρά στο όνομά σας, τη διεύθυνση ηλεκτρονικού ταχυδρομείου και την απάντησή σας στην έρευνά σας.\n\nΣτην παραπάνω περίπτωση, εγγυόμαστε ότι τα PII σας θα χρησιμοποιηθούν μόνο για την επικοινωνία μαζί σας και τη βελτίωση των υπηρεσιών μας. Δεν θα χρησιμοποιήσουμε ποτέ τέτοιες πληροφορίες (π.χ. το όνομα και τη διεύθυνση email σας_ για άλλους σκοπούς, όπως για την περαιτέρω προώθηση των προϊόντων μας ή για να αποκαλύψουμε τα προσωπικά σας στοιχεία σε τρίτους για εμπορικά κέρδη.\n\nΘα πρέπει να σημειωθεί ότι είτε Το να μην μας στέλνετε τα σχόλιά σας ή την αναφορά σφαλμάτων είναι μια εντελώς εθελοντική πρωτοβουλία με δική σας απόφαση. Εάν ανησυχείτε για κακή χρήση των PII σας ή εάν θέλετε περισσότερες πληροφορίες σχετικά με την πολιτική απορρήτου μας και τι σημαίνει, μη διστάσετε να μας στείλετε email στο screenmirroring.feedback@gmail.com, θα προσπαθήσουμε να παρέχουμε σαφείς απαντήσεις στις ερωτήσεις σας έγκαιρα.   </string>
+    <string name="please_write_your_feedback">Γράψτε τα σχόλιά σας</string>
+    <string name="system_info">Οι πληροφορίες του συστήματός σας θα σταλούν στο Τεχνικό Τμήμα Screen Mirroring</string>
+    <string name="send">Στείλετε</string>
+    <string name="provide_feedback">παρέχουν ανατροφοδότηση</string>
+    <string name="invalid_email_provided">Δόθηκε μη έγκυρο email</string>
+    <string name="check_your_internet_connection">Ελέγξτε τη σύνδεσή σας στο διαδίκτυο</string>
+    <string name="type_here">πληκτρολογίστε εδώ…</string>
+    <string name="enter_your_email_optional">Εισαγάγετε το email σας (προαιρετικό)</string>
+    <string name="enjoy_the_app">Απολαμβάνετε την εφαρμογή;</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Βαθμολογήστε την εμπειρία σας χρησιμοποιώντας την εφαρμογή Screen\nMirroring.</string>
+    <string name="not_now">Οχι τώρα</string>
+    <string name="feedback">Ανατροφοδότηση:</string>
+    <string name="model">Μοντέλο:</string>
+    <string name="brand">Μάρκα:</string>
+    <string name="os_version">Έκδοση λειτουργικού συστήματος:</string>
+    <string name="manufacturer">Κατασκευαστής:</string>
+    <string name="ram">ΕΜΒΟΛΟ:</string>
+    <string name="send_email">Αποστολή αλληλογραφίας</string>
+    <string name="select_picture">Επιλέξτε Εικόνα</string>
+    <string name="help_center">Κέντρο βοηθείας</string>
+    <string name="question_1">Το τηλέφωνό μου κολλάει στο "Σύνδεση" όταν \nσυνδυάζεται με τηλεόραση.</string>
+    <string name="question_2">Μου δούλευε πριν, αλλά δεν λειτουργεί\nτώρα.</string>
+    <string name="question_3">Δείχνει ότι η συσκευή μου δεν \nυποστηρίζεται.</string>
+    <string name="question_4">Η τηλεόρασή μου είναι παλιά τηλεόραση και\nδεν υποστηρίζει wi-fi.</string>
+    <string name="question_5">Η εικόνα στην τηλεόραση είναι μαύρη,\nαλλά ο ήχος ακούγεται.</string>
+    <string name="question_6">Η σύνδεση θα διακοπεί μετά από \nλίγο.</string>
+    <string name="question_7">Είναι απολύτως ασφαλή τα προσωπικά μου στοιχεία ή\nτα δεδομένα κινητής τηλεφωνίας μου;</string>
+    <string name="q_answer_1_1">Επανεκκινήστε το Wi-Fi του έξυπνου τηλεφώνου και δείτε εάν η σύνδεση είναι επιτυχής.</string>
+    <string name="q_answer_1_2">Κλείστε την τηλεόραση και αφαιρέστε και το καλώδιο τροφοδοσίας από την πρίζα. Περιμένετε 1 λεπτό και επανεκκινήστε την τηλεόραση.</string>
+    <string name="q_answer_1_3">Μειώστε την απόσταση μεταξύ του τηλεφώνου σας και της τηλεόρασης. Πάρτε το από κοντά.</string>
+    <string name="q_answer_2_1">Εάν λειτούργησε πριν, τότε σίγουρα μπορεί να χρησιμοποιηθεί ξανά.</string>
+    <string name="q_answer_2_2">Τα περισσότερα προβλήματα σύνδεσης μπορούν να λυθούν με επανεκκίνηση συσκευών. Απλώς επανεκκινήστε τόσο το τηλέφωνο όσο και την τηλεόρασή σας, ακολουθήστε την κανονική διαδικασία σύνδεσης για να προσπαθήσετε ξανά.</string>
+    <string name="q_answer_3_1">Αυτό σημαίνει ότι το ίδιο το τηλέφωνό σας δεν υποστηρίζει τη λειτουργία κατοπτρισμού οθόνης.</string>
+    <string name="q_answer_3_2">Μπορείτε να χρησιμοποιήσετε το XCast για μετάδοση βίντεο, ήχου και φωτογραφίας στην τηλεόραση. Με το XCast, μπορείτε να κάνετε άλλα πράγματα με το τηλέφωνό σας κατά τη μετάδοση στην τηλεόραση.</string>
+    <string name="q_answer_4_1">Εάν η τηλεόρασή σας υποστηρίζει διασύνδεση HDMI, συνιστούμε να αγοράσετε έναν εξωτερικό δέκτη για κατοπτρισμό οθόνης. Όπως Chromecast, Anycast κ.λπ.</string>
+    <string name="q_answer_5_1">Ορισμένο περιεχόμενο περιλαμβάνει προστασία πνευματικών δικαιωμάτων και δεν μπορεί να εμφανιστεί σε συσκευές τρίτων, όπως Netflix, Disney Plus κ.λπ.</string>
+    <string name="q_answer_5_2">Μπορείτε να κάνετε λήψη του βίντεο ή να αναζητήσετε τον ίδιο πόρο σε άλλες εφαρμογές για να δοκιμάσετε.</string>
+    <string name="q_answer_6_1">Μπορείτε να ενεργοποιήσετε το Smart Connect στις ρυθμίσεις Wi-Fi. Θα αναζητά συνεχώς καλύτερες συνδέσεις Wi-Fi και θα συνδέεται πάντα εμπρός και πίσω.</string>
+    <string name="q_answer_6_2">Βεβαιωθείτε ότι το Wi-Fi του κινητού τηλεφώνου και της τηλεόρασης είναι το SAM και το καλύτερο σήμα.</string>
+    <string name="q_answer_7_1">Δεν θα παρακολουθούμε ούτε θα συλλέγουμε πληροφορίες για εσάς και το κινητό σας τηλέφωνο. Μπορείτε να μεταδώσετε την οθόνη σας χωρίς καμία ανησυχία.</string>
+    <string name="q_answer_7_2">Το σύστημα μπορεί να σας προειδοποιήσει ότι υπάρχει κίνδυνος για την ασφάλεια πριν από τον κατοπτρισμό οθόνης. Αυτή είναι απλώς μια τακτική υπενθύμιση, θα είναι</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">ΕΓΚΑΘΙΣΤΩ</string>
+    <string name="install_small">Εγκαθιστώ</string>
+    <string name="manual">Εγχειρίδιο</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Βεβαιωθείτε ότι το τηλέφωνο και η τηλεόρασή σας είναι συνδεδεμένα\nστο ίδιο δίκτυο Wi-Fi.</string>
+    <string name="hd_streaming">HD Streaming</string>
+    <string name="smart_devices">έξυπνες συσκευές</string>
+    <string name="private_browser">Ιδιωτικό πρόγραμμα περιήγησης</string>
+    <string name="effects">Υπάρχοντα</string>
+    <string name="slider">Ολισθητής</string>
+    <string name="search_or_type_web_address">Αναζητήστε ή πληκτρολογήστε διεύθυνση ιστού</string>
+    <string name="install_2">Εγκαθιστώ</string>
+    <string name="bookmark">Σελιδοδείκτης</string>
+    <string name="downloads">Λήψεις</string>
+    <string name="download">Κατεβάστε</string>
+    <string name="favorites">Αγαπημένα</string>
+    <string name="favorite">Αγαπημένη</string>
+    <string name="history">Ιστορία</string>
+    <string name="share_pdf">Κοινή χρήση pdf</string>
+    <string name="copy_url">Αντιγραφή διεύθυνσης URL</string>
+    <string name="share_app">Κοινή χρήση εφαρμογής</string>
+    <string name="share_url">Κοινή χρήση url</string>
+    <string name="exit">Εξοδος</string>
+    <string name="new_tab">Νέα καρτέλα</string>
+    <string name="google">Google</string>
+    <string name="startpage">Αρχική σελίδα</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Οικοσία</string>
+    <string name="custom_search_engine">Μηχανή προσαρμοσμένης αναζήτησης</string>
+    <string name="add_shortcut_to_home">Προσθήκη συντόμευσης στο σπίτι</string>
+    <string name="save_screenshot">Αποθήκευση στιγμιότυπου οθόνης</string>
+    <string name="add_to_bookmark">Προσθήκη στον σελιδοδείκτη</string>
+    <string name="save_as_pdf">Αποθήκευση ως pdf</string>
+    <string name="save_action">Αποθήκευση δράσης</string>
+    <string name="add_to_favorite">Προσθήκη στα αγαπημένα</string>
+    <string name="search_engine">Μηχανή αναζήτησης</string>
+    <string name="browser_exit_body">Είστε βέβαιοι ότι θέλετε να βγείτε από το πρόγραμμα περιήγησης</string>
+    <string name="exit_browser">Έξοδος από το πρόγραμμα περιήγησης</string>
+    <string name="custom_user_agent">Προσαρμοσμένος πράκτορας χρήστη</string>
+    <string name="start_control">Έναρξη ελέγχου</string>
+    <string name="data_control">Έλεγχος δεδομένων</string>
+    <string name="app_settings">Ρυθμίσεις εφαρμογής</string>
+    <string name="browser_settings">Ρυθμίσεις προγράμματος περιήγησης</string>
+    <string name="behavior_ui">Συμπεριφορά/UI</string>
+    <string name="clear_cache">Εκκαθάριση προσωρινής μνήμης</string>
+    <string name="clear_history">Καθαρισμός ιστορικού</string>
+    <string name="clear_browsing_history">Εκκαθάριση ιστορικού περιήγησης</string>
+    <string name="clear_all_cache">Εκκαθάριση όλης της προσωρινής μνήμης</string>
+    <string name="clear_database_body">Εκκαθάριση "βάσεων δεδομένων με ευρετήριο" και "τοπικές βάσεις δεδομένων"</string>
+    <string name="clear_cookies_body">Εάν ενεργοποιηθεί, όλα τα cookies θα διαγραφούν. Επίσης\nτα Cookies αξιόπιστων ιστότοπων</string>
+    <string name="clear_databases">Εκκαθάριση βάσεων δεδομένων</string>
+    <string name="clear_cookies">Διαγραφή των βοηθητικών αρχείων δεδομένων</string>
+    <string name="clear_when_application_exit">Διαγραφή κατά την έξοδο από την εφαρμογή</string>
+    <string name="clear_when_application_exit_body">Κάθε φορά που κλείνετε όλα τα παραπάνω επιλεγμένα δεδομένα\nθα διαγράφονται</string>
+    <string name="image">Εικόνα</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Μπισκότα</string>
+    <string name="reopen_last_tab">Ανοίξτε ξανά την τελευταία καρτέλα</string>
+    <string name="confirm_tab_close">Επιβεβαιώστε το κλείσιμο της καρτέλας</string>
+    <string name="confirm_browser_exit">Επιβεβαιώστε την έξοδο από το πρόγραμμα περιήγησης</string>
+    <string name="position">Θέση</string>
+    <string name="first_toolbar">Πρώτη γραμμή εργαλείων</string>
+    <string name="hide_toolbar">Απόκρυψη γραμμής εργαλείων</string>
+    <string name="toolbar">Γραμμή εργαλείων</string>
+    <string name="bookmarks">Σελιδοδείκτες</string>
+    <string name="edit">Επεξεργασία</string>
+    <string name="today">Σήμερα</string>
+    <string name="the_last_hour">Η τελευταία ώρα</string>
+    <string name="last_week">Την προηγούμενη εβδομάδα</string>
+    <string name="last_month">Τον προηγούμενο μήνα</string>
+    <string name="delete_all_history">Διαγραφή όλου του ιστορικού</string>
+    <string name="copied">αντιγράφηκε</string>
+    <string name="share_ss">Κοινή χρήση SS</string>
+    <string name="file_manager">Διαχείριση αρχείων</string>
+    <string name="search_on">Αναζήτηση Ενεργοποιημένη</string>
+    <string name="add_shortcut">Προσθήκη συντόμευσης</string>
+    <string name="tab_exit">Καρτέλα Έξοδος</string>
+    <string name="do_you_want_to_close">Θέλετε να κλείσετε</string>
+    <string name="download_complete_share_image">Η λήψη ολοκληρώθηκε. Κοινή χρήση εικόνας</string>
+    <string name="update">Εκσυγχρονίζω</string>
+    <string name="unfavorite">Μη αγαπημένο</string>
+    <string name="no_input_provided">Δεν παρέχεται εισαγωγή</string>
+    <string name="input">Εισαγωγή</string>
+    <string name="website_link">Σύνδεσμος ιστοσελίδας</string>
+    <string name="for_you">Για σενα</string>
+    <string name="website">Δικτυακός τόπος:</string>
+    <string name="url">Διεύθυνση URL:</string>
+    <string name="date">Ημερομηνία</string>
+    <string name="no_site_loaded">Δεν έχετε φορτώσει τον ιστότοπο</string>
+    <string name="more_then_5_images_can_not_be_picked">Δεν μπορούν να επιλεγούν περισσότερες από πέντε εικόνες</string>
+</resources>

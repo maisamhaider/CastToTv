@@ -4,7 +4,7 @@ import android.Manifest.permission
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.net.Uri
+import android.net.*
 import android.os.Build
 import android.os.Build.VERSION.SDK_INT
 import android.os.Bundle
@@ -31,14 +31,13 @@ import com.example.casttotv.utils.Internet
 import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.viewmodel.BrowserViewModel
 import com.example.casttotv.viewmodel.MainViewModel
+import com.example.casttotv.viewmodel.SharedViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 
 class MainActivity : BaseActivity() {
-
-
     private lateinit var binding: ActivityMainBinding
     lateinit var controller: NavController
     lateinit var navHostFragment: NavHostFragment
@@ -46,6 +45,10 @@ class MainActivity : BaseActivity() {
     private val browserVM: BrowserViewModel by viewModels {
         BrowserViewModel.BrowserViewModelFactory(this)
     }
+    private val sharedVm: SharedViewModel by viewModels {
+        SharedViewModel.SharedViewModelFactory(this)
+    }
+    private var connection: ConnectivityManager? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,12 +67,30 @@ class MainActivity : BaseActivity() {
             layoutExitButton.textViewExit.setOnClickListener { finish() }
             refreshAd2(layoutExitAd.flAdplaceholder, ::close)
         }
+    }
 
-
+    fun restartActivity() {
+        recreate()
     }
 
     fun close() {
         binding.clBottomSheet.visibility = View.GONE
+    }
+
+    private var networkCallbackWiFi = object : ConnectivityManager.NetworkCallback() {
+        override fun onLost(network: Network) {
+            CoroutineScope(Dispatchers.Main).launch {
+                sharedVm.wifiCon(false)
+            }
+
+        }
+
+        override fun onAvailable(network: Network) {
+            CoroutineScope(Dispatchers.Main).launch {
+                refreshAd2(binding.layoutExitAd.flAdplaceholder, ::close)
+                sharedVm.wifiCon(true)
+            }
+        }
     }
 
 
@@ -78,6 +99,11 @@ class MainActivity : BaseActivity() {
         if (!checkPermission()) {
             showPermissionDialog()
         }
+        connection = getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        val networkRequestWiFi = NetworkRequest.Builder()
+            .addTransportType(NetworkCapabilities.TRANSPORT_WIFI)
+            .build()
+        connection!!.registerNetworkCallback(networkRequestWiFi, networkCallbackWiFi)
 
     }
 
@@ -161,15 +187,22 @@ class MainActivity : BaseActivity() {
                 }
                 if (Internet(this).isInternetAvailable()) {
                     binding.layoutExitAd.clAd.visibility = View.VISIBLE
-                    binding.layoutExitForYou.clForYou.visibility = View.VISIBLE
+//                    binding.layoutExitForYou.clForYou.visibility = View.VISIBLE
                 } else {
                     binding.layoutExitAd.clAd.visibility = View.GONE
-                    binding.layoutExitForYou.clForYou.visibility = View.GONE
+//                    binding.layoutExitForYou.clForYou.visibility = View.GONE
                 }
             }
             else -> super.onBackPressed()
 
+        }
 
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        if (connection != null) {
+            connection!!.unregisterNetworkCallback(networkCallbackWiFi)
         }
 
     }

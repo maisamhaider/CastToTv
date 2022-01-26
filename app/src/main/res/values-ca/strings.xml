@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Catalan-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">Ubicació</string>
+
+    <string name="connection_close_confirm">Voleu cancel·lar la connexió VPN actual?</string>
+    <string name="yes">SÍ</string>
+    <string name="no">NO</string>
+    <string name="yes_2">Sí</string>
+    <string name="no_2">No</string>
+    <string name="select_images">Seleccioneu Imatges</string>
+    <string name="tabs">Pestanyes</string>
+    <string name="share">Compartir</string>
+    <string name="save">Desa</string>
+    <string name="more">Més</string>
+    <string name="ok">D\'acord</string>
+    <string name="cancel">Cancel · lar</string>
+    <string name="favorite_site">Canvieu el lloc web predeterminat que es carrega a\ninici del navegador</string>
+    <string name="custom_search_engine_body">Afegiu un URL de cerca personalitzat també trieu "Motor de cerca\npersonalitzat" com a proveïdor de cerca</string>
+    <string name="search_engine_body">Trieu el vostre motor de cerca preferit o\ndefiniu-ne un de personalitzat</string>
+    <string name="data_control_body">Esborra les dades del navegador o decideix quines dades\ns\'esborraran quan surtis de l\'aplicació</string>
+    <string name="start_control_body">Decidiu quins components del navegador\ns\'iniciaran</string>
+    <string name="behavior_ui_body">Canvia el comportament i la interfície d\'usuari de l\'aplicació per\nadaptar-se a les teves preferències</string>
+    <string name="book_mark_body">Per mostrar el diàleg del filtre, premeu llargament la icona d\'adreces d\'interès a la visió general. Decidiu quins filtres utilitzareu</string>
+    <string name="app_settings_body">Configuració del navegador, allà podeu concedir permís en funció de la vostra versió d\'Android.</string>
+    <string name="start_control_image_body">Activa les imatges de xarxa, la desactivació podria ser útil\per desar dades mòbils i carregar el lloc web més ràpidament</string>
+    <string name="start_control_location_body">Permet als llocs web accedir a la teva ubicació. Alguns\nllocs web {google, maps for nav) necessiten aquesta activació</string>
+    <string name="start_control_history_body">Guarda l\'historial dels llocs web visitats</string>
+    <string name="start_control_java_script_body">Activa JavaScript. Molts llocs web necessiten\nJavaScript per a la seva funcionalitat. Però també són\nalment descans i es poden utilitzar per a atacs</string>
+    <string name="start_control_cookies_body">Activa les galetes. Les cookies són petits fitxers de text,
+que s\'emmagatzemen al vostre dispositiu. Ús de llocs web
+per exemple per emmagatzemar la configuració de l\'usuari. Però
+també es podrien utilitzar per recollir usuaris personals
+dades. Les galetes de tercers sempre estan desactivades.</string>
+    <string name="confirmation_browser_exit_body">Diàleg de confirmació quan\ntanqueu el navegador</string>
+    <string name="confirmation_tab_close_body">Diàleg de confirmació en tancar una pestanya</string>
+    <string name="confirmation_reopen_last_body">Torneu a obrir una pestanya nova quan es tanqui l\'última pestanya en lloc de sortir del navegador</string>
+    <string name="hide_toolbar_body">Utilitzeu tota la pantalla quan us desplaceu pel lloc web si premeu el botó enrere sortireu del mode de pantalla completa</string>
+    <string name="images">Imatges</string>
+    <string name="videos">Vídeos</string>
+    <string name="web_browser">Navegador web</string>
+    <string name="image_slider">Control lliscant d\'imatge</string>
+    <string name="next">Pròxim</string>
+    <string name="previous">Anterior</string>
+    <string name="help">Ajuda</string>
+    <string name="settings">Configuració</string>
+    <string name="language">Idiomes</string>
+    <string name="more_app">Més aplicacions</string>
+    <string name="rate_us">Puntua\'ns</string>
+    <string name="screen_mirroring">Mirall de pantalla</string>
+    <string name="home_screen_text">Assegureu-vos que el telèfon i el televisor estiguin connectats a la mateixa xarxa Wi-Fi.</string>
+    <string name="wifi_connected">Wi-Fi connectat</string>
+    <string name="wifi_disconnected">Wi-Fi desconnectat</string>
+    <string name="general">General</string>
+    <string name="communicate">Comunicar-se</string>
+    <string name="send_feedback">Enviar comentaris</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="how_to_use">Com utilitzar?</string>
+    <string name="streaming">Transmissió en temps real</string>
+    <string name="streaming_quality">Qualitat de streaming</string>
+    <string name="auto_stop">Parada automàtica</string>
+    <string name="auto_minimize">Minimització automàtica</string>
+    <string name="advance">Avançar</string>
+    <string name="orientation_mode">Mode d\'orientació</string>
+    <string name="auto_stop_body_text">Atura el vídeo quan es perdi la connexió\a l\'objectiu</string>
+    <string name="auto_minimize_body_text">Amaga l\'aplicació quan comenci la rèplica</string>
+    <string name="casting_orientation_body_text">Orientació al càsting</string>
+    <string name="mirroring_mode">Mode de mirall</string>
+    <string name="screen_mirroring_privacy_policy">Política de privadesa de duplicació de pantalla</string>
+    <string name="privacy_policy">Política de privacitat</string>
+    <string name="supporting_devices">Dispositius de suport</string>
+    <string name="see_which_devices_support_mirroring">Consulta quins dispositius admeten la rèplica</string>
+    <string name="color_theme">Tema de color</string>
+    <string name="dark">fosc</string>
+    <string name="light">Llum</string>
+    <string name="auto">Automàtic</string>
+    <string name="select_language">Escolliu l\'idioma</string>
+    <string name="close">Tanca</string>
+    <string name="images_slider">Imatges Control deslizante</string>
+    <string name="screen_mirror">Mirall de pantalla</string>
+    <string name="tutorial_screen_setup_body">El vostre dispositiu objectiu ha d\'estar a la mateixa xarxa Wi-Fi que aquest dispositiu, perquè Screen Mirror està transmetent la vostra pantalla.</string>
+    <string name="tutorial_screen_mirror_body">Transmet la pantalla del dispositiu mitjançant Wi-Fi a l\'ordinador, portàtil o tauleta.</string>
+    <string name="tutorial_device_hotspot_body">També podeu utilitzar el punt d\'accés del vostre dispositiu (mode de connexió a internet) i connectar el vostre dispositiu de destinació al vostre punt d\'accés.</string>
+    <string name="tutorial_scan_code_body">Obriu el lloc al vostre dispositiu objectiu. En escanejar el codi QR es transmet la configuració de la connexió i s\'inicia la duplicació.</string>
+    <string name="tutorial_support_body">Tingueu en compte que Screen Mirror només funciona quan es configura correctament. Screen Mirror transmet la pantalla, però no els senyals d\'àudio del dispositiu. Si tens cap problema posa\'t en contacte amb nosaltres.</string>
+    <string name="walk_through_body_1">Gaudeix d\'una transmissió fluida i d\'alta qualitat\nsense retard</string>
+    <string name="walk_through_body_2">Connecta\'t amb qualsevol dispositiu intel·ligent i gaudeix del\nespectacle a qualsevol pantalla</string>
+    <string name="walk_through_body_3">Gaudeix del navegador privat de l\'aplicació sense limitacions</string>
+    <string name="screen_setup">Configuració de la pantalla</string>
+    <string name="device_hotspot">Punt d\'accés del dispositiu</string>
+    <string name="scan_code">Escaneja el codi</string>
+    <string name="support">Suport</string>
+    <string name="finish">Acabar</string>
+    <string name="our_policies">Les nostres polítiques</string>
+    <string name="privacy_policy_text">Protegir la vostra privadesa és important per a nosaltres. Esperem que la següent declaració us ajudi a entendre com tractem la informació d\'identificació personal que ens podeu proporcionar ocasionalment a través d\'Internet (la plataforma de Google Play).\n\nEn general. no recollim cap informació personal identificable quan descarregueu les nostres aplicacions per a Android. Per ser específics, no necessitem que els consumidors visitin la nostra aplicació, ni tan sols tenim un servidor per emmagatzemar aquesta informació personal identificable.\n\nScreen Mirroring utilitza Facebook com a proveïdor d\'anuncis. Facebook vol mostrar anuncis que siguin rellevants per a tu. Per obtenir més informació, visiteu\nhttps://m.facebook.com/ads/ad_choices.\n\nL\'única situació en què podem accedir a la vostra informació d\'identificació personal és quan decideixes personalment enviar-nos els teus comentaris per correu electrònic o proporcionar-nos un informe d\'error. La informació d\'identificació personal que podem obtenir de tu en aquesta situació es limita estrictament al teu nom, adreça de correu electrònic i només la teva resposta a l\'enquesta.\n\nEn la situació anterior, garantim que la teva informació d\'identificació personal només s\'utilitzarà per contactar amb tu i millorar-lo. els nostres serveis. Mai utilitzarem aquesta informació (per exemple, el vostre nom i adreça de correu electrònic_ per a altres propòsits, com ara comercialitzar més els nostres productes o revelar la vostra informació personal a un tercer per obtenir beneficis comercials.\n\nS\'ha de tenir en compte que si o no enviar-nos els vostres comentaris o informes d\'errors és una iniciativa totalment voluntària per decisió vostra. Si teniu dubtes sobre l\'ús indegut de la vostra informació d\'identificació personal, o si voleu més informació sobre la nostra política de privadesa i què significa, no dubteu a Envieu-nos un correu electrònic a screenmirroring.feedback@gmail.com, intentarem oferir respostes clares a les vostres preguntes de manera oportuna.</string>
+    <string name="please_write_your_feedback">Si us plau, escriviu els vostres comentaris</string>
+    <string name="system_info">La vostra informació del sistema s\'enviarà al departament tècnic de Screen Mirroring</string>
+    <string name="send">Enviar</string>
+    <string name="provide_feedback">proporcionar retroalimentació</string>
+    <string name="invalid_email_provided">S\'ha proporcionat un correu electrònic no vàlid</string>
+    <string name="check_your_internet_connection">Comproveu la vostra connexió a Internet</string>
+    <string name="type_here">Escriu aquí…</string>
+    <string name="enter_your_email_optional">Introdueix el teu correu electrònic (opcional)</string>
+    <string name="enjoy_the_app">Gaudeix de l\'aplicació?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Valoreu la vostra experiència amb l\'aplicació Screen\nMirroring.</string>
+    <string name="not_now">Ara no</string>
+    <string name="feedback">Comentaris:</string>
+    <string name="model">Model:</string>
+    <string name="brand">Marca:</string>
+    <string name="os_version">Versió del sistema operatiu:</string>
+    <string name="manufacturer">Fabricant:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Envia un correu</string>
+    <string name="select_picture">Seleccioneu Imatge</string>
+    <string name="help_center">Centre d\'ajuda</string>
+    <string name="question_1">El meu telèfon es queda bloquejat a "Connexió" \nquan es vincula amb el televisor.</string>
+    <string name="question_2">Abans em funcionava, però ara \nno funciona.</string>
+    <string name="question_3">Mostra que el meu dispositiu \nno és compatible.</string>
+    <string name="question_4">El meu televisor és un televisor \nantic i no admet wi-fi.</string>
+    <string name="question_5">La imatge del televisor és negra, \nperò el so es pot escoltar.</string>
+    <string name="question_6">La connexió s\'interromprà al cap \nd\'un temps.</string>
+    <string name="question_7">La meva informació personal o dades mòbils \nsón absolutament segures?</string>
+    <string name="q_answer_1_1">Reinicieu la connexió Wi-Fi del telèfon intel·ligent i comproveu si la connexió és correcta.</string>
+    <string name="q_answer_1_2">Apagueu el televisor i també traieu el cable d\'alimentació de la presa. Espereu 1 minut i reinicieu el televisor.</string>
+    <string name="q_answer_1_3">Escurça la distància entre el telèfon i el televisor. Porta-ho de prop.</string>
+    <string name="q_answer_2_1">Si va funcionar abans, definitivament es pot tornar a utilitzar.</string>
+    <string name="q_answer_2_2">La majoria dels problemes de connexió es poden resoldre reiniciant els dispositius. Només cal que reinicieu el telèfon i el televisor, seguiu el procés de connexió habitual per tornar-ho a provar.</string>
+    <string name="q_answer_3_1">Això vol dir que el vostre telèfon no admet la funció de duplicació de pantalla.</string>
+    <string name="q_answer_3_2">Podeu utilitzar XCast per enviar vídeos, àudio i fotos al televisor. Amb XCast, podeu fer altres coses amb el vostre telèfon mentre emeu a la televisió.</string>
+    <string name="q_answer_4_1">Si el vostre televisor és compatible amb la interfície HDMI, us recomanem que compreu un receptor extern per a la duplicació de la pantalla. Com ara Chromecast, Anycast, etc.</string>
+    <string name="q_answer_5_1">Alguns continguts inclouen protecció dels drets d\'autor i no es poden mostrar en dispositius de tercers, com ara Netflix, Disney Plus, etc.</string>
+    <string name="q_answer_5_2">Podeu descarregar el vídeo o buscar el mateix recurs en altres aplicacions per provar-ho.</string>
+    <string name="q_answer_6_1">Podeu activar la connexió intel·ligent a la vostra configuració de Wi-Fi. Cercarà millors connexions Wi-Fi constantment i sempre es connectarà d\'anada i tornada.</string>
+    <string name="q_answer_6_2">Assegureu-vos que el Wi-Fi del telèfon mòbil i del televisor sigui el SAM i el millor senyal.</string>
+    <string name="q_answer_7_1">No controlarem ni recopilarem cap informació sobre vostè i el seu telèfon mòbil. Podeu emetre la vostra pantalla sense cap preocupació.</string>
+    <string name="q_answer_7_2">El sistema pot advertir-vos que hi ha un perill per a la seguretat abans de duplicar la pantalla. Això és només un recordatori habitual, ho serà</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">INSTAL·LA</string>
+    <string name="install_small">Instal·lar</string>
+    <string name="manual">Manual</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Assegura\'t que el telèfon i el televisor estiguin connectats\a la mateixa xarxa Wi-Fi.</string>
+    <string name="hd_streaming">Transmissió en HD</string>
+    <string name="smart_devices">dispositius intel·ligents</string>
+    <string name="private_browser">Navegador privat</string>
+    <string name="effects">Efectes</string>
+    <string name="slider">Control lliscant</string>
+    <string name="search_or_type_web_address">Cerca o escriviu l\'adreça web</string>
+    <string name="install_2">Instal·lar</string>
+    <string name="bookmark">Marcador</string>
+    <string name="downloads">Descàrregues</string>
+    <string name="download">descarregar</string>
+    <string name="favorites">Preferits</string>
+    <string name="favorite">Favorit</string>
+    <string name="history">Història</string>
+    <string name="share_pdf">Comparteix Pdf</string>
+    <string name="copy_url">Copia l\'URL</string>
+    <string name="share_app">Comparteix l\'aplicació</string>
+    <string name="share_url">Comparteix l\'URL</string>
+    <string name="exit">Sortida</string>
+    <string name="new_tab">Nova pestanya</string>
+    <string name="google">Google</string>
+    <string name="startpage">Pàgina d\'inici</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Motor de cerca personalitzat</string>
+    <string name="add_shortcut_to_home">Afegeix una drecera a casa</string>
+    <string name="save_screenshot">Guarda la captura de pantalla</string>
+    <string name="add_to_bookmark">Afegeix al marcador</string>
+    <string name="save_as_pdf">Desa com a pdf</string>
+    <string name="save_action">Desa l\'acció</string>
+    <string name="add_to_favorite">Afegeix a preferit</string>
+    <string name="search_engine">Motor de cerca</string>
+    <string name="browser_exit_body">Esteu segur que voleu sortir del navegador?</string>
+    <string name="exit_browser">Sortiu del navegador</string>
+    <string name="custom_user_agent">Agent d\'usuari personalitzat</string>
+    <string name="start_control">Inici Control</string>
+    <string name="data_control">Control de dades</string>
+    <string name="app_settings">Configuració de l\'aplicació</string>
+    <string name="browser_settings">Configuració del navegador</string>
+    <string name="behavior_ui">Comportament/UI</string>
+    <string name="clear_cache">Netejar memòria cau</string>
+    <string name="clear_history">Història clara</string>
+    <string name="clear_browsing_history">Esborra l\'historial de navegació</string>
+    <string name="clear_all_cache">Esborra tota la memòria cau</string>
+    <string name="clear_database_body">Esborra "bases de dades indexades" i "bases de dades\nlocals"</string>
+    <string name="clear_cookies_body">Si està activat, s\'eliminaran totes les galetes. També\nles galetes de llocs web de confiança</string>
+    <string name="clear_databases">Esborra bases de dades</string>
+    <string name="clear_cookies">Esborra galetes</string>
+    <string name="clear_when_application_exit">Esborra quan surti l\'aplicació</string>
+    <string name="clear_when_application_exit_body">Cada vegada que sortiu de totes les dades marcades anteriorment\ns\'eliminaran</string>
+    <string name="image">Imatge</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Galetes</string>
+    <string name="reopen_last_tab">Torna a obrir l\'última pestanya</string>
+    <string name="confirm_tab_close">Confirmeu el tancament de la pestanya</string>
+    <string name="confirm_browser_exit">Confirmeu la sortida del navegador</string>
+    <string name="position">Posició</string>
+    <string name="first_toolbar">Primera barra d\'eines</string>
+    <string name="hide_toolbar">Amaga la barra d\'eines</string>
+    <string name="toolbar">Barra d\'eines</string>
+    <string name="bookmarks">Adreces d\'interès</string>
+    <string name="edit">Edita</string>
+    <string name="today">Avui</string>
+    <string name="the_last_hour">L\'última hora</string>
+    <string name="last_week">La setmana passada</string>
+    <string name="last_month">El mes passat</string>
+    <string name="delete_all_history">Suprimeix tot l\'historial</string>
+    <string name="copied">copiat</string>
+    <string name="share_ss">Comparteix SS</string>
+    <string name="file_manager">Gestor d\'arxius</string>
+    <string name="search_on">Cerca activada</string>
+    <string name="add_shortcut">Afegeix una drecera</string>
+    <string name="tab_exit">Pestanya Sortida</string>
+    <string name="do_you_want_to_close">Vols tancar</string>
+    <string name="download_complete_share_image">Descàrrega completa. Comparteix la imatge</string>
+    <string name="update">Actualització</string>
+    <string name="unfavorite">Un favorit</string>
+    <string name="no_input_provided">No s\'ha proporcionat cap entrada</string>
+    <string name="input">Entrada</string>
+    <string name="website_link">Enllaç al lloc web</string>
+    <string name="for_you">Per a tu</string>
+    <string name="website">Lloc web:</string>
+    <string name="url">URL:</string>
+    <string name="date">Data</string>
+    <string name="no_site_loaded">No tens el lloc web carregat</string>
+    <string name="more_then_5_images_can_not_be_picked">No es poden escollir més de cinc imatges</string>
+</resources>

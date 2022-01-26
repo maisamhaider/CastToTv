@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Welsh-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="location">Lleoliad</string>
+
+    <string name="connection_close_confirm">Hoffech chi ganslo\'r Cysylltiad VPN cyfredol?</string>
+    <string name="yes">OES</string>
+    <string name="no">RHIF</string>
+    <string name="yes_2">Oes</string>
+    <string name="no_2">Nac ydw</string>
+    <string name="select_images">Dewiswch Delweddau</string>
+    <string name="tabs">Tabiau</string>
+    <string name="share">Rhannu</string>
+    <string name="save">Arbed</string>
+    <string name="more">Mwy</string>
+    <string name="ok">iawn</string>
+    <string name="cancel">Canslo</string>
+    <string name="favorite_site">Newidiwch y wefan ddiofyn sy\'n llwytho ar\ndechrau Porwr</string>
+    <string name="custom_search_engine_body">Ychwanegu url chwilio personol hefyd yn dewis "Custom\nsearch engine" fel darparwr chwilio</string>
+    <string name="search_engine_body">Dewiswch eich peiriant chwilio dewisol neu\nosodwch un wedi\'i deilwra</string>
+    <string name="data_control_body">Cliriwch ddata eich porwr neu penderfynwch pa ddata\nfydd yn cael ei glirio pan fyddwch yn gadael yr ap</string>
+    <string name="start_control_body">Penderfynwch pa gydrannau o\'r porwr\nfydd ar y dechrau</string>
+    <string name="behavior_ui_body">Newidiwch ymddygiad a ui yr ap i weddu i\'ch dewisiadau</string>
+    <string name="book_mark_body">I ddangos yr ymgom hidlo pwyswch yn hir ar yr eicon nod tudalen yn y trosolwg. Penderfynwch pa hidlwyr y byddwch chi\'n eu defnyddio</string>
+    <string name="app_settings_body">Gosodiadau porwr, yna gallwch chi yn dibynnu ar \nych fersiwn android rhoi caniatâd.</string>
+    <string name="start_control_image_body">Galluogi delweddau Rhwydwaith, gallai Analluogi fod yn ddefnyddiol\ni arbed data symudol a llwytho gwefan yn gyflymach</string>
+    <string name="start_control_location_body">Caniatáu i wefannau gael mynediad i\'ch lleoliad. Mae angen galluogi hyn ar rai\ngwefannau {google, maps for nav).</string>
+    <string name="start_control_history_body">Arbedwch hanes gwefannau yr ymwelwyd â nhw</string>
+    <string name="start_control_java_script_body">Galluogi JavaScript. Mae llawer o wefannau angen\nJavaScript ar gyfer eu swyddogaethau. Ond maen nhw\ hefyd yn gorffwys a gellir eu defnyddio ar gyfer ymosodiadau</string>
+    <string name="start_control_cookies_body">Galluogi Cwcis. Ffeiliau testun bach yw cwcis,
+sy\'n cael eu storio ar eich dyfais. Defnyddio gwefannau
+nhw er enghraifft i storio gosodiadau defnyddiwr. Ond
+gallent hefyd gael eu defnyddio i gasglu defnyddwyr personol
+data. Mae cwcis trydydd parti bob amser wedi\'u hanalluogi.</string>
+    <string name="confirmation_browser_exit_body">Deialog cadarnhad wrth\ngau porwr</string>
+    <string name="confirmation_tab_close_body">Deialog cadarnhad wrth gau tab</string>
+    <string name="confirmation_reopen_last_body">Ailagor tab newydd pan fydd y tab olaf ar gau yn lle gadael y porwr</string>
+    <string name="hide_toolbar_body">Defnyddiwch y sgrin gyfan wrth sgrolio trwy\'r wefan os gwasgwch y botwm yn ôl byddwch yn gadael modd sgrin lawn</string>
+    <string name="images">Delweddau</string>
+    <string name="videos">Fideos</string>
+    <string name="web_browser">Porwr Gwe</string>
+    <string name="image_slider">Llithrydd Delwedd</string>
+    <string name="next">Nesaf</string>
+    <string name="previous">Blaenorol</string>
+    <string name="help">Help</string>
+    <string name="settings">Gosodiadau</string>
+    <string name="language">Ieithoedd</string>
+    <string name="more_app">Mwy o Apiau</string>
+    <string name="rate_us">Graddio Ni</string>
+    <string name="screen_mirroring">Drych Sgrin</string>
+    <string name="home_screen_text">Sicrhewch fod eich ffôn a\'ch teledu wedi\'u cysylltu â\'r un rhwydwaith Wi-Fi.</string>
+    <string name="wifi_connected">Wi-Fi Cysylltiedig</string>
+    <string name="wifi_disconnected">Wi-Fi wedi\'i Ddatgysylltu</string>
+    <string name="general">Cyffredinol</string>
+    <string name="communicate">Cyfathrebu</string>
+    <string name="send_feedback">Anfon Adborth</string>
+    <string name="tutorial">Tiwtorial</string>
+    <string name="how_to_use">Sut i ddefnyddio?</string>
+    <string name="streaming">Ffrydio</string>
+    <string name="streaming_quality">Ansawdd Ffrydio</string>
+    <string name="auto_stop">Stopio Auto</string>
+    <string name="auto_minimize">Auto Minimize</string>
+    <string name="advance">Ymlaen llaw</string>
+    <string name="orientation_mode">Modd Cyfeiriadedd</string>
+    <string name="auto_stop_body_text">Stopiwch fideo pan fyddwch chi\'n colli cysylltiad â\'r targed</string>
+    <string name="auto_minimize_body_text">Cuddio ap pan fydd adlewyrchu yn dechrau</string>
+    <string name="casting_orientation_body_text">Cyfeiriadedd castio</string>
+    <string name="mirroring_mode">Modd adlewyrchu</string>
+    <string name="screen_mirroring_privacy_policy">Sgrin yn adlewyrchu polisi preifatrwydd</string>
+    <string name="privacy_policy">Polisi Preifatrwydd</string>
+    <string name="supporting_devices">Dyfeisiau Ategol</string>
+    <string name="see_which_devices_support_mirroring">Gweld pa ddyfeisiau sy\'n cefnogi adlewyrchu</string>
+    <string name="color_theme">Thema Lliw</string>
+    <string name="dark">Tywyll</string>
+    <string name="light">Ysgafn</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Dewiswch Iaith</string>
+    <string name="close">cau</string>
+    <string name="images_slider">Llithrydd Delweddau</string>
+    <string name="screen_mirror">Drych Sgrin</string>
+    <string name="tutorial_screen_setup_body">Rhaid i\'ch dyfais darged fod yn yr un rhwydwaith Wi-Fi â\'r ddyfais hon, oherwydd mae Screen Mirror yn trosglwyddo\'ch sgrin.</string>
+    <string name="tutorial_screen_mirror_body">Ffrydiwch sgrin eich dyfais dros Wi-Fi i\'ch cyfrifiadur, llyfr nodiadau neu lechen.</string>
+    <string name="tutorial_device_hotspot_body">Gallwch hefyd ddefnyddio man cychwyn eich dyfais (modd clymu) a chysylltu\'ch dyfais darged â\'ch man cychwyn.</string>
+    <string name="tutorial_scan_code_body">Safle agored ar eich dyfais targed. Trwy sganio\'r cod QR mae cyfluniad y cysylltiad yn cael ei drawsyrru ac mae\'r adlewyrchu yn dechrau.</string>
+    <string name="tutorial_support_body">Sylwch mai dim ond pan fydd wedi\'i osod yn gywir y mae Screen Mirror yn gweithio. Mae Screen Mirror yn trosglwyddo\'ch sgrin, ond nid signalau sain eich dyfais. Os ydych yn wynebu unrhyw broblemau cysylltwch â ni.</string>
+    <string name="walk_through_body_1">Mwynhewch ffrydio llyfn o ansawdd uchel\nheb unrhyw oedi</string>
+    <string name="walk_through_body_2">Cysylltwch ag unrhyw ddyfais glyfar a mwynhewch y sioe ar unrhyw sgrin</string>
+    <string name="walk_through_body_3">Mwynhewch borwr preifat mewn-app heb unrhyw gyfyngiadau</string>
+    <string name="screen_setup">Gosod Sgrin</string>
+    <string name="device_hotspot">Man problemus y ddyfais</string>
+    <string name="scan_code">Cod Sganio</string>
+    <string name="support">Cefnogaeth</string>
+    <string name="finish">Gorffen</string>
+    <string name="our_policies">Ein Polisïau</string>
+    <string name="privacy_policy_text">Mae amddiffyn eich preifatrwydd yn bwysig i ni. Gobeithiwn y bydd y datganiad canlynol yn eich helpu i ddeall sut rydym yn delio â\'r wybodaeth bersonol adnabyddadwy, y gallwch ei darparu i ni o bryd i\'w gilydd trwy\'r Rhyngrwyd (platfform Google Play).\n\nYn gyffredinol. nid ydym yn casglu unrhyw PII gennych pan fyddwch yn lawrlwytho ein cymwysiadau Android. I fod yn benodol, nid oes angen ymweliadau defnyddwyr ein cymhwysiad arnom, nid oes gennym hyd yn oed Weinydd i storio PII o\'r fath.\n\nMae Screen Mirroring yn defnyddio Facebook fel darparwr hysbysebion. Mae Facebook eisiau dangos hysbysebion sy\'n berthnasol i chi. Am ragor o wybodaeth ewch i\nhttps://m.facebook.com/ads/ad_choices.\n\nYr unig sefyllfa y gallwn gael mynediad atoch PII yw pan fyddwch yn bersonol yn penderfynu anfon eich adborth atom mewn e-bost neu roi byg i ni adroddiad. Mae\'r PII y gallwn ei gael oddi wrthych yn y sefyllfa honno wedi\'i gyfyngu\'n llwyr i\'ch enw, eich cyfeiriad e-bost a\'ch ymateb i\'r arolwg yn unig.\n\nYn y sefyllfa uchod, rydym yn gwarantu mai dim ond ar gyfer cysylltu â chi a gwella ein gwasanaethau y bydd eich PII yn cael ei ddefnyddio. Ni fyddwn byth yn defnyddio gwybodaeth o\'r fath (ee eich enw a\'ch cyfeiriad e-bost_ at unrhyw ddibenion eraill, megis i farchnata ein cynnyrch ymhellach, neu i ddatgelu eich gwybodaeth bersonol i drydydd parti er elw masnachol.\n\nDylid nodi a yw neu menter gwbl wirfoddol ar eich penderfyniad eich hun yw peidio ag anfon eich adborth neu adroddiad nam. yn screenmirroring.feedback@gmail.com, byddwn yn ymdrechu i ddarparu atebion clir i\'ch cwestiynau mewn modd amserol.</string>
+    <string name="please_write_your_feedback">Ysgrifennwch eich adborth</string>
+    <string name="system_info">Bydd eich Gwybodaeth System yn cael ei hanfon i Adran Dechnoleg Screen Mirroring</string>
+    <string name="send">Anfon</string>
+    <string name="provide_feedback">darparu adborth</string>
+    <string name="invalid_email_provided">Darparwyd e-bost annilys</string>
+    <string name="check_your_internet_connection">Gwiriwch eich cysylltiad rhyngrwyd</string>
+    <string name="type_here">teipiwch yma…</string>
+    <string name="enter_your_email_optional">Rhowch eich e-bost (dewisol)</string>
+    <string name="enjoy_the_app">Mwynhau\'r Ap?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Graddiwch eich profiad gan ddefnyddio Screen\nMirroring App.</string>
+    <string name="not_now">Ddim nawr</string>
+    <string name="feedback">Adborth:</string>
+    <string name="model">Model:</string>
+    <string name="brand">Brand:</string>
+    <string name="os_version">Fersiwn OS:</string>
+    <string name="manufacturer">Gwneuthurwr:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Anfon post</string>
+    <string name="select_picture">Dewiswch Llun</string>
+    <string name="help_center">Canolfan Gymorth</string>
+    <string name="question_1">Mae Fy Ffôn yn mynd yn sownd wrth “Cysylltu” wrth baru gyda\'r teledu.</string>
+    <string name="question_2">Fe weithiodd i mi o\'r blaen, ond nid \nyw\'n gweithio nawr.</string>
+    <string name="question_3">Mae\'n dangos nad yw fy nyfais yn \ncael ei gefnogi.</string>
+    <string name="question_4">Hen deledu yw fy nheledu ac nid yw\'n \ncefnogi wi-fi.</string>
+    <string name="question_5">Mae\'r ddelwedd ar y teledu yn ddu, ond \ngellir clywed y sain.</string>
+    <string name="question_6">Bydd y cysylltiad yn cael ei dorri ar \nôl ychydig.</string>
+    <string name="question_7">A yw fy ngwybodaeth bersonol neu ddata \nsymudol yn gwbl ddiogel?</string>
+    <string name="q_answer_1_1">Ailgychwynnwch Wi-Fi y ffôn smart a gweld a yw\'r cysylltiad yn llwyddiannus.</string>
+    <string name="q_answer_1_2">Diffoddwch y teledu a thynnu ei linyn pŵer o\'r soced hefyd. Arhoswch 1 munud ac ailgychwyn y teledu.</string>
+    <string name="q_answer_1_3">Cwtogwch y pellter rhwng eich ffôn a\'r teledu. Cymerwch yn agos.</string>
+    <string name="q_answer_2_1">Os bu\'n gweithio o\'r blaen, yna yn bendant gellir ei ddefnyddio eto.</string>
+    <string name="q_answer_2_2">Gellir datrys y rhan fwyaf o broblemau cysylltu trwy ailgychwyn dyfeisiau. Ailgychwynnwch eich ffôn a\'ch teledu, dilynwch y broses gysylltu arferol i roi cynnig arall arni.</string>
+    <string name="q_answer_3_1">Mae hyn yn golygu nad yw\'ch ffôn ei hun yn cefnogi\'r swyddogaeth adlewyrchu sgrin.</string>
+    <string name="q_answer_3_2">Gallwch ddefnyddio XCast i gastio fideo, sain a llun i\'r teledu. Gyda XCast, gallwch chi wneud pethau eraill gyda\'ch ffôn wrth gastio i\'r teledu.</string>
+    <string name="q_answer_4_1">Os yw\'ch teledu yn cefnogi rhyngwyneb HDMI, rydym yn argymell eich bod yn prynu derbynnydd allanol ar gyfer adlewyrchu sgrin. Fel Chromecast, Anycast ac ati.</string>
+    <string name="q_answer_5_1">Mae rhywfaint o gynnwys yn cynnwys diogelu hawlfraint ac ni ellir ei arddangos ar ddyfeisiau trydydd parti, fel Netflix, Disney Plus ac ati.</string>
+    <string name="q_answer_5_2">Gallwch chi lawrlwytho\'r fideo neu chwilio am yr un adnodd ar apiau eraill i roi cynnig arni.</string>
+    <string name="q_answer_6_1">Gallwch droi\'r Smart Connect ymlaen yn eich gosodiadau Wi-Fi. Bydd yn chwilio am well cysylltiadau Wi-fi yn gyson, a bob amser yn cysylltu yn ôl ac ymlaen.</string>
+    <string name="q_answer_6_2">Gwnewch yn siŵr mai Wi-Fi y ffôn symudol a\'r teledu yw\'r SAM a\'r signal gorau.</string>
+    <string name="q_answer_7_1">Ni fyddwn yn monitro nac yn casglu unrhyw wybodaeth amdanoch chi a\'ch ffôn symudol. Gallwch chi gastio\'ch sgrin heb unrhyw bryder.</string>
+    <string name="q_answer_7_2">Mae\'n bosibl y bydd y system yn eich rhybuddio bod perygl diogelwch cyn dangos sgrin. Dim ond nodyn atgoffa rheolaidd yw hwn, fe fydd</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">GEIRIADUR</string>
+    <string name="install">GOSOD</string>
+    <string name="install_small">Gosod</string>
+    <string name="manual">Llawlyfr</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Sicrhewch fod eich ffôn a\'ch teledu wedi\'u cysylltu\n â\'r un rhwydwaith Wi-Fi.</string>
+    <string name="hd_streaming">Ffrydio HD</string>
+    <string name="smart_devices">dyfeisiau clyfar</string>
+    <string name="private_browser">Porwr Preifat</string>
+    <string name="effects">Effeithiau</string>
+    <string name="slider">llithrydd</string>
+    <string name="search_or_type_web_address">Chwilio neu deipio cyfeiriad gwe</string>
+    <string name="install_2">Gosod</string>
+    <string name="bookmark">Llyfrnod</string>
+    <string name="downloads">Lawrlwythiadau</string>
+    <string name="download">Lawrlwythwch</string>privacy_policy_text
+    <string name="favorites">Ffefrynnau</string>
+    <string name="favorite">Hoff</string>
+    <string name="history">Hanes</string>
+    <string name="share_pdf">Rhannu Pdf</string>
+    <string name="copy_url">Copïo URL</string>
+    <string name="share_app">Rhannu App</string>
+    <string name="share_url">Rhannu url</string>
+    <string name="exit">Ymadael</string>
+    <string name="new_tab">Tab Newydd</string>
+    <string name="google">Google</string>
+    <string name="startpage">Tudalen Cychwyn</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Peiriant chwilio personol</string>
+    <string name="add_shortcut_to_home">Ychwanegu llwybr byr i\'r cartref</string>
+    <string name="save_screenshot">Arbed Sgrinlun</string>
+    <string name="add_to_bookmark">Ychwanegu at nod tudalen</string>
+    <string name="save_as_pdf">Arbed fel pdf</string>
+    <string name="save_action">Cadw Gweithred</string>
+    <string name="add_to_favorite">Ychwanegu at ffefryn</string>
+    <string name="search_engine">Chwilia Beiriant</string>
+    <string name="browser_exit_body">Ydych chi\'n siŵr eich bod am adael y Porwr</string>
+    <string name="exit_browser">Porwr Gadael</string>
+    <string name="custom_user_agent">Asiant defnyddiwr personol</string>
+    <string name="start_control">Rheoli Cychwyn</string>
+    <string name="data_control">Rheoli Data</string>
+    <string name="app_settings">Gosodiadau ap</string>
+    <string name="browser_settings">Gosodiadau Porwr</string>
+    <string name="behavior_ui">Ymddygiad/UI</string>
+    <string name="clear_cache">Clirio Cache</string>
+    <string name="clear_history">Clirio Hanes</string>
+    <string name="clear_browsing_history">Clirio\'r hanes pori</string>
+    <string name="clear_all_cache">Clirio pob storfa</string>
+    <string name="clear_database_body">Clirio “cronfeydd data wedi\'u mynegeio” a “cronfeydd data lleol”</string>
+    <string name="clear_cookies_body">Os caiff ei alluogi, bydd pob cwci yn cael ei ddileu. Hefyd\nCwcis gwefannau dibynadwy</string>
+    <string name="clear_databases">Cronfeydd data clir</string>
+    <string name="clear_cookies">Clirio Cwcis</string>
+    <string name="clear_when_application_exit">Clirio pan ddaw\'r cais i ben</string>
+    <string name="clear_when_application_exit_body">Bob tro y byddwch yn rhoi\'r gorau iddi bydd yr holl ddata sydd wedi\'u gwirio uchod\nyn cael eu dileu</string>
+    <string name="image">Delwedd</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Cwcis</string>
+    <string name="reopen_last_tab">Ailagor y tab olaf</string>
+    <string name="confirm_tab_close">Cadarnhau cau\'r tab</string>
+    <string name="confirm_browser_exit">Cadarnhau allanfa\'r porwr</string>
+    <string name="position">Swydd</string>
+    <string name="first_toolbar">Bar offer cyntaf</string>
+    <string name="hide_toolbar">Cuddio bar offer</string>
+    <string name="toolbar">Bar Offer</string>
+    <string name="bookmarks">Llyfrnodau</string>
+    <string name="edit">Golygu</string>
+    <string name="today">Heddiw</string>
+    <string name="the_last_hour">Yr awr olaf</string>
+    <string name="last_week">Wythnos diwethaf</string>
+    <string name="last_month">Mis diwethaf</string>
+    <string name="delete_all_history">Dileu pob hanes</string>
+    <string name="copied">copïo</string>
+    <string name="share_ss">Rhannu SS</string>
+    <string name="file_manager">Rheolwr Ffeil</string>
+    <string name="search_on">Chwilio Ymlaen</string>
+    <string name="add_shortcut">Ychwanegu Llwybr Byr</string>
+    <string name="tab_exit">Gadael Tab</string>
+    <string name="do_you_want_to_close">Ydych chi eisiau cau</string>
+    <string name="download_complete_share_image">Lawrlwytho wedi\'i gwblhau. Rhannu delwedd</string>
+    <string name="update">Diweddariad</string>
+    <string name="unfavorite">Un ffefryn</string>
+    <string name="no_input_provided">Ni ddarparwyd mewnbwn</string>
+    <string name="input">Mewnbwn</string>
+    <string name="website_link">Dolen gwefan</string>
+    <string name="for_you">I Chi</string>
+    <string name="website">Gwefan:</string>
+    <string name="url">URL:</string>
+    <string name="date">Dyddiad</string>
+    <string name="no_site_loaded">Nid oes gennych wefan wedi\'i llwytho</string>
+    <string name="more_then_5_images_can_not_be_picked">Ni ellir dewis mwy na phum delwedd</string>
+</resources>

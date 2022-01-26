@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Latvian-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">Vai vēlaties atcelt pašreizējo VPN savienojumu?</string>
+    <string name="yes">JĀ</string>
+    <string name="no">NĒ</string>
+    <string name="yes_2">Jā</string>
+    <string name="no_2">Nē</string>
+    <string name="select_images">Atlasiet Attēli</string>
+    <string name="tabs">Cilnes</string>
+    <string name="share">Dalīties</string>
+    <string name="save">Saglabāt</string>
+    <string name="more">Vairāk</string>
+    <string name="ok">labi</string>
+    <string name="cancel">Atcelt</string>
+    <string name="favorite_site">Mainiet noklusējuma vietni, kas tiek ielādēta,\nstartējot pārlūkprogrammu</string>
+    <string name="custom_search_engine_body">Pievienot pielāgotu meklēšanas URL kā arī kā meklēšanas nodrošinātāju izvēlieties “Pielāgota\nmeklētājprogramma”.</string>
+    <string name="search_engine_body">Izvēlieties vēlamo meklētājprogrammu vai\niestatiet pielāgotu meklētājprogrammu</string>
+    <string name="data_control_body">Notīriet pārlūkprogrammas datus vai izlemiet, kuri dati\ntiks dzēsti, kad pametat lietotni</string>
+    <string name="start_control_body">Izlemiet, kuri pārlūkprogrammas komponenti\ntiks startēti</string>
+    <string name="behavior_ui_body">Mainiet lietotnes darbību un lietotāja saskarni,\natbilstoši savām vēlmēm</string>
+    <string name="book_mark_body">Lai parādītu filtra dialoglodziņu, pārskatā turiet nospiediet grāmatzīmes ikonu. Izlemiet, kurus filtrus izmantot</string>
+    <string name="app_settings_body">Pārlūkprogrammas iestatījumi, kuros varat piešķirt atļauju atkarībā no jūsu Android versijas.</string>
+    <string name="start_control_image_body">Iespējot tīkla attēlus. Atspējošana varētu būt noderīga\ntaupīt mobilos datus un ātrāk ielādēt vietni</string>
+    <string name="start_control_location_body">Ļaujiet vietnēm piekļūt jūsu atrašanās vietai. Šī iespēja ir jāiespējo dažām\nvietnēm {google, maps for nav</string>
+    <string name="start_control_history_body">Saglabājiet apmeklēto vietņu vēsturi</string>
+    <string name="start_control_java_script_body">Iespējot JavaScript. Daudzām vietnēm ir nepieciešams\nJavaScript to funkcionalitātei. Taču tās ir\n arī atpūtai un var tikt izmantotas uzbrukumiem</string>
+    <string name="start_control_cookies_body">Iespējot sīkfailus. Sīkfaili ir mazi teksta faili,
+kas tiek saglabāti jūsu ierīcē. Vietņu izmantošana
+piemēram, lai saglabātu lietotāja iestatījumus. Bet
+tos var izmantot arī personīgo lietotāju apkopošanai
+datus. Trešās puses sīkfaili vienmēr ir atspējoti.</string>
+    <string name="confirmation_browser_exit_body">Apstiprinājuma dialoglodziņš,\n aizverot pārlūkprogrammu</string>
+    <string name="confirmation_tab_close_body">Apstiprinājuma dialoglodziņš, aizverot cilni</string>
+    <string name="confirmation_reopen_last_body">Atkārtoti atveriet jaunu cilni, kad pēdējā cilne ir aizvērta, nevis aizveriet pārlūkprogrammu</string>
+    <string name="hide_toolbar_body">Ritinot vietni, izmantojiet visu ekrānu, nospiežot pogu Atpakaļ, jūs izslēgsit pilnekrāna režīmu</string>
+    <string name="images">Attēli</string>
+    <string name="videos">Videoklipi</string>
+    <string name="web_browser">Interneta pārlūks</string>
+    <string name="image_slider">Attēla slīdnis</string>
+    <string name="next">Nākamais</string>
+    <string name="previous">Iepriekšējais</string>
+    <string name="help">Palīdzība</string>
+    <string name="settings">Iestatījumi</string>
+    <string name="language">Valodas</string>
+    <string name="more_app">Vairāk lietotņu</string>
+    <string name="rate_us">Novērtē mūs</string>
+    <string name="screen_mirroring">Ekrāna spoguļošana</string>
+    <string name="home_screen_text">Pārliecinieties, vai tālrunis un televizors ir savienoti ar vienu un to pašu Wi-Fi tīklu.</string>
+    <string name="wifi_connected">Savienots ar Wi-Fi</string>
+    <string name="wifi_disconnected">Wi-Fi savienojums ir atvienots</string>
+    <string name="general">Ģenerālis</string>
+    <string name="communicate">Sazinieties</string>
+    <string name="send_feedback">Sūtīt atsauksmes</string>
+    <string name="tutorial">Apmācība</string>
+    <string name="how_to_use">Kā izmantot?</string>
+    <string name="streaming">Straumēšana</string>
+    <string name="streaming_quality">Straumēšanas kvalitāte</string>
+    <string name="auto_stop">Auto Stop</string>
+    <string name="auto_minimize">Automātiska samazināšana</string>
+    <string name="advance">Avanss</string>
+    <string name="orientation_mode">Orientācijas režīms</string>
+    <string name="auto_stop_body_text">Apturiet video, kad tiek zaudēts savienojums\nar mērķi</string>
+    <string name="auto_minimize_body_text">Paslēpt lietotni, kad tiek sākta spoguļošana</string>
+    <string name="casting_orientation_body_text">Liešanas orientācija</string>
+    <string name="mirroring_mode">Spoguļošanas režīms</string>
+    <string name="screen_mirroring_privacy_policy">Ekrāna spoguļošanas privātuma politika</string>
+    <string name="privacy_policy">Privātuma politika</string>
+    <string name="supporting_devices">Atbalsta ierīces</string>
+    <string name="see_which_devices_support_mirroring">Skatiet, kuras ierīces atbalsta spoguļošanu</string>
+    <string name="color_theme">Krāsu tēma</string>
+    <string name="dark">Tumšs</string>
+    <string name="light">Gaisma</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Izvēlēties valodu</string>
+    <string name="close">aizveriet</string>
+    <string name="images_slider">Attēli Slīdnis</string>
+    <string name="screen_mirror">Ekrāna spogulis</string>
+    <string name="tutorial_screen_setup_body">Jūsu mērķa ierīcei ir jāatrodas tajā pašā Wi-Fi tīklā, kur šī ierīce, jo Screen Mirror pārraida jūsu ekrānu.</string>
+    <string name="tutorial_screen_mirror_body">Straumējiet ierīces ekrānu, izmantojot Wi-Fi, savā datorā, piezīmjdatorā vai planšetdatorā.</string>
+    <string name="tutorial_device_hotspot_body">Varat arī izmantot ierīces tīklāju (piesaistes režīmu) un savienot mērķa ierīci ar tīklāju.</string>
+    <string name="tutorial_scan_code_body">Atveriet vietni savā mērķa ierīcē. Skenējot QR kodu, tiek pārsūtīta savienojuma konfigurācija un sākas spoguļošana.</string>
+    <string name="tutorial_support_body">Lūdzu, ņemiet vērā, ka ekrāna spogulis darbojas tikai tad, ja tas ir pareizi iestatīts. Ekrāna spogulis pārraida jūsu ekrānu, bet ne ierīces audio signālus. Ja rodas kādas problēmas, sazinieties ar mums.</string>
+    <string name="walk_through_body_1">Izbaudiet vienmērīgu un augstas kvalitātes straumēšanu\nbez kavēšanās</string>
+    <string name="walk_through_body_2">Izveidojiet savienojumu ar jebkuru viedierīci un baudiet\nizrādi jebkurā ekrānā</string>
+    <string name="walk_through_body_3">Izbaudiet privāto pārlūkprogrammu lietotnē bez ierobežojumiem</string>
+    <string name="screen_setup">Ekrāna iestatīšana</string>
+    <string name="device_hotspot">Ierīces tīklājs</string>
+    <string name="scan_code">Skenēt kodu</string>
+    <string name="support">Atbalsts</string>
+    <string name="finish">Pabeigt</string>
+    <string name="our_policies">Mūsu politikas</string>
+    <string name="privacy_policy_text">Mums ir svarīgi aizsargāt jūsu privātumu. Mēs ceram, ka šis paziņojums palīdzēs jums saprast, kā mēs rīkojamies ar personu identificējošu informāciju, kuru jūs laiku pa laikam varat mums sniegt, izmantojot internetu (Google Play platformu).\n\nParasti. mēs neievācam no jums nekādu PII, kad lejupielādējat mūsu Android lietojumprogrammas. Precīzāk sakot, mēs nepieprasām, lai patērētāji apmeklētu mūsu lietojumprogrammu, mums pat nav servera, kas uzglabātu šādu PII.\n\nScreen Mirroring izmanto Facebook kā reklāmu nodrošinātāju. Facebook vēlas rādīt jums atbilstošas ​​reklāmas. Lai iegūtu plašāku informāciju, lūdzu, apmeklējiet vietni\nhttps://m.facebook.com/ads/ad_choices.\n\nVienīgā situācija, kurā mēs varam piekļūt jūsu PII, ir tad, kad jūs personīgi nolemjat nosūtīt mums e-pasta ziņojumu vai sniegt mums kļūdu. Ziņot. PII, ko mēs varam saņemt no jums šajā situācijā, ir stingri ierobežota ar tikai jūsu vārdu, e-pasta adresi un jūsu aptaujas atbildi.\n\nIepriekšējā situācijā mēs garantējam, ka jūsu PII tiks izmantota tikai saziņai ar jums un mūsu pakalpojumu uzlabošanai. Mēs nekad neizmantosim šādu informāciju (piemēram, jūsu vārdu un e-pasta adresi_ jebkuriem citiem mērķiem, piemēram, lai tālāk tirgotu mūsu produktus vai izpaustu jūsu personisko informāciju trešajai pusei komerciāla labuma gūšanai).\n\nJāņem vērā, vai vai nesūtīt mums savas atsauksmes vai kļūdu ziņojumu ir pilnībā brīvprātīga iniciatīva pēc jūsu paša lēmuma. Ja jums ir bažas par to, ka jūsu PII tiek ļaunprātīgi izmantota, vai ja vēlaties iegūt papildu informāciju par mūsu konfidencialitātes politiku un to, ko tā nozīmē, lūdzu, rakstiet mums e-pasta ziņojumu. pa e-pastu screenmirroring.feedback@gmail.com, mēs centīsimies sniegt skaidras atbildes uz jūsu jautājumiem savlaicīgi.</string>
+    <string name="please_write_your_feedback">Lūdzu, uzrakstiet savas atsauksmes</string>
+    <string name="system_info">Jūsu sistēmas informācija tiks nosūtīta uz ekrāna spoguļošanas tehnoloģiju nodaļu</string>
+    <string name="send">Sūtīt</string>
+    <string name="provide_feedback">sniegt atgriezenisko saiti</string>
+    <string name="invalid_email_provided">Norādīts nederīgs e-pasts</string>
+    <string name="check_your_internet_connection">Pārbaudiet interneta savienojumu</string>
+    <string name="type_here">raksti šeit…</string>
+    <string name="enter_your_email_optional">Ievadiet savu e-pastu (neobligāti)</string>
+    <string name="enjoy_the_app">Vai jums patīk lietotne?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Novērtējiet savu pieredzi, izmantojot Screen\nMiroring App.</string>
+    <string name="not_now">Ne tagad</string>
+    <string name="feedback">Atsauksmes:</string>
+    <string name="model">Modelis:</string>
+    <string name="brand">Zīmols:</string>
+    <string name="os_version">OS versija:</string>
+    <string name="manufacturer">Ražotājs:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Nosūtīt pastu</string>
+    <string name="select_picture">Izvēlieties Attēls</string>
+    <string name="help_center">Palīdzības centrs</string>
+    <string name="question_1">Savienojot pārī ar televizoru, mans tālrunis iestrēgst sadaļā “Savienošanās”.</string>
+    <string name="question_2">Tas man darbojās agrāk, bet \nnedarbojas tagad.</string>
+    <string name="question_3">Tas parāda, ka mana ierīce \nnetiek atbalstīta.</string>
+    <string name="question_4">Mans televizors ir vecs televizors,\nun tas neatbalsta Wi-Fi.</string>
+    <string name="question_5">Televizorā attēls ir melns, bet \nskaņa ir dzirdama.</string>
+    <string name="question_6">Pēc kāda laika savienojums tiks \npārtraukts.</string>
+    <string name="question_7">Vai mana personiskā informācija vai mobilie dati ir pilnīgi droši?</string>
+    <string name="q_answer_1_1">Restartējiet viedtālruņa Wi-Fi un pārbaudiet, vai savienojums ir veiksmīgs.</string>
+    <string name="q_answer_1_2">Izslēdziet televizoru un izņemiet arī tā strāvas vadu no kontaktligzdas. Uzgaidiet 1 minūti un restartējiet televizoru.</string>
+    <string name="q_answer_1_3">Samaziniet attālumu starp tālruni un televizoru. Paņemiet to tuvu.</string>
+    <string name="q_answer_2_1">Ja tas darbojās iepriekš, tad to noteikti var izmantot vēlreiz.</string>
+    <string name="q_answer_2_2">Lielāko daļu savienojuma problēmu var atrisināt, restartējot ierīces. Vienkārši restartējiet gan tālruni, gan televizoru un veiciet parasto savienojuma procesu, lai mēģinātu vēlreiz.</string>
+    <string name="q_answer_3_1">Tas nozīmē, ka jūsu tālrunis pats neatbalsta ekrāna spoguļošanas funkciju.</string>
+    <string name="q_answer_3_2">Varat izmantot XCast, lai pārraidītu video, audio un fotoattēlus uz televizoru. Izmantojot XCast, varat veikt citas darbības ar tālruni, apraides laikā televizorā.</string>
+    <string name="q_answer_4_1">Ja jūsu televizors atbalsta HDMI interfeisu, iesakām iegādāties ārēju uztvērēju ekrāna spoguļošanai. Piemēram, Chromecast, Anycast utt.</string>
+    <string name="q_answer_5_1">Uz noteiktu saturu attiecas autortiesību aizsardzība, un to nevar parādīt trešās puses ierīcēs, piemēram, Netflix, Disney Plus utt.</string>
+    <string name="q_answer_5_2">Varat lejupielādēt videoklipu vai meklēt to pašu resursu citās lietotnēs, lai mēģinātu.</string>
+    <string name="q_answer_6_1">Varat ieslēgt Smart Connect savos Wi-Fi iestatījumos. Tas pastāvīgi meklēs labākus Wi-Fi savienojumus un vienmēr izveidos savienojumu turp un atpakaļ.</string>
+    <string name="q_answer_6_2">Lūdzu, pārliecinieties, vai mobilā tālruņa un televizora Wi-Fi ir SAM un labākais signāls.</string>
+    <string name="q_answer_7_1">Mēs neuzraudzīsim un neapkoposim nekādu informāciju par jums un jūsu mobilo tālruni. Varat apraidīt ekrānu bez raizēm.</string>
+    <string name="q_answer_7_2">Sistēma var brīdināt, ka pastāv drošības apdraudējums pirms ekrāna spoguļošanas. Šis ir tikai parasts atgādinājums, tā arī būs</string>
+    <string name="wi_fi">BEZVADU INTERNETS</string>
+    <string name="miracast">MIRA LIETU</string>
+    <string name="install">UZSTĀDĪT</string>
+    <string name="install_small">Uzstādīt</string>
+    <string name="manual">Rokasgrāmata</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Pārliecinieties, vai tālrunis un televizors ir savienoti\nvienam Wi-Fi tīklam.</string>
+    <string name="hd_streaming">HD straumēšana</string>
+    <string name="smart_devices">viedierīces</string>
+    <string name="private_browser">Privāts pārlūks</string>
+    <string name="effects">Efekti</string>
+    <string name="slider">Slīdnis</string>
+    <string name="search_or_type_web_address">Meklējiet vai ierakstiet tīmekļa adresi</string>
+    <string name="install_2">Uzstādīt</string>
+    <string name="bookmark">Grāmatzīme</string>
+    <string name="downloads">Lejupielādes</string>
+    <string name="download">Lejupielādēt</string>
+    <string name="favorites">Izlase</string>
+    <string name="favorite">Mīļākais</string>
+    <string name="history">Vēsture</string>
+    <string name="share_pdf">Kopīgot Pdf</string>
+    <string name="copy_url">Kopēt URL</string>
+    <string name="share_app">Kopīgot lietotni</string>
+    <string name="share_url">Kopīgot URL</string>
+    <string name="exit">Izeja</string>
+    <string name="new_tab">Jauna cilne</string>
+    <string name="google">Google</string>
+    <string name="startpage">Sākumlapa</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Pielāgota meklētājprogramma</string>
+    <string name="add_shortcut_to_home">Pievienojiet saīsni uz sākumlapu</string>
+    <string name="save_screenshot">Saglabāt ekrānuzņēmumu</string>
+    <string name="add_to_bookmark">Pievienot grāmatzīmei</string>
+    <string name="save_as_pdf">Saglabāt kā pdf</string>
+    <string name="save_action">Saglabāt darbību</string>
+    <string name="add_to_favorite">Pievienot izlasei</string>
+    <string name="search_engine">Meklētājs</string>
+    <string name="browser_exit_body">Vai tiešām vēlaties iziet no pārlūkprogrammas</string>
+    <string name="exit_browser">Iziet no pārlūkprogrammas</string>
+    <string name="custom_user_agent">Pielāgots lietotāja aģents</string>
+    <string name="start_control">Start Control</string>
+    <string name="data_control">Datu kontrole</string>
+    <string name="app_settings">Lietotņu iestatījumi</string>
+    <string name="browser_settings">Pārlūka iestatījumi</string>
+    <string name="behavior_ui">Uzvedība/UI</string>
+    <string name="clear_cache">Iztīrīt kešatmiņu</string>
+    <string name="clear_history">Notīrīt vēsturi</string>
+    <string name="clear_browsing_history">Notīrīt pārlūkošanas vēsturi</string>
+    <string name="clear_all_cache">Notīrīt visu kešatmiņu</string>
+    <string name="clear_database_body">Notīrīt “indeksētās datu bāzes” un “lokālās\datu bāzes”</string>
+    <string name="clear_cookies_body">Ja tas ir iespējots, visi sīkfaili tiks dzēsti. Arī\nuzticamo vietņu sīkfaili</string>
+    <string name="clear_databases">Notīrīt datu bāzes</string>
+    <string name="clear_cookies">Notīrīt sīkfailus</string>
+    <string name="clear_when_application_exit">Izejot no lietojumprogrammas, notīrīt</string>
+    <string name="clear_when_application_exit_body">Katru reizi, kad aizverat, visi iepriekš atzīmētie dati\ntiks dzēsti</string>
+    <string name="image">Attēls</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Sīkdatnes</string>
+    <string name="reopen_last_tab">Atkārtoti atveriet pēdējo cilni</string>
+    <string name="confirm_tab_close">Apstipriniet cilnes aizvēršanu</string>
+    <string name="confirm_browser_exit">Apstipriniet pārlūkprogrammas iziešanu</string>
+    <string name="position">Pozīcija</string>
+    <string name="first_toolbar">Pirmā rīkjosla</string>
+    <string name="hide_toolbar">Paslēpt rīkjoslu</string>
+    <string name="toolbar">Rīkjosla</string>
+    <string name="bookmarks">Grāmatzīmes</string>
+    <string name="edit">Rediģēt</string>
+    <string name="today">Šodien</string>
+    <string name="the_last_hour">Pēdējā stunda</string>
+    <string name="last_week">Pagājušajā nedēļā</string>
+    <string name="last_month">Pagājušajā mēnesī</string>
+    <string name="delete_all_history">Dzēst visu vēsturi</string>
+    <string name="copied">nokopēts</string>
+    <string name="share_ss">Dalīties ar SS</string>
+    <string name="file_manager">Failu menedžeris</string>
+    <string name="search_on">Meklēšana ieslēgta</string>
+    <string name="add_shortcut">Pievienot saīsni</string>
+    <string name="tab_exit">Cilne Iziet</string>
+    <string name="do_you_want_to_close">Vai vēlaties aizvērt</string>
+    <string name="download_complete_share_image">Lejupielāde pabeigta. Kopīgojiet attēlu</string>
+    <string name="update">Atjaunināt</string>
+    <string name="unfavorite">Nav mīļākie</string>
+    <string name="no_input_provided">Nav norādīta ievade</string>
+    <string name="input">Ievade</string>
+    <string name="website_link">Vietnes saite</string>
+    <string name="for_you">Tev</string>
+    <string name="website">Tīmekļa vietne:</string>
+    <string name="url">URL:</string>
+    <string name="date">Datums</string>
+    <string name="no_site_loaded">Jums nav ielādēta vietne</string>
+    <string name="more_then_5_images_can_not_be_picked">Vairāk nekā piecus attēlus nevar izvēlēties</string>
+    <string name="location">"Atrašanās vieta "</string>
+</resources>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Persian-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">"محل "</string>
+    <string name="connection_close_confirm">آیا می خواهید اتصال VPN فعلی را لغو کنید؟</string>
+    <string name="yes">آره</string>
+    <string name="no">نه</string>
+    <string name="yes_2">آره</string>
+    <string name="no_2">خیر</string>
+    <string name="select_images">تصاویر را انتخاب کنید</string>
+    <string name="tabs">زبانه ها</string>
+    <string name="share">اشتراک گذاری</string>
+    <string name="save">صرفه جویی</string>
+    <string name="more">بیشتر</string>
+    <string name="ok">خوب</string>
+    <string name="cancel">لغو کنید</string>
+    <string name="favorite_site">وب‌سایت پیش‌فرض را که در\nشروع مرورگر بارگیری می‌شود، تغییر دهید</string>
+    <string name="custom_search_engine_body">URL جستجوی سفارشی را اضافه کنید همچنین «موتور جستجوی سفارشی» را به عنوان ارائه‌دهنده جستجو انتخاب کنید                       </string>
+    <string name="search_engine_body">موتور جستجوی دلخواه خود را انتخاب کنید یا یک موتور دلخواه تنظیم کنید</string>
+    <string name="data_control_body">داده های مرورگر خود را پاک کنید یا تصمیم بگیرید که چه داده هایی\nبا خروج از برنامه پاک شوند</string>
+    <string name="start_control_body">تصمیم بگیرید که کدام مؤلفه‌های مرورگر\nدر شروع کار باشند</string>
+    <string name="behavior_ui_body">رفتار و رابط کاربری برنامه را مطابق تنظیمات برگزیده‌تان تغییر دهید</string>
+    <string name="book_mark_body">برای نشان دادن گفتگوی فیلتر روی نماد نشانک در نمای کلی به مدت طولانی فشار دهید. تصمیم بگیرید که از کدام فیلترها استفاده کنید</string>
+    <string name="app_settings_body">تنظیمات مرورگر، در آنجا می‌توانید بسته به\nنسخه اندرویدی مجوز اعطا کنید.</string>
+    <string name="start_control_image_body">تصاویر شبکه را فعال کنید، غیرفعال کردن می‌تواند برای ذخیره داده‌های تلفن همراه و بارگیری سریع‌تر وب‌سایت مفید باشد</string>
+    <string name="start_control_location_body">به وب‌سایت‌ها اجازه دسترسی به موقعیت مکانی شما را بدهید. برخی از وب‌سایت‌ها {google, maps for nav) به این قابلیت نیاز دارند</string>
+    <string name="start_control_history_body">تاریخچه وب سایت های بازدید شده را ذخیره کنید</string>
+    <string name="start_control_java_script_body">جاوا اسکریپت را فعال کنید بسیاری از وب سایت ها به جاوا اسکریپت برای عملکرد خود نیاز دارند. اما آنها همچنین استراحت می کنند و می توانند برای حملات استفاده شوند</string>
+    <string name="start_control_cookies_body">فعال کردن کوکی ها کوکی ها فایل های متنی کوچکی هستند،
+که در دستگاه شما ذخیره می شوند. وب سایت ها استفاده می کنند
+آنها را به عنوان مثال برای ذخیره تنظیمات کاربر. ولی
+آنها همچنین می توانند برای جمع آوری کاربران شخصی استفاده شوند
+داده ها. کوکی های شخص ثالث همیشه غیرفعال هستند.</string>
+    <string name="confirmation_browser_exit_body">گفتگوی تأیید هنگام بستن مرورگر</string>
+    <string name="confirmation_tab_close_body">گفتگوی تأیید هنگام بستن یک برگه</string>
+    <string name="confirmation_reopen_last_body">وقتی آخرین برگه بسته شد به جای خروج از مرورگر، یک برگه جدید را دوباره باز کنید</string>
+    <string name="hide_toolbar_body">هنگام پیمایش در وب سایت از کل صفحه استفاده کنید اگر دکمه برگشت را فشار دهید از حالت تمام صفحه خارج خواهید شد</string>
+    <string name="images">تصاویر</string>
+    <string name="videos">فیلم های</string>
+    <string name="web_browser">مرورگر اینترنت</string>
+    <string name="image_slider">نوار لغزنده تصویر</string>
+    <string name="next">بعد</string>
+    <string name="previous">قبلی</string>
+    <string name="help">کمک</string>
+    <string name="settings">تنظیمات</string>
+    <string name="language">زبان ها</string>
+    <string name="more_app">برنامه های بیشتر</string>
+    <string name="rate_us">به ما رای دهید</string>
+    <string name="screen_mirroring">معکوس روی صفحه نمایش</string>
+    <string name="home_screen_text">مطمئن شوید که تلفن و تلویزیون شما به یک شبکه Wi-Fi متصل هستند.</string>
+    <string name="wifi_connected">Wi-Fi متصل است</string>
+    <string name="wifi_disconnected">وای فای قطع شد</string>
+    <string name="general">عمومی</string>
+    <string name="communicate">برقراری ارتباط</string>
+    <string name="send_feedback">ارسال بازخورد</string>
+    <string name="tutorial">آموزش</string>
+    <string name="how_to_use">چگونه استفاده کنیم؟</string>
+    <string name="streaming">جریان</string>
+    <string name="streaming_quality">کیفیت جریان</string>
+    <string name="auto_stop">توقف خودکار</string>
+    <string name="auto_minimize">به حداقل رساندن خودکار</string>
+    <string name="advance">پیشرفت</string>
+    <string name="orientation_mode">حالت جهت گیری</string>
+    <string name="auto_stop_body_text">وقتی اتصال به هدف قطع شد، ویدیو را \nمتوقف کنید</string>
+    <string name="auto_minimize_body_text">هنگام شروع آینه‌سازی، برنامه را مخفی کنید</string>
+    <string name="casting_orientation_body_text">جهت گیری ریخته گری</string>
+    <string name="mirroring_mode">حالت آینه کاری</string>
+    <string name="screen_mirroring_privacy_policy">سیاست حفظ حریم خصوصی نمایشگر</string>
+    <string name="privacy_policy">سیاست حفظ حریم خصوصی                                  </string>
+    <string name="supporting_devices">دستگاه های پشتیبانی</string>
+    <string name="see_which_devices_support_mirroring">ببینید کدام دستگاه‌ها از Mirroring پشتیبانی می‌کنند</string>
+    <string name="color_theme">تم رنگی</string>
+    <string name="dark">تاریک</string>
+    <string name="light">سبک</string>
+    <string name="auto">خودکار</string>
+    <string name="select_language">زبان را انتخاب کنید</string>
+    <string name="close">بستن</string>
+    <string name="images_slider">تصاویر سیلدر</string>
+    <string name="screen_mirror">آینه صفحه نمایش</string>
+    <string name="tutorial_screen_setup_body">دستگاه مورد نظر شما باید در همان شبکه Wi-Fi این دستگاه باشد، زیرا Screen Mirror صفحه نمایش شما را مخابره می کند.</string>
+    <string name="tutorial_screen_mirror_body">صفحه نمایش دستگاه خود را از طریق Wi-Fi به رایانه، نوت بوک یا رایانه لوحی خود پخش کنید.</string>
+    <string name="tutorial_device_hotspot_body">همچنین می توانید از هات اسپات دستگاه خود (حالت تترینگ) استفاده کنید و دستگاه مورد نظر خود را به هات اسپات خود متصل کنید.</string>
+    <string name="tutorial_scan_code_body">سایت را در دستگاه مورد نظر خود باز کنید. با اسکن کد QR، پیکربندی اتصال منتقل می شود و آینه سازی شروع می شود.</string>
+    <string name="tutorial_support_body">لطفاً توجه داشته باشید که Screen Mirror فقط زمانی کار می کند که به درستی تنظیم شود. Screen Mirror صفحه نمایش شما را منتقل می کند، اما نه سیگنال های صوتی دستگاه شما. اگر با مشکلی مواجه شدید با ما تماس بگیرید.</string>
+    <string name="walk_through_body_1">از جریانی روان و با کیفیت بالا\nبدون تاخیر لذت ببرید</string>
+    <string name="walk_through_body_2">با هر دستگاه هوشمندی متصل شوید و از نمایش\nدر هر صفحه‌ای لذت ببرید</string>
+    <string name="walk_through_body_3">از مرورگر خصوصی درون برنامه ای بدون محدودیت لذت ببرید</string>
+    <string name="screen_setup">راه اندازی صفحه نمایش</string>
+    <string name="device_hotspot">نقطه اتصال دستگاه</string>
+    <string name="scan_code">اسکن کد</string>
+    <string name="support">حمایت کردن</string>
+    <string name="finish">پایان</string>
+    <string name="our_policies">سیاست های ما</string>
+    <string name="privacy_policy_text">حفاظت از حریم خصوصی شما برای ما مهم است. امیدواریم بیانیه زیر به شما در درک نحوه برخورد ما با اطلاعات هویتی شخصی کمک کند، که ممکن است گاهی اوقات از طریق اینترنت (پلتفرم Google Play) در اختیار ما قرار دهید.\n\nبه طور کلی. وقتی برنامه‌های Android ما را دانلود می‌کنید، ما هیچ PII از شما جمع‌آوری نمی‌کنیم. به طور خاص، ما نیازی به بازدید مصرف کنندگان از برنامه خود نداریم، ما حتی سروری برای ذخیره چنین PII نداریم.\n\nScreen Mirroring از فیس بوک به عنوان ارائه دهنده تبلیغات استفاده می کند. فیس بوک می خواهد تبلیغات مرتبط با شما را نشان دهد. برای اطلاعات بیشتر لطفاً از\nhttps://m.facebook.com/ads/ad_choices دیدن کنید.\n\nتنها موقعیتی که ممکن است به PII شما دسترسی پیدا کنیم این است که شخصاً تصمیم می‌گیرید بازخورد خود را برای ما ایمیل کنید یا یک اشکال را به ما ارائه دهید. گزارش. PII که ممکن است در آن شرایط از شما دریافت کنیم، فقط به نام، آدرس ایمیل و پاسخ نظرسنجی شما محدود می‌شود.\n\nدر شرایط فوق، ما تضمین می‌کنیم که PII شما فقط برای تماس با شما و بهبود خدماتمان استفاده می‌شود. ما هرگز از چنین اطلاعاتی (مثلاً نام و آدرس ایمیل شما_ برای اهداف دیگری مانند بازاریابی بیشتر محصولات خود یا افشای اطلاعات شخصی شما به شخص ثالث برای منافع تجاری استفاده نخواهیم کرد.\n\nلازم به ذکر است که آیا یا ارسال نکردن بازخورد یا گزارش اشکال برای ما یک ابتکار کاملاً داوطلبانه است که با تصمیم شما انجام می شود. اگر نگران سوء استفاده از PII خود هستید یا اگر اطلاعات بیشتری در مورد خط مشی رازداری ما و معنای آن می خواهید، لطفاً به ما ایمیل بزنید. در screenmirroring.feedback@gmail.com، ما تلاش خواهیم کرد به موقع به سوالات شما پاسخ روشنی ارائه کنیم.</string>
+    <string name="please_write_your_feedback">لطفا نظرات خود را بنویسیدلطفا نظرات خود را بنویسید</string>
+    <string name="system_info">اطلاعات سیستم شما به بخش فناوری Screen Mirroring ارسال خواهد شد</string>
+    <string name="send">ارسال</string>
+    <string name="provide_feedback">ارائه بازخورد</string>
+    <string name="invalid_email_provided">ایمیل نامعتبر ارائه شده است</string>
+    <string name="check_your_internet_connection">ارتباط اینترنت خود را بررسی کنید</string>
+    <string name="type_here">اینجا تایپ کنید…اینجا تایپ کنید…</string>
+    <string name="enter_your_email_optional">ایمیل خود را وارد کنید (اختیاری)</string>
+    <string name="enjoy_the_app">از برنامه لذت می برید؟از برنامه لذت می برید؟</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">به تجربه خود با استفاده از برنامه Screen\nMirroring امتیاز دهید.</string>
+    <string name="not_now">الان نه</string>
+    <string name="feedback">بازخورد:</string>
+    <string name="model">:مدل</string>
+    <string name="brand">نام تجاری:</string>
+    <string name="os_version">نسخه سیستم عامل:</string>
+    <string name="manufacturer">شرکت تولید کننده:</string>
+    <string name="ram">رم:</string>
+    <string name="send_email">ارسال ایمیل</string>
+    <string name="select_picture">تصویر را انتخاب کنید</string>
+    <string name="help_center">مرکز کمک</string>
+    <string name="question_1">تلفن من هنگام جفت شدن با تلویزیون \nدر "اتصال" گیر می کند</string>
+    <string name="question_2">قبلا برای من کار می کرد، اما \nالان کار نمی کند.</string>
+    <string name="question_3">این نشان می دهد که دستگاه من \nپشتیبانی نمی شود.</string>
+    <string name="question_4">تلویزیون من یک تلویزیون قدیمی است و \nاز وای فای پشتیبانی نمی کند</string>
+    <string name="question_5">تصویر روی تلویزیون سیاه است، اما \nصدا شنیده می شود.</string>
+    <string name="question_6">بعد از مدتی اتصال قطع \nخواهد شد.</string>
+    <string name="question_7">آیا اطلاعات شخصی یا داده های تلفن همراه من کاملاً\n ایمن است؟</string>
+    <string name="q_answer_1_1">وای فای تلفن هوشمند را مجدداً راه اندازی کنید و ببینید آیا اتصال موفقیت آمیز است یا خیر.</string>
+    <string name="q_answer_1_2">تلویزیون را خاموش کنید و سیم برق آن را نیز از پریز جدا کنید. 1 دقیقه صبر کنید و تلویزیون را دوباره راه اندازی کنید.</string>
+    <string name="q_answer_1_3">فاصله بین تلفن و تلویزیون را کوتاه کنید. آن را از نزدیک بگیرید.</string>
+    <string name="q_answer_2_1">اگر قبلاً کار می کرد، قطعاً می توان دوباره از آن استفاده کرد.</string>
+    <string name="q_answer_2_2">اکثر مشکلات اتصال را می توان با راه اندازی مجدد دستگاه ها حل کرد. فقط تلفن و تلویزیون خود را مجددا راه اندازی کنید، روند اتصال معمولی را دنبال کنید تا دوباره امتحان کنید.</string>
+    <string name="q_answer_3_1">این بدان معناست که خود گوشی شما از عملکرد انعکاس صفحه پشتیبانی نمی کند.</string>
+    <string name="q_answer_3_2">می‌توانید از XCast برای پخش ویدیو، صدا و عکس به تلویزیون استفاده کنید. با XCast، می‌توانید هنگام ارسال محتوا به تلویزیون، کارهای دیگری را با تلفن خود انجام دهید.</string>
+    <string name="q_answer_4_1">اگر تلویزیون شما از رابط HDMI پشتیبانی می کند، توصیه می کنیم یک گیرنده خارجی برای انعکاس صفحه بخرید. مانند Chromecast، Anycast و غیره.</string>
+    <string name="q_answer_5_1">برخی از محتواها شامل حفاظت از حق چاپ است و نمی‌توانند در دستگاه‌های شخص ثالث مانند نتفلیکس، دیزنی پلاس و غیره نمایش داده شوند.</string>
+    <string name="q_answer_5_2">می‌توانید ویدیو را دانلود کنید یا به دنبال همان منبع در برنامه‌های دیگر بگردید تا امتحان کنید.</string>
+    <string name="q_answer_6_1">می توانید Smart Connect را در تنظیمات Wi-Fi خود روشن کنید. دائماً اتصالات Wi-Fi بهتر را جستجو می کند و همیشه به عقب و جلو متصل می شود.</string>
+    <string name="q_answer_6_2">لطفا مطمئن شوید که وای فای تلفن همراه و تلویزیون SAM و بهترین سیگنال است.</string>
+    <string name="q_answer_7_1">ما هیچ گونه اطلاعاتی در مورد شما و تلفن همراه شما نظارت یا جمع آوری نمی کنیم. می توانید بدون هیچ نگرانی صفحه نمایش خود را ارسال کنید.</string>
+    <string name="q_answer_7_2">ممکن است سیستم به شما هشدار دهد که قبل از انعکاس صفحه یک خطر ایمنی وجود دارد. این فقط یک یادآوری معمولی است، خواهد بود.</string>
+    <string name="wi_fi">وای فای</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">نصب</string>
+    <string name="install_small">نصب</string>
+    <string name="manual">کتابچه راهنمای</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">مطمئن شوید که تلفن و تلویزیون شما به یک شبکه Wi-Fi متصل هستند.</string>
+    <string name="hd_streaming">جریان HD</string>
+    <string name="smart_devices">دستگاه های هوشمند</string>
+    <string name="private_browser">مرورگر خصوصی</string>
+    <string name="effects">جلوه ها</string>
+    <string name="slider">لغزنده</string>
+    <string name="search_or_type_web_address">آدرس وب را جستجو یا تایپ کنید</string>
+    <string name="install_2">نصب</string>
+    <string name="bookmark">نشانک</string>
+    <string name="downloads">دانلودها</string>
+    <string name="download">دانلود</string>
+    <string name="favorites">موارد دلخواه</string>
+    <string name="favorite">مورد علاقه</string>
+    <string name="history">تاریخ</string>
+    <string name="share_pdf">پی دی اف را به اشتراک بگذارید</string>
+    <string name="copy_url">URL را کپی کنید</string>
+    <string name="share_app">نرم افزار اشتراک گذاری</string>
+    <string name="share_url">آدرس اینترنتی را به اشتراک بگذارید</string>
+    <string name="exit">خروج</string>
+    <string name="new_tab">برگه جدید</string>
+    <string name="google">گوگل</string>
+    <string name="startpage">صفحه شروع</string>
+    <string name="bing">بینگ</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">سرکس</string>
+    <string name="baidu">بایدو</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">اکوزیا</string>
+    <string name="custom_search_engine">موتور جستجوی سفارشی</string>
+    <string name="add_shortcut_to_home">افزودن میانبر به خانه</string>
+    <string name="save_screenshot">ذخیره اسکرین شات</string>
+    <string name="add_to_bookmark">به نشانک اضافه کنید</string>
+    <string name="save_as_pdf">به صورت pdf ذخیره کنید</string>
+    <string name="save_action">Save Action</string>
+    <string name="add_to_favorite">افزودن به علاقه مندیها</string>
+    <string name="search_engine">موتور جستجو</string>
+    <string name="browser_exit_body">آیا مطمئن هستید که می خواهید از مرورگر خارج شوید؟</string>
+    <string name="exit_browser">خروج از مرورگر</string>
+    <string name="custom_user_agent">عامل کاربر سفارشی</string>
+    <string name="start_control">کنترل را شروع کنید</string>
+    <string name="data_control">کنترل داده ها</string>
+    <string name="app_settings">تنظیمات برنامه</string>
+    <string name="browser_settings">تنظیمات مرورگر</string>
+    <string name="behavior_ui">رفتار/UI</string>
+    <string name="clear_cache">پاک کردن حافظه پنهان</string>
+    <string name="clear_history">پاک کردن تاریخچه</string>
+    <string name="clear_browsing_history">تاریخچه مرور را پاک کنید</string>
+    <string name="clear_all_cache">تمام حافظه پنهان را پاک کنید</string>
+    <string name="clear_database_body">«پایگاه‌های اطلاعاتی فهرست‌شده» و «پایگاه‌های داده محلی» را پاک کنید</string>
+    <string name="clear_cookies_body">در صورت فعال بودن، تمام کوکی ها حذف خواهند شد. همچنین\nکوکی‌های وب‌سایت‌های مورد اعتماد</string>
+    <string name="clear_databases">پایگاه داده ها را پاک کنید</string>
+    <string name="clear_cookies">پاک کردن کوکی ها</string>
+    <string name="clear_when_application_exit">هنگام خروج برنامه پاک شود</string>
+    <string name="clear_when_application_exit_body">هر بار که از همه داده‌های علامت‌گذاری شده در بالا خارج می‌شوید\nحذف می‌شوند</string>
+    <string name="image">تصویر</string>
+    <string name="javascript">جاوا اسکریپت</string>
+    <string name="cookies">بیسکویت ها</string>
+    <string name="reopen_last_tab">آخرین برگه را دوباره باز کنید</string>
+    <string name="confirm_tab_close">بستن برگه را تأیید کنید</string>
+    <string name="confirm_browser_exit">خروج از مرورگر را تأیید کنید</string>
+    <string name="position">موقعیت</string>
+    <string name="first_toolbar">اولین نوار ابزار</string>
+    <string name="hide_toolbar">پنهان کردن نوار ابزار</string>
+    <string name="toolbar">نوار ابزار</string>
+    <string name="bookmarks">نشانک ها</string>
+    <string name="edit">ویرایش کنید</string>
+    <string name="today">امروز</string>
+    <string name="the_last_hour">ساعت آخر</string>
+    <string name="last_week">هفته گذشته</string>
+    <string name="last_month">ماه گذشته</string>
+    <string name="delete_all_history">تمام تاریخچه را حذف کنید</string>
+    <string name="copied">کپی شده</string>
+    <string name="share_ss">SS را به اشتراک بگذارید</string>
+    <string name="file_manager">مدیر فایل</string>
+    <string name="search_on">جستجو در</string>
+    <string name="add_shortcut">میانبر اضافه کنید</string>
+    <string name="tab_exit">خروج از برگه</string>
+    <string name="do_you_want_to_close">میخوای ببندی</string>
+    <string name="download_complete_share_image">دانلود کامل شد. تصویر را به اشتراک بگذارید</string>
+    <string name="update">به روز رسانی</string>
+    <string name="unfavorite">غیر مورد علاقه</string>
+    <string name="no_input_provided">ورودی ارائه نشده است</string>
+    <string name="input">ورودی</string>
+    <string name="website_link">لینک وب سایت</string>
+    <string name="for_you">برای شما</string>
+    <string name="website">سایت اینترنتی:</string>
+    <string name="url">آدرس اینترنتی:</string>
+    <string name="date">تاریخ</string>
+    <string name="no_site_loaded">شما وب سایت را بارگذاری نکرده اید</string>
+    <string name="more_then_5_images_can_not_be_picked">بیش از پنج تصویر را نمی توان انتخاب کرد</string>
+</resources>

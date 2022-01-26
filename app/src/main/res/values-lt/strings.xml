@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Lithuanian-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">Ar norėtumėte atšaukti dabartinį VPN ryšį?</string>
+    <string name="yes">TAIP</string>
+    <string name="no">NE</string>
+    <string name="yes_2">Taip</string>
+    <string name="no_2">Nr</string>
+    <string name="select_images">Pasirinkite Vaizdai</string>
+    <string name="tabs">Skirtukai</string>
+    <string name="share">Dalintis</string>
+    <string name="save">Sutaupyti</string>
+    <string name="more">Daugiau</string>
+    <string name="ok">Gerai</string>
+    <string name="cancel">Atšaukti</string>
+    <string name="favorite_site">Pakeiskite numatytąją svetainę, kuri įkeliama\npaleidus naršyklę</string>
+    <string name="custom_search_engine_body">Pridėkite tinkintą paieškos URL, taip pat kaip paieškos teikėją pasirinkite „Custom\nSearch Engine“.</string>
+    <string name="search_engine_body">Pasirinkite pageidaujamą paieškos variklį arba\nnustatykite tinkintą</string>
+    <string name="data_control_body">Išvalykite naršyklės duomenis arba nuspręskite, kurie duomenys\nbus išvalyti, kai išeisite iš programos</string>
+    <string name="start_control_body">Nuspręskite, kurie naršyklės komponentai\nbus paleisti</string>
+    <string name="behavior_ui_body">Pakeiskite programos elgseną ir vartotojo sąsają,\natitinkant savo nuostatas</string>
+    <string name="book_mark_body">Norėdami pamatyti filtro dialogo langą, apžvalgoje ilgai paspauskite žymės piktogramą. Nuspręskite, kokius filtrus naudosite</string>
+    <string name="app_settings_body">Naršyklės nustatymuose galite suteikti leidimą, atsižvelgdami į\nyį „Android“ versiją.</string>
+    <string name="start_control_image_body">Įgalinti tinklo vaizdus. Išjungimas gali būti naudingas\ntaupyti mobiliojo ryšio duomenis ir greičiau įkelti svetainę</string>
+    <string name="start_control_location_body">Leiskite svetainėms pasiekti jūsų vietą. Kai kuriose\nsvetainėse {google, maps for nav) reikia šio įgalinimo</string>
+    <string name="start_control_history_body">Išsaugokite aplankytų svetainių istoriją</string>
+    <string name="start_control_java_script_body">Įgalinti JavaScript. Daugeliui svetainių reikia\nJavaScript, kad jos veiktų. Tačiau jie\n taip pat yra poilsio ir gali būti naudojami atakoms</string>
+    <string name="start_control_cookies_body">Įjungti slapukus. Slapukai yra maži tekstiniai failai,
+kurios yra saugomos jūsų įrenginyje. Tinklalapių naudojimas
+pavyzdžiui, kad išsaugotumėte vartotojo nustatymus. Bet
+jie taip pat gali būti naudojami asmeniniam vartotojui rinkti
+duomenis. Trečiųjų šalių slapukai visada išjungti.</string>
+    <string name="confirmation_browser_exit_body">Patvirtinimo dialogo langas\nždarant naršyklę</string>
+    <string name="confirmation_tab_close_body">Patvirtinimo dialogo langas uždarant skirtuką</string>
+    <string name="confirmation_reopen_last_body">Užuot išėjus iš naršyklės, iš naujo atidarykite naują skirtuką, kai paskutinis skirtukas uždarytas</string>
+    <string name="hide_toolbar_body">Slinkdami svetainėje naudokite visą ekraną, jei paspausite atgal mygtuką, išeisite iš viso ekrano režimo</string>
+    <string name="images">Vaizdai</string>
+    <string name="videos">Vaizdo įrašai</string>
+    <string name="web_browser">Interneto naršyklė</string>
+    <string name="image_slider">Vaizdo slankiklis</string>
+    <string name="next">Kitas</string>
+    <string name="previous">Ankstesnis</string>
+    <string name="help">Pagalba</string>
+    <string name="settings">Nustatymai</string>
+    <string name="language">Kalbos</string>
+    <string name="more_app">Daugiau programėlių</string>
+    <string name="rate_us">Įvertinkite mus</string>
+    <string name="screen_mirroring">Ekrano dubliavimas</string>
+    <string name="home_screen_text">Įsitikinkite, kad telefonas ir televizorius prijungti prie to paties „Wi-Fi“ tinklo.</string>
+    <string name="wifi_connected">„Wi-Fi“ prijungtas</string>
+    <string name="wifi_disconnected">Wi-Fi atjungtas</string>
+    <string name="general">Generolas</string>
+    <string name="communicate">Bendrauti</string>
+    <string name="send_feedback">Siųsti atsiliepimą</string>
+    <string name="tutorial">Pamoka</string>
+    <string name="how_to_use">Kaip naudoti?</string>
+    <string name="streaming">Srautinis perdavimas</string>
+    <string name="streaming_quality">Srautinės transliacijos kokybė</string>
+    <string name="auto_stop">Automatinis sustojimas</string>
+    <string name="auto_minimize">Automatinis sumažinimas</string>
+    <string name="advance">Išankstinis</string>
+    <string name="orientation_mode">Orientacijos režimas</string>
+    <string name="auto_stop_body_text">Sustabdykite vaizdo įrašą, kai ryšys\nnutrūksta su tikslu</string>
+    <string name="auto_minimize_body_text">Slėpti programą, kai prasideda atspindėjimas</string>
+    <string name="casting_orientation_body_text">Liejimo orientacija</string>
+    <string name="mirroring_mode">Veidrodinis režimas</string>
+    <string name="screen_mirroring_privacy_policy">Ekrano atspindėjimo privatumo politika</string>
+    <string name="privacy_policy">Privatumo politika</string>
+    <string name="supporting_devices">Pagalbiniai įrenginiai</string>
+    <string name="see_which_devices_support_mirroring">Žr., kurie įrenginiai palaiko dubliavimą</string>
+    <string name="color_theme">Spalvų tema</string>
+    <string name="dark">Tamsus</string>
+    <string name="light">Šviesa</string>
+    <string name="auto">Automatinis</string>
+    <string name="select_language">Pasirinkite kalbą</string>
+    <string name="close">Uždaryti</string>
+    <string name="images_slider">Vaizdai Slankiklis</string>
+    <string name="screen_mirror">Ekrano veidrodis</string>
+    <string name="tutorial_screen_setup_body">Jūsų tikslinis įrenginys turi būti tame pačiame „Wi-Fi“ tinkle kaip ir šis įrenginys, nes „Screen Mirror“ perduoda jūsų ekraną.</string>
+    <string name="tutorial_screen_mirror_body">Perduokite įrenginio ekraną srautu per „Wi-Fi“ į kompiuterį, nešiojamąjį kompiuterį ar planšetinį kompiuterį.</string>
+    <string name="tutorial_device_hotspot_body">Taip pat galite naudoti savo įrenginio viešosios interneto prieigos tašką (pririšimo režimą) ir prijungti tikslinį įrenginį prie viešosios interneto prieigos taško.</string>
+    <string name="tutorial_scan_code_body">Atidarykite svetainę tiksliniame įrenginyje. Nuskenavus QR kodą, perduodama ryšio konfigūracija ir pradedamas atspindėti.</string>
+    <string name="tutorial_support_body">Atminkite, kad ekrano veidrodis veikia tik tada, kai nustatyta tinkamai. Ekrano veidrodis perduoda ekraną, bet ne įrenginio garso signalus. Jei susiduriate su problemomis, susisiekite su mumis.</string>
+    <string name="walk_through_body_1">Mėgaukitės sklandžiu ir aukštos kokybės srautiniu perdavimu\nbe vėlavimų</string>
+    <string name="walk_through_body_2">Prisijunkite prie bet kurio išmaniojo įrenginio ir mėgaukitės\nšou bet kuriame ekrane</string>
+    <string name="walk_through_body_3">Mėgaukitės privačia naršykle programoje be jokių apribojimų</string>
+    <string name="screen_setup">Ekrano sąranka</string>
+    <string name="device_hotspot">Įrenginio viešosios interneto prieigos taškas</string>
+    <string name="scan_code">Nuskaityti kodą</string>
+    <string name="support">Palaikymas</string>
+    <string name="finish">Baigti</string>
+    <string name="our_policies">Mūsų politika</string>
+    <string name="privacy_policy_text">Mums svarbu apsaugoti jūsų privatumą. Tikimės, kad šis teiginys padės suprasti, kaip elgiamės su asmenį identifikuojančia informacija, kurią kartais galite mums pateikti internetu ("Google Play" platforma).\n\nPaprastai. mes nerenkame iš jūsų AII, kai atsisiunčiate mūsų „Android“ programas. Tiksliau tariant, mes nereikalaujame, kad vartotojai apsilankytų mūsų programoje, net neturime serverio tokiai AII saugoti.\n\nScreen Mirroring naudoja Facebook kaip skelbimų teikėją. „Facebook“ nori rodyti jums aktualius skelbimus. Norėdami gauti daugiau informacijos, apsilankykite adresu\nhttps://m.facebook.com/ads/ad_choices.\n\nVienintelė situacija, kai galime gauti prieigą prie jūsų AII, yra tada, kai asmeniškai nuspręsite atsiųsti mums atsiliepimą el. paštu arba pranešti apie riktą. ataskaita. AII, kurias galime gauti iš jūsų tokiu atveju, yra griežtai apribota tik jūsų vardu, el. pašto adresu ir jūsų atsakymu į apklausą.\n\nAukščiau pateiktoje situacijoje garantuojame, kad jūsų AII bus naudojama tik susisiekti su jumis ir tobulinti mūsų paslaugas. Niekada nenaudosime tokios informacijos (pvz., jūsų vardo ir el. pašto adreso_ jokiems kitiems tikslams, pvz., toliau reklamuoti savo produktus arba atskleisti jūsų asmeninę informaciją trečiajai šaliai siekdami komercinės naudos.\n\nReikėtų atkreipti dėmesį į tai, ar nesiųsti mums savo atsiliepimų ar pranešimų apie klaidas yra visiškai savanoriška iniciatyva jūsų paties sprendimu. Jei nerimaujate dėl piktnaudžiavimo jūsų AII arba norite gauti daugiau informacijos apie mūsų privatumo politiką ir ką ji reiškia, nedvejodami atsiųskite mums el. adresu screenmirroring.feedback@gmail.com, mes pasistengsime laiku pateikti aiškius atsakymus į jūsų klausimus .</string>
+    <string name="please_write_your_feedback">Parašykite atsiliepimą</string>
+    <string name="system_info">Jūsų sistemos informacija bus nusiųsta į Ekrano atspindėjimo technologijų skyrių</string>
+    <string name="send">Siųsti</string>
+    <string name="provide_feedback">pateikti atsiliepimą</string>
+    <string name="invalid_email_provided">Pateiktas neteisingas el</string>
+    <string name="check_your_internet_connection">Patikrinkite interneto ryšį</string>
+    <string name="type_here">rašykite čia…</string>
+    <string name="enter_your_email_optional">Įveskite savo el. pašto adresą (neprivaloma)</string>
+    <string name="enjoy_the_app">Mėgaukitės programa?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Įvertinkite savo patirtį naudojant Screen\nMiroring App.</string>
+    <string name="not_now">Ne dabar</string>
+    <string name="feedback">Atsiliepimas:</string>
+    <string name="model">Modelis:</string>
+    <string name="brand">Prekinis ženklas:</string>
+    <string name="os_version">OS versija:</string>
+    <string name="manufacturer">Gamintojas:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Išsiųsti laišką</string>
+    <string name="select_picture">Pasirinkite paveikslėlį</string>
+    <string name="help_center">Pagalbos centras</string>
+    <string name="question_1">Mano telefonas užstringa ties „Prisijungimas“, kai susiejamas su televizoriumi.</string>
+    <string name="question_2">Tai man veikė anksčiau, bet \nneveikia dabar.</string>
+    <string name="question_3">Tai rodo, kad mano įrenginys \nnepalaikomas.</string>
+    <string name="question_4">Mano televizorius yra senas ir \nnepalaiko „Wi-Fi“.</string>
+    <string name="question_5">Televizoriaus vaizdas juodas, \nbet garsas girdisi.</string>
+    <string name="question_6">Ryšys po kurio laiko \nnutrūks.</string>
+    <string name="question_7">Ar mano asmeninė informacija arba mobiliojo ryšio duomenys yra visiškai saugūs?</string>
+    <string name="q_answer_1_1">Iš naujo paleiskite išmaniojo telefono „Wi-Fi“ ryšį ir patikrinkite, ar ryšys sėkmingas.</string>
+    <string name="q_answer_1_2">Išjunkite televizorių ir taip pat ištraukite jo maitinimo laidą iš lizdo. Palaukite 1 minutę ir iš naujo paleiskite televizorių.</string>
+    <string name="q_answer_1_3">Sutrumpinkite atstumą tarp telefono ir televizoriaus. Paimkite jį iš arti.</string>
+    <string name="q_answer_2_1">Jei jis veikė anksčiau, jis tikrai gali būti naudojamas dar kartą.</string>
+    <string name="q_answer_2_2">Daugumą ryšio problemų galima išspręsti iš naujo paleidus įrenginius. Tiesiog iš naujo paleiskite telefoną ir televizorių, atlikite įprastą prisijungimo procesą ir bandykite dar kartą.</string>
+    <string name="q_answer_3_1">Tai reiškia, kad pats jūsų telefonas nepalaiko ekrano atspindėjimo funkcijos.</string>
+    <string name="q_answer_3_2">Galite naudoti XCast, norėdami perduoti vaizdo įrašus, garsą ir nuotraukas į televizorių. Naudodami XCast galite atlikti kitus veiksmus su telefonu, kai perduodate į televizorių.</string>
+    <string name="q_answer_4_1">Jei jūsų televizorius palaiko HDMI sąsają, rekomenduojame įsigyti išorinį imtuvą ekrano atspindėjimui. Tokie kaip „Chromecast“, „Anycast“ ir kt.</string>
+    <string name="q_answer_5_1">Tam tikras turinys yra saugomas autorių teisių ir negali būti rodomas trečiųjų šalių įrenginiuose, pvz., „Netflix“, „Disney Plus“ ir kt.</string>
+    <string name="q_answer_5_2">Galite atsisiųsti vaizdo įrašą arba ieškoti to paties šaltinio kitose programose ir išbandyti.</string>
+    <string name="q_answer_6_1">„Smart Connect“ galite įjungti „Wi-Fi“ nustatymuose. Jis nuolat ieškos geresnių „Wi-Fi“ ryšių ir visada jungsis pirmyn ir atgal.</string>
+    <string name="q_answer_6_2">Įsitikinkite, kad mobiliojo telefono ir televizoriaus Wi-Fi yra SAM ir geriausias signalas.</string>
+    <string name="q_answer_7_1">Nestebėsime ir nerinksime jokios informacijos apie jus ir jūsų mobilųjį telefoną. Galite perduoti ekraną be rūpesčių.</string>
+    <string name="q_answer_7_2">Sistema gali įspėti, kad yra pavojus saugai prieš ekrano veidrodį. Tai tik eilinis priminimas, taip ir bus</string>
+    <string name="wi_fi">BEVIELIS INTERNETAS</string>
+    <string name="miracast">MIRA CAST</string>
+    <string name="install">DIEGTI</string>
+    <string name="install_small">Diegti</string>
+    <string name="manual">vadovas</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Įsitikinkite, kad telefonas ir televizorius yra prijungti\nprie to paties „Wi-Fi“ tinklo.</string>
+    <string name="hd_streaming">HD srautas</string>
+    <string name="smart_devices">išmanieji įrenginiai</string>
+    <string name="private_browser">Privati naršyklė</string>
+    <string name="effects">Efektai</string>
+    <string name="slider">Slankiklis</string>
+    <string name="search_or_type_web_address">Ieškokite arba įveskite žiniatinklio adresą</string>
+    <string name="install_2">Diegti</string>
+    <string name="bookmark">Skirtukas</string>
+    <string name="downloads">Atsisiuntimai</string>
+    <string name="download">parsisiųsti</string>
+    <string name="favorites">Mėgstamiausi</string>
+    <string name="favorite">Mėgstamiausias</string>
+    <string name="history">Istorija</string>
+    <string name="share_pdf">Dalintis pdf</string>
+    <string name="copy_url">Kopijuoti URL</string>
+    <string name="share_app">Bendrinti programą</string>
+    <string name="share_url">Bendrinti URL</string>
+    <string name="exit">Išeiti</string>
+    <string name="new_tab">Naujas skirtukas</string>
+    <string name="google">Google</string>
+    <string name="startpage">Pradinis puslapis</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Individualizuota paieškos sistema</string>
+    <string name="add_shortcut_to_home">Pridėkite nuorodą į namus</string>
+    <string name="save_screenshot">Išsaugoti ekrano kopiją</string>
+    <string name="add_to_bookmark">Pridėti prie žymės</string>
+    <string name="save_as_pdf">Išsaugoti kaip pdf</string>
+    <string name="save_action">Išsaugoti veiksmą</string>
+    <string name="add_to_favorite">Pridėti prie mėgstamiausių</string>
+    <string name="search_engine">Paieškos variklis</string>
+    <string name="browser_exit_body">Ar tikrai norite išeiti iš naršyklės</string>
+    <string name="exit_browser">Išeikite iš naršyklės</string>
+    <string name="custom_user_agent">Pasirinktinis vartotojo agentas</string>
+    <string name="start_control">Pradėti valdymą</string>
+    <string name="data_control">Duomenų valdymas</string>
+    <string name="app_settings">Programos nustatymai</string>
+    <string name="browser_settings">Naršyklės nustatymai</string>
+    <string name="behavior_ui">Elgesys / vartotojo sąsaja</string>
+    <string name="clear_cache">Išvalyti talpyklą</string>
+    <string name="clear_history">Išvalyti istoriją</string>
+    <string name="clear_browsing_history">Išvalyti naršymo istoriją</string>
+    <string name="clear_all_cache">Išvalyti visą talpyklą</string>
+    <string name="clear_database_body">Išvalykite „indeksuotas duomenų bazes“ ir „vietines\data bazes“</string>
+    <string name="clear_cookies_body">Jei įjungta, visi slapukai bus ištrinti. Taip pat\npatikimų svetainių slapukai</string>
+    <string name="clear_databases">Išvalyti duomenų bazes</string>
+    <string name="clear_cookies">Išvalyti slapukus</string>
+    <string name="clear_when_application_exit">Išvalyti, kai programa išeina</string>
+    <string name="clear_when_application_exit_body">Kiekvieną kartą, kai išeisite, visi aukščiau pažymėti duomenys\nbus ištrinti</string>
+    <string name="image">Vaizdas</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Slapukai</string>
+    <string name="reopen_last_tab">Iš naujo atidaryti paskutinį skirtuką</string>
+    <string name="confirm_tab_close">Patvirtinkite skirtuko uždarymą</string>
+    <string name="confirm_browser_exit">Patvirtinkite naršyklės išėjimą</string>
+    <string name="position">Padėtis</string>
+    <string name="first_toolbar">Pirmoji įrankių juosta</string>
+    <string name="hide_toolbar">Slėpti įrankių juostą</string>
+    <string name="toolbar">Įrankių juosta</string>
+    <string name="bookmarks">Žymės</string>
+    <string name="edit">Redaguoti</string>
+    <string name="today">Šiandien</string>
+    <string name="the_last_hour">Paskutinė valanda</string>
+    <string name="last_week">Praeitą savaitę</string>
+    <string name="last_month">Praeitą mėnesį</string>
+    <string name="delete_all_history">Ištrinti visą istoriją</string>
+    <string name="copied">nukopijuota</string>
+    <string name="share_ss">Dalintis SS</string>
+    <string name="file_manager">Failų tvarkyklė</string>
+    <string name="search_on">Paieška įjungta</string>
+    <string name="add_shortcut">Pridėti nuorodą</string>
+    <string name="tab_exit">Skirtukas Išeiti</string>
+    <string name="do_you_want_to_close">Ar norite uždaryti</string>
+    <string name="download_complete_share_image">Atsisiuntimas baigtas. Bendrinti vaizdą</string>
+    <string name="update">Atnaujinti</string>
+    <string name="unfavorite">Nemėgstamas</string>
+    <string name="no_input_provided">Įvestis nepateikta</string>
+    <string name="input">Įvestis</string>
+    <string name="website_link">Svetainės nuoroda</string>
+    <string name="for_you">Tau</string>
+    <string name="website">Interneto svetainė:</string>
+    <string name="url">URL:</string>
+    <string name="date">Data</string>
+    <string name="no_site_loaded">Neturite įkeltos svetainės</string>
+    <string name="more_then_5_images_can_not_be_picked">Negalima pasirinkti daugiau nei penkių vaizdų</string>
+    <string name="location">"Vieta "</string>
+</resources>

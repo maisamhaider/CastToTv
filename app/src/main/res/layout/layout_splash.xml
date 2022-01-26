@@ -35,9 +35,9 @@
             app:layout_constraintTop_toTopOf="@+id/guideline273" />
 
         <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textview_slogan"
             style="@style/subheading_w0_h0"
             android:gravity="center"
-            android:id="@+id/textview_slogan"
             android:text="@string/make_sure_your_phone_and_tv_are_connected"
             android:textColor="@color/cr_white_60"
             app:layout_constraintBottom_toTopOf="@+id/guideline275"

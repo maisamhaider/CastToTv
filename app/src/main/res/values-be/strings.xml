@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Belarusian-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="location">"Месцазнаходжанне "</string>
+
+    <string name="connection_close_confirm">Вы жадаеце адмяніць бягучае VPN-злучэнне?</string>
+    <string name="yes">ТАК</string>
+    <string name="no">НЕ</string>
+    <string name="yes_2">Так</string>
+    <string name="no_2">не</string>
+    <string name="select_images">Выберыце выявы</string>
+    <string name="tabs">Ўкладкі</string>
+    <string name="share">Падзяліцеся</string>
+    <string name="save">Захаваць</string>
+    <string name="more">Больш падрабязна</string>
+    <string name="ok">добра</string>
+    <string name="cancel">Адмяніць</string>
+    <string name="favorite_site">Змяніць вэб-сайт па змаўчанні, які загружаецца пры\nзапуску браўзера</string>
+    <string name="custom_search_engine_body">Дадайце URL-адрас карыстальніцкага пошуку, а таксама выберыце «Custom\nsearch engine» у якасці пастаўшчыка пошуку</string>
+    <string name="search_engine_body">Выберыце ўпадабаную пошукавую сістэму або\nусталюйце карыстальніцкую</string>
+    <string name="data_control_body">Ачысціце даныя вашага браўзера або вызначыце, якія даныя\nбудуць выдалены, калі вы выйдзеце з праграмы</string>
+    <string name="start_control_body">Вырашыце, якія кампаненты браўзера\nбудуць запушчаны</string>
+    <string name="behavior_ui_body">Змяніце паводзіны і карыстальніцкі інтэрфейс праграмы,\nадпавядаючы вашым перавагам</string>
+    <string name="book_mark_body">Каб паказаць дыялогавае акно фільтра, доўга націсніце на значок закладкі ў аглядзе. Вырашыце, якія фільтры вы будзеце выкарыстоўваць</string>
+    <string name="app_settings_body">Налады браўзера, там вы можаце ў залежнасці ад\nверсіі Android даць дазвол.</string>
+    <string name="start_control_image_body">Уключыце выявы сеткі. Адключэнне можа быць карысным\nдля эканоміі мабільных даных і больш хуткай загрузкі вэб-сайта</string>
+    <string name="start_control_location_body">Дазволіць вэб-сайтам доступ да вашага месцазнаходжання. Некаторым\nсайтам {google, карты для навігацыі) гэта патрэбна</string>
+    <string name="start_control_history_body">Захаваць гісторыю наведаных вэб-сайтаў</string>
+    <string name="start_control_java_script_body">Уключыць JavaScript. Шматлікім вэб-сайтам патрэбны\nJavaScript для іх функцыянальнасці. Але яны\nтаксама адпачываюць і могуць выкарыстоўвацца для нападаў</string>
+    <string name="start_control_cookies_body">Уключыць файлы cookie. Cookies - гэта невялікія тэкставыя файлы,
+якія захоўваюцца на вашым прыладзе. Вэб-сайты выкарыстоўваюць
+іх, напрыклад, для захоўвання налад карыстальнікаў. Але
+яны таксама могуць быць выкарыстаны для збору асабістых карыстальнікаў
+дадзеныя. Файлы cookie трэціх асоб заўсёды адключаныя.</string>
+    <string name="confirmation_browser_exit_body">Дыялог пацверджання пры\ncзакрыцці браўзера</string>
+    <string name="confirmation_tab_close_body">Дыялог пацверджання пры закрыцці ўкладкі</string>
+    <string name="confirmation_reopen_last_body">Адкрыйце новую ўкладку, калі апошняя ўкладка будзе закрыта, замест таго, каб выйсці з браўзера</string>
+    <string name="hide_toolbar_body">Выкарыстоўвайце ўвесь экран пры пракрутцы вэб-сайта, калі вы націснеце кнопку «Назад», вы выйдзеце з поўнаэкраннага рэжыму</string>
+    <string name="images">Выявы</string>
+    <string name="videos">Відэаролікі</string>
+    <string name="web_browser">Вэб-браўзэр</string>
+    <string name="image_slider">Паўзунок малюнкаў</string>
+    <string name="next">Далей</string>
+    <string name="previous">Папярэдні</string>
+    <string name="help">Дапамажыце</string>
+    <string name="settings">Налады</string>
+    <string name="language">Мовы</string>
+    <string name="more_app">Больш прыкладанняў</string>
+    <string name="rate_us">Ацаніце нас</string>
+    <string name="screen_mirroring">Адлюстраванне экрана</string>
+    <string name="home_screen_text">Пераканайцеся, што ваш тэлефон і тэлевізар падключаны да адной сеткі Wi-Fi.</string>
+    <string name="wifi_connected">Wi-Fi падключаны</string>
+    <string name="wifi_disconnected">Wi-Fi адключаны</string>
+    <string name="general">Агульны</string>
+    <string name="communicate">Майце зносіны</string>
+    <string name="send_feedback">Адправіць водгук</string>
+    <string name="tutorial">Падручнік</string>
+    <string name="how_to_use">Як выкарыстоўваць?</string>
+    <string name="streaming">Струменевае</string>
+    <string name="streaming_quality">Якасць струменевай трансляцыі</string>
+    <string name="auto_stop">Аўтаматычны прыпынак</string>
+    <string name="auto_minimize">Аўтаматычны згортванне</string>
+    <string name="advance">Загадзя</string>
+    <string name="orientation_mode">Рэжым арыентацыі</string>
+    <string name="auto_stop_body_text">Спыніць відэа, калі\nзлучэнне з мэтай страчана</string>
+    <string name="auto_minimize_body_text">Схаваць праграму, калі пачынаецца люстранае адлюстраванне</string>
+    <string name="casting_orientation_body_text">Арыентацыя ліцця</string>
+    <string name="mirroring_mode">Рэжым люстранога адлюстравання</string>
+    <string name="screen_mirroring_privacy_policy">Палітыка канфідэнцыяльнасці адлюстравання экрана</string>
+    <string name="privacy_policy">Палітыка прыватнасці</string>
+    <string name="supporting_devices">Дапаможныя прылады</string>
+    <string name="see_which_devices_support_mirroring">Паглядзіце, якія прылады падтрымліваюць люстраванне</string>
+    <string name="color_theme">Каляровая тэма</string>
+    <string name="dark">Цёмны</string>
+    <string name="light">Святло</string>
+    <string name="auto">Аўтаматычны</string>
+    <string name="select_language">Выберыце Мова</string>
+    <string name="close">блізка</string>
+    <string name="images_slider">Малюнкі Паўзунок</string>
+    <string name="screen_mirror">Экраннае люстэрка</string>
+    <string name="tutorial_screen_setup_body">Ваша мэтавая прылада павінна быць у той жа сетцы Wi-Fi, што і гэта прылада, таму што Screen Mirror перадае ваш экран.</string>
+    <string name="tutorial_screen_mirror_body">Трансліруйце экран вашага прылады праз Wi-Fi на кампутар, ноўтбук або планшэт.</string>
+    <string name="tutorial_device_hotspot_body">Вы таксама можаце выкарыстоўваць хот-спот вашай прылады (рэжым прывязкі) і падключыць мэтавую прыладу да вашай кропкі доступу.</string>
+    <string name="tutorial_scan_code_body">Адкрыйце сайт на вашым мэтавым прыладзе. Пры сканаванні QR-кода перадаецца канфігурацыя злучэння і пачынаецца люстраванне.</string>
+    <string name="tutorial_support_body">Звярніце ўвагу, што Screen Mirror працуе толькі пры правільнай наладзе. Screen Mirror перадае ваш экран, але не гукавыя сігналы вашай прылады. Калі ў вас узніклі праблемы, звяжыцеся з намі.</string>
+    <string name="walk_through_body_1">Атрымлівайце асалоду ад плыўнай і якаснай трансляцыі\nбез затрымкі</string>
+    <string name="walk_through_body_2">Падключыцеся да любой разумнай прылады і атрымлівайце асалоду ад\nпраглядам на любым экране</string>
+    <string name="walk_through_body_3">Атрымлівайце асалоду ад прыватным браўзерам у дадатку без абмежаванняў</string>
+    <string name="screen_setup">Налада экрана</string>
+    <string name="device_hotspot">Кропка доступу прылады</string>
+    <string name="scan_code">Код сканавання</string>
+    <string name="support">Падтрымка</string>
+    <string name="finish">Скончыць</string>
+    <string name="our_policies">Наша палітыка</string>
+    <string name="privacy_policy_text">Для нас важная абарона вашай прыватнасці. Мы спадзяемся, што наступная заява дапаможа вам зразумець, як мы працуем з персанальнай інфармацыяй, якую вы можаце час ад часу прадастаўляць нам праз Інтэрнэт (платформа Google Play).\n\nЯк правіла. мы не збіраем ад вас ніякіх PII, калі вы загружаеце нашы прыкладанні для Android. Калі быць дакладным, мы не патрабуем наведвання спажыўцамі нашага прыкладання, у нас нават няма сервера для захоўвання такой PII.\n\nScreen Mirroring выкарыстоўвае Facebook у якасці пастаўшчыка рэкламы. Facebook хоча паказваць рэкламу, якая адносіцца да вас. Для атрымання дадатковай інфармацыі, калі ласка, наведайце\nhttps://m.facebook.com/ads/ad_choices.\n\nАдзіная сітуацыя, у якой мы можам атрымаць доступ да вашай ІП, гэта калі вы асабіста вырашыце адправіць нам па электроннай пошце свой водгук або паведаміць нам пра памылку даклад. Ідэнтыфікацыйныя дадзеныя, якія мы можам атрымаць ад вас у гэтай сітуацыі, строга абмяжоўваюцца вашым імем, адрасам электроннай пошты і вашым адказам на апытанне.\n\nУ вышэйзгаданай сітуацыі мы гарантуем, што вы будзеце выкарыстоўвацца толькі для сувязі з вамі і паляпшэння нашых паслуг. Мы ніколі не будзем выкарыстоўваць такую інфармацыю (напрыклад, ваша імя і адрас электроннай пошты_ для якіх небудзь іншых мэтаў, напрыклад, для далейшага маркетынгу нашай прадукцыі або для раскрыцця вашай асабістай інфармацыі трэцяй асобе для камерцыйнай выгады.\n\nВарта адзначыць, што ці не адпраўляць нам вашыя водгукі або справаздачы аб памылках - гэта цалкам добраахвотная ініцыятыва па вашаму ўласным рашэнні. Калі вы занепакоеныя тым, што вашы ІФІ могуць быць выкарыстаны няправільна, або калі вы хочаце атрымаць дадатковую інфармацыю аб нашай палітыцы прыватнасці і аб тым, што гэта значыць, калі ласка, не саромейцеся, напішыце нам па электроннай пошце па адрасе screenmirroring.feedback@gmail.com, мы пастараемся даць дакладныя адказы на вашы пытанні своечасова.</string>
+    <string name="please_write_your_feedback">Калі ласка, напішыце ваш водгук</string>
+    <string name="system_info">Ваша сістэмная інфармацыя будзе адпраўлена ў тэхнічны аддзел люстравання экрана</string>
+    <string name="send">Адправіць</string>
+    <string name="provide_feedback">забяспечыць зваротную сувязь</string>
+    <string name="invalid_email_provided">Указаны няправільны адрас электроннай пошты</string>
+    <string name="check_your_internet_connection">Праверце падключэнне да Інтэрнэту</string>
+    <string name="type_here">увядзіце тут…</string>
+    <string name="enter_your_email_optional">Увядзіце свой адрас электроннай пошты (неабавязкова)</string>
+    <string name="enjoy_the_app">Спадабаецца дадатак?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Ацаніце ваш вопыт з дапамогай праграмы Screen\n Mirroring.</string>
+    <string name="not_now">Не цяпер</string>
+    <string name="feedback">Водгукі:</string>
+    <string name="model">Мадэль:</string>
+    <string name="brand">Марка:</string>
+    <string name="os_version">Версія АС:</string>
+    <string name="manufacturer">Вытворца:</string>
+    <string name="ram">АЗП:</string>
+    <string name="send_email">Адправіць пошту</string>
+    <string name="select_picture">Выберыце Малюнак</string>
+    <string name="help_center">Даведачны цэнтр</string>
+    <string name="question_1">Мой тэлефон спыняецца пры злучэнні \nз тэлевізарам.</string>
+    <string name="question_2">Гэта працавала для мяне раней, \nале гэта не працуе цяпер.</string>
+    <string name="question_3">Гэта паказвае, што мая прылада \nне падтрымліваецца.</string>
+    <string name="question_4">Мой тэлевізар - стары тэлевізар \nі не падтрымлівае Wi-Fi.</string>
+    <string name="question_5">Малюнак на тэлевізары чорны, \nале гук чутны.</string>
+    <string name="question_6">Злучэнне будзе перапынена праз \nнекаторы час.</string>
+    <string name="question_7">Ці з\'яўляюцца мая асабістая інфармацыя або мабільныя дадзеныя абсалютна бяспечнымі?</string>
+    <string name="q_answer_1_1">Перазапусціце Wi-Fi смартфона і паглядзіце, ці паспяховае злучэнне.</string>
+    <string name="q_answer_1_2">Выключыце тэлевізар і таксама выміце яго шнур харчавання з разеткі. Пачакайце 1 хвіліну і перазагрузіце тэлевізар.</string>
+    <string name="q_answer_1_3">Скараціць адлегласць паміж тэлефонам і тэлевізарам. Вазьміце гэта зблізку.</string>
+    <string name="q_answer_2_1">Калі ён працаваў раней, то яго, безумоўна, можна выкарыстоўваць зноў.</string>
+    <string name="q_answer_2_2">Большасць праблем з падключэннем можна вырашыць шляхам перазагрузкі прылад. Проста перазагрузіце тэлефон і тэлевізар, выконвайце звычайны працэс падключэння, каб паўтарыць спробу.</string>
+    <string name="q_answer_3_1">Гэта азначае, што ваш тэлефон сам па сабе не падтрымлівае функцыю адлюстравання экрана.</string>
+    <string name="q_answer_3_2">Вы можаце выкарыстоўваць XCast для трансляцыі відэа, аўдыё і фота на тэлевізар. З дапамогай XCast вы можаце рабіць іншыя рэчы з тэлефонам падчас трансляцыі на тэлевізар.</string>
+    <string name="q_answer_4_1">Калі ваш тэлевізар падтрымлівае інтэрфейс HDMI, мы рэкамендуем вам набыць знешні рэсівер для адлюстравання экрана. Такія як Chromecast, Anycast і г.д.</string>
+    <string name="q_answer_5_1">Некаторы кантэнт прадугледжвае абарону аўтарскіх правоў і не можа быць паказаны на іншых прыладах, такіх як Netflix, Disney Plus і г.д.</string>
+    <string name="q_answer_5_2">Вы можаце спампаваць відэа або знайсці той жа рэсурс у іншых праграмах, каб паспрабаваць.</string>
+    <string name="q_answer_6_1">Вы можаце ўключыць Smart Connect у наладах Wi-Fi. Ён будзе пастаянна шукаць лепшыя злучэнні Wi-Fi і заўсёды падключацца наперад і назад.</string>
+    <string name="q_answer_6_2">Пераканайцеся, што Wi-Fi мабільнага тэлефона і тэлевізара з\'яўляецца SAM і лепшым сігналам.</string>
+    <string name="q_answer_7_1">Мы не будзем кантраляваць і не збіраць інфармацыю пра вас і ваш мабільны тэлефон. Вы можаце трансліраваць свой экран без аніякіх клопатаў.</string>
+    <string name="q_answer_7_2">Сістэма можа папярэдзіць вас аб небяспецы перад адлюстраваннем экрана. Гэта звычайнае напамін, так і будзе                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       </string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">УСТАНОВІЦЬ</string>
+    <string name="install_small">Ўсталяваць</string>
+    <string name="manual">Кіраўніцтва</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Пераканайцеся, што ваш тэлефон і тэлевізар падключаны\nда адной сеткі Wi-Fi.</string>
+    <string name="hd_streaming">Паток у HD</string>
+    <string name="smart_devices">разумныя прылады</string>
+    <string name="private_browser">Прыватны браўзэр</string>
+    <string name="effects">Эфекты</string>
+    <string name="slider">Паўзунок</string>
+    <string name="search_or_type_web_address">Знайдзіце або ўвядзіце вэб-адрас</string>
+    <string name="install_2">Ўсталяваць</string>
+    <string name="bookmark">Закладка</string>
+    <string name="downloads">Спампоўкі</string>
+    <string name="download">Спампаваць</string>
+    <string name="favorites">Выбранае</string>
+    <string name="favorite">Любімая</string>
+    <string name="history">Гісторыя</string>
+    <string name="share_pdf">Падзяліцца pdf</string>
+    <string name="copy_url">Скапіруйце URL</string>
+    <string name="share_app">Падзяліцеся дадаткам</string>
+    <string name="share_url">Падзяліцеся URL</string>
+    <string name="exit">Выхад</string>
+    <string name="new_tab">Новая ўкладка</string>
+    <string name="google">Google</string>
+    <string name="startpage">Стартавая старонка</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Сэркс</string>
+    <string name="baidu">Байду</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Эказія</string>
+    <string name="custom_search_engine">Карыстальніцкая пошукавая сістэма</string>
+    <string name="add_shortcut_to_home">Дадаць ярлык да дома</string>
+    <string name="save_screenshot">Захаваць скрыншот</string>
+    <string name="add_to_bookmark">Дадаць у закладку</string>
+    <string name="save_as_pdf">Захаваць як pdf</string>
+    <string name="save_action">Захаваць дзеянне</string>
+    <string name="add_to_favorite">Дадаць у абранае</string>
+    <string name="search_engine">Пошукавая сістэма</string>
+    <string name="browser_exit_body">Вы ўпэўнены, што хочаце выйсці з браўзэра</string>
+    <string name="exit_browser">Выйсці з браўзэра</string>
+    <string name="custom_user_agent">Карыстальніцкі агент карыстальніка</string>
+    <string name="start_control">Пуск кіравання</string>
+    <string name="data_control">Кантроль дадзеных</string>
+    <string name="app_settings">Налады праграмы</string>
+    <string name="browser_settings">Налады браўзэра</string>
+    <string name="behavior_ui">Паводзіны/Інтэрфейс</string>
+    <string name="clear_cache">Ачысціць кэш</string>
+    <string name="clear_history">Ачысціць гісторыю</string>
+    <string name="clear_browsing_history">Ачысціць гісторыю праглядаў</string>
+    <string name="clear_all_cache">Ачысціць увесь кэш</string>
+    <string name="clear_database_body">Ачысціць «індэксаваныя базы даных» і «лакальныя\ndatabase»</string>
+    <string name="clear_cookies_body">Калі ўключана, усе файлы cookie будуць выдалены. Таксама\nфайлы cookie надзейных вэб-сайтаў</string>
+    <string name="clear_databases">Ачысціць базы дадзеных</string>
+    <string name="clear_cookies">Ачысціць печыва</string>
+    <string name="clear_when_application_exit">Ачысціць пры выхадзе з праграмы</string>
+    <string name="clear_when_application_exit_body">Кожны раз, калі вы выйдзеце, усе адзначаныя вышэй даныя\nбудуць выдаляцца</string>
+    <string name="image">Малюнак</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Печыва</string>
+    <string name="reopen_last_tab">Паўторна адкрыць апошнюю ўкладку</string>
+    <string name="confirm_tab_close">Пацвердзіце закрыццё ўкладкі</string>
+    <string name="confirm_browser_exit">Пацвердзіце выхад з браўзера</string>
+    <string name="position">Становішча</string>
+    <string name="first_toolbar">Першая панэль інструментаў</string>
+    <string name="hide_toolbar">Схаваць панэль інструментаў</string>
+    <string name="toolbar">Панэль інструментаў</string>
+    <string name="bookmarks">Закладкі</string>
+    <string name="edit">Рэдагаваць</string>
+    <string name="today">Сёння</string>
+    <string name="the_last_hour">Апошняя гадзіна</string>
+    <string name="last_week">На мінулым тыдні</string>
+    <string name="last_month">Апошні месяц</string>
+    <string name="delete_all_history">Выдаліць усю гісторыю</string>
+    <string name="copied">скапіяваны</string>
+    <string name="share_ss">Падзяліцеся SS</string>
+    <string name="file_manager">Файлавы менеджэр</string>
+    <string name="search_on">Пошук уключаны</string>
+    <string name="add_shortcut">Дадаць ярлык</string>
+    <string name="tab_exit">Ўкладка Выхад</string>
+    <string name="do_you_want_to_close">Хочаш закрыць</string>
+    <string name="download_complete_share_image">Спампоўка завершана. Падзяліцеся выявай</string>
+    <string name="update">Абнаўленне</string>
+    <string name="unfavorite">Не любімы</string>
+    <string name="no_input_provided">Няма ўводу</string>
+    <string name="input">Увод</string>
+    <string name="website_link">Спасылка на сайт</string>
+    <string name="for_you">Для цябе</string>
+    <string name="website">Вэб-сайт:</string>
+    <string name="url">URL:</string>
+    <string name="date">Дата</string>
+    <string name="no_site_loaded">У вас не загружаны вэб-сайт</string>
+    <string name="more_then_5_images_can_not_be_picked">Больш за пяць малюнкаў нельга выбраць</string>
+</resources>

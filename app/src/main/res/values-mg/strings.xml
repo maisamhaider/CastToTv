@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Malagasy-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">Te-hanafoana ny fifandraisana VPN ankehitriny ve ianao?</string>
+    <string name="yes">ENY</string>
+    <string name="no">tsy misy</string>
+    <string name="yes_2">ENY</string>
+    <string name="no_2">tsy misy</string>
+    <string name="select_images">Mifidiana sary</string>
+    <string name="tabs">Tabs</string>
+    <string name="share">anjara</string>
+    <string name="save">afa-tsy</string>
+    <string name="more">Bebe kokoa</string>
+    <string name="ok">ok</string>
+    <string name="cancel">hanafoana</string>
+    <string name="favorite_site">Ovay ny vohikala mahazatra izay mipetaka eo amin\'ny fanombohan\'ny Browser</string>
+    <string name="custom_search_engine_body">Ampio ny url fikarohana manokana dia fidio ihany koa ny "motera fikarohana" ho toy ny mpamatsy fikarohana</string>
+    <string name="search_engine_body">Safidio ny motera karoka tianao na\nmanefa fomba fanao</string>
+    <string name="data_control_body">Fafao ny angon\'ny mpitety tranonkalanao na manapaha hevitra izay angona\nho voafafa rehefa miala amin\'ny fampiharana ianao</string>
+    <string name="start_control_body">Manapaha hevitra hoe iza amin\'ireo singa ao amin\'ny navigateur\n no hanomboka</string>
+    <string name="behavior_ui_body">Ovay ny fitondran-tena sy ny uin\'ny app mba hifanaraka amin\'ny safidinao</string>
+    <string name="book_mark_body">Mba hampisehoana ny fifanakalozan-dresaka sivana dia tsindrio lava ny kisary tsoratadidy ao amin\'ny topimaso. Manapaha hevitra izay sivana hampiasainao</string>
+    <string name="app_settings_body">Fikirana navigateur, eo ianao dia afaka miankina amin\'ny fahazoan-dàlana amin\'ny dikan-nao android.</string>
+    <string name="start_control_image_body">Alefaso ny sary ao amin\'ny tambazotra, mety ilaina ny fampiatoana\n\'ny fitahirizana angon-drakitra finday sy ny fandefasana tranonkala haingana kokoa</string>
+    <string name="start_control_location_body">Avelao ny tranokala hiditra amin\'ny toerana misy anao. Misy\ntranonkala {google, maps for nav) mila izany</string>
+    <string name="start_control_history_body">Tehirizo ny tantaran\'ny tranokala notsidihina</string>
+    <string name="start_control_java_script_body">Alefaso ny JavaScript. Tranonkala maro no mila\nJavaScript amin\'ny fampiasa azy. Saingy miala sasatra ihany koa izy ireo ary azo ampiasaina amin\'ny fanafihana</string>
+    <string name="start_control_cookies_body">Alefaso ny Cookies. Ny cookies dia rakitra lahatsoratra kely,
+izay voatahiry ao amin\'ny fitaovanao. Fampiasana tranonkala
+izy ireo ohatra mba hitahiry ny firafitry ny mpampiasa. SAINGY
+azo ampiasaina hanangonana mpampiasa manokana ihany koa izy ireo
+data. Ny cookies avy amin\'ny antoko fahatelo dia kilemaina foana.</string>
+    <string name="confirmation_browser_exit_body">Dinika fanamafisana rehefa manidy navigateur</string>
+    <string name="confirmation_tab_close_body">Dinika fanamafisana rehefa manidy tabilao</string>
+    <string name="confirmation_reopen_last_body">Sokafy indray ny tabilao vaovao rehefa mihidy ny tabilao farany fa tsy miala amin\'ny navigateur</string>
+    <string name="hide_toolbar_body">Ampiasao ny efijery manontolo rehefa mivezivezy amin\'ny tranokala raha manindry ny bokotra miverina ianao dia hiala amin\'ny fomba feno</string>
+    <string name="images">Sary</string>
+    <string name="videos">Videos</string>
+    <string name="web_browser">Web Browser</string>
+    <string name="image_slider">Slider sary</string>
+    <string name="next">Manaraka</string>
+    <string name="previous">Teo aloha</string>
+    <string name="help">Vonjeo</string>
+    <string name="settings">Fikirana</string>
+    <string name="language">fiteny</string>
+    <string name="more_app">Fampiharana bebe kokoa</string>
+    <string name="rate_us">Hamarino izahay</string>
+    <string name="screen_mirroring">Screen Mirroring</string>
+    <string name="home_screen_text">Ataovy azo antoka fa mifandray amin\'ny tambajotra Wi-Fi mitovy ny findainao sy ny fahitalavitra.</string>
+    <string name="wifi_connected">Wi-Fi mifandray</string>
+    <string name="wifi_disconnected">Tapaka ny Wi-Fi</string>
+    <string name="general">General</string>
+    <string name="communicate">Miresaha</string>
+    <string name="send_feedback">Alefaso ny valiny</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="how_to_use">Ny fomba fampiasana?</string>
+    <string name="streaming">nirohotra</string>
+    <string name="streaming_quality">kalitaon\'ny streaming</string>
+    <string name="auto_stop">Auto Stop</string>
+    <string name="auto_minimize">Auto Minimize</string>
+    <string name="advance">mialoha</string>
+    <string name="orientation_mode">Fomba orientation</string>
+    <string name="auto_stop_body_text">Atsaharo ny horonan-tsary rehefa very ny fifandraisana\n\'ny tanjona</string>
+    <string name="auto_minimize_body_text">Afeno ny fampiharana rehefa manomboka ny fitaratra</string>
+    <string name="casting_orientation_body_text">Famoahana orientation</string>
+    <string name="mirroring_mode">Fomba fanaovana fitaratra</string>
+    <string name="screen_mirroring_privacy_policy">Politika momba ny tsiambaratelon\'ny fitaratra fitaratra</string>
+    <string name="privacy_policy">politika Fiarovana fiainan\'olona</string>
+    <string name="supporting_devices">Fitaovana fanohanana</string>
+    <string name="see_which_devices_support_mirroring">Jereo hoe fitaovana inona no manohana ny fitaratra</string>
+    <string name="color_theme">Lohahevitra loko</string>
+    <string name="dark">Maizina</string>
+    <string name="light">fahazavana</string>
+    <string name="auto">fiara</string>
+    <string name="select_language">Select Language</string>
+    <string name="close">AKAIKY</string>
+    <string name="images_slider">Sary Slider</string>
+    <string name="screen_mirror">Efijery fitaratra</string>
+    <string name="tutorial_screen_setup_body">Ny fitaovana kendrenao dia tsy maintsy ao amin\'ny tambajotra Wi-Fi mitovy amin\'ity fitaovana ity, satria ny Screen Mirror no mandefa ny efijery anao.</string>
+    <string name="tutorial_screen_mirror_body">Alefaso amin\'ny alalan\'ny Wi-Fi ny efijerin\'ny fitaovanao mankany amin\'ny solosainao, kahie na takelaka.</string>
+    <string name="tutorial_device_hotspot_body">Azonao atao ihany koa ny mampiasa ny hotspot ny fitaovanao (mode tethering) ary mampifandray ny fitaovana kendrena amin\'ny toerana mafana.</string>
+    <string name="tutorial_scan_code_body">Sokafy ny tranokala amin\'ny fitaovana kendrenao. Amin\'ny alàlan\'ny fitarafana ny kaody QR dia ampitaina ny fanamafisana ny fifandraisana ary manomboka ny fitaratra.</string>
+    <string name="tutorial_support_body">Azafady, fantaro fa ny Screen Mirror ihany no miasa rehefa tsara ny fanamboarana. Screen Mirror no mandefa ny efijerinao, fa tsy ny famantaran\'ny fitaovanao. Raha sendra olana ianao dia mifandraisa aminay.</string>
+    <string name="walk_through_body_1">Ankafizo ny streaming milamina sy avo lenta\ntsy misy tara</string>
+    <string name="walk_through_body_2">Mifandraisa amin\'ny fitaovana marani-tsaina rehetra ary ankafizo ny\nseho amin\'ny efijery rehetra</string>
+    <string name="walk_through_body_3">Ankafizo ny navigateur manokana amin\'ny app tsy misy fetra</string>
+    <string name="screen_setup">Fanamboarana efijery</string>
+    <string name="device_hotspot">Hotspot an\'ny fitaovana</string>
+    <string name="scan_code">Scan Code</string>
+    <string name="support">MANAMPY</string>
+    <string name="finish">farany</string>
+    <string name="our_policies">Ny politikantsika</string>
+    <string name="privacy_policy_text">Zava-dehibe aminay ny fiarovana anao manokana. Manantena izahay fa ity fanambarana manaraka ity dia hanampy anao hahatakatra ny fomba itondranay ny mombamomba ny tena manokana, azonao omena anay amin\'ny alalan\'ny Internet (ny sehatra Google Play).\n\nAmin\'ny ankapobeny. tsy manangona PII avy aminao izahay rehefa misintona ny rindranasa Android izahay. Raha lazaina manokana dia tsy mitaky ny fitsidihan\'ny mpanjifa amin\'ny fampiharanay izahay, na dia tsy manana Server hitehirizana PII toy izany aza izahay.\n\nMampiasa ny Facebook ho mpamatsy doka ny Screen Mirroring. Te-hampiseho doka mifandraika aminao ny Facebook. Raha mila fanazavana fanampiny dia tsidiho ny\nhttps://m.facebook.com/ads/ad_choices.\n\nNy hany toe-javatra azonay idirana amin\'ny PII dia rehefa manapa-kevitra ny handefa mailaka anay ny valin-teninao ianao na hanome anay bug tatitra. Ny PII mety ho azonay avy aminao amin\'izany toe-javatra izany dia voafetra tanteraka amin\'ny anaranao, ny adiresy mailaka ary ny valin\'ny fanadihadianao ihany.\n\nAmin\'ny toe-javatra etsy ambony, dia manome antoka izahay fa ny PII anao dia tsy hampiasaina hifandraisana aminao sy hanatsarana ny tolotray ihany. Tsy hampiasa izany fampahalalana izany mihitsy izahay (ohatra ny anaranao sy ny adiresy mailaka_ ho an\'ny tanjona hafa, toy ny fivarotana bebe kokoa ny vokatray, na ny fampahafantarana ny mombamomba anao amin\'ny olon-kafa mba hahazoana tombony ara-barotra.\n\nTokony ho marihina fa na Ny tsy handefasana anay ny valin-teninao na ny tatitra momba ny bibikely dia fandraisana andraikitra an-tsitrapo tanteraka amin\'ny fanapahan-kevitrao manokana. Raha toa ianao ka manana ahiahy momba ny PII ampiasaina amin\'ny fomba diso, na raha mila fanazavana fanampiny momba ny politikan\'ny fiainana manokana sy ny dikan\'izany ianao dia aza misalasala mandefa mailaka aminay amin\'ny screenmirroring.feedback@gmail.com, hiezaka izahay hanome valiny mazava amin\'ny fanontanianao ara-potoana.</string>
+    <string name="please_write_your_feedback">Manorata ny hevitrao azafady</string>
+    <string name="system_info">Ny fampahalalana momba ny rafitrao dia halefa any amin\'ny Departemantan\'ny teknolojia Screen Mirroring</string>
+    <string name="send">Alefaso</string>
+    <string name="provide_feedback">manome hevitra</string>
+    <string name="invalid_email_provided">Email tsy mety nomena</string>
+    <string name="check_your_internet_connection">Jereo ny fifandraisana Internet anao</string>
+    <string name="type_here">soraty eto…</string>
+    <string name="enter_your_email_optional">Ampidiro ny mailakao (tsy voatery)</string>
+    <string name="enjoy_the_app">Ankafizo ny App?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Naoty ny traikefanao amin\'ny fampiasana Screen\nMirroring App.</string>
+    <string name="not_now">Tsy izao</string>
+    <string name="feedback">Hevitra:</string>
+    <string name="model">Modely:</string>
+    <string name="brand">marika:</string>
+    <string name="os_version">Version OS:</string>
+    <string name="manufacturer">Mpanamboatra:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Mandefasa mailaka</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="help_center">Foibe fanampiana</string>
+    <string name="question_1">Miraikitra amin\'ny “Connecting” ny findaiko rehefa mifandray amin\'ny fahitalavitra.</string>
+    <string name="question_2">Niasa tamiko izany taloha, saingy tsy mandeha izany ankehitriny.</string>
+    <string name="question_3">Mampiseho izany fa tsy tohana \nny fitaovako.</string>
+    <string name="question_4">Televiziona tranainy ny fahitako ary tsy mahazaka Wi-fi.</string>
+    <string name="question_5">Ny sary amin\'ny fahitalavitra dia mainty, fa ny feo dia re.</string>
+    <string name="question_6">Ho tapaka ny fifandraisana rehefa \nafaka kelikely.</string>
+    <string name="question_7">Tena azo antoka ve ny mombamomba ahy na ny angona finday?</string>
+    <string name="q_answer_1_1">Avereno indray ny Wi-Fi an\'ny finday ary jereo raha mahomby ny fifandraisana.</string>
+    <string name="q_answer_1_2">Vonoy ny fahitalavitra ary esory koa ny tadin-jirony amin\'ny faladiany. Andraso 1 minitra ary avereno indray ny fahitalavitra.</string>
+    <string name="q_answer_1_3">Hafohy ny elanelan\'ny telefaoninao sy ny fahitalavitra. Raiso akaiky.</string>
+    <string name="q_answer_2_1">Raha niasa teo aloha izy dia azo antoka fa azo ampiasaina indray.</string>
+    <string name="q_answer_2_2">Ny ankamaroan\'ny olana amin\'ny fifandraisana dia azo voavaha amin\'ny alàlan\'ny famerenana indray ny fitaovana. Avereno fotsiny ny findainao sy ny fahitalavitra, araho ny dingana fampifandraisana mahazatra mba hanandrana indray.</string>
+    <string name="q_answer_3_1">Midika izany fa ny findainao mihitsy no tsy mahazaka ny fiasan\'ny fitaratra fitaratra.</string>
+    <string name="q_answer_3_2">Azonao atao ny mampiasa XCast handefasana horonantsary, feo ary sary amin\'ny fahitalavitra. Miaraka amin\'ny XCast, afaka manao zavatra hafa amin\'ny findainao ianao rehefa mandefa amin\'ny fahitalavitra.</string>
+    <string name="q_answer_4_1">Raha toa ka manohana HDMI interface tsara ny fahitalavitra, dia manoro hevitra anao izahay hividy resevera ivelany ho an\'ny fitaratra fitaratra. Toy ny Chromecast, Anycast sns.</string>
+    <string name="q_answer_5_1">Ny votoaty sasany dia misy fiarovana amin\'ny zon\'ny mpamorona ary tsy azo aseho amin\'ny fitaovana hafa, toy ny Netflix, Disney Plus sns.</string>
+    <string name="q_answer_5_2">Azonao atao ny misintona ilay horonan-tsary na mitady loharano mitovy amin\'ny fampiharana hafa hanandramana.</string>
+    <string name="q_answer_6_1">Azonao atao ny mamelona ny Smart Connect amin\'ny firafitry ny Wi-Fi-nao. Hikaroka fifandraisana Wi-fi tsara kokoa hatrany izy io, ary mifandray hatrany hatrany.</string>
+    <string name="q_answer_6_2">Azafady, ataovy azo antoka fa ny Wi-Fi amin\'ny finday sy ny fahitalavitra dia ny SAM ary ny famantarana tsara indrindra.</string>
+    <string name="q_answer_7_1">Tsy hanara-maso na hanangona vaovao momba anao sy ny findainao izahay. Azonao atao ny manipy ny efijery tsy misy ahiahy.</string>
+    <string name="q_answer_7_2">Mety hampitandrina anao ny rafitra fa misy loza mety hitranga alohan\'ny fametahana ny efijery. Fampahatsiahivana mahazatra fotsiny izany, dia ho izany</string>
+    <string name="wi_fi">WIFI</string>
+    <string name="miracast">MIRA CAST</string>
+    <string name="install">hametraka</string>
+    <string name="install_small">hametraka</string>
+    <string name="manual">boky fampianarana</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Ataovy azo antoka fa mifandray amin\'ny tambajotra Wi-Fi mitovy ny findainao sy ny fahitalavitra.</string>
+    <string name="hd_streaming">HD Streaming</string>
+    <string name="smart_devices">fitaovana maranitra</string>
+    <string name="private_browser">Browser manokana</string>
+    <string name="effects">vokatry</string>
+    <string name="slider">Slider</string>
+    <string name="search_or_type_web_address">Karohy na soraty ny adiresy tranonkala</string>
+    <string name="install_2">hametraka</string>
+    <string name="bookmark">Diary</string>
+    <string name="downloads">Downloads</string>
+    <string name="download">DOWNLOAD</string>
+    <string name="favorites">favoris</string>
+    <string name="favorite">toerana tena</string>
+    <string name="history">FIAINANY TALOHA</string>
+    <string name="share_pdf">Mizara PDF</string>
+    <string name="copy_url">Adikao ny URL</string>
+    <string name="share_app">Mizara App</string>
+    <string name="share_url">Zarao ny url</string>
+    <string name="exit">Fivoahana</string>
+    <string name="new_tab">Tab vaovao</string>
+    <string name="google">Google</string>
+    <string name="startpage">StartPage</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Motera fikarohana manokana</string>
+    <string name="add_shortcut_to_home">Ampio hitsin-dàlana mankany an-trano</string>
+    <string name="save_screenshot">Save Screenshot</string>
+    <string name="add_to_bookmark">Ampio amin\'ny tsoratadidy</string>
+    <string name="save_as_pdf">Tehirizo ho pdf</string>
+    <string name="save_action">Save Action</string>
+    <string name="add_to_favorite">Ampio ho ankafiziny</string>
+    <string name="search_engine">Search Engine</string>
+    <string name="browser_exit_body">Tena te hiala amin\'ny Browser ve ianao</string>
+    <string name="exit_browser">Hivoaka ny Browser</string>
+    <string name="custom_user_agent">Mpampiasa manokana</string>
+    <string name="start_control">Start Control</string>
+    <string name="data_control">Data Control</string>
+    <string name="app_settings">Fikirana fampiharana</string>
+    <string name="browser_settings">Settings navigateur</string>
+    <string name="behavior_ui">Fitondran-tena/UI</string>
+    <string name="clear_cache">Hamafa Cache</string>
+    <string name="clear_history">Clear History</string>
+    <string name="clear_browsing_history">Fafao ny tantaran\'ny fitetezana</string>
+    <string name="clear_all_cache">Fafao ny cache rehetra</string>
+    <string name="clear_database_body">Fadio ny "databases indexed" sy "bases local\ndata"</string>
+    <string name="clear_cookies_body">Raha alefa dia ho voafafa ny cookies rehetra. Ary koa ny Cookies amin\'ny tranokala azo itokisana</string>
+    <string name="clear_databases">Fadio ny angon-drakitra</string>
+    <string name="clear_cookies">Clear Cookies</string>
+    <string name="clear_when_application_exit">Hazavao rehefa mivoaka ny fampiharana</string>
+    <string name="clear_when_application_exit_body">Isaky ny miala amin\'ireo angona voamarika rehetra etsy ambony ianao dia ho voafafa</string>
+    <string name="image">SARY</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">mofomamy</string>
+    <string name="reopen_last_tab">Sokafy indray ny tabilao farany</string>
+    <string name="confirm_tab_close">Hamafiso akatona ny tabilao</string>
+    <string name="confirm_browser_exit">Hamafiso ny fivoahan\'ny navigateur</string>
+    <string name="position">Toerana</string>
+    <string name="first_toolbar">Fitaovana voalohany</string>
+    <string name="hide_toolbar">Afeno ny bara fitaovana</string>
+    <string name="toolbar">anjan\'ny</string>
+    <string name="bookmarks">maripejy</string>
+    <string name="edit">Ovay</string>
+    <string name="today">ankehitriny</string>
+    <string name="the_last_hour">Ny ora farany</string>
+    <string name="last_week">Tamin\'ny herinandro lasa</string>
+    <string name="last_month">Volana lasa</string>
+    <string name="delete_all_history">Fafao ny tantara rehetra</string>
+    <string name="copied">dika</string>
+    <string name="share_ss">Partager SS</string>
+    <string name="file_manager">File Manager</string>
+    <string name="search_on">Mikaroka On</string>
+    <string name="add_shortcut">Ampio Shortcut</string>
+    <string name="tab_exit">Tab Fivoahana</string>
+    <string name="do_you_want_to_close">Te hanakatona ve ianao</string>
+    <string name="download_complete_share_image">Vita ny fampidinana. Mizara sary</string>
+    <string name="update">vaovao farany</string>
+    <string name="unfavorite">Tsy tiany</string>
+    <string name="no_input_provided">Tsy misy fidirana nomena</string>
+    <string name="input">fahan\'ny</string>
+    <string name="website_link">Rohy tranonkala</string>
+    <string name="for_you">Ho anao</string>
+    <string name="website">Tranonkala:</string>
+    <string name="url">Url:</string>
+    <string name="date">Daty</string>
+    <string name="no_site_loaded">Tsy manana tranokala feno entana ianao</string>
+    <string name="more_then_5_images_can_not_be_picked">Tsy azo alaina ny sary mihoatra ny dimy</string>
+    <string name="location">Toerana</string>
+
+</resources>

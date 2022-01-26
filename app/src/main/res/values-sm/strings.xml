@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Samoan-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="connection_close_confirm">E te mana\'o e fa\'aleaogaina le So\'oga VPN o iai nei?</string>
+    <string name="yes">IOE</string>
+    <string name="no">LEAI</string>
+    <string name="yes_2">ioe</string>
+    <string name="no_2">leai</string>
+    <string name="select_images">Filifili Ata</string>
+    <string name="tabs">Tabs</string>
+    <string name="share">Faasoa</string>
+    <string name="save">Faasaoina</string>
+    <string name="more">E sili atu</string>
+    <string name="ok">Ua lelei</string>
+    <string name="cancel">Fa\'aleaogaina</string>
+    <string name="favorite_site">Suia le upegatafa\'ilagi fa\'aletonu o lo\'o uta ile\namataina ole Browser</string>
+    <string name="custom_search_engine_body">Fa\'aopoopo url su\'esu\'e tu\'ufa\'atasia filifili fo\'i le “Custom\nsu\'esu\'e afi” e fai ma tu\'u su\'esu\'e</string>
+    <string name="search_engine_body">Filifili lau masini su\'esu\'e e te mana\'o iai pe\nset se mea masani</string>
+    <string name="data_control_body">Fa\'amama lau fa\'amatalaga su\'esu\'e pe filifili po\'o a fa\'amatalaga\no le a kilia pe a e alu ese mai le app</string>
+    <string name="start_control_body">Filifili po\'o fea vaega ole su\'esu\'e\no le a amata</string>
+    <string name="behavior_ui_body">Suia le amio ma le ui o le app e fetaui ma ou mana\'oga</string>
+    <string name="book_mark_body">Ina ia fa\'aali le fa\'atalanoaga faamama lolomi umi i luga o le fa\'ailoga fa\'ailoga i le va\'aiga lautele. Filifili po o fea filiga e te fa\'aogaina</string>
+    <string name="app_settings_body">Fa\'atonuga o su\'esu\'ega, e mafai ona e fa\'alagolago i lau fa\'atagaga mai lau Android version.</string>
+    <string name="start_control_image_body">Fa\'aaga ata o feso\'ota\'iga, e mafai ona aoga le fa\'agata\e teu ai fa\'amatalaga feavea\'i ma uta vave le upegatafa\'ilagi</string>
+    <string name="start_control_location_body">Fa\'ataga upegatafa\'ilagi e maua lou nofoaga. O nisi\n upegatafa\'ilagi {google, maps for nav) e mana\'omia le fa\'aogaina</string>
+    <string name="start_control_history_body">Fa\'asaoina le tala\'aga o upegatafa\'ilagi asiasi</string>
+    <string name="start_control_java_script_body">Fa\'asa le Javascript. Tele upegatafa\'ilagi e mana\'omia\nJavaScript mo a latou galuega. Ae o lo\'o malolo foi ma e mafai ona fa\'aoga mo osofa\'iga</string>
+    <string name="start_control_cookies_body">Fa\'aaga Kuki. O kuki o faila faila laiti,
+o lo\'o teuina i lau masini. Fa\'aoga upegatafa\'ilagi
+latou mo se fa\'ata\'ita\'iga e teu ai fa\'aoga fa\'aoga. Ae
+e mafai fo\'i ona fa\'aoga e aoina ai tagata fa\'apitoa
+fa\'amaumauga. O kuki isi vaega e fa\'aletonu i taimi uma.</string>
+    <string name="confirmation_browser_exit_body">Fa\'amatalaga fa\'amautu pe a\ntapuni su\'esu\'ega</string>
+    <string name="confirmation_tab_close_body">Fa\'amatalaga fa\'amaonia pe a tapuni se lisi</string>
+    <string name="confirmation_reopen_last_body">Toe tatala se lisi fou pe a tapunia le laupepa mulimuli nai lo le alu ese mai le browser</string>
+    <string name="hide_toolbar_body">Fa\'aoga le lau atoa pe a ta\'avale i luga o le upega tafa\'ilagi pe afai e te oomi le ki tua o le ae alu ese mai le ata atoa</string>
+    <string name="images">Ata</string>
+    <string name="videos">Vitio</string>
+    <string name="web_browser">Web Browser</string>
+    <string name="image_slider">Fa\'ase\'e Ata</string>
+    <string name="next">Sosoo ai</string>
+    <string name="previous">Muamua</string>
+    <string name="help">Fesoasoani</string>
+    <string name="settings">Fa\'atonu</string>
+    <string name="language">Gagana</string>
+    <string name="more_app">Tele Apps</string>
+    <string name="rate_us">Fa\'atatau i matou</string>
+    <string name="screen_mirroring">Fa\'ata Ata</string>
+    <string name="home_screen_text">Ia mautinoa o lo\'o feso\'ota\'i lau telefoni ma le TV i le feso\'ota\'iga Wi-Fi tutusa.</string>
+    <string name="wifi_connected">Feso\'ota\'i le Wi-Fi</string>
+    <string name="wifi_disconnected">Ua motusia le Wi-Fi</string>
+    <string name="general">lautele</string>
+    <string name="communicate">Fesootaiga</string>
+    <string name="send_feedback">Auina Manatu</string>
+    <string name="tutorial">A\'oa\'oga</string>
+    <string name="how_to_use">Fa\'afefea ona fa\'aoga?</string>
+    <string name="streaming">Fa\'asalalau</string>
+    <string name="streaming_quality">Tulaga lelei</string>
+    <string name="auto_stop">Taofi Taavale</string>
+    <string name="auto_minimize">Otometi Fa\'aitiiti</string>
+    <string name="advance">Agai i luma</string>
+    <string name="orientation_mode">Faiga Fa\'atonu</string>
+    <string name="auto_stop_body_text">Taofi le vitiō pe a leiloa le feso\'ota\'iga\i le sini</string>
+    <string name="auto_minimize_body_text">Natia le app pe a amata fa\'ata</string>
+    <string name="casting_orientation_body_text">Fa\'atonuga tu\'u</string>
+    <string name="mirroring_mode">Fa\'ata ata</string>
+    <string name="screen_mirroring_privacy_policy">Faiga fa\'alilolilo fa\'aali ata</string>
+    <string name="privacy_policy">Faiga Fa\'alilolilo</string>
+    <string name="supporting_devices">Masini Lagolago</string>
+    <string name="see_which_devices_support_mirroring">Va\'ai po\'o fea masini e lagolagoina le fa\'ata</string>
+    <string name="color_theme">Lanu Autu</string>
+    <string name="dark">Pogisa</string>
+    <string name="light">Malamalama</string>
+    <string name="auto">Taavale</string>
+    <string name="select_language">Filifili Gagana</string>
+    <string name="close">tapunia</string>
+    <string name="images_slider">Ata Fa\'ase\'e</string>
+    <string name="screen_mirror">Fa\'ata Mata</string>
+    <string name="tutorial_screen_setup_body">O lau masini fa\'atatau e tatau ona i totonu o le feso\'otaiga Wi-Fi tutusa ma lenei masini, aua o le Screen Mirror o lo\'o fa\'asalalauina lau lau.</string>
+    <string name="tutorial_screen_mirror_body">Fa\'asolo lau lau masini ile Wi-Fi ile komepiuta, api po\'o lau papalama.</string>
+    <string name="tutorial_device_hotspot_body">E mafai fo\'i ona e fa\'aogaina le tumutumu o lau masini (faiga fa\'apipi\'i) ma fa\'afeso\'ota\'i lau masini fa\'atatau i lau tumutumu.</string>
+    <string name="tutorial_scan_code_body">Tatala nofoaga i lau masini sini. E ala i le su\'esu\'eina o le QR code o le feso\'ota\'iga feso\'ota\'iga e tu\'uina atu ma fa\'ata amata.</string>
+    <string name="tutorial_support_body">Faamolemole ia nofouta o le Screen Mirror e na\'o le galue pe a sa\'o le seti. O le Fa\'a Mata e fa\'asalalau lau lau, ae le o fa\'ailo fa\'alogo a lau masini. Afai e te feagai ma ni fa\'afitauli fa\'afeso\'ota\'i matou.</string>
+    <string name="walk_through_body_1">Fiafia i le sologa lelei ma le maualuga o le tafega\ne leai se tuai</string>
+    <string name="walk_through_body_2">Feso\'ota\'i ma so\'o se masini atamai ma fiafia i le\nfa\'aaliga i so\'o se lau</string>
+    <string name="walk_through_body_3">Fiafia i totonu-app su\'esu\'e tuma\'oti e aunoa ma ni tapula\'a</string>
+    <string name="screen_setup">Seti Mata</string>
+    <string name="device_hotspot">Masini\'s Hotspot</string>
+    <string name="scan_code">Fa\'ailoga Fa\'ailoga</string>
+    <string name="support">Lagolago</string>
+    <string name="finish">Faauma</string>
+    <string name="our_policies">O tatou Faiga Faavae</string>
+    <string name="privacy_policy_text">O le puipuia o oe fa\'alilolilo e taua ia i matou. Matou te fa\'amoemoe o le fa\'amatalaga o lo\'o mulimuli mai o le a fesoasoani ia te oe e te malamalama ai pe fa\'afefea ona matou taulimaina fa\'amatalaga e iloagofie ai le tagata lava ia, e mafai ona e tu\'uina mai ia i matou i nisi taimi e ala i le Initaneti (le Google Play platform).\n\nMasana. matou te le aoina mai so\'o se PII mai ia te oe pe a e siiina a matou talosaga Android. Ina ia fa\'apitoa, matou te le mana\'omia le asiasi mai o tagata fa\'atau i la matou talosaga, e leai fo\'i se matou Server e teu ai ia PII.\n\nFa\'ata Ata e fa\'aoga ai le Facebook e fai ma fa\'asalalauga. E mana\'o le Facebook e fa\'aalia fa\'asalalauga e fetaui ma oe. Mo nisi fa\'amatalaga fa\'amolemole asiasi\nhttps://m.facebook.com/ads/ad_choices.\n\nPau lava le tulaga e mafai ona matou maua ai oe PII o le taimi e te filifili ai e imeli mai ia i matou ou manatu faaalia pe tu\'uina mai ia i matou se pusa. lipoti. O le PII e mafai ona matou maua mai ia te oe i lena tulaga e matua fa\'atapula\'aina lava i lou igoa, tuatusi imeli ma na\'o lau tali su\'esu\'ega.\n\nI le tulaga o lo\'o i luga, matou te fa\'amautinoa o le a fa\'aaogaina oe PII e fa\'afeso\'ota\'i oe ma fa\'aleleia atili a matou auaunaga. Matou te le fa\'aogaina lava ia fa\'amatalaga (fa\'ata\'ita\'iga o lou igoa ma lou tuatusi imeli_ mo so\'o se isi lava fa\'amoemoega, e pei o le fa\'atau atili atu oa matou oloa, po\'o le fa\'ailoa atu o au fa\'amatalaga patino i se isi vaega mo tupe maua fa\'apisinisi.\n\nE tatau ona maitauina pe pe \'aua le lafo mai ia i matou o lau fa\'amatalaga po\'o le lipoti o le pusi ose fuafuaga e ofo fua i luga o lau lava fa\'ai\'uga. Afai e i ai sou popolega e uiga i lou fa\'aogaina sese o lau PII, pe afai e te mana\'o i nisi fa\'amatalaga e uiga i la matou tulafono fa\'alilolilo ma lona uiga, fa\'amolemole lagona le saoloto e imeli i matou i screenmirroring.feedback@gmail.com, matou te taumafai e tu\'uina atu tali manino i au fesili i se taimi talafeagai.</string>
+    <string name="please_write_your_feedback">Fa\'amolemole tusi mai lou finagalo faaalia</string>
+    <string name="system_info">O lau Fa\'amatalaga Fa\'atonu o le a lafo ile Screen Mirroring Tech Department</string>
+    <string name="send">Auina atu</string>
+    <string name="provide_feedback">tuuina atu manatu faaalia</string>
+    <string name="invalid_email_provided">Le sa\'o imeli ua saunia</string>
+    <string name="check_your_internet_connection">Siaki lau feso\'ota\'iga initaneti</string>
+    <string name="type_here">ta\'i iinei…</string>
+    <string name="enter_your_email_optional">Tu\'u lau imeli (filifiliga)</string>
+    <string name="enjoy_the_app">Fiafia ile App?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Fa\'ailoga lou poto masani ile fa\'aogaina ole Screen\nMirroring App.</string>
+    <string name="not_now">E le\'o nei</string>
+    <string name="feedback">Manatu faaalia:</string>
+    <string name="model">Fa\'ata\'ita\'iga:</string>
+    <string name="brand">Fa\'ailoga:</string>
+    <string name="os_version">OS Version:</string>
+    <string name="manufacturer">Tufuga:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Auina meli</string>
+    <string name="select_picture">Filifili Ata</string>
+    <string name="help_center">Nofoaga Fesoasoani</string>
+    <string name="question_1">O la\'u Telefoni e pipii i le "Feso\'ota\'i" pe a fetaui ma le TV.</string>
+    <string name="question_2">Sa aoga ia te au muamua, ae e le o aoga i le taimi nei.</string>
+    <string name="question_3">E fa\'aalia ai e le o lagolagoina la\'u masini.</string>
+    <string name="question_4">O la\'u TV ose TV tuai ma e le lagolagoina le Wi-fi.</string>
+    <string name="question_5">O le ata i luga o le TV e uliuli, ae e mafai ona lagona le leo.</string>
+    <string name="question_6">O le a motusia le feso\'ota\'iga pe a mavae sina taimi.</string>
+    <string name="question_7">E matua saogalemu a\'u fa\'amatalaga patino po\'o fa\'amatalaga feavea\'i?</string>
+    <string name="q_answer_1_1">Toe amata le Wi-Fi telefoni atamai ma va\'ai pe manuia le feso\'ota\'\'iga.</string>
+    <string name="q_answer_1_2">Tape le TV ma aveese foi lona uaea eletise mai le socket. Faatali mo le 1 minute ma toe amata le TV.</string>
+    <string name="q_answer_1_3">Fa\'apu\'upu\'u le va o lau telefoni ma le TV. Ave latalata mai.</string>
+    <string name="q_answer_2_1">Afai na aoga muamua, e mautinoa lava e mafai ona toe fa\'aaogaina.</string>
+    <string name="q_answer_2_2">Ole tele o fa\'afitauli feso\'ota\'iga e mafai ona fo\'ia ile toe fa\'afouina o masini. Na\'o le toe amata uma o lau telefoni ma le TV, mulimuli i le faiga masani feso\'ota\'iga e toe taumafai.</string>
+    <string name="q_answer_3_1">O lona uiga o lau telefoni lava ia e le lagolagoina le galuega fa\'ata.</string>
+    <string name="q_answer_3_2">E mafai ona e fa\'aogaina le XCast e lafo ai le vitio, leo ma le ata ile TV. Faatasi ai ma le XCast, e mafai ona e faia isi mea i lau telefoni a\'o lafo ile TV.</string>
+    <string name="q_answer_4_1">Afai e lagolagoina e lau TV le feso\'ota\'iga HDMI, matou te fautua atu e te fa\'atau se fa\'aaliga fafo mo fa\'ata mata. E pei o Chromecast, Anycast ma isi.</string>
+    <string name="q_answer_5_1">O nisi mea e aofia ai le puipuiga o le puletaofia ma e le mafai ona fa\'aalia i masini isi vaega, pei o Netflix, Disney Plus ma isi.</string>
+    <string name="q_answer_5_2">E mafai ona e siiina mai le vitio pe su\'e le punaoa lava e tasi i luga o isi polokalame e taumafai ai.</string>
+    <string name="q_answer_6_1">E mafai ona e kiina le Smart Connect i au faatulagaga Wi-Fi. O le a saili mo feso\'ota\'iga Wi-fi sili atu i taimi uma, ma feso\'ota\'i pea i tua ma luma.</string>
+    <string name="q_answer_6_2">Faamolemole ia mautinoa o le Wi-Fi o le telefoni feaveai ma le TV o le SAM ma o le faailo sili ona lelei.</string>
+    <string name="q_answer_7_1">Matou te le mata\'ituina pe aoina mai so\'o se fa\'amatalaga ia te oe ma lau telefoni fe\'avea\'i. E mafai ona e lafo lau lau e aunoa ma se popole.</string>
+    <string name="q_answer_7_2">Atonu e lapata\'ia oe e le faiga e iai se lamatiaga o le saogalemu a\'o le\'i fa\'ata lau. Ua na o se faamanatu masani, o le a faapena</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">VAVEGA</string>
+    <string name="install">FA\'ATAU</string>
+    <string name="install_small">Fa\'apipi\'i</string>
+    <string name="manual">Tusi Lesona</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Ia mautinoa o lo\'o feso\'ota\'i lau telefoni ma lau TV\i le feso\'ota\'iga Wi-Fi tutusa.</string>
+    <string name="hd_streaming">HD Streaming</string>
+    <string name="smart_devices">masini atamai</string>
+    <string name="private_browser">Private Browser</string>
+    <string name="effects">Aafiaga</string>
+    <string name="slider">Fa\'ase\'e</string>
+    <string name="search_or_type_web_address">Su\'e pe lolomi tuatusi upegatafa\'ilagi</string>
+    <string name="install_2">Fa\'apipi\'i</string>
+    <string name="bookmark">Faailoga tusi</string>
+    <string name="downloads">Si\'itia</string>
+    <string name="download">La\'u mai</string>
+    <string name="favorites">Mea e fiafia iai</string>
+    <string name="favorite">e fiafia i ai</string>
+    <string name="history">Tala\'aga</string>
+    <string name="share_pdf">Fa\'asoa le Pdf</string>
+    <string name="copy_url">Kopi le URL</string>
+    <string name="share_app">Fa\'asoa le App</string>
+    <string name="share_url">Fa\'asoa url</string>
+    <string name="exit">Alu</string>
+    <string name="new_tab">New Tab</string>
+    <string name="google">Google</string>
+    <string name="startpage">Itulau amata</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Masini su\'esu\'e fa\'apitoa</string>
+    <string name="add_shortcut_to_home">Fa\'aopoopo le ala \'alo i le fale</string>
+    <string name="save_screenshot">Fa\'asaoina ata</string>
+    <string name="add_to_bookmark">Fa\'aopoopo i le fa\'ailoga tusi</string>
+    <string name="save_as_pdf">Fa\'asao ile pdf</string>
+    <string name="save_action">Fa\'asaoina Gaioiga</string>
+    <string name="add_to_favorite">Fa\'aopoopo i mea e fiafia i ai</string>
+    <string name="search_engine">Inisinia Su\'esu\'e</string>
+    <string name="browser_exit_body">E te mautinoa e te mana\'o e alu ese mai le Browser</string>
+    <string name="exit_browser">Tu\'u ese le su\'esu\'e</string>
+    <string name="custom_user_agent">Sui fa\'aoga masani</string>
+    <string name="start_control">Amata Pule</string>
+    <string name="data_control">Puleaina o Faamatalaga</string>
+    <string name="app_settings">Fa\'atonuga o talosaga</string>
+    <string name="browser_settings">Su\'ega Su\'esu\'e</string>
+    <string name="behavior_ui">Amioga/UI</string>
+    <string name="clear_cache">Fa\'amama Cache</string>
+    <string name="clear_history">Fa\'amanino Tala\'aga</string>
+    <string name="clear_browsing_history">Fa\'amama le tala fa\'asolopito</string>
+    <string name="clear_all_cache">Fa\'amama uma cache</string>
+    <string name="clear_database_body">Fa\'amama "fa\'amaufa\'ailoga fa\'asinomaga" ma "fa\'avae\ndata fa\'alotoifale"</string>
+    <string name="clear_cookies_body">Afai e mafai, o le a tape uma kuki. Fa\'apea\nKuki o upegatafa\'ilagi fa\'atuatuaina</string>
+    <string name="clear_databases">Fa\'amama fa\'amaumauga</string>
+    <string name="clear_cookies">Fa\'amama Kuki</string>
+    <string name="clear_when_application_exit">Fa\'amama pe a alu ese le talosaga</string>
+    <string name="clear_when_application_exit_body">O taimi uma e te tu\'u uma ai fa\'amaumauga o lo\'o i luga\no le a tapeina</string>
+    <string name="image">Ata</string>
+    <string name="javascript">Javascript</string>
+    <string name="cookies">Kuki</string>
+    <string name="reopen_last_tab">Toe tatala le itulau mulimuli</string>
+    <string name="confirm_tab_close">Fa\'amau tapuni tapuni</string>
+    <string name="confirm_browser_exit">Fa\'amaonia le alu ese mai le browser</string>
+    <string name="position">Tulaga</string>
+    <string name="first_toolbar">Muamua toolbar</string>
+    <string name="hide_toolbar">Natia mea faigaluega</string>
+    <string name="toolbar">Toolbar</string>
+    <string name="bookmarks">Faailoga tusi</string>
+    <string name="edit">Fa\'atonu</string>
+    <string name="today">O aso nei</string>
+    <string name="the_last_hour">Le itula mulimuli</string>
+    <string name="last_week">Vaiaso talu ai</string>
+    <string name="last_month">I le masina talu ai</string>
+    <string name="delete_all_history">Aveese uma talafa\'asolopito</string>
+    <string name="copied">kopiina</string>
+    <string name="share_ss">Faasoa SS</string>
+    <string name="file_manager">Pule o faila</string>
+    <string name="search_on">Su\'e Su\'e</string>
+    <string name="add_shortcut">Fa\'aopoopo le Pu\'upu\'u</string>
+    <string name="tab_exit">Tab Alu</string>
+    <string name="do_you_want_to_close">E te mana\'o e tapuni</string>
+    <string name="download_complete_share_image">Ua mae\'a le download. Fa\'asoa ata</string>
+    <string name="update">Fa\'afouga</string>
+    <string name="unfavorite">Le fiafia</string>
+    <string name="no_input_provided">Leai se fa\'amatalaga tu\'u mai</string>
+    <string name="input">Ulufale mai</string>
+    <string name="website_link">So\'oga upegatafa\'ilagi</string>
+    <string name="for_you">Mo Oe</string>
+    <string name="website">Upega tafa\'ilagi:</string>
+    <string name="url">Url:</string>
+    <string name="date">Aso</string>
+    <string name="no_site_loaded">E leai sau upega tafa\'ilagi utaina</string>
+    <string name="more_then_5_images_can_not_be_picked">E sili atu nai lo le lima ata e le mafai ona pikiina</string>
+    <string name="location">Nofoaga</string>
+
+</resources>

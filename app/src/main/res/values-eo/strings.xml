@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Esperanto-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+
+    <string name="location">Loko</string>
+    <string name="connection_close_confirm">Ĉu vi ŝatus nuligi la nunan VPN-Konekton?</string>
+    <string name="yes">JES</string>
+    <string name="no">NE</string>
+    <string name="yes_2">Jes</string>
+    <string name="no_2">Ne</string>
+    <string name="select_images">Elektu Bildojn</string>
+    <string name="tabs">Langetoj</string>
+    <string name="share">Kunhavigi</string>
+    <string name="save">Savi</string>
+    <string name="more">Pli</string>
+    <string name="ok">bone</string>
+    <string name="cancel">Nuligi</string>
+    <string name="favorite_site">Ŝanĝu la defaŭltan retejon, kiu ŝargas ĉe\nkomenco de Retumilo</string>
+    <string name="custom_search_engine_body">Aldonu kutiman serĉan URL ankaŭ elektu "Persona\nserĉilo" kiel serĉprovizanton</string>
+    <string name="search_engine_body">Elektu vian preferatan serĉilon aŭ\nmezu propran</string>
+    <string name="data_control_body">Forigu viajn retumilajn datumojn aŭ decidu kiajn datumojn\n estos forigitaj kiam vi forlasos la apon</string>
+    <string name="start_control_body">Decidu kiuj komponantoj de la retumilo\nestos ekfunkciantaj</string>
+    <string name="behavior_ui_body">Ŝanĝu la konduton kaj ui de la aplikaĵo por\nĝustigi viajn preferojn</string>
+    <string name="book_mark_body">Por montri la filtrilan dialogon longe premu la legosignikon en la superrigardo. Decidu kiujn filtrilojn vi uzos</string>
+    <string name="app_settings_body">Agordoj de retumilo, tie vi povas laŭ\via android-versio doni permeson.</string>
+    <string name="start_control_image_body">Ebligu Retajn bildojn, Malŝalti povus esti utila\por konservi poŝtelefonajn datumojn kaj ŝargi retejon pli rapide</string>
+    <string name="start_control_location_body">Permesu retejojn aliri vian lokon. Iuj\nretejoj {google, maps for nav) bezonas ĉi tiun ebligon</string>
+    <string name="start_control_history_body">Konservu la historion de vizititaj retejoj</string>
+    <string name="start_control_java_script_body">Ebligu JavaScript. Multaj retejoj bezonas\nJavaScript por sia funkcio. Sed ili estas\naŭ ripozaj kaj uzeblaj por atakoj</string>
+    <string name="start_control_cookies_body">Ebligu Kuketojn. Kuketoj estas malgrandaj tekstaj dosieroj,
+kiuj estas konservitaj en via aparato. Retejoj uzas
+ilin ekzemple por konservi uzantajn agordojn. Sed
+ili povus ankaŭ esti uzataj por kolekti personan uzanton
+datumoj. Triaj kuketoj ĉiam estas malŝaltitaj.</string>
+    <string name="confirmation_browser_exit_body">Konfirma dialogo kiam\nfermas retumilon</string>
+    <string name="confirmation_tab_close_body">Konfirma dialogo kiam oni fermas langeton</string>
+    <string name="confirmation_reopen_last_body">Remalfermu novan langeton kiam la lasta langeto estas fermita anstataŭ eliri la retumilon</string>
+    <string name="hide_toolbar_body">Uzu la tutan ekranon kiam vi rulumas tra retejo, se vi premas la malantaŭan butonon, vi forlasos plenekranan reĝimon</string>
+    <string name="images">Bildoj</string>
+    <string name="videos">Videoj</string>
+    <string name="web_browser">Retumilo</string>
+    <string name="image_slider">Bildo Slider</string>
+    <string name="next">Poste</string>
+    <string name="previous">Antaŭa</string>
+    <string name="help">Helpu</string>
+    <string name="settings">Agordoj</string>
+    <string name="language">Lingvoj</string>
+    <string name="more_app">Pli da Aplikoj</string>
+    <string name="rate_us">Taksi nin</string>
+    <string name="screen_mirroring">Spegulo de ekrano</string>
+    <string name="home_screen_text">Certigu, ke via telefono kaj televido estas konektitaj al la sama reto WiFi.</string>
+    <string name="wifi_connected">Wi-Fi Konektita</string>
+    <string name="wifi_disconnected">Wi-Fi Malkonektita</string>
+    <string name="general">Generalo</string>
+    <string name="communicate">Komuniki</string>
+    <string name="send_feedback">Sendu Rimarkojn</string>
+    <string name="tutorial">Lernilo</string>
+    <string name="how_to_use">Kiel uzi?</string>
+    <string name="streaming">Streaming</string>
+    <string name="streaming_quality">Streaming Quality</string>
+    <string name="auto_stop">Aŭtomata Halto</string>
+    <string name="auto_minimize">Aŭtomata Minimumigi</string>
+    <string name="advance">Antaŭen</string>
+    <string name="orientation_mode">Orientiĝa Reĝimo</string>
+    <string name="auto_stop_body_text">Ĉesigu videon kiam konekto\n la celo estas perdita</string>
+    <string name="auto_minimize_body_text">Kaŝi apon kiam spegulado komenciĝas</string>
+    <string name="casting_orientation_body_text">Casting orientiĝo</string>
+    <string name="mirroring_mode">Spegula reĝimo</string>
+    <string name="screen_mirroring_privacy_policy">Privateca politiko pri spegulo de ekrano</string>
+    <string name="privacy_policy">Privateca Politiko</string>
+    <string name="supporting_devices">Subtenaj Aparatoj</string>
+    <string name="see_which_devices_support_mirroring">Vidu kiuj aparatoj subtenas spegulon</string>
+    <string name="color_theme">Kolora Temo</string>
+    <string name="dark">Mallumo</string>
+    <string name="light">Lumo</string>
+    <string name="auto">Aŭtomate</string>
+    <string name="select_language">Elektu Lingvon</string>
+    <string name="close">proksime</string>
+    <string name="images_slider">Bildoj Glitilo</string>
+    <string name="screen_mirror">Ekrana Spegulo</string>
+    <string name="tutorial_screen_setup_body">Via cela aparato devas esti en la sama reto Wi-Fi kiel ĉi tiu aparato, ĉar Screen Mirror transdonas vian ekranon.</string>
+    <string name="tutorial_screen_mirror_body">Fluu la ekranon de via aparato per Wi-Fi al via komputilo, kajero aŭ tablojdo.</string>
+    <string name="tutorial_device_hotspot_body">Vi ankaŭ povas uzi la retpunkton de via aparato (tethering-reĝimo) kaj konekti vian celan aparaton al via retpunkto.</string>
+    <string name="tutorial_scan_code_body">Malfermu retejon sur via cela aparato. Skanante la QR-kodon la konekto-agordo estas transdonita kaj spegulado komenciĝas.</string>
+    <string name="tutorial_support_body">Bonvolu konscii, ke Ekrana Spegulo funkcias nur kiam agordas ĝuste. Ekrana Spegulo transsendas vian ekranon, sed ne la sonsignalojn de via aparato. Se vi renkontas problemojn, kontaktu nin.</string>
+    <string name="walk_through_body_1">Ĝuu glatan kaj altkvalitan streaming\nsen prokrasto</string>
+    <string name="walk_through_body_2">Konektiĝu per iu ajn inteligenta aparato kaj ĝuu la\nspektaklon sur iu ajn ekrano</string>
+    <string name="walk_through_body_3">Ĝuu en-app privatan retumilon sen limoj</string>
+    <string name="screen_setup">Ekranagordo</string>
+    <string name="device_hotspot">Hotspot de Aparato</string>
+    <string name="scan_code">Skanado Kodo</string>
+    <string name="support">Subteno</string>
+    <string name="finish">Finu</string>
+    <string name="our_policies">Niaj Politikoj</string>
+    <string name="privacy_policy_text">Protekti vian privatecon gravas por ni. Ni esperas, ke la sekva deklaro helpos vin kompreni kiel ni traktas la personajn identigeblajn informojn, kiujn vi povas foje provizi al ni per Interreto (la platformo de Google Play).\n\nĜenerale. ni ne kolektas ajnan PII de vi kiam vi elŝutas niajn Android-aplikaĵojn. Por esti precize, ni ne postulas la vizitojn de la konsumantoj de nia aplikaĵo, ni eĉ ne havas Servilon por stoki tiajn PII.\n\nScreen Mirroring uzas Facebook kiel reklam-provizanton. Facebook volas montri reklamojn rilatajn al vi. Por pliaj informoj bonvolu viziti\nhttps://m.facebook.com/ads/ad_choices.\n\nLa nura situacio, kiun ni povas ricevi aliron al vi PII, estas kiam vi persone decidas retpoŝti al ni viajn komentojn aŭ provizi al ni cimon. raporto. La PII, kiun ni povas ricevi de vi en tiu situacio, estas strikte limigitaj al via nomo, retpoŝta adreso kaj via enketrespondo nur.\n\nEn ĉi-supra situacio, ni garantias, ke vi PII nur estos uzata por kontakti vin kaj plibonigi niajn servojn. Ni neniam uzos tiajn informojn (ekz. vian nomon kaj retpoŝtadreson_ por aliaj celoj, kiel por plu surmerkatigi niajn produktojn, aŭ por malkaŝi viajn personajn informojn al tria partio por komercaj gajnoj.\n\nNotu, ĉu aŭ ne sendi al ni viajn sugestojn aŭ raporton pri eraro estas tute libervola iniciato laŭ via propra decido. Se vi zorgas pri via PII misuzata, aŭ se vi volas pliajn informojn pri nia privateca politiko kaj kion ĝi signifas, bonvolu sendi al ni retpoŝton. ĉe screenmirroring.feedback@gmail.com, ni klopodos provizi klarajn respondojn al viaj demandoj ĝustatempe.</string>
+    <string name="please_write_your_feedback">Bonvolu skribi viajn komentojn</string>
+    <string name="system_info">Via Sisteminformo estos sendita al Teknika Departemento de Screen Mirroring</string>
+    <string name="send">Sendu</string>
+    <string name="provide_feedback">doni komentojn</string>
+    <string name="invalid_email_provided">Nevalida Retpoŝto provizita</string>
+    <string name="check_your_internet_connection">Kontrolu vian interretan konekton</string>
+    <string name="type_here">tajpu ĉi tie…</string>
+    <string name="enter_your_email_optional">Enigu vian retpoŝton (laŭvola)</string>
+    <string name="enjoy_the_app">Ĝuu la Apon?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Tatu vian sperton uzante Ekran\nSpegulan Apon.</string>
+    <string name="not_now">Ne nun</string>
+    <string name="feedback">Reago:</string>
+    <string name="model">Modelo:</string>
+    <string name="brand">Marko:</string>
+    <string name="os_version">OS Versio:</string>
+    <string name="manufacturer">Fabrikisto:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Sendu poŝton</string>
+    <string name="select_picture">Elektu Bildon</string>
+    <string name="help_center">Helpcentro</string>
+    <string name="question_1">Mia Telefono blokiĝas ĉe "Konekti" dum\npariĝo kun televido.</string>
+    <string name="question_2">Ĝi funkciis por mi antaŭe, sed ĝi ne\nfunkcias nun.</string>
+    <string name="question_3">Ĝi montras, ke mia aparato ne estas\nsubtenata.</string>
+    <string name="question_4">Mia televidilo estas malnova televidilo kaj\nne subtenas wi-fi.</string>
+    <string name="question_5">La bildo en televido estas nigra, sed\nla sono aŭdeblas.</string>
+    <string name="question_6">Konekto estos interrompita post iom\nda tempo.</string>
+    <string name="question_7">Ĉu miaj personaj informoj aŭ moveblaj datumoj\nestas absolute sekuraj?</string>
+    <string name="q_answer_1_1">Rekomencu la Wi-Fi de la inteligenta telefono kaj vidu ĉu la konekto sukcesas.</string>
+    <string name="q_answer_1_2">Malŝaltu la televidilon kaj forigu ĝian elektran ŝnuron el la ingo ankaŭ. Atendu 1 minuton kaj rekomencu la televidilon.</string>
+    <string name="q_answer_1_3">Mallongigu la distancon inter via telefono kaj la televidilo. Prenu ĝin de proksime.</string>
+    <string name="q_answer_2_1">Se ĝi funkciis antaŭe, tiam ĝi certe povas esti uzata denove.</string>
+    <string name="q_answer_2_2">Plej multaj konektoproblemoj povas esti solvitaj per rekomenco de aparatoj. Nur rekomencu vian telefonon kaj televidon, sekvu la regulan konektan procezon por reprovi.</string>
+    <string name="q_answer_3_1">Ĉi tio signifas, ke via telefono mem ne subtenas la ekranan spegulan funkcion.</string>
+    <string name="q_answer_3_2">Vi povas uzi XCast por elsendi filmeton, sonaĵojn kaj fotojn al televido. Kun XCast, vi povas fari aliajn aferojn per via telefono dum elsendas al televido.</string>
+    <string name="q_answer_4_1">Se via televidilo subtenas HDMI-interfacon, ni rekomendas, ke vi aĉetu eksteran ricevilon por ekranspegulado. Kiel Chromecast, Anycast ktp.</string>
+    <string name="q_answer_5_1">Iuj enhavoj implikas kopirajtoprotekton kaj ne povas esti montrataj sur triaj aparatoj, kiel Netflix, Disney Plus ktp.</string>
+    <string name="q_answer_5_2">Vi povas elŝuti la videon aŭ serĉi la saman rimedon en aliaj programoj por provi.</string>
+    <string name="q_answer_6_1">Vi povas ŝalti Smart Connect en viaj Wifi-agordoj. Ĝi serĉos pli bonajn Wifi-konektojn konstante, kaj ĉiam konektos tien kaj reen.</string>
+    <string name="q_answer_6_2">Bonvolu certigi, ke la Wi-Fi de la poŝtelefono kaj televidilo estas la SAM kaj la plej bona signalo.</string>
+    <string name="q_answer_7_1">Ni ne kontrolos aŭ kolektos ajnan informon pri vi kaj via poŝtelefono. Vi povas gisi vian ekranon sen ia zorgo.</string>
+    <string name="q_answer_7_2">La sistemo povas averti vin, ke estas sekureca danĝero antaŭ ekrana spegulo. Ĉi tio estas nur regula memorigilo, ĝi estos</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">INSTALO</string>
+    <string name="install_small">Instali</string>
+    <string name="manual">Manlibro</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Certigu, ke via telefono kaj televido estas konektitaj\al la sama reto Wifi.</string>
+    <string name="hd_streaming">HD-Streaming</string>
+    <string name="smart_devices">inteligentaj aparatoj</string>
+    <string name="private_browser">Privata Retumilo</string>
+    <string name="effects">Efektoj</string>
+    <string name="slider">Glitilo</string>
+    <string name="search_or_type_web_address">Serĉu aŭ tajpu retadreson</string>
+    <string name="install_2">Instali</string>
+    <string name="bookmark">Legomarko</string>
+    <string name="downloads">Elŝutoj</string>
+    <string name="download">Elŝutu</string>
+    <string name="favorites">Plej ŝatataj</string>
+    <string name="favorite">Ŝatata</string>
+    <string name="history">Historio</string>
+    <string name="share_pdf">Kunhavigi Pdf</string>
+    <string name="copy_url">Kopiu URL</string>
+    <string name="share_app">Kunhavigi Apon</string>
+    <string name="share_url">Kunhavigu URL</string>
+    <string name="exit">Eliro</string>
+    <string name="new_tab">Nova langeto</string>
+    <string name="google">Guglo</string>
+    <string name="startpage">Komenca Paĝo</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Propra serĉilo</string>
+    <string name="add_shortcut_to_home">Aldonu ŝparvojon al hejmo</string>
+    <string name="save_screenshot">Konservu Ekrankopion</string>
+    <string name="add_to_bookmark">Aldoni al legosigno</string>
+    <string name="save_as_pdf">Konservu kiel pdf</string>
+    <string name="save_action">Konservu Agon</string>
+    <string name="add_to_favorite">Aldonu al plej ŝatataj</string>
+    <string name="search_engine">Serĉilo</string>
+    <string name="browser_exit_body">Ĉu vi certas, ke vi volas eliri la Retumilon</string>
+    <string name="exit_browser">Eliru Retumilon</string>
+    <string name="custom_user_agent">Propra uzanta agento</string>
+    <string name="start_control">Komencu Kontrolon</string>
+    <string name="data_control">Kontrolo de Datumoj</string>
+    <string name="app_settings">Agordoj de la aplikaĵo</string>
+    <string name="browser_settings">Agordoj de la retumilo</string>
+    <string name="behavior_ui">Konduto/UI</string>
+    <string name="clear_cache">Malplenigi Kaŝmemoron</string>
+    <string name="clear_history">Klara Historio</string>
+    <string name="clear_browsing_history">Klarigi foliumhistorion</string>
+    <string name="clear_all_cache">Forigi la tutan kaŝmemoron</string>
+    <string name="clear_database_body">Forigi "indeksitajn datumbazojn" kaj "lokaj\ndatumbazoj"</string>
+    <string name="clear_cookies_body">Se ĝi estas ebligita, ĉiuj kuketoj estos forigitaj. Ankaŭ\nla Kuketoj de fidindaj retejoj</string>
+    <string name="clear_databases">Klarigi datumbazojn</string>
+    <string name="clear_cookies">Klarigi Kuketojn</string>
+    <string name="clear_when_application_exit">Klara kiam aplikaĵo eliras</string>
+    <string name="clear_when_application_exit_body">Ĉiufoje kiam vi forlasas ĉiujn supre kontrolitajn datumojn\n estos forigitaj</string>
+    <string name="image">Bildo</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Kuketoj</string>
+    <string name="reopen_last_tab">Remalfermu lastan langeton</string>
+    <string name="confirm_tab_close">Konfirmu langeton fermon</string>
+    <string name="confirm_browser_exit">Konfirmu retumilon eliro</string>
+    <string name="position">Pozicio</string>
+    <string name="first_toolbar">Unua ilobreto</string>
+    <string name="hide_toolbar">Kaŝi ilobreton</string>
+    <string name="toolbar">Ilobreto</string>
+    <string name="bookmarks">Legosignoj</string>
+    <string name="edit">Redakti</string>
+    <string name="today">Hodiaŭ</string>
+    <string name="the_last_hour">La lasta horo</string>
+    <string name="last_week">Lasta semajno</string>
+    <string name="last_month">Pasintmonate</string>
+    <string name="delete_all_history">Forigu la tutan historion</string>
+    <string name="copied">kopiita</string>
+    <string name="share_ss">Kunhavigi SS</string>
+    <string name="file_manager">Dosiera Administranto</string>
+    <string name="search_on">Serĉu On</string>
+    <string name="add_shortcut">Aldonu Ŝparvojon</string>
+    <string name="tab_exit">Tab Eliro</string>
+    <string name="do_you_want_to_close">Ĉu vi volas fermi</string>
+    <string name="download_complete_share_image">Elŝuto kompleta. Kunhavigi bildon</string>
+    <string name="update">Ĝisdatigo</string>
+    <string name="unfavorite">Ne ŝatata</string>
+    <string name="no_input_provided">Neniu enigo provizita</string>
+    <string name="input">Enigo</string>
+    <string name="website_link">Reteja ligilo</string>
+    <string name="for_you">Por vi</string>
+    <string name="website">Retejo:</string>
+    <string name="url">Url:</string>
+    <string name="date">Dato</string>
+    <string name="no_site_loaded">Vi ne havas ŝarĝitan retejon</string>
+    <string name="more_then_5_images_can_not_be_picked">Pli ol kvin bildoj ne povas esti elektitaj</string>
+</resources>

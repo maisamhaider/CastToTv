@@ -50,6 +50,7 @@
             style="@style/body_text_view"
             android:gravity="center"
             android:text="@string/exit"
+            android:textColor="@color/cr_white"
             app:layout_constraintBottom_toTopOf="@+id/guideline829"
             app:layout_constraintEnd_toStartOf="@+id/guideline825"
             app:layout_constraintStart_toStartOf="@+id/guideline823"

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Albanian-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+
+    <string name="connection_close_confirm">Dëshironi të anuloni lidhjen aktuale VPN?</string>
+    <string name="yes">PO</string>
+    <string name="no">NR</string>
+    <string name="yes_2">po</string>
+    <string name="no_2">Nr</string>
+    <string name="select_images">Zgjidhni Imazhet</string>
+    <string name="tabs">Skedat</string>
+    <string name="share">Ndani</string>
+    <string name="save">Ruaj</string>
+    <string name="more">Më shumë</string>
+    <string name="ok">Ne rregull</string>
+    <string name="cancel">Anulo</string>
+    <string name="favorite_site">Ndryshoni uebsajtin e paracaktuar që ngarkohet në\nfillimin e Shfletuesit</string>
+    <string name="custom_search_engine_body">Shtoni URL-në e personalizuar të kërkimit, zgjidhni gjithashtu "Motorin e personalizuar të kërkimit" si ofrues kërkimi</string>
+    <string name="search_engine_body">Zgjidhni motorin tuaj të preferuar të kërkimit ose\ncaktoni një të personalizuar</string>
+    <string name="data_control_body">Pastro të dhënat e shfletuesit ose vendos se cilat të dhëna\ndo të pastrohen kur të largohesh nga aplikacioni</string>
+    <string name="start_control_body">Vendosni se cilët komponentë të shfletuesit\ndo të jenë në fillim</string>
+    <string name="behavior_ui_body">Ndrysho sjelljen dhe ndërfaqen e aplikacionit për t\'iu përshtatur preferencave të tua</string>
+    <string name="book_mark_body">Për të shfaqur dialogun e filtrit, shtypni gjatë në ikonën e faqeshënuesit në përmbledhje. Vendosni se cilët filtra do të përdorni</string>
+    <string name="app_settings_body">Cilësimet e shfletuesit, aty mund të jepni leje në varësi të\nversionit tuaj android.</string>
+    <string name="start_control_image_body">Aktivizo imazhet e rrjetit, çaktivizimi mund të jetë i dobishëm\npër të ruajtur të dhënat celulare dhe për të ngarkuar uebsajtin më shpejt</string>
+    <string name="start_control_location_body">Lejo faqet e internetit të kenë qasje në vendndodhjen tuaj. Disa\nfaqe interneti {google, harta për navigim) kanë nevojë për këtë aktivizim</string>
+    <string name="start_control_history_body">Ruani historinë e faqeve të vizituara në internet</string>
+    <string name="start_control_java_script_body">Aktivizo JavaScript. Shumë faqe interneti kanë nevojë\nJavaScript për funksionalitetin e tyre. Por ata janë gjithashtu pushues dhe mund të përdoren për sulme</string>
+    <string name="start_control_cookies_body">Aktivizo "Cookies". Cookies janë skedarë të vegjël teksti,
+të cilat ruhen në pajisjen tuaj. Përdorimi i faqeve të internetit
+ato për shembull për të ruajtur cilësimet e përdoruesit. Por
+ato mund të përdoren gjithashtu për të mbledhur përdorues personal
+të dhëna. Kukit e palëve të treta janë gjithmonë të çaktivizuara.</string>
+    <string name="confirmation_browser_exit_body">Dialogu i konfirmimit kur\nmbyll shfletuesin</string>
+    <string name="confirmation_tab_close_body">Dialogu i konfirmimit kur mbyllni një skedë</string>
+    <string name="confirmation_reopen_last_body">Rihapni një skedë të re kur skeda e fundit mbyllet në vend që të dilni nga shfletuesi</string>
+    <string name="hide_toolbar_body">Përdorni të gjithë ekranin kur lëvizni nëpër uebsajt, nëse shtypni butonin prapa, do të dilni nga modaliteti i ekranit të plotë</string>
+    <string name="images">Imazhet</string>
+    <string name="videos">Videot</string>
+    <string name="web_browser">Shfletues uebi</string>
+    <string name="image_slider">Rrëshqitësi i imazhit</string>
+    <string name="next">Tjetra</string>
+    <string name="previous">E mëparshme</string>
+    <string name="help">Ndihmë</string>
+    <string name="settings">Cilësimet</string>
+    <string name="language">Gjuhët</string>
+    <string name="more_app">Me shume aplikacione</string>
+    <string name="rate_us">Na vleresoni</string>
+    <string name="screen_mirroring">Ekran pasqyre</string>
+    <string name="home_screen_text">Sigurohuni që telefoni dhe televizori juaj të jenë të lidhur me të njëjtin rrjet Wi-Fi.</string>
+    <string name="wifi_connected">Lidhur me Wi-Fi</string>
+    <string name="wifi_disconnected">Wi-Fi u shkëput</string>
+    <string name="general">Gjeneral</string>
+    <string name="communicate">Komunikoni</string>
+    <string name="send_feedback">Dërgo koment</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="how_to_use">Si të përdoret?</string>
+    <string name="streaming">Transmetim</string>
+    <string name="streaming_quality">Cilësia e transmetimit</string>
+    <string name="auto_stop">Ndalimi automatik</string>
+    <string name="auto_minimize">Minimizim automatik</string>
+    <string name="advance">Përparoni</string>
+    <string name="orientation_mode">Modaliteti i Orientimit</string>
+    <string name="auto_stop_body_text">Ndalo videon kur lidhja\nme objektivin humbet</string>
+    <string name="auto_minimize_body_text">Fshih aplikacionin kur fillon pasqyrimi</string>
+    <string name="casting_orientation_body_text">Orientimi i derdhjes</string>
+    <string name="mirroring_mode">Modaliteti i pasqyrimit</string>
+    <string name="screen_mirroring_privacy_policy">Politika e privatësisë së pasqyrimit të ekranit</string>
+    <string name="privacy_policy">Politika e privatësisë</string>
+    <string name="supporting_devices">Pajisjet Mbështetëse</string>
+    <string name="see_which_devices_support_mirroring">Shihni cilat pajisje mbështesin pasqyrimin</string>
+    <string name="color_theme">Tema me ngjyra</string>
+    <string name="dark">E errët</string>
+    <string name="light">Drita</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Zgjidh gjuhen</string>
+    <string name="close">mbyll</string>
+    <string name="images_slider">Rrëshqitësi i imazheve</string>
+    <string name="screen_mirror">Pasqyra e ekranit</string>
+    <string name="tutorial_screen_setup_body">Pajisja juaj e synuar duhet të jetë në të njëjtin rrjet Wi-Fi si kjo pajisje, sepse Screen Mirror po transmeton ekranin tuaj.</string>
+    <string name="tutorial_screen_mirror_body">Transmetoni ekranin e pajisjes tuaj nëpërmjet Wi-Fi në kompjuterin, laptopin ose tabletin tuaj.</string>
+    <string name="tutorial_device_hotspot_body">Mund të përdorni gjithashtu pikën e qasjes së pajisjes tuaj (modaliteti i lidhjes) dhe të lidhni pajisjen tuaj të synuar me pikën tuaj të hyrjes.</string>
+    <string name="tutorial_scan_code_body">Hapni sajtin në pajisjen tuaj të synuar. Duke skanuar kodin QR, konfigurimi i lidhjes transmetohet dhe fillon pasqyrimi.</string>
+    <string name="tutorial_support_body">Ju lutemi, kini parasysh se Screen Mirror funksionon vetëm kur konfigurohet si duhet. Screen Mirror transmeton ekranin tuaj, por jo sinjalet audio të pajisjes tuaj. Nëse përballeni me ndonjë problem na kontaktoni.</string>
+    <string name="walk_through_body_1">Shijo transmetim të qetë dhe me cilësi të lartë\npa vonesa</string>
+    <string name="walk_through_body_2">Lidhu me çdo pajisje inteligjente dhe shijo\nshfaqjen në çdo ekran</string>
+    <string name="walk_through_body_3">Shijoni shfletuesin privat brenda aplikacionit pa kufizime</string>
+    <string name="screen_setup">Konfigurimi i ekranit</string>
+    <string name="device_hotspot">Hotspoti i pajisjes</string>
+    <string name="scan_code">Skanoni kodin</string>
+    <string name="support">Mbështetje</string>
+    <string name="finish">Përfundo</string>
+    <string name="our_policies">Politikat tona</string>
+    <string name="privacy_policy_text">Mbrojtja e privatësisë tuaj është e rëndësishme për ne. Shpresojmë që deklarata e mëposhtme do t\'ju ndihmojë të kuptoni se si ne i trajtojmë informacionet personale të identifikueshme, që mund t\'i jepni herë pas here nëpërmjet internetit (platforma e Google Play).\n\nNë përgjithësi. ne nuk mbledhim asnjë PII nga ju kur shkarkoni aplikacionet tona Android. Për të qenë specifik, ne nuk kërkojmë vizitat e klientëve të aplikacionit tonë, madje nuk kemi një Server për të ruajtur një PII të tillë.\n\nScreen Mirroring përdor Facebook si ofrues reklamash. Facebook dëshiron të shfaqë reklama që janë të rëndësishme për ju. Për më shumë informacion, ju lutemi vizitoni\nhttps://m.facebook.com/ads/ad_choices.\n\nE vetmja situatë që mund të kemi akses tek ju PII është kur ju personalisht vendosni të na dërgoni me email komentet tuaja ose të na jepni një defekt raporti. PII-të që mund të marrim nga ju në atë situatë kufizohen rreptësisht vetëm në emrin tuaj, adresën e emailit dhe përgjigjen tuaj në anketë.\n\nNë situatën e mësipërme, ne garantojmë që PII-të tuaja do të përdoren vetëm për t\'ju kontaktuar dhe për të përmirësuar shërbimet tona. Ne kurrë nuk do ta përdorim këtë informacion (p.sh. emrin dhe adresën tuaj të emailit_ për qëllime të tjera, të tilla si për të tregtuar më tej produktet tona, ose për t\'i zbuluar informacionet tuaja personale një pale të tretë për përfitime komerciale.\n\nDuhet të theksohet nëse ose të mos na dërgoni komentet tuaja ose raportin e defekteve është një iniciativë plotësisht vullnetare me vendimin tuaj. Nëse keni shqetësime për keqpërdorimin e PII-së tuaj, ose nëse dëshironi informacione të mëtejshme rreth politikës sonë të privatësisë dhe çfarë do të thotë kjo, ju lutemi mos ngurroni të na dërgoni me email në screenmirroring.feedback@gmail.com, ne do të përpiqemi të ofrojmë përgjigje të qarta për pyetjet tuaja në kohën e duhur.</string>
+    <string name="please_write_your_feedback">Ju lutemi shkruani komentet tuaja</string>
+    <string name="system_info">Informacioni i sistemit tuaj do të dërgohet në Departamentin e Teknologjisë së Pasqyrimit të Ekranit</string>
+    <string name="send">Dërgo</string>
+    <string name="provide_feedback">japin reagime</string>
+    <string name="invalid_email_provided">Email i pavlefshëm është dhënë</string>
+    <string name="check_your_internet_connection">Kontrolloni lidhjen tuaj të internetit</string>
+    <string name="type_here">shkruaj këtu…</string>
+    <string name="enter_your_email_optional">Shkruani emailin tuaj (opsionale)</string>
+    <string name="enjoy_the_app">Të pëlqen aplikacioni?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Vlerësoni përvojën tuaj duke përdorur aplikacionin Screen\nPasqyrimi.</string>
+    <string name="not_now">Jo tani</string>
+    <string name="feedback">Komentet:</string>
+    <string name="model">Modeli:</string>
+    <string name="brand">Marka:</string>
+    <string name="os_version">Versioni i OS:</string>
+    <string name="manufacturer">Prodhuesi:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Dërgo postë</string>
+    <string name="select_picture">Zgjidhni Foto</string>
+    <string name="help_center">Qendra e ndihmes</string>
+    <string name="question_1">Telefoni im ngec në "Connecting" \nkur çiftohet me TV.</string>
+    <string name="question_2">Ka funksionuar për mua më parë, \npor nuk funksionon tani.</string>
+    <string name="question_3">Tregon që pajisja ime nuk \nmbështetet.</string>
+    <string name="question_4">TV im është një televizor i \nvjetër dhe nuk mbështet Wi-Fi.</string>
+    <string name="question_5">Imazhi në televizor është i \nzi, por zëri mund të dëgjohet.</string>
+    <string name="question_6">Lidhja do të ndërpritet pas \nnjë kohe.</string>
+    <string name="question_7">A janë absolutisht të sigurta informacioni im personal ose të dhënat celulare?</string>
+    <string name="q_answer_1_1">Rinisni Wi-Fi të telefonit inteligjent dhe shikoni nëse lidhja është e suksesshme.</string>
+    <string name="q_answer_1_2">Fikni televizorin dhe hiqni edhe kordonin e tij të rrymës nga priza. Prisni 1 minutë dhe rindizni televizorin.</string>
+    <string name="q_answer_1_3">Shkurtoni distancën midis telefonit tuaj dhe televizorit. Merreni nga afër.</string>
+    <string name="q_answer_2_1">Nëse ka funksionuar më parë, atëherë patjetër që mund të përdoret përsëri.</string>
+    <string name="q_answer_2_2">Shumica e problemeve të lidhjes mund të zgjidhen duke rindezur pajisjet. Thjesht rinisni telefonin dhe televizorin, ndiqni procesin e rregullt të lidhjes për të riprovuar.</string>
+    <string name="q_answer_3_1">Kjo do të thotë që vetë telefoni juaj nuk e mbështet funksionin e pasqyrimit të ekranit.</string>
+    <string name="q_answer_3_2">Ju mund të përdorni XCast për të transmetuar video, audio dhe foto në televizor. Me XCast, mund të bëni gjëra të tjera me telefonin tuaj gjatë transmetimit në televizor.</string>
+    <string name="q_answer_4_1">Nëse televizori juaj mbështet ndërfaqen HDMI, ju rekomandojmë të blini një marrës të jashtëm për pasqyrimin e ekranit. Të tilla si Chromecast, Anycast etj.</string>
+    <string name="q_answer_5_1">Disa përmbajtje përfshijnë mbrojtjen e të drejtave të autorit dhe nuk mund të shfaqen në pajisjet e palëve të treta, si Netflix, Disney Plus etj.</string>
+    <string name="q_answer_5_2">Mund ta shkarkoni videon ose të kërkoni të njëjtin burim në aplikacione të tjera për ta provuar.</string>
+    <string name="q_answer_6_1">Mund të aktivizoni Smart Connect në cilësimet e Wi-Fi. Ai do të kërkojë vazhdimisht lidhje më të mira Wi-Fi dhe do të lidhet gjithmonë mbrapa dhe mbrapa.</string>
+    <string name="q_answer_6_2">Sigurohuni që Wi-Fi i celularit dhe televizorit të jetë SAM dhe sinjali më i mirë.</string>
+    <string name="q_answer_7_1">Ne nuk do të monitorojmë ose mbledhim asnjë informacion për ju dhe telefonin tuaj celular. Ju mund të transmetoni ekranin tuaj pa asnjë shqetësim.</string>
+    <string name="q_answer_7_2">Sistemi mund t\'ju paralajmërojë se ka një rrezik sigurie përpara pasqyrimit të ekranit. Ky është vetëm një kujtesë e rregullt, do të jetë</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">INSTALL</string>
+    <string name="install_small">Instaloni</string>
+    <string name="manual">Manual</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Sigurohuni që telefoni dhe televizori juaj të jenë të lidhur\nnë të njëjtin rrjet Wi-Fi.</string>
+    <string name="hd_streaming">Transmetim HD</string>
+    <string name="smart_devices">pajisje inteligjente</string>
+    <string name="private_browser">Shfletuesi privat</string>
+    <string name="effects">Efektet</string>
+    <string name="slider">Rrëshqitës</string>
+    <string name="search_or_type_web_address">Kërkoni ose shkruani adresën e internetit</string>
+    <string name="install_2">Instaloni</string>
+    <string name="bookmark">Shënoni faqeshënues</string>
+    <string name="downloads">Shkarkimet</string>
+    <string name="download">Shkarko</string>
+    <string name="favorites">Të preferuarat</string>
+    <string name="favorite">E preferuara</string>
+    <string name="history">Historia</string>
+    <string name="share_pdf">Ndani PDF</string>
+    <string name="copy_url">Kopjo URL</string>
+    <string name="share_app">Ndani aplikacionin</string>
+    <string name="share_url">Ndani url</string>
+    <string name="exit">Dilni</string>
+    <string name="new_tab">Tab i ri</string>
+    <string name="google">Google</string>
+    <string name="startpage">Faqja e fillimit</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ekozia</string>
+    <string name="custom_search_engine">Motori i kërkimit me porosi</string>
+    <string name="add_shortcut_to_home">Shto shkurtore në shtëpi</string>
+    <string name="save_screenshot">Ruaj pamjen e ekranit</string>
+    <string name="add_to_bookmark">Shto në faqerojtës</string>
+    <string name="save_as_pdf">Ruaj si pdf</string>
+    <string name="save_action">Ruaj Veprimin</string>
+    <string name="add_to_favorite">Shto në të preferuarën</string>
+    <string name="search_engine">Motori i kërkimit</string>
+    <string name="browser_exit_body">Jeni të sigurt që dëshironi të dilni nga Shfletuesi</string>
+    <string name="exit_browser">Dilni nga shfletuesi</string>
+    <string name="custom_user_agent">Agjent i personalizuar i përdoruesit</string>
+    <string name="start_control">Filloni Kontrollin</string>
+    <string name="data_control">Kontrolli i të dhënave</string>
+    <string name="app_settings">Cilësimet e aplikacionit</string>
+    <string name="browser_settings">Cilësimet e shfletuesit</string>
+    <string name="behavior_ui">Sjellja/UI</string>
+    <string name="clear_cache">Pastroje memorien e përkohshme</string>
+    <string name="clear_history">Pastro Historinë</string>
+    <string name="clear_browsing_history">Pastro historinë e shfletimit</string>
+    <string name="clear_all_cache">Pastro të gjithë cache</string>
+    <string name="clear_database_body">Pastro "bazat e të dhënave të indeksuar" dhe "bazat e të dhënave lokale"</string>
+    <string name="clear_cookies_body">Nëse aktivizohet, të gjitha cookies do të fshihen. Gjithashtu\nCookies e faqeve të besuara të internetit</string>
+    <string name="clear_databases">Pastro bazat e të dhënave</string>
+    <string name="clear_cookies">Pastro "Cookies".</string>
+    <string name="clear_when_application_exit">Pastro kur del aplikacioni</string>
+    <string name="clear_when_application_exit_body">Sa herë që largohesh të gjitha të dhënat e kontrolluara më sipër\ndo të fshihen</string>
+    <string name="image">Imazhi</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Biskota</string>
+    <string name="reopen_last_tab">Rihap skedën e fundit</string>
+    <string name="confirm_tab_close">Konfirmo mbylljen e skedës</string>
+    <string name="confirm_browser_exit">Konfirmo daljen nga shfletuesi</string>
+    <string name="position">Pozicioni</string>
+    <string name="first_toolbar">Shiriti i parë i veglave</string>
+    <string name="hide_toolbar">Fshih shiritin e veglave</string>
+    <string name="toolbar">Shiriti i veglave</string>
+    <string name="bookmarks">Faqerojtësit</string>
+    <string name="edit">Redakto</string>
+    <string name="today">Sot</string>
+    <string name="the_last_hour">Ora e fundit</string>
+    <string name="last_week">Javen e shkuar</string>
+    <string name="last_month">Muajin e kaluar</string>
+    <string name="delete_all_history">Fshi të gjithë historinë</string>
+    <string name="copied">e kopjuar</string>
+    <string name="share_ss">Ndani SS</string>
+    <string name="file_manager">Menaxheri i skedarëve</string>
+    <string name="search_on">Kërkimi Aktiv</string>
+    <string name="add_shortcut">Shto shkurtore</string>
+    <string name="tab_exit">Skeda Dalje</string>
+    <string name="do_you_want_to_close">A doni të mbyllni</string>
+    <string name="download_complete_share_image">Shkarkimi përfundoi. Ndani imazhin</string>
+    <string name="update">Përditëso</string>
+    <string name="unfavorite">I pa preferuar</string>
+    <string name="no_input_provided">Asnjë të dhënë nuk është dhënë</string>
+    <string name="input">Input</string>
+    <string name="website_link">Lidhja e faqes në internet</string>
+    <string name="for_you">Për ty</string>
+    <string name="website">Faqja e internetit:</string>
+    <string name="url">Url:</string>
+    <string name="date">Data</string>
+    <string name="no_site_loaded">Ju nuk keni ngarkuar faqen e internetit</string>
+    <string name="more_then_5_images_can_not_be_picked">Më shumë se pesë imazhe nuk mund të zgjidhen</string>
+    <string name="location">Vendndodhja</string>
+
+</resources>

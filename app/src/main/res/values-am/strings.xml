@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Amharic-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="location">አካባቢ</string>
+
+     <string name="connection_close_confirm">የአሁኑን የቪፒኤን ግንኙነት መሰረዝ ይፈልጋሉ?</string>
+    <string name="yes">አዎ</string>
+    <string name="no">አይ</string>
+    <string name="yes_2">አዎ</string>
+    <string name="no_2">አይ</string>
+    <string name="select_images">ምስሎችን ይምረጡ</string>
+    <string name="tabs">ትሮች</string>
+    <string name="share">አጋራ</string>
+    <string name="save">አስቀምጥ</string>
+    <string name="more">ተጨማሪ</string>
+    <string name="ok">እሺ</string>
+    <string name="cancel">ሰርዝ</string>
+    <string name="favorite_site">በአሳሽ ጅምር ላይ\nየሚጫነውን ነባሪ ድር ጣቢያ ይቀይሩ</string>
+    <string name="custom_search_engine_body">ብጁ የፍለጋ ዩአርኤል ያክሉ እንዲሁም "ብጁ የፍለጋ ሞተር" እንደ የፍለጋ አቅራቢ ይምረጡ</string>
+    <string name="search_engine_body">የሚመርጡትን የፍለጋ ሞተር ይምረጡ ወይም\nብጁ ያዘጋጁ</string>
+    <string name="data_control_body">የአሳሽህን ውሂብ አጽዳ ወይም ከመተግበሪያው ስትወጣ ምን ውሂብ\n እንደሚጸዳ ወስን።</string>
+    <string name="start_control_body">የትኛዎቹ የአሳሹ ክፍሎች\n እንደሚጀምሩ ይወስኑ</string>
+    <string name="behavior_ui_body">የመተግበሪያውን ባህሪ እና ui ወደዚህ ይለውጡ\nየእርስዎን ምርጫዎች ያሟሉ</string>
+    <string name="book_mark_body">የማጣሪያ ንግግሩን ለማሳየት በአጠቃላይ እይታ ላይ ባለው የዕልባት አዶ ላይ በረጅሙ ተጫን። የትኞቹን ማጣሪያዎች እንደሚጠቀሙ ይወስኑ</string>
+    <string name="app_settings_body">የአሳሽ ቅንጅቶች, እዚያ ላይ በመመስረት ይችላሉ\nየእርስዎ አንድሮይድ ስሪት ፍቃድ ይስጡ።</string>
+    <string name="start_control_image_body">የአውታረ መረብ ምስሎችን አንቃ፣ ማሰናከል ጠቃሚ ሊሆን ይችላል።\nየተንቀሳቃሽ ስልክ ውሂብ ለመቆጠብ እና ድር ጣቢያን በፍጥነት ለመጫን</string>
+    <string name="start_control_location_body">ድር ጣቢያዎች አካባቢዎን እንዲደርሱበት ይፍቀዱ። አንዳንድ\nድር ጣቢያዎች {google, map for nav) ይህን ማንቃት ያስፈልጋቸዋል</string>
+    <string name="start_control_history_body">የጎበኟቸውን ድር ጣቢያዎች ታሪክ አስቀምጥ</string>
+    <string name="start_control_java_script_body">ጃቫ ስክሪፕት አንቃ። ብዙ ድህረ ገፆች ያስፈልጋሉ።\nጃቫ ስክሪፕት ለተግባራቸው። ግን እነሱ ናቸው።\nእንዲሁም ማረፍ እና ለጥቃቶች ጥቅም ላይ ሊውል ይችላል</string>
+    <string name="start_control_cookies_body">ኩኪዎችን አንቃ። ኩኪዎች ትንሽ የጽሑፍ ፋይሎች ናቸው,
+በመሳሪያዎ ላይ የተከማቹ. ድህረ ገፆች ይጠቀማሉ
+እነሱን ለምሳሌ የተጠቃሚ ቅንብሮችን ለማከማቸት. ግን
+እንዲሁም የግል ተጠቃሚን ለመሰብሰብ ሊያገለግሉ ይችላሉ።
+ውሂብ. የሶስተኛ ወገን ኩኪዎች ሁልጊዜ ይሰናከላሉ።</string>
+    <string name="confirmation_browser_exit_body">አሳሹን በሚዘጋበት ጊዜ የማረጋገጫ ንግግር\n</string>
+    <string name="confirmation_tab_close_body">ትር ሲዘጋ የማረጋገጫ ንግግር</string>
+    <string name="confirmation_reopen_last_body">ከአሳሹ ከመውጣት ይልቅ የመጨረሻው ትር ሲዘጋ አዲስ ትርን እንደገና ይክፈቱ</string>
+    <string name="hide_toolbar_body">በድረ-ገጹ ውስጥ ሲንሸራተቱ ሙሉውን ስክሪን ይጠቀሙ የኋላ ቁልፍን ከተጫኑ የሙሉ ማያ ገጽ ሁነታን ይተዋል</string>
+    <string name="images">ምስሎች</string>
+    <string name="videos">ቪዲዮዎች</string>
+    <string name="web_browser">የድር አሳሽ</string>
+    <string name="image_slider">ምስል ተንሸራታች</string>
+    <string name="next">ቀጥሎ</string>
+    <string name="previous">ቀዳሚ</string>
+    <string name="help">እገዛ</string>
+    <string name="settings">ቅንብሮች</string>
+    <string name="language">ቋንቋዎች</string>
+    <string name="more_app">ተጨማሪ መተግበሪያዎች</string>
+    <string name="rate_us">ደረጃ ይስጡን።</string>
+    <string name="screen_mirroring">ስክሪን ማንጸባረቅ</string>
+    <string name="home_screen_text">ስልክዎ እና ቲቪዎ ከተመሳሳይ የWi-Fi አውታረ መረብ ጋር መገናኘታቸውን ያረጋግጡ።</string>
+    <string name="wifi_connected">ዋይ ፋይ ተገናኝቷል።</string>
+    <string name="wifi_disconnected">የ Wi-Fi ግንኙነት ተቋርጧል</string>
+    <string name="general">አጠቃላይ</string>
+    <string name="communicate">ተግባቡ</string>
+    <string name="send_feedback">ግብረ - መልስ ላክ</string>
+    <string name="tutorial">አጋዥ ስልጠና</string>
+    <string name="how_to_use">እንዴት መጠቀም እንደሚቻል?</string>
+    <string name="streaming">በዥረት መልቀቅ</string>
+    <string name="streaming_quality">የዥረት ጥራት</string>
+    <string name="auto_stop">ራስ-ሰር ማቆሚያ</string>
+    <string name="auto_minimize">ራስ-ሰር አሳንስ</string>
+    <string name="advance">ቀዳሚ</string>
+    <string name="orientation_mode">የአቅጣጫ ሁነታ</string>
+    <string name="auto_stop_body_text">ሲገናኙ ቪዲዮ ያቁሙ\nዒላማ ማድረግ ጠፍቷል</string>
+    <string name="auto_minimize_body_text">ማንጸባረቅ ሲጀምር መተግበሪያን ደብቅ</string>
+    <string name="casting_orientation_body_text">የመውሰድ አቅጣጫ</string>
+    <string name="mirroring_mode">የማንጸባረቅ ሁነታ</string>
+    <string name="screen_mirroring_privacy_policy">የማያ ገጽ ማንጸባረቅ የግላዊነት ፖሊሲ</string>
+    <string name="privacy_policy">የ ግል የሆነ</string>
+    <string name="supporting_devices">ደጋፊ መሳሪያዎች</string>
+    <string name="see_which_devices_support_mirroring">የትኞቹ መሳሪያዎች ማንጸባረቅን እንደሚደግፉ ይመልከቱ</string>
+    <string name="color_theme">የቀለም ገጽታ</string>
+    <string name="dark">ጨለማ</string>
+    <string name="light">ብርሃን</string>
+    <string name="auto">መኪና</string>
+    <string name="select_language">ቋንቋ ይምረጡ</string>
+    <string name="close">ገጠመ</string>
+    <string name="images_slider">ምስሎች ተንሸራታች</string>
+    <string name="screen_mirror">የስክሪን መስታወት</string>
+    <string name="tutorial_screen_setup_body">የእርስዎ ኢላማ መሣሪያ ከዚህ መሳሪያ ጋር በተመሳሳይ የWi-Fi አውታረ መረብ ውስጥ መሆን አለበት፣ ምክንያቱም ስክሪን መስታወት የእርስዎን ስክሪን ስለሚያስተላልፍ ነው።</string>
+    <string name="tutorial_screen_mirror_body">የመሣሪያዎን ስክሪን በWi-Fi ወደ ኮምፒውተርዎ፣ ማስታወሻ ደብተርዎ ወይም ታብሌቱ ያሰራጩ።</string>
+    <string name="tutorial_device_hotspot_body">እንዲሁም የመሣሪያዎን መገናኛ ነጥብ (የማገናኘት ሁነታ) መጠቀም እና የዒላማ መሣሪያዎን ወደ መገናኛ ነጥብዎ ማገናኘት ይችላሉ።</string>
+    <string name="tutorial_scan_code_body">በዒላማው መሣሪያዎ ላይ ጣቢያን ይክፈቱ። የQR ኮድን በመቃኘት የግንኙነት ውቅር ይተላለፋል እና ማንፀባረቅ ይጀምራል።</string>
+    <string name="tutorial_support_body">እባክህ ስክሪን መስታወት በትክክል ሲዋቀር ብቻ እንደሚሰራ አስተውል። የስክሪን መስታወት የእርስዎን ስክሪን ያስተላልፋል፣ ነገር ግን የመሣሪያዎ የድምጽ ምልክቶችን አይደለም። ማንኛውም ችግር ካጋጠመዎት ያነጋግሩን.</string>
+    <string name="walk_through_body_1">ለስላሳ እና ከፍተኛ ጥራት ባለው ዥረት ይደሰቱ\nሳይዘገይ</string>
+    <string name="walk_through_body_2">ከማንኛውም ዘመናዊ መሣሪያ ጋር ይገናኙ እና ይደሰቱ\nበማንኛውም ማያ ገጽ ላይ አሳይ</string>
+    <string name="walk_through_body_3">ያለ ገደብ የውስጠ-መተግበሪያ የግል አሳሽ ይደሰቱ</string>
+    <string name="screen_setup">የማያ ገጽ ማዋቀር</string>
+    <string name="device_hotspot">የመሣሪያ መገናኛ ነጥብ</string>
+    <string name="scan_code">የቃኝ ኮድ</string>
+    <string name="support">ድጋፍ</string>
+    <string name="finish">ጨርስ</string>
+    <string name="our_policies">የእኛ ፖሊሲዎች</string>
+    <string name="privacy_policy_text">የእርስዎን ግላዊነት መጠበቅ ለኛ አስፈላጊ ነው። የሚከተለው መግለጫ የግል መለያ መረጃን እንዴት እንደምናስተናግድ ለመረዳት እንደሚረዳዎት ተስፋ እናደርጋለን፣ አልፎ አልፎ በኢንተርኔት (የጎግል ፕሌይ መድረክ) ሊሰጡን ይችላሉ።\n\nበአጠቃላይ። አንድሮይድ አፕሊኬሽኖቻችንን ሲያወርዱ ከእርስዎ ምንም PII አንሰበስብም። ለማብራራት፣ የእኛን መተግበሪያ የሸማቾች ጉብኝት አንፈልግም፣ እንደዚህ አይነት PII የሚያከማች አገልጋይ እንኳን የለንም።\n\nስክሪን ማንጸባረቅ ፌስቡክን እንደ የማስታወቂያ አቅራቢነት ይጠቀማል። ፌስቡክ ለእርስዎ ተዛማጅ የሆኑ ማስታወቂያዎችን ማሳየት ይፈልጋል። ለበለጠ መረጃ እባክዎን ይጎብኙ\nhttps://m.facebook.com/ads/ad_choices።\n\nወደ እርስዎ የግል መለያ መረጃ የምንደርስበት ብቸኛው ሁኔታ እርስዎ በግል የእርስዎን ግብረመልስ በኢሜል ሊልኩልን ወይም የሳንካ ሪፖርት ሲሰጡን ነው። በዚያ ሁኔታ ከእርስዎ የምናገኘው PII ለእርስዎ ስም፣ ኢሜይል አድራሻ እና የዳሰሳ ጥናትዎ ምላሽ ብቻ የተገደበ ነው።\n\nከላይ ባለው ሁኔታ፣ እርስዎ የግል መለያ መረጃ እርስዎን ለማግኘት እና አገልግሎቶቻችንን ለማሻሻል ብቻ ጥቅም ላይ እንደሚውሉ እናረጋግጣለን። እንደዚህ ያለውን መረጃ (ለምሳሌ የእርስዎን ስም እና የኢሜይል አድራሻ_ ለሌላ ዓላማዎች ለምሳሌ ምርቶቻችንን ለበለጠ ገበያ ለማቅረብ ወይም የግል መረጃዎን ለንግድ ጥቅም ለሶስተኛ ወገን ለመግለፅ) አንጠቀምም።\n\nየእርስዎን ግብረ መልስ ወይም የሳንካ ሪፖርት ለእኛ ለመላክ ወይም ላለመላክ በራስዎ ውሳኔ ሙሉ በሙሉ በፈቃደኝነት የሚደረግ ተነሳሽነት መሆኑን ልብ ሊባል ይገባል። የእርስዎ PII አላግባብ ጥቅም ላይ መዋሉ ስጋት ካለዎት ወይም ስለ እኛ የግላዊነት ፖሊሲ እና ምን ማለት እንደሆነ ተጨማሪ መረጃ ከፈለጉ እባክዎን በ screenmirroring.feedback@gmail.com ላይ በኢሜል ይላኩልን ፣ ለጥያቄዎችዎ ግልፅ መልስ ለመስጠት እንጥራለን ። በጊዜው</string>
+    <string name="please_write_your_feedback">እባክዎን አስተያየትዎን ይጻፉ</string>
+    <string name="system_info">የስርዓትዎ መረጃ ወደ ስክሪን ማንጸባረቅ ቴክ ዲፓርትመንት ይላካል</string>
+    <string name="send">ላክ</string>
+    <string name="provide_feedback">አስተያየት ይስጡ</string>
+    <string name="invalid_email_provided">ልክ ያልሆነ ኢሜይል ቀርቧል</string>
+    <string name="check_your_internet_connection">የበይነመረብ ግንኙነትዎን ያረጋግጡ</string>
+    <string name="type_here">እዚህ ይተይቡ…</string>
+    <string name="enter_your_email_optional">ኢሜልዎን ያስገቡ (አማራጭ)</string>
+    <string name="enjoy_the_app">በመተግበሪያው ይደሰቱ?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">ስክሪን በመጠቀም ልምድህን ደረጃ ስጥ\nመተግበሪያን በማንጸባረቅ ላይ</string>
+    <string name="not_now">አሁን አይሆንም</string>
+    <string name="feedback">ግብረ መልስ፡-</string>
+    <string name="model">ሞዴል፡</string>
+    <string name="brand">የምርት ስም፡</string>
+    <string name="os_version">የስርዓተ ክወና ስሪት፡</string>
+    <string name="manufacturer">አምራች፡</string>
+    <string name="ram">ራንደም አክሰስ ሜሞሪ:</string>
+    <string name="send_email">ደብዳቤ ላክ</string>
+    <string name="select_picture">ሥዕል ይምረጡ</string>
+    <string name="help_center">የእገዛ ማዕከል</string>
+    <string name="question_1">ስልኬ ከቲቪ ጋር ሲጣመር "በማገናኘት"\n  ይጣበቃል።</string>
+    <string name="question_2">ከዚህ በፊት ለእኔ ሠርቷል, አሁን\nግን አይሰራም.</string>
+    <string name="question_3">የእኔ መሣሪያ እንደማይደገፍ\n ያሳያል።</string>
+    <string name="question_4">የእኔ ቲቪ የድሮ ቲቪ ነው እና ዋይ\nፋይን አይደግፍም።</string>
+    <string name="question_5">በቴሌቪዥኑ ላይ ያለው ምስል ጥቁር ነው,\nነገር ግን ድምፁ ሊሰማ ይችላል.</string>
+    <string name="question_6">ግንኙነቱ ከጥቂት ጊዜ በኋላ \nይቋረጣል.</string>
+    <string name="question_7">የእኔ የግል መረጃ ወይም የሞባይል ዳታ \nፍጹም ደህንነቱ የተጠበቀ ነው?</string>
+    <string name="q_answer_1_1">የስማርት ስልኩን ዋይ ፋይ እንደገና ያስጀምሩትና ግንኙነቱ የተሳካ መሆኑን ይመልከቱ።</string>
+    <string name="q_answer_1_2">ቴሌቪዥኑን ያጥፉ እና የኃይል ገመዱን ከሶኬት ላይ ያስወግዱት። 1 ደቂቃ ይጠብቁ እና ቴሌቪዥኑን እንደገና ያስጀምሩ።</string>
+    <string name="q_answer_1_3">በስልክዎ እና በቴሌቪዥኑ መካከል ያለውን ርቀት ያሳጥሩ። በቅርበት ይውሰዱት።</string>
+    <string name="q_answer_2_1">ከዚህ በፊት የሚሰራ ከሆነ, በእርግጠኝነት እንደገና ጥቅም ላይ ሊውል ይችላል.</string>
+    <string name="q_answer_2_2">አብዛኛዎቹ የግንኙነት ችግሮች መሣሪያዎችን እንደገና በማስጀመር ሊፈቱ ይችላሉ። በቀላሉ ሁለቱንም ስልክዎን እና ቲቪዎን እንደገና ያስጀምሩ፣ ለማገገም መደበኛውን የግንኙነት ሂደት ይከተሉry.</string>
+    <string name="q_answer_3_1">ይህ ማለት ስልክዎ ራሱ የስክሪን ማንጸባረቅ ተግባሩን አይደግፍም ማለት ነው።</string>
+    <string name="q_answer_3_2">ቪዲዮ፣ ኦዲዮ እና ፎቶን ወደ ቲቪ ለመውሰድ XCastን መጠቀም ይችላሉ። በXCast ወደ ቲቪ እየወሰዱ ሌሎች ነገሮችን በስልክዎ ማድረግ ይችላሉ።</string>
+    <string name="q_answer_4_1">የእርስዎ ቲቪ የኤችዲኤምአይ በይነገጽን የሚደግፍ ከሆነ ለስክሪን ማንጸባረቅ ውጫዊ መቀበያ እንዲገዙ እንመክራለን። እንደ Chromecast፣ Anycast ወዘተ።</string>
+    <string name="q_answer_5_1">አንዳንድ ይዘቶች የቅጂ መብት ጥበቃን የሚያካትቱ ናቸው እና እንደ ኔትፍሊክስ፣ ዲስኒ ፕላስ ወዘተ ባሉ የሶስተኛ ወገን መሳሪያዎች ላይ ሊታዩ አይችሉም።</string>
+    <string name="q_answer_5_2">ለመሞከር ቪዲዮውን ማውረድ ወይም በሌሎች መተግበሪያዎች ላይ ተመሳሳይ ግብዓት መፈለግ ይችላሉ።</string>
+    <string name="q_answer_6_1">በእርስዎ የWi-Fi ቅንብሮች ውስጥ ስማርት ማገናኛን ማብራት ይችላሉ። የተሻሉ የWi-Fi ግንኙነቶችን ያለማቋረጥ ይፈልጋል፣ እና ሁልጊዜ ወደ ኋላ እና ወደ ፊት ይገናኛል።</string>
+    <string name="q_answer_6_2">እባኮትን የሞባይል ስልክ እና ቲቪ ዋይ ፋይ SAM እና ምርጡ ሲግናል መሆኑን ያረጋግጡ።</string>
+    <string name="q_answer_7_1">በእርስዎ እና በሞባይል ስልክዎ ላይ ምንም አይነት መረጃ አንቆጣጠርም ወይም አንሰበስብም። ማያዎን ያለ ምንም ጭንቀት መጣል ይችላሉ.</string>
+    <string name="q_answer_7_2">ስክሪን ከማንፀባረቁ በፊት ስርዓቱ የደህንነት ስጋት እንዳለ ሊያስጠነቅቅዎት ይችላል። ይህ መደበኛ አስታዋሽ ብቻ ነው, ይሆናል</string>
+    <string name="wi_fi">ዋይፋይ</string>
+    <string name="miracast">ተአምር</string>
+    <string name="install">ጫን</string>
+    <string name="install_small">ጫን</string>
+    <string name="manual">መመሪያ</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">ስልክዎ እና ቲቪዎ መገናኘታቸውን ያረጋግጡ\nወደ ተመሳሳይ የ Wi-Fi አውታረ መረብ.</string>
+    <string name="hd_streaming">HD ዥረት</string>
+    <string name="smart_devices">ዘመናዊ መሣሪያዎች</string>
+    <string name="private_browser">የግል አሳሽ</string>
+    <string name="effects">ተፅዕኖዎች</string>
+    <string name="slider">ተንሸራታች</string>
+    <string name="search_or_type_web_address">የድር አድራሻ ይፈልጉ ወይም ይተይቡ</string>
+    <string name="install_2">ጫን</string>
+    <string name="bookmark">ዕልባት</string>
+    <string name="downloads">ውርዶች</string>
+    <string name="download">አውርድ</string>
+    <string name="favorites">ተወዳጆች</string>
+    <string name="favorite">የሚወደድ</string>
+    <string name="history">ታሪክ</string>
+    <string name="share_pdf">ፒዲኤፍ አጋራ</string>
+    <string name="copy_url">URL ቅዳ</string>
+    <string name="share_app">መተግበሪያ አጋራ</string>
+    <string name="share_url">ዩአርኤል አጋራ</string>
+    <string name="exit">ውጣ</string>
+    <string name="new_tab">አዲስ ትር</string>
+    <string name="google">ጉግል</string>
+    <string name="startpage">መነሻ ገጽ</string>
+    <string name="bing">ቢንግ</string>
+    <string name="duckduckgo">ዳክዳክጎ</string>
+    <string name="searx">ሰርክስ</string>
+    <string name="baidu">ባይዱ</string>
+    <string name="qwant">Qwan</string>
+    <string name="ecosia">ኢኮሲያ</string>
+    <string name="custom_search_engine">ብጁ የፍለጋ ሞተር</string>
+    <string name="add_shortcut_to_home">ወደ ቤት አቋራጭ ያክሉ</string>
+    <string name="save_screenshot">ቅጽበታዊ ገጽ እይታን ያስቀምጡ</string>
+    <string name="add_to_bookmark">ወደ ዕልባት ያክሉ</string>
+    <string name="save_as_pdf">እንደ pdf አስቀምጥ</string>
+    <string name="save_action">እርምጃን አስቀምጥ</string>
+    <string name="add_to_favorite">ወደ ተወዳጅ ያክሉ</string>
+    <string name="search_engine">የመፈለጊያ ማሸን</string>
+    <string name="browser_exit_body">እርግጠኛ ነህ ከአሳሽ መውጣት ትፈልጋለህ</string>
+    <string name="exit_browser">ከአሳሹ ውጣ</string>
+    <string name="custom_user_agent">ብጁ የተጠቃሚ ወኪል</string>
+    <string name="start_control">መቆጣጠሪያን ጀምር</string>
+    <string name="data_control">የውሂብ ቁጥጥር</string>
+    <string name="app_settings">የመተግበሪያ ቅንብሮች</string>
+    <string name="browser_settings">የአሳሽ ቅንብሮች</string>
+    <string name="behavior_ui">ባህሪ/UI</string>
+    <string name="clear_cache">መሸጎጫ አጽዳ</string>
+    <string name="clear_history">ታሪክ አጽዳ</string>
+    <string name="clear_browsing_history">የአሰሳ ታሪክን አጽዳ</string>
+    <string name="clear_all_cache">ሁሉንም መሸጎጫዎች ያጽዱ</string>
+    <string name="clear_database_body">"በመረጃ ጠቋሚ የተደረገባቸው የውሂብ ጎታዎች" እና "አካባቢያዊ" ያጽዱ\nየመረጃ ቋቶች"</string>
+    <string name="clear_cookies_body">ከነቃ ሁሉም ኩኪዎች ይሰረዛሉ። እንዲሁም\nየታመኑ ድር ጣቢያዎች ኩኪዎች</string>
+    <string name="clear_databases">የውሂብ ጎታዎችን አጽዳ</string>
+    <string name="clear_cookies">ኩኪዎችን አጽዳ</string>
+    <string name="clear_when_application_exit">መተግበሪያ ሲወጣ ያጽዱ</string>
+    <string name="clear_when_application_exit_body">ከላይ የተረጋገጠውን መረጃ ባቆሙ ቁጥር\nይሰረዛል</string>
+    <string name="image">ምስል</string>
+    <string name="javascript">ጃቫ ስክሪፕት</string>
+    <string name="cookies">ኩኪዎች</string>
+    <string name="reopen_last_tab">የመጨረሻውን ትር እንደገና ይክፈቱ</string>
+    <string name="confirm_tab_close">ትር መዝጋትን ያረጋግጡ</string>
+    <string name="confirm_browser_exit">የአሳሽ መውጣትን ያረጋግጡ</string>
+    <string name="position">አቀማመጥ</string>
+    <string name="first_toolbar">የመጀመሪያው የመሳሪያ አሞሌ</string>
+    <string name="hide_toolbar">የመሳሪያ አሞሌን ደብቅ</string>
+    <string name="toolbar">የመሳሪያ አሞሌ</string>
+    <string name="bookmarks">ዕልባቶች</string>
+    <string name="edit">አርትዕ</string>
+    <string name="today">ዛሬ</string>
+    <string name="the_last_hour">የመጨረሻው ሰዓት</string>
+    <string name="last_week">ባለፈው ሳምንት</string>
+    <string name="last_month">ባለፈው ወር</string>
+    <string name="delete_all_history">ሁሉንም ታሪክ ሰርዝ</string>
+    <string name="copied">ተገልብጧል</string>
+    <string name="share_ss">ኤስኤስ አጋራ</string>
+    <string name="file_manager">የፋይል አስተዳዳሪ</string>
+    <string name="search_on">ላይ ፈልግ</string>
+    <string name="add_shortcut">አቋራጭ አክል</string>
+    <string name="tab_exit">ትር ውጣ</string>
+    <string name="do_you_want_to_close">መዝጋት ትፈልጋለህ?</string>
+    <string name="download_complete_share_image">ማውረድ ተጠናቅቋል። ምስል አጋራ</string>
+    <string name="update">አዘምን</string>
+    <string name="unfavorite">ያልተወደደ</string>
+    <string name="no_input_provided">ምንም ግብአት አልተሰጠም።</string>
+    <string name="input">ግቤት</string>
+    <string name="website_link">የድር ጣቢያ አገናኝ</string>
+    <string name="for_you">ለእርስዎ</string>
+    <string name="website">ድህረገፅ:</string>
+    <string name="url">ዩአርኤል፡</string>
+    <string name="date">ቀን</string>
+    <string name="no_site_loaded">የተጫነ ድር ጣቢያ የለዎትም።</string>
+    <string name="more_then_5_images_can_not_be_picked">ከአምስት የሚበልጡ ምስሎች ሊመረጡ አይችሉም</string>
+
+</resources>

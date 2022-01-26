@@ -32,8 +32,7 @@
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/appCompatImageView42"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                style="@style/w_0_h_0"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/ic_drawer"
                 app:layout_constraintBottom_toTopOf="@+id/guideline15"
@@ -43,8 +42,7 @@
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imageview_draw"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                style="@style/w_0_h_0"
                 android:onClick="@{()->homeFragment.openDrawer()}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline17"
                 app:layout_constraintDimensionRatio="1:1"
@@ -53,8 +51,7 @@
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imageview_question"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                style="@style/w_0_h_0"
                 android:onClick="@{()->homeFragment.goToTutorial()}"
                 app:layout_constraintBottom_toTopOf="@+id/guideline17"
                 app:layout_constraintDimensionRatio="1:1"
@@ -63,8 +60,7 @@
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/appCompatImageView46"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
+                style="@style/w_0_h_0"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/ic_question_circle"
                 app:layout_constraintBottom_toTopOf="@+id/guideline15"
@@ -75,7 +71,7 @@
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/materialTextView18"
                 style="@style/header_text_view"
-                android:text="@string/screen_mirroring"
+                android:text="@string/app_name"
                 android:textAppearance="?attr/textAppearanceHeadline6"
                 app:autoSizeTextType="uniform"
                 app:layout_constraintBottom_toTopOf="@+id/guideline18"

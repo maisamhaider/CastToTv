@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Maltese-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">Tixtieq tikkanċella l-Konnessjoni VPN attwali?</string>
+    <string name="yes">IVA</string>
+    <string name="no">LE</string>
+    <string name="yes_2">Iva</string>
+    <string name="no_2">Nru</string>
+    <string name="select_images">Agħżel Stampi</string>
+    <string name="tabs">Tabs</string>
+    <string name="share">Aqsam</string>
+    <string name="save">Ħlief</string>
+    <string name="more">Aktar</string>
+    <string name="ok">kollox sew</string>
+    <string name="cancel">Ikkanċella</string>
+    <string name="favorite_site">Ibdel is-sit web default li jgħabbi fil-bidu\n tal-Browser</string>
+    <string name="custom_search_engine_body">Żid url ta\' tfittxija personalizzat agħżel ukoll “Magna ta\' riċerka\npersonalizzata” bħala fornitur tat-tiftix</string>
+    <string name="search_engine_body">Agħżel il-magna tat-tiftix preferuta tiegħek jew\nissettja waħda apposta</string>
+    <string name="data_control_body">Iċċara d-dejta tal-brawżer tiegħek jew iddeċiedi liema dejta\nse tiġi kklerjata meta titlaq mill-app</string>
+    <string name="start_control_body">Iddeċiedi liema komponenti tal-browser\nse jkunu fil-bidu</string>
+    <string name="behavior_ui_body">Ibdel l-imġieba u l-ui tal-app biex\nadattaw il-preferenzi tiegħek</string>
+    <string name="book_mark_body">Biex turi d-djalogu tal-filtru agħfas fit-tul fuq l-ikona tal-bookmark fil-ħarsa ġenerali. Iddeċiedi liema filtri se tuża</string>
+    <string name="app_settings_body">Is-settings tal-browser, hemm tista\' skont\il-verżjoni android tiegħek tagħti permess.</string>
+    <string name="start_control_image_body">Ippermetti l-immaġini tan-Netwerk, Id-diżattivazzjoni tista\' tkun utli\biex tissejvja d-dejta mobbli u tgħabbi l-websajt aktar malajr</string>
+    <string name="start_control_location_body">Ħalli websajts jaċċessaw il-post tiegħek. Xi\nsiti web {google, maps for nav) jeħtieġu din l-attivazzjoni</string>
+    <string name="start_control_history_body">Issejvja l-istorja tal-websajts miżjura</string>
+    <string name="start_control_java_script_body">Ippermetti JavaScript. Ħafna websajts jeħtieġu\nJavaScript għall-funzjonalità tagħhom. Iżda huma\nkoll jistrieħu u jistgħu jintużaw għall-attakki</string>
+    <string name="start_control_cookies_body">Ippermetti Cookies. Il-cookies huma fajls ta’ test żgħar,
+li huma maħżuna fuq it-tagħmir tiegħek. Użu tal-websajts
+minnhom pereżempju biex jaħżnu s-settings tal-utent. Iżda
+jistgħu jintużaw ukoll biex jiġbru utent personali
+data. Il-cookies ta’ partijiet terzi huma dejjem diżattivati.</string>
+    <string name="confirmation_browser_exit_body">Djalogu ta\' konferma meta\ngħalaq il-browser</string>
+    <string name="confirmation_tab_close_body">Dialog ta\' konferma meta tagħlaq tab</string>
+    <string name="confirmation_reopen_last_body">Erġa\' tiftaħ tab ġdida meta l-aħħar tab tkun magħluqa minflok toħroġ mill-browser</string>
+    <string name="hide_toolbar_body">Uża l-iskrin kollu meta tiskrollja l-websajt jekk tagħfas il-buttuna lura inti tħalli l-modalità fullscreen</string>
+    <string name="images">Stampi</string>
+    <string name="videos">Vidjows</string>
+    <string name="web_browser">Web Browser</string>
+    <string name="image_slider">Image Slider</string>
+    <string name="next">Li jmiss</string>
+    <string name="previous">Preċedenti</string>
+    <string name="help">Għajnuna</string>
+    <string name="settings">Settings</string>
+    <string name="language">Lingwi</string>
+    <string name="more_app">Aktar Apps</string>
+    <string name="rate_us">Rata lilna</string>
+    <string name="screen_mirroring">Screen Mirroring</string>
+    <string name="home_screen_text">Kun żgur li t-telefon u t-TV tiegħek huma konnessi mal-istess netwerk Wi-Fi.</string>
+    <string name="wifi_connected">Wi-Fi Konnessi</string>
+    <string name="wifi_disconnected">Wi-Fi Skonnettjat</string>
+    <string name="general">Ġenerali</string>
+    <string name="communicate">Ikkomunika</string>
+    <string name="send_feedback">Ibgħat Feedback</string>
+    <string name="tutorial">Tutorja</string>
+    <string name="how_to_use">Kif tuża?</string>
+    <string name="streaming">Streaming</string>
+    <string name="streaming_quality">Streaming Kwalità</string>
+    <string name="auto_stop">Auto Stop</string>
+    <string name="auto_minimize">Imminimizza awtomatikament</string>
+    <string name="advance">Bil-quddiem</string>
+    <string name="orientation_mode">Modalità Orjentazzjoni</string>
+    <string name="auto_stop_body_text">Waqqaf il-vidjo meta tintilef il-konnessjoni\l-mira</string>
+    <string name="auto_minimize_body_text">Aħbi l-app meta jibda l-mirroring</string>
+    <string name="casting_orientation_body_text">Orjentazzjoni tal-ikkastjar</string>
+    <string name="mirroring_mode">Modalità ta \'mirror</string>
+    <string name="screen_mirroring_privacy_policy">Politika ta\' privatezza li tirrifletti l-iskrin</string>
+    <string name="privacy_policy">Regoli tal-privatezza</string>
+    <string name="supporting_devices">Appoġġ Appoġġ</string>
+    <string name="see_which_devices_support_mirroring">Ara liema tagħmir jappoġġja l-mirroring</string>
+    <string name="color_theme">Tema tal-Kulur</string>
+    <string name="dark">Dlam</string>
+    <string name="light">Dawl</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Agħżel Lingwa</string>
+    <string name="close">qrib</string>
+    <string name="images_slider">Stampi Slider</string>
+    <string name="screen_mirror">Mera tal-Iskrin</string>
+    <string name="tutorial_screen_setup_body">It-tagħmir fil-mira tiegħek irid ikun fl-istess netwerk Wi-Fi bħal dan l-apparat, minħabba li Screen Mirror qed jittrasmetti l-iskrin tiegħek.</string>
+    <string name="tutorial_screen_mirror_body">Istrimja l-iskrin tat-tagħmir tiegħek permezz tal-Wi-Fi lill-kompjuter, notebook jew tablet tiegħek.</string>
+    <string name="tutorial_device_hotspot_body">Tista \'wkoll tuża l-hotspot tat-tagħmir tiegħek (mod tethering) u qabbad it-tagħmir fil-mira tiegħek mal-hotspot tiegħek.</string>
+    <string name="tutorial_scan_code_body">Iftaħ is-sit fuq it-tagħmir fil-mira tiegħek. Billi tiskennja l-kodiċi QR il-konfigurazzjoni tal-konnessjoni tiġi trażmessa u jibda l-mirroring.</string>
+    <string name="tutorial_support_body">Jekk jogħġbok kun konxju li Screen Mirror jaħdem biss meta s-setup korrett. Screen Mirror jittrasmetti l-iskrin tiegħek, iżda mhux is-sinjali awdjo tat-tagħmir tiegħek. Jekk tiffaċċja xi problemi ikkuntattjana.</string>
+    <string name="walk_through_body_1">Igawdu streaming bla xkiel u ta\' kwalità għolja\nmingħajr dewmien</string>
+    <string name="walk_through_body_2">Qabbad ma\' kwalunkwe apparat intelliġenti u gawdi l-\nshow fuq kwalunkwe skrin</string>
+    <string name="walk_through_body_3">Igawdu browser privat fl-app mingħajr limitazzjonijiet</string>
+    <string name="screen_setup">Setup tal-iskrin</string>
+    <string name="device_hotspot">Hotspot tal-apparat</string>
+    <string name="scan_code">Scan Code</string>
+    <string name="support">Appoġġ</string>
+    <string name="finish">Temm</string>
+    <string name="our_policies">Il-Politiki tagħna</string>
+    <string name="privacy_policy_text">Il-ħarsien tal-privatezza tiegħek huwa importanti għalina. Nittamaw li d-dikjarazzjoni li ġejja tgħinek tifhem kif nittrattaw l-informazzjoni personali identifikabbli, tista\' kultant tipprovdilna permezz tal-Internet (il-pjattaforma Google Play).\n\nĠeneralment. aħna ma niġbru l-ebda PII mingħandek meta tniżżel l-applikazzjonijiet tagħna għall-Android. Biex inkunu speċifiċi, aħna ma neħtiġux iż-żjarat tal-konsumaturi tal-applikazzjoni tagħna, lanqas m\'għandniex Server biex jaħżen tali PII.\n\nScreen Mirroring juża Facebook bħala fornitur tar-reklami. Facebook irid juri reklami li huma rilevanti għalik. Għal aktar informazzjoni jekk jogħġbok żur\nhttps://m.facebook.com/ads/ad_choices.\n\nL-unika sitwazzjoni li nistgħu niksbu aċċess għalik PII hija meta inti personalment tiddeċiedi li tibgħatilna email il-feedback tiegħek jew li tagħtina bug rapport. Il-PII li nistgħu niksbu mingħandek f\'dik is-sitwazzjoni huma strettament limitati għall-isem tiegħek, l-indirizz tal-email u t-tweġiba għall-istħarriġ tiegħek biss.\n\nFis-sitwazzjoni ta\' hawn fuq, niggarantixxu li inti PII se tintuża biss biex tikkuntattjak u ttejjeb is-servizzi tagħna. Qatt ma se nużaw tali informazzjoni (eż. ismek u l-indirizz elettroniku_ għal kwalunkwe skop ieħor, bħal biex ikompli jikkummerċjalizza l-prodotti tagħna, jew biex niżvelaw l-informazzjoni personali tiegħek lil parti terza għal qligħ kummerċjali.\n\nTa\' min jinnota li jekk jew li ma tibgħatilniex il-feedback tiegħek jew ir-rapport tal-bug hija inizjattiva kompletament volontarja fuq id-deċiżjoni tiegħek. Jekk għandek tħassib dwar l-użu ħażin tal-PII tiegħek, jew jekk trid aktar informazzjoni dwar il-politika tal-privatezza tagħna u xi tfisser, jekk jogħġbok tħossok liberu li tibgħatilna email fuq screenmirroring.feedback@gmail.com, aħna se nagħmlu ħilithom biex nipprovdu tweġibiet ċari għall-mistoqsijiet tiegħek fil-ħin.</string>
+    <string name="please_write_your_feedback">Jekk jogħġbok ikteb il-feedback tiegħek</string>
+    <string name="system_info">L-Informazzjoni tas-Sistema tiegħek tintbagħat lid-Dipartiment tat-teknoloġija tal-Mirroring tal-Iscreen</string>
+    <string name="send">Ibgħat</string>
+    <string name="provide_feedback">ipprovdi feedback</string>
+    <string name="invalid_email_provided">E-mail invalida pprovduta</string>
+    <string name="check_your_internet_connection">Iċċekkja l-konnessjoni tal-internet tiegħek</string>
+    <string name="type_here">ittajpja hawn…</string>
+    <string name="enter_your_email_optional">Daħħal l-email tiegħek (mhux obbligatorju)</string>
+    <string name="enjoy_the_app">Igawdu l-App?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Irrata l-esperjenza tiegħek billi tuża Screen\nMirroring App.</string>
+    <string name="not_now">Mhux issa</string>
+    <string name="feedback">Feedback:</string>
+    <string name="model">Mudell:</string>
+    <string name="brand">Ditta:</string>
+    <string name="os_version">Verżjoni OS:</string>
+    <string name="manufacturer">Manifattur:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Ibgħat posta</string>
+    <string name="select_picture">Agħżel Stampa</string>
+    <string name="help_center">Ċentru ta\' Għajnuna</string>
+    <string name="question_1">It-telefown tiegħi jeħel fil-"Konnessjoni" meta jingħaqad mat-TV.</string>
+    <string name="question_2">Ħadem għalija qabel, iżda \nissa ma taħdimx.</string>
+    <string name="question_3">Juri li t-tagħmir tiegħi \nmhuwiex appoġġjat.</string>
+    <string name="question_4">It-TV tiegħi huwa TV antik \nu ma jappoġġjax il-wi-fi.</string>
+    <string name="question_5">L-immaġni fuq it-TV hija sewda, iżda l-ħoss jista \'jinstema\'.</string>
+    <string name="question_6">Il-konnessjoni se tiġi interrotta \nwara ftit.</string>
+    <string name="question_7">L-informazzjoni personali tiegħi jew id-dejta mobbli hija assolutament sigura?</string>
+    <string name="q_answer_1_1">Ibda mill-ġdid il-Wi-Fi tal-ismart phone u ara jekk il-konnessjoni tirnexxix.</string>
+    <string name="q_answer_1_2">Itfi t-TV u neħħi l-korda tad-dawl mis-sokit ukoll. Stenna minuta u erġa ibda t-TV.</string>
+    <string name="q_answer_1_3">Tqassar id-distanza bejn it-telefon tiegħek u t-TV. Ħudha mill-qrib.</string>
+    <string name="q_answer_2_1">Jekk ħadmet qabel, allura definittivament jista \'jintuża mill-ġdid.</string>
+    <string name="q_answer_2_2">Ħafna mill-problemi ta \'konnessjoni jistgħu jissolvew billi jerġgħu jibdew it-tagħmir. Ibda mill-ġdid kemm it-telefon kif ukoll it-TV tiegħek, segwi l-proċess ta \'konnessjoni regolari biex terġa tipprova.</string>
+    <string name="q_answer_3_1">Dan ifisser li t-telefon tiegħek innifsu ma jappoġġjax il-funzjoni tal-mirror tal-iskrin.</string>
+    <string name="q_answer_3_2">Tista \'tuża XCast biex titfa\' vidjo, awdjo u ritratt fuq it-TV. B\'XCast, tista\' tagħmel affarijiet oħra bit-telefon tiegħek waqt li titfa\' fuq it-TV.</string>
+    <string name="q_answer_4_1">Jekk it-TV tiegħek jappoġġja interface HDMI, nirrakkomandaw li tixtri riċevitur estern għall-mirror tal-iskrin. Bħal Chromecast, Anycast eċċ.</string>
+    <string name="q_answer_5_1">Xi kontenut jinvolvi protezzjoni tad-drittijiet tal-awtur u ma jistax jintwera fuq apparati ta’ partijiet terzi, bħal Netflix, Disney Plus eċċ.</string>
+    <string name="q_answer_5_2">Tista \'tniżżel il-vidjo jew tfittex l-istess riżors fuq apps oħra biex tipprova.</string>
+    <string name="q_answer_6_1">Tista\' tixgħel is-Smart Connect fis-settings tal-Wi-Fi tiegħek. Hija se tfittex konnessjonijiet Wi-fi aħjar kontinwament, u dejjem tikkonnettja \'l quddiem u lura.</string>
+    <string name="q_answer_6_2">Jekk jogħġbok kun żgur li l-Wi-Fi tat-telefon ċellulari u tat-TV huwa l-SAM u l-aħjar sinjal.</string>
+    <string name="q_answer_7_1">Aħna mhux se nissorveljaw jew niġbru xi informazzjoni fuqek u fuq il-mowbajl tiegħek. Tista \'titfa\' l-iskrin tiegħek mingħajr ebda tħassib.</string>
+    <string name="q_answer_7_2">Is-sistema tista’ twissik li hemm periklu għas-sigurtà qabel ma timmira l-iskrin. Din hija biss tfakkira regolari, se tkun</string>
+    <string name="wi_fi">WIFI</string>
+    <string name="miracast">MIRA CAST</string>
+    <string name="install">INSTALLA</string>
+    <string name="install_small">Installa</string>
+    <string name="manual">Manwal</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Kun żgur li t-telefon u t-TV tiegħek huma konnessi\mal-istess netwerk Wi-Fi.</string>
+    <string name="hd_streaming">Streaming HD</string>
+    <string name="smart_devices">apparati intelliġenti</string>
+    <string name="private_browser">Browser Privat</string>
+    <string name="effects">Effetti</string>
+    <string name="slider">Slider</string>
+    <string name="search_or_type_web_address">Fittex jew ittajpja l-indirizz tal-web</string>
+    <string name="install_2">Installa</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="downloads">Downloads</string>
+    <string name="download">Niżżel</string>
+    <string name="favorites">Favoriti</string>
+    <string name="favorite">Favorit</string>
+    <string name="history">Storja</string>
+    <string name="share_pdf">Share Pdf</string>
+    <string name="copy_url">Ikkopja l-URL</string>
+    <string name="share_app">Aqsam l-App</string>
+    <string name="share_url">Aqsam l-url</string>
+    <string name="exit">Ħruġ</string>
+    <string name="new_tab">Tab Ġdida</string>
+    <string name="google">Google</string>
+    <string name="startpage">StartPage</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Magna tat-tiftix apposta</string>
+    <string name="add_shortcut_to_home">Żid shortcut għad-dar</string>
+    <string name="save_screenshot">Ħlief Screenshot</string>
+    <string name="add_to_bookmark">Żid mal-bookmark</string>
+    <string name="save_as_pdf">Ħlief bħala pdf</string>
+    <string name="save_action">Ħlief Azzjoni</string>
+    <string name="add_to_favorite">Żid mal-favorit</string>
+    <string name="search_engine">Search Engine</string>
+    <string name="browser_exit_body">Int żgur li trid toħroġ mill-Browser</string>
+    <string name="exit_browser">Ħruġ mill-Browser</string>
+    <string name="custom_user_agent">Aġent tal-utent tad-dwana</string>
+    <string name="start_control">Ibda Kontroll</string>
+    <string name="data_control">Kontroll tad-Data</string>
+    <string name="app_settings">Settings tal-app</string>
+    <string name="browser_settings">Settings tal-browser</string>
+    <string name="behavior_ui">Imġieba/UI</string>
+    <string name="clear_cache">Ċar Cache</string>
+    <string name="clear_history">Storja ċara</string>
+    <string name="clear_browsing_history">Storja ċara tal-ibbrawżjar</string>
+    <string name="clear_all_cache">Neħħi l-cache kollha</string>
+    <string name="clear_database_body">Ċar "databases indiċjati" u "bażijiet tad-data\nlokali"</string>
+    <string name="clear_cookies_body">Jekk attivata, il-cookies kollha se jitħassru. Ukoll\nil-Cookies ta\' websajts ta\' fiduċja</string>
+    <string name="clear_databases">Databases ċari</string>
+    <string name="clear_cookies">Cookies ċari</string>
+    <string name="clear_when_application_exit">Ċara meta l-applikazzjoni toħroġ</string>
+    <string name="clear_when_application_exit_body">Kull darba li tieqaf id-dejta kollha ċċekkjata hawn fuq\ntitħassar</string>
+    <string name="image">Immaġni</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Cookies</string>
+    <string name="reopen_last_tab">Erġa\' tiftaħ l-aħħar tab</string>
+    <string name="confirm_tab_close">Ikkonferma l-għeluq tat-tab</string>
+    <string name="confirm_browser_exit">Ikkonferma l-ħruġ tal-browser</string>
+    <string name="position">Pożizzjoni</string>
+    <string name="first_toolbar">L-ewwel toolbar</string>
+    <string name="hide_toolbar">Aħbi toolbar</string>
+    <string name="toolbar">Toolbar</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="edit">Editja</string>
+    <string name="today">Illum</string>
+    <string name="the_last_hour">L-aħħar siegħa</string>
+    <string name="last_week">Il-gimgha l-ohra</string>
+    <string name="last_month">Ix-xahar li għadda</string>
+    <string name="delete_all_history">Ħassar l-istorja kollha</string>
+    <string name="copied">ikkupjat</string>
+    <string name="share_ss">Aqsam SS</string>
+    <string name="file_manager">File Manager</string>
+    <string name="search_on">Fittex Fuq</string>
+    <string name="add_shortcut">Żid Shortcut</string>
+    <string name="tab_exit">Tab Ħruġ</string>
+    <string name="do_you_want_to_close">Trid tagħlaq</string>
+    <string name="download_complete_share_image">Niżżel komplut. Aqsam l-immaġni</string>
+    <string name="update">Aġġornament</string>
+    <string name="unfavorite">Un favorit</string>
+    <string name="no_input_provided">Ebda input ipprovdut</string>
+    <string name="input">Input</string>
+    <string name="website_link">Link tal-websajt</string>
+    <string name="for_you">Għalik</string>
+    <string name="website">Websajt:</string>
+    <string name="url">Url:</string>
+    <string name="date">Data</string>
+    <string name="no_site_loaded">M\'għandekx websajt mgħobbija</string>
+    <string name="more_then_5_images_can_not_be_picked">Aktar minn ħames immaġini ma jistgħux jinġabru</string>
+    <string name="location">Post</string>
+</resources>

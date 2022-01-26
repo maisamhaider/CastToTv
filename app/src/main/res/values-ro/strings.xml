@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Romanian-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">Doriți să anulați conexiunea VPN actuală?</string>
+    <string name="yes">DA</string>
+    <string name="no">NU</string>
+    <string name="yes_2">da</string>
+    <string name="no_2">Nu</string>
+    <string name="select_images">Selectați Imagini</string>
+    <string name="tabs">Filele</string>
+    <string name="share">Acțiune</string>
+    <string name="save">salva</string>
+    <string name="more">Mai mult</string>
+    <string name="ok">O.K</string>
+    <string name="cancel">Anulare</string>
+    <string name="favorite_site">Schimbați site-ul web implicit care se încarcă la\npornirea browserului</string>
+    <string name="custom_search_engine_body">Adăugați o adresă URL de căutare personalizată și alegeți „Motor de căutare\npersonalizat” ca furnizor de căutare</string>
+    <string name="search_engine_body">Alegeți motorul de căutare preferat sau\nsetați unul personalizat</string>
+    <string name="data_control_body">Ștergeți datele browserului sau decideți ce date\nvor fi șterse când părăsiți aplicația</string>
+    <string name="start_control_body">Decideți ce componente ale browserului\nvor fi pornite</string>
+    <string name="behavior_ui_body">Schimbați comportamentul și interfața aplicației pentru a\npotrivi preferințelor dvs</string>
+    <string name="book_mark_body">Pentru a afișa dialogul de filtrare, apăsați lung pe pictograma marcajului din prezentarea generală. Decideți ce filtre veți folosi</string>
+    <string name="app_settings_body">Setările browserului, acolo puteți, în funcție de\versiunea dvs. de Android, să acordați permisiunea.</string>
+    <string name="start_control_image_body">Activați imaginile de rețea, dezactivarea ar putea fi utilă\pentru a salva datele mobile și a încărca site-ul mai repede</string>
+    <string name="start_control_location_body">Permiteți site-urilor web să vă acceseze locația. Unele\nsite-uri web {google, maps for nav) au nevoie de această activare</string>
+    <string name="start_control_history_body">Salvați istoricul site-urilor web vizitate</string>
+    <string name="start_control_java_script_body">Permite Javascript. Multe site-uri au nevoie de\nJavaScript pentru funcționalitatea lor. Dar ele sunt\nală odihnă și pot fi folosite pentru atacuri</string>
+    <string name="start_control_cookies_body">Activați cookie-urile. Cookie-urile sunt fișiere text mici,
+care sunt stocate pe dispozitivul dvs. Utilizarea site-urilor web
+de exemplu pentru a stoca setările utilizatorului. Dar
+acestea ar putea fi, de asemenea, utilizate pentru a colecta utilizator personal
+date. Cookie-urile de la terți sunt întotdeauna dezactivate.</string>
+    <string name="confirmation_browser_exit_body">Dialog de confirmare la\nînchiderea browserului</string>
+    <string name="confirmation_tab_close_body">Dialog de confirmare la închiderea unei file</string>
+    <string name="confirmation_reopen_last_body">Redeschideți o filă nouă când ultima filă este închisă în loc să părăsiți browserul</string>
+    <string name="hide_toolbar_body">Folosiți întregul ecran când defilați prin site-ul web dacă apăsați butonul înapoi, veți părăsi modul ecran complet</string>
+    <string name="images">Imagini</string>
+    <string name="videos">Videoclipuri</string>
+    <string name="web_browser">Browser web</string>
+    <string name="image_slider">Glisor de imagine</string>
+    <string name="next">Următorul</string>
+    <string name="previous">Anterior</string>
+    <string name="help">Ajutor</string>
+    <string name="settings">Setări</string>
+    <string name="language">Limbi</string>
+    <string name="more_app">Mai multe aplicatii</string>
+    <string name="rate_us">Ne evalua</string>
+    <string name="screen_mirroring">Oglindirea ecranului</string>
+    <string name="home_screen_text">Asigurați-vă că telefonul și televizorul sunt conectate la aceeași rețea Wi-Fi.</string>
+    <string name="wifi_connected">Wi-Fi conectat</string>
+    <string name="wifi_disconnected">Wi-Fi deconectat</string>
+    <string name="general">General</string>
+    <string name="communicate">Comunica</string>
+    <string name="send_feedback">Trimite feedback</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="how_to_use">Cum se utilizează?</string>
+    <string name="streaming">Streaming</string>
+    <string name="streaming_quality">Calitate streaming</string>
+    <string name="auto_stop">Auto Stop</string>
+    <string name="auto_minimize">Minimizare automată</string>
+    <string name="advance">Avans</string>
+    <string name="orientation_mode">Modul de orientare</string>
+    <string name="auto_stop_body_text">Opriți videoclipul când conexiunea\la ținta este pierdută</string>
+    <string name="auto_minimize_body_text">Ascundeți aplicația când începe oglindirea</string>
+    <string name="casting_orientation_body_text">Orientare la turnare</string>
+    <string name="mirroring_mode">Modul oglindire</string>
+    <string name="screen_mirroring_privacy_policy">Politica de confidențialitate pentru oglindirea ecranului</string>
+    <string name="privacy_policy">Politica de Confidențialitate</string>
+    <string name="supporting_devices">Dispozitive suport</string>
+    <string name="see_which_devices_support_mirroring">Vedeți ce dispozitive acceptă oglindire</string>
+    <string name="color_theme">Tema de culoare</string>
+    <string name="dark">Întuneric</string>
+    <string name="light">Ușoară</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Selecteaza limba</string>
+    <string name="close">închide</string>
+    <string name="images_slider">Imagini Glisor</string>
+    <string name="screen_mirror">Oglinda ecranului</string>
+    <string name="tutorial_screen_setup_body">Dispozitivul dvs. țintă trebuie să fie în aceeași rețea Wi-Fi ca acest dispozitiv, deoarece Screen Mirror vă transmite ecranul.</string>
+    <string name="tutorial_screen_mirror_body">Transmiteți în flux ecranul dispozitivului prin Wi-Fi pe computer, notebook sau tabletă.</string>
+    <string name="tutorial_device_hotspot_body">De asemenea, puteți utiliza hotspot-ul dispozitivului dvs. (modul tethering) și vă puteți conecta dispozitivul țintă la hotspot-ul dvs.</string>
+    <string name="tutorial_scan_code_body">Deschideți site-ul pe dispozitivul țintă. Prin scanarea codului QR, configurația conexiunii este transmisă și începe oglindirea.</string>
+    <string name="tutorial_support_body">Vă rugăm să rețineți că Screen Mirror funcționează numai atunci când este configurat corect. Screen Mirror vă transmite ecranul, dar nu și semnalele audio ale dispozitivului. Dacă întâmpinați orice problemă, contactați-ne.</string>
+    <string name="walk_through_body_1">Bucurați-vă de streaming fluid și de înaltă calitate\nfără întârzieri</string>
+    <string name="walk_through_body_2">Conectați-vă cu orice dispozitiv inteligent și bucurați-vă de\nshow pe orice ecran</string>
+    <string name="walk_through_body_3">Bucurați-vă de browserul privat în aplicație, fără limitări</string>
+    <string name="screen_setup">Configurare ecran</string>
+    <string name="device_hotspot">Hotspot-ul dispozitivului</string>
+    <string name="scan_code">Cod de scanare</string>
+    <string name="support">A sustine</string>
+    <string name="finish">finalizarea</string>
+    <string name="our_policies">Politicile noastre</string>
+    <string name="privacy_policy_text">Protejarea vieții private este importantă pentru noi. Sperăm că următoarea declarație vă va ajuta să înțelegeți cum tratăm informațiile personale de identificare, pe care ni le puteți furniza ocazional prin Internet (platforma Google Play).\n\nÎn general. nu colectăm niciun PII de la dvs. atunci când descărcați aplicațiile noastre Android. Pentru a fi mai precis, nu solicităm vizitarea aplicației noastre de către consumatori, nici măcar nu avem un server pentru a stoca astfel de PII.\n\nScreen Mirroring folosește Facebook ca furnizor de reclame. Facebook vrea să afișeze reclame relevante pentru tine. Pentru mai multe informații, vă rugăm să vizitați\nhttps://m.facebook.com/ads/ad_choices.\n\nSingura situație în care putem avea acces la PII este atunci când decideți personal să ne trimiteți feedbackul dvs. prin e-mail sau să ne furnizați o eroare raport. PII pe care le putem obține de la dvs. în această situație se limitează strict la numele dvs., adresa de e-mail și răspunsul dvs. la sondaj.\n\nÎn situația de mai sus, vă garantăm că dvs. IPI vor fi folosite numai pentru a vă contacta și pentru a îmbunătăți serviciile noastre. Nu vom folosi niciodată astfel de informații (de exemplu, numele și adresa dvs. de e-mail_ în orice alte scopuri, cum ar fi pentru a comercializa în continuare produsele noastre sau pentru a dezvălui informațiile dvs. personale unei terțe părți pentru câștiguri comerciale.\n\nTrebuie reținut că dacă sau a nu ne trimite feedback-ul dvs. sau raportul de eroare este o inițiativă complet voluntară din propria decizie. Dacă aveți îngrijorare cu privire la utilizarea abuzivă a IPI sau dacă doriți mai multe informații despre politica noastră de confidențialitate și ce înseamnă aceasta, nu ezitați să ne trimiteți un e-mail la screenmirroring.feedback@gmail.com, ne vom strădui să oferim răspunsuri clare la întrebările dvs. în timp util .</string>
+    <string name="please_write_your_feedback">Vă rugăm să scrieți feedback-ul dvs</string>
+    <string name="system_info">Informațiile de sistem vor fi trimise Departamentului de tehnologie Screen Mirroring</string>
+    <string name="send">Trimite</string>
+    <string name="provide_feedback">oferi feedback</string>
+    <string name="invalid_email_provided">E-mail nevalid furnizat</string>
+    <string name="check_your_internet_connection">Verificați conexiunea la internet</string>
+    <string name="type_here">Scrie aici…</string>
+    <string name="enter_your_email_optional">Introduceți adresa dvs. de e-mail (opțional)</string>
+    <string name="enjoy_the_app">Vă bucurați de aplicație?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Evaluează-ți experiența utilizând aplicația Screen\nMirroring.</string>
+    <string name="not_now">Nu acum</string>
+    <string name="feedback">Părere:</string>
+    <string name="model">Model:</string>
+    <string name="brand">Marca:</string>
+    <string name="os_version">Versiunea sistemului de operare:</string>
+    <string name="manufacturer">Producător:</string>
+    <string name="ram">BERBEC:</string>
+    <string name="send_email">Trimite mail</string>
+    <string name="select_picture">Selectați Imagine</string>
+    <string name="help_center">Centru de ajutor</string>
+    <string name="question_1">Telefonul meu rămâne blocat la „Conectare” când se conectează cu televizorul.</string>
+    <string name="question_2">La mine a funcționat înainte, dar nu funcționează acum.</string>
+    <string name="question_3">Arată că dispozitivul meu \nnu este acceptat.</string>
+    <string name="question_4">Televizorul meu este un televizor vechi și nu acceptă wi-fi.</string>
+    <string name="question_5">Imaginea de pe televizor este neagră, dar sunetul se aude.</string>
+    <string name="question_6">Conexiunea va fi întreruptă \ndupă un timp.</string>
+    <string name="question_7">Informațiile mele personale sau datele mobile sunt absolut sigure?</string>
+    <string name="q_answer_1_1">Reporniți Wi-Fi-ul telefonului inteligent și vedeți dacă conexiunea este reușită.</string>
+    <string name="q_answer_1_2">Opriți televizorul și scoateți și cablul de alimentare din priză. Așteptați 1 minut și reporniți televizorul.</string>
+    <string name="q_answer_1_3">Scurtați distanța dintre telefon și televizor. Luați-o de aproape.</string>
+    <string name="q_answer_2_1">Dacă a funcționat înainte, atunci cu siguranță poate fi folosit din nou.</string>
+    <string name="q_answer_2_2">Cele mai multe probleme de conexiune pot fi rezolvate prin repornirea dispozitivelor. Doar reporniți atât telefonul, cât și televizorul, urmați procesul obișnuit de conectare pentru a reîncerca.</string>
+    <string name="q_answer_3_1">Aceasta înseamnă că telefonul în sine nu acceptă funcția de oglindire a ecranului.</string>
+    <string name="q_answer_3_2">Puteți folosi XCast pentru a proiecta videoclipuri, audio și fotografii pe televizor. Cu XCast, puteți face alte lucruri cu telefonul dvs. în timp ce proiectați la televizor.</string>
+    <string name="q_answer_4_1">Dacă televizorul dvs. acceptă interfața HDMI, vă recomandăm să cumpărați un receptor extern pentru oglindirea ecranului. Cum ar fi Chromecast, Anycast etc.</string>
+    <string name="q_answer_5_1">Unele conținuturi implică protecție prin drepturi de autor și nu pot fi afișate pe dispozitive terțe, cum ar fi Netflix, Disney Plus etc.</string>
+    <string name="q_answer_5_2">Puteți descărca videoclipul sau puteți căuta aceeași resursă în alte aplicații pentru a încerca.</string>
+    <string name="q_answer_6_1">Puteți activa Smart Connect în setările dvs. Wi-Fi. Acesta va căuta în mod constant conexiuni Wi-Fi mai bune și se va conecta întotdeauna înainte și înapoi.</string>
+    <string name="q_answer_6_2">Vă rugăm să vă asigurați că Wi-Fi-ul telefonului mobil și al televizorului este SAM și cel mai bun semnal.</string>
+    <string name="q_answer_7_1">Nu vom monitoriza și nu vom colecta informații despre dvs. și telefonul dvs. mobil. Puteți proiecta ecranul fără nicio grijă.</string>
+    <string name="q_answer_7_2">Sistemul vă poate avertiza că există un pericol de siguranță înainte de oglindirea ecranului. Acesta este doar un memento obișnuit, așa va fi</string>
+    <string name="wi_fi">WIFI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">INSTALARE</string>
+    <string name="install_small">Instalare</string>
+    <string name="manual">Manual</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Asigurați-vă că telefonul și televizorul sunt conectate\la aceeași rețea Wi-Fi.</string>
+    <string name="hd_streaming">Streaming HD</string>
+    <string name="smart_devices">dispozitive inteligente</string>
+    <string name="private_browser">Browser privat</string>
+    <string name="effects">Efecte</string>
+    <string name="slider">Glisor</string>
+    <string name="search_or_type_web_address">Căutați sau introduceți adresa web</string>
+    <string name="install_2">Instalare</string>
+    <string name="bookmark">Marcaj</string>
+    <string name="downloads">Descărcări</string>
+    <string name="download">Descarca</string>
+    <string name="favorites">Favorite</string>
+    <string name="favorite">Favorită</string>
+    <string name="history">Istorie</string>
+    <string name="share_pdf">Distribuie PDF</string>
+    <string name="copy_url">Copiați adresa URL</string>
+    <string name="share_app">Partajați aplicația</string>
+    <string name="share_url">Distribuiți adresa URL</string>
+    <string name="exit">Ieșire</string>
+    <string name="new_tab">Filă nouă</string>
+    <string name="google">Google</string>
+    <string name="startpage">Pagină de start</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Motor de căutare personalizat</string>
+    <string name="add_shortcut_to_home">Adăugați o comandă rapidă la acasă</string>
+    <string name="save_screenshot">Salvați captura de ecran</string>
+    <string name="add_to_bookmark">Adăugați la marcaj</string>
+    <string name="save_as_pdf">Salvați ca pdf</string>
+    <string name="save_action">Salvare acțiune</string>
+    <string name="add_to_favorite">Adaugă la favorite</string>
+    <string name="search_engine">Motor de căutare</string>
+    <string name="browser_exit_body">Sigur doriți să părăsiți Browser</string>
+    <string name="exit_browser">Ieșiți din browser</string>
+    <string name="custom_user_agent">Agent utilizator personalizat</string>
+    <string name="start_control">Porniți controlul</string>
+    <string name="data_control">Controlul datelor</string>
+    <string name="app_settings">Setările aplicației</string>
+    <string name="browser_settings">Setări browser</string>
+    <string name="behavior_ui">Comportament/UI</string>
+    <string name="clear_cache">Goliți memoria cache</string>
+    <string name="clear_history">Sterge istoricul</string>
+    <string name="clear_browsing_history">Ștergeți istoricul de navigare</string>
+    <string name="clear_all_cache">Goliți toată memoria cache</string>
+    <string name="clear_database_body">Ștergeți „bazele de date indexate” și „bazele de date\nlocale”</string>
+    <string name="clear_cookies_body">Dacă este activat, toate cookie-urile vor fi șterse. De asemenea,\ncookie-urile site-urilor web de încredere</string>
+    <string name="clear_databases">Ștergeți bazele de date</string>
+    <string name="clear_cookies">Șterge cookie-uri</string>
+    <string name="clear_when_application_exit">Ștergeți la ieșirea din aplicație</string>
+    <string name="clear_when_application_exit_body">De fiecare dată când renunțați la toate datele verificate de mai sus\nvor fi șterse</string>
+    <string name="image">Imagine</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Cookie-uri</string>
+    <string name="reopen_last_tab">Redeschide ultima filă</string>
+    <string name="confirm_tab_close">Confirmați închiderea filei</string>
+    <string name="confirm_browser_exit">Confirmați ieșirea din browser</string>
+    <string name="position">Poziţie</string>
+    <string name="first_toolbar">Prima bară de instrumente</string>
+    <string name="hide_toolbar">Ascundeți bara de instrumente</string>
+    <string name="toolbar">Bara de instrumente</string>
+    <string name="bookmarks">Marcaje</string>
+    <string name="edit">Editați | ×</string>
+    <string name="today">Astăzi</string>
+    <string name="the_last_hour">Ultima oră</string>
+    <string name="last_week">Săptămâna trecută</string>
+    <string name="last_month">Luna trecuta</string>
+    <string name="delete_all_history">Ștergeți tot istoricul</string>
+    <string name="copied">copiat</string>
+    <string name="share_ss">Distribuie SS</string>
+    <string name="file_manager">Manager de fișiere</string>
+    <string name="search_on">Cauta pe</string>
+    <string name="add_shortcut">Adauga scurtatura</string>
+    <string name="tab_exit">Ieșire din fila</string>
+    <string name="do_you_want_to_close">Vrei să închizi</string>
+    <string name="download_complete_share_image">Descarcare completa. Distribuiți imaginea</string>
+    <string name="update">Actualizați</string>
+    <string name="unfavorite">Un favorit</string>
+    <string name="no_input_provided">Nu este furnizată nicio intrare</string>
+    <string name="input">Intrare</string>
+    <string name="website_link">Link-ul</string>
+    <string name="for_you">Pentru dumneavoastră</string>
+    <string name="website">Site:</string>
+    <string name="url">Url:</string>
+    <string name="date">Data</string>
+    <string name="no_site_loaded">Nu ai încărcat site-ul web</string>
+    <string name="more_then_5_images_can_not_be_picked">Mai mult de cinci imagini nu pot fi alese</string>
+    <string name="location">"Locație "</string>
+
+</resources>

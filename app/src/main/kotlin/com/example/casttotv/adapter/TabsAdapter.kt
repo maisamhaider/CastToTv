@@ -2,10 +2,7 @@ package com.example.casttotv.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.graphics.Bitmap
-import android.graphics.Canvas
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
@@ -47,35 +44,7 @@ class TabsAdapter(
                 Glide.with(context).load(tab.webView.url).placeholder(R.drawable.ic_browser)
                     .into(imageviewTabSiteLogo)
 
-                val dimen144dp: Int =
-                    context.resources.getDimensionPixelSize(R.dimen.layout_width_144dp)
-                val dimen108dp: Int =
-                    context.resources.getDimensionPixelSize(R.dimen.layout_height_108dp)
-
-                val width: Float =
-                    context.resources.getDimensionPixelSize(R.dimen.layout_width_144dp).toFloat()
-                val height: Float =
-                    context.resources.getDimensionPixelSize(R.dimen.layout_height_108dp).toFloat()
-
-                tab.webView.setLayerType(View.LAYER_TYPE_HARDWARE, null)
-
-                val sBitmap = Bitmap.createBitmap(dimen144dp, dimen108dp, Bitmap.Config.RGB_565)
-
-                val sCanvas = Canvas(sBitmap)
-
-                val left: Int = tab.webView.left
-                val top: Int = tab.webView.top
-                val status = sCanvas.save()
-                sCanvas.translate(-left.toFloat(), -top.toFloat())
-
-                val scale: Float = width / tab.webView.width
-                val scale2: Float = height / tab.webView.height
-                sCanvas.scale(scale, scale, scale2, scale2)
-
-                tab.webView.draw(sCanvas)
-                sCanvas.restoreToCount(status)
-
-                imageview.setImageBitmap(sBitmap)
+                imageview.setImageBitmap(tab.webView.bitmap())
 
                 if (browserVm._currentTabIndex == absoluteAdapterPosition) {
                     cl.setBackgroundResource(R.drawable.selected_tab_bg)

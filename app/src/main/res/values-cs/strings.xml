@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Czech-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="location">Umístění</string>
+
+    <string name="connection_close_confirm">Chcete zrušit aktuální připojení VPN?</string>
+    <string name="yes">ANO</string>
+    <string name="no">NE</string>
+    <string name="yes_2">Ano</string>
+    <string name="no_2">Ne</string>
+    <string name="select_images">Vyberte Obrázky</string>
+    <string name="tabs">Karty</string>
+    <string name="share">Podíl</string>
+    <string name="save">Uložit</string>
+    <string name="more">Více</string>
+    <string name="ok">OK</string>
+    <string name="cancel">zrušení</string>
+    <string name="favorite_site">Změňte výchozí webovou stránku, která se načte\nspuštěním prohlížeče</string>
+    <string name="custom_search_engine_body">Přidejte vlastní vyhledávací adresu URL také vyberte „Vlastní\nvyhledávač“ jako poskytovatele vyhledávání</string>
+    <string name="search_engine_body">Vyberte si preferovaný vyhledávač nebo\nnastavte si vlastní</string>
+    <string name="data_control_body">Vymažte data prohlížeče nebo rozhodněte, která data\nbudou vymazána, když aplikaci opustíte</string>
+    <string name="start_control_body">Rozhodněte, které součásti prohlížeče\nbudou při spuštění</string>
+    <string name="behavior_ui_body">Změňte chování a uživatelské rozhraní aplikace tak, aby\nvyhovovalo vašim preferencím</string>
+    <string name="book_mark_body">Dialog filtru zobrazíte dlouhým stisknutím ikony záložky v přehledu. Rozhodněte se, které filtry budete používat</string>
+    <string name="app_settings_body">Nastavení prohlížeče, zde můžete v závislosti na\nvaší verzi Androidu udělit oprávnění.</string>
+    <string name="start_control_image_body">Povolte síťové obrázky. Deaktivace může být užitečná\npro úsporu mobilních dat a rychlejší načítání webu</string>
+    <string name="start_control_location_body">Povolte webům přístup k vaší poloze. Některé\nweby {google, mapy pro navigaci) tuto možnost potřebují</string>
+    <string name="start_control_history_body">Uložte historii navštívených webových stránek</string>
+    <string name="start_control_java_script_body">Povolit JavaScript. Mnoho webových stránek potřebuje pro svou funkčnost\nJavaScript. Ale jsou\ale také odpočívající a lze je použít k útokům</string>
+    <string name="start_control_cookies_body">Povolit soubory cookie. Cookies jsou malé textové soubory,které jsou uloženy ve vašem zařízení. Používají webové stránkynapříklad pro uložení uživatelských nastavení. Alemohly by být také použity ke shromažďování osobních uživatelůdata. Soubory cookie třetích stran jsou vždy zakázány.</string>
+    <string name="confirmation_browser_exit_body">Potvrzovací dialog při\nzavírání prohlížeče</string>
+    <string name="confirmation_tab_close_body">Dialog pro potvrzení při zavírání karty</string>
+    <string name="confirmation_reopen_last_body">Po zavření poslední karty místo ukončení prohlížeče znovu otevřete novou kartu</string>
+    <string name="hide_toolbar_body">Při procházení webu použijte celou obrazovku, pokud stisknete tlačítko Zpět, režim celé obrazovky opustíte</string>
+    <string name="images">snímky</string>
+    <string name="videos">videa</string>
+    <string name="web_browser">Webový prohlížeč</string>
+    <string name="image_slider">Posuvník obrázku</string>
+    <string name="next">další</string>
+    <string name="previous">Předchozí</string>
+    <string name="help">Pomoc</string>
+    <string name="settings">Nastavení</string>
+    <string name="language">Jazyky</string>
+    <string name="more_app">Další aplikace</string>
+    <string name="rate_us">Ohodnoťte nás</string>
+    <string name="screen_mirroring">Zrcadlení obrazovky</string>
+    <string name="home_screen_text">Ujistěte se, že váš telefon a televizor jsou připojeny ke stejné síti Wi-Fi.</string>
+    <string name="wifi_connected">Wi-Fi připojeno</string>
+    <string name="wifi_disconnected">Wi-Fi odpojeno</string>
+    <string name="general">Všeobecné</string>
+    <string name="communicate">Komunikovat</string>
+    <string name="send_feedback">Poslat zpětnou vazbu</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="how_to_use">Jak používat?</string>
+    <string name="streaming">Streamování</string>
+    <string name="streaming_quality">Kvalita streamování</string>
+    <string name="auto_stop">Automatické zastavení</string>
+    <string name="auto_minimize">Automaticky minimalizovat</string>
+    <string name="advance">Záloha</string>
+    <string name="orientation_mode">Orientační režim</string>
+    <string name="auto_stop_body_text">Při ztrátě připojení\nk cíli zastavte video</string>
+    <string name="auto_minimize_body_text">Při zahájení zrcadlení skrýt aplikaci</string>
+    <string name="casting_orientation_body_text">Orientace odlitku</string>
+    <string name="mirroring_mode">Režim zrcadlení</string>
+    <string name="screen_mirroring_privacy_policy">Zásady ochrany osobních údajů pro zrcadlení obrazovky</string>
+    <string name="privacy_policy">Zásady ochrany osobních údajů</string>
+    <string name="supporting_devices">Podpůrná zařízení</string>
+    <string name="see_which_devices_support_mirroring">Podívejte se, která zařízení podporují zrcadlení</string>
+    <string name="color_theme">Barevný motiv</string>
+    <string name="dark">Temný</string>
+    <string name="light">Světlo</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Zvolte jazyk</string>
+    <string name="close">zavřít</string>
+    <string name="images_slider">Obrázky Posuvník</string>
+    <string name="screen_mirror">Screen Mirror</string>
+    <string name="tutorial_screen_setup_body">Vaše cílové zařízení musí být ve stejné síti Wi-Fi jako toto zařízení, protože Screen Mirror přenáší vaši obrazovku.</string>
+    <string name="tutorial_screen_mirror_body">Streamujte obrazovku svého zařízení přes Wi-Fi do počítače, notebooku nebo tabletu.</string>
+    <string name="tutorial_device_hotspot_body">Můžete také použít hotspot vašeho zařízení (režim tetheringu) a připojit cílové zařízení k vašemu hotspotu.</string>
+    <string name="tutorial_scan_code_body">Otevřete web na cílovém zařízení. Naskenováním QR kódu se přenese konfigurace připojení a spustí se zrcadlení.</string>
+    <string name="tutorial_support_body">Mějte prosím na paměti, že Screen Mirror funguje pouze při správném nastavení. Screen Mirror přenáší vaši obrazovku, ale ne zvukové signály vašeho zařízení. Pokud narazíte na nějaké problémy, kontaktujte nás.</string>
+    <string name="walk_through_body_1">Užijte si plynulé a vysoce kvalitní streamování\nbez zpoždění</string>
+    <string name="walk_through_body_2">Připojte se k jakémukoli chytrému zařízení a užijte si\nshow na jakékoli obrazovce</string>
+    <string name="walk_through_body_3">Užijte si soukromý prohlížeč v aplikaci bez omezení</string>
+    <string name="screen_setup">Nastavení obrazovky</string>
+    <string name="device_hotspot">Hotspot zařízení</string>
+    <string name="scan_code">Skenovat kód</string>
+    <string name="support">Podpěra, podpora</string>
+    <string name="finish">Dokončit</string>
+    <string name="our_policies">Naše zásady</string>
+    <string name="privacy_policy_text">Ochrana vašeho soukromí je pro nás důležitá. Doufáme, že vám následující prohlášení pomůže pochopit, jak nakládáme s osobními identifikačními údaji, které nám můžete příležitostně poskytnout prostřednictvím internetu (platforma Google Play).\n\nObecně. při stahování aplikací pro Android od vás neshromažďujeme žádné PII. Abychom byli konkrétní, nevyžadujeme, aby naši uživatelé navštěvovali naši aplikaci, dokonce ani nemáme server pro ukládání takových osobních údajů.\n\nScreen Mirroring využívá Facebook jako poskytovatele reklam. Facebook chce zobrazovat reklamy, které jsou pro vás relevantní. Další informace naleznete na adrese\nhttps://m.facebook.com/ads/ad_choices.\n\nJediná situace, kdy můžeme získat přístup k vašim osobním údajům, je, když se osobně rozhodnete poslat nám svou zpětnou vazbu e-mailem nebo nám poskytnout chybu zpráva. Osobní údaje, které od vás v takové situaci můžeme získat, jsou přísně omezeny pouze na vaše jméno, e-mailovou adresu a vaši odpověď na průzkum.\n\nVe výše uvedené situaci vám garantujeme, že vaše osobní údaje budou použity pouze k tomu, abychom vás kontaktovali a zlepšili naše služby. Takové informace nikdy nepoužijeme (např. vaše jméno a e-mailovou adresu_ pro žádné jiné účely, jako je další prodej našich produktů nebo sdělování vašich osobních údajů třetí straně pro komerční zisky.\n\nJe třeba poznamenat, že ať už nezasílat nám zpětnou vazbu nebo hlášení o chybě je zcela dobrovolná iniciativa na základě vašeho vlastního rozhodnutí. Pokud máte obavy ze zneužití vašich osobních údajů nebo pokud chcete další informace o našich zásadách ochrany osobních údajů a co to znamená, neváhejte nám napsat e-mail na screenmirroring.feedback@gmail.com se budeme snažit včas poskytnout jasné odpovědi na vaše otázky.</string>
+    <string name="please_write_your_feedback">Napište prosím svůj názor</string>
+    <string name="system_info">Vaše systémové informace budou odeslány technickému oddělení Screen Mirroring</string>
+    <string name="send">Poslat</string>
+    <string name="provide_feedback">poskytnout zpětnou vazbu</string>
+    <string name="invalid_email_provided">Zadán neplatný email</string>
+    <string name="check_your_internet_connection">Zkontrolujte připojení k internetu</string>
+    <string name="type_here">napište sem…</string>
+    <string name="enter_your_email_optional">Zadejte svůj e-mail (volitelné)</string>
+    <string name="enjoy_the_app">Líbí se vám aplikace?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Ohodnoťte svou zkušenost s aplikací Screen\nMirroring.</string>
+    <string name="not_now">Teď ne</string>
+    <string name="feedback">Zpětná vazba:</string>
+    <string name="model">Modelka:</string>
+    <string name="brand">Značka:</string>
+    <string name="os_version">Verze OS:</string>
+    <string name="manufacturer">Výrobce:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Poslat mail</string>
+    <string name="select_picture">Vyberte Obrázek</string>
+    <string name="help_center">Centrum nápovědy</string>
+    <string name="question_1">Můj telefon se při párování s TV zasekne \nu „Připojování“.</string>
+    <string name="question_2">Dříve mi to fungovalo, ale teď \nuž to nefunguje.</string>
+    <string name="question_3">Ukazuje, že mé zařízení není \npodporováno.</string>
+    <string name="question_4">Můj televizor je starý a nepodporuje \nwi-fi.</string>
+    <string name="question_5">Obraz na TV je černý, ale zvuk \nje slyšet.</string>
+    <string name="question_6">Spojení bude po chvíli \npřerušeno.</string>
+    <string name="question_7">Jsou moje osobní údaje nebo mobilní data \nabsolutně v bezpečí?</string>
+    <string name="q_answer_1_1">Restartujte Wi-Fi chytrého telefonu a zjistěte, zda je připojení úspěšné.</string>
+    <string name="q_answer_1_2">Vypněte televizor a vytáhněte také jeho napájecí kabel ze zásuvky. Počkejte 1 minutu a restartujte televizor.</string>
+    <string name="q_answer_1_3">Zkraťte vzdálenost mezi telefonem a televizorem. Vezměte to zblízka.</string>
+    <string name="q_answer_2_1">Pokud to fungovalo předtím, pak to určitě může být znovu použito.</string>
+    <string name="q_answer_2_2">Většinu problémů s připojením lze vyřešit restartováním zařízení. Stačí restartovat telefon i televizor a opakovat postup podle běžného procesu připojení.</string>
+    <string name="q_answer_3_1">To znamená, že váš telefon sám o sobě funkci zrcadlení obrazovky nepodporuje.</string>
+    <string name="q_answer_3_2">XCast můžete použít k odesílání videa, zvuku a fotografií do TV. Pomocí XCast můžete s telefonem při odesílání do televize dělat další věci.</string>
+    <string name="q_answer_4_1">Pokud váš televizor podporuje rozhraní HDMI, doporučujeme zakoupit externí přijímač pro zrcadlení obrazovky. Například Chromecast, Anycast atd.</string>
+    <string name="q_answer_5_1">Některý obsah zahrnuje ochranu autorských práv a nelze jej zobrazit na zařízeních třetích stran, jako jsou Netflix, Disney Plus atd.</string>
+    <string name="q_answer_5_2">Můžete si stáhnout video nebo vyhledat stejný zdroj v jiných aplikacích a vyzkoušet.</string>
+    <string name="q_answer_6_1">Smart Connect můžete zapnout v nastavení Wi-Fi. Neustále bude hledat lepší připojení Wi-Fi a vždy se připojí tam a zpět.</string>
+    <string name="q_answer_6_2">Ujistěte se prosím, že Wi-Fi mobilního telefonu a TV je SAM a nejlepší signál.</string>
+    <string name="q_answer_7_1">Nebudeme sledovat ani shromažďovat žádné informace o vás a vašem mobilním telefonu. Obrazovku můžete odeslat bez obav.</string>
+    <string name="q_answer_7_2">Systém vás může před zrcadlením obrazovky varovat, že existuje bezpečnostní riziko. Toto je jen pravidelná připomínka, bude</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">NAINSTALUJTE</string>
+    <string name="install_small">Nainstalujte</string>
+    <string name="manual">Manuál</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Ujistěte se, že jsou váš telefon a televize připojeny\nke stejné síti Wi-Fi.</string>
+    <string name="hd_streaming">HD streamování</string>
+    <string name="smart_devices">chytrých zařízení</string>
+    <string name="private_browser">Soukromý prohlížeč</string>
+    <string name="effects">Efekty</string>
+    <string name="slider">Posuvník</string>
+    <string name="search_or_type_web_address">Vyhledejte nebo zadejte webovou adresu</string>
+    <string name="install_2">Nainstalujte</string>
+    <string name="bookmark">Záložka do knihy</string>
+    <string name="downloads">Stahování</string>
+    <string name="download">Stažení</string>
+    <string name="favorites">Oblíbené</string>
+    <string name="favorite">Oblíbený</string>
+    <string name="history">Dějiny</string>
+    <string name="share_pdf">Sdílet Pdf</string>
+    <string name="copy_url">Kopírovat URL</string>
+    <string name="share_app">Sdílet aplikaci</string>
+    <string name="share_url">Sdílet adresu URL</string>
+    <string name="exit">Výstup</string>
+    <string name="new_tab">Nová karta</string>
+    <string name="google">Google</string>
+    <string name="startpage">Úvodní stránka</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Vlastní vyhledávač</string>
+    <string name="add_shortcut_to_home">Přidat zástupce domů</string>
+    <string name="save_screenshot">Uložit snímek obrazovky</string>
+    <string name="add_to_bookmark">Přidat do záložky</string>
+    <string name="save_as_pdf">Uložit jako pdf</string>
+    <string name="save_action">Uložit akci</string>
+    <string name="add_to_favorite">Přidat do oblíbených</string>
+    <string name="search_engine">Vyhledávač</string>
+    <string name="browser_exit_body">Opravdu chcete ukončit prohlížeč?</string>
+    <string name="exit_browser">Ukončete prohlížeč</string>
+    <string name="custom_user_agent">Vlastní uživatelský agent</string>
+    <string name="start_control">Start Control</string>
+    <string name="data_control">Kontrola dat</string>
+    <string name="app_settings">Nastavení aplikace</string>
+    <string name="browser_settings">Nastavení prohlížeče</string>
+    <string name="behavior_ui">Chování/uživatelské rozhraní</string>
+    <string name="clear_cache">Vyčistit mezipaměť</string>
+    <string name="clear_history">Smazat historii</string>
+    <string name="clear_browsing_history">vyčistit historii prohlížení</string>
+    <string name="clear_all_cache">Vymazat veškerou mezipaměť</string>
+    <string name="clear_database_body">Vymazat „indexované databáze“ a „místní\ndatabáze“</string>
+    <string name="clear_cookies_body">Pokud je povoleno, všechny soubory cookie budou smazány. Také\ncookies důvěryhodných webových stránek</string>
+    <string name="clear_databases">Vymazat databáze</string>
+    <string name="clear_cookies">Vymazat cookies</string>
+    <string name="clear_when_application_exit">Vymazat při ukončení aplikace</string>
+    <string name="clear_when_application_exit_body">Pokaždé, když ukončíte všechna výše uvedená zaškrtnutá data,\nbudou smazána</string>
+    <string name="image">obraz</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Soubory cookie</string>
+    <string name="reopen_last_tab">Znovu otevřete poslední kartu</string>
+    <string name="confirm_tab_close">Potvrďte zavření karty</string>
+    <string name="confirm_browser_exit">Potvrďte ukončení prohlížeče</string>
+    <string name="position">Pozice</string>
+    <string name="first_toolbar">První panel nástrojů</string>
+    <string name="hide_toolbar">Skrýt panel nástrojů</string>
+    <string name="toolbar">Panel nástrojů</string>
+    <string name="bookmarks">Záložky</string>
+    <string name="edit">Upravit</string>
+    <string name="today">Dnes</string>
+    <string name="the_last_hour">Poslední hodina</string>
+    <string name="last_week">Minulý týden</string>
+    <string name="last_month">Minulý měsíc</string>
+    <string name="delete_all_history">Smazat celou historii</string>
+    <string name="copied">zkopírován</string>
+    <string name="share_ss">Sdílet SS</string>
+    <string name="file_manager">Správce souborů</string>
+    <string name="search_on">Vyhledávání zapnuto</string>
+    <string name="add_shortcut">Přidat zkratku</string>
+    <string name="tab_exit">Tab Exit</string>
+    <string name="do_you_want_to_close">Chcete zavřít?</string>
+    <string name="download_complete_share_image">Stahování dokončeno. Sdílet obrázek</string>
+    <string name="update">Aktualizace</string>
+    <string name="unfavorite">Neoblíbený</string>
+    <string name="no_input_provided">Nebyl poskytnut žádný vstup</string>
+    <string name="input">Vstup</string>
+    <string name="website_link">Odkaz na webovou stránku</string>
+    <string name="for_you">Pro tebe</string>
+    <string name="website">Webová stránka:</string>
+    <string name="url">URL:</string>
+    <string name="date">datum</string>
+    <string name="no_site_loaded">Nemáte načtený web</string>
+    <string name="more_then_5_images_can_not_be_picked">Více než pět obrázků nelze vybrat</string>
+</resources>

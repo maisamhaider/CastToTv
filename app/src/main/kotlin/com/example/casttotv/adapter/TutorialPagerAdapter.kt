@@ -74,32 +74,32 @@ class TutorialPagerAdapter(private var context: Context) :
         }
 
         private fun onContactClick(context: Context, textView: TextView) {
-            val text: String = context.getString(R.string.tutorial_support_body)
+//            val text: String = context.getString(R.string.tutorial_support_body)
 
-            val spannableString = SpannableString(text)
+//            val spannableString = SpannableString(text)
 
-            val notUnderlineSpanAndClick: ClickableSpan = object : ClickableSpan() {
-                override fun onClick(widget: View) {
-                    context.toastLong("clicked")
+//            val notUnderlineSpanAndClick: ClickableSpan = object : ClickableSpan() {
+//                override fun onClick(widget: View) {
+//                    context.toastLong("clicked")
+//
+//                }
+//
+//                override fun updateDrawState(ds: TextPaint) { // override updateDrawState
+//                    ds.isUnderlineText = false // set to false to remove underline
+//                }
+//
+//            }
 
-                }
 
-                override fun updateDrawState(ds: TextPaint) { // override updateDrawState
-                    ds.isUnderlineText = false // set to false to remove underline
-                }
-
-            }
-
-
-            val color =
-                ForegroundColorSpan(ContextCompat.getColor(context, R.color.cr_dodger_blue_light_2))
-            spannableString.setSpan(color, 166, 177, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
-            spannableString.setSpan(notUnderlineSpanAndClick,
-                166,
-                177,
-                Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
-            textView.text = spannableString
-            textView.movementMethod = LinkMovementMethod.getInstance()
+//            val color =
+//                ForegroundColorSpan(ContextCompat.getColor(context, R.color.cr_dodger_blue_light_2))
+//            spannableString.setSpan(color, 166, 177, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+//            spannableString.setSpan(notUnderlineSpanAndClick,
+//                166,
+//                177,
+//                Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+//            textView.text = spannableString
+//            textView.movementMethod = LinkMovementMethod.getInstance()
         }
     }
 

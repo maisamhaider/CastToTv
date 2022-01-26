@@ -1,7 +1,6 @@
 package com.example.casttotv.adapter
 
 import android.content.Context
-import android.content.ContextWrapper
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.annotation.ColorInt
@@ -13,7 +12,6 @@ import com.example.casttotv.R
 import com.example.casttotv.databinding.LanguageItemBinding
 import com.example.casttotv.dataclasses.SearchEngine
 import com.example.casttotv.utils.MySingleton.resolveColorAttr
-import com.example.casttotv.utils.MySingleton.setAppLocale
 import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.Pref.putPrefs
 import com.example.casttotv.utils.SELECTED_ENGINE
@@ -90,13 +88,9 @@ class SearchEngineAdapter(private var context: Context) :
 
     private fun click(searchEngine: SearchEngine, holder: Holder) {
         context.putPrefs(SELECTED_ENGINE, searchEngine.name.lowercase())
-//        if (holder.absoluteAdapterPosition != -1) {
         holder.bind(getItem(holder.absoluteAdapterPosition), context)
         notifyDataSetChanged()
-        ContextWrapper(context.setAppLocale(context.getPrefs(SELECTED_ENGINE, "google")))
-//        }
-
-
+        context.getPrefs(SELECTED_ENGINE, "google")
     }
 
 }

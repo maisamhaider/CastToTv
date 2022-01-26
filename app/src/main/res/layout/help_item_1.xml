@@ -28,7 +28,8 @@
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/textview_question"
             style="@style/header_text_3"
-            android:layout_marginEnd="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:gravity="center|start"
             android:lineSpacingExtra="1.0dp"
             app:layout_constraintBottom_toTopOf="@+id/guideline256"
             app:layout_constraintEnd_toStartOf="@+id/image_view_arrow"

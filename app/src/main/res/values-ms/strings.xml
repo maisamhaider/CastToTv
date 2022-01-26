@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Malay-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">Adakah anda ingin membatalkan Sambungan VPN semasa?</string>
+    <string name="yes">YA</string>
+    <string name="no">TIDAK</string>
+    <string name="yes_2">ya</string>
+    <string name="no_2">Tidak</string>
+    <string name="select_images">Pilih Imej</string>
+    <string name="tabs">Tab</string>
+    <string name="share">Kongsi</string>
+    <string name="save">Jimat</string>
+    <string name="more">Lagi</string>
+    <string name="ok">okey</string>
+    <string name="cancel">Batal</string>
+    <string name="favorite_site">Tukar tapak web lalai yang dimuatkan pada\npermulaan Penyemak Imbas</string>
+    <string name="custom_search_engine_body">Tambah url carian tersuai juga pilih "Enjin carian\nsuai" sebagai penyedia carian</string>
+    <string name="search_engine_body">Pilih enjin carian pilihan anda atau\ntetapkan enjin carian tersuai</string>
+    <string name="data_control_body">Kosongkan data penyemak imbas anda atau tentukan data\nyang akan dikosongkan apabila anda meninggalkan apl</string>
+    <string name="start_control_body">Tentukan komponen penyemak imbas\nyang akan dimulakan</string>
+    <string name="behavior_ui_body">Tukar gelagat dan ui apl untuk\nsesuai dengan pilihan anda</string>
+    <string name="book_mark_body">Untuk menunjukkan dialog penapis tekan lama pada ikon penanda halaman dalam gambaran keseluruhan. Tentukan penapis yang akan anda gunakan</string>
+    <string name="app_settings_body">Tetapan penyemak imbas, di sana anda boleh bergantung pada \kebenaran pemberian versi android anda.</string>
+    <string name="start_control_image_body">Dayakan imej Rangkaian, Melumpuhkan mungkin berguna\ untuk menyimpan data mudah alih dan memuatkan tapak web dengan lebih cepat</string>
+    <string name="start_control_location_body">Benarkan tapak web mengakses lokasi anda. Sesetengah\ntapak web {google, maps for nav) memerlukan daya ini</string>
+    <string name="start_control_history_body">Simpan sejarah tapak web yang dilawati</string>
+    <string name="start_control_java_script_body">Dayakan JavaScript. Banyak tapak web memerlukan\nJavaScript untuk kefungsiannya. Tetapi ia\juga berehat dan boleh digunakan untuk serangan</string>
+    <string name="start_control_cookies_body">Dayakan Kuki. Kuki ialah fail teks kecil,
+yang disimpan pada peranti anda. Penggunaan laman web
+mereka contohnya untuk menyimpan tetapan pengguna. Tetapi
+ia juga boleh digunakan untuk mengumpul pengguna peribadi
+data. Kuki pihak ketiga sentiasa dilumpuhkan.</string>
+    <string name="confirmation_browser_exit_body">Dialog pengesahan apabila\nmenutup penyemak imbas</string>
+    <string name="confirmation_tab_close_body">Dialog pengesahan semasa menutup tab</string>
+    <string name="confirmation_reopen_last_body">Buka semula tab baharu apabila tab terakhir ditutup dan bukannya keluar dari penyemak imbas</string>
+    <string name="hide_toolbar_body">Gunakan seluruh skrin apabila menatal melalui tapak web jika anda menekan butang belakang anda akan meninggalkan mod skrin penuh</string>
+    <string name="images">Imej</string>
+    <string name="videos">Video</string>
+    <string name="web_browser">Pelayar web</string>
+    <string name="image_slider">Peluncur Imej</string>
+    <string name="next">Seterusnya</string>
+    <string name="previous">Sebelumnya</string>
+    <string name="help">Tolong</string>
+    <string name="settings">tetapan</string>
+    <string name="language">Bahasa</string>
+    <string name="more_app">Lagi Apl</string>
+    <string name="rate_us">Nilaikan Kami</string>
+    <string name="screen_mirroring">Pencerminan Skrin</string>
+    <string name="home_screen_text">Pastikan telefon dan TV anda disambungkan ke rangkaian Wi-Fi yang sama.</string>
+    <string name="wifi_connected">Wi-Fi Disambungkan</string>
+    <string name="wifi_disconnected">Wi-Fi Terputus</string>
+    <string name="general">Umum</string>
+    <string name="communicate">Berkomunikasi</string>
+    <string name="send_feedback">Hantar maklumbalas</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="how_to_use">Bagaimana nak guna?</string>
+    <string name="streaming">Penstriman</string>
+    <string name="streaming_quality">Kualiti Penstriman</string>
+    <string name="auto_stop">Auto Stop</string>
+    <string name="auto_minimize">Automatikan</string>
+    <string name="advance">terlebih dahulu</string>
+    <string name="orientation_mode">Mod Orientasi</string>
+    <string name="auto_stop_body_text">Hentikan video apabila sambungan\ke sasaran terputus</string>
+    <string name="auto_minimize_body_text">Sembunyikan apl apabila pencerminan bermula</string>
+    <string name="casting_orientation_body_text">Orientasi pemutus</string>
+    <string name="mirroring_mode">Mod cermin</string>
+    <string name="screen_mirroring_privacy_policy">Dasar privasi pencerminan skrin</string>
+    <string name="privacy_policy">Dasar Privasi</string>
+    <string name="supporting_devices">Peranti Sokongan</string>
+    <string name="see_which_devices_support_mirroring">Lihat peranti yang menyokong pencerminan</string>
+    <string name="color_theme">Tema Warna</string>
+    <string name="dark">Gelap</string>
+    <string name="light">Cahaya</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Pilih Bahasa</string>
+    <string name="close">dekat</string>
+    <string name="images_slider">Imej peluncur</string>
+    <string name="screen_mirror">Cermin Skrin</string>
+    <string name="tutorial_screen_setup_body">Peranti sasaran anda mesti berada dalam rangkaian Wi-Fi yang sama seperti peranti ini, kerana Cermin Skrin sedang menghantar skrin anda.</string>
+    <string name="tutorial_screen_mirror_body">Strim skrin peranti anda melalui Wi-Fi ke komputer, buku nota atau tablet anda.</string>
+    <string name="tutorial_device_hotspot_body">Anda juga boleh menggunakan tempat liputan peranti anda (mod penambatan) dan sambungkan peranti sasaran anda ke tempat liputan anda.</string>
+    <string name="tutorial_scan_code_body">Buka tapak pada peranti sasaran anda. Dengan mengimbas kod QR konfigurasi sambungan dihantar dan pencerminan bermula.</string>
+    <string name="tutorial_support_body">Sila ambil perhatian bahawa Cermin Skrin hanya berfungsi apabila persediaan dengan betul. Cermin Skrin menghantar skrin anda, tetapi bukan isyarat audio peranti anda. Jika anda menghadapi sebarang masalah hubungi kami.</string>
+    <string name="walk_through_body_1">Nikmati penstriman lancar dan berkualiti tinggi\ntanpa ketinggalan</string>
+    <string name="walk_through_body_2">Berhubung dengan mana-mana peranti pintar dan nikmati\ntayangan pada mana-mana skrin</string>
+    <string name="walk_through_body_3">Nikmati penyemak imbas peribadi dalam apl tanpa had</string>
+    <string name="screen_setup">Persediaan Skrin</string>
+    <string name="device_hotspot">Tempat liputan Peranti</string>
+    <string name="scan_code">Kod Imbasan</string>
+    <string name="support">Sokongan</string>
+    <string name="finish">Selesai</string>
+    <string name="our_policies">Dasar Kami</string>
+    <string name="privacy_policy_text">Melindungi privasi anda adalah penting bagi kami. Kami berharap penyataan berikut akan membantu anda memahami cara kami berurusan dengan maklumat peribadi yang boleh dikenal pasti, yang kadangkala mungkin anda berikan kepada kami melalui Internet (platform Google Play).\n\nSecara amnya. kami tidak mengumpul sebarang PII daripada anda apabila anda memuat turun aplikasi Android kami. Secara khusus, kami tidak memerlukan pengguna melawat aplikasi kami, malah kami tidak mempunyai Pelayan untuk menyimpan PII sedemikian.\n\nPencerminan Skrin menggunakan Facebook sebagai penyedia iklan. Facebook mahu memaparkan iklan yang berkaitan dengan anda. Untuk mendapatkan maklumat lanjut, sila lawati\nhttps://m.facebook.com/ads/ad_choices.\n\nSatu-satunya situasi yang kami mungkin mendapat akses kepada PII anda ialah apabila anda secara peribadi memutuskan untuk menghantar maklum balas anda melalui e-mel atau memberi kami pepijat laporan. PII yang mungkin kami dapat daripada anda dalam situasi itu adalah terhad kepada nama, alamat e-mel dan respons tinjauan anda sahaja.\n\nDalam situasi di atas, kami menjamin bahawa PII anda hanya akan digunakan untuk menghubungi anda dan menambah baik perkhidmatan kami. Kami tidak akan sekali-kali menggunakan maklumat sedemikian (cth nama dan alamat e-mel anda_ untuk sebarang tujuan lain, seperti untuk memasarkan lagi produk kami, atau untuk mendedahkan maklumat peribadi anda kepada pihak ketiga untuk keuntungan komersial.\n\nPerlu diambil perhatian bahawa sama ada atau untuk tidak menghantar maklum balas atau laporan pepijat anda kepada kami adalah inisiatif sukarela sepenuhnya atas keputusan anda sendiri. Jika anda bimbang tentang PII anda disalahgunakan, atau jika anda mahukan maklumat lanjut tentang dasar privasi kami dan maksudnya, sila e-mel kepada kami di screenmirroring.feedback@gmail.com, kami akan berusaha untuk memberikan jawapan yang jelas kepada soalan anda tepat pada masanya .</string>
+    <string name="please_write_your_feedback">Sila tulis maklum balas anda</string>
+    <string name="system_info">Maklumat Sistem anda akan dihantar ke Jabatan teknologi Screen Mirroring</string>
+    <string name="send">Hantar</string>
+    <string name="provide_feedback">memberikan maklum balas</string>
+    <string name="invalid_email_provided">E-mel tidak sah disediakan</string>
+    <string name="check_your_internet_connection">Semak sambungan internet anda</string>
+    <string name="type_here">taip di sini…</string>
+    <string name="enter_your_email_optional">Masukkan e-mel anda (pilihan)</string>
+    <string name="enjoy_the_app">Nikmati Apl?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Nilaikan pengalaman anda menggunakan Skrin\nApl Pencerminan.</string>
+    <string name="not_now">Bukan sekarang</string>
+    <string name="feedback">Maklum balas:</string>
+    <string name="model">model:</string>
+    <string name="brand">Jenama:</string>
+    <string name="os_version">Versi OS:</string>
+    <string name="manufacturer">Pengeluar:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Hantar surat</string>
+    <string name="select_picture">Pilih Gambar</string>
+    <string name="help_center">Pusat Bantuan</string>
+    <string name="question_1">Telefon Saya tersekat pada "Menyambung" apabila berpasangan dengan TV.</string>
+    <string name="question_2">Ia berfungsi untuk saya sebelum ini, tetapi ia tidak berfungsi sekarang.</string>
+    <string name="question_3">Ia menunjukkan bahawa peranti saya tidak disokong.</string>
+    <string name="question_4">TV saya ialah TV lama dan \ntidak menyokong wi-fi.</string>
+    <string name="question_5">Imej di TV berwarna hitam, tetapi bunyinya boleh didengari.</string>
+    <string name="question_6">Sambungan akan terganggu \nselepas beberapa ketika.</string>
+    <string name="question_7">Adakah maklumat peribadi atau data mudah alih saya benar-benar selamat?</string>
+    <string name="q_answer_1_1">Mulakan semula Wi-Fi telefon pintar dan lihat sama ada sambungan berjaya.</string>
+    <string name="q_answer_1_2">Matikan TV dan keluarkan kord kuasanya dari soket juga. Tunggu 1 minit dan mulakan semula TV.</string>
+    <string name="q_answer_1_3">Pendekkan jarak antara telefon anda dan TV. Ambil dekat-dekat.</string>
+    <string name="q_answer_2_1">Jika ia berfungsi sebelum ini, maka ia pasti boleh digunakan semula.</string>
+    <string name="q_answer_2_2">Kebanyakan masalah sambungan boleh diselesaikan dengan memulakan semula peranti. Hanya mulakan semula kedua-dua telefon dan TV anda, ikut proses sambungan biasa untuk mencuba semula.</string>
+    <string name="q_answer_3_1">Ini bermakna telefon anda sendiri tidak menyokong fungsi pencerminan skrin.</string>
+    <string name="q_answer_3_2">Anda boleh menggunakan XCast untuk menghantar video, audio dan foto ke TV. Dengan XCast, anda boleh melakukan perkara lain dengan telefon anda semasa menghantar ke TV.</string>
+    <string name="q_answer_4_1">Jika TV anda menyokong antara muka HDMI, kami mengesyorkan anda membeli penerima luaran untuk pencerminan skrin. Seperti Chromecast, Anycast dll.</string>
+    <string name="q_answer_5_1">Sesetengah kandungan melibatkan perlindungan hak cipta dan tidak boleh dipaparkan pada peranti pihak ketiga, seperti Netflix, Disney Plus dsb.</string>
+    <string name="q_answer_5_2">Anda boleh memuat turun video atau mencari sumber yang sama pada apl lain untuk mencuba.</string>
+    <string name="q_answer_6_1">Anda boleh menghidupkan Smart Connect dalam tetapan Wi-Fi anda. Ia akan mencari sambungan Wi-fi yang lebih baik secara berterusan, dan sentiasa menyambung ke sana ke mari.</string>
+    <string name="q_answer_6_2">Sila pastikan bahawa Wi-Fi telefon mudah alih dan TV ialah SAM dan isyarat terbaik.</string>
+    <string name="q_answer_7_1">Kami tidak akan memantau atau mengumpul sebarang maklumat mengenai anda dan telefon mudah alih anda. Anda boleh menghantar skrin anda tanpa sebarang kebimbangan.</string>
+    <string name="q_answer_7_2">Sistem mungkin memberi amaran kepada anda bahawa terdapat bahaya keselamatan sebelum pencerminan skrin. Ini hanyalah peringatan biasa, ia akan menjadi</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">PELAKON MIRA</string>
+    <string name="install">PASANG</string>
+    <string name="install_small">Pasang</string>
+    <string name="manual">Manual</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Pastikan telefon dan TV anda disambungkan\ke rangkaian Wi-Fi yang sama.</string>
+    <string name="hd_streaming">Penstriman HD</string>
+    <string name="smart_devices">peranti pintar</string>
+    <string name="private_browser">Pelayar Peribadi</string>
+    <string name="effects">Kesan</string>
+    <string name="slider">peluncur</string>
+    <string name="search_or_type_web_address">Cari atau taip alamat web</string>
+    <string name="install_2">Pasang</string>
+    <string name="bookmark">Penanda buku</string>
+    <string name="downloads">Muat turun</string>
+    <string name="download">Muat turun</string>
+    <string name="favorites">Kegemaran</string>
+    <string name="favorite">Kegemaran</string>
+    <string name="history">Sejarah</string>
+    <string name="share_pdf">Kongsi Pdf</string>
+    <string name="copy_url">Salin URL</string>
+    <string name="share_app">Kongsi Apl</string>
+    <string name="share_url">Kongsi url</string>
+    <string name="exit">Keluar</string>
+    <string name="new_tab">Tab baru</string>
+    <string name="google">Google</string>
+    <string name="startpage">Muka surat permulaan</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Enjin carian tersuai</string>
+    <string name="add_shortcut_to_home">Tambahkan pintasan ke rumah</string>
+    <string name="save_screenshot">Simpan Tangkapan Skrin</string>
+    <string name="add_to_bookmark">Tambahkan pada penanda halaman</string>
+    <string name="save_as_pdf">Simpan sebagai pdf</string>
+    <string name="save_action">Simpan Tindakan</string>
+    <string name="add_to_favorite">Tambah ke kegemaran</string>
+    <string name="search_engine">Enjin carian</string>
+    <string name="browser_exit_body">Adakah anda pasti mahu keluar dari Penyemak Imbas</string>
+    <string name="exit_browser">Keluar dari Pelayar</string>
+    <string name="custom_user_agent">Ejen pengguna tersuai</string>
+    <string name="start_control">Mulakan Kawalan</string>
+    <string name="data_control">Kawalan Data</string>
+    <string name="app_settings">Tetapan apl</string>
+    <string name="browser_settings">Tetapan Penyemak Imbas</string>
+    <string name="behavior_ui">Tingkah laku/UI</string>
+    <string name="clear_cache">Kosongkan cache</string>
+    <string name="clear_history">Kosongkan Sejarah</string>
+    <string name="clear_browsing_history">Kosongkan sejarah penyemakan imbas</string>
+    <string name="clear_all_cache">Kosongkan semua cache</string>
+    <string name="clear_database_body">Kosongkan "pangkalan data diindeks" dan "pangkalan\ndata tempatan"</string>
+    <string name="clear_cookies_body">Jika didayakan, semua kuki akan dipadamkan. Juga\nKuki tapak web yang dipercayai</string>
+    <string name="clear_databases">Kosongkan pangkalan data</string>
+    <string name="clear_cookies">Kosongkan Kuki</string>
+    <string name="clear_when_application_exit">Kosongkan apabila aplikasi keluar</string>
+    <string name="clear_when_application_exit_body">Setiap kali anda keluar dari semua data yang disemak di atas\nakan dipadamkan</string>
+    <string name="image">Gambar</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">biskut</string>
+    <string name="reopen_last_tab">Buka semula tab terakhir</string>
+    <string name="confirm_tab_close">Sahkan tutup tab</string>
+    <string name="confirm_browser_exit">Sahkan pelayar keluar</string>
+    <string name="position">kedudukan</string>
+    <string name="first_toolbar">Bar alat pertama</string>
+    <string name="hide_toolbar">Sembunyikan bar alat</string>
+    <string name="toolbar">Bar alat</string>
+    <string name="bookmarks">Penanda buku</string>
+    <string name="edit">Sunting</string>
+    <string name="today">Hari ini</string>
+    <string name="the_last_hour">Jam terakhir</string>
+    <string name="last_week">Minggu lepas</string>
+    <string name="last_month">Bulan lepas</string>
+    <string name="delete_all_history">Padamkan semua sejarah</string>
+    <string name="copied">disalin</string>
+    <string name="share_ss">Kongsi SS</string>
+    <string name="file_manager">Pengurus Fail</string>
+    <string name="search_on">Carian Dihidupkan</string>
+    <string name="add_shortcut">Tambah Pintasan</string>
+    <string name="tab_exit">Tab Keluar</string>
+    <string name="do_you_want_to_close">Adakah anda mahu tutup</string>
+    <string name="download_complete_share_image">Muat turun selesai. Kongsi imej</string>
+    <string name="update">Kemas kini</string>
+    <string name="unfavorite">Tidak kegemaran</string>
+    <string name="no_input_provided">Tiada input disediakan</string>
+    <string name="input">Input</string>
+    <string name="website_link">Pautan laman web</string>
+    <string name="for_you">Untuk Awak</string>
+    <string name="website">laman web:</string>
+    <string name="url">Url:</string>
+    <string name="date">Tarikh</string>
+    <string name="no_site_loaded">Anda tidak mempunyai laman web yang dimuatkan</string>
+    <string name="more_then_5_images_can_not_be_picked">Lebih daripada lima imej tidak boleh dipilih</string>
+    <string name="location">Lokasi</string>
+</resources>

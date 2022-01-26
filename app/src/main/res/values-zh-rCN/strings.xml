@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Chinese (Simplified)-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+
+    <string name="connection_close_confirm">您想取消当前的 VPN 连接吗？</string>
+    <string name="yes">是的</string>
+    <string name="no">不</string>
+    <string name="yes_2">是的</string>
+    <string name="no_2">不</string>
+    <string name="select_images">选择图像</string>
+    <string name="tabs">标签</string>
+    <string name="share">分享</string>
+    <string name="save">保存</string>
+    <string name="more">更多的</string>
+    <string name="ok">行</string>
+    <string name="cancel">取消</string>
+    <string name="favorite_site">更改在浏览器启动时加载的默认网站\n</string>
+    <string name="custom_search_engine_body">添加自定义搜索 url 也选择“自定义\n搜索引擎”作为搜索提供者</string>
+    <string name="search_engine_body">选择您喜欢的搜索引擎或\n设置自定义搜索引擎</string>
+    <string name="data_control_body">清除您的浏览器数据或决定在您离开应用程序时将清除哪些数据\n</string>
+    <string name="start_control_body">决定浏览器的哪些组件\n将启动</string>
+    <string name="behavior_ui_body">更改应用的行为和用户界面以\n适合您的偏好</string>
+    <string name="book_mark_body">要显示过滤器对话框，请长按概览中的书签图标。决定您将使用哪些过滤器</string>
+    <string name="app_settings_body">浏览器设置，您可以根据\n您的 android 版本授予权限。</string>
+    <string name="start_control_image_body">启用网络图像，禁用可能对保存移动数据和更快地加载网站很有用</string>
+    <string name="start_control_location_body">允许网站访问您的位置。一些\n网站 {google, maps for nav) 需要启用此功能</string>
+    <string name="start_control_history_body">保存访问网站的历史记录</string>
+    <string name="start_control_java_script_body">启用 JavaScript。许多网站的功能需要\nJavaScript。但它们\n也休息，可用于攻击</string>
+    <string name="start_control_cookies_body">启用 Cookie。 Cookies 是小型文本文件，
+它们存储在您的设备上。网站使用
+例如，它们用于存储用户设置。但
+它们也可以用来收集个人用户
+数据。第三方 cookie 始终处于禁用状态。</string>
+    <string name="confirmation_browser_exit_body">关闭浏览器时的确认对话框</string>
+    <string name="confirmation_tab_close_body">关闭选项卡时的确认对话框</string>
+    <string name="confirmation_reopen_last_body">关闭最后一个选项卡而不是退出浏览器时重新打开一个新选项卡</string>
+    <string name="hide_toolbar_body">滚动浏览网站时使用整个屏幕，如果您按下返回按钮，您将离开全屏模式</string>
+    <string name="images">图片</string>
+    <string name="videos">视频</string>
+    <string name="web_browser">网页浏览器</string>
+    <string name="image_slider">图像滑块</string>
+    <string name="next">下一个</string>
+    <string name="previous">以前的</string>
+    <string name="help">帮助</string>
+    <string name="settings">设置</string>
+    <string name="language">语言</string>
+    <string name="more_app">更多的应用</string>
+    <string name="rate_us">评价我们</string>
+    <string name="screen_mirroring">屏幕镜像</string>
+    <string name="home_screen_text">确保您的手机和电视连接到同一个 Wi-Fi 网络。</string>
+    <string name="wifi_connected">已连接 Wi-Fi</string>
+    <string name="wifi_disconnected">Wi-Fi 已断开连接</string>
+    <string name="general">一般的</string>
+    <string name="communicate">交流</string>
+    <string name="send_feedback">发送反馈</string>
+    <string name="tutorial">教程</string>
+    <string name="how_to_use">如何使用？</string>
+    <string name="streaming">流媒体</string>
+    <string name="streaming_quality">流媒体质量</string>
+    <string name="auto_stop">自动停止</string>
+    <string name="auto_minimize">自动最小化</string>
+    <string name="advance">进步</string>
+    <string name="orientation_mode">定向模式</string>
+    <string name="auto_stop_body_text">当与目标的连接丢失时停止视频\n</string>
+    <string name="auto_minimize_body_text">镜像开始时隐藏应用程序</string>
+    <string name="casting_orientation_body_text">铸造方向</string>
+    <string name="mirroring_mode">镜像模式</string>
+    <string name="screen_mirroring_privacy_policy">屏幕镜像隐私政策</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="supporting_devices">配套设备</string>
+    <string name="see_which_devices_support_mirroring">查看哪些设备支持镜像</string>
+    <string name="color_theme">颜色主题</string>
+    <string name="dark">黑暗的</string>
+    <string name="light">光</string>
+    <string name="auto">汽车</string>
+    <string name="select_language">选择语言</string>
+    <string name="close">关闭</string>
+    <string name="images_slider">图像西尔德</string>
+    <string name="screen_mirror">屏幕镜</string>
+    <string name="tutorial_screen_setup_body">您的目标设备必须与此设备位于同一 Wi-Fi 网络中，因为 Screen Mirror 正在传输您的屏幕。</string>
+    <string name="tutorial_screen_mirror_body">通过 Wi-Fi 将设备的屏幕流式传输到您的计算机、笔记本电脑或平板电脑。</string>
+    <string name="tutorial_device_hotspot_body">您还可以使用设备的热点（网络共享模式）并将目标设备连接到热点。</string>
+    <string name="tutorial_scan_code_body">在目标设备上打开站点。通过扫描 QR 码传输连接配置并开始镜像。</string>
+    <string name="tutorial_support_body">请注意，Screen Mirror 仅在正确设置时才有效。 Screen Mirror 传输您的屏幕，但不传输您设备的音频信号。如果您遇到任何问题，请联系我们。</string>
+    <string name="walk_through_body_1">享受流畅和高质量的流媒体\n无延迟</string>
+    <string name="walk_through_body_2">与任何智能设备连接并在任何屏幕上享受\n显示</string>
+    <string name="walk_through_body_3">享受无限制的应用内私人浏览器</string>
+    <string name="screen_setup">屏幕设置</string>
+    <string name="device_hotspot">设备的热点</string>
+    <string name="scan_code">扫码</string>
+    <string name="support">支持</string>
+    <string name="finish">结束</string>
+    <string name="our_policies">我们的政策</string>
+    <string name="privacy_policy_text">保护您的隐私对我们很重要。我们希望以下声明能帮助您了解我们如何处理您可能偶尔通过互联网（Google Play 平台）提供给我们的个人身份信息。\n\n一般情况下。当您下载我们的 Android 应用程序时，我们不会从您那里收集任何 PII。具体来说，我们不需要消费者访问我们的应用程序，我们甚至没有服务器来存储此类 PII。\n\nScreen Mirroring 使用 Facebook 作为广告提供者。 Facebook 希望展示与您相关的广告。欲了解更多信息，请访问\nhttps://m.facebook.com/ads/ad_choices。\n\n我们可能会访问您的 PII 的唯一情况是您个人决定通过电子邮件向我们发送您的反馈或向我们提供错误报告。在这种情况下，我们可能从您那里获得的 PII 仅限于您的姓名、电子邮件地址和您的调查回复。\n\n在上述情况下，我们保证您的 PII 将仅用于与您联系和改进我们的服务。我们绝不会将此类信息（例如您的姓名和电子邮件地址_用于任何其他目的，例如进一步推销我们的产品，或将您的个人信息透露给第三方以获取商业利益。\n\n需要注意的是，无论是不向我们发送您的反馈或错误报告完全是您自愿决定的。如果您担心您的 PII 被滥用，或者如果您想进一步了解我们的隐私政策及其含义，请随时给我们发送电子邮件在 screenmirroring.feedback@gmail.com，我们将努力及时为您的问题提供明确的答案。</string>
+    <string name="please_write_your_feedback">请写下您的反馈</string>
+    <string name="system_info">您的系统信息将发送到 Screen Mirroring 技术部门</string>
+    <string name="send">发送</string>
+    <string name="provide_feedback">提供反馈信息</string>
+    <string name="invalid_email_provided">提供的电子邮件无效</string>
+    <string name="check_your_internet_connection">检查您的互联网连接</string>
+    <string name="type_here">在此输入…</string>
+    <string name="enter_your_email_optional">输入您的电子邮件（可选）</string>
+    <string name="enjoy_the_app">享受应用程序？</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">评价您使用 Screen\nMirroring 应用程序的体验。</string>
+    <string name="not_now">现在不要</string>
+    <string name="feedback">回馈：</string>
+    <string name="model">模型：</string>
+    <string name="brand">品牌：</string>
+    <string name="os_version">操作系统版本：</string>
+    <string name="manufacturer">制造商：</string>
+    <string name="ram">内存：</string>
+    <string name="send_email">发送邮件</string>
+    <string name="select_picture">选择图片</string>
+    <string name="help_center">帮助中心</string>
+    <string name="question_1">与电视配对时，我的手机卡在“\n正在连接”。</string>
+    <string name="question_2">它以前对我有用，但现在不\n起作用。</string>
+    <string name="question_3">它表明我的设备不受\n支持。</string>
+    <string name="question_4">我的电视是旧电视，不支持 \nWi-Fi。</string>
+    <string name="question_5">电视上的图像是黑色的，但可以\n听到声音。</string>
+    <string name="question_6">连接会在一段时间后\n中断。</string>
+    <string name="question_7">我的个人信息或移动数据绝对\n安全吗？</string>
+    <string name="q_answer_1_1">重启智能手机的Wi-Fi，看看是否连接成功。</string>
+    <string name="q_answer_1_2">关闭电视并从插座中拔下电源线。等待 1 分钟，然后重新启动电视。</string>
+    <string name="q_answer_1_3">缩短手机和电视之间的距离。近距离看。</string>
+    <string name="q_answer_2_1">如果它以前有效，那么它肯定可以再次使用。</string>
+    <string name="q_answer_2_2">大多数连接问题都可以通过重启设备来解决。只需重新启动手机和电视，按照常规连接流程重试即可。</string>
+    <string name="q_answer_3_1">这意味着您的手机本身不支持屏幕镜像功能。</string>
+    <string name="q_answer_3_2">您可以使用 XCast 将视频、音频和照片投射到电视上。使用 XCast，您可以在投射到电视的同时用手机做其他事情。</string>
+    <string name="q_answer_4_1">如果您的电视支持 HDMI 接口，我们建议您购买用于投屏的外接接收器。例如 Chromecast、Anycast 等。</string>
+    <string name="q_answer_5_1">某些内容涉及版权保护，无法在第三方设备上显示，例如 Netflix、Disney Plus 等。</string>
+    <string name="q_answer_5_2">您可以下载视频或在其他应用程序上查找相同的资源进行尝试。</string>
+    <string name="q_answer_6_1">您可以在 Wi-Fi 设置中打开 Smart Connect。它将不断寻找更好的 Wi-Fi 连接，并始终来回连接。</string>
+    <string name="q_answer_6_2">请确保手机和电视的 Wi-Fi 是 SAM 和最佳信号。</string>
+    <string name="q_answer_7_1">我们不会监控或收集有关您和您的手机的任何信息。您可以毫无顾虑地投射屏幕。</string>
+    <string name="q_answer_7_2">系统可能会在投屏前警告您存在安全隐患。这只是一个常规的提醒，它将是</string>
+    <string name="wi_fi">无线上网</string>
+    <string name="miracast">奇迹</string>
+    <string name="install">安装</string>
+    <string name="install_small">安装</string>
+    <string name="manual">手动的</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">确保您的手机和电视\n连接到同一个 Wi-Fi 网络。</string>
+    <string name="hd_streaming">高清流媒体</string>
+    <string name="smart_devices">智能设备</string>
+    <string name="private_browser">私人浏览器</string>
+    <string name="effects">效果</string>
+    <string name="slider">滑块</string>
+    <string name="search_or_type_web_address">搜索或输入网址</string>
+    <string name="install_2">安装</string>
+    <string name="bookmark">书签</string>
+    <string name="downloads">下载</string>
+    <string name="download">下载</string>
+    <string name="favorites">收藏夹</string>
+    <string name="favorite">最喜欢的</string>
+    <string name="history">历史</string>
+    <string name="share_pdf">分享 PDF</string>
+    <string name="copy_url">复制网址</string>
+    <string name="share_app">分享应用</string>
+    <string name="share_url">分享网址</string>
+    <string name="exit">出口</string>
+    <string name="new_tab">新标签</string>
+    <string name="google">谷歌</string>
+    <string name="startpage">首页</string>
+    <string name="bing">必应</string>
+    <string name="duckduckgo">鸭鸭围棋</string>
+    <string name="searx">瑟克斯</string>
+    <string name="baidu">百度</string>
+    <string name="qwant">求旺</string>
+    <string name="ecosia">生态系统</string>
+    <string name="custom_search_engine">自定义搜索引擎</string>
+    <string name="add_shortcut_to_home">将快捷方式添加到主页</string>
+    <string name="save_screenshot">保存截图</string>
+    <string name="add_to_bookmark">添加到书签</string>
+    <string name="save_as_pdf">另存为pdf</string>
+    <string name="save_action">保存操作</string>
+    <string name="add_to_favorite">加入我的最爱</string>
+    <string name="search_engine">搜索引擎</string>
+    <string name="browser_exit_body">您确定要退出浏览器吗</string>
+    <string name="exit_browser">退出浏览器</string>
+    <string name="custom_user_agent">自定义用户代理</string>
+    <string name="start_control">启动控制</string>
+    <string name="data_control">数据控制</string>
+    <string name="app_settings">应用设置</string>
+    <string name="browser_settings">浏览器设置</string>
+    <string name="behavior_ui">行为/用户界面</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="clear_history">清除历史记录</string>
+    <string name="clear_browsing_history">清除浏览记录</string>
+    <string name="clear_all_cache">清除所有缓存</string>
+    <string name="clear_database_body">清除“索引数据库”和“本地\n数据库”</string>
+    <string name="clear_cookies_body">如果启用，所有 cookie 都将被删除。还有\n受信任网站的 Cookie</string>
+    <string name="clear_databases">清除数据库</string>
+    <string name="clear_cookies">清除Cookies</string>
+    <string name="clear_when_application_exit">应用退出时清除</string>
+    <string name="clear_when_application_exit_body">每次退出上述所有检查的数据\n都会被删除</string>
+    <string name="image">图片</string>
+    <string name="javascript">脚本</string>
+    <string name="cookies">饼干</string>
+    <string name="reopen_last_tab">重新打开最后一个标签</string>
+    <string name="confirm_tab_close">确认标签关闭</string>
+    <string name="confirm_browser_exit">确认浏览器退出</string>
+    <string name="position">位置</string>
+    <string name="first_toolbar">第一个工具栏</string>
+    <string name="hide_toolbar">隐藏工具栏</string>
+    <string name="toolbar">工具栏</string>
+    <string name="bookmarks">书签</string>
+    <string name="edit">编辑</string>
+    <string name="today">今天</string>
+    <string name="the_last_hour">最后一小时</string>
+    <string name="last_week">上星期</string>
+    <string name="last_month">上个月</string>
+    <string name="delete_all_history">删除所有历史记录</string>
+    <string name="copied">复制了</string>
+    <string name="share_ss">分享SS</string>
+    <string name="file_manager">文件管理器</string>
+    <string name="search_on">搜索</string>
+    <string name="add_shortcut">添加快捷方式</string>
+    <string name="tab_exit">选项卡退出</string>
+    <string name="do_you_want_to_close">你想关闭吗</string>
+    <string name="download_complete_share_image">下载完毕。分享图像</string>
+    <string name="update">更新</string>
+    <string name="unfavorite">不喜欢</string>
+    <string name="no_input_provided">未提供输入</string>
+    <string name="input">输入</string>
+    <string name="website_link">网站链接</string>
+    <string name="for_you">为你</string>
+    <string name="website">网站：</string>
+    <string name="url">网址：</string>
+    <string name="date">日期</string>
+    <string name="no_site_loaded">你没有加载网站</string>
+    <string name="more_then_5_images_can_not_be_picked">超过五张图片无法挑选</string>
+    <string name="location">"地点 "</string>
+
+</resources>

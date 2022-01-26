@@ -47,9 +47,9 @@
         android:preserveLegacyExternalStorage="true"
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_app_icon_round"
-        android:supportsRtl="false"
+        android:supportsRtl="true"
         android:theme="@style/Theme.CastToTv"
-        tools:replace="android:supportsRtl">
+   >
         <activity
             android:name=".ui.activities.browser.HistoryActivity"
             android:exported="false" />
@@ -62,10 +62,6 @@
 
         <activity
             android:name=".ui.activities.browser.BehaviorAndUIActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".ui.activities.browser.WhitelistActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity

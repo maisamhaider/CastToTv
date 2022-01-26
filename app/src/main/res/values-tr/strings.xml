@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Turkish-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">Mevcut VPN Bağlantısını iptal etmek ister misiniz?</string>
+    <string name="yes">EVET</string>
+    <string name="no">HAYIR</string>
+    <string name="yes_2">Evet</string>
+    <string name="no_2">Numara</string>
+    <string name="select_images">Resimleri Seç</string>
+    <string name="tabs">Sekmeler</string>
+    <string name="share">Paylaş</string>
+    <string name="save">Kayıt etmek</string>
+    <string name="more">Daha</string>
+    <string name="ok">tamam</string>
+    <string name="cancel">İptal etmek</string>
+    <string name="favorite_site">Tarayıcının başlangıcında yüklenen\nvarsayılan web sitesini değiştirin</string>
+    <string name="custom_search_engine_body">Özel arama url\'si ekleyin ayrıca arama sağlayıcısı olarak "Özel\narama motoru"nu seçin</string>
+    <string name="search_engine_body">Tercih ettiğiniz arama motorunu seçin veya\nözel bir arama motoru belirleyin</string>
+    <string name="data_control_body">Tarayıcı verilerinizi temizleyin veya uygulamadan çıktığınızda\nhangi verilerin temizleneceğine karar verin</string>
+    <string name="start_control_body">Tarayıcının hangi bileşenlerinin\nbaşlangıçta olacağına karar verin</string>
+    <string name="behavior_ui_body">Uygulamanın davranışını ve kullanıcı arayüzünü\ntercihlerinize uyacak şekilde değiştirin</string>
+    <string name="book_mark_body">Filtre iletişim kutusunu göstermek için genel bakışta yer imi simgesine uzun basın. Hangi filtreleri kullanacağınıza karar verin</string>
+    <string name="app_settings_body">Tarayıcı ayarları, orada android sürüm izninize\nbağlı olarak yapabilirsiniz.</string>
+    <string name="start_control_image_body">Ağ görüntülerini etkinleştirin, Devre dışı bırakmak,\nmobil veriden tasarruf etmek ve web sitesini daha hızlı yüklemek için yararlı olabilir</string>
+    <string name="start_control_location_body">Web sitelerinin konumunuza erişmesine izin verin. Bazı\nweb sitelerinde {google, maps for nav) bu etkinleştirme gerekir</string>
+    <string name="start_control_history_body">Ziyaret edilen web sitelerinin geçmişini kaydedin</string>
+    <string name="start_control_java_script_body">JavaScript\'i etkinleştirin. Birçok web sitesi, işlevleri için\nJavaScript\'e ihtiyaç duyar. Ama aynı zamanda\ndinlenirler ve saldırılar için kullanılabilirler</string>
+    <string name="start_control_cookies_body">Çerezleri etkinleştir. Çerezler küçük metin dosyalarıdır,
+cihazınızda saklanır. Web siteleri
+örneğin kullanıcı ayarlarını saklamak için. Fakat
+kişisel kullanıcı toplamak için de kullanılabilirler
+veri. Üçüncü taraf çerezleri her zaman devre dışıdır.</string>
+    <string name="confirmation_browser_exit_body">Tarayıcıyı\nkapatırken onay iletişim kutusu</string>
+    <string name="confirmation_tab_close_body">Bir sekmeyi kapatırken onay iletişim kutusu</string>
+    <string name="confirmation_reopen_last_body">Tarayıcıdan çıkmak yerine son sekme kapatıldığında yeni bir sekmeyi yeniden açın</string>
+    <string name="hide_toolbar_body">Web sitesinde gezinirken tüm ekranı kullanın, geri düğmesine basarsanız tam ekran modundan çıkarsınız.</string>
+    <string name="images">Görüntüler</string>
+    <string name="videos">Videolar</string>
+    <string name="web_browser">İnternet tarayıcısı</string>
+    <string name="image_slider">Görüntü Kaydırıcı</string>
+    <string name="next">Sonraki</string>
+    <string name="previous">Öncesi</string>
+    <string name="help">Yardım</string>
+    <string name="settings">Ayarlar</string>
+    <string name="language">Diller</string>
+    <string name="more_app">Daha fazla uygulama</string>
+    <string name="rate_us">Bizi değerlendirin</string>
+    <string name="screen_mirroring">Ekran yansıtma</string>
+    <string name="home_screen_text">Telefonunuzun ve TV\'nizin aynı Wi-Fi ağına bağlı olduğundan emin olun.</string>
+    <string name="wifi_connected">Wi-Fi Bağlandı</string>
+    <string name="wifi_disconnected">Wi-Fi Bağlantısı Kesildi</string>
+    <string name="general">Genel</string>
+    <string name="communicate">İletişim</string>
+    <string name="send_feedback">Geribildirim yolla</string>
+    <string name="tutorial">öğretici</string>
+    <string name="how_to_use">Nasıl kullanılır?</string>
+    <string name="streaming">Yayın Akışı</string>
+    <string name="streaming_quality">Akış Kalitesi</string>
+    <string name="auto_stop">Otomatik dur</string>
+    <string name="auto_minimize">Otomatik Küçült</string>
+    <string name="advance">İlerlemek</string>
+    <string name="orientation_mode">Oryantasyon Modu</string>
+    <string name="auto_stop_body_text">Hedefle\nbağlantı kesildiğinde videoyu durdur</string>
+    <string name="auto_minimize_body_text">Yansıtma başladığında uygulamayı gizle</string>
+    <string name="casting_orientation_body_text">döküm yönü</string>
+    <string name="mirroring_mode">yansıtma modu</string>
+    <string name="screen_mirroring_privacy_policy">Ekran yansıtma gizlilik ilkesi</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="supporting_devices">Destekleyen Cihazlar</string>
+    <string name="see_which_devices_support_mirroring">Hangi cihazların yansıtmayı desteklediğini görün</string>
+    <string name="color_theme">Renk teması</string>
+    <string name="dark">Karanlık</string>
+    <string name="light">Işık</string>
+    <string name="auto">Oto</string>
+    <string name="select_language">Dil Seçin</string>
+    <string name="close">kapat</string>
+    <string name="images_slider">Görüntü Kaydırıcısı</string>
+    <string name="screen_mirror">Ekran Aynası</string>
+    <string name="tutorial_screen_setup_body">Screen Mirror ekranınızı ilettiği için hedef cihazınız bu cihazla aynı Wi-Fi ağında olmalıdır.</string>
+    <string name="tutorial_screen_mirror_body">Cihazınızın ekranını Wi-Fi üzerinden bilgisayarınıza, dizüstü bilgisayarınıza veya tabletinize aktarın.</string>
+    <string name="tutorial_device_hotspot_body">Ayrıca cihazınızın erişim noktasını (bağlama modu) kullanabilir ve hedef cihazınızı erişim noktanıza bağlayabilirsiniz.</string>
+    <string name="tutorial_scan_code_body">Hedef cihazınızda siteyi açın. QR kodunu tarayarak bağlantı yapılandırması iletilir ve yansıtma başlar.</string>
+    <string name="tutorial_support_body">Lütfen Screen Mirror\'ın yalnızca doğru şekilde kurulduğunda çalıştığını unutmayın. Screen Mirror, ekranınızı iletir ancak cihazınızın ses sinyallerini iletmez. Herhangi bir sorunla karşılaşırsanız bizimle iletişime geçin.</string>
+    <string name="walk_through_body_1">Gecikme olmadan\nakıcı ve yüksek kaliteli akışın keyfini çıkarın</string>
+    <string name="walk_through_body_2">Herhangi bir akıllı cihazla bağlanın ve gösterinin\nherhangi bir ekranda keyfini çıkarın</string>
+    <string name="walk_through_body_3">Sınırlama olmaksızın uygulama içi özel tarayıcının keyfini çıkarın</string>
+    <string name="screen_setup">Ekran Kurulumu</string>
+    <string name="device_hotspot">Cihazın Hotspot\'u</string>
+    <string name="scan_code">Tarama Kodu</string>
+    <string name="support">Destek</string>
+    <string name="finish">Sona ermek</string>
+    <string name="our_policies">Politikalarımız</string>
+    <string name="privacy_policy_text">Gizliliğinizi korumak bizim için önemlidir. Aşağıdaki beyanın, zaman İnternet (Google Play platformu) aracılığıyla bize sağlayabileceğiniz kişisel tanımlanabilir bilgileri nasıl ele aldığımızı anlamanıza yardımcı olacağını umuyoruz.\n\nGenel olarak. Android uygulamalarımızı indirdiğinizde sizden herhangi bir PII toplamıyoruz. Spesifik olmak gerekirse, tüketicilerin uygulamamızı ziyaret etmesine gerek duymuyoruz, bu tür PII\'leri depolamak için bir Sunucumuz bile yok.\n\nEkran Yansıtma, Facebook\'u reklam sağlayıcı olarak kullanır. Facebook sizinle alakalı reklamlar göstermek istiyor. Daha fazla bilgi için lütfen\nhttps://m.facebook.com/ads/ad_choices adresini ziyaret edin.\n\nSize kişisel olarak erişebileceğimiz tek durum, kişisel olarak bize geri bildiriminizi e-postayla göndermeye veya bize bir hata sağlamaya karar vermenizdir. bildiri. Bu durumda sizden alabileceğimiz PII, kesinlikle yalnızca adınız, e-posta adresiniz ve anket yanıtınız ile sınırlıdır.\n\nYukarıdaki durumda, PII\'nizin yalnızca sizinle iletişim kurmak ve hizmetlerimizi geliştirmek için kullanılacağını garanti ederiz. Bu tür bilgileri (örneğin adınız ve e-posta adresiniz_ ürünlerimizi daha fazla pazarlamak veya kişisel bilgilerinizi ticari kazançlar için üçüncü bir tarafa ifşa etmek gibi başka amaçlar için asla kullanmayacağız.\n\nBunun, Bize geri bildiriminizi veya hata raporunuzu göndermemek tamamen kendi kararınıza bağlı bir girişimdir. Kişisel Bilgilerinizin kötüye kullanılması konusunda endişeleriniz varsa veya gizlilik politikamız ve bunun ne anlama geldiği hakkında daha fazla bilgi istiyorsanız, lütfen bize e-posta göndermekten çekinmeyin. screenmirroring.feedback@gmail.com adresinde, sorularınıza zamanında net cevaplar vermeye çalışacağız.</string>
+    <string name="please_write_your_feedback">Lütfen geri bildiriminizi yazın</string>
+    <string name="system_info">Sistem Bilgileriniz Ekran Yansıtma teknolojisi Departmanına gönderilecektir.</string>
+    <string name="send">Göndermek</string>
+    <string name="provide_feedback">geribildirim sağlamak</string>
+    <string name="invalid_email_provided">Geçersiz E-posta sağlandı</string>
+    <string name="check_your_internet_connection">İnternet bağlantınızı kontrol edin</string>
+    <string name="type_here">buraya yaz…</string>
+    <string name="enter_your_email_optional">E-postanızı girin (isteğe bağlı)</string>
+    <string name="enjoy_the_app">Uygulamayı beğendiniz mi?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Screen\nYansıtma Uygulamasını kullanma deneyiminizi derecelendirin.</string>
+    <string name="not_now">Şimdi değil</string>
+    <string name="feedback">Geri bildirim:</string>
+    <string name="model">modeli:</string>
+    <string name="brand">Marka:</string>
+    <string name="os_version">OS sürümü:</string>
+    <string name="manufacturer">Üretici firma:</string>
+    <string name="ram">VERİ DEPOSU:</string>
+    <string name="send_email">Posta göndermek</string>
+    <string name="select_picture">Resim Seç</string>
+    <string name="help_center">Yardım Merkezi</string>
+    <string name="question_1">Telefonum TV ile eşleştirilirken \n“Bağlanıyor”da takılıyor.</string>
+    <string name="question_2">Daha önce benim için çalıştı, \nama şimdi çalışmıyor.</string>
+    <string name="question_3">Cihazımın desteklenmediğini \ngösteriyor.</string>
+    <string name="question_4">Televizyonum eski bir televizyon ve wi-fi\'yi desteklemiyor.</string>
+    <string name="question_5">TV\'deki görüntü siyah, ancak \nses duyulabiliyor.</string>
+    <string name="question_6">Bir süre sonra bağlantı \nkesilecektir.</string>
+    <string name="question_7">Kişisel bilgilerim veya mobil verilerim kesinlikle güvenli mi?</string>
+    <string name="q_answer_1_1">Akıllı telefonun Wi-Fi bağlantısını yeniden başlatın ve bağlantının başarılı olup olmadığına bakın.</string>
+    <string name="q_answer_1_2">TV\'yi kapatın ve güç kablosunu da prizden çıkarın. 1 dakika bekleyin ve TV\'yi yeniden başlatın.</string>
+    <string name="q_answer_1_3">Telefonunuzla TV arasındaki mesafeyi kısaltın. Yakından al.</string>
+    <string name="q_answer_2_1">Daha önce çalıştıysa, kesinlikle tekrar kullanılabilir.</string>
+    <string name="q_answer_2_2">Çoğu bağlantı sorunu, cihazları yeniden başlatarak çözülebilir. Hem telefonunuzu hem de TV\'nizi yeniden başlatın, tekrar denemek için normal bağlantı sürecini izleyin.</string>
+    <string name="q_answer_3_1">Bu, telefonunuzun ekran yansıtma işlevini desteklemediği anlamına gelir.</string>
+    <string name="q_answer_3_2">Video, ses ve fotoğrafı TV\'ye yayınlamak için XCast\'ı kullanabilirsiniz. XCast ile TV\'ye yayın yaparken telefonunuzla başka şeyler yapabilirsiniz.</string>
+    <string name="q_answer_4_1">TV\'niz HDMI arabirimini destekliyorsa, ekran yansıtma için harici bir alıcı satın almanızı öneririz. Chromecast, Anycast vb.</string>
+    <string name="q_answer_5_1">Bazı içerikler telif hakkı koruması içerir ve Netflix, Disney Plus vb. gibi üçüncü taraf cihazlarda görüntülenemez.</string>
+    <string name="q_answer_5_2">Denemek için videoyu indirebilir veya aynı kaynağı diğer uygulamalarda arayabilirsiniz.</string>
+    <string name="q_answer_6_1">Wi-Fi ayarlarınızda Smart Connect\'i açabilirsiniz. Sürekli olarak daha iyi Wi-fi bağlantıları arayacak ve her zaman ileri geri bağlanacaktır.</string>
+    <string name="q_answer_6_2">Lütfen cep telefonunun ve TV\'nin Wi-Fi\'sinin SAM ve en iyi sinyal olduğundan emin olun.</string>
+    <string name="q_answer_7_1">Siz ve cep telefonunuz hakkında herhangi bir bilgi izlemeyecek veya toplamayacağız. Endişelenmeden ekranınızı yayınlayabilirsiniz.</string>
+    <string name="q_answer_7_2">Sistem, ekran yansıtmadan önce bir güvenlik tehlikesi olduğu konusunda sizi uyarabilir. Bu sadece düzenli bir hatırlatmadır.</string>
+    <string name="wi_fi">WİFİ</string>
+    <string name="miracast">MUCİZE</string>
+    <string name="install">YÜKLEMEK</string>
+    <string name="install_small">Düzenlemek</string>
+    <string name="manual">Manuel</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Telefonunuzun ve TV\'nizin\naynı Wi-Fi ağına bağlı olduğundan emin olun.</string>
+    <string name="hd_streaming">HD Akış</string>
+    <string name="smart_devices">akıllı cihazlar</string>
+    <string name="private_browser">Özel Tarayıcı</string>
+    <string name="effects">Etkileri</string>
+    <string name="slider">kaydırıcı</string>
+    <string name="search_or_type_web_address">Web adresini arayın veya yazın</string>
+    <string name="install_2">Düzenlemek</string>
+    <string name="bookmark">Yer imi</string>
+    <string name="downloads">İndirilenler</string>
+    <string name="download">İndirmek</string>
+    <string name="favorites">Favoriler</string>
+    <string name="favorite">Favori</string>
+    <string name="history">Tarih</string>
+    <string name="share_pdf">Pdf\'yi Paylaşın</string>
+    <string name="copy_url">Url\'yi kopyala</string>
+    <string name="share_app">Uygulamayı Paylaş</string>
+    <string name="share_url">URL\'yi paylaş</string>
+    <string name="exit">çıkış</string>
+    <string name="new_tab">Yeni sekme</string>
+    <string name="google">Google</string>
+    <string name="startpage">Başlangıç sayfası</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">ÖrdekÖrdekGit</string>
+    <string name="searx">arama</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ekosia</string>
+    <string name="custom_search_engine">Özel arama motoru</string>
+    <string name="add_shortcut_to_home">Eve kısayol ekle</string>
+    <string name="save_screenshot">Ekran Görüntüsünü Kaydet</string>
+    <string name="add_to_bookmark">Yer işaretine ekle</string>
+    <string name="save_as_pdf">pdf olarak kaydet</string>
+    <string name="save_action">Eylemi Kaydet</string>
+    <string name="add_to_favorite">Favorilere ekle</string>
+    <string name="search_engine">Arama motoru</string>
+    <string name="browser_exit_body">Tarayıcıdan çıkmak istediğinizden emin misiniz?</string>
+    <string name="exit_browser">Tarayıcıdan Çık</string>
+    <string name="custom_user_agent">Özel kullanıcı aracısı</string>
+    <string name="start_control">Kontrolü Başlat</string>
+    <string name="data_control">Veri Kontrolü</string>
+    <string name="app_settings">Uygulama ayarları</string>
+    <string name="browser_settings">Tarayıcı ayarları</string>
+    <string name="behavior_ui">Davranış/Kullanıcı Arayüzü</string>
+    <string name="clear_cache">Önbelleği Temizle</string>
+    <string name="clear_history">Geçmişi Temizle</string>
+    <string name="clear_browsing_history">tarama geçmişini temizle</string>
+    <string name="clear_all_cache">Tüm önbelleği temizle</string>
+    <string name="clear_database_body">"Dizinli veritabanlarını" ve "yerel\veri tabanlarını" temizleyin</string>
+    <string name="clear_cookies_body">Etkinleştirilirse, tüm çerezler silinecektir. Ayrıca\ngüvenilir web sitelerinin Çerezleri</string>
+    <string name="clear_databases">Veritabanlarını temizle</string>
+    <string name="clear_cookies">Çerezleri temizlemek</string>
+    <string name="clear_when_application_exit">Uygulamadan çıkınca temizle</string>
+    <string name="clear_when_application_exit_body">Yukarıdaki kontrol edilen tüm verilerden her çıktığınızda\nsilinecek</string>
+    <string name="image">resim</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Kurabiye</string>
+    <string name="reopen_last_tab">Son sekmeyi yeniden aç</string>
+    <string name="confirm_tab_close">Sekmeyi kapat onayla</string>
+    <string name="confirm_browser_exit">Tarayıcı çıkışını onaylayın</string>
+    <string name="position">Konum</string>
+    <string name="first_toolbar">İlk araç çubuğu</string>
+    <string name="hide_toolbar">Sekmeyi gizle</string>
+    <string name="toolbar">araç çubuğu</string>
+    <string name="bookmarks">Yer imleri</string>
+    <string name="edit">Düzenlemek</string>
+    <string name="today">Bugün</string>
+    <string name="the_last_hour">son saat</string>
+    <string name="last_week">Geçen hafta</string>
+    <string name="last_month">Geçen ay</string>
+    <string name="delete_all_history">Tüm geçmişi sil</string>
+    <string name="copied">kopyalanmış</string>
+    <string name="share_ss">SS\'yi paylaşın</string>
+    <string name="file_manager">Dosya Yöneticisi</string>
+    <string name="search_on">Arama Açık</string>
+    <string name="add_shortcut">Kısayol ekle</string>
+    <string name="tab_exit">Sekme Çıkışı</string>
+    <string name="do_you_want_to_close">kapatmak istiyor musun</string>
+    <string name="download_complete_share_image">İndirme tamamlandı. Fotoğraf paylaşmak</string>
+    <string name="update">Güncelleme</string>
+    <string name="unfavorite">favori olmayan</string>
+    <string name="no_input_provided">Giriş sağlanmadı</string>
+    <string name="input">Giriş</string>
+    <string name="website_link">Web sitesi bağlantısı</string>
+    <string name="for_you">Senin için</string>
+    <string name="website">İnternet sitesi:</string>
+    <string name="url">URL:</string>
+    <string name="date">Tarih</string>
+    <string name="no_site_loaded">Yüklenen web siteniz yok</string>
+    <string name="more_then_5_images_can_not_be_picked">Beşten fazla resim seçilemez</string>
+    <string name="location">Konum</string>
+</resources>

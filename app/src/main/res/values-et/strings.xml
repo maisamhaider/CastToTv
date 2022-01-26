@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Estonian-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+
+    <string name="location">"Asukoht "</string>
+    <string name="connection_close_confirm">Kas soovite praeguse VPN-ühenduse katkestada?</string>
+    <string name="yes">JAH</string>
+    <string name="no">EI</string>
+    <string name="yes_2">Jah</string>
+    <string name="no_2">Ei</string>
+    <string name="select_images">Valige Pildid</string>
+    <string name="tabs">Vahekaardid</string>
+    <string name="share">Jaga</string>
+    <string name="save">Salvesta</string>
+    <string name="more">Rohkem</string>
+    <string name="ok">Okei</string>
+    <string name="cancel">Tühista</string>
+    <string name="favorite_site">Muutke vaikeveebisaiti, mis laaditakse\nbrauseri käivitamisel</string>
+    <string name="custom_search_engine_body">Lisage kohandatud otsingu URL ja valige otsingupakkujaks "Kohandatud\notsingumootor".</string>
+    <string name="search_engine_body">Valige eelistatud otsingumootor või\nseadke kohandatud otsingumootor</string>
+    <string name="data_control_body">Kustutage brauseri andmed või otsustage, millised andmed\nkustutatakse, kui rakendusest lahkute</string>
+    <string name="start_control_body">Otsustage, millised brauseri komponendid\nkäivituvad</string>
+    <string name="behavior_ui_body">Muutke rakenduse käitumist ja kasutajaliidest\noma eelistustele vastavaks</string>
+    <string name="book_mark_body">Filtridialoogi kuvamiseks vajutage pikalt ülevaates järjehoidja ikooni. Otsustage, milliseid filtreid kasutate</string>
+    <string name="app_settings_body">Brauseri seaded, kus saate olenevalt oma Androidi versioonist loa anda.</string>
+    <string name="start_control_image_body">Lubage võrgupildid. Keelamine võib olla kasulik\nmobiilandmete salvestamiseks ja veebisaidi kiiremaks laadimiseks</string>
+    <string name="start_control_location_body">Luba veebisaitidel oma asukohale juurde pääseda. Mõned\nveebisaidid {google, maps for nav) vajavad seda lubamist</string>
+    <string name="start_control_history_body">Salvestage külastatud veebisaitide ajalugu</string>
+    <string name="start_control_java_script_body">Luba JavaScript. Paljud veebisaidid vajavad oma funktsionaalsuseks\nJavaScripti. Kuid need on\naal puhkavad ja neid saab kasutada rünnakuteks</string>
+    <string name="start_control_cookies_body">Luba küpsised. Küpsised on väikesed tekstifailid,
+mis on teie seadmesse salvestatud. Veebisaidid kasutavad
+neid näiteks kasutaja seadete salvestamiseks. Aga
+neid saab kasutada ka isikliku kasutaja kogumiseks
+andmeid. Kolmanda osapoole küpsised on alati keelatud.</string>
+    <string name="confirmation_browser_exit_body">Kinnitusdialoog brauseri\nsulgemisel</string>
+    <string name="confirmation_tab_close_body">Kinnitusdialoog vahekaardi sulgemisel</string>
+    <string name="confirmation_reopen_last_body">Kui viimane vaheleht on suletud, avage brauserist väljumise asemel uuesti uus vahekaart</string>
+    <string name="hide_toolbar_body">Kasutage veebisaidi sirvimisel kogu ekraani, kui vajutate tagasi nuppu, lahkute täisekraanrežiimist</string>
+    <string name="images">Pildid</string>
+    <string name="videos">Videod</string>
+    <string name="web_browser">Veebibrauseris</string>
+    <string name="image_slider">Pildi liugur</string>
+    <string name="next">Edasi</string>
+    <string name="previous">Eelmine</string>
+    <string name="help">Abi</string>
+    <string name="settings">Seaded</string>
+    <string name="language">Keeled</string>
+    <string name="more_app">Rohkem rakendusi</string>
+    <string name="rate_us">Hinda meid</string>
+    <string name="screen_mirroring">Ekraani peegeldamine</string>
+    <string name="home_screen_text">Veenduge, et teie telefon ja teler oleksid ühendatud samasse WiFi-võrku.</string>
+    <string name="wifi_connected">Wi-Fi ühendatud</string>
+    <string name="wifi_disconnected">Wi-Fi ühendus katkes</string>
+    <string name="general">Kindral</string>
+    <string name="communicate">Suhtlema</string>
+    <string name="send_feedback">Saada tagasisidet</string>
+    <string name="tutorial">Õpetus</string>
+    <string name="how_to_use">Kuidas kasutada?</string>
+    <string name="streaming">Voogesitus</string>
+    <string name="streaming_quality">Voogesituse kvaliteet</string>
+    <string name="auto_stop">Automaatne seiskamine</string>
+    <string name="auto_minimize">Automaatne minimeerimine</string>
+    <string name="advance">Edasiminek</string>
+    <string name="orientation_mode">Orientatsioonirežiim</string>
+    <string name="auto_stop_body_text">Peatage video, kui ühendus\nsihtmärgiga katkeb</string>
+    <string name="auto_minimize_body_text">Peida rakendus, kui peegeldamine algab</string>
+    <string name="casting_orientation_body_text">Valamise orientatsioon</string>
+    <string name="mirroring_mode">Peegeldusrežiim</string>
+    <string name="screen_mirroring_privacy_policy">Ekraani peegeldamise privaatsuspoliitika</string>
+    <string name="privacy_policy">Privaatsuspoliitika</string>
+    <string name="supporting_devices">Toetavad seadmed</string>
+    <string name="see_which_devices_support_mirroring">Vaadake, millised seadmed toetavad peegeldamist</string>
+    <string name="color_theme">Värviteema</string>
+    <string name="dark">Tume</string>
+    <string name="light">Valgus</string>
+    <string name="auto">Automaatne</string>
+    <string name="select_language">Vali keel</string>
+    <string name="close">Sulge</string>
+    <string name="images_slider">Pildid Liugur</string>
+    <string name="screen_mirror">Ekraani peegel</string>
+    <string name="tutorial_screen_setup_body">Teie sihtseade peab olema selle seadmega samas WiFi-võrgus, sest Screen Mirror edastab teie ekraani.</string>
+    <string name="tutorial_screen_mirror_body">Voogesitage oma seadme ekraani Wi-Fi kaudu arvutisse, sülearvutisse või tahvelarvutisse.</string>
+    <string name="tutorial_device_hotspot_body">Samuti saate kasutada oma seadme leviala (lõastamisrežiim) ja ühendada sihtseadme oma levialaga.</string>
+    <string name="tutorial_scan_code_body">Avage sait oma sihtseadmes. QR-koodi skannimisel edastatakse ühenduse konfiguratsioon ja algab peegeldamine.</string>
+    <string name="tutorial_support_body">Pange tähele, et Screen Mirror töötab ainult siis, kui see on õigesti seadistatud. Ekraani peegel edastab teie ekraani, kuid mitte teie seadme helisignaale. Kui teil on probleeme, võtke meiega ühendust.</string>
+    <string name="walk_through_body_1">Nautige sujuvat ja kvaliteetset voogesitust\nilma viivitusteta</string>
+    <string name="walk_through_body_2">Ühendage mis tahes nutiseadmega ja nautige\nsaadet mis tahes ekraanil</string>
+    <string name="walk_through_body_3">Nautige rakendusesisest privaatset brauserit ilma piiranguteta</string>
+    <string name="screen_setup">Ekraani seadistamine</string>
+    <string name="device_hotspot">Seadme leviala</string>
+    <string name="scan_code">Skanni kood</string>
+    <string name="support">Toetus</string>
+    <string name="finish">Lõpetama</string>
+    <string name="our_policies">Meie eeskirjad</string>
+    <string name="privacy_policy_text">Teie privaatsuse kaitsmine on meie jaoks oluline. Loodame, et järgmine avaldus aitab teil mõista, kuidas me käsitleme isikut tuvastavat teavet, mida võite meile aeg-ajalt Interneti kaudu (Google Play platvorm) edastada.\n\nÜldiselt. me ei kogu teie käest PII-d, kui laadite alla meie Androidi rakendusi. Täpsemalt, me ei nõua, et tarbijad oma rakendust külastaksid, meil pole isegi serverit selliste isikuandmete salvestamiseks.\n\nScreen Mirroring kasutab Facebooki reklaamipakkujana. Facebook soovib näidata teie jaoks asjakohaseid reklaame. Lisateabe saamiseks külastage aadressi\nhttps://m.facebook.com/ads/ad_choices.\n\nAinus olukord, kus saame juurdepääsu teie isikuandmetele, on siis, kui otsustate meile isiklikult tagasisidet saata või meile veast teada anda. aruanne. Sellises olukorras saadav isikut tõendav teave on rangelt piiratud ainult teie nime, e-posti aadressi ja teie küsitluse vastusega.\n\nÜltoodud olukorras garanteerime, et teie isikuandmeid kasutatakse ainult teiega ühenduse võtmiseks ja meie teenuste täiustamiseks. Me ei kasuta kunagi sellist teavet (nt teie nime ja e-posti aadressi_ mis tahes muudel eesmärkidel, näiteks meie toodete edasiseks turundamiseks või teie isikuandmete avaldamiseks kolmandale osapoolele ärilise kasu eesmärgil.\n\nTuleb tähele panna, et kas või mitte saata meile oma tagasisidet või veateadet on täiesti vabatahtlik algatus teie enda otsusel. Kui tunnete muret teie isikuandmete väärkasutamise pärast või kui soovite lisateavet meie privaatsuspoliitika ja selle tähenduse kohta, saatke meile e-kiri. aadressil screenmirroring.feedback@gmail.com, püüame anda teie küsimustele õigeaegselt selged vastused .</string>
+    <string name="please_write_your_feedback">Palun kirjutage oma tagasiside</string>
+    <string name="system_info">Teie süsteemiteave saadetakse ekraani peegeldamise tehnikaosakonda</string>
+    <string name="send">Saada</string>
+    <string name="provide_feedback">tagasisidet andma</string>
+    <string name="invalid_email_provided">Sisestatud vale e-posti aadress</string>
+    <string name="check_your_internet_connection">Kontrollige oma Interneti-ühendust</string>
+    <string name="type_here">kirjuta siia…</string>
+    <string name="enter_your_email_optional">Sisestage oma e-posti aadress (valikuline)</string>
+    <string name="enjoy_the_app">Kas teile meeldib rakendus?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Hinnake oma kogemust Screen\nPeegeldusrakenduse kasutamisega.</string>
+    <string name="not_now">Mitte praegu</string>
+    <string name="feedback">Tagasiside:</string>
+    <string name="model">Mudel:</string>
+    <string name="brand">Bränd:</string>
+    <string name="os_version">OS-i versioon:</string>
+    <string name="manufacturer">Tootja:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Kirja saatma</string>
+    <string name="select_picture">Valige Pilt</string>
+    <string name="help_center">Abikeskus</string>
+    <string name="question_1">Minu telefon takerdub teleriga sidumisel\n olekusse "Ühendamine".</string>
+    <string name="question_2">See töötas minu jaoks varem, kuid see \nei tööta praegu.</string>
+    <string name="question_3">See näitab, et minu seadet ei \ntoetata.</string>
+    <string name="question_4">Minu teler on vana teler ja ei \ntoeta wifit.</string>
+    <string name="question_5">Teleris on pilt must, aga heli \non kuulda.</string>
+    <string name="question_6">Ühendus katkeb mõne aja \npärast.</string>
+    <string name="question_7">Kas minu isiklik teave või mobiilsed andmed \non täiesti ohutud?</string>
+    <string name="q_answer_1_1">Taaskäivitage nutitelefoni Wi-Fi ja vaadake, kas ühendus on edukas.</string>
+    <string name="q_answer_1_2">Lülitage teler välja ja eemaldage ka selle toitejuhe pistikupesast. Oodake 1 minut ja taaskäivitage teler.</string>
+    <string name="q_answer_1_3">Lühendage telefoni ja teleri vahelist kaugust. Võtke see lähedalt.</string>
+    <string name="q_answer_2_1">Kui see varem töötas, saab seda kindlasti uuesti kasutada.</string>
+    <string name="q_answer_2_2">Enamikku ühenduse probleeme saab lahendada seadmete taaskäivitamise teel. Taaskäivitage lihtsalt nii telefon kui ka teler ning uuesti proovimiseks järgige tavalist ühendamisprotsessi.</string>
+    <string name="q_answer_3_1">See tähendab, et teie telefon ise ei toeta ekraani peegeldamise funktsiooni.</string>
+    <string name="q_answer_3_2">Saate kasutada XCasti video, heli ja fotode telerisse ülekandmiseks. XCastiga saate telerisse ülekandmise ajal telefoniga muid asju teha.</string>
+    <string name="q_answer_4_1">Kui teie teler toetab HDMI-liidest, soovitame teil osta ekraani peegeldamiseks välise vastuvõtja. Näiteks Chromecast, Anycast jne.</string>
+    <string name="q_answer_5_1">Teatud sisu hõlmab autoriõiguste kaitset ja seda ei saa kuvada kolmandate osapoolte seadmetes, nagu Netflix, Disney Plus jne.</string>
+    <string name="q_answer_5_2">Proovimiseks saate video alla laadida või otsida sama ressurssi teistest rakendustest.</string>
+    <string name="q_answer_6_1">Saate Smart Connecti sisse lülitada oma Wi-Fi seadetes. See otsib pidevalt paremaid WiFi-ühendusi ja ühendab alati edasi-tagasi.</string>
+    <string name="q_answer_6_2">Veenduge, et mobiiltelefoni ja teleri Wi-Fi oleks SAM ja parim signaal.</string>
+    <string name="q_answer_7_1">Me ei jälgi ega kogu teie ja teie mobiiltelefoni kohta teavet. Saate oma ekraani muretult üle kanda.</string>
+    <string name="q_answer_7_2">Süsteem võib enne ekraani peegeldamist hoiatada teid ohu eest. See on lihtsalt tavaline meeldetuletus, nii saab</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">PAIGALDA</string>
+    <string name="install_small">Installige</string>
+    <string name="manual">Käsiraamat</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Veenduge, et teie telefon ja teler oleksid ühendatud\nsama WiFi-võrguga.</string>
+    <string name="hd_streaming">HD voogesitus</string>
+    <string name="smart_devices">nutiseadmed</string>
+    <string name="private_browser">Privaatne brauser</string>
+    <string name="effects">Efektid</string>
+    <string name="slider">Liugur</string>
+    <string name="search_or_type_web_address">Otsige või sisestage veebiaadress</string>
+    <string name="install_2">Installige</string>
+    <string name="bookmark">Järjehoidja</string>
+    <string name="downloads">Allalaadimised</string>
+    <string name="download">Lae alla</string>
+    <string name="favorites">Lemmikud</string>
+    <string name="favorite">Lemmik</string>
+    <string name="history">Ajalugu</string>
+    <string name="share_pdf">Jaga pdf-i</string>
+    <string name="copy_url">Kopeeri URL</string>
+    <string name="share_app">Jaga rakendust</string>
+    <string name="share_url">Jaga URL-i</string>
+    <string name="exit">Välju</string>
+    <string name="new_tab">Uuel kaardil</string>
+    <string name="google">Google</string>
+    <string name="startpage">Algusleht</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Kohandatud otsingumootor</string>
+    <string name="add_shortcut_to_home">Lisa otsetee avalehele</string>
+    <string name="save_screenshot">Salvesta ekraanipilt</string>
+    <string name="add_to_bookmark">Lisa järjehoidjasse</string>
+    <string name="save_as_pdf">Salvesta pdf-ina</string>
+    <string name="save_action">Salvesta tegevus</string>
+    <string name="add_to_favorite">Lisa lemmikutesse</string>
+    <string name="search_engine">Otsingumootor</string>
+    <string name="browser_exit_body">Kas olete kindel, et soovite brauserist väljuda?</string>
+    <string name="exit_browser">Välju brauserist</string>
+    <string name="custom_user_agent">Kohandatud kasutajaagent</string>
+    <string name="start_control">Käivitage juhtimine</string>
+    <string name="data_control">Andmete juhtimine</string>
+    <string name="app_settings">Rakenduse seaded</string>
+    <string name="browser_settings">Brauseri seaded</string>
+    <string name="behavior_ui">Käitumine/UI</string>
+    <string name="clear_cache">Tühjenda vahemälu</string>
+    <string name="clear_history">Kustuta ajalugu</string>
+    <string name="clear_browsing_history">Sirvimisajaloo tühjendamine</string>
+    <string name="clear_all_cache">Tühjendage kogu vahemälu</string>
+    <string name="clear_database_body">Kustutage "indekseeritud andmebaasid" ja "kohalikud\ndamebaasid"</string>
+    <string name="clear_cookies_body">Kui see on lubatud, kustutatakse kõik küpsised. Samuti\nusaldusväärsete veebisaitide küpsised</string>
+    <string name="clear_databases">Tühjendage andmebaasid</string>
+    <string name="clear_cookies">Kustuta küpsised</string>
+    <string name="clear_when_application_exit">Kustuta rakendusest väljumisel</string>
+    <string name="clear_when_application_exit_body">Iga kord, kui väljute, kustutatakse kõik ülaltoodud andmed\n</string>
+    <string name="image">Pilt</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Küpsised</string>
+    <string name="reopen_last_tab">Ava viimane vaheleht uuesti</string>
+    <string name="confirm_tab_close">Kinnitage vahekaardi sulgemine</string>
+    <string name="confirm_browser_exit">Kinnitage brauserist väljumine</string>
+    <string name="position">positsioon</string>
+    <string name="first_toolbar">Esimene tööriistariba</string>
+    <string name="hide_toolbar">Peida tööriistariba</string>
+    <string name="toolbar">Tööriistariba</string>
+    <string name="bookmarks">Järjehoidjad</string>
+    <string name="edit">Muuda</string>
+    <string name="today">Täna</string>
+    <string name="the_last_hour">Viimane tund</string>
+    <string name="last_week">Eelmine nädal</string>
+    <string name="last_month">Eelmine kuu</string>
+    <string name="delete_all_history">Kustuta kogu ajalugu</string>
+    <string name="copied">kopeeritud</string>
+    <string name="share_ss">Jaga SS-i</string>
+    <string name="file_manager">Failihaldur</string>
+    <string name="search_on">Otsi sisse</string>
+    <string name="add_shortcut">Lisa otsetee</string>
+    <string name="tab_exit">Vahekaart Välju</string>
+    <string name="do_you_want_to_close">Kas soovite sulgeda</string>
+    <string name="download_complete_share_image">Allalaadimine on lõpetatud. Jaga pilti</string>
+    <string name="update">Värskenda</string>
+    <string name="unfavorite">Pole lemmik</string>
+    <string name="no_input_provided">Sisend puudub</string>
+    <string name="input">Sisend</string>
+    <string name="website_link">Veebisaidi link</string>
+    <string name="for_you">Sinu jaoks</string>
+    <string name="website">Veebisait:</string>
+    <string name="url">URL:</string>
+    <string name="date">Kuupäev</string>
+    <string name="no_site_loaded">Teil pole veebisaiti laaditud</string>
+    <string name="more_then_5_images_can_not_be_picked">Rohkem kui viit pilti ei saa valida</string>
+</resources>

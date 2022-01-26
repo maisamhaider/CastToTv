@@ -4,6 +4,7 @@ import android.app.ActivityManager
 import android.app.AlertDialog
 import android.content.ActivityNotFoundException
 import android.content.Context
+import android.content.ContextWrapper
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -22,10 +23,11 @@ import com.example.casttotv.databinding.LayoutLanguagesBinding
 import com.example.casttotv.databinding.OrientationDialogBinding
 import com.example.casttotv.databinding.RateDialogBinding
 import com.example.casttotv.databinding.ThemeDialogBinding
-import com.example.casttotv.interfaces.MyCallBack
 import com.example.casttotv.dataclasses.Lang
+import com.example.casttotv.interfaces.MyCallBack
 import com.example.casttotv.utils.*
 import com.example.casttotv.utils.MySingleton.changeTheme
+import com.example.casttotv.utils.MySingleton.setAppLocale
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.Pref.putPrefs
@@ -46,8 +48,8 @@ class MainViewModel : ViewModel() {
 
     private var languageDialog: MutableLiveData<AlertDialog> = MutableLiveData(null)
 
-    fun list(): MutableList<Lang> {
-        return MySingleton.listOfLanguages
+    fun list(): List<Lang> {
+        return MySingleton.LANGUAGES
     }
 
     fun preLoadData(context: Context) {
@@ -96,7 +98,8 @@ class MainViewModel : ViewModel() {
                 if (dark) {
                     textviewManual.setTextColor(ContextCompat.getColor(context, R.color.cr_white))
                 } else {
-                    textviewManual.setTextColor(ContextCompat.getColor(context, R.color.cr_black_80))
+                    textviewManual.setTextColor(ContextCompat.getColor(context,
+                        R.color.cr_black_80))
                 }
                 textviewAuto.setTextColor(ContextCompat.getColor(context,
                     R.color.cr_dodger_blue_light_2))
@@ -124,7 +127,8 @@ class MainViewModel : ViewModel() {
                 if (dark) {
                     textviewManual.setTextColor(ContextCompat.getColor(context, R.color.cr_white))
                 } else {
-                    textviewManual.setTextColor(ContextCompat.getColor(context, R.color.cr_black_80))
+                    textviewManual.setTextColor(ContextCompat.getColor(context,
+                        R.color.cr_black_80))
                 }
                 _orientation.value = context.getString(R.string.auto)
                 context.changeTheme()
@@ -276,7 +280,7 @@ class MainViewModel : ViewModel() {
 
     }
 
-    fun languageDialog(context: Context) {
+    fun languageDialog(context: Context, onCallBack: () -> Unit) {
         val builder = AlertDialog.Builder(context)
         val binding = LayoutLanguagesBinding.inflate(LayoutInflater.from(context), null, false)
         builder.setView(binding.root)
@@ -284,7 +288,15 @@ class MainViewModel : ViewModel() {
         languageDialog.value = builder.create()
         languageDialog.value!!.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         languageDialog.value!!.show()
-        val adapter = LanguagesAdapter(context)
+        val adapter = LanguagesAdapter(context, object : MyCallBack {
+            override fun callback() {
+                onCallBack()
+                ContextWrapper(context.setAppLocale(context.getPrefs(LOCALE_LANGUAGE, "en")))
+                languageDialog.value?.dismiss()
+
+            }
+
+        })
         val recyclerView = binding.recyclerview
         recyclerView.adapter = adapter
         try {
@@ -293,6 +305,7 @@ class MainViewModel : ViewModel() {
             e.stackTrace
         }
     }
+
 
     fun cancelLanguageDialog() {
         if (languageDialog.value != null) {
@@ -307,7 +320,6 @@ class MainViewModel : ViewModel() {
             false
         } else languageDialog.value!!.isShowing
     }
-
 
 
 }

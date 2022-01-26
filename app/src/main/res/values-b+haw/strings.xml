@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Hawaiian-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">Wahi</string>
+    <string name="connection_close_confirm">Makemake ʻoe e kāpae i ka pilina VPN o kēia manawa?</string>
+    <string name="yes">AE</string>
+    <string name="no">AʻOLE</string>
+    <string name="yes_2">ae</string>
+    <string name="no_2">Aʻole</string>
+    <string name="select_images">E koho i nā kiʻi</string>
+    <string name="tabs">Nā papa</string>
+    <string name="share">Kaʻana like</string>
+    <string name="save">Mālama</string>
+    <string name="more">ʻOi aku</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Hoʻopau</string>
+    <string name="favorite_site">E hoʻololi i ka pūnaewele paʻamau e hoʻouka ana ma ka hoʻomaka ʻana o Browser</string>
+    <string name="custom_search_engine_body">E hoʻohui i ka url hulina maʻamau, e koho pū i ka "Custom\nsearch engine" ma ke ʻano he mea huli</string>
+    <string name="search_engine_body">E koho i kāu ʻenekini huli makemake a i ʻole e hoʻonoho i kahi mea maʻamau</string>
+    <string name="data_control_body">Holoi i kāu ʻikepili polokalamu kele pūnaewele a hoʻoholo i ka ʻikepili\ne holoi ʻia ke haʻalele ʻoe i ka polokalamu</string>
+    <string name="start_control_body">E hoʻoholo i nā ʻāpana o ka polokalamu kele\n e hoʻomaka ana</string>
+    <string name="behavior_ui_body">E hoʻololi i ka ʻano a me ka ui o ka polokalamu e kūpono i kāu mau makemake</string>
+    <string name="book_mark_body">No ka hōʻike ʻana i ke kamaʻilio kānana e kaomi lōʻihi ma ka ikona bookmark ma ka ʻike. E hoʻoholo i nā kānana āu e hoʻohana ai</string>
+    <string name="app_settings_body">Nā hoʻonohonoho polokalamu kele pūnaewele, ma laila hiki iā ʻoe ke hilinaʻi i kāu ʻae ʻae ʻana i kāu mana Android.</string>
+    <string name="start_control_image_body">E ho\'ā i nā kiʻi pūnaewele, hiki ke hoʻopau ʻia\no ka mālama ʻana i ka ʻikepili kelepona a hoʻouka wikiwiki i ka pūnaewele</string>
+    <string name="start_control_location_body">E ʻae i nā pūnaewele e komo i kou wahi. Pono kekahi mau pūnaewele {google, maps for nav) e hiki ai</string>
+    <string name="start_control_history_body">E mālama i ka mōʻaukala o nā pūnaewele i kipa ʻia</string>
+    <string name="start_control_java_script_body">E ho\'ā i ka JavaScript. Pono nā pūnaewele he nui\nJavaScript no kā lākou hana. Akā, hoʻomaha lākou a hiki ke hoʻohana ʻia no ka hoʻouka ʻana</string>
+    <string name="start_control_cookies_body">E ho\'ā i nā Kuki. He waihona kikokikona liʻiliʻi nā kuki,
+i mālama ʻia ma kāu kelepona. Hoʻohana pūnaewele
+no ka laʻana e mālama i nā hoʻonohonoho mea hoʻohana. Akā
+hiki ke hoʻohana ʻia e hōʻiliʻili i ka mea hoʻohana pilikino
+ʻikepili. Paʻa mau nā kuki ʻaoʻao ʻekolu.</string>
+    <string name="confirmation_browser_exit_body">Kūkākūkā hōʻoia i ka wā e pani ana i ka polokalamu kele pūnaewele</string>
+    <string name="confirmation_tab_close_body">Kūkākūkā hōʻoia i ka wā e pani ana i kahi pā</string>
+    <string name="confirmation_reopen_last_body">E wehe hou i kahi pā hou ke pani ʻia ka pā hope ma mua o ka haʻalele ʻana i ka polokalamu kele pūnaewele</string>
+    <string name="hide_toolbar_body">E hoʻohana i ka pale holoʻokoʻa i ka wā e hele ai i ka pūnaewele inā ʻoe e kaomi i ke pihi hope e haʻalele ʻoe i ke ʻano pale piha</string>
+    <string name="images">Nā kiʻi</string>
+    <string name="videos">Nā wikiō</string>
+    <string name="web_browser">Pūnaewele Pūnaewele</string>
+    <string name="image_slider">Kiʻi Slider</string>
+    <string name="next">Aʻe</string>
+    <string name="previous">Mamua</string>
+    <string name="help">Kokua</string>
+    <string name="settings">Nā hoʻonohonoho</string>
+    <string name="language">ʻŌlelo</string>
+    <string name="more_app">Nā polokalamu hou aku</string>
+    <string name="rate_us">E helu iā mākou</string>
+    <string name="screen_mirroring">Hōʻike aniani</string>
+    <string name="home_screen_text">E hōʻoia i ka pili ʻana o kāu kelepona a me kāu TV i ka pūnaewele Wi-Fi like.</string>
+    <string name="wifi_connected">Hoʻohui ʻia ʻo Wi-Fi</string>
+    <string name="wifi_disconnected">Hoʻokuʻu ʻia ka Wi-Fi</string>
+    <string name="general">Generala</string>
+    <string name="communicate">Kūkākūkā</string>
+    <string name="send_feedback">Hoʻouna Manaʻo</string>
+    <string name="tutorial">Aʻoaʻo</string>
+    <string name="how_to_use">Pehea e ho ohana?</string>
+    <string name="streaming">Ke kahe ana</string>
+    <string name="streaming_quality">Maikaʻi Streaming</string>
+    <string name="auto_stop">Kū kaʻa</string>
+    <string name="auto_minimize">Hoemi Aunoa</string>
+    <string name="advance">Holomua</string>
+    <string name="orientation_mode">Kūlana Kūlana</string>
+    <string name="auto_stop_body_text">E hooki i ka wikiō ke nalowale ka pilina\i ka pahu hopu</string>
+    <string name="auto_minimize_body_text">Hūnā polokalamu ke hoʻomaka ke aniani</string>
+    <string name="casting_orientation_body_text">ʻO ka hoʻolei ʻana</string>
+    <string name="mirroring_mode">Ke ʻano hoʻohālike</string>
+    <string name="screen_mirroring_privacy_policy">Ke kulekele pilikino e hoʻohālike ana i ka pale</string>
+    <string name="privacy_policy">Kulekele pilikino</string>
+    <string name="supporting_devices">Nā mea kākoʻo</string>
+    <string name="see_which_devices_support_mirroring">E ʻike i nā mea hana e kākoʻo ana i ka hoʻohālikelike ʻana</string>
+    <string name="color_theme">Kumuhana kala</string>
+    <string name="dark">Poʻeleʻele</string>
+    <string name="light">Māmā</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">E koho i ka ʻōlelo</string>
+    <string name="close">pili</string>
+    <string name="images_slider">Nā Kiʻi Mea pahee</string>
+    <string name="screen_mirror">Panini aniani</string>
+    <string name="tutorial_screen_setup_body">Pono kāu hāmeʻa i hoʻopaʻa ʻia ma ka pūnaewele Wi-Fi like me kēia hāmeʻa, no ka mea ke hoʻouna nei ʻo Screen Mirror i kāu pale.</string>
+    <string name="tutorial_screen_mirror_body">E hoʻoheheʻe i ka pale o kāu hāmeʻa ma o Wi-Fi i kāu kamepiula, puke a papa paha.</string>
+    <string name="tutorial_device_hotspot_body">Hiki nō hoʻi iā ʻoe ke hoʻohana i ka piko pele o kāu kelepona (mode tethering) a hoʻohui i kāu hāmeʻa i hoʻopaʻa ʻia i kāu piko pele.</string>
+    <string name="tutorial_scan_code_body">E wehe i ka paena ma kāu hāmeʻa. Ma ka nānā ʻana i ka QR code e hoʻouna ʻia ka hoʻonohonoho pili a hoʻomaka ke aniani.</string>
+    <string name="tutorial_support_body">E ʻoluʻolu e ʻoluʻolu e hana wale ʻo Screen Mirror ke hoʻonohonoho pololei. Hoʻouna ʻo Screen Mirror i kāu pale, akā ʻaʻole nā ​​hōʻailona leo o kāu kelepona. Inā pilikia ʻoe e kelepona mai iā mākou.</string>
+    <string name="walk_through_body_1">E hauʻoli i ka hoʻoheheʻe ʻana maʻemaʻe a me ke ʻano kiʻekiʻe\nme ka lohi ʻole</string>
+    <string name="walk_through_body_2">Hoʻopili me kekahi mea akamai a hauʻoli i ka hōʻike ʻana ma kekahi pale</string>
+    <string name="walk_through_body_3">E hauʻoli i ka polokalamu kele pūnaewele me ka palena ʻole</string>
+    <string name="screen_setup">Hoʻonohonoho pale</string>
+    <string name="device_hotspot">Ka piko piko o ka lakohana</string>
+    <string name="scan_code">Code Scan</string>
+    <string name="support">Kākoʻo</string>
+    <string name="finish">Hoʻopau</string>
+    <string name="our_policies">ʻO kā mākou mau kulekele</string>
+    <string name="privacy_policy_text">He mea nui iā mākou ka pale ʻana i ka pilikino. Manaʻo mākou e kōkua kēia ʻōlelo iā ʻoe e hoʻomaopopo i ke ʻano o kā mākou hana ʻana i ka ʻike pilikino, hiki iā ʻoe ke hāʻawi iā mākou i kekahi manawa ma o ka Pūnaewele (ka Google Play platform). ʻAʻole mākou e hōʻiliʻili i kekahi PII mai iā ʻoe ke hoʻoiho ʻoe i kā mākou mau noi Android. No ka kikoʻī, ʻaʻole mākou koi i nā kipa o nā mea kūʻai aku o kā mākou palapala noi, ʻaʻohe a mākou Server e mālama i kēlā PII.\n\nHoʻohana ʻo Screen Mirroring iā Facebook ma ke ʻano he mea hoʻolaha hoʻolaha. Makemake ʻo Facebook e hōʻike i nā hoʻolaha pili iā ʻoe. No ka \'ike hou aku e \'olu\'olu e kipa\nhttps://m.facebook.com/ads/ad_choices.\n\n\'O ke kūlana wale nō e hiki ai iā mākou ke komo iā \'oe PII ke ho\'oholo pono\'ī \'oe e leka uila iā mākou i kou mana\'o a i \'ole e hā\'awi mai iā mākou i kahi pahu. hōʻike. ʻO ka PII hiki iā mākou ke loaʻa mai iā ʻoe i kēlā kūlana, ua kaupalena ʻia iā ʻoe wale nō ka inoa, ka leka uila a me kāu pane noiʻi wale nō. ʻAʻole loa mākou e hoʻohana i ia ʻike (e laʻa i kou inoa a me kou leka uila_ no nā kumu ʻē aʻe, e like me ke kūʻai hou aku i kā mākou huahana, a i ʻole e hōʻike i kāu ʻike pilikino i kahi ʻaoʻao ʻekolu no ka loaʻa kālā.\n\n ʻaʻole ʻoe e hoʻouna mai iā mākou i kāu manaʻo a i ʻole ka hōʻike ʻino he hana manawaleʻa loa ia ma kāu hoʻoholo ponoʻī. ma screenmirroring.feedback@gmail.com, e hoʻāʻo mākou e hāʻawi i nā pane maopopo i kāu mau nīnau i ka manawa kūpono.</string>
+    <string name="please_write_your_feedback">E ʻoluʻolu e kākau i kāu manaʻo manaʻo</string>
+    <string name="system_info">E hoʻouna ʻia kāu ʻike Pūnaewele i ke Keʻena ʻenehana Screen Mirroring</string>
+    <string name="send">Hoʻouna</string>
+    <string name="provide_feedback">hāʻawi manaʻo</string>
+    <string name="invalid_email_provided">Hāʻawi ʻia ka leka uila hewa ʻole</string>
+    <string name="check_your_internet_connection">E nānā i kāu pili pūnaewele</string>
+    <string name="type_here">kikokiko ma ʻaneʻi…</string>
+    <string name="enter_your_email_optional">E hoʻokomo i kāu leka uila (koho)</string>
+    <string name="enjoy_the_app">Nanea i ka App?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">E helu i kāu ʻike me ka hoʻohana ʻana i ka Screen\nMirroring App.</string>
+    <string name="not_now">Aʻole i kēia manawa</string>
+    <string name="feedback">Manaʻo manaʻo:</string>
+    <string name="model">Model:</string>
+    <string name="brand">Brand:</string>
+    <string name="os_version">Manaʻo OS:</string>
+    <string name="manufacturer">Mea hana:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Hoʻouna leka</string>
+    <string name="select_picture">E koho i ke kiʻi</string>
+    <string name="help_center">Kikowaena kokua</string>
+    <string name="question_1">Paʻa kaʻu kelepona i ka "Hoʻohui" ke \nhoʻopaʻa ʻia me ke TV.</string>
+    <string name="question_2">Ua hana ia iaʻu ma mua, akā ʻaʻole ia \ne hana i kēia manawa.</string>
+    <string name="question_3">Hōʻike ia ʻaʻole kākoʻo ʻia \nkaʻu hāmeʻa.</string>
+    <string name="question_4">He TV kahiko kaʻu TV a ʻaʻole \nkākoʻo i ka wi-fi.</string>
+    <string name="question_5">He ʻeleʻele ke kiʻi ma ka TV, akā hiki \nke lohe ʻia ke kani.</string>
+    <string name="question_6">Hoʻopau ʻia ka pilina ma hope o \nkekahi manawa.</string>
+    <string name="question_7">Ua palekana paha kaʻu ʻike pilikino a i ʻole kaʻu ʻikepili kelepona?</string>
+    <string name="q_answer_1_1">E hoʻomaka hou i ka Wi-Fi o ke kelepona akamai a ʻike inā kūleʻa ka pilina.</string>
+    <string name="q_answer_1_2">E hoʻopau i ka TV a wehe i kāna kaula mana mai ke kumu pū kekahi. E kali i 1 minuke a hoʻomaka hou i ka TV.</string>
+    <string name="q_answer_1_3">E pōkole ka mamao ma waena o kāu kelepona a me ke TV. E lawe kokoke.</string>
+    <string name="q_answer_2_1">Inā hana ma mua, a laila hiki ke hoʻohana hou.</string>
+    <string name="q_answer_2_2">Hiki ke hoʻoponopono ʻia ka hapa nui o nā pilikia pili me ka hoʻomaka hou ʻana i nā polokalamu. E hoʻomaka hou i kāu kelepona a me kāu TV, e hahai i ke kaʻina hana pili maʻamau e hoʻāʻo hou.</string>
+    <string name="q_answer_3_1">\'O ia ho\'i, \'a\'ole kāko\'o kāu kelepona pono\'ī i ka hana ho\'ohālike pale.</string>
+    <string name="q_answer_3_2">Hiki iā ʻoe ke hoʻohana iā XCast e hoʻolei i ke wikiō, leo a me ke kiʻi i ka TV. Me XCast, hiki iā ʻoe ke hana i nā mea ʻē aʻe me kāu kelepona ʻoiai e hoʻolei ana i ka TV.</string>
+    <string name="q_answer_4_1">Inā kākoʻo kāu TV i ka interface HDMI, manaʻo mākou e kūʻai ʻoe i mea hoʻokipa waho no ka hoʻohālikelike ʻana i ka pale. E like me Chromecast, Anycast etc.</string>
+    <string name="q_answer_5_1">Aia kekahi mau mea i ka pale kope kope a ʻaʻole hiki ke hōʻike ʻia ma nā polokalamu ʻaoʻao ʻekolu, e like me Netflix, Disney Plus etc.</string>
+    <string name="q_answer_5_2">Hiki iā ʻoe ke hoʻoiho i ke wikiō a i ʻole e ʻimi i ka kumuwaiwai like ma nā polokalamu ʻē aʻe e hoʻāʻo ai.</string>
+    <string name="q_answer_6_1">Hiki iā ʻoe ke hoʻā i ka Smart Connect i kāu mau hoʻonohonoho Wi-Fi. E ʻimi ʻo ia i nā pili Wi-fi maikaʻi i nā manawa a pau, a e hoʻopili mau i hope a i waho.</string>
+    <string name="q_answer_6_2">E ʻoluʻolu e hōʻoia i ka Wi-Fi o ke kelepona paʻa a me ka TV ʻo ia ka SAM a me ka hōʻailona maikaʻi loa.</string>
+    <string name="q_answer_7_1">ʻAʻole mākou e nānā a hōʻiliʻili i kekahi ʻike e pili ana iā ʻoe a me kāu kelepona paʻalima. Hiki iā ʻoe ke hoʻolei i kāu pale me ka hopohopo ʻole.</string>
+    <string name="q_answer_7_2">Hiki i ka ʻōnaehana ke aʻo iā ʻoe aia kahi pōʻino palekana ma mua o ke aniani ʻana i ka pale. He hoʻomanaʻo maʻamau wale nō kēia</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">HOOLAHA</string>
+    <string name="install_small">Hoʻokomo</string>
+    <string name="manual">Manual</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">E hōʻoia i ka pili ʻana o kāu kelepona a me kāu TV i ka pūnaewele Wi-Fi like.</string>
+    <string name="hd_streaming">HD Streaming</string>
+    <string name="smart_devices">mea akamai</string>
+    <string name="private_browser">Pūnaehana Pūnaewele</string>
+    <string name="effects">Nā hopena</string>
+    <string name="slider">Mea pahee</string>
+    <string name="search_or_type_web_address">Huli a kikokiko i ka helu wahi pūnaewele</string>
+    <string name="install_2">Hoʻokomo</string>
+    <string name="bookmark">Kaha puke</string>
+    <string name="downloads">Hoʻoiho</string>
+    <string name="download">Hoʻoiho</string>
+    <string name="favorites">Nā punahele</string>
+    <string name="favorite">punahele</string>
+    <string name="history">Moolelo</string>
+    <string name="share_pdf">Kaʻana like Pdf</string>
+    <string name="copy_url">E kope i ka URL</string>
+    <string name="share_app">Kaʻana App</string>
+    <string name="share_url">Kaʻana url</string>
+    <string name="exit">Puka</string>
+    <string name="new_tab">Tab Hou</string>
+    <string name="google">no direct translation</string>
+    <string name="startpage">ʻAoʻao hoʻomaka</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">ʻEkosia</string>
+    <string name="custom_search_engine">mīkini huli maʻamau</string>
+    <string name="add_shortcut_to_home">E hoʻohui i ka pōkole i ka home</string>
+    <string name="save_screenshot">E mālama i ke kiʻi kiʻi</string>
+    <string name="add_to_bookmark">Hoʻohui i ka bookmark</string>
+    <string name="save_as_pdf">E mālama ma ke ʻano he pdf</string>
+    <string name="save_action">Mālama i ka hana</string>
+    <string name="add_to_favorite">Hoʻohui i ka punahele</string>
+    <string name="search_engine">ʻEnekini Huli</string>
+    <string name="browser_exit_body">Makemake ʻoe e haʻalele i ka Pūnaewele</string>
+    <string name="exit_browser">Haʻalele i ka polokalamu kele pūnaewele</string>
+    <string name="custom_user_agent">Mea hoʻohana maʻamau</string>
+    <string name="start_control">Hoʻomaka Mana</string>
+    <string name="data_control">Manaʻoʻikepili</string>
+    <string name="app_settings">Nā hoʻonohonoho polokalamu</string>
+    <string name="browser_settings">Nā hoʻonohonoho polokalamu kele pūnaewele</string>
+    <string name="behavior_ui">ʻAno/UI</string>
+    <string name="clear_cache">Holoi huna</string>
+    <string name="clear_history">Holoi Moolelo</string>
+    <string name="clear_browsing_history">Holoi i ka mōʻaukala mākaʻikaʻi</string>
+    <string name="clear_all_cache">Holoi i ka huna huna a pau</string>
+    <string name="clear_database_body">Hoʻomaʻemaʻe i nā "indexed databases" a me "local\ndata bases"</string>
+    <string name="clear_cookies_body">Inā hiki, e holoi ʻia nā kuki a pau. A ʻo nā Kuki o nā pūnaewele hilinaʻi</string>
+    <string name="clear_databases">Holoi i nā waihona</string>
+    <string name="clear_cookies">Holoi Kuki</string>
+    <string name="clear_when_application_exit">Hoʻomaʻemaʻe i ka puka ʻana o ka noi</string>
+    <string name="clear_when_application_exit_body">I kēlā me kēia manawa āu e haʻalele ai i nā ʻikepili i hōʻoia ʻia ma luna, e holoi ʻia</string>
+    <string name="image">Kiʻi</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Kuki</string>
+    <string name="reopen_last_tab">E wehe hou i ka pā hope</string>
+    <string name="confirm_tab_close">E hōʻoia pili i ka pā</string>
+    <string name="confirm_browser_exit">E hōʻoia i ka puka ʻana o ka polokalamu kele pūnaewele</string>
+    <string name="position">Kūlana</string>
+    <string name="first_toolbar">Pahu mea hana mua</string>
+    <string name="hide_toolbar">Hūnā mea paahana</string>
+    <string name="toolbar">Pahu mea hana</string>
+    <string name="bookmarks">Nā kaha puke</string>
+    <string name="edit">Hoʻoponopono</string>
+    <string name="today">I kēia lā</string>
+    <string name="the_last_hour">ʻO ka hola hope</string>
+    <string name="last_week">I ka pule aku nei</string>
+    <string name="last_month">I ka mahina i hala</string>
+    <string name="delete_all_history">Holoi i ka mōʻaukala a pau</string>
+    <string name="copied">kope ʻia</string>
+    <string name="share_ss">Kaʻana like SS</string>
+    <string name="file_manager">Luna waihona</string>
+    <string name="search_on">Huli ma</string>
+    <string name="add_shortcut">Pākuʻi Pōkole</string>
+    <string name="tab_exit">Puka Puka</string>
+    <string name="do_you_want_to_close">Makemake ʻoe e pani</string>
+    <string name="download_complete_share_image">Hoʻopau piha. Kaʻana like kiʻi</string>
+    <string name="update">Hoʻohou</string>
+    <string name="unfavorite">Un punahele</string>
+    <string name="no_input_provided">ʻAʻohe mea hoʻokomo</string>
+    <string name="input">Hookomo</string>
+    <string name="website_link">loulou pūnaewele</string>
+    <string name="for_you">Nāu</string>
+    <string name="website">Pūnaewele:</string>
+    <string name="url">Url:</string>
+    <string name="date">Lā</string>
+    <string name="no_site_loaded">ʻAʻole ʻoe i hoʻouka i ka pūnaewele</string>
+    <string name="more_then_5_images_can_not_be_picked">ʻAʻole hiki ke koho ʻia ma mua o ʻelima mau kiʻi</string>
+</resources>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Georgian-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+
+    <string name="location">მდებარეობა</string>
+    <string name="connection_close_confirm">გსურთ გააუქმოთ მიმდინარე VPN კავშირი?</string>
+    <string name="yes">დიახ</string>
+    <string name="no">არა</string>
+    <string name="yes_2">დიახ</string>
+    <string name="no_2">არა</string>
+    <string name="select_images">აირჩიეთ სურათები</string>
+    <string name="tabs">ჩანართები</string>
+    <string name="share">გააზიარეთ</string>
+    <string name="save">Შენახვა</string>
+    <string name="more">მეტი</string>
+    <string name="ok">კარგი</string>
+    <string name="cancel">გაუქმება</string>
+    <string name="favorite_site">შეცვალეთ ნაგულისხმევი ვებსაიტი, რომელიც იტვირთება ბრაუზერის\nდაწყებისას</string>
+    <string name="custom_search_engine_body">დაამატეთ მორგებული საძიებო url ასევე აირჩიეთ „მორგებული\nსაძიებო სისტემა“, როგორც საძიებო პროვაიდერი</string>
+    <string name="search_engine_body">აირჩიეთ თქვენთვის სასურველი საძიებო სისტემა ან\nდააყენეთ მორგებული</string>
+    <string name="data_control_body">გაასუფთავეთ თქვენი ბრაუზერის მონაცემები ან გადაწყვიტეთ რა მონაცემები\nგასუფთავდება აპიდან გასვლისას</string>
+    <string name="start_control_body">გადაწყვიტეთ ბრაუზერის\nრომელი კომპონენტები იქნება ჩართული</string>
+    <string name="behavior_ui_body">შეცვალეთ აპის ქცევა და ინტერფეისი, რათა\nშეესაბამებოდეს თქვენს პრეფერენციებს</string>
+    <string name="book_mark_body">ფილტრის დიალოგის საჩვენებლად დიდხანს დააჭირეთ მიმოხილვაში სანიშნეს ხატულას. გადაწყვიტეთ რომელ ფილტრებს გამოიყენებთ</string>
+    <string name="app_settings_body">ბრაუზერის პარამეტრები, აქ შეგიძლიათ დამოკიდებულებით ანდროიდის ვერსიის მიანიჭოთ ნებართვა.</string>
+    <string name="start_control_image_body">ქსელის სურათების ჩართვა, გამორთვა შეიძლება სასარგებლო იყოს\nმობილური მონაცემების შესანახად და ვებსაიტის უფრო სწრაფად ჩატვირთვისთვის</string>
+    <string name="start_control_location_body">მიეცით ვებსაიტებს თქვენს მდებარეობაზე წვდომის უფლება. ზოგიერთ\nსაიტს (google, maps for nav) სჭირდება ამის ჩართვა</string>
+    <string name="start_control_history_body">შეინახეთ მონახულებული ვებსაიტების ისტორია</string>
+    <string name="start_control_java_script_body">ჩართეთ JavaScript. ბევრ ვებსაიტს სჭირდება\nJavaScript მათი ფუნქციონირებისთვის. მაგრამ ისინი ასევე ისვენებენ და შეიძლება გამოყენებულ იქნას შეტევებისთვის</string>
+    <string name="start_control_cookies_body">ჩართეთ ქუქიები. ქუქიები არის პატარა ტექსტური ფაილები,
+რომლებიც ინახება თქვენს მოწყობილობაზე. საიტების გამოყენება
+მათ, მაგალითად, მომხმარებლის პარამეტრების შესანახად. მაგრამ
+ისინი ასევე შეიძლება გამოყენებულ იქნას პირადი მომხმარებლის შესაგროვებლად
+მონაცემები. მესამე მხარის ქუქიები ყოველთვის გამორთულია.</string>
+    <string name="confirmation_browser_exit_body">დადასტურების დიალოგი\nბრაუზერის დახურვისას</string>
+    <string name="confirmation_tab_close_body">დადასტურების დიალოგი ჩანართის დახურვისას</string>
+    <string name="confirmation_reopen_last_body">ხელახლა გახსენით ახალი ჩანართი, როდესაც ბოლო ჩანართი დაიხურება ბრაუზერიდან გასვლის ნაცვლად</string>
+    <string name="hide_toolbar_body">გამოიყენეთ მთელი ეკრანი ვებსაიტზე გადაადგილებისას, თუ დააჭერთ უკანა ღილაკს, თქვენ დატოვებთ სრულეკრანიან რეჟიმს</string>
+    <string name="images">სურათები</string>
+    <string name="videos">ვიდეოები</string>
+    <string name="web_browser">ვებ ბრაუზერი</string>
+    <string name="image_slider">გამოსახულების სლაიდერი</string>
+    <string name="next">შემდეგი</string>
+    <string name="previous">წინა</string>
+    <string name="help">დახმარება</string>
+    <string name="settings">პარამეტრები</string>
+    <string name="language">ენები</string>
+    <string name="more_app">მეტი აპი</string>
+    <string name="rate_us">Შეგვაფასეთ</string>
+    <string name="screen_mirroring">ეკრანის ასახვა</string>
+    <string name="home_screen_text">დარწმუნდით, რომ თქვენი ტელეფონი და ტელევიზორი დაკავშირებულია იმავე Wi-Fi ქსელთან.</string>
+    <string name="wifi_connected">Wi-Fi დაკავშირებულია</string>
+    <string name="wifi_disconnected">Wi-Fi გათიშულია</string>
+    <string name="general">გენერალი</string>
+    <string name="communicate">კომუნიკაცია</string>
+    <string name="send_feedback">გამოხმაურების გაგზავნა</string>
+    <string name="tutorial">სახელმძღვანელო</string>
+    <string name="how_to_use">Როგორ გამოვიყენო?</string>
+    <string name="streaming">სტრიმინგი</string>
+    <string name="streaming_quality">სტრიმინგის ხარისხი</string>
+    <string name="auto_stop">Ავტო - სტოპი</string>
+    <string name="auto_minimize">ავტომატური მინიმიზაცია</string>
+    <string name="advance">Წინსვლა</string>
+    <string name="orientation_mode">ორიენტაციის რეჟიმი</string>
+    <string name="auto_stop_body_text">გააჩერეთ ვიდეო, როდესაც\nსამიზნეთან კავშირი დაიკარგება</string>
+    <string name="auto_minimize_body_text">აპის დამალვა, როდესაც ასახვა დაიწყება</string>
+    <string name="casting_orientation_body_text">კასტინგის ორიენტაცია</string>
+    <string name="mirroring_mode">სარკისებური რეჟიმი</string>
+    <string name="screen_mirroring_privacy_policy">ეკრანის ასახვა კონფიდენციალურობის პოლიტიკა</string>
+    <string name="privacy_policy">Კონფიდენციალურობის პოლიტიკა</string>
+    <string name="supporting_devices">დამხმარე მოწყობილობები</string>
+    <string name="see_which_devices_support_mirroring">ნახეთ, რომელ მოწყობილობებს უჭერს მხარს mirroring</string>
+    <string name="color_theme">ფერადი თემა</string>
+    <string name="dark">Ბნელი</string>
+    <string name="light">Მსუბუქი</string>
+    <string name="auto">ავტო</string>
+    <string name="select_language">Აირჩიეთ ენა</string>
+    <string name="close">დახურვა</string>
+    <string name="images_slider">სურათები სილდერი</string>
+    <string name="screen_mirror">ეკრანის სარკე</string>
+    <string name="tutorial_screen_setup_body">თქვენი სამიზნე მოწყობილობა უნდა იყოს იმავე Wi-Fi ქსელში, როგორც ეს მოწყობილობა, რადგან Screen Mirror გადასცემს თქვენს ეკრანს.</string>
+    <string name="tutorial_screen_mirror_body">გადაიტანეთ თქვენი მოწყობილობის ეკრანი Wi-Fi-ით თქვენს კომპიუტერში, ნოუთბუქში ან ტაბლეტში.</string>
+    <string name="tutorial_device_hotspot_body">თქვენ ასევე შეგიძლიათ გამოიყენოთ თქვენი მოწყობილობის ცხელი წერტილი (ტეტერინგის რეჟიმი) და დაუკავშიროთ თქვენი სამიზნე მოწყობილობა თქვენს ცხელ წერტილს.</string>
+    <string name="tutorial_scan_code_body">გახსენით საიტი თქვენს სამიზნე მოწყობილობაზე. QR კოდის სკანირებით, კავშირის კონფიგურაცია გადაიცემა და იწყება ასახვა.</string>
+    <string name="tutorial_support_body">გთხოვთ გაითვალისწინოთ, რომ Screen Mirror მუშაობს მხოლოდ სწორად დაყენებისას. Screen Mirror გადასცემს თქვენს ეკრანს, მაგრამ არა თქვენი მოწყობილობის აუდიო სიგნალებს. თუ რაიმე პრობლემა შეგექმნათ დაგვიკავშირდით.</string>
+    <string name="walk_through_body_1">ისიამოვნეთ გლუვი და მაღალი ხარისხის სტრიმინგზე\nდაყოვნების გარეშე</string>
+    <string name="walk_through_body_2">დაუკავშირდით ნებისმიერ სმარტ მოწყობილობას და ისიამოვნეთ\nჩვენებით ნებისმიერ ეკრანზე</string>
+    <string name="walk_through_body_3">ისიამოვნეთ აპს-შიდა პირადი ბრაუზერით შეზღუდვების გარეშე</string>
+    <string name="screen_setup">ეკრანის დაყენება</string>
+    <string name="device_hotspot">მოწყობილობის ცხელი წერტილი</string>
+    <string name="scan_code">კოდის სკანირება</string>
+    <string name="support">მხარდაჭერა</string>
+    <string name="finish">დასრულება</string>
+    <string name="our_policies">ჩვენი პოლიტიკა</string>
+    <string name="privacy_policy_text">თქვენი კონფიდენციალურობის დაცვა ჩვენთვის მნიშვნელოვანია. ვიმედოვნებთ, რომ შემდეგი განცხადება დაგეხმარება იმის გაგებაში, თუ როგორ ვიქცევით პერსონალურ საიდენტიფიკაციო ინფორმაციას, რომელსაც ზოგჯერ შეიძლება მოგვაწოდოთ ინტერნეტის საშუალებით (Google Play პლატფორმა).\n\nზოგადად. ჩვენ არ ვაგროვებთ თქვენგან რაიმე PII-ს, როდესაც ჩამოტვირთავთ ჩვენს Android აპლიკაციებს. კონკრეტულად რომ ვთქვათ, ჩვენ არ ვითხოვთ ჩვენი აპლიკაციის მომხმარებლების ვიზიტებს, ჩვენ არც კი გვაქვს სერვერი ასეთი PII-ის შესანახად.\n\nScreen Mirroring იყენებს Facebook-ს, როგორც რეკლამის პროვაიდერს. Facebook-ს სურს აჩვენოს თქვენთვის რელევანტური რეკლამები. დამატებითი ინფორმაციისთვის, გთხოვთ, ეწვიოთ\nhttps://m.facebook.com/ads/ad_choices.\n\nერთადერთი სიტუაცია, რომლითაც შეიძლება მივიღოთ თქვენ PII-ზე წვდომა, არის ის, როდესაც თქვენ პირადად გადაწყვეტთ გამოგვიგზავნოთ თქვენი გამოხმაურება ან მოგვაწოდოთ შეცდომა ანგარიში. PII, რომელიც შეიძლება მივიღოთ თქვენგან ამ სიტუაციაში, მკაცრად შემოიფარგლება მხოლოდ თქვენი სახელით, ელფოსტის მისამართით და თქვენი გამოკითხვის პასუხით.\n\nზემოხსენებულ სიტუაციაში, ჩვენ გარანტიას გაძლევთ, რომ თქვენი PII გამოყენებული იქნება მხოლოდ თქვენთან დასაკავშირებლად და ჩვენი სერვისების გასაუმჯობესებლად. ჩვენ არასოდეს გამოვიყენებთ ასეთ ინფორმაციას (მაგ. თქვენს სახელს და ელფოსტის მისამართს_ სხვა მიზნებისთვის, როგორიცაა ჩვენი პროდუქტების შემდგომი რეალიზაციისთვის, ან თქვენი პერსონალური ინფორმაციის მესამე მხარისათვის კომერციული სარგებლობისთვის).\n\nუნდა აღინიშნოს, რომ ან არ გამოგვიგზავნოთ თქვენი გამოხმაურება ან შეცდომის შესახებ ანგარიში არის სრულიად ნებაყოფლობითი ინიციატივა თქვენივე გადაწყვეტილებით. თუ შეშფოთებულია თქვენი PII-ის არასწორად გამოყენებასთან დაკავშირებით, ან თუ გსურთ დამატებითი ინფორმაცია ჩვენი კონფიდენციალურობის პოლიტიკის შესახებ და რას ნიშნავს ეს, გთხოვთ მოგვწეროთ ელ. მისამართზე screenmirroring.feedback@gmail.com, ჩვენ ვეცდებით, დროულად მოგაწოდოთ მკაფიო პასუხები თქვენს შეკითხვებზე.</string>
+    <string name="please_write_your_feedback">გთხოვთ დაწეროთ თქვენი გამოხმაურება</string>
+    <string name="system_info">თქვენი სისტემის ინფორმაცია გადაეგზავნება Screen Mirroring ტექნიკურ განყოფილებას</string>
+    <string name="send">გაგზავნა</string>
+    <string name="provide_feedback">უკუკავშირის მიწოდება</string>
+    <string name="invalid_email_provided">არასწორი ელფოსტა მოწოდებულია</string>
+    <string name="check_your_internet_connection">შეამოწმეთ თქვენი ინტერნეტ კავშირი</string>
+    <string name="type_here">ჩაწერეთ აქ…</string>
+    <string name="enter_your_email_optional">შეიყვანეთ თქვენი ელფოსტა (სურვილისამებრ)</string>
+    <string name="enjoy_the_app">მოგწონთ აპი?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">შეაფასეთ თქვენი გამოცდილება Screen\nMirroring აპის გამოყენებით.</string>
+    <string name="not_now">Ახლა არა</string>
+    <string name="feedback">გამოხმაურება:</string>
+    <string name="model">მოდელი:</string>
+    <string name="brand">ბრენდი:</string>
+    <string name="os_version">OS ვერსია:</string>
+    <string name="manufacturer">მწარმოებელი:</string>
+    <string name="ram">ოპერატიული მეხსიერება:</string>
+    <string name="send_email">ფოსტის გაგზავნა</string>
+    <string name="select_picture">აირჩიეთ სურათი</string>
+    <string name="help_center">დახმარების ცენტრი</string>
+    <string name="question_1">ტელევიზორთან დაწყვილებისას ჩემი ტელეფონი ჩერდება „დაკავშირებაზე“.</string>
+    <string name="question_2">ადრეც მუშაობდა, მაგრამ ახლა \nარ მუშაობს.</string>
+    <string name="question_3">ეს აჩვენებს, რომ ჩემი მოწყობილობა არ \nარის მხარდაჭერილი.</string>
+    <string name="question_4">ჩემი ტელევიზორი ძველი ტელევიზორია და \nარ უჭერს მხარს wi-fi-ს.</string>
+    <string name="question_5">ტელევიზორში გამოსახულება შავია, \nმაგრამ ხმა ისმის.</string>
+    <string name="question_6">კავშირი შეწყდება გარკვეული პერიოდის \nშემდეგ.</string>
+    <string name="question_7">არის ჩემი პირადი ინფორმაცია ან მობილური მონაცემები აბსოლუტურად უსაფრთხო?</string>
+    <string name="q_answer_1_1">გადატვირთეთ სმარტფონის ᲕᲐᲘ - ᲤᲐᲘ  და შეამოწმეთ თუ კავშირი წარმატებულია.</string>
+    <string name="q_answer_1_2">გამორთეთ ტელევიზორი და ამოიღეთ მისი დენის კაბელიც. დაელოდეთ 1 წუთი და გადატვირთეთ ტელევიზორი.</string>
+    <string name="q_answer_1_3">შეამცირეთ მანძილი ტელეფონსა და ტელევიზორს შორის. მიიღე ახლოს.</string>
+    <string name="q_answer_2_1">თუ ადრე მუშაობდა, მაშინ აუცილებლად შეიძლება ხელახლა გამოიყენოთ.</string>
+    <string name="q_answer_2_2">კავშირის პრობლემების უმეტესობა შეიძლება მოგვარდეს მოწყობილობების გადატვირთვით. უბრალოდ გადატვირთეთ თქვენი ტელეფონი და ტელევიზორი, მიჰყევით კავშირის რეგულარულ პროცესს ხელახლა საცდელად.</string>
+    <string name="q_answer_3_1">ეს ნიშნავს, რომ თქვენს ტელეფონს არ აქვს ეკრანის ასახვის ფუნქცია.</string>
+    <string name="q_answer_3_2">შეგიძლიათ გამოიყენოთ XCast ვიდეო, აუდიო და ფოტო ტელევიზორში გადასაცემად. XCast-ით ტელევიზორში ტრანსლირებისას ტელეფონთან სხვა საქმის გაკეთებაც შეგიძლიათ.</string>
+    <string name="q_answer_4_1">თუ თქვენს ტელევიზორს აქვს HDMI ინტერფეისის მხარდაჭერა, გირჩევთ შეიძინოთ გარე მიმღები ეკრანის ასახვისთვის. როგორიცაა Chromecast, Anycast და ა.შ.</string>
+    <string name="q_answer_5_1">ზოგიერთი შინაარსი მოიცავს საავტორო უფლებების დაცვას და არ შეიძლება იყოს ნაჩვენები მესამე მხარის მოწყობილობებზე, როგორიცაა Netflix, Disney Plus და ა.შ.</string>
+    <string name="q_answer_5_2">შეგიძლიათ ჩამოტვირთოთ ვიდეო ან მოძებნოთ იგივე რესურსი სხვა აპებზე, რომ სცადოთ.</string>
+    <string name="q_answer_6_1">შეგიძლიათ ჩართოთ Smart Connect თქვენს ᲕᲐᲘ - ᲤᲐᲘ  პარამეტრებში. ის მუდმივად ეძებს უკეთეს ᲕᲐᲘ - ᲤᲐᲘ  კავშირებს და ყოველთვის აკავშირებს წინ და უკან.</string>
+    <string name="q_answer_6_2">გთხოვთ, დარწმუნდეთ, რომ მობილური ტელეფონისა და ტელევიზორის ᲕᲐᲘ - ᲤᲐᲘ  არის SAM და საუკეთესო სიგნალი.</string>
+    <string name="q_answer_7_1">ჩვენ არ დავაკვირდებით და არ ვაგროვებთ რაიმე ინფორმაციას თქვენსა და თქვენს მობილურ ტელეფონზე. თქვენ შეგიძლიათ თქვენი ეკრანის გადაცემა ყოველგვარი შეშფოთების გარეშე.</string>
+    <string name="q_answer_7_2">სისტემამ შეიძლება გაგაფრთხილოთ, რომ არსებობს უსაფრთხოების საშიშროება ეკრანის ასახვამდე. ეს მხოლოდ ჩვეულებრივი შეხსენებაა, ასეც იქნება</string>
+    <string name="wi_fi">ᲕᲐᲘ - ᲤᲐᲘ</string>
+    <string name="miracast">მირაკასტი</string>
+    <string name="install">ᲓᲐᲘᲜᲡᲢᲐᲚᲘᲠᲔᲑᲐ</string>
+    <string name="install_small">Დაინსტალირება</string>
+    <string name="manual">სახელმძღვანელო</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">დარწმუნდით, რომ თქვენი ტელეფონი და ტელევიზორი დაკავშირებულია\nერთსა და იმავე ᲕᲐᲘ - ᲤᲐᲘ ქსელთან.</string>
+    <string name="hd_streaming">HD სტრიმინგი</string>
+    <string name="smart_devices">ჭკვიანი მოწყობილობები</string>
+    <string name="private_browser">პირადი ბრაუზერი</string>
+    <string name="effects">ეფექტები</string>
+    <string name="slider">სლაიდერი</string>
+    <string name="search_or_type_web_address">მოძებნეთ ან აკრიფეთ ვებ მისამართი</string>
+    <string name="install_2">Დაინსტალირება</string>
+    <string name="bookmark">სანიშნე</string>
+    <string name="downloads">ჩამოტვირთვები</string>
+    <string name="download">ჩამოტვირთვა</string>
+    <string name="favorites">რჩეულები</string>
+    <string name="favorite">საყვარელი</string>
+    <string name="history">ისტორია</string>
+    <string name="share_pdf">გააზიარეთ PDF</string>
+    <string name="copy_url">დააკოპირეთ URL</string>
+    <string name="share_app">აპის გაზიარება</string>
+    <string name="share_url">გააზიარეთ url</string>
+    <string name="exit">გასვლა</string>
+    <string name="new_tab">ახალი ჩანართი</string>
+    <string name="google">Google</string>
+    <string name="startpage">Საწყისი გვერდი</string>
+    <string name="bing">ბინგ</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">სეარქსი</string>
+    <string name="baidu">ბაიდუ</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">ეკოსია</string>
+    <string name="custom_search_engine">მორგებული საძიებო სისტემა</string>
+    <string name="add_shortcut_to_home">დაამატეთ მალსახმობი სახლისთვის</string>
+    <string name="save_screenshot">სკრინშოტის შენახვა</string>
+    <string name="add_to_bookmark">სანიშნეში დამატება</string>
+    <string name="save_as_pdf">შეინახეთ როგორც pdf</string>
+    <string name="save_action">მოქმედების შენახვა</string>
+    <string name="add_to_favorite">დაამატეთ რჩეულში</string>
+    <string name="search_engine">Საძიებო სისტემა</string>
+    <string name="browser_exit_body">დარწმუნებული ხართ, რომ გსურთ ბრაუზერიდან გასვლა</string>
+    <string name="exit_browser">ბრაუზერის გასვლა</string>
+    <string name="custom_user_agent">მომხმარებლის მომხმარებლის აგენტი</string>
+    <string name="start_control">დაიწყე კონტროლი</string>
+    <string name="data_control">მონაცემთა კონტროლი</string>
+    <string name="app_settings">აპლიკაციის პარამეტრები</string>
+    <string name="browser_settings">ბრაუზერის პარამეტრები</string>
+    <string name="behavior_ui">ქცევა/UI</string>
+    <string name="clear_cache">Ქეშის გაწმენდა</string>
+    <string name="clear_history">ისტორიის გასუფთავება</string>
+    <string name="clear_browsing_history">დათვალიერების ისტორიის გასუფთავება</string>
+    <string name="clear_all_cache">ყველა ქეშის გასუფთავება</string>
+    <string name="clear_database_body">წაშალეთ „ინდექსირებული მონაცემთა ბაზები“ და „ლოკალური მონაცემთა ბაზები“</string>
+    <string name="clear_cookies_body">თუ ჩართულია, ყველა ქუქი-ფაილი წაიშლება. ასევე\nსანდო ვებსაიტების ქუქი-ფაილები</string>
+    <string name="clear_databases">მონაცემთა ბაზების გასუფთავება</string>
+    <string name="clear_cookies">ქუქიების გასუფთავება</string>
+    <string name="clear_when_application_exit">გასუფთავება აპლიკაციის გასვლისას</string>
+    <string name="clear_when_application_exit_body">ყოველ ჯერზე, როცა გამოხვალთ ყველა ზემოთ მონიშნული მონაცემი\nწაიშლება</string>
+    <string name="image">გამოსახულება</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">ნამცხვრები</string>
+    <string name="reopen_last_tab">ხელახლა გახსენით ბოლო ჩანართი</string>
+    <string name="confirm_tab_close">დაადასტურეთ ჩანართის დახურვა</string>
+    <string name="confirm_browser_exit">დაადასტურეთ ბრაუზერის გასვლა</string>
+    <string name="position">თანამდებობა</string>
+    <string name="first_toolbar">პირველი ხელსაწყოთა პანელი</string>
+    <string name="hide_toolbar">ხელსაწყოთა ზოლის დამალვა</string>
+    <string name="toolbar">ხელსაწყოების პანელი</string>
+    <string name="bookmarks">სანიშნეები</string>
+    <string name="edit">რედაქტირება</string>
+    <string name="today">დღეს</string>
+    <string name="the_last_hour">ბოლო საათი</string>
+    <string name="last_week">Წინა კვირა</string>
+    <string name="last_month">Გასული თვე</string>
+    <string name="delete_all_history">წაშალეთ მთელი ისტორია</string>
+    <string name="copied">გადაწერა</string>
+    <string name="share_ss">გააზიარე SS</string>
+    <string name="file_manager">Ფაილის მენეჯერი</string>
+    <string name="search_on">ძიება ჩართულია</string>
+    <string name="add_shortcut">მალსახმობის დამატება</string>
+    <string name="tab_exit">ჩანართის გასვლა</string>
+    <string name="do_you_want_to_close">გინდა დახურო</string>
+    <string name="download_complete_share_image">ჩამოტვირთვა დასრულდა. სურათის გაზიარება</string>
+    <string name="update">განახლება</string>
+    <string name="unfavorite">უსაყვარლესი</string>
+    <string name="no_input_provided">არ არის მოწოდებული</string>
+    <string name="input">შეყვანა</string>
+    <string name="website_link">საიტის ბმული</string>
+    <string name="for_you">Შენთვის</string>
+    <string name="website">საიტი:</string>
+    <string name="url">URL:</string>
+    <string name="date">თარიღი</string>
+    <string name="no_site_loaded">თქვენ არ გაქვთ ჩატვირთული საიტი</string>
+    <string name="more_then_5_images_can_not_be_picked">ხუთზე მეტი სურათის არჩევა შეუძლებელია</string>
+
+</resources>

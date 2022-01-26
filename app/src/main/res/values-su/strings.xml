@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Sundanese-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">Naha anjeun badé ngabatalkeun Sambungan VPN ayeuna?</string>
+    <string name="yes">Enya</string>
+    <string name="no">NO</string>
+    <string name="yes_2">Sumuhun</string>
+    <string name="no_2">No</string>
+    <string name="select_images">Pilih Gambar</string>
+    <string name="tabs">Tab</string>
+    <string name="share">Bagikeun</string>
+    <string name="save">Simpen</string>
+    <string name="more">Tambih deui</string>
+    <string name="ok">Oké</string>
+    <string name="cancel">Ngabolaykeun</string>
+    <string name="favorite_site">Robah situs wéb standar anu dimuat dina\nngamimitian Browser</string>
+    <string name="custom_search_engine_body">Tambahkeun URL pilarian custom ogé milih "Custom\nsearch engine" salaku panyadia pilarian</string>
+    <string name="search_engine_body">Pilih mesin pencari anu anjeun pikahoyong atanapi\nsetel anu khusus</string>
+    <string name="data_control_body">Pupus data pangotektak anjeun atanapi pilih data naon anu bakal dibersihkeun nalika anjeun kaluar tina aplikasi</string>
+    <string name="start_control_body">Mutuskeun mana komponén browser\nbakal dimimitian</string>
+    <string name="behavior_ui_body">Robah kabiasaan sareng ui aplikasi pikeun\ncocog sareng kahoyong anjeun</string>
+    <string name="book_mark_body">Pikeun mintonkeun dialog filter pencét lila dina ikon tetengger dina tinjauan. Mutuskeun saringan nu bakal Anjeun pake</string>
+    <string name="app_settings_body">Setélan panyungsi, di dinya anjeun tiasa gumantung kana \versi android anjeun masihan idin.</string>
+    <string name="start_control_image_body">Aktipkeun gambar Jaringan, Nonaktipkeun tiasa mangpaat\pikeun ngahemat data seluler sareng muka halaman wéb langkung gancang</string>
+    <string name="start_control_location_body">Ngidinan situs wéb ngaksés lokasi anjeun. Sababaraha\nsitus web {google, maps for nav) peryogi ieu diaktipkeun</string>
+    <string name="start_control_history_body">Simpen sajarah situs web anu didatangan</string>
+    <string name="start_control_java_script_body">Aktipkeun JavaScript. Seueur situs wéb peryogi\nJavaScript pikeun fungsionalitasna. Tapi aranjeunna ogé sésana sareng tiasa dianggo pikeun serangan</string>
+    <string name="start_control_cookies_body">Aktipkeun Cookies. Cookies nyaéta file téks leutik,
+nu disimpen dina alat Anjeun. Situs wéb nganggo
+aranjeunna contona pikeun nyimpen setélan pamaké. Tapi
+aranjeunna ogé bisa dipaké pikeun ngumpulkeun pamaké pribadi
+data. Cookies pihak katilu sok ditumpurkeun.</string>
+    <string name="confirmation_browser_exit_body">Dialog konfirmasi nalika\ntutup browser</string>
+    <string name="confirmation_tab_close_body">Dialog konfirmasi nalika nutup tab</string>
+    <string name="confirmation_reopen_last_body">Buka deui tab anyar nalika tab terakhir ditutup tinimbang kaluar tina browser</string>
+    <string name="hide_toolbar_body">Anggo sadayana layar nalika ngagulung halaman wéb upami anjeun mencét tombol deui anjeun bakal ngantunkeun mode salayar</string>
+    <string name="images">Gambar</string>
+    <string name="videos">Pidio</string>
+    <string name="web_browser">Pangotektak wéb</string>
+    <string name="image_slider">Geser Gambar</string>
+    <string name="next">Teras</string>
+    <string name="previous">saméméhna</string>
+    <string name="help">Tulung</string>
+    <string name="settings">Setélan</string>
+    <string name="language">Basa</string>
+    <string name="more_app">Langkung Aplikasi</string>
+    <string name="rate_us">Meunteun Kami</string>
+    <string name="screen_mirroring">Pangeunteungan layar</string>
+    <string name="home_screen_text">Pastikeun telepon sareng TV Anjeun disambungkeun ka jaringan Wi-Fi nu sami.</string>
+    <string name="wifi_connected">Wi-Fi Dihubungkeun</string>
+    <string name="wifi_disconnected">Wi-Fi Dipegatkeun</string>
+    <string name="general">Umum</string>
+    <string name="communicate">Komunikasi</string>
+    <string name="send_feedback">Kirim Eupan Balik</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="how_to_use">Kumaha ngagunakeun?</string>
+    <string name="streaming">Streaming</string>
+    <string name="streaming_quality">Kualitas Streaming</string>
+    <string name="auto_stop">Otomatis eureun</string>
+    <string name="auto_minimize">Otomatis Ngaleutikan</string>
+    <string name="advance">Maju</string>
+    <string name="orientation_mode">Mode Orientasi</string>
+    <string name="auto_stop_body_text">Eureun pidéo nalika sambungan\n target leungit</string>
+    <string name="auto_minimize_body_text">Sumputkeun aplikasi nalika pangeunteungan dimimitian</string>
+    <string name="casting_orientation_body_text">Orientasi casting</string>
+    <string name="mirroring_mode">Modeu pangeunteungan</string>
+    <string name="screen_mirroring_privacy_policy">Kabijakan privasi mirroring layar</string>
+    <string name="privacy_policy">kabijakan privasi</string>
+    <string name="supporting_devices">Paranti Ngarojong</string>
+    <string name="see_which_devices_support_mirroring">Tempo alat nu ngarojong mirroring</string>
+    <string name="color_theme">Téma Warna</string>
+    <string name="dark">Poek</string>
+    <string name="light">Caang</string>
+    <string name="auto">Otomatis</string>
+    <string name="select_language">Pilih Basa</string>
+    <string name="close">nutup</string>
+    <string name="images_slider">Gambar slaider</string>
+    <string name="screen_mirror">Eunteung layar</string>
+    <string name="tutorial_screen_setup_body">Alat target anjeun kedah aya dina jaringan Wi-Fi anu sami sareng alat ieu, sabab Eunteung Layar ngirimkeun layar anjeun.</string>
+    <string name="tutorial_screen_mirror_body">Alirkeun layar alat anjeun tina Wi-Fi ka komputer, notebook atanapi tablet anjeun.</string>
+    <string name="tutorial_device_hotspot_body">Anjeun oge bisa make hotspot alat Anjeun (mode Nga-tether) tur sambungkeun alat target Anjeun ka hotspot Anjeun.</string>
+    <string name="tutorial_scan_code_body">Buka situs dina alat target Anjeun. Ku nyeken kodeu QR, konfigurasi sambungan dikirimkeun sareng mirroring dimimitian.</string>
+    <string name="tutorial_support_body">Punten perhatikeun yén Screen Mirror ngan ukur tiasa dianggo nalika nyetél leres. Eunteung Layar ngirimkeun layar anjeun, tapi sanés sinyal audio alat anjeun. Upami anjeun nyanghareupan masalah, hubungi kami.</string>
+    <string name="walk_through_body_1">Rasakeun streaming anu lancar sareng kualitas luhur\nteu katinggaleun</string>
+    <string name="walk_through_body_2">Sambungkeun sareng alat pinter naon waé sareng nikmati\npintonan dina layar naon waé</string>
+    <string name="walk_through_body_3">Ngarasakeun browser pribadi dina-aplikasi tanpa watesan</string>
+    <string name="screen_setup">Setélan layar</string>
+    <string name="device_hotspot">Hotspot Alat</string>
+    <string name="scan_code">Kodeu Scan</string>
+    <string name="support">Ngarojong</string>
+    <string name="finish">Bérés</string>
+    <string name="our_policies">Kawijakan Kami</string>
+    <string name="privacy_policy_text">Ngajagi privasi anjeun penting pikeun kami. Kami ngarepkeun pernyataan di handap ieu bakal ngabantosan anjeun ngartos kumaha kami ngurus inpormasi anu tiasa diidentipikasi pribadi, anjeun kadang-kadang tiasa masihan ka kami ngalangkungan Internét (platform Google Play).\n\nSacara umum. kami henteu ngumpulkeun PII ti anjeun nalika anjeun ngaunduh aplikasi Android kami. Pikeun spésifikna, kami henteu meryogikeun kunjungan konsumen kana aplikasi kami, bahkan kami henteu gaduh Server pikeun nyimpen PII sapertos kitu.\n\nScreen Mirroring nganggo Facebook salaku panyadia iklan. Facebook hoyong nunjukkeun iklan anu relevan pikeun anjeun. Kanggo inpo nu leuwih lengkep mangga buka\nhttps://m.facebook.com/ads/ad_choices.\n\nHiji-hijina kaayaan anu kami tiasa nampi aksés ka PII anjeun nyaéta nalika anjeun sacara pribadi mutuskeun ngirim email ka kami eupan balik anjeun atanapi masihan kami bug. laporan. PII anu mungkin kami kéngingkeun ti anjeun dina kaayaan éta ngan ukur dugi ka nami anjeun, alamat email sareng réspon survey anjeun.\n\nDina kaayaan di luhur, kami ngajamin yén PII anjeun ngan ukur dianggo pikeun ngahubungi anjeun sareng ningkatkeun jasa kami. Kami moal pernah ngagunakeun inpormasi sapertos kitu (sapertos nami sareng alamat email anjeun_ kanggo tujuan anu sanés, sapertos pikeun ngapasarkeun produk kami, atanapi nyingkab inpormasi pribadi anjeun ka pihak katilu pikeun kauntungan komérsial.\n\nPerlu diémutan yén naha atanapi Henteu ngirimkeun tanggapan anjeun atanapi laporan bug anjeun mangrupikeun inisiatif sukarela tina kaputusan anjeun nyalira. Upami anjeun prihatin ngeunaan PII anjeun disalahgunakeun, atanapi upami anjeun hoyong inpormasi langkung seueur ngeunaan kabijakan privasi kami sareng naon hartosna, punten kirimkeun email ka kami di screenmirroring.feedback@gmail.com, kami bakal narékahan pikeun masihan jawaban anu jelas pikeun patarosan anjeun dina waktosna.</string>
+    <string name="please_write_your_feedback">Mangga nyerat eupan balik anjeun</string>
+    <string name="system_info">Inpormasi Sistem anjeun bakal dikirim ka Jurusan téknologi Mirroring Layar</string>
+    <string name="send">Ngirim</string>
+    <string name="provide_feedback">nyadiakeun eupan balik</string>
+    <string name="invalid_email_provided">Surelek teu sah disayogikeun</string>
+    <string name="check_your_internet_connection">Pariksa sambungan internét anjeun</string>
+    <string name="type_here">ketik di dieu…</string>
+    <string name="enter_your_email_optional">Lebetkeun email anjeun (opsional)</string>
+    <string name="enjoy_the_app">Ngarasakeun App?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Peunteun pangalaman anjeun nganggo Screen\nMirroring App.</string>
+    <string name="not_now">Henteu ayeuna</string>
+    <string name="feedback">Eupan balik:</string>
+    <string name="model">model:</string>
+    <string name="brand">merek:</string>
+    <string name="os_version">Vérsi OS:</string>
+    <string name="manufacturer">Pabrikan:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Kirim surélék</string>
+    <string name="select_picture">Pilih Gambar</string>
+    <string name="help_center">Puseur Pitulung</string>
+    <string name="question_1">Telepon abdi macét dina "Nyambungkeun" nalika masangkeun sareng TV.</string>
+    <string name="question_2">Éta damel pikeun kuring sateuacanna, tapi ayeuna henteu dianggo.</string>
+    <string name="question_3">Éta nunjukkeun yén alat kuring \nhenteu dirojong.</string>
+    <string name="question_4">TV abdi mangrupikeun TV lami sareng henteu ngadukung wi-fi.</string>
+    <string name="question_5">Gambar dina TV hideung, tapi \nsorana bisa kadéngé.</string>
+    <string name="question_6">Sambungan bakal interrupted sanggeus \nsababaraha waktu.</string>
+    <string name="question_7">Naha inpormasi pribadi atanapi data sélulér kuring leres-leres aman?</string>
+    <string name="q_answer_1_1">Balikan deui Wi-Fi telepon pinter sareng tingali upami sambunganna suksés.</string>
+    <string name="q_answer_1_2">Pareuman TV sareng cabut kabel listrikna tina stop kontakna. Antosan 1 menit sareng balikan deui TV.</string>
+    <string name="q_answer_1_3">Singgetkeun jarak antara telepon anjeun sareng TV. Candak eta deukeut.</string>
+    <string name="q_answer_2_1">Upami éta damel sateuacanna, maka pasti tiasa dianggo deui.</string>
+    <string name="q_answer_2_2">Paling masalah sambungan bisa direngsekeun ku restarting alat. Ngan balikan deui telepon sareng TV anjeun, turutan prosés sambungan biasa pikeun nyobian deui.</string>
+    <string name="q_answer_3_1">Ieu ngandung harti yén telepon anjeun sorangan henteu ngadukung pungsi pangeunteungan layar.</string>
+    <string name="q_answer_3_2">Anjeun tiasa nganggo XCast pikeun ngirim pidéo, audio sareng poto kana TV. Kalayan XCast, anjeun tiasa ngalakukeun hal-hal anu sanés nganggo telepon anjeun nalika tuang ka TV.</string>
+    <string name="q_answer_4_1">Upami TV anjeun ngadukung antarmuka HDMI, kami nyarankeun yén anjeun mésér panarima éksternal pikeun pangeunteungan layar. Sapertos Chromecast, Anycast jsb.</string>
+    <string name="q_answer_5_1">Sababaraha eusi ngalibatkeun panyalindungan hak cipta sareng teu tiasa ditampilkeun dina alat pihak katilu, sapertos Netflix, Disney Plus jsb.</string>
+    <string name="q_answer_5_2">Anjeun tiasa ngaunduh pidéo atanapi milarian sumber anu sami dina aplikasi anu sanés pikeun dicobian.</string>
+    <string name="q_answer_6_1">Anjeun tiasa ngaktipkeun Smart Connect dina setélan Wi-Fi anjeun. Bakal neangan sambungan Wi-fi hadé terus, tur salawasna nyambung deui mudik.</string>
+    <string name="q_answer_6_2">Punten pastikeun yén Wi-Fi telepon sélulér sareng TV mangrupikeun SAM sareng sinyal pangsaéna.</string>
+    <string name="q_answer_7_1">Kami moal ngawas atanapi ngumpulkeun inpormasi ngeunaan anjeun sareng telepon sélulér anjeun. Anjeun tiasa tuang layar anjeun tanpa hariwang.</string>
+    <string name="q_answer_7_2">Sistem tiasa ngingetkeun anjeun yén aya bahaya kaamanan sateuacan pangeunteungan layar. Ieu ngan panginget biasa, éta bakal</string>
+    <string name="wi_fi">WIFI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">MASANG</string>
+    <string name="install_small">Masang</string>
+    <string name="manual">Manual</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Pastikeun telepon sareng TV Anjeun disambungkeun\kana jaringan Wi-Fi nu sami.</string>
+    <string name="hd_streaming">HD Streaming</string>
+    <string name="smart_devices">alat pinter</string>
+    <string name="private_browser">Browser swasta</string>
+    <string name="effects">Balukar</string>
+    <string name="slider">Panggeser</string>
+    <string name="search_or_type_web_address">Pilarian atanapi ketik alamat wéb</string>
+    <string name="install_2">Masang</string>
+    <string name="bookmark">Tetengger</string>
+    <string name="downloads">Undeuran</string>
+    <string name="download">Ngundeur</string>
+    <string name="favorites">Paporit</string>
+    <string name="favorite">Karesep</string>
+    <string name="history">Sajarah</string>
+    <string name="share_pdf">Bagikeun Pdf</string>
+    <string name="copy_url">Salin URL</string>
+    <string name="share_app">Bagikeun App</string>
+    <string name="share_url">Bagikeun url</string>
+    <string name="exit">Kaluar</string>
+    <string name="new_tab">Tab Anyar</string>
+    <string name="google">Google</string>
+    <string name="startpage">Halaman Mimiti</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ékosia</string>
+    <string name="custom_search_engine">mesin pencari custom</string>
+    <string name="add_shortcut_to_home">Tambahkeun potong kompas ka imah</string>
+    <string name="save_screenshot">Simpen Potret layar</string>
+    <string name="add_to_bookmark">Tambahkeun ka tetengger</string>
+    <string name="save_as_pdf">Simpen salaku pdf</string>
+    <string name="save_action">Simpen Aksi</string>
+    <string name="add_to_favorite">Tambahkeun ka favorit</string>
+    <string name="search_engine">Search Engine</string>
+    <string name="browser_exit_body">Naha anjeun yakin rék kaluar tina Browser</string>
+    <string name="exit_browser">Kaluar Browser</string>
+    <string name="custom_user_agent">agén pamaké custom</string>
+    <string name="start_control">Mimitian Control</string>
+    <string name="data_control">Kontrol Data</string>
+    <string name="app_settings">Setélan aplikasi</string>
+    <string name="browser_settings">Setélan browser</string>
+    <string name="behavior_ui">Paripolah/UI</string>
+    <string name="clear_cache">Hapus Cache</string>
+    <string name="clear_history">Hapus Sajarah</string>
+    <string name="clear_browsing_history">Hapus sajarah browsing</string>
+    <string name="clear_all_cache">Hapus sadaya cache</string>
+    <string name="clear_database_body">Hapus "pangkalan data indéks" sareng "basis data lokal"</string>
+    <string name="clear_cookies_body">Upami diaktipkeun, sadaya cookies bakal dipupus. Ogé\nCookies situs web dipercaya</string>
+    <string name="clear_databases">Hapus pangkalan data</string>
+    <string name="clear_cookies">Hapus Cookies</string>
+    <string name="clear_when_application_exit">Hapus nalika aplikasi kaluar</string>
+    <string name="clear_when_application_exit_body">Unggal anjeun kaluar sadaya data anu dipariksa di luhur\nbakal dipupus</string>
+    <string name="image">Gambar</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Cookies</string>
+    <string name="reopen_last_tab">Buka deui tab panungtungan</string>
+    <string name="confirm_tab_close">Konfirmasi tutup tab</string>
+    <string name="confirm_browser_exit">Konfirmasi kaluar browser</string>
+    <string name="position">Posisi</string>
+    <string name="first_toolbar">toolbar munggaran</string>
+    <string name="hide_toolbar">Sumputkeun toolbar</string>
+    <string name="toolbar">Toolbar</string>
+    <string name="bookmarks">Tetengger</string>
+    <string name="edit">Édit</string>
+    <string name="today">Kiwari</string>
+    <string name="the_last_hour">Jam panungtungan</string>
+    <string name="last_week">Minggu kamari</string>
+    <string name="last_month">bulan kamari</string>
+    <string name="delete_all_history">Pupus sadaya sajarah</string>
+    <string name="copied">disalin</string>
+    <string name="share_ss">Bagikeun harga SS</string>
+    <string name="file_manager">Pangatur file</string>
+    <string name="search_on">Pilarian Dina</string>
+    <string name="add_shortcut">Tambahkeun Potong kompas</string>
+    <string name="tab_exit">Tab Kaluar</string>
+    <string name="do_you_want_to_close">Naha rék nutup</string>
+    <string name="download_complete_share_image">Unduh lengkep. Bagikeun gambar</string>
+    <string name="update">Pembaruan</string>
+    <string name="unfavorite">Anu karesep</string>
+    <string name="no_input_provided">Taya input disadiakeun</string>
+    <string name="input">Input</string>
+    <string name="website_link">Tautan wéb</string>
+    <string name="for_you">Kanggo Anjeun</string>
+    <string name="website">Situs Web:</string>
+    <string name="url">Url:</string>
+    <string name="date">Kaping</string>
+    <string name="no_site_loaded">Anjeun teu boga ramatloka dimuat</string>
+    <string name="more_then_5_images_can_not_be_picked">Langkung ti lima gambar teu tiasa dipilih</string>
+    <string name="location">lokasi</string>
+
+</resources>

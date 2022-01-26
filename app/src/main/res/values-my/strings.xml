@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Burmese-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">လက်ရှိ VPN ချိတ်ဆက်မှုကို ပယ်ဖျက်လိုပါသလား။</string>
+    <string name="yes">ဟုတ်သည်။</string>
+    <string name="no">မဟုတ်ဘူး</string>
+    <string name="yes_2">ဟုတ်ကဲ့</string>
+    <string name="no_2">မရှိ</string>
+    <string name="select_images">ပုံများကို ရွေးပါ။</string>
+    <string name="tabs">တက်ဘ်များ</string>
+    <string name="share">မျှဝေပါ။</string>
+    <string name="save">သိမ်းဆည်းပါ။</string>
+    <string name="more">နောက်ထပ်</string>
+    <string name="ok">ရလား</string>
+    <string name="cancel">မလုပ်တော့</string>
+    <string name="favorite_site">\nဘရောက်ဆာ၏အစတွင် ဖွင့်သည့် မူရင်းဝဘ်ဆိုက်ကို ပြောင်းပါ။</string>
+    <string name="custom_search_engine_body">စိတ်ကြိုက်ရှာဖွေမှု url ကိုထည့်ပါ “စိတ်ကြိုက်\nရှာဖွေရေးအင်ဂျင်” ကို ရှာဖွေပေးသူအဖြစ်လည်း ရွေးချယ်ပါ။</string>
+    <string name="search_engine_body">သင်နှစ်သက်သော ရှာဖွေရေးအင်ဂျင်ကို ရွေးပါ သို့မဟုတ်\nစိတ်ကြိုက်တစ်ခု သတ်မှတ်ပါ။</string>
+    <string name="data_control_body">သင့်ဘရောက်ဆာဒေတာကို ရှင်းလင်းပါ သို့မဟုတ် အက်ပ်မှထွက်ခွာသည့်အခါ မည်သည့်ဒေတာ\nရှင်းလင်းမည်ကို ဆုံးဖြတ်ပါ။</string>
+    <string name="start_control_body">ဘရောင်ဇာ၏ မည်သည့်အစိတ်အပိုင်းများ\nစတင်မည်ကို ဆုံးဖြတ်ပါ။</string>
+    <string name="behavior_ui_body">သင့်စိတ်ကြိုက်ရွေးချယ်မှုများနှင့် ကိုက်ညီစေရန် အက်ပ်၏ အပြုအမူနှင့် ui ကို ပြောင်းလဲပါ။</string>
+    <string name="book_mark_body">စစ်ထုတ်သည့် ဒိုင်ယာလော့ခ်ကို ပြသရန် ခြုံငုံသုံးသပ်ချက်ရှိ စာညှပ်အိုင်ကွန်ကို ကြာကြာနှိပ်ပါ။ မည်သည့် filter များကို သင်အသုံးပြုမည်ကို ဆုံးဖြတ်ပါ။</string>
+    <string name="app_settings_body">ဘရောက်ဆာ ဆက်တင်များ ၊ သင့် android ဗားရှင်းကို ခွင့်ပြုချက်ပေးသည့်အပေါ် မူတည်၍ သင်လုပ်နိုင်သည် ။</string>
+    <string name="start_control_image_body">ကွန်ရက်ပုံများကို ဖွင့်ပါ၊ ပိတ်ခြင်းသည် အသုံးဝင်နိုင်သည်\nမိုဘိုင်းဒေတာကို သိမ်းဆည်းပြီး ဝဘ်ဆိုက်ကို ပိုမိုမြန်ဆန်စွာ တင်ရန်</string>
+    <string name="start_control_location_body">ဝဘ်ဆိုဒ်များကို သင့်တည်နေရာကို ဝင်ရောက်ခွင့်ပြုပါ။ အချို့\nဝဘ်ဆိုက် {google၊ maps for nav) သည် ၎င်းကို ဖွင့်ရန် လိုအပ်သည်။</string>
+    <string name="start_control_history_body">ဝင်ကြည့်ခဲ့သည့် ဝဘ်ဆိုဒ်များ၏သမိုင်းကို သိမ်းဆည်းပါ။</string>
+    <string name="start_control_java_script_body">JavaScript ကိုဖွင့်ပါ။ ဝဘ်ဆိုက်များစွာသည် ၎င်းတို့၏လုပ်ဆောင်နိုင်စွမ်းအတွက် \nJavaScript လိုအပ်ပါသည်။ သို့သော် ၎င်းတို့သည်\nလည်း အနားယူပြီး တိုက်ခိုက်မှုများအတွက် အသုံးပြုနိုင်သည်။</string>
+    <string name="start_control_cookies_body">Cookies ကိုဖွင့်ပါ။ Cookies များသည် သေးငယ်သော စာသားဖိုင်များ၊
+သင့်စက်တွင် သိမ်းဆည်းထားသည့်အရာများ။ ဝဘ်ဆိုဒ်များ အသုံးပြု
+ဥပမာအားဖြင့် သုံးစွဲသူ ဆက်တင်များကို သိမ်းဆည်းရန် ၎င်းတို့။ ဒါပေမယ့်
+၎င်းတို့သည် ကိုယ်ရေးကိုယ်တာအသုံးပြုသူကို စုဆောင်းရန်အတွက်လည်း အသုံးပြုနိုင်သည်။
+ဒေတာ။ ပြင်ပအဖွဲ့အစည်းကွတ်ကီးများကို အမြဲတမ်းပိတ်ထားပါသည်။</string>
+    <string name="confirmation_browser_exit_body">ဘရောက်ဆာ ပိတ်သည့်အခါ အတည်ပြုချက် ဒိုင်ယာလော့ဂ်</string>
+    <string name="confirmation_tab_close_body">တက်ဘ်တစ်ခုပိတ်သည့်အခါ အတည်ပြုချက် ဒိုင်ယာလော့ခ်</string>
+    <string name="confirmation_reopen_last_body">ဘရောက်ဆာမှ ထွက်မည့်အစား နောက်ဆုံးတက်ဘ်ကို ပိတ်သည့်အခါ တက်ဘ်အသစ်ကို ပြန်ဖွင့်ပါ။</string>
+    <string name="hide_toolbar_body">နောက်ကျောခလုတ်ကို နှိပ်ပါက ဝဘ်ဆိုက်ကို ရွှေ့သည့်အခါ မျက်နှာပြင်တစ်ခုလုံးကို အသုံးပြုပါ။</string>
+    <string name="images">ပုံများ</string>
+    <string name="videos">ဗီဒီယိုများ</string>
+    <string name="web_browser">ဝဘ်ဘရောက်ဆာ</string>
+    <string name="image_slider">ပုံဆလိုက်ဒါ</string>
+    <string name="next">နောက်တစ်ခု</string>
+    <string name="previous">အရင်</string>
+    <string name="help">ကူညီကြပါ</string>
+    <string name="settings">ဆက်တင်များ</string>
+    <string name="language">ဘာသာစကားများ</string>
+    <string name="more_app">နောက်ထပ်အက်ပ်များ</string>
+    <string name="rate_us">အဆင့်သတ်မှတ်ပေးပါ</string>
+    <string name="screen_mirroring">စခရင်မှန်ရိုက်ခြင်း။</string>
+    <string name="home_screen_text">သင့်ဖုန်းနှင့် TV သည် တူညီသော Wi-Fi ကွန်ရက်သို့ ချိတ်ဆက်ထားကြောင်း သေချာပါစေ။</string>
+    <string name="wifi_connected">Wi-Fi ချိတ်ဆက်ထားသည်။</string>
+    <string name="wifi_disconnected">Wi-Fi ချိတ်ဆက်မှု ဖြုတ်ထားသည်။</string>
+    <string name="general">အထွေထွေ</string>
+    <string name="communicate">ဆက်သွယ်ပါ။</string>
+    <string name="send_feedback">တုံ့ပြန်ချက်ပေးပို့ပါ။</string>
+    <string name="tutorial">ကျူတိုရီရယ်</string>
+    <string name="how_to_use">ဘယ်လိုသုံးရမလဲ?</string>
+    <string name="streaming">လွှ</string>
+    <string name="streaming_quality">လွှင့်အရည်အသွေး</string>
+    <string name="auto_stop">အလိုအလျောက်ရပ်တန့်</string>
+    <string name="auto_minimize">အလိုအလျောက် လျှော့ပါ။</string>
+    <string name="advance">ကြိုပြော</string>
+    <string name="orientation_mode">ဦးတည်ချက်မုဒ်</string>
+    <string name="auto_stop_body_text">ချိတ်ဆက်မှု\nပစ်မှတ်ပျောက်သောအခါ ဗီဒီယိုကို ရပ်ပါ။</string>
+    <string name="auto_minimize_body_text">ရောင်ပြန်ဟပ်ခြင်းစတင်သောအခါ အက်ပ်ကို ဝှက်ထားပါ။</string>
+    <string name="casting_orientation_body_text">သွန်းလောင်းခြင်း တိမ်းညွတ်ခြင်း။</string>
+    <string name="mirroring_mode">အလင်းပြန်ခြင်းမုဒ်</string>
+    <string name="screen_mirroring_privacy_policy">စခရင်မှန်ရိုက်ခြင်း ကိုယ်ရေးကိုယ်တာမူဝါဒ</string>
+    <string name="privacy_policy">ကိုယ်ရေးအချက်အလက်မူဝါဒ</string>
+    <string name="supporting_devices">အထောက်အကူပြုကိရိယာများ</string>
+    <string name="see_which_devices_support_mirroring">ဘယ်စက်ပစ္စည်းတွေက ရောင်ပြန်ဟပ်မှုကို ပံ့ပိုးပေးလဲဆိုတာ ကြည့်ပါ။</string>
+    <string name="color_theme">အရောင်အပြင်အဆင်</string>
+    <string name="dark">မှောငျမိုကျသော</string>
+    <string name="light">အလင်း</string>
+    <string name="auto">အော်တို</string>
+    <string name="select_language">ဘာသာစကားကို ရွေးပါ။</string>
+    <string name="close">အနီးကပ်</string>
+    <string name="images_slider">ပုံများ ဆလိုက်ဒါ</string>
+    <string name="screen_mirror">Screen Mirror</string>
+    <string name="tutorial_screen_setup_body">Screen Mirror သည် သင့်ဖန်သားပြင်ကို ထုတ်လွှင့်နေသောကြောင့် သင့်ပစ်မှတ်စက်ပစ္စည်းသည် ဤစက်ပစ္စည်းကဲ့သို့ Wi-Fi ကွန်ရက်တစ်ခုတည်းတွင် ရှိနေရပါမည်။</string>
+    <string name="tutorial_screen_mirror_body">သင့်စက်၏မျက်နှာပြင်ကို Wi-Fi မှတဆင့် သင့်ကွန်ပျူတာ၊ မှတ်စုစာအုပ် သို့မဟုတ် တက်ဘလက်သို့ တိုက်ရိုက်ကြည့်ရှုပါ။</string>
+    <string name="tutorial_device_hotspot_body">သင့်စက်၏ဟော့စပေါ့ (tethering mode) ကိုသုံး၍ ပစ်မှတ်ကိရိယာကို သင်၏ဟော့စပေါ့နှင့် ချိတ်ဆက်နိုင်သည်။</string>
+    <string name="tutorial_scan_code_body">သင့်ပစ်မှတ်စက်တွင် ဆိုက်ကိုဖွင့်ပါ။ QR ကုဒ်ကို စကင်န်ဖတ်ခြင်းဖြင့် ချိတ်ဆက်မှုပုံစံကို ထုတ်လွှင့်ပြီး ရောင်ပြန်ဟပ်ခြင်း စတင်သည်။</string>
+    <string name="tutorial_support_body">မှန်မှန်ကန်ကန် စနစ်ထည့်သွင်းသည့်အခါတွင်သာ စခရင်မှန်ကို အလုပ်လုပ်ကြောင်း ကျေးဇူးပြု၍ သတိပြုပါ။ Screen Mirror သည် သင့်ဖန်သားပြင်ကို ပို့လွှတ်သော်လည်း သင့်စက်၏ အသံအချက်ပြမှုများ မဟုတ်ပါ။ သင်သည်မည်သည့်ပြဿနာများကြုံတွေ့ရပါကကျွန်ုပ်တို့ကိုဆက်သွယ်ပါ။</string>
+    <string name="walk_through_body_1">ချောမွေ့ပြီး အရည်အသွေးမြင့် တိုက်ရိုက်ကြည့်ရှုခြင်း\nနောက်မဆုတ်ဘဲ ခံစားလိုက်ပါ။</string>
+    <string name="walk_through_body_2">မည်သည့်စမတ်ကိရိယာနှင့်မဆို ချိတ်ဆက်ပြီး မည်သည့်စခရင်တွင်မဆို\nsရှိုးကို ခံစားလိုက်ပါ။</string>
+    <string name="walk_through_body_3">အကန့်အသတ်မရှိ အက်ပ်အတွင်း သီးသန့်ဘရောက်ဆာကို ခံစားလိုက်ပါ။</string>
+    <string name="screen_setup">မျက်နှာပြင်တပ်ဆင်ခြင်း။</string>
+    <string name="device_hotspot">စက်ပစ္စည်း၏ ဟော့စပေါ့</string>
+    <string name="scan_code">ကုဒ်ကို စကင်န်ဖတ်ပါ။</string>
+    <string name="support">အထောက်အပံ့</string>
+    <string name="finish">ပြီးအောင်</string>
+    <string name="our_policies">ကျွန်ုပ်တို့၏မူဝါဒများ</string>
+    <string name="privacy_policy_text">သင့်ကိုယ်ရေးကိုယ်တာအား ကာကွယ်ခြင်းသည် ကျွန်ုပ်တို့အတွက် အရေးကြီးပါသည်။ အောက်ဖော်ပြပါ ထုတ်ပြန်ချက်သည် ကိုယ်ရေးကိုယ်တာ ခွဲခြားသိမြင်နိုင်သော အချက်အလက်များနှင့် ကိုင်တွယ်ပုံကို နားလည်ရန် ကူညီပေးလိမ့်မည်ဟု မျှော်လင့်ပါသည်၊ သင်သည် အင်တာနက် (Google Play ပလပ်ဖောင်း) မှတဆင့် ကျွန်ုပ်တို့ထံ အခါအားလျော်စွာ ပေးစွမ်းနိုင်သည်\n\nယေဘုယျအားဖြင့်။ ကျွန်ုပ်တို့၏ Android အပလီကေးရှင်းများကို သင်ဒေါင်းလုဒ်လုပ်သောအခါတွင် ကျွန်ုပ်တို့သည် သင့်ထံမှ မည်သည့် PII ကိုမျှ မစုဆောင်းပါ။ အတိအကျပြောရလျှင် ကျွန်ုပ်တို့သည် ကျွန်ုပ်တို့၏အပလီကေးရှင်း၏စားသုံးသူများလာရောက်လည်ပတ်မှုကိုမလိုအပ်ပါ၊ ထိုကဲ့သို့သော PII ကိုသိမ်းဆည်းရန်ဆာဗာတစ်ခုပင်မရှိပါ ။\n\nစခရင်မှန်ပြောင်းခြင်းတွင် Facebook ကို ကြော်ငြာဝန်ဆောင်မှုပေးသူအဖြစ် အသုံးပြုပါသည်။ Facebook သည် သင့်နှင့်သက်ဆိုင်သော ကြော်ငြာများကို ပြသလိုပါသည်။ ပိုမိုသိရှိလိုပါက ကျေးဇူးပြု၍\nhttps://m.facebook.com/ads/ad_choices သို့ဝင်ရောက်ကြည့်ရှုပါ။\n\nသင့်ထံ PII ကိုကျွန်ုပ်တို့ဝင်ရောက်ခွင့်ရရှိနိုင်မည့်တစ်ခုတည်းသောအခြေအနေမှာ သင့်အကြံပြုချက်ကိုကျွန်ုပ်တို့အားအီးမေးလ်ပို့ရန် သို့မဟုတ် အမှားတစ်ခုပေးဆောင်ရန် သင်ကိုယ်တိုင်ဆုံးဖြတ်သောအခါဖြစ်သည်။ အစီရင်ခံစာ ထိုအခြေအနေတွင် သင့်ထံမှ ကျွန်ုပ်တို့ရနိုင်သော PII ကို သင့်အမည်၊ အီးမေးလ်လိပ်စာနှင့် သင့်စစ်တမ်းတုံ့ပြန်မှုများအတွက်သာ တင်းကျပ်စွာကန့်သတ်ထားပါသည်။\n\nအထက်အခြေအနေတွင်၊ သင့် PII ကို သင့်ထံဆက်သွယ်ပြီး ကျွန်ုပ်တို့၏ဝန်ဆောင်မှုများကို ပိုမိုကောင်းမွန်လာစေရန်အတွက်သာ အသုံးပြုမည်ဖြစ်ကြောင်း ကျွန်ုပ်တို့အာမခံပါသည်။ ကျွန်ုပ်တို့သည် ထိုအချက်အလက်များကို မည်သည့်အခါမျှ မသုံးပါ (ဥပမာ- သင့်အမည်နှင့် အီးမေးလ်လိပ်စာ_ ကျွန်ုပ်တို့၏ထုတ်ကုန်များကို ထပ်မံစျေးကွက်ချဲ့ထွင်ရန် သို့မဟုတ် သင့်ကိုယ်ရေးကိုယ်တာအချက်အလက်များကို စီးပွားဖြစ်အမြတ်အစွန်းအတွက် ပြင်ပအဖွဲ့အစည်းသို့ ထုတ်ဖော်ခြင်းကဲ့သို့သော အခြားရည်ရွယ်ချက်များအတွက် အသုံးပြုမည်မဟုတ်ပါ။\n\nဖြစ်မဖြစ်ကို သတိပြုသင့်သည်။ သင်၏ တုံ့ပြန်ချက် သို့မဟုတ် ချွတ်ယွင်းချက်အစီရင်ခံစာကို ကျွန်ုပ်တို့ထံ မပေးပို့ခြင်းသည် သင့်ကိုယ်ပိုင်ဆုံးဖြတ်ချက်အပေါ် လုံးဝဆန္ဒအလျောက် အစပြုမှုဖြစ်သည်။ သင့် PII ကို အလွဲသုံးစားလုပ်ခံရခြင်းနှင့်ပတ်သက်၍ သင်စိုးရိမ်ပူပန်မှုများရှိပါက သို့မဟုတ် ကျွန်ုပ်တို့၏ကိုယ်ရေးကိုယ်တာမူဝါဒနှင့် အဓိပ္ပာယ်ပိုမိုသိရှိလိုပါက ကျွန်ုပ်တို့ထံ အီးမေးလ်ပို့ပါ။ screenmirroring.feedback@gmail.com တွင်၊ ကျွန်ုပ်တို့သည် သင့်မေးခွန်းများအတွက် ရှင်းလင်းသောအဖြေများကို အချိန်နှင့်တစ်ပြေးညီ ပံ့ပိုးပေးပါမည်။</string>
+    <string name="please_write_your_feedback">ကျေးဇူးပြု၍ သင်၏အကြံပြုချက်ကို ရေးပါ။</string>
+    <string name="system_info">သင့်စနစ်အချက်အလက်ကို Screen Mirroring နည်းပညာဌာနသို့ ပေးပို့ပါမည်။</string>
+    <string name="send">ပို့ပါ။</string>
+    <string name="provide_feedback">တုံ့ပြန်ချက်ပေးပါ။</string>
+    <string name="invalid_email_provided">မမှန်ကန်သော အီးမေးလ်ကို ပေးထားသည်။</string>
+    <string name="check_your_internet_connection">သင်၏အင်တာနက်ချိတ်ဆက်မှုကိုစစ်ဆေးပါ။</string>
+    <string name="type_here">ဒီမှာရိုက်ပါ…</string>
+    <string name="enter_your_email_optional">သင့်အီးမေးလ်ကို ထည့်ပါ (ချန်လှပ်ထားနိုင်သည်)</string>
+    <string name="enjoy_the_app">အက်ပ်ကို နှစ်သက်ပါသလား။</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Screen\nMirroring အက်ပ်ကို အသုံးပြု၍ သင့်အတွေ့အကြုံကို အဆင့်သတ်မှတ်ပါ။</string>
+    <string name="not_now">ယခုမဟုတ်ပါ</string>
+    <string name="feedback">တုံ့ပြန်ချက်-</string>
+    <string name="model">မော်ဒယ်-</string>
+    <string name="brand">အမှတ်တံဆိပ်-</string>
+    <string name="os_version">OS ဗားရှင်း-</string>
+    <string name="manufacturer">ထုတ်လုပ်သူ-</string>
+    <string name="ram">ရမ်:</string>
+    <string name="send_email">မေးလ်ပို့ပါ။</string>
+    <string name="select_picture">ပုံရွေးပါ။</string>
+    <string name="help_center">ကူညီရေးဌာန</string>
+    <string name="question_1">တီဗီနှင့် ချိတ်ဆက်သောအခါတွင် ကျွန်ုပ်၏ဖုန်းသည် “ချိတ်ဆက်ခြင်း” တွင် ပိတ်မိနေပါသည်။</string>
+    <string name="question_2">အရင်က ငါ့အတွက် အလုပ်ဖြစ်ပေမဲ့ အခုတော့ \nအလုပ်မဖြစ်တော့ဘူး။</string>
+    <string name="question_3">ကျွန်ုပ်၏စက်ပစ္စည်းကို ပံ့ပိုးမထားကြောင်း \nပြသပါသည်။</string>
+    <string name="question_4">ကျွန်ုပ်၏ TV သည် တီဗီအဟောင်းဖြစ်ပြီး \nwi-fi ကို မပံ့ပိုးပါ။</string>
+    <string name="question_5">တီဗီရှိ ပုံသည် အနက်ရောင်ဖြစ်သော်လည်း အသံကို ကြားနိုင်သည်။</string>
+    <string name="question_6">ခဏကြာပြီးနောက် ချိတ်ဆက်မှု \nပြတ်တောက်သွားပါမည်။</string>
+    <string name="question_7">ကျွန်ုပ်၏ကိုယ်ရေးကိုယ်တာအချက်အလက်များ သို့မဟုတ် မိုဘိုင်းဒေတာသည် လုံးဝလုံခြုံပါသလား။</string>
+    <string name="q_answer_1_1">စမတ်ဖုန်း၏ Wi-Fi ကို ပြန်လည်စတင်ပြီး ချိတ်ဆက်မှု အောင်မြင်ခြင်း ရှိမရှိ ကြည့်ရှုပါ။</string>
+    <string name="q_answer_1_2">တီဗွီကိုပိတ်ပြီး ၎င်း၏ပါဝါကြိုးကို ပလပ်ပေါက်မှလည်း ဖယ်ရှားပါ။ 1 မိနစ်စောင့်ပြီး တီဗွီကို ပြန်ဖွင့်ပါ။</string>
+    <string name="q_answer_1_3">သင့်ဖုန်းနှင့် TV အကြား အကွာအဝေးကို တိုစေပါ။ အနီးကပ်ယူပါ။</string>
+    <string name="q_answer_2_1">အရင်က အလုပ်ဖြစ်ရင် သေချာပေါက် ပြန်သုံးလို့ရတယ်။</string>
+    <string name="q_answer_2_2">စက်ပစ္စည်းများကို ပြန်လည်စတင်ခြင်းဖြင့် ချိတ်ဆက်မှုပြဿနာအများစုကို ဖြေရှင်းနိုင်ပါသည်။ သင့်ဖုန်းနှင့် TV နှစ်ခုလုံးကို ပြန်လည်စတင်ပါ၊ ထပ်စမ်းကြည့်ရန် ပုံမှန်ချိတ်ဆက်မှုလုပ်ငန်းစဉ်ကို လိုက်နာပါ။</string>
+    <string name="q_answer_3_1">ဆိုလိုသည်မှာ သင့်ဖုန်းကိုယ်တိုင်က ဖန်သားပြင်မှန်ပြောင်းခြင်းလုပ်ဆောင်ချက်ကို မပံ့ပိုးနိုင်ပါ။</string>
+    <string name="q_answer_3_2">ဗီဒီယို၊ အသံနှင့် ဓာတ်ပုံကို TV သို့ ကာစ်လုပ်ရန် XCast ကို အသုံးပြုနိုင်သည်။ XCast ဖြင့် တီဗီသို့ ကာစ်တ်လုပ်နေစဉ် သင့်ဖုန်းဖြင့် အခြားအရာများကို လုပ်ဆောင်နိုင်သည်။</string>
+    <string name="q_answer_4_1">သင့် TV သည် HDMI အင်တာဖေ့စ်ကို ပံ့ပိုးထားပါက၊ စခရင်မှန်ရိုက်ခြင်းအတွက် ပြင်ပလက်ခံကိရိယာကို ဝယ်ယူရန် ကျွန်ုပ်တို့ အကြံပြုအပ်ပါသည်။ Chromecast၊ Anycast စသည်ဖြင့်</string>
+    <string name="q_answer_5_1">အချို့သောအကြောင်းအရာများတွင် မူပိုင်ခွင့်ကာကွယ်မှုပါဝင်ပြီး Netflix၊ Disney Plus ကဲ့သို့သော ပြင်ပစက်ပစ္စည်းများတွင် ပြသ၍မရပါ။</string>
+    <string name="q_answer_5_2">ဗီဒီယိုကို ဒေါင်းလုဒ်ဆွဲနိုင်သည် သို့မဟုတ် စမ်းသုံးကြည့်ရန် အခြားအက်ပ်များရှိ တူညီသောအရင်းအမြစ်ကို ရှာဖွေနိုင်သည်။</string>
+    <string name="q_answer_6_1">သင်၏ Wi-Fi ဆက်တင်များတွင် Smart Connect ကိုဖွင့်နိုင်သည်။ ၎င်းသည် ပိုမိုကောင်းမွန်သော Wi-Fi ချိတ်ဆက်မှုများကို အဆက်မပြတ်ရှာဖွေမည်ဖြစ်ပြီး အမြဲတမ်းအပြန်အလှန်ချိတ်ဆက်မည်ဖြစ်သည်။</string>
+    <string name="q_answer_6_2">မိုဘိုင်းဖုန်းနှင့် TV ၏ Wi-Fi သည် SAM နှင့် အကောင်းဆုံးအချက်ပြမှုဖြစ်ကြောင်း သေချာပါစေ။</string>
+    <string name="q_answer_7_1">ကျွန်ုပ်တို့သည် သင်နှင့် သင့်မိုဘိုင်းဖုန်းရှိ မည်သည့်အချက်အလက်ကိုမျှ စောင့်ကြည့်ခြင်း သို့မဟုတ် စုဆောင်းခြင်းမပြုပါ။ စိတ်ပူစရာမလိုဘဲ သင့်မျက်နှာပြင်ကို ကာစ်လုပ်နိုင်ပါသည်။</string>
+    <string name="q_answer_7_2">ဖန်သားပြင်မှန်မရိုက်မီတွင် ဘေးကင်းသော အန္တရာယ်ရှိနေကြောင်း စနစ်က သတိပေးနိုင်သည်။ ဒါဟာ ပုံမှန်သတိပေးချက်တစ်ခုသာ ဖြစ်ပါလိမ့်မယ်။</string>
+    <string name="wi_fi">ဝိုင်ဖိုင်</string>
+    <string name="miracast">MIRA Cast</string>
+    <string name="install">တပ်ဆင်ပါ။</string>
+    <string name="install_small">တပ်ဆင်ပါ။</string>
+    <string name="manual">လူကိုယ်တိုင်</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">သင့်ဖုန်းနှင့် TV ချိတ်ဆက်ထားသည်\nတူညီသော Wi-Fi ကွန်ရက်သို့ သေချာပါစေ။</string>
+    <string name="hd_streaming">HD လွှင့်ခြင်း။</string>
+    <string name="smart_devices">စမတ်ပစ္စည်းများ</string>
+    <string name="private_browser">ကိုယ်ပိုင် Browser</string>
+    <string name="effects">သက်ရောက်မှု</string>
+    <string name="slider">ဆလိုက်ဒါ</string>
+    <string name="search_or_type_web_address">ဝဘ်လိပ်စာကို ရှာပါ သို့မဟုတ် ရိုက်ထည့်ပါ။</string>
+    <string name="install_2">တပ်ဆင်ပါ။</string>
+    <string name="bookmark">ညှပ်</string>
+    <string name="downloads">ဒေါင်းလုဒ်များ</string>
+    <string name="download">ဒေါင်းလုဒ်လုပ်ပါ။</string>
+    <string name="favorites">အကြိုက်ဆုံးများ</string>
+    <string name="favorite">အကြိုက်ဆုံး</string>
+    <string name="history">သမိုင်း</string>
+    <string name="share_pdf">Pdf မျှဝေပါ။</string>
+    <string name="copy_url">URL ကို ကူးယူပါ။</string>
+    <string name="share_app">အက်ပ်ကို မျှဝေပါ။</string>
+    <string name="share_url">url ကိုမျှဝေပါ။</string>
+    <string name="exit">ထွက်ပေါက်</string>
+    <string name="new_tab">တက်ဘ်အသစ်</string>
+    <string name="google">Google</string>
+    <string name="startpage">StartPage</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwan</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">စိတ်ကြိုက်ရှာဖွေရေးအင်ဂျင်</string>
+    <string name="add_shortcut_to_home">အိမ်သို့ ဖြတ်လမ်းကို ထည့်ပါ။</string>
+    <string name="save_screenshot">ဖန်သားပြင်ဓာတ်ပုံကို သိမ်းဆည်းပါ။</string>
+    <string name="add_to_bookmark">စာညှပ်သို့ထည့်ပါ။</string>
+    <string name="save_as_pdf">pdf အဖြစ်သိမ်းဆည်းပါ။</string>
+    <string name="save_action">လုပ်ဆောင်ချက်ကို သိမ်းဆည်းပါ။</string>
+    <string name="add_to_favorite">အကြိုက်ဆုံးသို့ထည့်ပါ။</string>
+    <string name="search_engine">ရှာဖွေရေးအင်ဂျင်</string>
+    <string name="browser_exit_body">Browser မှ ထွက်လိုသည်မှာ သေချာသည်။</string>
+    <string name="exit_browser">Browser မှထွက်ပါ။</string>
+    <string name="custom_user_agent">စိတ်ကြိုက်အသုံးပြုသူ အေးဂျင့်</string>
+    <string name="start_control">ထိန်းချုပ်မှု စတင်ပါ။</string>
+    <string name="data_control">ဒေတာထိန်းချုပ်ရေး</string>
+    <string name="app_settings">အက်ပ်ဆက်တင်များ</string>
+    <string name="browser_settings">ဘရောက်ဆာ ဆက်တင်များ</string>
+    <string name="behavior_ui">အပြုအမူ/UI</string>
+    <string name="clear_cache">Cache ကိုရှင်းလင်းပါ။</string>
+    <string name="clear_history">သမိုင်းကို ရှင်းလင်းပါ။</string>
+    <string name="clear_browsing_history">ရှာဖွေမှုမှတ်တမ်းကို ရှင်းလင်းပါ။</string>
+    <string name="clear_all_cache">ကက်ရှ်အားလုံးကို ရှင်းလင်းပါ။</string>
+    <string name="clear_database_body">“အညွှန်းပြုထားသော ဒေတာဘေ့စ်များ” နှင့် “ပြည်တွင်း\nဒေတာအခြေခံများ” ကို ရှင်းလင်းပါ။</string>
+    <string name="clear_cookies_body">ဖွင့်ထားလျှင် ကွတ်ကီးများအားလုံးကို ဖျက်ပစ်ပါမည်။ ထို့အပြင်\nယုံကြည်ရသော ဝဘ်ဆိုက်များ၏ ကွတ်ကီးများ</string>
+    <string name="clear_databases">ဒေတာဘေ့စ်များကို ရှင်းလင်းပါ။</string>
+    <string name="clear_cookies">ကွတ်ကီးများကို ရှင်းလင်းပါ။</string>
+    <string name="clear_when_application_exit">လျှောက်လွှာထွက်သည့်အခါ ရှင်းလင်းပါ။</string>
+    <string name="clear_when_application_exit_body">အထက်ဖော်ပြပါ အချက်အလက်အားလုံးကို သင်ထွက်သည့်အခါတိုင်း\nဖျက်ပါမည်။</string>
+    <string name="image">ပုံ</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">ကွတ်ကီး</string>
+    <string name="reopen_last_tab">နောက်ဆုံးတက်ဘ်ကို ပြန်ဖွင့်ပါ။</string>
+    <string name="confirm_tab_close">တက်ဘ်ပိတ်ကြောင်း အတည်ပြုပါ။</string>
+    <string name="confirm_browser_exit">ဘရောက်ဆာ ထွက်ကြောင်းကို အတည်ပြုပါ။</string>
+    <string name="position">ရာထူး</string>
+    <string name="first_toolbar">ပထမဆုံး toolbar</string>
+    <string name="hide_toolbar">တူးလ်ဘားကို ဝှက်ပါ။</string>
+    <string name="toolbar">ကိရိယာဘား</string>
+    <string name="bookmarks">ညှပ်</string>
+    <string name="edit">တည်းဖြတ်ပါ။</string>
+    <string name="today">ဒီနေ့</string>
+    <string name="the_last_hour">နောက်ဆုံးနာရီ</string>
+    <string name="last_week">ပြီးခဲ့သောအပတ်က</string>
+    <string name="last_month">ပြီးခဲ့သည့်လ</string>
+    <string name="delete_all_history">မှတ်တမ်းအားလုံးကို ဖျက်ပါ။</string>
+    <string name="copied">ကူးယူသည်။</string>
+    <string name="share_ss">SS ကိုမျှဝေပါ။</string>
+    <string name="file_manager">ဖိုင်မန်နေဂျာ</string>
+    <string name="search_on">ရှာရန် On</string>
+    <string name="add_shortcut">Shortcut ထည့်ပါ။</string>
+    <string name="tab_exit">Tab Exit</string>
+    <string name="do_you_want_to_close">ပိတ်ချင်လား။</string>
+    <string name="download_complete_share_image">ဒေါင်းလုဒ် ပြီးပါပြီ။ ပုံမျှဝေပါ။</string>
+    <string name="update">မွမ်းမံ</string>
+    <string name="unfavorite">အကြိုက်ဆုံး</string>
+    <string name="no_input_provided">ထည့်သွင်းပေးထားခြင်းမရှိပါ။</string>
+    <string name="input">ထည့်သွင်းခြင်း။</string>
+    <string name="website_link">ဝဘ်ဆိုဒ်လင့်ခ်</string>
+    <string name="for_you">သင့်အတွက်</string>
+    <string name="website">ဝဘ်ဆိုဒ်-</string>
+    <string name="url">Url-</string>
+    <string name="date">ရက်စွဲ</string>
+    <string name="no_site_loaded">သင့်တွင် တင်ထားသော ဝဘ်ဆိုက် မရှိပါ။</string>
+    <string name="more_then_5_images_can_not_be_picked">ထို့ထက်ပို၍ ငါးပုံခူးမရပါ။</string>
+    <string name="location">တည်နေရာ</string>
+</resources>

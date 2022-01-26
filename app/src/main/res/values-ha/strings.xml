@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Hausa-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">Wuri</string>
+    <string name="connection_close_confirm">Kuna so soke Haɗin VPN na yanzu?</string>
+    <string name="yes">EE</string>
+    <string name="no">A\'A</string>
+    <string name="yes_2">Ee</string>
+    <string name="no_2">A\'a</string>
+    <string name="select_images">Zaɓi Hotuna</string>
+    <string name="tabs">Tabs</string>
+    <string name="share">Raba</string>
+    <string name="save">Ajiye</string>
+    <string name="more">Kara</string>
+    <string name="ok">KO</string>
+    <string name="cancel">Soke</string>
+    <string name="favorite_site">Canza tsoho gidan yanar gizo wanda ke lodawa akan\nfara Mai lilo</string>
+    <string name="custom_search_engine_body">Ƙara url bincike na al\'ada kuma zaɓi "Injin bincike Custom" a matsayin mai ba da bincike</string>
+    <string name="search_engine_body">Zaɓi injin binciken da kuka fi so ko\n saita na al\'ada</string>
+    <string name="data_control_body">Share bayanan burauzan ku ko yanke shawarar abin da za a sharewa lokacin da kuka bar app ɗin</string>
+    <string name="start_control_body">Yanke shawarar waɗanne ɓangarori na mai binciken\n zai fara</string>
+    <string name="behavior_ui_body">Canza hali da ui na app don dacewa da abubuwan da kuke so</string>
+    <string name="book_mark_body">Don nuna maganganun tace dogon latsa alamar alamar shafi a cikin bayyani. Yanke shawarar abubuwan tacewa zaku yi amfani da su</string>
+    <string name="app_settings_body">Saitunan Browser, a can za ku iya dogaro da izinin baiwa nau\'in android ɗin ku.</string>
+    <string name="start_control_image_body">Kunna hotunan hanyar sadarwa, kashewa zai iya zama da amfani\don adana bayanan wayar hannu da loda gidan yanar gizo cikin sauri</string>
+    <string name="start_control_location_body">Bada damar gidajen yanar gizo don samun damar wurin da kuke. Wasu shafukan yanar gizo {google, taswirori don nav) suna buƙatar kunna wannan</string>
+    <string name="start_control_history_body">Ajiye tarihin gidajen yanar gizon da aka ziyarta</string>
+    <string name="start_control_java_script_body">Kunna JavaScript. Yawancin gidajen yanar gizo suna buƙatar\nJavaScript don ayyukansu. Amma kuma suna hutawa kuma ana iya amfani da su don kai hari</string>
+    <string name="start_control_cookies_body">Kunna Kukis. Kukis ƙananan fayilolin rubutu ne,
+wanda aka adana akan na\'urarka. Ana amfani da shafukan yanar gizo
+su misali don adana saitunan masu amfani. Amma
+Hakanan ana iya amfani da su don tattara mai amfani na sirri
+bayanai. Ana kashe kukis na ɓangare na uku koyaushe.</string>
+    <string name="confirmation_browser_exit_body">Tabbataccen maganganu lokacin da \n rufe mai lilo</string>
+    <string name="confirmation_tab_close_body">Tabbataccen maganganu lokacin rufe shafin</string>
+    <string name="confirmation_reopen_last_body">Sake buɗe sabon shafin lokacin da aka rufe shafin na ƙarshe maimakon fita mai lilo</string>
+    <string name="hide_toolbar_body">Yi amfani da dukkan allo lokacin gungurawa cikin gidan yanar gizon idan kun danna maɓallin baya zaku bar yanayin cikakken allo</string>
+    <string name="images">Hotuna</string>
+    <string name="videos">Bidiyo</string>
+    <string name="web_browser">Mai Binciken Yanar Gizo</string>
+    <string name="image_slider">Hoton Slider</string>
+    <string name="next">Na gaba</string>
+    <string name="previous">A baya</string>
+    <string name="help">Taimako</string>
+    <string name="settings">Saituna</string>
+    <string name="language">Harsuna</string>
+    <string name="more_app">Ƙarin Apps</string>
+    <string name="rate_us">Rage Mu</string>
+    <string name="screen_mirroring">Madubin allo</string>
+    <string name="home_screen_text">Tabbatar cewa an haɗa wayarka da TV zuwa cibiyar sadarwar Wi-Fi iri ɗaya.</string>
+    <string name="wifi_connected">An Haɗa Wi-Fi</string>
+    <string name="wifi_disconnected">An Kashe Wi-Fi</string>
+    <string name="general">Gabaɗaya</string>
+    <string name="communicate">Sadarwa</string>
+    <string name="send_feedback">Aika da martani</string>
+    <string name="tutorial">Koyarwa</string>
+    <string name="how_to_use">Yadda ake amfani?</string>
+    <string name="streaming">Yawo</string>
+    <string name="streaming_quality">Quality Streaming</string>
+    <string name="auto_stop">Tsaya ta atomatik</string>
+    <string name="auto_minimize">Rage girman kai ta atomatik</string>
+    <string name="advance">Gaba</string>
+    <string name="orientation_mode">Yanayin Gabatarwa</string>
+    <string name="auto_stop_body_text">Dakatar da bidiyo lokacin da haɗin haɗin kai zuwa manufa ya ɓace</string>
+    <string name="auto_minimize_body_text">Boye app lokacin da madubi ya fara</string>
+    <string name="casting_orientation_body_text">Hanyar yin wasan kwaikwayo</string>
+    <string name="mirroring_mode">Yanayin madubi</string>
+    <string name="screen_mirroring_privacy_policy">Manufar keɓantawar allo</string>
+    <string name="privacy_policy">takardar kebantawa</string>
+    <string name="supporting_devices">Na\'urori masu tallafi</string>
+    <string name="see_which_devices_support_mirroring">Duba waɗanne na\'urori ke goyan bayan madubi</string>
+    <string name="color_theme">Jigon Launi</string>
+    <string name="dark">Duhu</string>
+    <string name="light">Haske</string>
+    <string name="auto">Mota</string>
+    <string name="select_language">Zaɓi Harshe</string>
+    <string name="close">kusa</string>
+    <string name="images_slider">Slider Hotuna</string>
+    <string name="screen_mirror">Madubin allo</string>
+    <string name="tutorial_screen_setup_body">Dole ne na\'urar da kuke nema ta kasance a cikin hanyar sadarwar Wi-Fi iri ɗaya da wannan na\'urar, saboda Madubin allo yana watsa allonku.</string>
+    <string name="tutorial_screen_mirror_body">Yada allon na\'urarka akan Wi-Fi zuwa kwamfutarka, littafin rubutu ko kwamfutar hannu.</string>
+    <string name="tutorial_device_hotspot_body">Hakanan zaka iya amfani da hotspot na na\'urarka (yanayin haɗawa) kuma haɗa na\'urar da aka yi niyya zuwa hotspot ɗin ku.</string>
+    <string name="tutorial_scan_code_body">Bude site a kan manufa na\'urar. Ta hanyar duba lambar QR ɗin haɗin haɗin yana watsa kuma yana farawa da madubi.</string>
+    <string name="tutorial_support_body">Da fatan za a sani cewa Madubin allo yana aiki ne kawai lokacin da aka saita daidai. Madubin allo yana watsa allonka, amma ba siginar sauti na na\'urarka ba. Idan kun fuskanci wata matsala tuntube mu.</string>
+    <string name="walk_through_body_1">Aji dadin yawo mai santsi da inganci\nba tare da lauje ba</string>
+    <string name="walk_through_body_2">Haɗa da kowace na\'ura mai wayo kuma ku ji daɗin nunin\n akan kowane allo</string>
+    <string name="walk_through_body_3">Ji daɗin mai binciken cikin-app ba tare da iyakancewa ba</string>
+    <string name="screen_setup">Saitin allo</string>
+    <string name="device_hotspot">Hotspot na Na\'ura</string>
+    <string name="scan_code">Lambar Bincike</string>
+    <string name="support">Taimako</string>
+    <string name="finish">Gama</string>
+    <string name="our_policies">Manufofin mu</string>
+    <string name="privacy_policy_text">Kare sirrin ku yana da mahimmanci a gare mu. Muna fatan wannan bayanin zai taimaka muku fahimtar yadda muke mu\'amala da bayanan da ake iya tantancewa, kuna iya ba mu lokaci-lokaci ta Intanet (dandalin Google Play).\n\nGaba ɗaya. ba ma karɓar kowane PII daga gare ku lokacin da kuke zazzage aikace-aikacen mu na Android. Don takamaimai, ba ma buƙatar ziyartar masu amfani da aikace-aikacen mu, har ma ba mu da Uwar garken da za mu adana irin wannan PII.\n\nScreen Mirroring yana amfani da Facebook azaman talla. Facebook yana so ya nuna tallace-tallacen da suka dace da ku. Don ƙarin bayani ziyarci\nhttps://m.facebook.com/ads/ad_choices.\n\nHalin da kawai za mu iya samun damar zuwa gare ku PII shine lokacin da kuka yanke shawarar aiko mana da ra\'ayoyinku ko don samar mana da kwaro. rahoto. PII da za mu iya samu daga gare ku a wannan yanayin ya iyakance ga sunan ku, adireshin imel da amsa bincikenku kawai.\n\nA cikin halin da ake ciki, muna ba da tabbacin cewa za a yi amfani da ku PII kawai don tuntuɓar ku da inganta ayyukanmu. Ba za mu taɓa yin amfani da irin waɗannan bayanan ba (misali sunan ku da adireshin imel_ don kowane dalilai, kamar don ƙara tallata samfuranmu, ko don bayyana keɓaɓɓen bayanin ku ga wani ɓangare na uku don cin riba na kasuwanci.\n\nYa kamata a lura cewa ko ko ko Kada ku aiko mana da ra\'ayoyin ku ko rahoton kwaro wani shiri ne na son rai gaba ɗaya kan shawarar ku. Idan kuna da damuwa game da rashin amfani da PII ɗin ku, ko kuma idan kuna son ƙarin bayani game da manufofin keɓantawar mu da abin da ake nufi, da fatan za a ji daɗin aiko mana da imel. a screenmirroring.feedback@gmail.com, za mu yi ƙoƙari don samar da cikakkun amsoshi ga tambayoyinku a kan lokaci.</string>
+    <string name="please_write_your_feedback">Da fatan za a rubuta ra\'ayoyin ku</string>
+    <string name="system_info">Za a aika bayanin tsarin ku zuwa Sashen fasaha na Mirroring na allo</string>
+    <string name="send">Aika</string>
+    <string name="provide_feedback">bayar da amsa</string>
+    <string name="invalid_email_provided">An bayar da imel mara inganci</string>
+    <string name="check_your_internet_connection">Duba haɗin Intanet ɗin ku</string>
+    <string name="type_here">rubuta nan…</string>
+    <string name="enter_your_email_optional">Shigar da imel ɗin ku (na zaɓi)</string>
+    <string name="enjoy_the_app">Ji daɗin app?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Ƙimar ƙwarewar ku ta amfani da Screen\nMirroring App.</string>
+    <string name="not_now">Ba yanzu</string>
+    <string name="feedback">Jawabin:</string>
+    <string name="model">Samfura:</string>
+    <string name="brand">Alamar:</string>
+    <string name="os_version">Sigar OS:</string>
+    <string name="manufacturer">Mai ƙira:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Aika wasiku</string>
+    <string name="select_picture">Zaɓi Hoto</string>
+    <string name="help_center">Cibiyar Taimako</string>
+    <string name="question_1">Wayata tana makale a “Connecting” \nlokacin haɗawa da TV.</string>
+    <string name="question_2">Ya yi mini aiki a baya, amma ba ya \naiki a yanzu.</string>
+    <string name="question_3">Yana nuna cewa na\'urara ba ta \nda tallafi.</string>
+    <string name="question_4">TV dina tsohon TV ne kuma baya goyan \nbayan wi-fi.</string>
+    <string name="question_5">Hoton a talabijin baƙar fata ne, amma \nana iya jin sautin.</string>
+    <string name="question_6">Za a katse haɗin kai bayan ɗan \nlokaci.</string>
+    <string name="question_7">Shin bayanina na sirri ko bayanan wayar hannu ba shi da lafiya kwata-kwata?</string>
+    <string name="q_answer_1_1">Sake kunna Wi-Fi na wayar hannu kuma duba idan haɗin ya yi nasara.</string>
+    <string name="q_answer_1_2">Kashe TV ɗin kuma cire igiyar wutar lantarki daga soket shima. Jira minti 1 kuma sake kunna TV.</string>
+    <string name="q_answer_1_3">Rage tazara tsakanin wayarka da TV. Dauke shi kusa.</string>
+    <string name="q_answer_2_1">Idan ya yi aiki a baya, to tabbas za a iya sake amfani da shi.</string>
+    <string name="q_answer_2_2">Yawancin matsalolin haɗin gwiwa ana iya magance su ta hanyar sake kunna na\'urori. Kawai sake kunna wayarka da TV, bi tsarin haɗin kai na yau da kullun don sake gwadawa.</string>
+    <string name="q_answer_3_1">Wannan yana nufin cewa wayarka kanta baya goyan bayan aikin madubin allo.</string>
+    <string name="q_answer_3_2">Kuna iya amfani da XCast don jefa bidiyo, sauti da hoto zuwa TV. Tare da XCast, zaku iya yin wasu abubuwa da wayarku yayin jefawa zuwa TV.</string>
+    <string name="q_answer_4_1">Idan TV ɗin ku yana goyan bayan haɗin haɗin HDMI, muna ba da shawarar ku sayi mai karɓa na waje don madubin allo. Kamar Chromecast, Anycast da dai sauransu.</string>
+    <string name="q_answer_5_1">Wasu abun ciki sun haɗa da kariyar haƙƙin mallaka kuma ba za a iya nunawa akan na\'urorin ɓangare na uku ba, kamar Netflix, Disney Plus da sauransu.</string>
+    <string name="q_answer_5_2">Kuna iya zazzage bidiyon ko nemo albarkatu iri ɗaya akan wasu apps don gwadawa.</string>
+    <string name="q_answer_6_1">Kuna iya kunna Smart Connect a cikin saitunan Wi-Fi ku. Zai nemo ingantattun hanyoyin haɗin Wi-Fi akai-akai, kuma koyaushe yana haɗa gaba da gaba.</string>
+    <string name="q_answer_6_2">Da fatan za a tabbatar cewa Wi-Fi na wayar hannu da TV shine SAM kuma mafi kyawun sigina.</string>
+    <string name="q_answer_7_1">Ba za mu saka idanu ko tattara kowane bayani akan ku da wayar hannu ba. Kuna iya jefa allonku ba tare da wata damuwa ba.</string>
+    <string name="q_answer_7_2">Na\'urar na iya gargaɗe ku cewa akwai haɗarin aminci kafin madubin allo. Wannan tunatarwa ce ta yau da kullun, zai kasance</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">SHIGA</string>
+    <string name="install_small">Shigar</string>
+    <string name="manual">Manual</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Tabbatar cewa an haɗa wayarka da TV zuwa cibiyar sadarwar Wi-Fi iri ɗaya.</string>
+    <string name="hd_streaming">HD yawo</string>
+    <string name="smart_devices">na\'urori masu wayo</string>
+    <string name="private_browser">Browser mai zaman kansa</string>
+    <string name="effects">Tasiri</string>
+    <string name="slider">Slider</string>
+    <string name="search_or_type_web_address">Bincika ko rubuta adireshin gidan yanar gizo</string>
+    <string name="install_2">Shigar</string>
+    <string name="bookmark">Alamar alama</string>
+    <string name="downloads">Zazzagewa</string>
+    <string name="download">Zazzagewa</string>
+    <string name="favorites">Abubuwan da aka fi so</string>
+    <string name="favorite">Fi so</string>
+    <string name="history">Tarihi</string>
+    <string name="share_pdf">Share PDF</string>
+    <string name="copy_url">Kwafi URL</string>
+    <string name="share_app">Raba App</string>
+    <string name="share_url">Share url</string>
+    <string name="exit">Fita</string>
+    <string name="new_tab">Sabuwar Tab</string>
+    <string name="google">Google</string>
+    <string name="startpage">Shafin Farko</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckGo</string>
+    <string name="searx">Bincike</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Injin bincike na al\'ada</string>
+    <string name="add_shortcut_to_home">Ƙara gajeriyar hanya zuwa gida</string>
+    <string name="save_screenshot">Ajiye Screenshot</string>
+    <string name="add_to_bookmark">Ƙara zuwa alamar shafi</string>
+    <string name="save_as_pdf">Ajiye azaman pdf</string>
+    <string name="save_action">Ajiye Aiki</string>
+    <string name="add_to_favorite">Ƙara zuwa ga fi so</string>
+    <string name="search_engine">Injin Bincike</string>
+    <string name="browser_exit_body">Shin kun tabbata kuna son fita Browser</string>
+    <string name="exit_browser">Fita Browser</string>
+    <string name="custom_user_agent">Wakilin mai amfani na al\'ada</string>
+    <string name="start_control">Fara Sarrafa</string>
+    <string name="data_control">Kula da bayanai</string>
+    <string name="app_settings">Saitunan app</string>
+    <string name="browser_settings">Saitunan Browser</string>
+    <string name="behavior_ui">Hali/UI</string>
+    <string name="clear_cache">Share Cache</string>
+    <string name="clear_history">Share Tarihi</string>
+    <string name="clear_browsing_history">Share tarihin bincike</string>
+    <string name="clear_all_cache">Share duk cache</string>
+    <string name="clear_database_body">Share "Tsarin bayanan bayanai" da "ginin bayanan bayanan gida"</string>
+    <string name="clear_cookies_body">Idan an kunna, za a share duk kukis. Hakanan\nKukis na amintattun gidajen yanar gizo</string>
+    <string name="clear_databases">Share bayanan bayanai</string>
+    <string name="clear_cookies">Share Kukis</string>
+    <string name="clear_when_application_exit">Share lokacin fita aikace-aikacen</string>
+    <string name="clear_when_application_exit_body">Duk lokacin da ka bar duk bayanan da aka bincika\n za a share su</string>
+    <string name="image">Hoto</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Kukis</string>
+    <string name="reopen_last_tab">Sake buɗe shafin na ƙarshe</string>
+    <string name="confirm_tab_close">Tabbatar da shafin kusa</string>
+    <string name="confirm_browser_exit">Tabbatar da ficewar mai lilo</string>
+    <string name="position">Matsayi</string>
+    <string name="first_toolbar">Kayan aiki na farko</string>
+    <string name="hide_toolbar">Boye kayan aiki</string>
+    <string name="toolbar">Toolbar</string>
+    <string name="bookmarks">Alamomi</string>
+    <string name="edit">Gyara</string>
+    <string name="today">Yau</string>
+    <string name="the_last_hour">Sa\'a ta ƙarshe</string>
+    <string name="last_week">Makon da ya gabata</string>
+    <string name="last_month">A watan da ya gabata</string>
+    <string name="delete_all_history">Share duk tarihi</string>
+    <string name="copied">kofe</string>
+    <string name="share_ss">Share SS</string>
+    <string name="file_manager">Mai sarrafa Fayil</string>
+    <string name="search_on">Bincika Kunna</string>
+    <string name="add_shortcut">Ƙara Gajerar hanya</string>
+    <string name="tab_exit">Fita Tab</string>
+    <string name="do_you_want_to_close">Kuna so ku rufe</string>
+    <string name="download_complete_share_image">An gama saukewa. Raba hoto</string>
+    <string name="update">Sabuntawa</string>
+    <string name="unfavorite">Ba wanda aka fi so</string>
+    <string name="no_input_provided">Babu shigar da aka bayar</string>
+    <string name="input">Shigarwa</string>
+    <string name="website_link">Yanar Gizo link</string>
+    <string name="for_you">Na ki</string>
+    <string name="website">Yanar Gizo:</string>
+    <string name="url">Url:</string>
+    <string name="date">Kwanan wata</string>
+    <string name="no_site_loaded">Ba ku da gidan yanar gizon da aka loda</string>
+    <string name="more_then_5_images_can_not_be_picked">Fiye da hotuna biyar ba za a iya ɗaukar su ba</string>
+</resources>

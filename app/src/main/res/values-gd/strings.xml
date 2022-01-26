@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Scottish-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">Àite</string>
+    <string name="connection_close_confirm">Am bu mhath leat an ceangal VPN gnàthach a chuir dheth?</string>
+    <string name="yes">THA</string>
+    <string name="no">CHAN EIL</string>
+    <string name="yes_2">tha</string>
+    <string name="no_2">Chan eil</string>
+    <string name="select_images">Tagh Dealbhan</string>
+    <string name="tabs">Tabaichean</string>
+    <string name="share">Roinn</string>
+    <string name="save">Sàbhail</string>
+    <string name="more">Tuilleadh</string>
+    <string name="ok">ceart gu leòr</string>
+    <string name="cancel">Sguir dheth</string>
+    <string name="favorite_site">Atharraich an làrach-lìn bunaiteach a bhios a’ luchdachadh air\n toiseach a’ bhrabhsair</string>
+    <string name="custom_search_engine_body">Cuir url sgrùdaidh gnàthaichte ris cuideachd tagh “Custom\nsearch engine” mar sholaraiche sgrùdaidh</string>
+    <string name="search_engine_body">Tagh an einnsean sgrùdaidh as fheàrr leat no\n suidhich fear àbhaisteach</string>
+    <string name="data_control_body">Glan dàta a\' bhrabhsair agad no co-dhùin dè an dàta\na thèid a ghlanadh nuair a dh\'fhàgas tu an aplacaid</string>
+    <string name="start_control_body">Dèan co-dhùnadh dè na pàirtean den bhrobhsair\n a bhios air tòiseachadh</string>
+    <string name="behavior_ui_body">Atharraich giùlan agus ui na h-aplacaid gus a bhith iomchaidh dha na roghainnean agad</string>
+    <string name="book_mark_body">Gus an còmhradh sìoltachain a shealltainn brùth fada air an ìomhaigh comharra-leabhair san ath-shealladh. Dèan co-dhùnadh dè na sìoltachain a chleachdas tu</string>
+    <string name="app_settings_body">Roghainnean brabhsair, faodaidh tu an sin a rèir \ an dreach android agad cead a thoirt seachad.</string>
+    <string name="start_control_image_body">Dèan comas air ìomhaighean lìonra, dh’ fhaodadh ciorram a bhith feumail\n gus dàta gluasadach a shàbhaladh agus làrach-lìn a luchdachadh nas luaithe</string>
+    <string name="start_control_location_body">Leig le làraichean-lìn faighinn chun àite agad. Feumaidh an comas seo aig cuid\nlàraich-lìn {google, maps for nav).</string>
+    <string name="start_control_history_body">Sàbhail eachdraidh làraich-lìn air an deach tadhal</string>
+    <string name="start_control_java_script_body">Dèan comas air JavaScript. Feumaidh mòran làraich-lìn\nJavaScript airson an gnìomh. Ach tha iad \ cuideachd fois agus faodar an cleachdadh airson ionnsaighean</string>
+    <string name="start_control_cookies_body">Dèan comas air briosgaidean. Is e faidhlichean teacsa beaga a th’ ann am briosgaidean,
+a tha air a stòradh air an inneal agad. Bidh làraichean-lìn a \'cleachdadh
+mar eisimpleir gus roghainnean cleachdaiche a stòradh. Ach
+dh’ fhaodadh iad a bhith air an cleachdadh cuideachd airson neach-cleachdaidh pearsanta a chruinneachadh
+dàta. Tha briosgaidean treas-phàrtaidh an-còmhnaidh à comas.</string>
+    <string name="confirmation_browser_exit_body">Còmhradh dearbhaidh nuair a\n dùnaidh am brabhsair</string>
+    <string name="confirmation_tab_close_body">Còmhradh dearbhaidh nuair a dhùineas tu taba</string>
+    <string name="confirmation_reopen_last_body">Fosgail taba ùr a-rithist nuair a bhios an taba mu dheireadh dùinte an àite a bhith a’ fàgail a’ bhrobhsair</string>
+    <string name="hide_toolbar_body">Cleachd an scrion slàn nuair a sgrolaicheas tu tron ​​​​làrach-lìn ma bhrùthas tu am putan cùil fàgaidh tu modh làn-sgrìn</string>
+    <string name="images">Dealbhan</string>
+    <string name="videos">Bhideothan</string>
+    <string name="web_browser">Brabhsair-lìn</string>
+    <string name="image_slider">Slider Ìomhaigh</string>
+    <string name="next">Air adhart</string>
+    <string name="previous">Roimhe</string>
+    <string name="help">Cuideachadh</string>
+    <string name="settings">Suidhichidhean</string>
+    <string name="language">Cànanan</string>
+    <string name="more_app">Tuilleadh Apps</string>
+    <string name="rate_us">Dèan measadh oirnn</string>
+    <string name="screen_mirroring">Sgrionadh Sgrion</string>
+    <string name="home_screen_text">Dèan cinnteach gu bheil am fòn agus an telebhisean agad ceangailte ris an aon lìonra Wi-Fi.</string>
+    <string name="wifi_connected">Wi-Fi ceangailte</string>
+    <string name="wifi_disconnected">Wi-Fi air a dhì-cheangal</string>
+    <string name="general">Coitcheann</string>
+    <string name="communicate">Dèan conaltradh</string>
+    <string name="send_feedback">Cuir fios air ais</string>
+    <string name="tutorial">Oideachadh</string>
+    <string name="how_to_use">Ciamar a chleachdadh?</string>
+    <string name="streaming">Sruthadh</string>
+    <string name="streaming_quality">Càileachd Streaming</string>
+    <string name="auto_stop">Stad fèin-ghluasadach</string>
+    <string name="auto_minimize">Lùghdaich fèin-ghluasadach</string>
+    <string name="advance">Air adhart</string>
+    <string name="orientation_mode">Modh treòrachaidh</string>
+    <string name="auto_stop_body_text">Cuir stad air bhidio nuair a thèid an ceangal ris an targaid a chall</string>
+    <string name="auto_minimize_body_text">Falaich an aplacaid nuair a thòisicheas an sgàthan</string>
+    <string name="casting_orientation_body_text">Stiùireadh tilgeadh</string>
+    <string name="mirroring_mode">Modh sgàthan</string>
+    <string name="screen_mirroring_privacy_policy">Sgrion mar sgàthan air poileasaidh prìobhaideachd</string>
+    <string name="privacy_policy">Poileasaidh Dìomhaireachd</string>
+    <string name="supporting_devices">Innealan taice</string>
+    <string name="see_which_devices_support_mirroring">Faic dè na h-innealan a tha a \'toirt taic do sgàthan</string>
+    <string name="color_theme">Cuspair dath</string>
+    <string name="dark">Dorch</string>
+    <string name="light">Solas</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Tagh Cànan</string>
+    <string name="close">dùin</string>
+    <string name="images_slider">Dealbhan Slider</string>
+    <string name="screen_mirror">Sgàthan Sgrion</string>
+    <string name="tutorial_screen_setup_body">Feumaidh an inneal targaid agad a bhith san aon lìonra Wi-Fi ris an inneal seo, oir tha Screen Mirror a’ sgaoileadh do sgrion.</string>
+    <string name="tutorial_screen_mirror_body">Sruth scrion an inneal agad thairis air Wi-Fi chun choimpiutair, leabhar notaichean no tablet agad.</string>
+    <string name="tutorial_device_hotspot_body">Faodaidh tu cuideachd àite teth an uidheim agad (modh tethering) a chleachdadh agus an inneal targaid agad a cheangal ris an àite teth agad.</string>
+    <string name="tutorial_scan_code_body">Fosgail làrach air an inneal targaid agad. Le bhith a’ sganadh a’ chòd QR tha rèiteachadh a’ cheangail air a ghluasad agus bidh sgàthan a’ tòiseachadh.</string>
+    <string name="tutorial_support_body">Thoir an aire nach obraich Screen Mirror ach nuair a thèid a stèidheachadh ceart. Bidh Screen Mirror a’ sgaoileadh do sgrion, ach chan e comharran claisneachd an inneal agad. Ma tha duilgheadas sam bith agad cuir fios thugainn.</string>
+    <string name="walk_through_body_1">Faigh tlachd bho shruthadh rèidh agus àrd-inbhe \ngun dàil sam bith</string>
+    <string name="walk_through_body_2">Dèan ceangal le inneal snasail sam bith agus faigh tlachd às an\nshow air scrion sam bith</string>
+    <string name="walk_through_body_3">Tlachd a ghabhail air brobhsair prìobhaideach in-app gun chuingealachaidhean sam bith</string>
+    <string name="screen_setup">Suidheachadh sgrion</string>
+    <string name="device_hotspot">Hotspot an uidheim</string>
+    <string name="scan_code">Còd scan</string>
+    <string name="support">Taic</string>
+    <string name="finish">Crìochnaich</string>
+    <string name="our_policies">Na Poileasaidhean againn</string>
+    <string name="privacy_policy_text">Tha e cudromach dhuinne do phrìobhaideachd a dhìon. Tha sinn an dòchas gun cuidich an aithris a leanas thu le bhith a’ tuigsinn mar a dhèiligeas sinn ris an fhiosrachadh a dh’ aithnicheas tu gu pearsanta, a dh’ fhaodadh tu a thoirt dhuinn bho àm gu àm tron eadar-lìn (àrd-ùrlar Google Play).\n\nSan fharsaingeachd. cha bhith sinn a’ cruinneachadh PII bhuat nuair a bhios tu a’ luchdachadh sìos na h-aplacaidean Android againn. Gus a bhith sònraichte, chan fheum sinn tadhalan luchd-cleachdaidh air an tagradh againn, chan eil eadhon frithealaiche againn gus an leithid de PII a stòradh.\n\nScreen Mirroring a’ cleachdadh Facebook mar sholaraiche shanasan. Tha Facebook airson sanasan a shealltainn a tha iomchaidh dhut. Airson tuilleadh fiosrachaidh tadhail air\nhttps://m.facebook.com/ads/ad_choices.\n\nIs e an aon suidheachadh a gheibh sinn cothrom dhut PII nuair a cho-dhùnas tu gu pearsanta do bheachdan air ais a chuir thugainn air post-d no bug a thoirt dhuinn aithris. Tha am PII a gheibh sinn bhuat san t-suidheachadh sin cuingealaichte gu teann ri d’ ainm, do sheòladh puist-d agus do fhreagairt suirbhidh a-mhàin.\n\nSan suidheachadh gu h-àrd, tha sinn an urras nach tèid do PII a chleachdadh ach airson fios a chuir thugad agus airson ar seirbheisean a leasachadh. Cha chleachd sinn am fiosrachadh seo gu bràth (m.e. d’ ainm is do sheòladh post-d_ airson adhbhar sam bith eile, leithid margaid a bharrachd air ar bathar, no gus d’ fhiosrachadh pearsanta fhoillseachadh do threas phàrtaidh airson buannachdan malairteach.\n\nBu chòir a thoirt fa-near co-dhiù a tha no nach eil. chan e iomairt gu tur saor-thoileach a th’ ann an aithisg air bug no fios air ais a chuir thugainn às deidh do cho-dhùnadh fhèin Ma tha dragh ort gun tèid do PII a mhì-chleachdadh, no ma tha thu ag iarraidh tuilleadh fiosrachaidh mun phoileasaidh prìobhaideachd againn agus na tha e a’ ciallachadh, na bi leisg post-d a chuir thugainn aig screenmirroring.feedback@gmail.com, nì sinn ar dìcheall freagairtean soilleir a thoirt do na ceistean agad ann an deagh àm.</string>
+    <string name="please_write_your_feedback">Feuch an sgrìobh thu do bheachdan air ais</string>
+    <string name="system_info">Thèid am fiosrachadh siostam agad a chuir gu Roinn tech Screen Mirroring</string>
+    <string name="send">Seol</string>
+    <string name="provide_feedback">fios air ais a thoirt seachad</string>
+    <string name="invalid_email_provided">Post-d mì-dhligheach air a thoirt seachad</string>
+    <string name="check_your_internet_connection">Thoir sùil air a’ cheangal eadar-lìn agad</string>
+    <string name="type_here">seòrsa an seo…</string>
+    <string name="enter_your_email_optional">Cuir a-steach am post-d agad (roghainneil)</string>
+    <string name="enjoy_the_app">A bheil thu a’ còrdadh ris an App?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Dèan measadh air an eòlas agad a’ cleachdadh Screen\nMirroring App.</string>
+    <string name="not_now">Chan ann an-dràsta</string>
+    <string name="feedback">Fios air ais:</string>
+    <string name="model">Modail:</string>
+    <string name="brand">Brand:</string>
+    <string name="os_version">Tionndadh OS:</string>
+    <string name="manufacturer">Dèanadair:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Cuir post-d</string>
+    <string name="select_picture">Tagh Dealbh</string>
+    <string name="help_center">Ionad Cuideachaidh</string>
+    <string name="question_1">Bidh am fòn agam a’ dol an sàs ann an “Connecting” nuair a bhios mi a’ dol còmhla ri Tbh.</string>
+    <string name="question_2">Dh’ obraich e dhòmhsa roimhe seo, ach chan eil e ag obair a-nis.</string>
+    <string name="question_3">Tha e a’ sealltainn nach eil an inneal nagam a’ faighinn taic.</string>
+    <string name="question_4">Is e seann telebhisean a th’ anns an telebhisean agam agus chan eil e a’ toirt taic do wi-fi.</string>
+    <string name="question_5">Tha an ìomhaigh air Tbh dubh, ach cluinnear \nam fuaim.</string>
+    <string name="question_6">Thèid stad a chuir air ceangal às \ndeidh ùine.</string>
+    <string name="question_7">A bheil m’ fhiosrachadh pearsanta no dàta fòn-làimhe gu tur sàbhailte?</string>
+    <string name="q_answer_1_1">Ath-thòisich Wi-Fi an fhòn-smart agus faic a bheil an ceangal soirbheachail.</string>
+    <string name="q_answer_1_2">Cuir dheth an telebhisean agus thoir air falbh an sreang cumhachd bhon t-socaid cuideachd. Fuirich 1 mhionaid agus ath-thòisich an telebhisean.</string>
+    <string name="q_answer_1_3">Giorraich an astar eadar am fòn agad agus an Tbh. Gabh e faisg.</string>
+    <string name="q_answer_2_1">Ma dh’ obraich e roimhe, gu cinnteach faodar a chleachdadh a-rithist.</string>
+    <string name="q_answer_2_2">Faodar a’ mhòr-chuid de dhuilgheadasan ceangail fhuasgladh le bhith ag ath-thòiseachadh innealan. Dìreach ath-thòiseachadh an dà chuid am fòn agad agus an Tbh, lean am pròiseas ceangail àbhaisteach gus feuchainn a-rithist.</string>
+    <string name="q_answer_3_1">Tha seo a’ ciallachadh nach eil am fòn agad fhèin a’ toirt taic don ghnìomh sgàthan sgrion.</string>
+    <string name="q_answer_3_2">Faodaidh tu XCast a chleachdadh gus bhidio, claisneachd agus dealbh a chuir gu Tbh. Le XCast, faodaidh tu rudan eile a dhèanamh leis an fhòn agad fhad ‘s a tha thu a’ tilgeadh gu Tbh.</string>
+    <string name="q_answer_4_1">Ma tha an Tbh agad a’ toirt taic do eadar-aghaidh HDMI, tha sinn a’ moladh gun ceannaich thu inneal-glacaidh bhon taobh a-muigh airson sgàthan sgrion. A leithid Chromecast, Anycast msaa.</string>
+    <string name="q_answer_5_1">Tha cuid de shusbaint a’ toirt a-steach dìon dlighe-sgrìobhaidh agus chan urrainnear a thaisbeanadh air innealan treas pàrtaidh, leithid Netflix, Disney Plus msaa.</string>
+    <string name="q_answer_5_2">Faodaidh tu a’ bhidio a luchdachadh sìos no coimhead airson an aon ghoireas air aplacaidean eile airson feuchainn.</string>
+    <string name="q_answer_6_1">Faodaidh tu an Smart Connect a chuir air anns na roghainnean Wi-Fi agad. Bidh e an-còmhnaidh a’ lorg ceanglaichean Wi-Fi nas fheàrr, agus an-còmhnaidh a’ ceangal air ais is air adhart.</string>
+    <string name="q_answer_6_2">Feuch an dèan thu cinnteach gur e Wi-Fi an fhòn-làimhe agus an Tbh an SAM agus an comharra as fheàrr.</string>
+    <string name="q_answer_7_1">Cha bhi sinn a\' cumail sùil no a\' cruinneachadh fiosrachadh sam bith mur deidhinn fhèin agus air an fhòn-làimhe agad. Faodaidh tu do sgrion a thilgeil gun dragh sam bith.</string>
+    <string name="q_answer_7_2">Faodaidh an siostam rabhadh a thoirt dhut gu bheil cunnart sàbhailteachd ann mus tèid an sgrion a nochdadh. Is e dìreach cuimhneachan cunbhalach a tha seo, bidh</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">SEASMHACHD</string>
+    <string name="install_small">Stàladh</string>
+    <string name="manual">Leabhar-làimhe</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Dèan cinnteach gu bheil am fòn agus an telebhisean agad ceangailte\n ris an aon lìonra Wi-Fi.</string>
+    <string name="hd_streaming">Sruth HD</string>
+    <string name="smart_devices">innealan snasail</string>
+    <string name="private_browser">Brabhsair prìobhaideach</string>
+    <string name="effects">Buaidhean</string>
+    <string name="slider">Sleamhnag</string>
+    <string name="search_or_type_web_address">Rannsaich no sgrìobh seòladh lìn</string>
+    <string name="install_2">Stàladh</string>
+    <string name="bookmark">Comharra-leabhair</string>
+    <string name="downloads">Luchdaich sìos</string>
+    <string name="download">Luchdaich sìos</string>
+    <string name="favorites">Favourites</string>
+    <string name="favorite">As fheàrr leotha</string>
+    <string name="history">Eachdraidh</string>
+    <string name="share_pdf">Pdf roinn</string>
+    <string name="copy_url">Dèan lethbhreac den URL</string>
+    <string name="share_app">Co-roinn App</string>
+    <string name="share_url">Roinn url</string>
+    <string name="exit">Ar-a-mach</string>
+    <string name="new_tab">Tab ùr</string>
+    <string name="google">Google</string>
+    <string name="startpage">Duilleag tòiseachaidh</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Cainnt</string>
+    <string name="ecosia">Eaconamas</string>
+    <string name="custom_search_engine">Inneal sgrùdaidh gnàthaichte</string>
+    <string name="add_shortcut_to_home">Cuir ath-ghoirid ris an dachaigh</string>
+    <string name="save_screenshot">Sàbhail glacadh-sgrìn</string>
+    <string name="add_to_bookmark">Cuir ris a\' chomharra-leabhair</string>
+    <string name="save_as_pdf">Sàbhail mar pdf</string>
+    <string name="save_action">Sàbhail Gnìomh</string>
+    <string name="add_to_favorite">Cuir ris as fheàrr leat</string>
+    <string name="search_engine">Inneal-rannsachaidh</string>
+    <string name="browser_exit_body">A bheil thu cinnteach gu bheil thu airson am Brabhsair fhàgail</string>
+    <string name="exit_browser">Cuir a-mach Brabhsair</string>
+    <string name="custom_user_agent">Àidseant cleachdaiche gnàthaichte</string>
+    <string name="start_control">Tòisich smachd</string>
+    <string name="data_control">Smachd Dàta</string>
+    <string name="app_settings">Roghainnean app</string>
+    <string name="browser_settings">Roghainnean brabhsair</string>
+    <string name="behavior_ui">Giùlan / UI</string>
+    <string name="clear_cache">Glan an tasgadan</string>
+    <string name="clear_history">Eachdraidh soilleir</string>
+    <string name="clear_browsing_history">Glan eachdraidh brabhsaidh</string>
+    <string name="clear_all_cache">Glan a h-uile tasgadan</string>
+    <string name="clear_database_body">Glan “stòr-dàta clàr-amais” agus “ionadan dàta\nionadail”</string>
+    <string name="clear_cookies_body">Ma tha e comasach, thèid a h-uile briosgaid a dhubhadh às. Cuideachd\nna briosgaidean de làraichean-lìn earbsach</string>
+    <string name="clear_databases">Glan stòran-dàta</string>
+    <string name="clear_cookies">Briosgaidean soilleir</string>
+    <string name="clear_when_application_exit">Glan nuair a thig an tagradh a-mach</string>
+    <string name="clear_when_application_exit_body">Gach uair a sguireas tu a h-uile rud gu h-àrd thèid dàta sgrùdaichte a sguabadh às</string>
+    <string name="image">Dealbh</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Briosgaidean</string>
+    <string name="reopen_last_tab">Fosgail an taba mu dheireadh a-rithist</string>
+    <string name="confirm_tab_close">Dearbhaich dùin tab</string>
+    <string name="confirm_browser_exit">Dearbhaich fàgail a\' bhrabhsair</string>
+    <string name="position">Dreuchd</string>
+    <string name="first_toolbar">A \'chiad bhàr-inneal</string>
+    <string name="hide_toolbar">Falaich am bàr-inneal</string>
+    <string name="toolbar">Crann-inneal</string>
+    <string name="bookmarks">Comharran-leabhair</string>
+    <string name="edit">Deasaich</string>
+    <string name="today">An-diugh</string>
+    <string name="the_last_hour">An uair mu dheireadh</string>
+    <string name="last_week">Seachdainn seo chaidh</string>
+    <string name="last_month">An mìos mu dheireadh</string>
+    <string name="delete_all_history">Sguab às a h-uile eachdraidh</string>
+    <string name="copied">lethbhreac</string>
+    <string name="share_ss">Roinn SS</string>
+    <string name="file_manager">Manaidsear faidhle</string>
+    <string name="search_on">Rannsaich Air adhart</string>
+    <string name="add_shortcut">Cuir ath-ghoirid ris</string>
+    <string name="tab_exit">Ar-a-mach tab</string>
+    <string name="do_you_want_to_close">A bheil thu airson dùnadh</string>
+    <string name="download_complete_share_image">Luchdaich sìos coileanta. Roinn dealbh</string>
+    <string name="update">Ùraich</string>
+    <string name="unfavorite">As fheàrr leat</string>
+    <string name="no_input_provided">Chan eil cuir a-steach air a thoirt seachad</string>
+    <string name="input">Cuir a-steach</string>
+    <string name="website_link">Ceangal làrach-lìn</string>
+    <string name="for_you">Dhutsa</string>
+    <string name="website">Làrach-lìn:</string>
+    <string name="url">Url:</string>
+    <string name="date">Ceann-latha</string>
+    <string name="no_site_loaded">Chan eil làrach-lìn luchdaichte agad</string>
+    <string name="more_then_5_images_can_not_be_picked">Barrachd air sin chan urrainnear còig dealbhan a thaghadh</string>
+</resources>

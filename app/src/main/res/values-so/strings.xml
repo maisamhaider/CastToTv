@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Somali-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">Ma jeclaan lahayd inaad tirtirto Xidhiidhka VPN ee hadda?</string>
+    <string name="yes">HAA</string>
+    <string name="no">MAYA</string>
+    <string name="yes_2">Haa</string>
+    <string name="no_2">Maya</string>
+    <string name="select_images">Dooro Sawirada</string>
+    <string name="tabs">Tabs</string>
+    <string name="share">La wadaag</string>
+    <string name="save">Badbaadin</string>
+    <string name="more">Wax badan</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Jooji</string>
+    <string name="favorite_site">Beddel degelka caadiga ah ee ku shuba\nbilowga Browser</string>
+    <string name="custom_search_engine_body">Ku dar url raadinta khaaska ah sidoo kale dooro "Custom search engine" sidii bixiyaha raadinta</string>
+    <string name="search_engine_body">Dooro mashiinka raadinta ee aad door bidayso ama\n samee mid gaar ah</string>
+    <string name="data_control_body">Nadiifi xogta biraawsarkaaga ama go\'aanso xogta \n la nadiifin doono markaad ka baxdo abka</string>
+    <string name="start_control_body">Go\'aanso qaybaha browserka\n bilaabi doona</string>
+    <string name="behavior_ui_body">U beddel habdhaqanka iyo ui abka si aad \ngu habboonaato dookhyadaada</string>
+    <string name="book_mark_body">Si aad u muujiso wada-hadalka shaandhada dheer taabo calaamadda calaamadaynta ee dulmarka. Go\'aanso filtarrada aad isticmaali doonto</string>
+    <string name="app_settings_body">Dejinta browserka, halkaas ayaad ku xidhan kartaa ogolaanshaha bixinta nooca android noocaaga.</string>
+    <string name="start_control_image_body">Daar sawirada Shabakadda, Deminta waxay noqon kartaa faa\'iido \ si loo kaydiyo xogta mobaylka oo si degdeg ah loogu shubo mareegaha</string>
+    <string name="start_control_location_body">U oggolow shabakadaha inay galaan goobtaada. Qaar ka mid ah shabakadaha {google, maps for nav) waxay u baahan yihiin karti tan</string>
+    <string name="start_control_history_body">Keydi taariikhda mareegaha la booqday</string>
+    <string name="start_control_java_script_body">Daar JavaScript Shabakado badan ayaa u baahan \nJavaScript si ay u shaqeeyaan. Laakin waa nastaan oo waxaa loo isticmaali karaa weeraro</string>
+    <string name="start_control_cookies_body">Daar kukiyada Kukiyadu waa faylal qoraal yar,
+kuwaas oo ku kaydsan qalabkaaga. Mareegaha ayaa isticmaala
+iyaga tusaale ahaan si ay u kaydiyaan goobaha isticmaalaha. Laakin
+Waxa kale oo loo isticmaali karaa in lagu ururiyo isticmaale shakhsi ahaaneed
+xogta. Kukiyada kooxda saddexaad had iyo jeer waa naafo.</string>
+    <string name="confirmation_browser_exit_body">Xaqiijinta wada hadalka marka \nla xidho browserka</string>
+    <string name="confirmation_tab_close_body">Xaqiijinta wada hadalka marka la xirayo tab</string>
+    <string name="confirmation_reopen_last_body">Dib u fur tab cusub marka tabka u dambeeya uu xidhmo intii aad ka bixi lahayd browserka</string>
+    <string name="hide_toolbar_body">Isticmaal shaashada oo dhan markaad dhex wareegayso mareegaha haddii aad riixdo badhanka dambe waxaad ka tagi doontaa qaabka shaashadda oo dhan</string>
+    <string name="images">Sawirada</string>
+    <string name="videos">Muuqaalo</string>
+    <string name="web_browser">Browser Web</string>
+    <string name="image_slider">Sawir qaade</string>
+    <string name="next">Xiga</string>
+    <string name="previous">Hore</string>
+    <string name="help">I caawi</string>
+    <string name="settings">Dejinta</string>
+    <string name="language">Luuqadaha</string>
+    <string name="more_app">Apps badan</string>
+    <string name="rate_us">Nagu qiimee</string>
+    <string name="screen_mirroring">Muraayadaha Shaashada</string>
+    <string name="home_screen_text">Hubi in taleefankaaga iyo TV-gaagu ay ku xidhan yihiin isku shabakad Wi-Fi.</string>
+    <string name="wifi_connected">Wi-Fi ku xidhan</string>
+    <string name="wifi_disconnected">Wi-Fi-ku wuu go\'ay</string>
+    <string name="general">Guud ahaan</string>
+    <string name="communicate">La xidhiidh</string>
+    <string name="send_feedback">Soo dir jawaab celin</string>
+    <string name="tutorial">Waxbarashada</string>
+    <string name="how_to_use">Sidee loo isticmaalaa?</string>
+    <string name="streaming">Streaming</string>
+    <string name="streaming_quality">Tayada Streaming</string>
+    <string name="auto_stop">Joogsi Atooto ah</string>
+    <string name="auto_minimize">Otamaatig u yaree</string>
+    <string name="advance">Hormar</string>
+    <string name="orientation_mode">Habka Hanuuninta</string>
+    <string name="auto_stop_body_text">Jooji fiidyaha marka xidhiidhka \ lala beegsado uu lumo</string>
+    <string name="auto_minimize_body_text">Qari abka marka muraayaddu bilaabanto</string>
+    <string name="casting_orientation_body_text">Jihaynta jilitaanka</string>
+    <string name="mirroring_mode">Habka muraayadda</string>
+    <string name="screen_mirroring_privacy_policy">muraayadda muraayadda siyaasadda gaarka ah</string>
+    <string name="privacy_policy">Qaanuunka Arrimaha Khaaska ah</string>
+    <string name="supporting_devices">Aaladaha Taageera</string>
+    <string name="see_which_devices_support_mirroring">Fiiri aaladaha taageera muraayada</string>
+    <string name="color_theme">Mawduuca Midabka</string>
+    <string name="dark">Madow</string>
+    <string name="light">Iftiin</string>
+    <string name="auto">Baabuur</string>
+    <string name="select_language">Dooro Luuqad</string>
+    <string name="close">dhow</string>
+    <string name="images_slider">Sawirada Slider</string>
+    <string name="screen_mirror">Muraayada Shaashada</string>
+    <string name="tutorial_screen_setup_body">Qalabka aad beegsanayso waa in uu ku jiraa shabakad Wi-Fi la mid ah qalabkan, sababtoo ah Muraayadda Shaashada ayaa gudbinaysa shaashaddaada.</string>
+    <string name="tutorial_screen_mirror_body">Ku qulqulaya shaashadda qalabkaaga Wi-Fi kumbuyuutarkaaga, buug-yarahaaga ama tablet-kaaga.</string>
+    <string name="tutorial_device_hotspot_body">Waxa kale oo aad isticmaali kartaa goobta qalabkaaga (qaabka isku xidhka) oo aad ku xidhid aaladda aad beegsanayso meesha aad ku sugan tahay.</string>
+    <string name="tutorial_scan_code_body">Ka fur goobta aaladdaada bartilmaameedka ah. Markaad sawirto koodka QR qaabeynta isku xirka waa la gudbiyaa oo muraayadu waxay bilaabataa.</string>
+    <string name="tutorial_support_body">Fadlan la soco in Muraayada Shaashadda ay shaqeyso kaliya marka si sax ah loo habeeyo. Muraayada Shaashadda ayaa gudbisa shaashaddaada, laakiin ma gudbiso calaamadaha maqalka ee qalabkaaga. Haddii aad la kulanto wax dhibaato ah nala soo xiriir.</string>
+    <string name="walk_through_body_1">Ku raaxayso daawashada siman oo tayadeedu sareyso\n oo aan dib u dhac lahayn</string>
+    <string name="walk_through_body_2">Ku xidh qalab kasta oo xariif ah oo ku raaxayso show \n shaashad kasta</string>
+    <string name="walk_through_body_3">Ku raaxayso in-app browser gaar ah oo aan xaddidnayn</string>
+    <string name="screen_setup">Dejinta Shaashada</string>
+    <string name="device_hotspot">Aaladda Hotspot</string>
+    <string name="scan_code">Koodhka Sawirka</string>
+    <string name="support">Taageero</string>
+    <string name="finish">dhame</string>
+    <string name="our_policies">Siyaasadeena</string>
+    <string name="privacy_policy_text">Ilaalinta sirtaada ayaa muhiim noo ah. Waxaan rajeyneynaa in bayaanka soo socda uu kaa caawin doono fahamka sida aan ula macaamilno macluumaadka shaqsiga lagu aqoonsan karo, waxaa laga yaabaa inaad mararka qaarkood nagu siiso internetka (goobka Google Play)\n\nGuud ahaan. Kaama qaadin wax PII ah markaad soo dejiso codsiyadayada Android. Si gaar ah loo sheego, uma baahnid booqashooyinka macaamiisha ee arjigayaga, xitaa ma lihin Server-ka lagu kaydiyo PII-kan oo kale.\n\nScreen Mirroring waxa ay Facebook u isticmaashaa xayeysiis bixiyaha. Facebook waxa uu rabaa in uu tuso xayaysiisyada adiga kugu khuseeya Wixii macluumaad dheeraad ah fadlan booqo\nhttps://m.facebook.com/ads/ad_choices.\n\nXaalada kaliya ee aan ku heli karno PII waa marka aad shaqsi ahaan go\'aansato inaad iimayl noogu soo dirto faallo celintaada ama aad na siiso cillad warbixin. PII-ga laga yaabo in aanu kaaga helno xaaladaas waxa ay ku kooban tahay adiga magacaaga, ciwaanka iimaylka iyo jawaabta sahanka oo kaliya.\n\nXaalada sare, waxa aanu dammaanad qaadaynaa in PII loo isticmaali doono kaliya in lagula soo xidhiidho iyo horumarinta adeegyadayada. Marnaba uma isticmaali doono macluumaadkaas (tusaale magacaaga iyo cinwaankaaga iimaylka_ ujeeddooyin kale, sida si aan u sii suuq-geynno alaabadayada, ama inaan u bandhigno macluumaadkaaga shakhsiyeed cid saddexaad oo faa\'iido ganacsi u leh.\n\nWaa in la ogaadaa in ama haddii kale. Haddii aad ka walaacsan tahay in PII-gaga si xun loo isticmaalo, ama haddii aad rabto macluumaad dheeraad ah oo ku saabsan siyaasaddayada khaaska ah iyo waxa ay ka dhigan tahay, fadlan xor u noqo inaad noo soo dirto iimayl. at screenmirroring.feedback@gmail.com, waxaan ku dadaali doonaa inaan ku siinno jawaabo cad su\'aalahaaga waqti ku haboon.</string>
+    <string name="please_write_your_feedback">Fadlan qor ra\'yi-celintaada</string>
+    <string name="system_info">Macluumaadka Nidaamkaaga waxa loo diri doonaa Waaxda Tiknoolajiyada ee Shaashada</string>
+    <string name="send">Dir</string>
+    <string name="provide_feedback">jawaab celin ka bixi</string>
+    <string name="invalid_email_provided">Iimayl aan sax ahayn ayaa la bixiyay</string>
+    <string name="check_your_internet_connection">Hubi xidhiidhkaaga intarneedka</string>
+    <string name="type_here">ku qor halkan…</string>
+    <string name="enter_your_email_optional">Geli iimaylkaaga (ikhtiyaar)</string>
+    <string name="enjoy_the_app">Ku raaxayso App-ka?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Ku qiimee khibradaada addoo isticmaalaya Shaashadda \n Mirroring App.</string>
+    <string name="not_now">Hadda maaha</string>
+    <string name="feedback">Jawaab celin:</string>
+    <string name="model">Qaabka:</string>
+    <string name="brand">Summada:</string>
+    <string name="os_version">Nooca OS:</string>
+    <string name="manufacturer">Soo saaraha:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Soo dir boostada</string>
+    <string name="select_picture">Dooro Sawir</string>
+    <string name="help_center">Xarunta Caawinta</string>
+    <string name="question_1">Taleefankaygu wuxuu ku xayiran yahay "Connecting" marka la isku xirayo TV-ga.</string>
+    <string name="question_2">Horay ayay ii shaqaynaysay, laakiin hadda ma shaqaynayso.</string>
+    <string name="question_3">Waxay tusinaysaa in aan qalabkayga \nla taageerin.</string>
+    <string name="question_4">TV-gaygu waa TV duug ah mana \ntaageero wi-fi.</string>
+    <string name="question_5">Sawirka TV-ga waa madow, laakiin codka waa la maqli karaa.</string>
+    <string name="question_6">Xidhiidhku wuu go\'i doonaa \nmuddo ka dib.</string>
+    <string name="question_7">Macluumaadkayga gaarka ah ama xogta moobilka gabi ahaanba ma badbaado baa?</string>
+    <string name="q_answer_1_1">Dib u bilow Wi-Fi-ga taleefanka casriga oo arag haddii xiriirku guulaystay.</string>
+    <string name="q_answer_1_2">Dami TV-ga oo sidoo kale ka saar xadhigga korontada ee godka. Sug 1 daqiiqo oo dib u bilow TV-ga.</string>
+    <string name="q_answer_1_3">Soo gaabi masaafada u dhaxaysa taleefankaaga iyo TV-ga. U soo dhawoow.</string>
+    <string name="q_answer_2_1">Haddii ay hore u shaqeysay, markaa hubaal mar kale ayaa loo isticmaali karaa.</string>
+    <string name="q_answer_2_2">Inta badan dhibaatooyinka isku xirka waxaa lagu xallin karaa dib u bilaabista aaladaha. Kaliya dib u bilow teleefankaaga iyo TV-ga, raac habka isku xirka caadiga ah si aad dib isugu daydo.</string>
+    <string name="q_answer_3_1">Tani waxay ka dhigan tahay in taleefankaaga laftiisa uusan taageerin shaqada muraayadda shaashadda.</string>
+    <string name="q_answer_3_2">Waxaad isticmaali kartaa XCast si aad muqaal, maqal iyo sawir ugu shubto TV-ga. XCast, waxaad ku samayn kartaa waxyaabo kale taleefankaaga markaad wax ku shubayso TV-ga.</string>
+    <string name="q_answer_4_1">Haddii TV-gaagu uu taageero interface HDMI, waxaan kugula talineynaa inaad soo iibsato aqbalaha dibadda si loogu muujiyo muraayadda. Sida Chromecast, Anycast, iwm.</string>
+    <string name="q_answer_5_1">Waxyaabaha qaarkood waxay ku lug leeyihiin ilaalinta xuquuqda daabacaada oo laguma soo bandhigi karo aaladaha qolo saddexaad, sida Netflix, Disney Plus iwm.</string>
+    <string name="q_answer_5_2">Waxaad soo dejisan kartaa fiidyaha ama waxaad ka raadin kartaa isla kheyraadka abka kale si aad isugu daydo.</string>
+    <string name="q_answer_6_1">Waxa laga yaabaa inaad shido Smart Connect-ka habaynta Wi-Fi gaaga. Waxay si joogto ah u raadin doontaa isku xirka Wi-fi-ga wanaagsan, oo had iyo jeer waxay ku xidhmi doontaa hor iyo dib.</string>
+    <string name="q_answer_6_2">Fadlan hubi in Wi-Fi-ga moobilka iyo TV-ga uu yahay SAM-ka iyo calaamadda ugu fiican.</string>
+    <string name="q_answer_7_1">Ma la socon doono mana ururin doono wax macluumaad ah adiga iyo taleefankaaga gacanta. Waad tuuri kartaa shaashaddaada adigoon walwal qabin.</string>
+    <string name="q_answer_7_2">Nidaamku waxa uu kaaga digayaa in ay jirto khatar nabdoon ka hor inta aan shaashaddu muujin. Tani waa xasuusin joogto ah, way ahaan doontaa</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MUCJISO</string>
+    <string name="install">ku shub</string>
+    <string name="install_small">Ku rakib</string>
+    <string name="manual">Buugga</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Hubi in taleefankaaga iyo TV-gaagu ku xidhan yihiin isku shabakad Wi-Fi.</string>
+    <string name="hd_streaming">HD Streaming</string>
+    <string name="smart_devices">qalabka casriga ah</string>
+    <string name="private_browser">Browser Gaarka ah</string>
+    <string name="effects">Saamaynta</string>
+    <string name="slider">slider</string>
+    <string name="search_or_type_web_address">Raadi ama ku qor ciwaanka shabakada</string>
+    <string name="install_2">Ku rakib</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="downloads">Soo dejinta</string>
+    <string name="download">Download</string>
+    <string name="favorites">Kuwa ugu jecel</string>
+    <string name="favorite">La jecelyahay</string>
+    <string name="history">Taariikhda</string>
+    <string name="share_pdf">La wadaag pdf</string>
+    <string name="copy_url">Nuqul ka URL</string>
+    <string name="share_app">La wadaag App-ka</string>
+    <string name="share_url">La wadaag url</string>
+    <string name="exit">Ka bax</string>
+    <string name="new_tab">Tab Cusub</string>
+    <string name="google">Google</string>
+    <string name="startpage">Bogga bilowga</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baydu</string>
+    <string name="qwant">Qwan</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">mashiinka raadinta gaarka ah</string>
+    <string name="add_shortcut_to_home">Kudar guriga</string>
+    <string name="save_screenshot">Keydi sawirka</string>
+    <string name="add_to_bookmark">Ku dar bookmark</string>
+    <string name="save_as_pdf">U keydi sidii pdf</string>
+    <string name="save_action">Badbaadi Ficil</string>
+    <string name="add_to_favorite">Ku darso kuwa aad jeceshahay</string>
+    <string name="search_engine">Mashiinka Raadinta</string>
+    <string name="browser_exit_body">Ma hubtaa inaad doonayso inaad ka baxdo browserka</string>
+    <string name="exit_browser">Ka bax Browser</string>
+    <string name="custom_user_agent">Wakiilka isticmaalaha gaarka ah</string>
+    <string name="start_control">Xakamaynta Bilow</string>
+    <string name="data_control">Xakamaynta Xogta</string>
+    <string name="app_settings">Dejinta Appka</string>
+    <string name="browser_settings">Dejinta browserka</string>
+    <string name="behavior_ui">Dhaqanka/UI</string>
+    <string name="clear_cache">Nadiifi Cache</string>
+    <string name="clear_history">Nadiifi Taariikhda</string>
+    <string name="clear_browsing_history">Nadiifi taariikhda wax raadinta</string>
+    <string name="clear_all_cache">Nadiifi dhammaan kaydinta</string>
+    <string name="clear_database_body">Nadiifi "database indexed" iyo " local \ data bases"</string>
+    <string name="clear_cookies_body">Haddii la furo, dhammaan cookies waa la tirtiri doonaa. Sidoo kale\nKukiyada mareegaha la aaminsan yahay</string>
+    <string name="clear_databases">Nadiifi xogta macluumaadka</string>
+    <string name="clear_cookies">Nadiifi Kukiyada</string>
+    <string name="clear_when_application_exit">Nadiifi marka codsigu ka baxo</string>
+    <string name="clear_when_application_exit_body">Mar kasta oo aad ka baxdo dhammaan xogta kor ku xusan\nwaa la tirtiri doonaa</string>
+    <string name="image">Sawirka</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Kukiyada</string>
+    <string name="reopen_last_tab">Dib u fur tabtii u dambaysay</string>
+    <string name="confirm_tab_close">Xaqiiji tab xidhid</string>
+    <string name="confirm_browser_exit">Xaqiiji bixida browserka</string>
+    <string name="position">Booska</string>
+    <string name="first_toolbar">Qalabka ugu horreeya</string>
+    <string name="hide_toolbar">Qari aaladaha</string>
+    <string name="toolbar">Toolbar</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="edit">Wax ka beddel</string>
+    <string name="today">Maanta</string>
+    <string name="the_last_hour">Saacadda ugu dambeysa</string>
+    <string name="last_week">Todobaadki hore</string>
+    <string name="last_month">Bishii hore</string>
+    <string name="delete_all_history">Tirtir dhammaan taariikhda</string>
+    <string name="copied">la koobiyeeyay</string>
+    <string name="share_ss">La wadaag SS</string>
+    <string name="file_manager">Maareeyaha faylka</string>
+    <string name="search_on">Ka Raadi</string>
+    <string name="add_shortcut">Kudar Gaaban</string>
+    <string name="tab_exit">Tab ka bax</string>
+    <string name="do_you_want_to_close">Ma rabtaa inaad xidho</string>
+    <string name="download_complete_share_image">Soo dejintu waa dhammaatay. La wadaag sawirka</string>
+    <string name="update">Cusbooneysii</string>
+    <string name="unfavorite">Aan la jeclayn</string>
+    <string name="no_input_provided">Wax gelin ah lama siin</string>
+    <string name="input">Gelida</string>
+    <string name="website_link">Isku xirka shabakada</string>
+    <string name="for_you">Adiga</string>
+    <string name="website">Mareegta:</string>
+    <string name="url">Url:</string>
+    <string name="date">Taariikhda</string>
+    <string name="no_site_loaded">Ma aadan lahayn degel internet ah</string>
+    <string name="more_then_5_images_can_not_be_picked">In ka badan shan sawir lama soo qaadi karo</string>
+    <string name="location">Location</string>
+</resources>

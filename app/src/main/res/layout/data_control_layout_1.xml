@@ -66,7 +66,7 @@
                 style="@style/w_0_h_0"
                 android:button="@null"
                 android:checked='@{browserVM.getPrefs("DATA_CLEAR_CACHE",false)}'
-                android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
                 android:onClick='@{()->browserVM.putPrefs("DATA_CLEAR_CACHE",!browserVM.getPrefs("DATA_CLEAR_CACHE",false))}'
                 android:paddingEnd="@dimen/dp_15"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -172,13 +172,13 @@
                 app:layout_constraintStart_toEndOf="@+id/appCompatImageView18"
                 app:layout_constraintTop_toTopOf="@+id/guideline496" />
 
-            <com.google.android.material.checkbox.MaterialCheckBox
+            <CheckBox
                 android:id="@+id/checkbox_clear_history"
                 style="@style/w_0_h_0"
                 android:button="@null"
                 android:checked='@{browserVM.getPrefs("DATA_CLEAR_HISTORY",false)}'
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
                 android:onClick='@{()->browserVM.putPrefs("DATA_CLEAR_HISTORY",!browserVM.getPrefs("DATA_CLEAR_HISTORY",false))}'
-                android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
                 android:paddingEnd="@dimen/dp_15"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

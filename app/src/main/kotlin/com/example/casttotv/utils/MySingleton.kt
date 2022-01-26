@@ -5,11 +5,7 @@ import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
 import android.content.res.Configuration
-import android.print.PrintAttributes
-import android.print.PrintDocumentAdapter
-import android.print.PrintManager
 import android.util.TypedValue
-import android.webkit.WebView
 import android.widget.Toast
 import androidx.annotation.AttrRes
 import androidx.annotation.ColorInt
@@ -22,12 +18,13 @@ import com.example.casttotv.dataclasses.FolderModel
 import com.example.casttotv.dataclasses.Lang
 import com.example.casttotv.dataclasses.Tabs
 import com.example.casttotv.utils.Pref.getPrefs
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 import java.io.File
 import java.util.*
 import kotlin.collections.ArrayList
+import android.content.ContextWrapper
+
+
+
 
 
 var folder_path = ""
@@ -85,6 +82,7 @@ object MySingleton {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         }
     }
+
     fun Context.shareApp() {
         val sendIntent = Intent()
         sendIntent.action = Intent.ACTION_SEND
@@ -93,6 +91,7 @@ object MySingleton {
         sendIntent.type = "text/plain"
         startActivity(sendIntent)
     }
+
     fun Context.shareWithText(image: String) {
         val share = Intent()
         share.action = Intent.ACTION_SEND
@@ -112,7 +111,6 @@ object MySingleton {
         val clipData: ClipData = ClipData.newPlainText("", text)
         clipboardManager.setPrimaryClip(clipData)
     }
-
 
 
     fun <T> Context.toastLong(messages: T) {
@@ -157,136 +155,111 @@ object MySingleton {
         return typedValue
     }
 
-    val listOfLanguages: ArrayList<Lang> = ArrayList()
 
-    private val LANGUAGES_CODES_ONLINE = listOf(
-        "af", "sq", "am", "ar", "hy", "az", "eu", "be", "bn", "bs", "bg", "ca", "ceb", "zh-CN",
-        "zh-TW", "co", "hr", "cs", "da", "nl", "en", "eo", "et", "fi", "fr", "fy", "gl", "ka",
-        "de", "el", "gu", "ht", "ha", "haw", "he", "hi", "hmn", "hu", "is", "ig", "id", "ga",
-        "it", "ja", "jv", "kn", "kk", "km", "rw", "ko", "ku", "ky", "lo", "lv", "lt", "lb",
-        "mk", "mg", "ms", "ml", "mt", "mi", "mr", "mn", "my", "ne", "no", "ny", "or", "ps",
-        "fa", "pl", "pt", "pa", "ro", "ru", "sm", "gd", "sr", "st", "sn", "sd", "si", "sk",
-        "sl", "so", "es", "su", "sw", "sv", "tl", "tg", "ta", "tt", "te", "th", "tr", "tk",
-        "uk", "ur", "ug", "uz", "vi", "cy", "xh", "yi", "yo", "zu"
-    )
-    private val LANGUAGES_NAMES_ONLINE = listOf(
-        "Afrikaans",
-        "Albanian",
-        "Amharic",
-        "Arabic",
-        "Armenian",
-        "Azerbaijani",
-        "Basque",
-        "Belarusian",
-        "Bengali",
-        "Bosnian",
-        "Bulgarian",
-        "Catalan",
-        "Cebuano",
-        "Chinese (Simplified)",
-        "Chinese (Traditional)",
-        "Corsican",
-        "Croatian",
-        "Czech",
-        "Danish",
-        "Dutch",
-        "English",
-        "Esperanto",
-        "Estonian",
-        "Finnish",
-        "French",
-        "Frisian",
-        "Galician",
-        "Georgian",
-        "German",
-        "Greek",
-        "Gujarati",
-        "Haitian Creole",
-        "Hausa",
-        "Hawaiian",
-        "Hebrew",
-        "Hindi",
-        "Hmong",
-        "Hungarian",
-        "Icelandic",
-        "Igbo",
-        "Indonesian",
-        "Irish",
-        "Italian",
-        "Japanese",
-        "Javanese",
-        "Kannada",
-        "Kazakh",
-        "Khmer",
-        "Kinyarwanda",
-        "Korean",
-        "Kurdish",
-        "Kyrgyz",
-        "Lao",
-        "Latvian",
-        "Lithuanian",
-        "Luxembourgish",
-        "Macedonian",
-        "Malagasy",
-        "Malay",
-        "Malayalam",
-        "Maltese",
-        "Maori",
-        "Marathi",
-        "Mongolian",
-        "Myanmar (Burmese)",
-        "Nepali",
-        "Norwegian",
-        "Nyanja (Chichewa)",
-        "Odia (Oriya)",
-        "Pashto",
-        "Persian",
-        "Polish",
-        "Portuguese (Portugal, Brazil)",
-        "Punjabi",
-        "Romanian",
-        "Russian",
-        "Samoan",
-        "Scots Gaelic",
-        "Serbian",
-        "Sesotho",
-        "Shona",
-        "Sindhi",
-        "Sinhala (Sinhalese)",
-        "Slovak",
-        "Slovenian",
-        "Somali",
-        "Spanish",
-        "Sundanese",
-        "Swahili",
-        "Swedish",
-        "Tagalog (Filipino)",
-        "Tajik",
-        "Tamil",
-        "Tatar",
-        "Telugu",
-        "Thai",
-        "Turkish",
-        "Turkmen",
-        "Ukrainian",
-        "Urdu",
-        "Uyghur",
-        "Uzbek",
-        "Vietnamese",
-        "Welsh",
-        "Xhosa",
-        "Yiddish",
-        "Yoruba",
-        "Zulu"
+    val LANGUAGES: List<Lang> = listOf(
+        (Lang("af", "Afrikaans")),
+        (Lang("sq", "Albanian")),
+        (Lang("am", "Amharic")),
+        (Lang("ar", "Arabic")),
+        (Lang("hy", "Armenian")),
+        (Lang("az", "Azerbaijani")),
+        (Lang("eu", "Basque")),
+        (Lang("be", "Belarusian")),
+        (Lang("bs", "Bosnian")),
+        (Lang("bg", "bulgarian")),
+        (Lang("ca", "Catalan")),
+        (Lang("ceb", "Cebuano")),
+        (Lang("zh", "Chinese")),
+        (Lang("co", "Corsican")),
+        (Lang("hr", "Croatian")),
+        (Lang("cs", "Czech")),
+        (Lang("da", "Danish")),
+        (Lang("nl", "Dutch")),
+        (Lang("en", "English")),
+        (Lang("eo", "Esperanto")),
+        (Lang("et", "Estonian")),
+        (Lang("fi", "Finnish")),
+        (Lang("fr", "French")),
+        (Lang("gl", "Galician")),
+        (Lang("ka", "Georgian")),
+        (Lang("de", "German")),
+        (Lang("el", "Greek")),
+        (Lang("gu", "Gujarati")),
+        (Lang("ht", "Haitian Creole")),
+        (Lang("ha", "Hausa")),
+        (Lang("haw", "Hawaiian")),
+        (Lang("he", "Cebuano")),
+        (Lang("hi", "Hindi")),
+        (Lang("hmn", "Hmong")),
+        (Lang("hu", "Hungarian")),
+        (Lang("is", "Icelandic")),
+        (Lang("ig", "igbo")),
+        (Lang("in", "Indonesian")),
+        (Lang("ga", "Irish")),
+        (Lang("it", "Italian")),
+        (Lang("ja", "Japanese")),
+        (Lang("jv", "Javanese")),
+        (Lang("kn", "Kannada")),
+        (Lang("kk", "Kazakh")),
+        (Lang("km", "Khmer")),
+        (Lang("rw", "Kinyarwanda")),
+        (Lang("ko", "Korean")),
+        (Lang("ku", "Kurdish")),
+        (Lang("ky", "Kyrgyz")),
+        (Lang("lo", "Laothian")),
+        (Lang("lv", "Latvian")),
+        (Lang("lt", "Lithuanian")),
+        (Lang("lb", "Luxembourgish")),
+        (Lang("mk", "Macedonian")),
+        (Lang("mg", "Malagasy")),
+        (Lang("ms", "Malay")),
+        (Lang("ml", "Malayalam")),
+        (Lang("mt", "Maltese")),
+        (Lang("mr", "Marathi")),
+        (Lang("mn", "Mongolian")),
+        (Lang("my", "Burmese")),
+        (Lang("ne", "Nepali")),
+        (Lang("no", "Norwegian")),
+        (Lang("ny", "Nyanja (Chichewa)")),
+        (Lang("or", "Odia (Oriya)")),
+        (Lang("ps", "Pashto")),
+        (Lang("fa", "Persian")),
+        (Lang("pl", "Polish")),
+        (Lang("pt", "Portuguese")),
+        (Lang("pa", "Punjabi")),
+        (Lang("ro", "Romanian")),
+        (Lang("ru", "Russian")),
+        (Lang("sm", "Samoan")),
+        (Lang("gd", "Scottish Gaelic")),
+        (Lang("sr", "Serbian")),
+        (Lang("sn", "Shona")),
+        (Lang("sd", "Sindhi")),
+        (Lang("si", "Sinhala (Sinhalese)")),
+        (Lang("sk", "Slovak")),
+        (Lang("sl", "Slovenian")),
+        (Lang("so", "Somali")),
+        (Lang("es", "Spanish")),
+        (Lang("su", "Sundanese")),
+        (Lang("sw", "Swahili")),
+        (Lang("sv", "Swedish")),
+        (Lang("tl", "Filipino")),
+        (Lang("tg", "Tajik")),
+        (Lang("ta", "Tamil")),
+        (Lang("tt", "Tatar")),
+        (Lang("te", "Telugu")),
+        (Lang("th", "Thai")),
+        (Lang("tr", "Turkish")),
+        (Lang("tk", "Turkmen")),
+        (Lang("uk", "Ukrainian")),
+        (Lang("ur", "Urdu")),
+        (Lang("uz", "Uzbek")),
+        (Lang("vi", "Vietnamese")),
+        (Lang("cy", "Welsh")),
+        (Lang("xh", "Xhosa")),
+        (Lang("yo", "Yoruba")),
+        (Lang("zu", "Zulu"))
     )
 
-    fun languageSetUp() {
-        CoroutineScope(Dispatchers.IO).launch {
-            for (i in LANGUAGES_CODES_ONLINE.indices) {
-                listOfLanguages.add(Lang(LANGUAGES_CODES_ONLINE[i], LANGUAGES_NAMES_ONLINE[i]))
-            }
-        }
-    }
 
     fun Context.setAppLocale(language: String): Context {
         val locale = Locale(language)
@@ -294,6 +267,7 @@ object MySingleton {
         val config = resources.configuration
         config.setLocale(locale)
         config.setLayoutDirection(locale)
+        localeLanguage = language
         return createConfigurationContext(config)
     }
 

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Finnish-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">Sijainti</string>
+    <string name="connection_close_confirm">Haluatko peruuttaa nykyisen VPN-yhteyden?</string>
+    <string name="yes">JOO</string>
+    <string name="no">EI</string>
+    <string name="yes_2">Joo</string>
+    <string name="no_2">Ei</string>
+    <string name="select_images">Valitse Kuvat</string>
+    <string name="tabs">Välilehdet</string>
+    <string name="share">Jaa</string>
+    <string name="save">Tallentaa</string>
+    <string name="more">Lisää</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Peruuttaa</string>
+    <string name="favorite_site">Muuta oletussivustoa, joka latautuu\nselaimen käynnistyessä</string>
+    <string name="custom_search_engine_body">Lisää mukautetun haun URL-osoite ja valitse hakupalveluksi Mukautettu\nhakukone</string>
+    <string name="search_engine_body">Valitse haluamasi hakukone tai\nmääritä mukautettu hakukone</string>
+    <string name="data_control_body">Tyhjennä selaimesi tiedot tai päätä, mitkä tiedot\ntyhjennetään, kun poistut sovelluksesta</string>
+    <string name="start_control_body">Päätä, mitkä selaimen osat\nkäynnistetään</string>
+    <string name="behavior_ui_body">Muuta sovelluksen toimintaa ja käyttöliittymää\nmieltymystesi mukaan</string>
+    <string name="book_mark_body">Näytä suodatinvalintaikkuna painamalla pitkään kirjanmerkkikuvaketta yleiskatsauksessa. Päätä, mitä suodattimia käytät</string>
+    <string name="app_settings_body">Selaimen asetuksissa voit\nandroid-versiostasi riippuen myöntää luvan.</string>
+    <string name="start_control_image_body">Ota verkkokuvat käyttöön. Poistaminen käytöstä voi olla hyödyllistä\nmobiilidatan säästämiseksi ja verkkosivuston lataamiseksi nopeammin</string>
+    <string name="start_control_location_body">Salli verkkosivustojen pääsy sijaintiisi. Jotkut\nverkkosivustot {google, maps for nav) tarvitsevat tämän käyttöönoton</string>
+    <string name="start_control_history_body">Tallenna vierailtujen verkkosivustojen historia</string>
+    <string name="start_control_java_script_body">Ota JavaScript käyttöön. Monet sivustot tarvitsevat\nJavaScriptin toimiakseen. Mutta ne ovat myös lepoa ja niitä voidaan käyttää hyökkäyksiin</string>
+    <string name="start_control_cookies_body">Ota evästeet käyttöön. Evästeet ovat pieniä tekstitiedostoja,
+jotka on tallennettu laitteellesi. Verkkosivustot käyttävät
+ne esimerkiksi tallentaaksesi käyttäjäasetukset. Mutta
+niitä voidaan käyttää myös henkilökohtaisten käyttäjien keräämiseen
+tiedot. Kolmannen osapuolen evästeet ovat aina poissa käytöstä.</string>
+    <string name="confirmation_browser_exit_body">Vahvistusikkuna\suljettaessa selainta</string>
+    <string name="confirmation_tab_close_body">Vahvistusikkuna suljettaessa välilehteä</string>
+    <string name="confirmation_reopen_last_body">Avaa uusi välilehti uudelleen, kun viimeinen välilehti suljetaan selaimen sulkemisen sijaan</string>
+    <string name="hide_toolbar_body">Käytä koko näyttöä vierittäessäsi verkkosivustoa, jos painat Takaisin-painiketta, poistut koko näytön tilasta</string>
+    <string name="images">kuvat</string>
+    <string name="videos">Videot</string>
+    <string name="web_browser">Nettiselain</string>
+    <string name="image_slider">Kuvan liukusäädin</string>
+    <string name="next">Seuraava</string>
+    <string name="previous">Edellinen</string>
+    <string name="help">auta</string>
+    <string name="settings">asetukset</string>
+    <string name="language">Kieli (kielet</string>
+    <string name="more_app">Lisää sovelluksia</string>
+    <string name="rate_us">Arvioi meidät</string>
+    <string name="screen_mirroring">Näytön peilaus</string>
+    <string name="home_screen_text">Varmista, että puhelimesi ja televisiosi on yhdistetty samaan Wi-Fi-verkkoon.</string>
+    <string name="wifi_connected">Wi-Fi yhdistetty</string>
+    <string name="wifi_disconnected">Wi-Fi-yhteys katkaistu</string>
+    <string name="general">Kenraali</string>
+    <string name="communicate">kommunikoida</string>
+    <string name="send_feedback">Lähetä palautetta</string>
+    <string name="tutorial">Opetusohjelma</string>
+    <string name="how_to_use">Kuinka käyttää?</string>
+    <string name="streaming">suoratoisto</string>
+    <string name="streaming_quality">Suoratoiston laatu</string>
+    <string name="auto_stop">Automaattinen pysäytys</string>
+    <string name="auto_minimize">Automaattinen pienennys</string>
+    <string name="advance">Advance</string>
+    <string name="orientation_mode">Suuntatila</string>
+    <string name="auto_stop_body_text">Pysäytä video, kun yhteys\nkohteeseen katkeaa</string>
+    <string name="auto_minimize_body_text">Piilota sovellus, kun peilaus alkaa</string>
+    <string name="casting_orientation_body_text">Cast-suunta</string>
+    <string name="mirroring_mode">Peilaustila</string>
+    <string name="screen_mirroring_privacy_policy">Näytön peilauksen tietosuojakäytäntö</string>
+    <string name="privacy_policy">Tietosuojakäytäntö</string>
+    <string name="supporting_devices">Tukilaitteet</string>
+    <string name="see_which_devices_support_mirroring">Katso, mitkä laitteet tukevat peilausta</string>
+    <string name="color_theme">Väriteema</string>
+    <string name="dark">Tumma</string>
+    <string name="light">Kevyt</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Valitse kieli</string>
+    <string name="close">kiinni</string>
+    <string name="images_slider">Kuvat Liukusäädin</string>
+    <string name="screen_mirror">Näytön peili</string>
+    <string name="tutorial_screen_setup_body">Kohdelaitteesi on oltava samassa Wi-Fi-verkossa tämän laitteen kanssa, koska Screen Mirror lähettää näyttöäsi.</string>
+    <string name="tutorial_screen_mirror_body">Suoratoista laitteesi näyttö Wi-Fin kautta tietokoneellesi, kannettavaan tietokoneeseen tai tablettiin.</string>
+    <string name="tutorial_device_hotspot_body">Voit myös käyttää laitteesi hotspotia (jakotila) ja yhdistää kohdelaitteesi yhteyspisteeseen.</string>
+    <string name="tutorial_scan_code_body">Avaa sivusto kohdelaitteellasi. QR-koodin skannaamalla yhteyskonfiguraatio välitetään ja peilaus alkaa.</string>
+    <string name="tutorial_support_body">Huomaa, että Screen Mirror toimii vain, kun se on asennettu oikein. Screen Mirror lähettää näyttöäsi, mutta ei laitteesi äänisignaaleja. Jos kohtaat ongelmia, ota meihin yhteyttä.</string>
+    <string name="walk_through_body_1">Nauti sujuvasta ja laadukkaasta suoratoistosta\nilman viivettä</string>
+    <string name="walk_through_body_2">Yhdistä mihin tahansa älylaitteeseen ja nauti\nesityksestä millä tahansa näytöllä</string>
+    <string name="walk_through_body_3">Nauti sovelluksen sisäisestä yksityisestä selaimesta ilman rajoituksia</string>
+    <string name="screen_setup">Näytön asetukset</string>
+    <string name="device_hotspot">Laitteen hotspot</string>
+    <string name="scan_code">Skannaa koodi</string>
+    <string name="support">Tuki</string>
+    <string name="finish">Viedä loppuun</string>
+    <string name="our_policies">Käytäntömme</string>
+    <string name="privacy_policy_text">Yksityisyytesi suojaaminen on meille tärkeää. Toivomme, että seuraava lausunto auttaa sinua ymmärtämään, kuinka käsittelemme henkilökohtaisia tunnistetietoja, joita saatat ajoittain toimittaa meille Internetin kautta (Google Play -alusta).\n\nYleensä. emme kerää sinulta henkilökohtaisia tunnistetietoja, kun lataat Android-sovelluksiamme. Tarkemmin sanottuna emme vaadi kuluttajien käyntejä sovelluksessamme, meillä ei edes ole palvelinta tällaisten henkilökohtaisten tunnistetietojen tallentamiseen.\n\nScreen Mirroring käyttää Facebookia mainosten tarjoajana. Facebook haluaa näyttää sinulle osuvia mainoksia. Saat lisätietoja osoitteesta\nhttps://m.facebook.com/ads/ad_choices.\n\nAinoa tilanne, jossa voimme saada pääsyn henkilökohtaisiin tunnistetietoihisi, on, kun päätät lähettää meille palautetta sähköpostitse tai ilmoittaa meille virheestä. raportti. Henkilökohtaiset tunnistetiedot, jotka voimme saada sinulta tässä tilanteessa, rajoittuvat tiukasti vain nimeesi, sähköpostiosoitteeseesi ja kyselyvastaukseesi.\n\nYllä olevassa tilanteessa takaamme, että henkilökohtaisia tunnistetietojasi käytetään vain yhteydenottoon ja palveluidemme parantamiseen. Emme koskaan käytä tällaisia tietoja (esim. nimeäsi ja sähköpostiosoitettasi_ mihinkään muihin tarkoituksiin, kuten tuotteidemme edelleen markkinointiin tai henkilötietojesi paljastamiseen kolmannelle osapuolelle kaupallisen hyödyn saamiseksi.\n\nOn huomattava, että onko tai Palautteen tai virheilmoituksen lähettämättä jättäminen meille on täysin vapaaehtoinen aloite omasta päätöksestäsi. Jos olet huolissasi henkilökohtaisten tunnistetietojen väärinkäytöstä tai haluat lisätietoja tietosuojakäytännöstämme ja sen merkityksestä, lähetä meille sähköpostia osoitteessa screenmirroring.feedback@gmail.com, pyrimme antamaan selkeät vastaukset kysymyksiisi ajoissa.</string>
+    <string name="please_write_your_feedback">Kirjoita palautteesi</string>
+    <string name="system_info">Järjestelmätietosi lähetetään Screen Mirroring -tekniikan osastolle</string>
+    <string name="send">Lähettää</string>
+    <string name="provide_feedback">antaa palautetta</string>
+    <string name="invalid_email_provided">Virheellinen sähköpostiosoite annettu</string>
+    <string name="check_your_internet_connection">Tarkista Internet-yhteytesi</string>
+    <string name="type_here">Kirjoita tähän…</string>
+    <string name="enter_your_email_optional">Kirjoita sähköpostiosoitteesi (valinnainen)</string>
+    <string name="enjoy_the_app">Nautitko sovelluksesta?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Arvioi kokemuksesi näytön\npeilaussovelluksella.</string>
+    <string name="not_now">Ei nyt</string>
+    <string name="feedback">Palaute:</string>
+    <string name="model">Malli:</string>
+    <string name="brand">Brändi:</string>
+    <string name="os_version">Käyttöjärjestelmän versio:</string>
+    <string name="manufacturer">Valmistaja:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Lähetä postia</string>
+    <string name="select_picture">Valitse Kuva</string>
+    <string name="help_center">Ohjekeskus</string>
+    <string name="question_1">Puhelimeni jumiutuu "Yhdistetään"-kohtaan, kun se \nmuodostaa pariliitoksen television kanssa.</string>
+    <string name="question_2">Se toimi minulla ennen, mutta se \nei toimi nyt.</string>
+    <string name="question_3">Se osoittaa, että laitettani \nei tueta.</string>
+    <string name="question_4">Televisioni on vanha televisio, \njoka ei tue wi-fiä.</string>
+    <string name="question_5">Television kuva on musta, mutta \nääni kuuluu.</string>
+    <string name="question_6">Yhteys katkeaa hetken \nkuluttua.</string>
+    <string name="question_7">Ovatko henkilökohtaiset tietoni tai \nmobiilitietoni täysin turvassa?</string>
+    <string name="q_answer_1_1">Käynnistä älypuhelimen Wi-Fi uudelleen ja katso, onko yhteys onnistunut.</string>
+    <string name="q_answer_1_2">Sammuta televisio ja irrota myös sen virtajohto pistorasiasta. Odota 1 minuutti ja käynnistä televisio uudelleen.</string>
+    <string name="q_answer_1_3">Lyhennä puhelimen ja television välistä etäisyyttä. Ota se läheltä.</string>
+    <string name="q_answer_2_1">Jos se on toiminut aiemmin, sitä voidaan ehdottomasti käyttää uudelleen.</string>
+    <string name="q_answer_2_2">Useimmat yhteysongelmat voidaan ratkaista käynnistämällä laitteet uudelleen. Käynnistä vain puhelin ja televisio uudelleen. Yritä uudelleen noudattamalla tavallista yhteysprosessia.</string>
+    <string name="q_answer_3_1">Tämä tarkoittaa, että puhelimesi ei itse tue näytön peilaustoimintoa.</string>
+    <string name="q_answer_3_2">XCastilla voit suoratoistaa videota, ääntä ja valokuvia televisioon. XCastin avulla voit tehdä muita asioita puhelimellasi suoratoiston aikana televisioon.</string>
+    <string name="q_answer_4_1">Jos televisiosi tukee HDMI-liitäntää, suosittelemme ulkoisen vastaanottimen ostamista näytön peilausta varten. Kuten Chromecast, Anycast jne.</string>
+    <string name="q_answer_5_1">Osa sisällöstä on tekijänoikeussuojattua, eikä sitä voida näyttää kolmannen osapuolen laitteilla, kuten Netflix, Disney Plus jne.</string>
+    <string name="q_answer_5_2">Voit ladata videon tai etsiä samaa resurssia muista sovelluksista kokeillaksesi.</string>
+    <string name="q_answer_6_1">Voit ottaa Smart Connectin käyttöön Wi-Fi-asetuksistasi. Se etsii jatkuvasti parempia Wi-Fi-yhteyksiä ja muodostaa aina yhteyden edestakaisin.</string>
+    <string name="q_answer_6_2">Varmista, että matkapuhelimen ja television Wi-Fi on SAM ja paras signaali.</string>
+    <string name="q_answer_7_1">Emme seuraa tai kerää tietoja sinusta ja matkapuhelimestasi. Voit suoratoistaa näytön ilman huolta.</string>
+    <string name="q_answer_7_2">Järjestelmä saattaa varoittaa sinua turvallisuusriskistä ennen näytön peilausta. Tämä on vain tavallinen muistutus, se tulee olemaan</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">ASENTAA</string>
+    <string name="install_small">Asentaa</string>
+    <string name="manual">Manuaalinen</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Varmista, että puhelimesi ja televisiosi on yhdistetty\nsamaan Wi-Fi-verkkoon.</string>
+    <string name="hd_streaming">HD-suoratoisto</string>
+    <string name="smart_devices">älylaitteet</string>
+    <string name="private_browser">Yksityinen selain</string>
+    <string name="effects">Tehosteet</string>
+    <string name="slider">Liukusäädin</string>
+    <string name="search_or_type_web_address">Hae tai kirjoita verkko-osoite</string>
+    <string name="install_2">Asentaa</string>
+    <string name="bookmark">Kirjanmerkki</string>
+    <string name="downloads">Lataukset</string>
+    <string name="download">ladata</string>
+    <string name="favorites">Suosikit</string>
+    <string name="favorite">Suosikki</string>
+    <string name="history">Historia</string>
+    <string name="share_pdf">Jaa pdf</string>
+    <string name="copy_url">Kopioi URL-osoite</string>
+    <string name="share_app">Jaa sovellus</string>
+    <string name="share_url">Jaa url</string>
+    <string name="exit">Poistu</string>
+    <string name="new_tab">Uusi välilehti</string>
+    <string name="google">Google</string>
+    <string name="startpage">Aloitussivu</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Mukautettu hakukone</string>
+    <string name="add_shortcut_to_home">Lisää pikakuvake kotiin</string>
+    <string name="save_screenshot">Tallenna kuvakaappaus</string>
+    <string name="add_to_bookmark">Lisää kirjanmerkkiin</string>
+    <string name="save_as_pdf">Tallenna pdf-muodossa</string>
+    <string name="save_action">Tallenna toiminto</string>
+    <string name="add_to_favorite">Lisää suosikkeihin</string>
+    <string name="search_engine">Hakukone</string>
+    <string name="browser_exit_body">Haluatko varmasti poistua selaimesta</string>
+    <string name="exit_browser">Poistu selaimesta</string>
+    <string name="custom_user_agent">Mukautettu käyttäjäagentti</string>
+    <string name="start_control">Käynnistä ohjaus</string>
+    <string name="data_control">Tietojen hallinta</string>
+    <string name="app_settings">Sovelluksen asetukset</string>
+    <string name="browser_settings">Selaimen asetukset</string>
+    <string name="behavior_ui">Käyttäytyminen/käyttöliittymä</string>
+    <string name="clear_cache">Tyhjennä välimuisti</string>
+    <string name="clear_history">Tyhjennä historia</string>
+    <string name="clear_browsing_history">Tyhjennä selaushistoria</string>
+    <string name="clear_all_cache">Tyhjennä kaikki välimuisti</string>
+    <string name="clear_database_body">Tyhjennä "indeksoidut tietokannat" ja "paikalliset\datakannat"</string>
+    <string name="clear_cookies_body">Jos tämä on käytössä, kaikki evästeet poistetaan. Myös\nluotettujen verkkosivustojen evästeet</string>
+    <string name="clear_databases">Tyhjennä tietokannat</string>
+    <string name="clear_cookies">Poista evästeet</string>
+    <string name="clear_when_application_exit">Tyhjennä, kun sovellus suljetaan</string>
+    <string name="clear_when_application_exit_body">Joka kerta kun lopetat, kaikki yllä olevat tarkistetut tiedot\npoistetaan</string>
+    <string name="image">Kuva</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Keksit</string>
+    <string name="reopen_last_tab">Avaa viimeinen välilehti uudelleen</string>
+    <string name="confirm_tab_close">Vahvista välilehden sulkeminen</string>
+    <string name="confirm_browser_exit">Vahvista selaimen poistuminen</string>
+    <string name="position">asema</string>
+    <string name="first_toolbar">Ensimmäinen työkalupalkki</string>
+    <string name="hide_toolbar">Piilota työkalupalkki</string>
+    <string name="toolbar">Työkalupalkki</string>
+    <string name="bookmarks">Kirjanmerkit</string>
+    <string name="edit">Muokata</string>
+    <string name="today">Tänään</string>
+    <string name="the_last_hour">Viimeinen tunti</string>
+    <string name="last_week">Viime viikko</string>
+    <string name="last_month">Viime kuukausi</string>
+    <string name="delete_all_history">Poista koko historia</string>
+    <string name="copied">kopioitu</string>
+    <string name="share_ss">Jaa SS</string>
+    <string name="file_manager">Tiedostonhallinta</string>
+    <string name="search_on">Haku päällä</string>
+    <string name="add_shortcut">Lisää pikakuvake</string>
+    <string name="tab_exit">Välilehti Poistu</string>
+    <string name="do_you_want_to_close">Haluatko sulkea</string>
+    <string name="download_complete_share_image">Lataus valmis. Jaa kuva</string>
+    <string name="update">Päivittää</string>
+    <string name="unfavorite">Inhokki</string>
+    <string name="no_input_provided">Ei syötettä</string>
+    <string name="input">Syöte</string>
+    <string name="website_link">Verkkosivuston linkki</string>
+    <string name="for_you">Sinulle</string>
+    <string name="website">Verkkosivusto:</string>
+    <string name="url">URL-osoite:</string>
+    <string name="date">Päivämäärä</string>
+    <string name="no_site_loaded">Sinulla ei ole ladattua verkkosivustoa</string>
+    <string name="more_then_5_images_can_not_be_picked">Yli viittä kuvaa ei voi valita</string>
+</resources>

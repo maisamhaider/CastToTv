@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--kirghiz-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">"Жайгашкан жер "</string>
+    <string name="connection_close_confirm">Учурдагы VPN туташуусун жокко чыгаргыңыз келеби?</string>
+    <string name="yes">ООБА</string>
+    <string name="no">ЖОК</string>
+    <string name="yes_2">Ооба</string>
+    <string name="no_2">Жок</string>
+    <string name="select_images">Сүрөттөрдү тандаңыз</string>
+    <string name="tabs">Өтмөктөр</string>
+    <string name="share">Бөлүшүү</string>
+    <string name="save">Сактоо</string>
+    <string name="more">Дагы</string>
+    <string name="ok">макул</string>
+    <string name="cancel">Жокко чыгаруу</string>
+    <string name="favorite_site">Браузердин\nбашында жүктөлгөн демейки веб-сайтты өзгөртүңүз</string>
+    <string name="custom_search_engine_body">Ыңгайлаштырылган издөө url кошуу, ошондой эле издөө провайдери катары “Ыңгайлаштырылган\nиздөө каражатын” тандаңыз</string>
+    <string name="search_engine_body">Өзүңүзгө жаккан издөө каражатын тандаңыз же\nыңгайлаштырылганын орнотуңуз</string>
+    <string name="data_control_body">Серепчиңиздин дайындарын тазалаңыз же колдонмодон чыкканыңызда\nкайсы дайындар тазаланарын чечиңиз</string>
+    <string name="start_control_body">Браузердин кайсы компоненттери\nбашталаарын чечиңиз</string>
+    <string name="behavior_ui_body">Колдонмонун жүрүм-турумун жана интерфейсин\nөз каалооңузга ылайык өзгөртүңүз</string>
+    <string name="book_mark_body">Чыпка диалогун көрсөтүү үчүн серептөөдөгү кыстарма сөлөкөтүн көпкө басып туруңуз. Кайсы чыпкаларды колдоно турганыңызды чечиңиз</string>
+    <string name="app_settings_body">Браузердин жөндөөлөрү, анда сиз Android версияңызга жараша уруксат бере аласыз.</string>
+    <string name="start_control_image_body">Тармак сүрөттөрүн иштетиңиз, өчүрүү\nмобилдик дайындарды сактоо жана вебсайтты тезирээк жүктөө үчүн пайдалуу болушу мүмкүн</string>
+    <string name="start_control_location_body">Вебсайттарга жайгашкан жериңизге кирүүгө уруксат бериңиз. Кээ бир\nвебсайттарга {google, maps for nav) муну иштетүү керек</string>
+    <string name="start_control_history_body">Кирген веб-сайттардын тарыхын сактаңыз</string>
+    <string name="start_control_java_script_body">JavaScript иштетүү. Көптөгөн веб-сайттарга иштеши үчүн\nJavaScript керек. Бирок алар эс алышат жана кол салуу үчүн колдонсо болот</string>
+    <string name="start_control_cookies_body">Cookie файлдарын иштетүү. Cookies кичинекей текст файлдары,
+түзмөгүңүздө сакталган. Вебсайттар колдонушат
+аларды, мисалы, колдонуучунун жөндөөлөрүн сактоо үчүн. Бирок
+алар жеке колдонуучуну чогултуу үчүн да колдонулушу мүмкүн
+маалыматтар. Үчүнчү тараптын кукилери ар дайым өчүрүлгөн.</string>
+    <string name="confirmation_browser_exit_body">Браузерди\nжабууда ырастоо диалогу</string>
+    <string name="confirmation_tab_close_body">Өтмөктү жабууда ырастоо диалогу</string>
+    <string name="confirmation_reopen_last_body">Серепчиден чыгуунун ордуна акыркы өтмөк жабылганда жаңы өтмөктү кайра ачыңыз</string>
+    <string name="hide_toolbar_body">Веб-сайтты сыдырып жатканда экранды толугу менен колдонуңуз, эгерде артка баскычын бассаңыз, толук экран режиминен чыгасыз</string>
+    <string name="images">Сүрөттөр</string>
+    <string name="videos">Videos</string>
+    <string name="web_browser">Веб браузер</string>
+    <string name="image_slider">Image Slider</string>
+    <string name="next">Кийинки</string>
+    <string name="previous">Мурунку</string>
+    <string name="help">Жардам</string>
+    <string name="settings">Орнотуулар</string>
+    <string name="language">Тилдер</string>
+    <string name="more_app">Көбүрөөк колдонмолор</string>
+    <string name="rate_us">Бизди баалаңыз</string>
+    <string name="screen_mirroring">Экранды чагылдыруу</string>
+    <string name="home_screen_text">Телефонуңуз менен сыналгыңыз бир Wi-Fi тармагына туташып турганын текшериңиз.</string>
+    <string name="wifi_connected">Wi-Fi туташкан</string>
+    <string name="wifi_disconnected">Wi-Fi ажыратылды</string>
+    <string name="general">Генерал</string>
+    <string name="communicate">Байланыш</string>
+    <string name="send_feedback">Пикир жөнөтүү</string>
+    <string name="tutorial">Окуу куралы</string>
+    <string name="how_to_use">Кантип колдонуу керек?</string>
+    <string name="streaming">Агым</string>
+    <string name="streaming_quality">Агым сапаты</string>
+    <string name="auto_stop">Авто токтотуу</string>
+    <string name="auto_minimize">Автоматтык кичирейтүү</string>
+    <string name="advance">Алдын ала</string>
+    <string name="orientation_mode">Багыттоо режими</string>
+    <string name="auto_stop_body_text">Максатка туташуу\nжоголгондо видеону токтотуңуз</string>
+    <string name="auto_minimize_body_text">Күзгүртүп баштаганда колдонмону жашыруу</string>
+    <string name="casting_orientation_body_text">Кастинг багыты</string>
+    <string name="mirroring_mode">Күзгү режими</string>
+    <string name="screen_mirroring_privacy_policy">Экранды чагылдырган купуялык саясаты</string>
+    <string name="privacy_policy">Купуялык саясаты</string>
+    <string name="supporting_devices">Колдоочу түзмөктөр</string>
+    <string name="see_which_devices_support_mirroring">Кайсы түзмөктөр чагылдырууну колдойт</string>
+    <string name="color_theme">Түс темасы</string>
+    <string name="dark">Караңгы</string>
+    <string name="light">Жарык</string>
+    <string name="auto">Авто</string>
+    <string name="select_language">Тил тандаңыз</string>
+    <string name="close">жакын</string>
+    <string name="images_slider">Слайдер суреттері</string>
+    <string name="screen_mirror">Screen Mirror</string>
+    <string name="tutorial_screen_setup_body">Сиздин максаттуу түзмөгүңүз бул түзмөк менен бир Wi-Fi тармагында болушу керек, анткени Screen Mirror экраныңызды өткөрүп жатат.</string>
+    <string name="tutorial_screen_mirror_body">Түзмөгүңүздүн экранын Wi-Fi аркылуу компьютериңизге, ноутбукуңузга же планшетиңизге агылтыңыз.</string>
+    <string name="tutorial_device_hotspot_body">Сиз ошондой эле түзмөгүңүздүн хотспотту (тетеринг режими) колдонуп, максаттуу аппаратыңызды хотспотуңузга туташтыра аласыз.</string>
+    <string name="tutorial_scan_code_body">Максаттуу түзмөгүңүздө сайтты ачыңыз. QR кодун сканерлөө менен туташуу конфигурациясы өткөрүлүп, чагылдыруу башталат.</string>
+    <string name="tutorial_support_body">Сураныч, Screen Mirror туура орнотулганда гана иштей турганын эске алыңыз. Screen Mirror сиздин экраныңызды өткөрөт, бирок түзмөгүңүздүн аудио сигналдарын эмес. Эгер кандайдыр бир көйгөйгө туш болсоңуз, биз менен байланышыңыз.</string>
+    <string name="walk_through_body_1">Эч кандай артта калуусуз, жылмакай жана жогорку сапаттагы агымдан ырахат алыңыз</string>
+    <string name="walk_through_body_2">Каалаган акылдуу түзмөккө туташыңыз жана каалаган экранда\nшоудон ырахат алыңыз</string>
+    <string name="walk_through_body_3">Колдонмодогу жеке браузерден эч кандай чектөөсүз ырахат алыңыз</string>
+    <string name="screen_setup">Экранды орнотуу</string>
+    <string name="device_hotspot">Түзмөктүн Hotspot</string>
+    <string name="scan_code">Кодду сканерлөө</string>
+    <string name="support">Колдоо</string>
+    <string name="finish">Бүтүрүү</string>
+    <string name="our_policies">Биздин саясаттар</string>
+    <string name="privacy_policy_text">Сиздин купуялыгыңызды коргоо биз үчүн маанилүү. Төмөнкү билдирүү жеке идентификациялык маалыматка кандай мамиле кылаарыбызды түшүнүүгө жардам берет деп үмүттөнөбүз, сиз бизге Интернет (Google Play платформасы) аркылуу кээде берип турсаңыз болот.\n\nЖалпысынан. сиз биздин Android тиркемелерибизди жүктөп жатканда биз сизден эч кандай PII чогултпайбыз. Тактап айтканда, биздин тиркемеге керектөөчүлөрдүн баруусун талап кылбайбыз, атүгүл бизде мындай PII сактай турган Сервер жок.\n\nЭкранды чагылдыруу Facebook\'ту жарнамаларды камсыздоочу катары колдонот. Facebook сизге ылайыктуу жарнамаларды көрсөткүсү келет. Көбүрөөк маалымат алуу үчүн,\nhttps://m.facebook.com/ads/ad_choices дарегине кириңиз.\n\nСизге PII кирүү мүмкүнчүлүгүнө ээ боло турган жагдай - бул жеке пикириңизди электрондук почта аркылуу жөнөтүүнү же ката жөнүндө бизге билдирүүнү чечкенде. отчет. Мындай кырдаалда биз сизден ала турган PII сиздин аты-жөнүңүз, электрондук почта дарегиңиз жана сурамжылоонун жообу менен гана чектелет.\n\nЖогорудагы жагдайда, PII сиз менен байланышуу жана кызматтарыбызды жакшыртуу үчүн гана колдонулаарына кепилдик беребиз. Биз мындай маалыматты эч качан (мисалы, сиздин атыңызды жана электрондук почта дарегиңизди_ башка максаттар үчүн, мисалы, биздин өнүмдөрдү андан ары сатуу же жеке маалыматыңызды үчүнчү тарапка коммерциялык пайда үчүн ачып берүү үчүн колдонбойбуз.\n\nБелгилей кетчү нерсе, же бизге пикириңизди же мүчүлүштүк тууралуу кабарды жөнөтпөө - бул сиздин жеке чечимиңиз боюнча толугу менен ыктыярдуу демилге. Эгерде сиз PII\'ңиз туура эмес колдонулуп жатат деп кооптонсоңуз же купуялык саясатыбыз жана анын мааниси жөнүндө кошумча маалымат алгыңыз келсе, бизге электрондук кат жөнөтүңүз. screenmirroring.feedback@gmail.com дареги боюнча, биз сиздин суроолоруңузга өз убагында так жооп берүүгө аракет кылабыз.</string>
+    <string name="please_write_your_feedback">Пикириңизди жазыңыз</string>
+    <string name="system_info">Сиздин тутум маалыматыңыз Screen Mirroring технология бөлүмүнө жөнөтүлөт</string>
+    <string name="send">Жөнөтүү</string>
+    <string name="provide_feedback">пикир берүү</string>
+    <string name="invalid_email_provided">Жараксыз электрондук почта берилген</string>
+    <string name="check_your_internet_connection">Интернет байланышыңызды текшериңиз</string>
+    <string name="type_here">бул жерге териңиз…</string>
+    <string name="enter_your_email_optional">Электрондук почтаңызды киргизиңиз (милдеттүү эмес)</string>
+    <string name="enjoy_the_app">Колдонмо жактыбы?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Экранды чагылдыруу колдонмосу аркылуу тажрыйбаңызды баалаңыз.</string>
+    <string name="not_now">Азыр эмес</string>
+    <string name="feedback">Пикир:</string>
+    <string name="model">Модел:</string>
+    <string name="brand">Бренд:</string>
+    <string name="os_version">OS версиясы:</string>
+    <string name="manufacturer">Өндүрүүчү:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Почта жөнөтүү</string>
+    <string name="select_picture">Сүрөт тандаңыз</string>
+    <string name="help_center">Жардам борбору</string>
+    <string name="question_1">Менин телефонум сыналгы менен жупташтырууда "Туташууда" тыгылып калат.</string>
+    <string name="question_2">Бул мурун мен үчүн иштеген, бирок \nазыр иштебейт.</string>
+    <string name="question_3">Бул менин аппаратым колдоого алынбаганын \nкөрсөтүп турат.</string>
+    <string name="question_4">Менин сыналгым эски сыналгы жана \nwi-fi колдобойт.</string>
+    <string name="question_5">Сыналгыдагы сүрөт кара, бирок үнү \nугулуп турат.</string>
+    <string name="question_6">Туташуу бир аздан кийин \nүзүлөт.</string>
+    <string name="question_7">Менин жеке маалыматым же мобилдик маалыматтарым толугу менен коопсузбу?</string>
+    <string name="q_answer_1_1">Смарт телефондун Wi-Fi тармагын кайра күйгүзүңүз жана байланыш ийгиликтүү болгонун көрүңүз.</string>
+    <string name="q_answer_1_2">Телевизорду өчүрүп, анын кубат шнурун да розеткадан чыгарыңыз. 1 мүнөт күтүп, сыналгыны өчүрүп күйгүзүңүз.</string>
+    <string name="q_answer_1_3">Телефонуңуз менен сыналгыңыздын ортосундагы аралыкты кыскартыңыз. Аны жакын алып.</string>
+    <string name="q_answer_2_1">Эгер ал мурда иштеген болсо, анда аны кайра колдонсо болот.</string>
+    <string name="q_answer_2_2">Көпчүлүк туташуу көйгөйлөрүн түзмөктөрдү кайра күйгүзүү менен чечсе болот. Жөн гана телефонуңузду жана сыналгыңызды өчүрүп күйгүзүңүз, кайра аракет кылуу үчүн кадимки туташуу процессин аткарыңыз.</string>
+    <string name="q_answer_3_1">Бул сиздин телефонуңуздун өзү экранды чагылдыруу функциясын колдобой тургандыгын билдирет.</string>
+    <string name="q_answer_3_2">Видеону, аудиону жана сүрөттү сыналгыга чыгаруу үчүн XCast колдоно аласыз. XCast менен телевизорго чыгарып жатканда телефонуңуз менен башка нерселерди кыла аласыз.</string>
+    <string name="q_answer_4_1">Эгерде сыналгыңыз HDMI интерфейсин колдосо, экранды чагылдыруу үчүн тышкы ресиверди сатып алууну сунуштайбыз. Мисалы, Chromecast, Anycast ж.б.</string>
+    <string name="q_answer_5_1">Кээ бир мазмун автордук укукту коргоону камтыйт жана үчүнчү тараптын түзмөктөрүндө көрсөтүлбөйт, мисалы, Netflix, Disney Plus ж.б.</string>
+    <string name="q_answer_5_2">Сынап көрүү үчүн видеону жүктөп алсаңыз же башка колдонмолордон ошол эле ресурсту издесеңиз болот.</string>
+    <string name="q_answer_6_1">Сиз Wi-Fi жөндөөлөрүңүздө Smart Connectти күйгүзсөңүз болот. Ал дайыма жакшыраак Wi-Fi туташууларын издеп, ар дайым алдыга-артка туташат.</string>
+    <string name="q_answer_6_2">Уюлдук телефондун жана телевизордун Wi-Fi SAM жана эң жакшы сигнал экенин текшериңиз.</string>
+    <string name="q_answer_7_1">Биз сизге жана сиздин уюлдук телефонуңузга мониторинг жүргүзбөйбүз жана эч кандай маалыматты чогултпайбыз. Сиз эч кандай тынчсызданбастан экраныңызды чыгара аласыз.</string>
+    <string name="q_answer_7_2">Система экранды чагылдыруудан мурун коопсуздук коркунучу бар экенин эскертиши мүмкүн. Бул жөн гана кезектеги эскертүү, ошондой болот</string>
+    <string name="wi_fi">WIFI</string>
+    <string name="miracast">МИРА КАСТ</string>
+    <string name="install">ОРНОТУУ</string>
+    <string name="install_small">Орнотуу</string>
+    <string name="manual">Manual</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Телефонуңуз менен сыналгыңыз бир Wi-Fi тармагына\nтуташып турганын текшериңиз.</string>
+    <string name="hd_streaming">HD агым</string>
+    <string name="smart_devices">акылдуу түзмөктөр</string>
+    <string name="private_browser">Жеке Браузер</string>
+    <string name="effects">Эффекттер</string>
+    <string name="slider">Слайдер</string>
+    <string name="search_or_type_web_address">Издөө же веб даректи териңиз</string>
+    <string name="install_2">Орнотуу</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="downloads">Жүктөлүүлөр</string>
+    <string name="download">Жүктөп алуу</string>
+    <string name="favorites">Сүйүктүүлөр</string>
+    <string name="favorite">Сүйүктүү</string>
+    <string name="history">тарых</string>
+    <string name="share_pdf">Pdf бөлүшүү</string>
+    <string name="copy_url">URL көчүрүү</string>
+    <string name="share_app">Колдонмону бөлүшүү</string>
+    <string name="share_url">URL бөлүшүү</string>
+    <string name="exit">чыгуу</string>
+    <string name="new_tab">Жаңы өтмөк</string>
+    <string name="google">Гугл</string>
+    <string name="startpage">StartPage</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Ыңгайлаштырылган издөө системасы</string>
+    <string name="add_shortcut_to_home">Үйгө кыска жол кошуу</string>
+    <string name="save_screenshot">Скриншотту сактоо</string>
+    <string name="add_to_bookmark">Кыстармага кошуу</string>
+    <string name="save_as_pdf">pdf катары сактоо</string>
+    <string name="save_action">Save Action</string>
+    <string name="add_to_favorite">Сүйүктүүлөргө кошуу</string>
+    <string name="search_engine">Search Engine</string>
+    <string name="browser_exit_body">Браузерден чын эле чыккыңыз келеби?</string>
+    <string name="exit_browser">Браузерден чыгуу</string>
+    <string name="custom_user_agent">Ыңгайлаштырылган колдонуучу агент</string>
+    <string name="start_control">Баштоо Control</string>
+    <string name="data_control">Маалыматтарды көзөмөлдөө</string>
+    <string name="app_settings">Колдонмонун жөндөөлөрү</string>
+    <string name="browser_settings">Браузер орнотуулары</string>
+    <string name="behavior_ui">Behavior/UI</string>
+    <string name="clear_cache">Кэшти тазалоо</string>
+    <string name="clear_history">Тарыхты тазалоо</string>
+    <string name="clear_browsing_history">Серептөө таржымалын тазалоо</string>
+    <string name="clear_all_cache">Бардык кэшти тазалоо</string>
+    <string name="clear_database_body">“индекстелген маалымат базаларын” жана “жергиликтүү\мыйзам базаларын” тазалоо</string>
+    <string name="clear_cookies_body">Эгер иштетилсе, бардык cookie файлдары жок кылынат. Ошондой эле\nИшенимдүү веб-сайттардын кукилери</string>
+    <string name="clear_databases">Маалымат базаларын тазалоо</string>
+    <string name="clear_cookies">Cookie файлдарын тазалоо</string>
+    <string name="clear_when_application_exit">Колдонмо чыкканда тазалоо</string>
+    <string name="clear_when_application_exit_body">Жогорудагы текшерилген дайындардын бардыгы \nчыккан сайын өчүрүлөт</string>
+    <string name="image">Сүрөт</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Cookies</string>
+    <string name="reopen_last_tab">Акыркы өтмөктү кайра ачыңыз</string>
+    <string name="confirm_tab_close">Өтмөктү жабууну ырастоо</string>
+    <string name="confirm_browser_exit">Браузерден чыгууну ырастаңыз</string>
+    <string name="position">Позиция</string>
+    <string name="first_toolbar">Биринчи куралдар панели</string>
+    <string name="hide_toolbar">Куралдар тилкесин жашыруу</string>
+    <string name="toolbar">Куралдар панели</string>
+    <string name="bookmarks">Кыстармалар</string>
+    <string name="edit">Түзөтүү</string>
+    <string name="today">Бүгүн</string>
+    <string name="the_last_hour">Акыркы саат</string>
+    <string name="last_week">Акыркы аптада</string>
+    <string name="last_month">Өткөн айда</string>
+    <string name="delete_all_history">Бардык тарыхты жок кылуу</string>
+    <string name="copied">көчүрүлгөн</string>
+    <string name="share_ss">SS бөлүшүү</string>
+    <string name="file_manager">Файл менеджери</string>
+    <string name="search_on">Издөө жөнүндө</string>
+    <string name="add_shortcut">Кыска жол кошуу</string>
+    <string name="tab_exit">Өтмөк чыгуу</string>
+    <string name="do_you_want_to_close">Жабуу келеби</string>
+    <string name="download_complete_share_image">Жүктөп алуу аяктады. Сүрөттү бөлүшүү</string>
+    <string name="update">Жаңыртуу</string>
+    <string name="unfavorite">Сүйүктүү эмес</string>
+    <string name="no_input_provided">Киргизүү каралган эмес</string>
+    <string name="input">Киргизүү</string>
+    <string name="website_link">Вебсайт шилтемеси</string>
+    <string name="for_you">Сен үчүн</string>
+    <string name="website">Вебсайт:</string>
+    <string name="url">Url:</string>
+    <string name="date">Дата</string>
+    <string name="no_site_loaded">Сизде жүктөлгөн вебсайт жок</string>
+    <string name="more_then_5_images_can_not_be_picked">Бештен ашык сүрөттү тандоо мүмкүн эмес</string>
+</resources>

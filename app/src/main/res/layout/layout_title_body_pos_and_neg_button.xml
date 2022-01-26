@@ -19,6 +19,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="w,10:4"
             app:layout_constraintEnd_toEndOf="parent"
+            app:cardBackgroundColor="?attr/colorPrimary"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 

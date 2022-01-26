@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Swahili-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">Je, ungependa kughairi Muunganisho wa sasa wa VPN?</string>
+    <string name="yes">NDIYO</string>
+    <string name="no">HAPANA</string>
+    <string name="yes_2">Ndiyo</string>
+    <string name="no_2">Hapana</string>
+    <string name="select_images">Chagua Picha</string>
+    <string name="tabs">Vichupo</string>
+    <string name="share">Shiriki</string>
+    <string name="save">Hifadhi</string>
+    <string name="more">Zaidi</string>
+    <string name="ok">sawa</string>
+    <string name="cancel">Ghairi</string>
+    <string name="favorite_site">Badilisha tovuti chaguo-msingi inayopakia\nkuanza kwa Kivinjari</string>
+    <string name="custom_search_engine_body">Ongeza url maalum ya utafutaji pia chagua "Custom\search engine" kama mtoaji wa utafutaji</string>
+    <string name="search_engine_body">Chagua mtambo wa utafutaji unaoupendelea au\nweke maalum</string>
+    <string name="data_control_body">Futa data ya kivinjari chako au uamue ni data gani\itafutwa ukiondoka kwenye programu</string>
+    <string name="start_control_body">Amua ni vipengele vipi vya kivinjari\nitaanza kutumika</string>
+    <string name="behavior_ui_body">Badilisha tabia na matumizi ya programu ili\nkulingana na mapendeleo yako</string>
+    <string name="book_mark_body">Ili kuonyesha kidirisha cha kichujio, bonyeza kwa muda mrefu ikoni ya alamisho katika muhtasari. Amua ni vichujio vipi utatumia</string>
+    <string name="app_settings_body">Mipangilio ya kivinjari, hapo unaweza kutegemea\toleo lako la android kutoa ruhusa.</string>
+    <string name="start_control_image_body">Washa picha za Mtandao, Kuzima kunaweza kuwa muhimu\kuhifadhi data ya mtandao wa simu na kupakia tovuti haraka zaidi</string>
+    <string name="start_control_location_body">Ruhusu tovuti kufikia eneo lako. Baadhi\ntovuti za {google, ramani za nav) zinahitaji kuwashwa</string>
+    <string name="start_control_history_body">Hifadhi historia ya tovuti zilizotembelewa</string>
+    <string name="start_control_java_script_body">Washa JavaScript. Tovuti nyingi zinahitaji\nJavascript kwa utendakazi wao. Lakini ni\pia zinapumzika na zinaweza kutumika kwa mashambulizi</string>
+    <string name="start_control_cookies_body">Washa Vidakuzi. Vidakuzi ni faili ndogo za maandishi,
+ambazo zimehifadhiwa kwenye kifaa chako. Wavuti hutumia
+kwa mfano kuhifadhi mipangilio ya mtumiaji. Lakini
+zinaweza pia kutumika kukusanya mtumiaji binafsi
+data. Vidakuzi vya watu wengine huzimwa kila wakati.</string>
+    <string name="confirmation_browser_exit_body">Kidirisha cha uthibitishaji wakati\kufunga kivinjari</string>
+    <string name="confirmation_tab_close_body">Kidirisha cha uthibitishaji wakati wa kufunga kichupo</string>
+    <string name="confirmation_reopen_last_body">Fungua upya kichupo kipya kichupo cha mwisho kitakapofungwa badala ya kutoka kwenye kivinjari</string>
+    <string name="hide_toolbar_body">Tumia skrini nzima unapovinjari tovuti ukibonyeza kitufe cha nyuma utaacha hali ya skrini nzima</string>
+    <string name="images">Picha</string>
+    <string name="videos">Video</string>
+    <string name="web_browser">Kivinjari cha Wavuti</string>
+    <string name="image_slider">Kitelezi cha Picha</string>
+    <string name="next">Inayofuata</string>
+    <string name="previous">Iliyotangulia</string>
+    <string name="help">Msaada</string>
+    <string name="settings">Mipangilio</string>
+    <string name="language">Lugha</string>
+    <string name="more_app">Programu Zaidi</string>
+    <string name="rate_us">Tukadirie</string>
+    <string name="screen_mirroring">Kuakisi skrini</string>
+    <string name="home_screen_text">Hakikisha simu na TV yako zimeunganishwa kwenye mtandao sawa wa Wi-Fi.</string>
+    <string name="wifi_connected">Wi-Fi Imeunganishwa</string>
+    <string name="wifi_disconnected">Wi-Fi Imetenganishwa</string>
+    <string name="general">Mkuu</string>
+    <string name="communicate">Wasiliana</string>
+    <string name="send_feedback">Tuma maoni</string>
+    <string name="tutorial">Mafunzo</string>
+    <string name="how_to_use">Jinsi ya kutumia?</string>
+    <string name="streaming">Utiririshaji</string>
+    <string name="streaming_quality">Ubora wa Utiririshaji</string>
+    <string name="auto_stop">Kuacha Otomatiki</string>
+    <string name="auto_minimize">Punguza Kiotomatiki</string>
+    <string name="advance">Mapema</string>
+    <string name="orientation_mode">Hali ya Mwelekeo</string>
+    <string name="auto_stop_body_text">Simamisha video wakati muunganisho wa\kwenye lengo umepotea</string>
+    <string name="auto_minimize_body_text">Ficha programu wakati uakisi unapoanza</string>
+    <string name="casting_orientation_body_text">Mwelekeo wa utumaji</string>
+    <string name="mirroring_mode">Hali ya kuakisi</string>
+    <string name="screen_mirroring_privacy_policy">Sera ya faragha ya kuakisi skrini</string>
+    <string name="privacy_policy">Sera ya Faragha</string>
+    <string name="supporting_devices">Vifaa vya Kusaidia</string>
+    <string name="see_which_devices_support_mirroring">Angalia ni vifaa vipi vinavyotumia uakisi</string>
+    <string name="color_theme">Mandhari ya Rangi</string>
+    <string name="dark">Giza</string>
+    <string name="light">Mwanga</string>
+    <string name="auto">Otomatiki</string>
+    <string name="select_language">Chagua Lugha</string>
+    <string name="close">karibu</string>
+    <string name="images_slider">Picha Slider</string>
+    <string name="screen_mirror">Kioo cha skrini</string>
+    <string name="tutorial_screen_setup_body">Kifaa chako unacholenga lazima kiwe katika mtandao wa Wi-Fi sawa na kifaa hiki, kwa sababu Screen Mirror inatuma skrini yako.</string>
+    <string name="tutorial_screen_mirror_body">Tiririsha skrini ya kifaa chako kupitia Wi-Fi kwenye kompyuta, daftari au kompyuta yako kibao.</string>
+    <string name="tutorial_device_hotspot_body">Unaweza pia kutumia mtandao-hewa wa kifaa chako (hali ya kuunganisha) na kuunganisha kifaa chako lengwa kwenye mtandao-hewa wako.</string>
+    <string name="tutorial_scan_code_body">Fungua tovuti kwenye kifaa unacholenga. Kwa kuchanganua msimbo wa QR usanidi wa muunganisho hupitishwa na uakisi huanza.</string>
+    <string name="tutorial_support_body">Tafadhali fahamu kuwa Kioo cha skrini hufanya kazi tu wakati wa kusanidi kwa usahihi. Kioo cha Skrini husambaza skrini yako, lakini si mawimbi ya sauti ya kifaa chako. Ukikumbana na matatizo yoyote wasiliana nasi.</string>
+    <string name="walk_through_body_1">Furahia utiririshaji laini na wa ubora wa juu\nbila kuchelewa</string>
+    <string name="walk_through_body_2">Unganisha ukitumia kifaa chochote mahiri na ufurahie\nonyesho kwenye skrini yoyote</string>
+    <string name="walk_through_body_3">Furahia kivinjari cha faragha cha ndani ya programu bila vikwazo</string>
+    <string name="screen_setup">Usanidi wa skrini</string>
+    <string name="device_hotspot">Hotspot ya Kifaa</string>
+    <string name="scan_code">Changanua Msimbo</string>
+    <string name="support">Msaada</string>
+    <string name="finish">Maliza</string>
+    <string name="our_policies">Sera zetu</string>
+    <string name="privacy_policy_text">Kulinda faragha yako ni muhimu kwetu. Tunatumahi kuwa taarifa ifuatayo itakusaidia kuelewa jinsi tunavyoshughulikia maelezo ya kibinafsi yanayoweza kutambulika, unaweza kutupa mara kwa mara kupitia Mtandao (mfumo wa Google Play).\n\nKwa ujumla. hatukusanyi PII yoyote kutoka kwako unapopakua programu zetu za Android. Ili kuwa mahususi, hatuhitaji kutembelewa na wateja wa programu yetu, hata hatuna Seva ili kuhifadhi PII kama hiyo.\n\nSkrini ya Kuakisi hutumia Facebook kama mtoaji wa matangazo. Facebook inataka kuonyesha matangazo ambayo yana umuhimu kwako. Kwa maelezo zaidi tafadhali tembelea\nhttps://m.facebook.com/ads/ad_choices.\n\nHali pekee ambayo tunaweza kupata ufikiaji kwako PII ni wakati wewe binafsi utakapoamua kututumia maoni yako kupitia barua pepe au kutupatia hitilafu. ripoti. PII tunayoweza kupata kutoka kwako katika hali hiyo ni jina lako tu, anwani ya barua pepe na jibu la uchunguzi wako pekee.\n\nKatika hali iliyo hapo juu, tunakuhakikishia kuwa wewe PII itatumika tu kuwasiliana nawe na kuboresha huduma zetu. Hatutawahi kutumia taarifa kama hizo (km jina lako na anwani ya barua pepe_ kwa madhumuni mengine yoyote, kama vile kutangaza zaidi bidhaa zetu, au kufichua maelezo yako ya kibinafsi kwa wahusika wengine kwa manufaa ya kibiashara.\n\nInapaswa kuzingatiwa kuwa iwe au kutotutumia maoni yako au ripoti ya hitilafu ni hatua ya hiari kabisa juu ya uamuzi wako mwenyewe. Ikiwa una wasiwasi kuhusu PII yako kutumiwa vibaya, au ikiwa unataka maelezo zaidi kuhusu sera yetu ya faragha na maana yake, tafadhali jisikie huru kututumia barua pepe. katika screenmirroring.feedback@gmail.com, tutajitahidi kutoa majibu ya wazi kwa maswali yako kwa wakati ufaao.</string>
+    <string name="please_write_your_feedback">Tafadhali andika maoni yako</string>
+    <string name="system_info">Maelezo ya Mfumo wako yatatumwa kwa Idara ya teknolojia ya Kuakisi Screen</string>
+    <string name="send">Tuma</string>
+    <string name="provide_feedback">kutoa maoni</string>
+    <string name="invalid_email_provided">Barua pepe batili imetolewa</string>
+    <string name="check_your_internet_connection">Angalia muunganisho wako wa mtandao</string>
+    <string name="type_here">andika hapa…</string>
+    <string name="enter_your_email_optional">Weka barua pepe yako (si lazima)</string>
+    <string name="enjoy_the_app">Ungependa Kufurahia Programu?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Kadiria utumiaji wako kwa kutumia Screen\nMirroring App.</string>
+    <string name="not_now">Sio kwa sasa</string>
+    <string name="feedback">Maoni:</string>
+    <string name="model">Mfano:</string>
+    <string name="brand">Chapa:</string>
+    <string name="os_version">Toleo la Mfumo wa Uendeshaji:</string>
+    <string name="manufacturer">Mtengenezaji:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Tuma barua</string>
+    <string name="select_picture">Chagua Picha</string>
+    <string name="help_center">Kituo cha Usaidizi</string>
+    <string name="question_1">Simu yangu hukwama katika "Kuunganisha" wakati wa kuoanisha na TV.</string>
+    <string name="question_2">Ilinifanyia kazi hapo awali, lakini haifanyi kazi sasa.</string>
+    <string name="question_3">Inaonyesha kuwa kifaa changu \nhakitumiki.</string>
+    <string name="question_4">TV yangu ni TV ya zamani na \nhaitumii wi-fi.</string>
+    <string name="question_5">Picha kwenye TV ni nyeusi, lakini sauti inaweza kusikika.</string>
+    <string name="question_6">Muunganisho utakatizwa baada \nya muda.</string>
+    <string name="question_7">Je, maelezo yangu ya kibinafsi au data ya simu ya mkononi ni salama kabisa?</string>
+    <string name="q_answer_1_1">Anzisha tena Wi-Fi ya simu mahiri na uone ikiwa muunganisho umefaulu.</string>
+    <string name="q_answer_1_2">Zima TV na uondoe kamba yake ya nguvu kutoka kwenye tundu pia. Subiri dakika 1 na uanze tena TV.</string>
+    <string name="q_answer_1_3">Fupisha umbali kati ya simu yako na TV. Ichukue karibu.</string>
+    <string name="q_answer_2_1">Ikiwa ilifanya kazi hapo awali, basi hakika inaweza kutumika tena.</string>
+    <string name="q_answer_2_2">Matatizo mengi ya uunganisho yanaweza kutatuliwa kwa kuanzisha upya vifaa. Zima na uwashe tena simu na TV yako, fuata mchakato wa kawaida wa muunganisho ili ujaribu tena.</string>
+    <string name="q_answer_3_1">Hii ina maana kwamba simu yako yenyewe haitumii kazi ya kuakisi skrini.</string>
+    <string name="q_answer_3_2">Unaweza kutumia XCast kutuma video, sauti na picha kwenye TV. Ukiwa na XCast, unaweza kufanya mambo mengine ukitumia simu yako unapotuma kwenye TV.</string>
+    <string name="q_answer_4_1">Ikiwa TV yako inatumia kiolesura cha HDMI, tunapendekeza kwamba ununue kipokezi cha nje kwa ajili ya kuakisi skrini. Kama vile Chromecast, Anycast n.k.</string>
+    <string name="q_answer_5_1">Baadhi ya maudhui yanahusisha ulinzi wa hakimiliki na hayawezi kuonyeshwa kwenye vifaa vya watu wengine, kama vile Netflix, Disney Plus n.k.</string>
+    <string name="q_answer_5_2">Unaweza kupakua video au kutafuta nyenzo sawa kwenye programu zingine ili kujaribu.</string>
+    <string name="q_answer_6_1">Unaweza kuwasha Smart Connect katika mipangilio yako ya Wi-Fi. Itatafuta miunganisho bora ya Wi-fi kila wakati, na itaunganisha kila wakati.</string>
+    <string name="q_answer_6_2">Tafadhali hakikisha kwamba Wi-Fi ya simu ya mkononi na TV ni SAM na mawimbi bora zaidi.</string>
+    <string name="q_answer_7_1">Hatutafuatilia au kukusanya taarifa yoyote juu yako na simu yako ya mkononi. Unaweza kutuma skrini yako bila wasiwasi wowote.</string>
+    <string name="q_answer_7_2">Mfumo unaweza kukuonya kuwa kuna hatari ya usalama kabla ya kuakisi skrini. Huu ni ukumbusho wa kawaida tu, itakuwa</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MUUJIZA</string>
+    <string name="install">SAKINISHA</string>
+    <string name="install_small">Sakinisha</string>
+    <string name="manual">Mwongozo</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Hakikisha kuwa simu na TV yako zimeunganishwa\kwenye mtandao sawa wa Wi-Fi.</string>
+    <string name="hd_streaming">Utiririshaji wa HD</string>
+    <string name="smart_devices">vifaa mahiri</string>
+    <string name="private_browser">Kivinjari cha Kibinafsi</string>
+    <string name="effects">Madhara</string>
+    <string name="slider">Kitelezi</string>
+    <string name="search_or_type_web_address">Tafuta au chapa anwani ya wavuti</string>
+    <string name="install_2">Sakinisha</string>
+    <string name="bookmark">Alamisho</string>
+    <string name="downloads">Vipakuliwa</string>
+    <string name="download">Pakua</string>
+    <string name="favorites">Vipendwa</string>
+    <string name="favorite">Kipendwa</string>
+    <string name="history">Historia</string>
+    <string name="share_pdf">Shiriki PDF</string>
+    <string name="copy_url">Nakili URL</string>
+    <string name="share_app">Shiriki Programu</string>
+    <string name="share_url">Shiriki url</string>
+    <string name="exit">Utgång</string>
+    <string name="new_tab">Kichupo Kipya</string>
+    <string name="google">Google</string>
+    <string name="startpage">StartPage</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ekosia</string>
+    <string name="custom_search_engine">Injini ya utafutaji maalum</string>
+    <string name="add_shortcut_to_home">Ongeza njia ya mkato nyumbani</string>
+    <string name="save_screenshot">Hifadhi Picha ya skrini</string>
+    <string name="add_to_bookmark">Ongeza kwenye alamisho</string>
+    <string name="save_as_pdf">Hifadhi kama pdf</string>
+    <string name="save_action">Hifadhi Kitendo</string>
+    <string name="add_to_favorite">Ongeza kwa favorite</string>
+    <string name="search_engine">Injini ya Utafutaji</string>
+    <string name="browser_exit_body">Je, una uhakika unataka kuondoka kwenye Kivinjari</string>
+    <string name="exit_browser">Ondoka kwenye Kivinjari</string>
+    <string name="custom_user_agent">Wakala maalum wa mtumiaji</string>
+    <string name="start_control">Anza Kudhibiti</string>
+    <string name="data_control">Udhibiti wa Data</string>
+    <string name="app_settings">Mipangilio ya programu</string>
+    <string name="browser_settings">Mipangilio ya Kivinjari</string>
+    <string name="behavior_ui">Tabia/UI</string>
+    <string name="clear_cache">Futa Cache</string>
+    <string name="clear_history">Futa Historia</string>
+    <string name="clear_browsing_history">Futa historia ya kuvinjari</string>
+    <string name="clear_all_cache">Futa akiba yote</string>
+    <string name="clear_database_body">Futa "hifadhidata zilizoorodheshwa" na "msingi\ndata za ndani"</string>
+    <string name="clear_cookies_body">Ikiwashwa, vidakuzi vyote vitafutwa. Pia\Vidakuzi vya tovuti zinazoaminika</string>
+    <string name="clear_databases">Futa hifadhidata</string>
+    <string name="clear_cookies">Futa Vidakuzi</string>
+    <string name="clear_when_application_exit">Futa wakati programu inatoka</string>
+    <string name="clear_when_application_exit_body">Kila wakati unapoacha data yote iliyochaguliwa hapo juu\itafutwa</string>
+    <string name="image">Picha</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Vidakuzi</string>
+    <string name="reopen_last_tab">Fungua upya kichupo cha mwisho</string>
+    <string name="confirm_tab_close">Thibitisha kufungwa kwa kichupo</string>
+    <string name="confirm_browser_exit">Thibitisha kutoka kwa kivinjari</string>
+    <string name="position">Nafasi</string>
+    <string name="first_toolbar">Upau wa vidhibiti wa kwanza</string>
+    <string name="hide_toolbar">Ficha upau wa vidhibiti</string>
+    <string name="toolbar">Upau wa vidhibiti</string>
+    <string name="bookmarks">Alamisho</string>
+    <string name="edit">Hariri</string>
+    <string name="today">Leo</string>
+    <string name="the_last_hour">Saa ya mwisho</string>
+    <string name="last_week">Wiki iliyopita</string>
+    <string name="last_month">Mwezi uliopita</string>
+    <string name="delete_all_history">Futa historia yote</string>
+    <string name="copied">kunakiliwa</string>
+    <string name="share_ss">Shiriki SS</string>
+    <string name="file_manager">Kidhibiti faili</string>
+    <string name="search_on">Utafutaji Umewashwa</string>
+    <string name="add_shortcut">Ongeza Njia ya mkato</string>
+    <string name="tab_exit">Toka kwa Kichupo</string>
+    <string name="do_you_want_to_close">Je, unataka kufunga</string>
+    <string name="download_complete_share_image">Upakuaji umekamilika. Shiriki picha</string>
+    <string name="update">Sasisha</string>
+    <string name="unfavorite">Sio favorite</string>
+    <string name="no_input_provided">Hakuna ingizo lililotolewa</string>
+    <string name="input">Ingizo</string>
+    <string name="website_link">Kiungo cha tovuti</string>
+    <string name="for_you">Kwa ajili yako</string>
+    <string name="website">Tovuti:</string>
+    <string name="url">Url:</string>
+    <string name="date">Tarehe</string>
+    <string name="no_site_loaded">Huna tovuti iliyopakiwa</string>
+    <string name="more_then_5_images_can_not_be_picked">Picha zaidi ya tano haziwezi kuchaguliwa</string>
+    <string name="location">Mahali</string>
+
+</resources>

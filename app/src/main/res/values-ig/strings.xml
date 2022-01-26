@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--igbo-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">"Ebe "</string>
+    <string name="connection_close_confirm">Ọ ga-amasị gị ịkagbu Njikọ VPN ugbu a?</string>
+    <string name="yes">EE</string>
+    <string name="no">Mba</string>
+    <string name="yes_2">Ee</string>
+    <string name="no_2">Mba</string>
+    <string name="select_images">Họrọ Foto</string>
+    <string name="tabs">Taabụ</string>
+    <string name="share">Kekọrịta</string>
+    <string name="save">Chekwa</string>
+    <string name="more">Ọzọ</string>
+    <string name="ok">Ọ DỊ MMA</string>
+    <string name="cancel">Kagbuo</string>
+    <string name="favorite_site">Gbanwee webụsaịtị ndabara nke na-ebu na\nmmalite ihe nchọgharị</string>
+    <string name="custom_search_engine_body">Tinye url ọchụchọ omenala họrọkwa "Custom\nsearch engine" dị ka onye na-achọ ihe</string>
+    <string name="search_engine_body">Họrọ igwe nchọta masịrị gị ma ọ bụ\ntọọ nke omenala</string>
+    <string name="data_control_body">Hichapụ data ihe nchọgharị gị ma ọ bụ kpebie ihe data a ga-ehichapụ mgbe ị hapụrụ ngwa ahụ</string>
+    <string name="start_control_body">Kpebie akụkụ nke ihe nchọgharị\n ga-amalite</string>
+    <string name="behavior_ui_body">Gbanwee omume na ui nke ngwa ahụ ka ọ dabara mmasị gị</string>
+    <string name="book_mark_body">Ka igosi mkparịta ụka nzacha ogologo pịa akara ngosi ibe edokọbara na nchịkọta. Kpebie ihe nzacha ị ga-eji</string>
+    <string name="app_settings_body">Ntọala ihe nchọgharị, ebe ahụ ị nwere ike dabere na ikike inye ụdị android gị.</string>
+    <string name="start_control_image_body">Kwado onyonyo netwọkụ, gbanyụọ nwere ike ịba uru\iji chekwaa data mkpanaka wee buru webụsaịtị ngwa ngwa</string>
+    <string name="start_control_location_body">Kwe ka webụsaịtị nweta ọnọdụ gị. Ụfọdụ weebụsaịtị {google, maps maka nav) chọrọ ka nke a nwee ike</string>
+    <string name="start_control_history_body">Chekwaa akụkọ webụsaịtị gara aga</string>
+    <string name="start_control_java_script_body">Kwado Javascript. Ọtụtụ webụsaịtị chọrọ\nJavaScript maka ọrụ ha. Mana ha na-ezu ike, enwere ike iji ha mee mwakpo</string>
+    <string name="start_control_cookies_body">Kwado kuki. Kuki bụ obere faịlụ ederede,
+nke echekwara na ngwaọrụ gị. Weebụsaịtị na-eji
+ha dịka ọmụmaatụ iji chekwaa ntọala onye ọrụ. Ma
+enwere ike iji ha nakọta onye ọrụ
+data. Kuki ndị ọzọ na-enwekwa nkwarụ mgbe niile.</string>
+    <string name="confirmation_browser_exit_body">Mkparịta ụka nkwenye mgbe\nemechi ihe nchọgharị</string>
+    <string name="confirmation_tab_close_body">Mkparịta ụka nkwenye mgbe ị na-emechi taabụ</string>
+    <string name="confirmation_reopen_last_body">Mepee taabụ ọhụrụ mgbe emechiri taabụ ikpeazụ kama ịpụ na ihe nchọgharị ahụ</string>
+    <string name="hide_toolbar_body">Jiri ihuenyo niile mgbe ị na-agagharị na webụsaịtị ma ọ bụrụ na ịpị bọtịnụ azụ, ị ga-ahapụ ọnọdụ ihuenyo zuru oke</string>
+    <string name="images">Onyonyo</string>
+    <string name="videos">Vidiyo</string>
+    <string name="web_browser">Ihe nchọgharị weebụ</string>
+    <string name="image_slider">Ihe mmịfe onyonyo</string>
+    <string name="next">Osote</string>
+    <string name="previous">Nke gara aga</string>
+    <string name="help">Enyemaka</string>
+    <string name="settings">Ntọala</string>
+    <string name="language">Asụsụ</string>
+    <string name="more_app">Ngwa ndị ọzọ</string>
+    <string name="rate_us">Nye anyị ọnụ</string>
+    <string name="screen_mirroring">Ngosipụta ihuenyo</string>
+    <string name="home_screen_text">Gbaa mbọ hụ na ejikọrọ ekwentị gị na TV na otu netwọk Wi-Fi.</string>
+    <string name="wifi_connected">Ejikọrọ Wi-Fi</string>
+    <string name="wifi_disconnected">Akwụpụrụ Wi-Fi</string>
+    <string name="general">Izugbe</string>
+    <string name="communicate">Kwuo okwu</string>
+    <string name="send_feedback">Zipu nzaghachi</string>
+    <string name="tutorial">Nkuzi</string>
+    <string name="how_to_use">Kedu ka esi eji?</string>
+    <string name="streaming">gụgharia</string>
+    <string name="streaming_quality">Ogo gụgharia</string>
+    <string name="auto_stop">Nkwụsị akpaaka</string>
+    <string name="auto_minimize">Wedata akpaaka</string>
+    <string name="advance">Ọganihu</string>
+    <string name="orientation_mode">Ụdị nhazi</string>
+    <string name="auto_stop_body_text">Kwụsị vidiyo mgbe njikọ \ na ebumnuche efunahụ</string>
+    <string name="auto_minimize_body_text">Zoo ngwa mgbe mirroring malitere</string>
+    <string name="casting_orientation_body_text">Usoro nkedo</string>
+    <string name="mirroring_mode">Ụdị mirroring</string>
+    <string name="screen_mirroring_privacy_policy">Amụma nzuzo na-egosipụta ihuenyo</string>
+    <string name="privacy_policy">amụma nzuzo</string>
+    <string name="supporting_devices">Ngwaọrụ na-akwado</string>
+    <string name="see_which_devices_support_mirroring">Hụ ngwaọrụ ndị na-akwado mirroring</string>
+    <string name="color_theme">Gburugburu Agba</string>
+    <string name="dark">Ọchịchịrị</string>
+    <string name="light">Ìhè</string>
+    <string name="auto">Akpaaka</string>
+    <string name="select_language">Họrọ Asụsụ</string>
+    <string name="close">nso</string>
+    <string name="images_slider">Foto Ihe mmịfe</string>
+    <string name="screen_mirror">Igwefoto ihuenyo</string>
+    <string name="tutorial_screen_setup_body">Gị iche ngwaọrụ ga-na otu Wi-Fi netwọk dị ka ngwaọrụ a, n\'ihi na ihuenyo mirror na-ebunye gị ihuenyo.</string>
+    <string name="tutorial_screen_mirror_body">Nyefee ihuenyo ngwaọrụ gị na Wi-Fi na kọmputa gị, akwụkwọ ndetu ma ọ bụ mbadamba.</string>
+    <string name="tutorial_device_hotspot_body">Ị nwekwara ike iji ngwaọrụ gị hotspot (tethering mode) na jikọọ gị iche ngwaọrụ na gị hotspot.</string>
+    <string name="tutorial_scan_code_body">Mepee saịtị na gị iche ngwaọrụ. Site na inyocha koodu QR, a na-ebufe nhazi njikọ wee malite igosipụta.</string>
+    <string name="tutorial_support_body">Biko mara na mirror ihuenyo na-arụ ọrụ naanị mgbe edobere ya nke ọma. Igwefoto ihuenyo na-ebunye ihuenyo gị, mana ọ bụghị akara ụda ngwaọrụ gị. Ọ bụrụ na ị chere nsogbu ọ bụla ihu kpọtụrụ anyị.</string>
+    <string name="walk_through_body_1">Nwee anụrị nkwanye ugwu dị larịị na nke dị elu\n na-adịghị ala azụ</string>
+    <string name="walk_through_body_2">Jikọọ na smart ngwaọrụ ọ bụla ma nwee ọ enjoyụ na ihe ngosi\n na ihuenyo ọ bụla</string>
+    <string name="walk_through_body_3">Nwee obi ụtọ n\'ime ngwa nchọgharị nkeonwe na-enweghị oke</string>
+    <string name="screen_setup">Ntọala ihuenyo</string>
+    <string name="device_hotspot">Ebe nchekwa ngwaọrụ</string>
+    <string name="scan_code">Koodu nyocha</string>
+    <string name="support">Nkwado</string>
+    <string name="finish">Mechaa</string>
+    <string name="our_policies">Atumatu anyị</string>
+    <string name="privacy_policy_text">Ichekwa nzuzo gị dị anyị mkpa. Anyị na-atụ anya na nkwupụta a ga-enyere gị aka ịghọta otu anyị si eme ihe gbasara ozi a na-amata nkeonwe, ị nwere ike na-enye anyị oge ụfọdụ site na ịntanetị (usoro ikpo okwu Google Play)\n\nN\'ozuzu. anyị anaghị anakọta PII ọ bụla n\'aka gị mgbe ị budata ngwa gam akporo anyị. N\'ịkọwapụta kpọmkwem, anyị achọghị ka ndị na-azụ ahịa na-eleta ngwa anyị, anyị enweghịdị sava anyị ga-echekwa PII dị otú ahụ.\n\nScreen Mirroring na-eji Facebook dị ka ndị na-eweta mgbasa ozi. Facebook chọrọ igosi mgbasa ozi metụtara gị. Maka ozi ndị ọzọ biko gaa na\nhttps://m.facebook.com/ads/ad_choices.\n\nNaanị ọnọdụ anyị nwere ike ịnweta gị PII bụ mgbe ị n\'onwe gị kpebiri izitere anyị nzaghachi gị ma ọ bụ nye anyị ahụhụ akuko. PII anyị nwere ike nweta n\'aka gị n\'ọnọdụ ahụ bụ naanị aha gị, adreesị ozi-e na nzaghachi nyocha gị.\n\nN\'ọnọdụ dị n\'elu, anyị na-ekwe nkwa na a ga-eji PII naanị maka ịkpọtụrụ gị na melite ọrụ anyị. Anyị agaghị eji ozi dị otú ahụ (dịka aha gị na adreesị email_ gị maka ebumnuche ọ bụla ọzọ, dị ka ịga n\'ihu n\'ahịa anyị ngwaahịa, ma ọ bụ ikpughe ozi gbasara gị nye onye ọzọ maka uru azụmahịa.\n\nEkwesịrị ịmara na ma ma ọ bụ ịghara iziga anyị nzaghachi gị ma ọ bụ akụkọ ahụhụ bụ ebumnuche afọ ofufo kpamkpam na mkpebi nke gị. na screenmirroring.feedback@gmail.com, anyị ga-agba mbọ ịnye azịza doro anya nye ajụjụ gị n\'oge.</string>
+    <string name="please_write_your_feedback">Biko dee nzaghachi gị</string>
+    <string name="system_info">A ga-eziga ozi sistemu gị na ngalaba nka nka ihuenyo mirror</string>
+    <string name="send">Ziga</string>
+    <string name="provide_feedback">nye nzaghachi</string>
+    <string name="invalid_email_provided">Enyere email na-ezighi ezi</string>
+    <string name="check_your_internet_connection">Lelee njikọ ịntanetị gị</string>
+    <string name="type_here">dee ebe a…</string>
+    <string name="enter_your_email_optional">Tinye email gị (nhọrọ)</string>
+    <string name="enjoy_the_app">Nwee anụrị ngwa ahụ?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Nyochaa ahụmịhe gị site na iji Ihuenyo\nMirroring App.</string>
+    <string name="not_now">Ọbụghị ugbu a</string>
+    <string name="feedback">Nzaghachi:</string>
+    <string name="model">Ụdị:</string>
+    <string name="brand">Ụdị:</string>
+    <string name="os_version">Ụdị OS:</string>
+    <string name="manufacturer">Onye nrụpụta:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Zipu ozi</string>
+    <string name="select_picture">Họrọ Foto</string>
+    <string name="help_center">Ebe enyemaka</string>
+    <string name="question_1">Ekwentị m na-arapara na "njikọ" mgbe \nị na-ejikọta ya na TV.</string>
+    <string name="question_2">Ọ rụrụ ọrụ maka m na mbụ, mana ọ naghị \narụ ọrụ ugbu a.</string>
+    <string name="question_3">Ọ na-egosi na akwadoghị \nngwaọrụ m.</string>
+    <string name="question_4">TV m bụ TV ochie na anaghị \nakwado wi-fi.</string>
+    <string name="question_5">Ihe onyonyo dị na TV dị oji, mana \nenwere ike ịnụ ụda.</string>
+    <string name="question_6">A ga-akwụsị njikọ mgbe obere \noge gasịrị.</string>
+    <string name="question_7">Ozi nkeonwe m ma ọ bụ data mkpanaka m ọ \ndị mma nke ukwuu?</string>
+    <string name="q_answer_1_1">Malitegharịa ekwentị Wi-Fi nke smart ekwentị wee hụ ma njikọ ahụ ọ na-aga nke ọma.</string>
+    <string name="q_answer_1_2">Gbanyụọ TV ma wepụkwa eriri ike ya na oghere. Chere 1 nkeji ma malitegharịa TV.</string>
+    <string name="q_answer_1_3">Mee ka ohere dị n\'etiti ekwentị gị na TV dị mkpụmkpụ. Were ya nso.</string>
+    <string name="q_answer_2_1">Ọ bụrụ na ọ na-arụ ọrụ na mbụ, mgbe ahụ enwere ike iji ya mee ihe ọzọ.</string>
+    <string name="q_answer_2_2">Enwere ike idozi ọtụtụ nsogbu njikọ site na ịmalitegharị ngwaọrụ. Naanị malitegharịa ekwentị gị na TV, soro usoro njikọ oge niile ka ịnwagharịa.</string>
+    <string name="q_answer_3_1">Nke a pụtara na ekwentị gị n\'onwe ya anaghị akwado ọrụ mirroring ihuenyo.</string>
+    <string name="q_answer_3_2">Ị nwere ike iji XCast ịtụba vidiyo, ọdịyo na foto na TV. Site na XCast, ị nwere ike iji ekwentị gị mee ihe ndị ọzọ mgbe ị na-atụgharị na TV.</string>
+    <string name="q_answer_4_1">Ọ bụrụ na TV gị na-akwado interface HDMI, anyị na-akwado ka ịzụrụ ihe nnata dị na mpụga maka enyo ihuenyo. Dị ka Chromecast, Anycast, wdg.</string>
+    <string name="q_answer_5_1">Ụfọdụ ọdịnaya gụnyere nchedo nwebiisinka enweghị ike igosipụta ya na ngwaọrụ ndị ọzọ, dị ka Netflix, Disney Plus wdg.</string>
+    <string name="q_answer_5_2">Ị nwere ike ibudata vidiyo ma ọ bụ chọọ otu akụrụngwa na ngwa ndị ọzọ ka ị nwaa.</string>
+    <string name="q_answer_6_1">Ị nwere ike ịgbanwuo Smart Connect na ntọala Wi-Fi gị. Ọ ga-achọ njikọ Wi-Fi ka mma mgbe niile, yana jikọọ azụ na gaba.</string>
+    <string name="q_answer_6_2">Biko hụ na Wi-Fi nke ekwentị mkpanaaka na TV bụ SAM na mgbama kacha mma.</string>
+    <string name="q_answer_7_1">Anyị agaghị enyocha ma ọ bụ nakọta ozi ọ bụla na gị na ekwentị mkpanaaka gị. Ị nwere ike ịkwanye ihuenyo gị n\'enweghị nchegbu ọ bụla.</string>
+    <string name="q_answer_7_2">Sistemu nwere ike dọọ gị aka na ntị na enwere ihe egwu nchekwa tupu enyo ihuenyo. Nke a bụ naanị ihe ncheta oge niile, ọ ga-abụ</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRA CAST</string>
+    <string name="install">Wụnye</string>
+    <string name="install_small">Wunye</string>
+    <string name="manual">Akwụkwọ ntuziaka</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Gbaa mbọ hụ na ejikọrọ ekwentị gị na TV\n\'otu netwọk Wi-Fi.</string>
+    <string name="hd_streaming">gụgharia HD</string>
+    <string name="smart_devices">smart ngwaoru</string>
+    <string name="private_browser">Ihe nchọghari nkeonwe</string>
+    <string name="effects">Mmetụta</string>
+    <string name="slider">Ihe mmịfe</string>
+    <string name="search_or_type_web_address">Chọọ ma ọ bụ pịnye adreesị weebụ</string>
+    <string name="install_2">Wụnye</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="downloads">Nbudata</string>
+    <string name="download">Budata</string>
+    <string name="favorites">ọkacha mmasị</string>
+    <string name="favorite">ọkacha mmasị</string>
+    <string name="history">Akụkọ ihe mere eme</string>
+    <string name="share_pdf">Kekọrịta PDF</string>
+    <string name="copy_url">Detuo URL</string>
+    <string name="share_app">Kekọrịta ngwa</string>
+    <string name="share_url">Kekọrịta url</string>
+    <string name="exit">Ụzọ ọpụpụ</string>
+    <string name="new_tab">Tab ọhụrụ</string>
+    <string name="google">Google</string>
+    <string name="startpage">Ibe mmalite</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwan</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Igwe nchọta omenala</string>
+    <string name="add_shortcut_to_home">Tinye ụzọ mkpirisi n\'ụlọ</string>
+    <string name="save_screenshot">Chekwaa nseta ihuenyo</string>
+    <string name="add_to_bookmark">Tinye na ibe edokọbara</string>
+    <string name="save_as_pdf">Chekwa dị ka pdf</string>
+    <string name="save_action">Chekwa ihe omume</string>
+    <string name="add_to_favorite">Tinye na ọkacha mmasị</string>
+    <string name="search_engine">Igwe nchọta</string>
+    <string name="browser_exit_body">Ị ji n\'aka na ịchọrọ ịpụ na ihe nchọgharị</string>
+    <string name="exit_browser">Wepụ ihe nchọgharị</string>
+    <string name="custom_user_agent">Onye ọrụ ahaziri ahazi</string>
+    <string name="start_control">Malite njikwa</string>
+    <string name="data_control">Njikwa data</string>
+    <string name="app_settings">Ntọala ngwa</string>
+    <string name="browser_settings">Ntọala ihe nchọgharị</string>
+    <string name="behavior_ui">Omume/UI</string>
+    <string name="clear_cache">Kpochapụ cache</string>
+    <string name="clear_history">Kpochapụ akụkọ ihe mere eme</string>
+    <string name="clear_browsing_history">Hichapụ akụkọ ihe nchọgharị</string>
+    <string name="clear_all_cache">Hichapụ cache niile</string>
+    <string name="clear_database_body">Kpochapụ "ọdụ data indexed" na "base\data data"</string>
+    <string name="clear_cookies_body">Ọ bụrụ na agbanyere, kuki niile ga-ehichapụ. Ọzọkwa\nKuki nke weebụsaịtị ndị tụkwasịrị obi</string>
+    <string name="clear_databases">Kpochapụ ọdụ data</string>
+    <string name="clear_cookies">Kpochapụ kuki</string>
+    <string name="clear_when_application_exit">Kpochapụ mgbe ngwa ọpụpụ</string>
+    <string name="clear_when_application_exit_body">Oge ọ bụla ị kwụsịrị data niile enyochagoro a ga-ehichapụ</string>
+    <string name="image">Onyonyo</string>
+    <string name="javascript">Javascript</string>
+    <string name="cookies">Kuki</string>
+    <string name="reopen_last_tab">Mepee taabụ ikpeazụ</string>
+    <string name="confirm_tab_close">Kwenye nso taabụ</string>
+    <string name="confirm_browser_exit">Kwenye ọpụpụ ihe nchọgharị</string>
+    <string name="position">Ọnọdụ</string>
+    <string name="first_toolbar">Ogwe ngwaọrụ mbụ</string>
+    <string name="hide_toolbar">Zoo ogwe ngwaọrụ</string>
+    <string name="toolbar">Ogwe ngwaọrụ</string>
+    <string name="bookmarks">Ibe edokwubara</string>
+    <string name="edit">Dezie</string>
+    <string name="today">Taa</string>
+    <string name="the_last_hour">Oge awa ikpeazụ</string>
+    <string name="last_week">Izu gara aga</string>
+    <string name="last_month">Ọnwa gara aga</string>
+    <string name="delete_all_history">Hichapụ akụkọ ihe mere eme niile</string>
+    <string name="copied">eṅomiri</string>
+    <string name="share_ss">Kekọrịta SS</string>
+    <string name="file_manager">Njikwa faili</string>
+    <string name="search_on">Chọọ na</string>
+    <string name="add_shortcut">Tinye ụzọ mkpirisi</string>
+    <string name="tab_exit">Wepụ tab</string>
+    <string name="do_you_want_to_close">Ị chọrọ imechi</string>
+    <string name="download_complete_share_image">Budata zuru oke. Kekọrịta onyonyo</string>
+    <string name="update">Mmelite</string>
+    <string name="unfavorite">Na-amasịghị</string>
+    <string name="no_input_provided">Enweghị ntinye ọ bụla enyere</string>
+    <string name="input">Ntinye</string>
+    <string name="website_link">Njikọ weebụsaịtị</string>
+    <string name="for_you">Maka gị</string>
+    <string name="website">Weebụsaịtị:</string>
+    <string name="url">Url:</string>
+    <string name="date">Ụbọchị</string>
+    <string name="no_site_loaded">Ị nweghị webụsaịtị ebujuru</string>
+    <string name="more_then_5_images_can_not_be_picked">Enweghị ike ịse foto karịa karịa</string>
+</resources>

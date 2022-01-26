@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--German-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">Ort</string>
+    <string name="connection_close_confirm">Möchten Sie die aktuelle VPN-Verbindung kündigen?</string>
+    <string name="yes">JA</string>
+    <string name="no">NEIN</string>
+    <string name="yes_2">ja</string>
+    <string name="no_2">Nein</string>
+    <string name="select_images">Wählen Sie Bilder aus</string>
+    <string name="tabs">Registerkarten</string>
+    <string name="share">Teilen</string>
+    <string name="save">Speichern</string>
+    <string name="more">Mehr</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="favorite_site">Ändern Sie die Standard-Website, die beim\nStart des Browsers geladen wird</string>
+    <string name="custom_search_engine_body">Fügen Sie eine benutzerdefinierte Such-URL hinzu, wählen Sie außerdem „Benutzerdefinierte\nSuchmaschine“ als Suchanbieter aus</string>
+    <string name="search_engine_body">Wählen Sie Ihre bevorzugte Suchmaschine aus oder legen Sie eine benutzerdefinierte fest</string>
+    <string name="data_control_body">Löschen Sie Ihre Browserdaten oder entscheiden Sie, welche Daten\nbeim Verlassen der App gelöscht werden</string>
+    <string name="start_control_body">Entscheiden Sie, welche Komponenten des Browsers\nbeim Start verwendet werden</string>
+    <string name="behavior_ui_body">Ändere das Verhalten und die Benutzeroberfläche der App, um\n deinen Vorlieben zu entsprechen</string>
+    <string name="book_mark_body">Um den Filterdialog anzuzeigen, drücken Sie lange auf das Lesezeichensymbol in der Übersicht. Entscheiden Sie, welche Filter Sie verwenden werden</string>
+    <string name="app_settings_body">Browsereinstellungen, dort können Sie abhängig von\nIhrer Android-Version die Berechtigung erteilen.</string>
+    <string name="start_control_image_body">Netzwerkbilder aktivieren, Deaktivieren kann nützlich sein,\num mobile Daten zu sparen und die Website schneller zu laden</string>
+    <string name="start_control_location_body">Erlauben Sie Websites, auf Ihren Standort zuzugreifen. Einige\nWebsites (Google, Maps for Nav) benötigen diese Aktivierung</string>
+    <string name="start_control_history_body">Speichern Sie den Verlauf der besuchten Websites</string>
+    <string name="start_control_java_script_body">Aktivieren Sie Javascript. Viele Websites benötigen\nJavaScript für ihre Funktionalität. Aber sie sind\nauch Ruhe und können für Angriffe verwendet werden</string>
+    <string name="start_control_cookies_body">Cookies aktivieren. Cookies sind kleine Textdateien,
+die auf Ihrem Gerät gespeichert sind. Websites verwenden
+B. um Benutzereinstellungen zu speichern. Aber
+Sie könnten auch verwendet werden, um persönliche Benutzer zu sammeln
+Daten. Cookies von Drittanbietern sind immer deaktiviert.</string>
+    <string name="confirmation_browser_exit_body">Bestätigungsdialog beim\nSchließen des Browsers</string>
+    <string name="confirmation_tab_close_body">Bestätigungsdialog beim Schließen eines Tabs</string>
+    <string name="confirmation_reopen_last_body">Öffnen Sie einen neuen Tab erneut, wenn der letzte Tab geschlossen ist, anstatt den Browser zu beenden</string>
+    <string name="hide_toolbar_body">Verwenden Sie den gesamten Bildschirm, wenn Sie durch die Website scrollen, wenn Sie die Zurück-Taste drücken, verlassen Sie den Vollbildmodus</string>
+    <string name="images">Bilder</string>
+    <string name="videos">Videos</string>
+    <string name="web_browser">Webbrowser</string>
+    <string name="image_slider">Bild-Schieberegler</string>
+    <string name="next">Nächste</string>
+    <string name="previous">Vorherige</string>
+    <string name="help">Hilfe</string>
+    <string name="settings">Einstellungen</string>
+    <string name="language">Sprachen</string>
+    <string name="more_app">Mehr Apps</string>
+    <string name="rate_us">Bewerten Sie uns</string>
+    <string name="screen_mirroring">Bildschirmspiegelung</string>
+    <string name="home_screen_text">Stellen Sie sicher, dass Ihr Telefon und Ihr Fernseher mit demselben Wi-Fi-Netzwerk verbunden sind.</string>
+    <string name="wifi_connected">WLAN verbunden</string>
+    <string name="wifi_disconnected">WLAN getrennt</string>
+    <string name="general">Allgemein</string>
+    <string name="communicate">Kommunizieren</string>
+    <string name="send_feedback">Feedback schicken</string>
+    <string name="tutorial">Lernprogramm</string>
+    <string name="how_to_use">Wie benutzt man?</string>
+    <string name="streaming">Streamen</string>
+    <string name="streaming_quality">Streaming-Qualität</string>
+    <string name="auto_stop">Autostopp</string>
+    <string name="auto_minimize">Automatisch minimieren</string>
+    <string name="advance">Vorauszahlung</string>
+    <string name="orientation_mode">Orientierungsmodus</string>
+    <string name="auto_stop_body_text">Stoppen Sie das Video, wenn die Verbindung\nzum Ziel verloren geht</string>
+    <string name="auto_minimize_body_text">App ausblenden, wenn die Spiegelung beginnt</string>
+    <string name="casting_orientation_body_text">Casting-Orientierung</string>
+    <string name="mirroring_mode">Spiegelungsmodus</string>
+    <string name="screen_mirroring_privacy_policy">Datenschutzrichtlinie zur Bildschirmspiegelung</string>
+    <string name="privacy_policy">Datenschutz-Bestimmungen</string>
+    <string name="supporting_devices">Unterstützende Geräte</string>
+    <string name="see_which_devices_support_mirroring">Sehen Sie, welche Geräte die Spiegelung unterstützen</string>
+    <string name="color_theme">Farbthema</string>
+    <string name="dark">Dunkel</string>
+    <string name="light">Hell</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Sprache auswählen</string>
+    <string name="close">nah dran</string>
+    <string name="images_slider">Bilder Schieberegler</string>
+    <string name="screen_mirror">Bildschirmspiegel</string>
+    <string name="tutorial_screen_setup_body">Ihr Zielgerät muss sich im selben Wi-Fi-Netzwerk wie dieses Gerät befinden, da Screen Mirror Ihren Bildschirm überträgt.</string>
+    <string name="tutorial_screen_mirror_body">Streamen Sie den Bildschirm Ihres Geräts über WLAN auf Ihren Computer, Ihr Notebook oder Ihr Tablet.</string>
+    <string name="tutorial_device_hotspot_body">Sie können auch den Hotspot Ihres Geräts (Tethering-Modus) verwenden und Ihr Zielgerät mit Ihrem Hotspot verbinden.</string>
+    <string name="tutorial_scan_code_body">Öffnen Sie die Website auf Ihrem Zielgerät. Durch Scannen des QR-Codes wird die Verbindungskonfiguration übertragen und die Spiegelung gestartet.</string>
+    <string name="tutorial_support_body">Bitte beachten Sie, dass Screen Mirror nur bei korrekter Einrichtung funktioniert. Screen Mirror überträgt Ihren Bildschirm, aber nicht die Audiosignale Ihres Geräts. Wenn Sie auf Probleme stoßen, kontaktieren Sie uns.</string>
+    <string name="walk_through_body_1">Genießen Sie flüssiges und qualitativ hochwertiges Streaming\nohne Verzögerung</string>
+    <string name="walk_through_body_2">Verbinden Sie sich mit jedem Smart-Gerät und genießen Sie die\nShow auf jedem Bildschirm</string>
+    <string name="walk_through_body_3">Genießen Sie den privaten In-App-Browser ohne Einschränkungen</string>
+    <string name="screen_setup">Bildschirm-Setup</string>
+    <string name="device_hotspot">Hotspot des Geräts</string>
+    <string name="scan_code">Code scannen</string>
+    <string name="support">Unterstützung</string>
+    <string name="finish">Beenden</string>
+    <string name="our_policies">Unsere Richtlinien</string>
+    <string name="privacy_policy_text">Der Schutz Ihrer Privatsphäre ist uns wichtig. Wir hoffen, dass die folgende Erklärung Ihnen hilft zu verstehen, wie wir mit personenbezogenen Daten umgehen, die Sie uns gelegentlich über das Internet (die Google Play-Plattform) zur Verfügung stellen.\n\nAllgemein. Wir erfassen keine personenbezogenen Daten von Ihnen, wenn Sie unsere Android-Anwendungen herunterladen. Genauer gesagt benötigen wir keine Verbraucherbesuche unserer Anwendung, wir haben nicht einmal einen Server, um solche PII zu speichern.\n\nScreen Mirroring verwendet Facebook als Anzeigenanbieter. Facebook möchte Anzeigen zeigen, die für Sie relevant sind. Weitere Informationen finden Sie unter\nhttps://m.facebook.com/ads/ad_choices.\n\nDie einzige Situation, in der wir möglicherweise Zugriff auf Ihre PII erhalten, ist, wenn Sie sich persönlich entscheiden, uns Ihr Feedback per E-Mail zu senden oder uns einen Fehler mitzuteilen Prüfbericht. Die personenbezogenen Daten, die wir in dieser Situation möglicherweise von Ihnen erhalten, sind ausschließlich auf Ihren Namen, Ihre E-Mail-Adresse und Ihre Umfrageantwort beschränkt.\n\nIn der oben genannten Situation garantieren wir, dass Ihre personenbezogenen Daten nur dazu verwendet werden, Sie zu kontaktieren und unsere Dienste zu verbessern. Wir werden solche Informationen (z. B. Ihren Namen und Ihre E-Mail-Adresse_) niemals für andere Zwecke verwenden, z. B. um unsere Produkte weiter zu vermarkten oder Ihre persönlichen Daten zu kommerziellen Zwecken an Dritte weiterzugeben.\n\nEs sollte beachtet werden, ob oder uns Ihr Feedback oder Ihren Fehlerbericht nicht zu senden, ist eine völlig freiwillige Initiative Ihrer eigenen Entscheidung. Wenn Sie Bedenken haben, dass Ihre personenbezogenen Daten missbraucht werden, oder wenn Sie weitere Informationen zu unserer Datenschutzrichtlinie und deren Bedeutung wünschen, senden Sie uns bitte eine E-Mail unter screenmirroring.feedback@gmail.com werden wir uns bemühen, Ihnen zeitnah klare Antworten auf Ihre Fragen zu geben .</string>
+    <string name="please_write_your_feedback">Bitte schreiben Sie Ihr Feedback</string>
+    <string name="system_info">Ihre Systeminformationen werden an die technische Abteilung von Screen Mirroring gesendet</string>
+    <string name="send">Senden</string>
+    <string name="provide_feedback">Rückmeldung geben</string>
+    <string name="invalid_email_provided">Ungültige E-Mail-Adresse angegeben</string>
+    <string name="check_your_internet_connection">Prüfe deine Internetverbindung</string>
+    <string name="type_here">hier eingeben…</string>
+    <string name="enter_your_email_optional">Geben Sie Ihre E-Mail ein (optional)</string>
+    <string name="enjoy_the_app">Gefällt dir die App?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Bewerten Sie Ihre Erfahrung mit der Screen\nMirroring App.</string>
+    <string name="not_now">Nicht jetzt</string>
+    <string name="feedback">Feedback:</string>
+    <string name="model">Modell:</string>
+    <string name="brand">Marke:</string>
+    <string name="os_version">OS Version:</string>
+    <string name="manufacturer">Hersteller:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Post senden</string>
+    <string name="select_picture">Wählen Sie Bild</string>
+    <string name="help_center">Hilfezentrum</string>
+    <string name="question_1">Mein Telefon bleibt beim Koppeln mit dem Fernseher bei „Verbinden“ hängen.</string>
+    <string name="question_2">Bei mir hat es früher funktioniert, aber \njetzt nicht mehr.</string>
+    <string name="question_3">Es zeigt an, dass mein Gerät nicht \nunterstützt wird.</string>
+    <string name="question_4">Mein Fernseher ist ein alter Fernseher \nund unterstützt kein WLAN.</string>
+    <string name="question_5">Das Bild auf dem Fernseher ist schwarz, \naber der Ton ist zu hören.</string>
+    <string name="question_6">Die Verbindung wird nach einiger Zeit \nunterbrochen.</string>
+    <string name="question_7">Sind meine persönlichen Daten oder mobilen Daten absolut sicher?</string>
+    <string name="q_answer_1_1">Starten Sie das WLAN des Smartphones neu und prüfen Sie, ob die Verbindung erfolgreich ist.</string>
+    <string name="q_answer_1_2">Schalten Sie den Fernseher aus und ziehen Sie auch das Netzkabel aus der Steckdose. Warten Sie 1 Minute und starten Sie den Fernseher neu.</string>
+    <string name="q_answer_1_3">Verkürzen Sie die Entfernung zwischen Ihrem Telefon und dem Fernseher. Nehmen Sie es aus der Nähe.</string>
+    <string name="q_answer_2_1">Wenn es vorher funktioniert hat, dann kann es definitiv wieder verwendet werden.</string>
+    <string name="q_answer_2_2">Die meisten Verbindungsprobleme können durch einen Neustart der Geräte behoben werden. Starten Sie einfach Ihr Telefon und Ihren Fernseher neu und folgen Sie dem regulären Verbindungsvorgang, um es erneut zu versuchen.</string>
+    <string name="q_answer_3_1">Dies bedeutet, dass Ihr Telefon selbst die Bildschirmspiegelungsfunktion nicht unterstützt.</string>
+    <string name="q_answer_3_2">Sie können XCast verwenden, um Video, Audio und Fotos auf den Fernseher zu übertragen. Mit XCast können Sie andere Dinge mit Ihrem Telefon tun, während Sie auf den Fernseher übertragen.</string>
+    <string name="q_answer_4_1">Wenn Ihr Fernseher die HDMI-Schnittstelle unterstützt, empfehlen wir Ihnen, einen externen Receiver für die Bildschirmspiegelung zu kaufen. Wie Chromecast, Anycast usw.</string>
+    <string name="q_answer_5_1">Einige Inhalte sind urheberrechtlich geschützt und können nicht auf Geräten von Drittanbietern wie Netflix, Disney Plus usw. angezeigt werden.</string>
+    <string name="q_answer_5_2">Sie können das Video herunterladen oder in anderen Apps nach derselben Ressource suchen, um es auszuprobieren.</string>
+    <string name="q_answer_6_1">Sie können Smart Connect in Ihren WLAN-Einstellungen aktivieren. Es sucht ständig nach besseren Wi-Fi-Verbindungen und verbindet sich immer hin und her.</string>
+    <string name="q_answer_6_2">Bitte stellen Sie sicher, dass das WLAN des Mobiltelefons und des Fernsehers das SAM und das beste Signal ist.</string>
+    <string name="q_answer_7_1">Wir werden keine Informationen über Sie und Ihr Mobiltelefon überwachen oder sammeln. Sie können Ihren Bildschirm ohne Bedenken übertragen.</string>
+    <string name="q_answer_7_2">Das System kann Sie vor der Bildschirmspiegelung warnen, dass ein Sicherheitsrisiko besteht. Dies ist nur eine regelmäßige Erinnerung, es wird sein</string>
+    <string name="wi_fi">W-LAN</string>
+    <string name="miracast">WUNDER</string>
+    <string name="install">INSTALLIEREN</string>
+    <string name="install_small">Installieren</string>
+    <string name="manual">Handbuch</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Stellen Sie sicher, dass Ihr Telefon und Ihr Fernseher\nmit demselben WLAN-Netzwerk verbunden sind.</string>
+    <string name="hd_streaming">HD-Streaming</string>
+    <string name="smart_devices">Intelligente Geräte</string>
+    <string name="private_browser">Privater Browser</string>
+    <string name="effects">Auswirkungen</string>
+    <string name="slider">Schieberegler</string>
+    <string name="search_or_type_web_address">Suchen oder geben Sie die Webadresse ein</string>
+    <string name="install_2">Installieren</string>
+    <string name="bookmark">Lesezeichen</string>
+    <string name="downloads">herunterladen</string>
+    <string name="download">herunterladen</string>
+    <string name="favorites">Favoriten</string>
+    <string name="favorite">Liebling</string>
+    <string name="history">Geschichte</string>
+    <string name="share_pdf">Pdf teilen</string>
+    <string name="copy_url">URL kopieren</string>
+    <string name="share_app">App teilen</string>
+    <string name="share_url">URL teilen</string>
+    <string name="exit">Ausgang</string>
+    <string name="new_tab">Neue Registerkarte</string>
+    <string name="google">Google</string>
+    <string name="startpage">Startseite</string>
+    <string name="bing">Bin</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Benutzerdefinierte Suchmaschine</string>
+    <string name="add_shortcut_to_home">Verknüpfung zu Startseite hinzufügen</string>
+    <string name="save_screenshot">Screenshot speichern</string>
+    <string name="add_to_bookmark">Zum Lesezeichen hinzufügen</string>
+    <string name="save_as_pdf">Als pdf speichern</string>
+    <string name="save_action">Aktion speichern</string>
+    <string name="add_to_favorite">Zu den Favoriten hinzufügen</string>
+    <string name="search_engine">Suchmaschine</string>
+    <string name="browser_exit_body">Möchten Sie den Browser wirklich beenden?</string>
+    <string name="exit_browser">Beenden Sie den Browser</string>
+    <string name="custom_user_agent">Benutzerdefinierter Benutzeragent</string>
+    <string name="start_control">Steuerung starten</string>
+    <string name="data_control">Datenkontrolle</string>
+    <string name="app_settings">App Einstellungen</string>
+    <string name="browser_settings">Browsereinstellungen</string>
+    <string name="behavior_ui">Verhalten/UI</string>
+    <string name="clear_cache">Cache leeren</string>
+    <string name="clear_history">Verlauf löschen</string>
+    <string name="clear_browsing_history">Browserverlauf löschen</string>
+    <string name="clear_all_cache">Löschen Sie den gesamten Cache</string>
+    <string name="clear_database_body">„Indizierte Datenbanken“ und „lokale\nDatenbanken“ löschen</string>
+    <string name="clear_cookies_body">Wenn aktiviert, werden alle Cookies gelöscht. Auch\ndie Cookies vertrauenswürdiger Websites</string>
+    <string name="clear_databases">Datenbanken löschen</string>
+    <string name="clear_cookies">Klare Kekse</string>
+    <string name="clear_when_application_exit">Beim Beenden der Anwendung löschen</string>
+    <string name="clear_when_application_exit_body">Bei jedem Verlassen werden alle oben markierten Daten\ngelöscht</string>
+    <string name="image">Bild</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Kekse</string>
+    <string name="reopen_last_tab">Letzten Tab erneut öffnen</string>
+    <string name="confirm_tab_close">Bestätigen Sie das Schließen des Tabs</string>
+    <string name="confirm_browser_exit">Bestätigen Sie das Beenden des Browsers</string>
+    <string name="position">Position</string>
+    <string name="first_toolbar">Erste Symbolleiste</string>
+    <string name="hide_toolbar">Werkzeugleiste verstecken</string>
+    <string name="toolbar">Symbolleiste</string>
+    <string name="bookmarks">Lesezeichen</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="today">Heute</string>
+    <string name="the_last_hour">Die letzte Stunde</string>
+    <string name="last_week">Letzte Woche</string>
+    <string name="last_month">Letzten Monat</string>
+    <string name="delete_all_history">Gesamten Verlauf löschen</string>
+    <string name="copied">kopiert</string>
+    <string name="share_ss">SS teilen</string>
+    <string name="file_manager">Dateimanager</string>
+    <string name="search_on">Suche auf</string>
+    <string name="add_shortcut">Verknüpfung hinzufügen</string>
+    <string name="tab_exit">Tab Beenden</string>
+    <string name="do_you_want_to_close">Möchten Sie schließen</string>
+    <string name="download_complete_share_image">Download abgeschlossen. Bild teilen</string>
+    <string name="update">Aktualisieren</string>
+    <string name="unfavorite">Un Favorit</string>
+    <string name="no_input_provided">Keine Eingabe vorhanden</string>
+    <string name="input">Eingang</string>
+    <string name="website_link">Website-Link</string>
+    <string name="for_you">Für Sie</string>
+    <string name="website">Webseite:</string>
+    <string name="url">URL:</string>
+    <string name="date">Datum</string>
+    <string name="no_site_loaded">Sie haben keine Website geladen</string>
+    <string name="more_then_5_images_can_not_be_picked">Mehr als fünf Bilder können nicht ausgewählt werden</string>
+</resources>

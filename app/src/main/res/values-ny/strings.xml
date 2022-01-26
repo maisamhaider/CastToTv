@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Nyanja (Chichewa)-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">Kodi mungafune kuletsa kulumikizana kwa VPN komwe kulipo?</string>
+    <string name="yes">INDE</string>
+    <string name="no">AYI</string>
+    <string name="yes_2">Inde</string>
+    <string name="no_2">Ayi</string>
+    <string name="select_images">Sankhani Zithunzi</string>
+    <string name="tabs">Ma tabu</string>
+    <string name="share">Gawani</string>
+    <string name="save">Sungani</string>
+    <string name="more">Zambiri</string>
+    <string name="ok">Chabwino</string>
+    <string name="cancel">Letsani</string>
+    <string name="favorite_site">Sinthani tsamba losakhazikika lomwe limakhala pa\nkuyamba kwa Browser</string>
+    <string name="custom_search_engine_body">Onjezani ulalo wofufuzira mwamakonda kusankhanso "Custom\search engine" ngati kusaka</string>
+    <string name="search_engine_body">Sankhani makina osakira omwe mumakonda kapena\ikani yamakonda</string>
+    <string name="data_control_body">Chotsani zidziwitso za msakatuli wanu kapena sankhani zomwe zidzachotsedwe mukachoka pa pulogalamuyi</string>
+    <string name="start_control_body">Sankhani zigawo za msakatuli\zimene zidzayambike</string>
+    <string name="behavior_ui_body">Sinthani machitidwe ndi mawonekedwe a pulogalamuyi kuti\n zigwirizane ndi zomwe mumakonda</string>
+    <string name="book_mark_body">Kuti muwonetse zokambirana za fyuluta kwanthawi yayitali dinani chizindikiro cha bookmark pachiwonetsero. Sankhani zomwe mungagwiritse ntchito</string>
+    <string name="app_settings_body">Zokonda pa msakatuli, komwe mungathe kutengera\mtundu wanu wa android kukupatsani chilolezo.</string>
+    <string name="start_control_image_body">Yambitsani zithunzi za Netiweki, Kuyimitsa kungakhale kothandiza\kusunga data ya m\'manja ndikutsegula tsamba mwachangu</string>
+    <string name="start_control_location_body">Lolani masamba kuti apeze komwe muli. Ena\nmawebusayiti a {google, map for nav) amafunikira izi</string>
+    <string name="start_control_history_body">Sungani mbiri yamawebusayiti omwe mwachezera</string>
+    <string name="start_control_java_script_body">Yambitsani JavaScript. Mawebusayiti ambiri amafunikira\nJavaScript kuti agwire ntchito. Koma amapumulanso ndipo atha kugwiritsidwa ntchito poukira</string>
+    <string name="start_control_cookies_body">Yambitsani Ma cookie. Ma cookie ndi mafayilo ang\'onoang\'ono,
+zomwe zasungidwa pa chipangizo chanu. Mawebusayiti amagwiritsa ntchito
+iwo mwachitsanzo kusunga makonda a ogwiritsa ntchito. Koma
+Atha kugwiritsidwanso ntchito kusonkhanitsa anthu omwe amawagwiritsa ntchito
+deta. Ma cookie a chipani chachitatu amazimitsa nthawi zonse.</string>
+    <string name="confirmation_browser_exit_body">Nkhani yotsimikizira pamene\kutseka msakatuli</string>
+    <string name="confirmation_tab_close_body">Nkhani yotsimikizira potseka tabu</string>
+    <string name="confirmation_reopen_last_body">Tsegulaninso tabu yatsopano pomwe tabu yomaliza yatsekedwa m\'malo motuluka msakatuli</string>
+    <string name="hide_toolbar_body">Gwiritsani ntchito zenera lonse posakatula patsamba mukadina batani lakumbuyo mudzasiya mawonekedwe onse</string>
+    <string name="images">Zithunzi</string>
+    <string name="videos">Makanema</string>
+    <string name="web_browser">Web Browser</string>
+    <string name="image_slider">Image Slider</string>
+    <string name="next">Ena</string>
+    <string name="previous">Zam\'mbuyo</string>
+    <string name="help">Thandizeni</string>
+    <string name="settings">Zokonda</string>
+    <string name="language">Zinenero</string>
+    <string name="more_app">Mapulogalamu Ena</string>
+    <string name="rate_us">Tivotereni</string>
+    <string name="screen_mirroring">Screen Mirroring</string>
+    <string name="home_screen_text">Onetsetsani kuti foni yanu ndi TV zilumikizidwa pa netiweki yomweyo ya Wi-Fi.</string>
+    <string name="wifi_connected">Wi-Fi Yolumikizidwa</string>
+    <string name="wifi_disconnected">Wi-Fi Yachotsedwa</string>
+    <string name="general">General</string>
+    <string name="communicate">Lankhulani</string>
+    <string name="send_feedback">Tumizani Ndemanga</string>
+    <string name="tutorial">Maphunziro</string>
+    <string name="how_to_use">Kodi ntchito?</string>
+    <string name="streaming">Kukhamukira</string>
+    <string name="streaming_quality">Ubwino Wotsatsira</string>
+    <string name="auto_stop">Auto Imani</string>
+    <string name="auto_minimize">Chepetsani Auto</string>
+    <string name="advance">Patsogolo</string>
+    <string name="orientation_mode">Njira Yoyang\'anira</string>
+    <string name="auto_stop_body_text">Imitsani kanema pamene kulumikiza\ndi chandamale kwatayika</string>
+    <string name="auto_minimize_body_text">Bisani pulogalamu pamene galasi akuyamba</string>
+    <string name="casting_orientation_body_text">Kuyang\'ana pakuponya</string>
+    <string name="mirroring_mode">Mirroring mode</string>
+    <string name="screen_mirroring_privacy_policy">Screen mirroring mfundo zachinsinsi</string>
+    <string name="privacy_policy">mfundo Zazinsinsi</string>
+    <string name="supporting_devices">Zida zothandizira</string>
+    <string name="see_which_devices_support_mirroring">Onani ndi zida ziti zomwe zimathandizira kuwonetsera</string>
+    <string name="color_theme">Mutu wamtundu</string>
+    <string name="dark">Chakuda</string>
+    <string name="light">Kuwala</string>
+    <string name="auto">Zadzidzidzi</string>
+    <string name="select_language">Sankhani Chiyankhulo</string>
+    <string name="close">pafupi</string>
+    <string name="images_slider">Zithunzi za Slider</string>
+    <string name="screen_mirror">Screen Mirror</string>
+    <string name="tutorial_screen_setup_body">Chipangizo chanu chomwe mukufuna kuchifuna chikuyenera kukhala pamanetiweki a Wi-Fi ngati chipangizochi, chifukwa Screen Mirror imatumiza zenera lanu.</string>
+    <string name="tutorial_screen_mirror_body">Tsitsani chophimba cha chipangizo chanu pa Wi-Fi kupita pakompyuta yanu, kope kapena piritsi.</string>
+    <string name="tutorial_device_hotspot_body">Mutha kugwiritsanso ntchito hotspot ya chipangizo chanu (njira yolumikizira) ndikulumikiza chipangizo chanu ku hotspot yanu.</string>
+    <string name="tutorial_scan_code_body">Tsegulani malo pa chipangizo chanu chandamale. Ndi kupanga sikani QR code kasinthidwe kugwirizana imafalitsidwa ndi mirroring akuyamba.</string>
+    <string name="tutorial_support_body">Chonde dziwani kuti Screen Mirror imagwira ntchito pokhapokha ikakhazikitsidwa bwino. Screen Mirror imatumiza chinsalu chanu, koma osati ma audio a chipangizo chanu. Ngati mukukumana ndi mavuto tiuzeni.</string>
+    <string name="walk_through_body_1">Sangalalani ndi makanema osalala komanso apamwamba kwambiri\nopanda kuchedwa</string>
+    <string name="walk_through_body_2">Lumikizani ndi chipangizo chilichonse chanzeru ndipo sangalalani ndi\nkuwonetsa pa sikirini iliyonse</string>
+    <string name="walk_through_body_3">Sangalalani ndi msakatuli wachinsinsi wa mkati mwa pulogalamu popanda malire</string>
+    <string name="screen_setup">Kukhazikitsa Screen</string>
+    <string name="device_hotspot">Hotspot ya Chipangizo</string>
+    <string name="scan_code">Scan kodi</string>
+    <string name="support">Thandizo</string>
+    <string name="finish">Malizitsani</string>
+    <string name="our_policies">Ndondomeko Zathu</string>
+    <string name="privacy_policy_text">Kuteteza zinsinsi zanu ndikofunikira kwa ife. Tikukhulupirira kuti mawu otsatirawa akuthandizani kumvetsetsa momwe timachitira ndi zinthu zomwe zimadziwika kuti ndinu ndani, mutha kutipatsa nthawi zina kudzera pa intaneti (pulatifomu ya Google Play).\n\nKawirikawiri. sititenga PII iliyonse kuchokera kwa inu mukatsitsa mapulogalamu athu a Android. Kunena zachindunji, sitifuna kuti ogula azichezera pulogalamu yathu, tilibe ngakhale Seva yoti tisunge PII yotere.\n\nScreen Mirroring imagwiritsa ntchito Facebook ngati otsatsa malonda. Facebook ikufuna kuwonetsa zotsatsa zomwe zili zofunika kwa inu. Kuti mudziwe zambiri, chonde pitani\nhttps://m.facebook.com/ads/ad_choices.\n\nMmene tingakupezeni PII ndi pamene inuyo mwasankha kutitumizira maimelo anu kapena kutipatsa cholakwika. lipoti. PII yomwe titha kulandira kuchokera kwa inu mukakhala ngati imeneyi ndi dzina lanu, adilesi ya imelo ndi mayankho anu pa kafukufukuyu okha.\n\nZimenezi zili pamwambazi, tikukutsimikizirani kuti inu PII idzagwiritsidwa ntchito polumikizana nanu komanso kukonza ntchito zathu. Sitidzagwiritsa ntchito zinthu zotere (monga dzina lanu ndi imelo adilesi_ pazifukwa zina zilizonse, monga kutsatsa malonda athu, kapena kuulula zambiri zanu kwa munthu wina kuti tipindule nazo.\n\nZiyenera kuzindikirika kuti kaya kapena kuti tisatitumizire ndemanga zanu kapena lipoti la cholakwika ndimwadzifunira mwakufuna kwanu.Ngati muli ndi nkhawa kuti PII yanu ikugwiritsiridwa ntchito molakwika, kapena ngati mukufuna kudziwa zambiri zachinsinsi chathu ndi tanthauzo lake, chonde omasuka kutitumizira imelo. pa screenmirroring.feedback@gmail.com, tidzayesetsa kupereka mayankho omveka bwino a mafunso anu munthawi yake.</string>
+    <string name="please_write_your_feedback">Chonde lembani ndemanga zanu</string>
+    <string name="system_info">System Info yanu idzatumizidwa ku Screen Mirroring tech Department</string>
+    <string name="send">Tumizani</string>
+    <string name="provide_feedback">kupereka ndemanga</string>
+    <string name="invalid_email_provided">Imelo yolakwika yaperekedwa</string>
+    <string name="check_your_internet_connection">Yang\'anani kulumikizidwa kwanu pa intaneti</string>
+    <string name="type_here">lembani apa…</string>
+    <string name="enter_your_email_optional">Lowetsani imelo yanu (posankha)</string>
+    <string name="enjoy_the_app">Kusangalala ndi App?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Vomerezani zomwe mwakumana nazo pogwiritsa ntchito Screen\nMirroring App.</string>
+    <string name="not_now">Osati pano</string>
+    <string name="feedback">Ndemanga:</string>
+    <string name="model">Chitsanzo:</string>
+    <string name="brand">Mtundu:</string>
+    <string name="os_version">Mtundu wa OS:</string>
+    <string name="manufacturer">Wopanga:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Tumizani makalata</string>
+    <string name="select_picture">Sankhani Chithunzi</string>
+    <string name="help_center">Malo Othandizira</string>
+    <string name="question_1">Foni yanga imakakamira pa "Kulumikizana" polumikizana ndi TV.</string>
+    <string name="question_2">Zinandigwirira ntchito kale, koma sizikugwira ntchito tsopano.</string>
+    <string name="question_3">Zikuwonetsa kuti chipangizo changa sichimathandizidwa.</string>
+    <string name="question_4">TV yanga ndi TV yakale ndipo \nsigwirizana ndi Wi-Fi.</string>
+    <string name="question_5">Chithunzi pa TV ndi chakuda, koma phokoso limatha kumveka.</string>
+    <string name="question_6">Kulumikizana kudzasokonezedwa \npakapita nthawi.</string>
+    <string name="question_7">Kodi zambiri zanga kapena foni yam\'manja ndi yotetezeka?</string>
+    <string name="q_answer_1_1">Yambitsaninso Wi-Fi ya foni yanzeru ndikuwona ngati kulumikizana kwabwino.</string>
+    <string name="q_answer_1_2">Zimitsani TV ndikuchotsanso chingwe chake chamagetsi pasoketi. Dikirani mphindi imodzi ndikuyambitsanso TV.</string>
+    <string name="q_answer_1_3">Kufupikitsa mtunda pakati pa foni yanu ndi TV. Itengereni pafupi.</string>
+    <string name="q_answer_2_1">Ngati idagwira ntchito kale, ndiye kuti itha kugwiritsidwanso ntchito.</string>
+    <string name="q_answer_2_2">Mavuto ambiri olumikizira amatha kuthetsedwa poyambitsanso zida. Ingoyambitsaninso foni yanu ndi TV, tsatirani njira yolumikizira nthawi zonse kuti muyesenso.</string>
+    <string name="q_answer_3_1">Izi zikutanthauza kuti foni yanu palokha siligwirizana chophimba mirroring ntchito.</string>
+    <string name="q_answer_3_2">Mutha kugwiritsa ntchito XCast kuponya makanema, zomvera ndi zithunzi pa TV. Ndi XCast, mutha kuchita zinthu zina ndi foni yanu mukamatumizira TV.</string>
+    <string name="q_answer_4_1">Ngati TV yanu imathandizira mawonekedwe a HDMI, tikupangira kuti mugule cholandirira chakunja cha galasi lowonera. Monga Chromecast, Anycast etc.</string>
+    <string name="q_answer_5_1">Zina zimaphatikizapo kutetezedwa kwa kukopera ndipo sizingawonekere pazida za anthu ena, monga Netflix, Disney Plus etc.</string>
+    <string name="q_answer_5_2">Mukhoza kukopera kanema kapena kuyang\'ana gwero yemweyo pa mapulogalamu ena kuti tiyese.</string>
+    <string name="q_answer_6_1">Mutha kuyatsa Smart Connect muzokonda zanu za Wi-Fi. Idzasaka maulalo abwino a Wi-Fi pafupipafupi, ndikulumikizana uku ndi uku.</string>
+    <string name="q_answer_6_2">Chonde onetsetsani kuti Wi-Fi ya foni yam\'manja ndi TV ndi SAM komanso chizindikiro chabwino kwambiri.</string>
+    <string name="q_answer_7_1">Sitidzayang\'anira kapena kusonkhanitsa zambiri za inu ndi foni yanu yam\'manja. Mutha kuyika skrini yanu popanda nkhawa.</string>
+    <string name="q_answer_7_2">Dongosolo angakuchenjezeni kuti pali ngozi ngozi pamaso chophimba galasi. Ichi ndi chikumbutso chokhazikika, chidzakhala</string>
+    <string name="wi_fi">WIFI</string>
+    <string name="miracast">MIRA CAST</string>
+    <string name="install">AYIKANI</string>
+    <string name="install_small">Ikani</string>
+    <string name="manual">Pamanja</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Onetsetsani kuti foni yanu ndi TV zilumikizidwa\pa netiweki yomweyo ya Wi-Fi.</string>
+    <string name="hd_streaming">Kusintha kwa HD</string>
+    <string name="smart_devices">zida zanzeru</string>
+    <string name="private_browser">Msakatuli Wachinsinsi</string>
+    <string name="effects">Zotsatira zake</string>
+    <string name="slider">Slider</string>
+    <string name="search_or_type_web_address">Sakani kapena lembani adilesi yapaintaneti</string>
+    <string name="install_2">Ikani</string>
+    <string name="bookmark">Chizindikiro</string>
+    <string name="downloads">Zotsitsa</string>
+    <string name="download">Tsitsani</string>
+    <string name="favorites">Zokondedwa</string>
+    <string name="favorite">Zokondedwa</string>
+    <string name="history">Mbiri</string>
+    <string name="share_pdf">Gawani PDF</string>
+    <string name="copy_url">Koperani ulalo</string>
+    <string name="share_app">Gawani App</string>
+    <string name="share_url">Gawani ulalo</string>
+    <string name="exit">Potulukira</string>
+    <string name="new_tab">Tabu Yatsopano</string>
+    <string name="google">Google</string>
+    <string name="startpage">StartPage</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Kwantha</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Makina osakira mwamakonda</string>
+    <string name="add_shortcut_to_home">Onjezani njira yachidule yofikira kunyumba</string>
+    <string name="save_screenshot">Sungani Screenshot</string>
+    <string name="add_to_bookmark">Onjezani ku bookmark</string>
+    <string name="save_as_pdf">Sungani ngati pdf</string>
+    <string name="save_action">Sungani Zochita</string>
+    <string name="add_to_favorite">Onjezani kwa wokondedwa</string>
+    <string name="search_engine">Search Engine</string>
+    <string name="browser_exit_body">Mukutsimikiza kuti mukufuna kutuluka pa Msakatuli</string>
+    <string name="exit_browser">Choka msakatuli</string>
+    <string name="custom_user_agent">Wogwiritsa ntchito mwamakonda</string>
+    <string name="start_control">Yambani Kulamulira</string>
+    <string name="data_control">Data Control</string>
+    <string name="app_settings">Zokonda pa pulogalamu</string>
+    <string name="browser_settings">Zokonda Zamsakatuli</string>
+    <string name="behavior_ui">Khalidwe/UI</string>
+    <string name="clear_cache">Chotsani Cache</string>
+    <string name="clear_history">Chotsani Mbiri</string>
+    <string name="clear_browsing_history">Chotsani mbiri yosakatula</string>
+    <string name="clear_all_cache">Chotsani cache yonse</string>
+    <string name="clear_database_body">Chotsani "zosungidwa zosungidwa" ndi " local\ndata bases"</string>
+    <string name="clear_cookies_body">Mukayatsidwa, ma cookie onse achotsedwa. Komanso\Ma Cookies amasamba odalirika</string>
+    <string name="clear_databases">Chotsani nkhokwe</string>
+    <string name="clear_cookies">Chotsani Ma cookie</string>
+    <string name="clear_when_application_exit">Chotsani pulogalamu ikatuluka</string>
+    <string name="clear_when_application_exit_body">Nthawi zonse mukasiya zonse zomwe zasungidwa pamwambapa\zichotsedwa</string>
+    <string name="image">Chithunzi</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Ma cookie</string>
+    <string name="reopen_last_tab">Tsegulaninso tabu yomaliza</string>
+    <string name="confirm_tab_close">Tsimikizani tabu kutseka</string>
+    <string name="confirm_browser_exit">Tsimikizirani kutuluka kwa msakatuli</string>
+    <string name="position">Udindo</string>
+    <string name="first_toolbar">Chida choyamba</string>
+    <string name="hide_toolbar">Bisani chida</string>
+    <string name="toolbar">Zida</string>
+    <string name="bookmarks">Zosungira</string>
+    <string name="edit">Sinthani</string>
+    <string name="today">Lero</string>
+    <string name="the_last_hour">Ola lotsiriza</string>
+    <string name="last_week">Sabata yatha</string>
+    <string name="last_month">Mwezi watha</string>
+    <string name="delete_all_history">Chotsani mbiri yonse</string>
+    <string name="copied">kukopera</string>
+    <string name="share_ss">Gawani SS</string>
+    <string name="file_manager">Woyang\'anira Fayilo</string>
+    <string name="search_on">Sakani</string>
+    <string name="add_shortcut">Onjezani Njira Yachidule</string>
+    <string name="tab_exit">Kutuluka kwa Tabu</string>
+    <string name="do_you_want_to_close">Kodi mukufuna kutseka</string>
+    <string name="download_complete_share_image">Kutsitsa kwatha. Gawani chithunzi</string>
+    <string name="update">Kusintha</string>
+    <string name="unfavorite">Osakonda</string>
+    <string name="no_input_provided">Palibe mawu omwe aperekedwa</string>
+    <string name="input">Zolowetsa</string>
+    <string name="website_link">Tsamba lawebusayiti</string>
+    <string name="for_you">Zanu</string>
+    <string name="website">Webusaiti:</string>
+    <string name="url">Ulalo:</string>
+    <string name="date">Tsiku</string>
+    <string name="no_site_loaded">Mulibe tsamba lodzaza</string>
+    <string name="more_then_5_images_can_not_be_picked">Zithunzi zochulukirapo kuposa zisanu sizitha kusankhidwa</string>
+    <string name="location">"Malo "</string>
+</resources>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Armenian-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">"Գտնվելու վայրը "</string>
+    <string name="connection_close_confirm">Ցանկանու՞մ եք չեղարկել ընթացիկ VPN կապը:</string>
+    <string name="yes">ԱՅՈ</string>
+    <string name="no">ՈՉ</string>
+    <string name="yes_2">Այո՛</string>
+    <string name="no_2">Ոչ</string>
+    <string name="select_images">Ընտրեք Պատկերներ</string>
+    <string name="tabs">Ներդիրներ</string>
+    <string name="share">Կիսվել</string>
+    <string name="save">Պահպանել</string>
+    <string name="more">Ավելին</string>
+    <string name="ok">լավ</string>
+    <string name="cancel">Չեղարկել</string>
+    <string name="favorite_site">Փոխեք կանխադրված կայքը, որը բեռնվում է զննարկչի\nսկիզբում</string>
+    <string name="custom_search_engine_body">Ավելացրեք հատուկ որոնման url, ինչպես նաև ընտրեք «Custom\nորոնիչ» որպես որոնման մատակարար</string>
+    <string name="search_engine_body">Ընտրեք ձեր նախընտրած որոնման համակարգը կամ\nսահմանեք հատուկ</string>
+    <string name="data_control_body">Մաքրեք ձեր դիտարկիչի տվյալները կամ որոշեք, թե ինչ տվյալներ\nկջնջվեն, երբ դուրս գաք հավելվածից</string>
+    <string name="start_control_body">Որոշեք, թե բրաուզերի որ բաղադրիչները\nկսկսվեն</string>
+    <string name="behavior_ui_body">Փոխեք հավելվածի վարքագիծն ու միջերեսը՝ ձեր նախասիրություններին համապատասխան</string>
+    <string name="book_mark_body">Զտիչի երկխոսությունը ցուցադրելու համար երկար սեղմեք ակնարկի էջանիշի պատկերակը: Որոշեք, թե որ զտիչները կօգտագործեք</string>
+    <string name="app_settings_body">Դիտարկիչի կարգավորումները, այստեղ կարող եք կախված\nAndroid-ի ձեր տարբերակից թույլտվություն տրամադրել:</string>
+    <string name="start_control_image_body">Միացնել ցանցի պատկերները, անջատելը կարող է օգտակար լինել\nբջջային տվյալները խնայելու և վեբկայքն ավելի արագ բեռնելու համար</string>
+    <string name="start_control_location_body">Թույլ տվեք կայքերին մուտք գործել ձեր գտնվելու վայրը: Որոշ\nվեբկայքեր {google, maps for nav) պետք է սա միացնեն</string>
+    <string name="start_control_history_body">Պահպանեք այցելած կայքերի պատմությունը</string>
+    <string name="start_control_java_script_body">Միացնել JavaScript-ը: Շատ կայքեր իրենց ֆունկցիոնալության համար պետք է\nJavaScript: Բայց դրանք նաև հանգիստ են և կարող են օգտագործվել հարձակումների համար</string>
+    <string name="start_control_cookies_body">Միացնել թխուկները: Թխուկները փոքր տեքստային ֆայլեր են,
+որոնք պահվում են ձեր սարքում: Կայքերի օգտագործումը
+դրանք, օրինակ, օգտագործողի կարգավորումները պահելու համար: Բայց
+դրանք կարող են օգտագործվել նաև անձնական օգտագործողներին հավաքելու համար
+տվյալները։ Երրորդ կողմի թխուկները միշտ անջատված են:</string>
+    <string name="confirmation_browser_exit_body">Հաստատման երկխոսություն\nզննարկիչը փակելիս</string>
+    <string name="confirmation_tab_close_body">Հաստատման երկխոսություն ներդիրը փակելիս</string>
+    <string name="confirmation_reopen_last_body">Վերաբացեք նոր ներդիրը, երբ վերջին ներդիրը փակված է, զննարկիչից դուրս գալու փոխարեն</string>
+    <string name="hide_toolbar_body">Կայքում ոլորելիս օգտագործեք ամբողջ էկրանը, եթե սեղմեք «Հետ» կոճակը, դուք դուրս կգաք լիաէկրան ռեժիմից</string>
+    <string name="images">Պատկերներ</string>
+    <string name="videos">Տեսանյութեր</string>
+    <string name="web_browser">Վեբ զննարկիչը</string>
+    <string name="image_slider">պատկեր սահիչ</string>
+    <string name="next">Հաջորդը</string>
+    <string name="previous">Նախորդ</string>
+    <string name="help">Օգնություն</string>
+    <string name="settings">Կարգավորումներ</string>
+    <string name="language">Լեզուներ</string>
+    <string name="more_app">Ավելի շատ ծրագրեր</string>
+    <string name="rate_us">Գնահատեք մեզ</string>
+    <string name="screen_mirroring">Էկրանի հայելավորում</string>
+    <string name="home_screen_text">Համոզվեք, որ ձեր հեռախոսը և հեռուստացույցը միացված են նույն Wi-Fi ցանցին:</string>
+    <string name="wifi_connected">Wi-Fi-ը միացված է</string>
+    <string name="wifi_disconnected">Wi-Fi-ն անջատված է</string>
+    <string name="general">Գեներալ</string>
+    <string name="communicate">Շփվել</string>
+    <string name="send_feedback">Ուղարկել գնահատական</string>
+    <string name="tutorial">Ուսուցողական</string>
+    <string name="how_to_use">Ինչպես օգտագործել?</string>
+    <string name="streaming">Սթրիմինգ</string>
+    <string name="streaming_quality">Հոսքի որակ</string>
+    <string name="auto_stop">Ավտոմատ կանգառ</string>
+    <string name="auto_minimize">Ավտոմատ նվազագույնի հասցնել</string>
+    <string name="advance">Կանխավճար</string>
+    <string name="orientation_mode">Կողմնորոշման ռեժիմ</string>
+    <string name="auto_stop_body_text">Դադարեցրեք տեսանյութը, երբ\nնպատակին կապը կորչում է</string>
+    <string name="auto_minimize_body_text">Թաքցնել հավելվածը, երբ սկսվում է հայելապատումը</string>
+    <string name="casting_orientation_body_text">Ձուլման կողմնորոշում</string>
+    <string name="mirroring_mode">Հայելային ռեժիմ</string>
+    <string name="screen_mirroring_privacy_policy">Էկրանի արտացոլման գաղտնիության քաղաքականություն</string>
+    <string name="privacy_policy">Գաղտնիության քաղաքականություն</string>
+    <string name="supporting_devices">Աջակցող սարքեր</string>
+    <string name="see_which_devices_support_mirroring">Տեսեք, թե որ սարքերն են աջակցում հայելապատմանը</string>
+    <string name="color_theme">Գունավոր թեմա</string>
+    <string name="dark">Մութ</string>
+    <string name="light">Լույս</string>
+    <string name="auto">Ավտոմատ</string>
+    <string name="select_language">Ընտրել լեզուն</string>
+    <string name="close">փակել</string>
+    <string name="images_slider">Պատկերներ սահիչ</string>
+    <string name="screen_mirror">Էկրանի հայելի</string>
+    <string name="tutorial_screen_setup_body">Ձեր թիրախային սարքը պետք է լինի նույն Wi-Fi ցանցում, ինչ այս սարքը, քանի որ Screen Mirror-ը փոխանցում է ձեր էկրանը:</string>
+    <string name="tutorial_screen_mirror_body">Հեռարձակեք ձեր սարքի էկրանը Wi-Fi-ի միջոցով ձեր համակարգչին, նոութբուքին կամ պլանշետին:</string>
+    <string name="tutorial_device_hotspot_body">Կարող եք նաև օգտագործել ձեր սարքի թեժ կետը (միացման ռեժիմ) և միացնել ձեր թիրախային սարքը ձեր թեժ կետին:</string>
+    <string name="tutorial_scan_code_body">Բացեք կայքը ձեր թիրախային սարքում: QR կոդը սկանավորելով՝ կապի կոնֆիգուրացիան փոխանցվում է և սկսվում է հայելապատումը:</string>
+    <string name="tutorial_support_body">Խնդրում ենք նկատի ունենալ, որ Screen Mirror-ն աշխատում է միայն այն դեպքում, երբ այն ճիշտ է տեղադրվում: Screen Mirror-ը փոխանցում է ձեր էկրանը, բայց ոչ ձեր սարքի ձայնային ազդանշանները: Եթե ​​որևէ խնդիր առաջանա, դիմեք մեզ:</string>
+    <string name="walk_through_body_1">Վայելեք հարթ և բարձրորակ հեռարձակում\nառանց հետաձգման</string>
+    <string name="walk_through_body_2">Միացեք ցանկացած խելացի սարքի և վայելեք\nցուցադրումը ցանկացած էկրանին</string>
+    <string name="walk_through_body_3">Վայելեք ներծրագրային մասնավոր զննարկիչը առանց սահմանափակումների</string>
+    <string name="screen_setup">Էկրանի կարգավորում</string>
+    <string name="device_hotspot">Սարքի թեժ կետ</string>
+    <string name="scan_code">Սկան կոդը</string>
+    <string name="support">Աջակցություն</string>
+    <string name="finish">Ավարտել</string>
+    <string name="our_policies">Մեր քաղաքականությունը</string>
+    <string name="privacy_policy_text">Մեզ համար կարևոր է ձեր գաղտնիության պաշտպանությունը: Հուսով ենք, որ ստորև բերված հայտարարությունը կօգնի ձեզ հասկանալ, թե ինչպես ենք մենք վերաբերվում անձնական նույնականացման տվյալներին, որոնք երբեմն կարող եք տրամադրել մեզ ինտերնետի միջոցով (Google Play հարթակ):\n\nԸնդհանուր առմամբ: մենք ձեզանից որևէ PII չենք հավաքում, երբ դուք ներբեռնում եք մեր Android հավելվածները: Որպեսզի կոնկրետ լինենք, մենք չենք պահանջում մեր հավելվածի սպառողների այցելությունները, մենք նույնիսկ չունենք սերվեր՝ նման PII-ը պահելու համար:\n\nScreen Mirroring-ն օգտագործում է Facebook-ը որպես գովազդի մատակարար: Facebook-ը ցանկանում է ցուցադրել ձեզ համապատասխան գովազդ: Լրացուցիչ տեղեկությունների համար այցելեք\nhttps://m.facebook.com/ads/ad_choices:\n\nՄիակ իրավիճակը, որին մենք կարող ենք մուտք ունենալ ձեր PII-ն, այն է, երբ դուք անձամբ որոշում եք մեզ էլփոստով ուղարկել ձեր կարծիքը կամ տրամադրել մեզ վրիպակ: հաշվետվություն։ PII-ները, որոնք մենք կարող ենք ստանալ ձեզնից այդ իրավիճակում, խստորեն սահմանափակվում են միայն ձեր անունով, էլ. հասցեով և ձեր հարցման պատասխանով:\n\nՎերոնշյալ իրավիճակում մենք երաշխավորում ենք, որ ձեր PII-ը կօգտագործվի միայն ձեզ հետ կապվելու և մեր ծառայությունները բարելավելու համար: Մենք երբեք չենք օգտագործի նման տեղեկատվությունը (օրինակ՝ ձեր անունը և էլ. փոստի հասցեն_ այլ նպատակների համար, օրինակ՝ մեր արտադրանքի հետագա շուկայավարման կամ ձեր անձնական տվյալները երրորդ կողմին առևտրային շահույթ ստանալու համար:\n\nՊետք է նշել, թե արդյոք կամ Ձեր կարծիքը կամ սխալի մասին հաղորդումը մեզ չուղարկելը լիովին կամավոր նախաձեռնություն է ձեր իսկ որոշմամբ: Եթե մտահոգություն ունեք ձեր PII-ի չարաշահման վերաբերյալ, կամ եթե ցանկանում եք լրացուցիչ տեղեկություններ մեր գաղտնիության քաղաքականության և դրա նշանակության մասին, խնդրում ենք ազատ զգալ մեզ էլ. screenmirroring.feedback@gmail.com հասցեով մենք կձգտենք ժամանակին հստակ պատասխաններ տալ ձեր հարցերին.</string>
+    <string name="please_write_your_feedback">Խնդրում ենք գրել ձեր կարծիքը</string>
+    <string name="system_info">Ձեր համակարգի տվյալները կուղարկվեն Screen Mirroring տեխնոլոգիական բաժին</string>
+    <string name="send">Ուղարկել</string>
+    <string name="provide_feedback">տրամադրել հետադարձ կապ</string>
+    <string name="invalid_email_provided">Անվավեր էլ</string>
+    <string name="check_your_internet_connection">Ստուգեք ձեր ինտերնետ կապը</string>
+    <string name="type_here">գրեք այստեղ…</string>
+    <string name="enter_your_email_optional">Մուտքագրեք ձեր էլ.փոստը (ըստ ցանկության)</string>
+    <string name="enjoy_the_app">Վայելո՞ւմ եք հավելվածը:</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Գնահատեք ձեր փորձը Screen\nMirroring հավելվածի միջոցով:</string>
+    <string name="not_now">Ոչ հիմա</string>
+    <string name="feedback">Հետադարձ կապ.</string>
+    <string name="model">Մոդել:</string>
+    <string name="brand">Ապրանքանիշը:</string>
+    <string name="os_version">OS տարբերակ.</string>
+    <string name="manufacturer">Արտադրող:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Նամակ ուղարկել</string>
+    <string name="select_picture">Ընտրեք Նկար</string>
+    <string name="help_center">Օգնության կենտրոն</string>
+    <string name="question_1">Հեռուստացույցի հետ զուգակցվելիս իմ հեռախոսը խրվում է «Միանում է»:</string>
+    <string name="question_2">Դա ինձ մոտ նախկինում աշխատում էր, բայց \nհիմա չի աշխատում:</string>
+    <string name="question_3">Այն ցույց է տալիս, որ իմ սարքը \nչի աջակցվում:</string>
+    <string name="question_4">Իմ հեռուստացույցը հին հեռուստացույց է \nև չի աջակցում wi-fi:</string>
+    <string name="question_5">Հեռուստացույցի պատկերը սև է, բայց \nձայնը լսվում է:</string>
+    <string name="question_6">Որոշ ժամանակ անց կապը \nկդադարեցվի:</string>
+    <string name="question_7">Արդյո՞ք իմ անձնական տվյալները կամ բջջային տվյալները բացարձակապես անվտանգ են:</string>
+    <string name="q_answer_1_1">Վերագործարկեք սմարթ հեռախոսի Wi-Fi-ը և տեսեք՝ արդյոք կապը հաջող է:</string>
+    <string name="q_answer_1_2">Անջատեք հեռուստացույցը և հեռացրեք սնուցման լարը նաև վարդակից: Սպասեք 1 րոպե և վերագործարկեք հեռուստացույցը:</string>
+    <string name="q_answer_1_3">Կրճատեք հեռախոսի և հեռուստացույցի միջև եղած հեռավորությունը: Վերցրեք այն մոտիկից:</string>
+    <string name="q_answer_2_1">Եթե նախկինում աշխատել է, ապա այն հաստատ կարող է կրկին օգտագործվել:</string>
+    <string name="q_answer_2_2">Կապի խնդիրների մեծ մասը կարող է լուծվել սարքերը վերագործարկելու միջոցով: Պարզապես վերագործարկեք և՛ հեռախոսը, և՛ հեռուստացույցը, հետևեք կանոնավոր միացման գործընթացին՝ նորից փորձելու համար:</string>
+    <string name="q_answer_3_1">Սա նշանակում է, որ ձեր հեռախոսն ինքնին չի աջակցում էկրանի արտացոլման գործառույթը:</string>
+    <string name="q_answer_3_2">Դուք կարող եք օգտագործել XCast-ը՝ վիդեո, աուդիո և լուսանկար հեռուստացույց հեռարձակելու համար: XCast-ի միջոցով դուք կարող եք այլ բաներ անել ձեր հեռախոսով հեռուստացույց հեռարձակելիս:</string>
+    <string name="q_answer_4_1">Եթե ձեր հեռուստացույցն աջակցում է HDMI ինտերֆեյսին, խորհուրդ ենք տալիս գնել արտաքին ընդունիչ՝ էկրանի արտացոլման համար: Ինչպես, օրինակ, Chromecast, Anycast և այլն:</string>
+    <string name="q_answer_5_1">Որոշ բովանդակություն ներառում է հեղինակային իրավունքի պաշտպանություն և չի կարող ցուցադրվել երրորդ կողմի սարքերում, ինչպիսիք են Netflix-ը, Disney Plus-ը և այլն:</string>
+    <string name="q_answer_5_2">Փորձելու համար կարող եք ներբեռնել տեսանյութը կամ փնտրել նույն ռեսուրսը այլ հավելվածներում:</string>
+    <string name="q_answer_6_1">Դուք կարող եք միացնել Smart Connect-ը ձեր Wi-Fi կարգավորումներում: Այն անընդհատ կփնտրի ավելի լավ Wi-Fi կապեր և միշտ միանում է ետ ու առաջ:</string>
+    <string name="q_answer_6_2">Խնդրում ենք համոզվել, որ բջջային հեռախոսի և հեռուստացույցի Wi-Fi-ը SAM-ն է և լավագույն ազդանշանը:</string>
+    <string name="q_answer_7_1">Մենք չենք վերահսկելու կամ հավաքելու որևէ տեղեկություն ձեր և ձեր բջջային հեռախոսի վերաբերյալ: Դուք կարող եք հեռարձակել ձեր էկրանն առանց որևէ անհանգստության:</string>
+    <string name="q_answer_7_2">Համակարգը կարող է նախազգուշացնել ձեզ, որ անվտանգության վտանգ կա մինչև էկրանի արտացոլումը: Սա պարզապես սովորական հիշեցում է, դա կլինի</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">ՄԻՐԱԿԱՍՏ</string>
+    <string name="install">ՏԵՂԱԴՐՈՒՄ</string>
+    <string name="install_small">Տեղադրեք</string>
+    <string name="manual">Ձեռնարկ</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Համոզվեք, որ ձեր հեռախոսը և հեռուստացույցը միացած են\nմիևնույն Wi-Fi ցանցին:</string>
+    <string name="hd_streaming">HD հոսք</string>
+    <string name="smart_devices">խելացի սարքեր</string>
+    <string name="private_browser">Անձնական զննարկիչ</string>
+    <string name="effects">Էֆեկտներ</string>
+    <string name="slider">սահիչ</string>
+    <string name="search_or_type_web_address">Որոնեք կամ մուտքագրեք վեբ հասցեն</string>
+    <string name="install_2">Տեղադրեք</string>
+    <string name="bookmark">Էջանիշ</string>
+    <string name="downloads">Ներբեռնումներ</string>
+    <string name="download">Բեռնել</string>
+    <string name="favorites">Ֆավորիտներ</string>
+    <string name="favorite">Սիրված</string>
+    <string name="history">Պատմություն</string>
+    <string name="share_pdf">Կիսվեք PDF-ով</string>
+    <string name="copy_url">Պատճենել URL-ը</string>
+    <string name="share_app">Համօգտագործել հավելվածը</string>
+    <string name="share_url">Կիսվել URL-ով</string>
+    <string name="exit">Ելք</string>
+    <string name="new_tab">Նոր էջանշանը</string>
+    <string name="google">Google</string>
+    <string name="startpage">Սկսնակ Էջ</string>
+    <string name="bing">Բինգ</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Սեարքս</string>
+    <string name="baidu">Բայդու</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Էկոզիա</string>
+    <string name="custom_search_engine">Պատվերով որոնման համակարգ</string>
+    <string name="add_shortcut_to_home">Ավելացնել դյուրանցում դեպի տուն</string>
+    <string name="save_screenshot">Պահպանել սքրինշոթը</string>
+    <string name="add_to_bookmark">Ավելացնել էջանիշին</string>
+    <string name="save_as_pdf">Պահպանել որպես pdf</string>
+    <string name="save_action">Պահպանել գործողությունը</string>
+    <string name="add_to_favorite">Ավելացնել սիրելիին</string>
+    <string name="search_engine">Որոնման համակարգ</string>
+    <string name="browser_exit_body">Վստա՞հ եք, որ ցանկանում եք դուրս գալ դիտարկիչից</string>
+    <string name="exit_browser">Դուրս գալ զննարկիչից</string>
+    <string name="custom_user_agent">Պատվերով օգտագործողի գործակալ</string>
+    <string name="start_control">Սկսել Control</string>
+    <string name="data_control">Տվյալների վերահսկում</string>
+    <string name="app_settings">Հավելվածի կարգավորումներ</string>
+    <string name="browser_settings">Բրաուզերի կարգավորումներ</string>
+    <string name="behavior_ui">Վարքագիծ/UI</string>
+    <string name="clear_cache">Մաքրել քեշը</string>
+    <string name="clear_history">Մաքուր պատմություն</string>
+    <string name="clear_browsing_history">Մաքրել զննարկման պատմությունը</string>
+    <string name="clear_all_cache">Մաքրել բոլոր քեշը</string>
+    <string name="clear_database_body">Մաքրել «ինդեքսավորված տվյալների բազաները» և «տեղական տվյալների բազաները»</string>
+    <string name="clear_cookies_body">Եթե միացված է, բոլոր թխուկները կջնջվեն: Նաև\nվստահելի կայքերի թխուկները</string>
+    <string name="clear_databases">Մաքրել տվյալների բազաները</string>
+    <string name="clear_cookies">Մաքրել թխուկները</string>
+    <string name="clear_when_application_exit">Մաքրել, երբ դուրս է գալիս հավելվածը</string>
+    <string name="clear_when_application_exit_body">Ամեն անգամ, երբ դուք դուրս գաք վերը նշված բոլոր նշված տվյալները,\nկջնջվեն</string>
+    <string name="image">Պատկեր</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Թխվածքաբլիթներ</string>
+    <string name="reopen_last_tab">Վերաբացեք վերջին ներդիրը</string>
+    <string name="confirm_tab_close">Հաստատեք ներդիրի փակումը</string>
+    <string name="confirm_browser_exit">Հաստատեք դիտարկիչի ելքը</string>
+    <string name="position">Դիրք</string>
+    <string name="first_toolbar">Առաջին գործիքագոտին</string>
+    <string name="hide_toolbar">Թաքցնել գործիքագոտին</string>
+    <string name="toolbar">Գործիքադարակ</string>
+    <string name="bookmarks">Էջանիշեր</string>
+    <string name="edit">Խմբագրել</string>
+    <string name="today">Այսօր</string>
+    <string name="the_last_hour">Վերջին ժամը</string>
+    <string name="last_week">Անցած շաբաթ</string>
+    <string name="last_month">Անցած ամիս</string>
+    <string name="delete_all_history">Ջնջել ամբողջ պատմությունը</string>
+    <string name="copied">պատճենված</string>
+    <string name="share_ss">Կիսվեք SS-ով</string>
+    <string name="file_manager">Ֆայլերի կառավարիչ</string>
+    <string name="search_on">Որոնումը Միացված է</string>
+    <string name="add_shortcut">Ավելացնել դյուրանցում</string>
+    <string name="tab_exit">Ներդիր Ելք</string>
+    <string name="do_you_want_to_close">Ուզու՞մ եք փակել</string>
+    <string name="download_complete_share_image">Ներբեռնումն ավարտված է: Կիսվեք պատկերով</string>
+    <string name="update">Թարմացնել</string>
+    <string name="unfavorite">Ոչ սիրելի</string>
+    <string name="no_input_provided">Մուտք չի տրամադրվել</string>
+    <string name="input">Մուտքագրում</string>
+    <string name="website_link">Կայքի հղում</string>
+    <string name="for_you">Քեզ համար</string>
+    <string name="website">Կայք:</string>
+    <string name="url">URL:</string>
+    <string name="date">Ամսաթիվ</string>
+    <string name="no_site_loaded">Դուք չունեք բեռնված կայք</string>
+    <string name="more_then_5_images_can_not_be_picked">Հինգից ավելի պատկերներ չեն կարող ընտրվել</string>
+</resources>

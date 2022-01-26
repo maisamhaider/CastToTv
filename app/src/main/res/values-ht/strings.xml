@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Haitian Creole-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">Kote</string>
+    <string name="connection_close_confirm">Èske w ta renmen anile Koneksyon VPN aktyèl la?</string>
+    <string name="yes">WI</string>
+    <string name="no">NON</string>
+    <string name="yes_2">Wi</string>
+    <string name="no_2">Non</string>
+    <string name="select_images">Chwazi Imaj</string>
+    <string name="tabs">Tabs</string>
+    <string name="share">Pataje</string>
+    <string name="save">Sove</string>
+    <string name="more">Plis</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Anile</string>
+    <string name="favorite_site">Chanje sit entènèt default ki chaje sou\nkòmanse Navigatè a</string>
+    <string name="custom_search_engine_body">Ajoute URL rechèch koutim tou chwazi "Personalize\nmotè rechèch" kòm founisè rechèch</string>
+    <string name="search_engine_body">Chwazi motè rechèch ou pi pito oswa\nmete yon sèl koutim</string>
+    <string name="data_control_body">Efase done navigatè w la oswa deside ki done\nap efase lè w kite aplikasyon an</string>
+    <string name="start_control_body">Deside ki eleman navigatè a\nap kòmanse</string>
+    <string name="behavior_ui_body">Chanje konpòtman an ak entèfas aplikasyon an pou\nkonfòm preferans ou yo</string>
+    <string name="book_mark_body">Pou montre dyalòg filtre a peze long sou icon makè a nan BECA a. Deside ki filtè ou pral itilize</string>
+    <string name="app_settings_body">Anviwònman navigatè a, la ou ka depann sou vèsyon android ou bay pèmisyon.</string>
+    <string name="start_control_image_body">Pèmèt imaj rezo yo, Enfimite kapab itil\pou sove done mobil yo epi chaje sit entènèt pi vit</string>
+    <string name="start_control_location_body">Pèmèt sit entènèt yo jwenn aksè nan kote ou yo. Kèk\nsit entènèt {google, maps for nav) bezwen aktive sa a</string>
+    <string name="start_control_history_body">Sove istwa a nan sit entènèt vizite</string>
+    <string name="start_control_java_script_body">Pèmèt JavaScript. Anpil sit entènèt bezwen\nJavaScript pou fonksyonalite yo. Men, yo\nalman repo epi yo ka itilize pou atak</string>
+    <string name="start_control_cookies_body">Pèmèt bonbon. Bonbon yo se ti fichye tèks,
+ki estoke sou aparèy ou an. Sit entènèt itilize
+yo pou egzanp nan magazen anviwònman itilizatè. Men
+yo ta ka itilize tou pou kolekte itilizatè pèsonèl
+done. Bonbon twazyèm pati yo toujou enfim.</string>
+    <string name="confirmation_browser_exit_body">Dyalòg konfimasyon lè\nfèmen navigatè a</string>
+    <string name="confirmation_tab_close_body">Dyalòg konfimasyon lè w ap fèmen yon tab</string>
+    <string name="confirmation_reopen_last_body">Relouvri yon nouvo tab lè dènye tab la fèmen olye pou yo soti nan navigatè a</string>
+    <string name="hide_toolbar_body">Sèvi ak tout ekran an lè w ap defile sou sit entènèt la si w peze bouton an tounen w ap kite mòd ekran konplè</string>
+    <string name="images">Imaj</string>
+    <string name="videos">Videyo</string>
+    <string name="web_browser">Navigatè entènèt</string>
+    <string name="image_slider">Slider Imaj</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="help">Ede</string>
+    <string name="settings">Anviwònman</string>
+    <string name="language">Lang</string>
+    <string name="more_app">Plis Aplikasyon</string>
+    <string name="rate_us">Evalye nou</string>
+    <string name="screen_mirroring">Ekran Mirroring</string>
+    <string name="home_screen_text">Asire w ke telefòn ou ak televizyon konekte ak menm rezo Wi-Fi.</string>
+    <string name="wifi_connected">Wi-Fi Konekte</string>
+    <string name="wifi_disconnected">Wi-Fi dekonekte</string>
+    <string name="general">Jeneral</string>
+    <string name="communicate">Kominike</string>
+    <string name="send_feedback">Voye Feedback</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="how_to_use">Kouman pou itilize?</string>
+    <string name="streaming">Difizyon</string>
+    <string name="streaming_quality">Kalite difizyon</string>
+    <string name="auto_stop">Auto Stop</string>
+    <string name="auto_minimize">Oto minimize</string>
+    <string name="advance">Avanse</string>
+    <string name="orientation_mode">Mòd oryantasyon</string>
+    <string name="auto_stop_body_text">Sispann videyo lè koneksyon\nan objektif la pèdi</string>
+    <string name="auto_minimize_body_text">Kache aplikasyon lè mirwar kòmanse</string>
+    <string name="casting_orientation_body_text">Distribisyon oryantasyon</string>
+    <string name="mirroring_mode">Mòd mirwar</string>
+    <string name="screen_mirroring_privacy_policy">Ekran reflete règleman sou enfòmasyon prive</string>
+    <string name="privacy_policy">Règleman sou enfòmasyon prive</string>
+    <string name="supporting_devices">Sipòte Aparèy</string>
+    <string name="see_which_devices_support_mirroring">Gade ki aparèy ki sipòte mirwar</string>
+    <string name="color_theme">Tèm Koulè</string>
+    <string name="dark">Fè nwa</string>
+    <string name="light">Limyè</string>
+    <string name="auto">Oto</string>
+    <string name="select_language">Chwazi Lang</string>
+    <string name="close">fèmen</string>
+    <string name="images_slider">Imaj Kurseur</string>
+    <string name="screen_mirror">Ekran glas</string>
+    <string name="tutorial_screen_setup_body">Aparèy sib ou a dwe nan menm rezo Wi-Fi ak aparèy sa a, paske Screen Mirror ap transmèt ekran ou a.</string>
+    <string name="tutorial_screen_mirror_body">Difize ekran aparèy ou an sou Wi-Fi sou òdinatè w, kaye oswa tablèt.</string>
+    <string name="tutorial_device_hotspot_body">Ou kapab tou itilize hotspot aparèy ou an (mòd tethering) epi konekte aparèy sib ou a ak otspot ou.</string>
+    <string name="tutorial_scan_code_body">Louvri sit sou aparèy sib ou. Lè w tcheke kòd QR la, konfigirasyon koneksyon an transmèt epi miroir kòmanse.</string>
+    <string name="tutorial_support_body">Tanpri sonje ke Screen Mirror travay sèlman lè konfigirasyon kòrèkteman. Screen Mirror transmèt ekran ou a, men se pa siyal odyo aparèy ou an. Si w fè fas ak nenpòt pwoblèm kontakte nou.</string>
+    <string name="walk_through_body_1">Jwi difizyon lis ak bon jan kalite\nsan pa gen okenn reta</string>
+    <string name="walk_through_body_2">Konekte ak nenpòt aparèy entelijan epi jwi\nshow la sou nenpòt ekran</string>
+    <string name="walk_through_body_3">Jwi nan-app navigatè prive san okenn limit</string>
+    <string name="screen_setup">Enstalasyon ekran</string>
+    <string name="device_hotspot">Hotspot aparèy la</string>
+    <string name="scan_code">Eskane Kòd</string>
+    <string name="support">Sipò</string>
+    <string name="finish">Fini</string>
+    <string name="our_policies">Politik nou yo</string>
+    <string name="privacy_policy_text">Pwoteje vi prive w enpòtan pou nou. Nou espere ke deklarasyon sa a pral ede w konprann ki jan nou trete enfòmasyon pèsonèl idantifyan yo, ou ka detanzantan ba nou sou Entènèt (platfòm Google Play la).\n\nAnjeneral. nou pa kolekte okenn PII nan men ou lè ou telechaje aplikasyon android nou yo. Pou nou presize, nou pa bezwen vizit konsomatè yo nan aplikasyon nou an, nou menm pa gen yon sèvè pou estoke PII sa yo.\n\nScreen Mirroring itilize Facebook kòm founisè anons. Facebook vle montre piblisite ki enpòtan pou ou. Pou plis enfòmasyon tanpri vizite\nhttps://m.facebook.com/ads/ad_choices.\n\nSèl sitiyasyon nou ka jwenn aksè a ou PII se lè pèsonèlman ou deside voye yon imèl ba nou fidbak ou oswa ba nou yon ensèk. rapò. PII nou ka jwenn nan men ou nan sitiyasyon sa a se entèdi limite ak non ou, adrès imel ak repons sondaj ou a sèlman.\n\nNan sitiyasyon ki pi wo a, nou garanti ke ou pral itilize PII sèlman pou kontakte ou ak amelyore sèvis nou yo. Nou p\'ap janm sèvi ak enfòmasyon sa yo (egzanp non ou ak adrès imel_ pou nenpòt lòt rezon, tankou pou plis mache pwodwi nou yo, oswa pou divilge enfòmasyon pèsonèl ou bay yon twazyèm pati pou pwofi komèsyal yo.\n\nNou dwe sonje ke si wi ou non. pa voye nou fidbak oswa rapò sou ensèk se yon inisyativ konplètman volontè sou pwòp desizyon ou. Si ou gen enkyetid sou PII ou yo te mal itilize, oswa si ou vle plis enfòmasyon sou règleman sou enfòmasyon prive nou an ak sa sa vle di, tanpri, ezite voye yon imèl ba nou. nan screenmirroring.feedback@gmail.com, nou pral fè efò pou bay repons klè pou kesyon ou yo nan yon fason apwopriye.</string>
+    <string name="please_write_your_feedback">Tanpri ekri fidbak ou</string>
+    <string name="system_info">Y ap voye enfòmasyon sistèm ou a bay Depatman teknoloji Screen Mirroring</string>
+    <string name="send">Voye</string>
+    <string name="provide_feedback">bay fidbak</string>
+    <string name="invalid_email_provided">Imèl ki pa valab bay</string>
+    <string name="check_your_internet_connection">Tcheke koneksyon entènèt ou an</string>
+    <string name="type_here">tape isit la…</string>
+    <string name="enter_your_email_optional">Antre imel ou (si ou vle)</string>
+    <string name="enjoy_the_app">Jwi App a?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Evalye eksperyans ou itilize Screen\nMirroring App.</string>
+    <string name="not_now">Pa kounye a</string>
+    <string name="feedback">Feedback:</string>
+    <string name="model">Modèl:</string>
+    <string name="brand">Mak:</string>
+    <string name="os_version">OS vèsyon:</string>
+    <string name="manufacturer">Manifakti:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Voye lapòs</string>
+    <string name="select_picture">Chwazi Foto</string>
+    <string name="help_center">Sant Èd</string>
+    <string name="question_1">Telefòn mwen an bloke nan "Konekte" lè yo asosye ak televizyon.</string>
+    <string name="question_2">Li te travay pou mwen anvan, men li pa \ntravay kounye a.</string>
+    <string name="question_3">Li montre ke aparèy mwen an \npa sipòte.</string>
+    <string name="question_4">Televizyon mwen an se yon ansyen televizyon epi li pa sipòte wi-fi.</string>
+    <string name="question_5">Imaj la sou televizyon an nwa, men \nson an ka tande.</string>
+    <string name="question_6">Koneksyon pral koupe apre yon \nti tan.</string>
+    <string name="question_7">Èske enfòmasyon pèsonèl mwen oswa done mobil mwen an sekirite absoliman?</string>
+    <string name="q_answer_1_1">Rekòmanse Wi-Fi telefòn entelijan an epi wè si koneksyon an reyisi.</string>
+    <string name="q_answer_1_2">Etenn televizyon an epi retire kòd kouran li nan priz la tou. Tann 1 minit epi rekòmanse televizyon an.</string>
+    <string name="q_answer_1_3">Kout distans ki genyen ant telefòn ou ak televizyon an. Pran li tou pre.</string>
+    <string name="q_answer_2_1">Si li te travay anvan, Lè sa a, li definitivman ka itilize ankò.</string>
+    <string name="q_answer_2_2">Pifò pwoblèm koneksyon ka rezoud pa rekòmanse aparèy. Jis rekòmanse tou de telefòn ou ak televizyon, swiv pwosesis koneksyon regilye a pou reesye.</string>
+    <string name="q_answer_3_1">Sa vle di ke telefòn ou tèt li pa sipòte fonksyon an mirwar ekran.</string>
+    <string name="q_answer_3_2">Ou ka itilize XCast pou voye videyo, odyo ak foto sou televizyon. Avèk XCast, ou ka fè lòt bagay ak telefòn ou pandan w ap voye sou televizyon.</string>
+    <string name="q_answer_4_1">Si televizyon ou a sipòte koòdone HDMI, nou rekòmande pou ou achte yon reseptè ekstèn pou reflete ekran. Tankou Chromecast, Anycast elatriye.</string>
+    <string name="q_answer_5_1">Gen kèk kontni ki enplike pwoteksyon copyright epi yo pa ka parèt sou aparèy twazyèm pati, tankou Netflix, Disney Plus elatriye.</string>
+    <string name="q_answer_5_2">Ou ka telechaje videyo a oswa chèche menm resous la sou lòt aplikasyon pou eseye.</string>
+    <string name="q_answer_6_1">Ou ka aktive Smart Connect la nan paramèt Wi-Fi ou yo. Li pral chèche pi bon koneksyon Wi-Fi toujou ap, epi toujou konekte retounen ak lide.</string>
+    <string name="q_answer_6_2">Tanpri asire w ke Wi-Fi nan telefòn mobil lan ak televizyon se SAM a ak pi bon siyal la.</string>
+    <string name="q_answer_7_1">Nou p ap kontwole oswa kolekte okenn enfòmasyon sou ou ak telefòn mobil ou. Ou ka jete ekran ou san okenn enkyetid.</string>
+    <string name="q_answer_7_2">Sistèm nan ka avèti ou ke gen yon danje sekirite anvan reflete ekran. Sa a se jis yon rapèl regilye, li pral</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">ENSTALE</string>
+    <string name="install_small">Enstale</string>
+    <string name="manual">Manyèl</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Asire w ke telefòn ou ak televizyon konekte\nan menm rezo Wi-Fi.</string>
+    <string name="hd_streaming">Difizyon HD</string>
+    <string name="smart_devices">aparèy entelijan</string>
+    <string name="private_browser">Navigatè prive</string>
+    <string name="effects">Efè</string>
+    <string name="slider">Kurseur</string>
+    <string name="search_or_type_web_address">Chèche oswa tape adrès entènèt</string>
+    <string name="install_2">Enstale</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="downloads">Telechajman</string>
+    <string name="download">Telechaje</string>
+    <string name="favorites">Favoris</string>
+    <string name="favorite">pi renmen</string>
+    <string name="history">Istwa</string>
+    <string name="share_pdf">Pataje Pdf</string>
+    <string name="copy_url">Kopi URL</string>
+    <string name="share_app">Pataje App</string>
+    <string name="share_url">Pataje url</string>
+    <string name="exit">Sòti</string>
+    <string name="new_tab">Nouvo Tab</string>
+    <string name="google">Google</string>
+    <string name="startpage">StartPage</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Motè rechèch koutim</string>
+    <string name="add_shortcut_to_home">Ajoute chemen kout lakay ou</string>
+    <string name="save_screenshot">Sove Ekran</string>
+    <string name="add_to_bookmark">Ajoute nan makè</string>
+    <string name="save_as_pdf">Sove kòm pdf</string>
+    <string name="save_action">Sove Aksyon</string>
+    <string name="add_to_favorite">Ajoute nan pi renmen</string>
+    <string name="search_engine">Search Engine</string>
+    <string name="browser_exit_body">Èske w sèten ou vle soti nan navigatè a</string>
+    <string name="exit_browser">Sòti navigatè a</string>
+    <string name="custom_user_agent">Ajan itilizatè Custom</string>
+    <string name="start_control">Kòmanse kontwòl</string>
+    <string name="data_control">Kontwòl Done</string>
+    <string name="app_settings">Anviwònman aplikasyon an</string>
+    <string name="browser_settings">Anviwònman navigatè a</string>
+    <string name="behavior_ui">Konpòtman/UI</string>
+    <string name="clear_cache">Klè Cache</string>
+    <string name="clear_history">Istwa klè</string>
+    <string name="clear_browsing_history">Klè istwa Navigasyon</string>
+    <string name="clear_all_cache">Netwaye tout kachèt</string>
+    <string name="clear_database_body">Efase "baz done endis" ak "baz done lokal yo"</string>
+    <string name="clear_cookies_body">Si li aktive, tout bonbon yo pral efase. Epitou\nbonbon yo nan sit entènèt ou fè konfyans</string>
+    <string name="clear_databases">Klè baz done</string>
+    <string name="clear_cookies">Klè bonbon</string>
+    <string name="clear_when_application_exit">Klè lè aplikasyon an sòti</string>
+    <string name="clear_when_application_exit_body">Chak fwa ou kite tout done ki anwo yo tcheke\nap efase</string>
+    <string name="image">Imaj</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Bonbon</string>
+    <string name="reopen_last_tab">Relouvri dènye tab la</string>
+    <string name="confirm_tab_close">Konfime tab fèmen</string>
+    <string name="confirm_browser_exit">Konfime sòti navigatè a</string>
+    <string name="position">Pozisyon</string>
+    <string name="first_toolbar">Premye ba zouti</string>
+    <string name="hide_toolbar">Kache ba zouti</string>
+    <string name="toolbar">Ba zouti</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="edit">Edit</string>
+    <string name="today">Jodi a</string>
+    <string name="the_last_hour">Dènye èdtan an</string>
+    <string name="last_week">Semèn pase</string>
+    <string name="last_month">Mwa pase a</string>
+    <string name="delete_all_history">Efase tout istwa</string>
+    <string name="copied">kopye</string>
+    <string name="share_ss">Pataje SS</string>
+    <string name="file_manager">Manadjè File</string>
+    <string name="search_on">Search On</string>
+    <string name="add_shortcut">Ajoute chemen kout</string>
+    <string name="tab_exit">Tab sòti</string>
+    <string name="do_you_want_to_close">Ou vle fèmen</string>
+    <string name="download_complete_share_image">Telechaje konplè. Pataje imaj</string>
+    <string name="update">Mizajou</string>
+    <string name="unfavorite">Yon pi renmen</string>
+    <string name="no_input_provided">Pa gen okenn opinyon bay</string>
+    <string name="input">Antre</string>
+    <string name="website_link">Lyen sit entènèt</string>
+    <string name="for_you">Pou ou</string>
+    <string name="website">Sit entènèt:</string>
+    <string name="url">URL:</string>
+    <string name="date">Dat</string>
+    <string name="no_site_loaded">Ou pa gen sit entènèt chaje</string>
+    <string name="more_then_5_images_can_not_be_picked">Plis pase senk imaj pa ka chwazi</string>
+</resources>

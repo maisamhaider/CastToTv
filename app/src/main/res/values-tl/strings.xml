@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Filipino-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">Gusto mo bang kanselahin ang kasalukuyang VPN Connection?</string>
+    <string name="yes">OO</string>
+    <string name="no">HINDI</string>
+    <string name="yes_2">Oo</string>
+    <string name="no_2">Hindi</string>
+    <string name="select_images">Piliin ang Mga Larawan</string>
+    <string name="tabs">Mga tab</string>
+    <string name="share">Ibahagi</string>
+    <string name="save">I-save</string>
+    <string name="more">Higit pa</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Kanselahin</string>
+    <string name="favorite_site">Baguhin ang default na website na naglo-load sa\nsimula ng Browser</string>
+    <string name="custom_search_engine_body">Magdagdag ng custom na search url, piliin din ang "Custom\nsearch engine" bilang search provider</string>
+    <string name="search_engine_body">Piliin ang iyong gustong search engine o\nmagtakda ng custom</string>
+    <string name="data_control_body">I-clear ang data ng iyong browser o magpasya kung anong data ang mali-clear kapag umalis ka sa app</string>
+    <string name="start_control_body">Magpasya kung aling mga bahagi ng browser\n ang magsisimula</string>
+    <string name="behavior_ui_body">Baguhin ang gawi at ui ng app upang\n umangkop sa iyong mga kagustuhan</string>
+    <string name="book_mark_body">Upang ipakita ang dialog ng filter, pindutin nang matagal ang icon ng bookmark sa pangkalahatang-ideya. Magpasya kung aling mga filter ang iyong gagamitin</string>
+    <string name="app_settings_body">Mga setting ng browser, doon ka makakadepende sa\nyong bersyon ng android na magbigay ng pahintulot.</string>
+    <string name="start_control_image_body">Paganahin ang mga larawan sa Network, Maaaring maging kapaki-pakinabang ang hindi pagpapagana\npang mag-save ng mobile data at mag-load ng website nang mas mabilis</string>
+    <string name="start_control_location_body">Payagan ang mga website na ma-access ang iyong lokasyon. Ang ilang\nwebsites {google, maps for nav) ay nangangailangan nito paganahin</string>
+    <string name="start_control_history_body">I-save ang kasaysayan ng mga binisita na website</string>
+    <string name="start_control_java_script_body">Paganahin ang JavaScript. Maraming website ang nangangailangan ng\nJavaScript para sa kanilang functionality. Ngunit ang mga ito ay pahinga rin at maaaring gamitin para sa mga pag-atake</string>
+    <string name="start_control_cookies_body">Paganahin ang Cookies. Ang cookies ay maliliit na text file,
+na nakaimbak sa iyong device. Gumagamit ng mga website
+ang mga ito halimbawa upang mag-imbak ng mga setting ng user. Pero
+maaari din silang magamit upang mangolekta ng personal na gumagamit
+datos. Palaging hindi pinagana ang cookies ng third party.</string>
+    <string name="confirmation_browser_exit_body">Dialog ng kumpirmasyon kapag\nsinasara ang browser</string>
+    <string name="confirmation_tab_close_body">Dialog ng kumpirmasyon kapag isinasara ang isang tab</string>
+    <string name="confirmation_reopen_last_body">Muling magbukas ng bagong tab kapag ang huling tab ay sarado sa halip na lumabas sa browser</string>
+    <string name="hide_toolbar_body">Gamitin ang buong screen kapag nag-i-scroll sa website kung pinindot mo ang back button, aalis ka sa fullscreen mode</string>
+    <string name="images">Mga larawan</string>
+    <string name="videos">Mga video</string>
+    <string name="web_browser">Web Browser</string>
+    <string name="image_slider">Slider ng Larawan</string>
+    <string name="next">Susunod</string>
+    <string name="previous">Nakaraang</string>
+    <string name="help">Tulong</string>
+    <string name="settings">Mga setting</string>
+    <string name="language">Mga wika</string>
+    <string name="more_app">Higit pang Apps</string>
+    <string name="rate_us">I-rate Kami</string>
+    <string name="screen_mirroring">Pag-mirror ng Screen</string>
+    <string name="home_screen_text">Tiyaking nakakonekta ang iyong telepono at TV sa parehong Wi-Fi network.</string>
+    <string name="wifi_connected">Nakakonekta ang Wi-Fi</string>
+    <string name="wifi_disconnected">Nadiskonekta ang Wi-Fi</string>
+    <string name="general">Heneral</string>
+    <string name="communicate">Makipag-usap</string>
+    <string name="send_feedback">Magbigay ng feedback</string>
+    <string name="tutorial">Pagtuturo</string>
+    <string name="how_to_use">Paano gamitin?</string>
+    <string name="streaming">Streaming</string>
+    <string name="streaming_quality">Kalidad ng Streaming</string>
+    <string name="auto_stop">Auto Stop</string>
+    <string name="auto_minimize">Auto Minimize</string>
+    <string name="advance">Advance</string>
+    <string name="orientation_mode">Mode ng Oryentasyon</string>
+    <string name="auto_stop_body_text">Ihinto ang video kapag nawala ang koneksyon\nto target</string>
+    <string name="auto_minimize_body_text">Itago ang app kapag nagsimula ang pag-mirror</string>
+    <string name="casting_orientation_body_text">Oryentasyon sa paghahagis</string>
+    <string name="mirroring_mode">Mirroring mode</string>
+    <string name="screen_mirroring_privacy_policy">Patakaran sa privacy ng pag-mirror ng screen</string>
+    <string name="privacy_policy">Patakaran sa Privacy</string>
+    <string name="supporting_devices">Mga Sumusuportang Device</string>
+    <string name="see_which_devices_support_mirroring">Tingnan kung aling mga device ang sumusuporta sa pag-mirror</string>
+    <string name="color_theme">Tema ng Kulay</string>
+    <string name="dark">Madilim</string>
+    <string name="light">Liwanag</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Piliin ang Wika</string>
+    <string name="close">malapit na</string>
+    <string name="images_slider">Slider ng mga Larawan</string>
+    <string name="screen_mirror">Screen Mirror</string>
+    <string name="tutorial_screen_setup_body">Ang iyong target na device ay kailangang nasa parehong Wi-Fi network gaya ng device na ito, dahil ipinapadala ng Screen Mirror ang iyong screen.</string>
+    <string name="tutorial_screen_mirror_body">I-stream ang screen ng iyong device gamit ang Wi-Fi sa iyong computer, notebook o tablet.</string>
+    <string name="tutorial_device_hotspot_body">Maaari mo ring gamitin ang hotspot ng iyong device (tethering mode) at ikonekta ang iyong target na device sa iyong hotspot.</string>
+    <string name="tutorial_scan_code_body">Buksan ang site sa iyong target na device. Sa pamamagitan ng pag-scan sa QR code, ipinapadala ang configuration ng koneksyon at magsisimula ang pag-mirror.</string>
+    <string name="tutorial_support_body">Mangyaring magkaroon ng kamalayan na ang Screen Mirror ay gagana lamang kapag tama ang pag-setup. Inihahatid ng Screen Mirror ang iyong screen, ngunit hindi ang mga audio signal ng iyong device. Kung nahaharap ka sa anumang problema makipag-ugnayan sa amin.</string>
+    <string name="walk_through_body_1">Mag-enjoy ng maayos at mataas na kalidad ng streaming\nwalang lagging</string>
+    <string name="walk_through_body_2">Kumonekta sa anumang smart device at tamasahin ang\npalabas sa anumang screen</string>
+    <string name="walk_through_body_3">Mag-enjoy sa in-app na pribadong browser na walang limitasyon</string>
+    <string name="screen_setup">Pag-setup ng Screen</string>
+    <string name="device_hotspot">Hotspot ng Device</string>
+    <string name="scan_code">Scan Code</string>
+    <string name="support">Suporta</string>
+    <string name="finish">Tapusin</string>
+    <string name="our_policies">Ang aming mga Patakaran</string>
+    <string name="privacy_policy_text">Ang pagprotekta sa iyong privacy ay mahalaga sa amin. Umaasa kami na ang sumusunod na pahayag ay makakatulong sa iyo na maunawaan kung paano namin pinakikitunguhan ang personal na makikilalang impormasyon, na maaari mong ibigay paminsan-minsan sa amin sa pamamagitan ng Internet (ang Google Play platform).\n\nSa pangkalahatan. hindi kami nangongolekta ng anumang PII mula sa iyo kapag nag-download ka ng aming mga Android application. Upang maging partikular, hindi namin hinihiling ang mga pagbisita ng mga consumer ng aming application, kahit na wala kaming Server para mag-imbak ng naturang PII.\n\nGinagamit ng Screen Mirroring ang Facebook bilang provider ng mga ad. Gusto ng Facebook na magpakita ng mga ad na may kaugnayan sa iyo. Para sa higit pang impormasyon, pakibisita ang\nhttps://m.facebook.com/ads/ad_choices.\n\nAng tanging sitwasyon na maaari naming magkaroon ng access sa iyo PII ay kapag personal kang nagpasya na i-email sa amin ang iyong feedback o upang bigyan kami ng isang bug ulat. Ang PII na maaari naming makuha mula sa iyo sa sitwasyong iyon ay mahigpit na limitado sa iyong pangalan, email address at iyong tugon sa survey lamang.\n\nSa sitwasyon sa itaas, ginagarantiyahan namin na ang iyong PII ay gagamitin lamang para sa pakikipag-ugnayan sa iyo at pagpapabuti ng aming mga serbisyo. Hindi namin kailanman gagamitin ang ganoong impormasyon (hal. ang iyong pangalan at email address_ para sa anumang iba pang layunin, gaya ng higit pang pagbebenta ng aming mga produkto, o upang ibunyag ang iyong personal na impormasyon sa isang third party para sa mga komersyal na pakinabang.\n\nDapat itong tandaan na kung o Ang hindi pagpapadala sa amin ng iyong feedback o ulat ng bug ay isang ganap na boluntaryong inisyatiba sa iyong sariling desisyon. Kung mayroon kang alalahanin tungkol sa iyong PII na maling paggamit, o kung gusto mo ng karagdagang impormasyon tungkol sa aming patakaran sa privacy at kung ano ang ibig sabihin nito, mangyaring huwag mag-atubiling mag-email sa amin sa screenmirroring.feedback@gmail.com, sisikapin naming magbigay ng malinaw na mga sagot sa iyong mga tanong sa napapanahong paraan .</string>
+    <string name="please_write_your_feedback">Mangyaring isulat ang iyong puna</string>
+    <string name="system_info">Ipapadala ang iyong System Info sa Screen Mirroring tech Department</string>
+    <string name="send">Ipadala</string>
+    <string name="provide_feedback">magbigay ng puna</string>
+    <string name="invalid_email_provided">Invalid na Email ang ibinigay</string>
+    <string name="check_your_internet_connection">Suriin ang iyong koneksyon sa internet</string>
+    <string name="type_here">Magsulat Dito…</string>
+    <string name="enter_your_email_optional">Ilagay ang iyong email (opsyonal)</string>
+    <string name="enjoy_the_app">Masiyahan sa App?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">I-rate ang iyong karanasan gamit ang Screen\nMirroring App.</string>
+    <string name="not_now">Hindi ngayon</string>
+    <string name="feedback">Feedback:</string>
+    <string name="model">modelo:</string>
+    <string name="brand">Brand:</string>
+    <string name="os_version">Bersyon ng OS:</string>
+    <string name="manufacturer">Tagagawa:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Magpadala ng mail</string>
+    <string name="select_picture">Piliin ang Larawan</string>
+    <string name="help_center">Help Center</string>
+    <string name="question_1">Na-stuck ang My Phone sa "Connecting" kapag ipinares sa TV.</string>
+    <string name="question_2">Ito ay nagtrabaho para sa akin dati, ngunit hindi ito gumagana ngayon.</string>
+    <string name="question_3">Ipinapakita nito na hindi suportado ang aking device.</string>
+    <string name="question_4">Ang aking TV ay isang lumang TV at hindi sumusuporta sa wi-fi.</string>
+    <string name="question_5">Itim ang imahe sa TV, ngunit \nmaririnig ang tunog.</string>
+    <string name="question_6">Maaantala ang koneksyon pagkaraan \nng ilang sandali.</string>
+    <string name="question_7">Ang aking personal na impormasyon o mobile data ba ay ganap na ligtas?</string>
+    <string name="q_answer_1_1">I-restart ang Wi-Fi ng smart phone at tingnan kung matagumpay ang koneksyon.</string>
+    <string name="q_answer_1_2">I-off ang TV at tanggalin din ang power cord nito sa socket. Maghintay ng 1 minuto at i-restart ang TV.</string>
+    <string name="q_answer_1_3">Paikliin ang distansya sa pagitan ng iyong telepono at ng TV. Dalhin ito nang malapitan.</string>
+    <string name="q_answer_2_1">Kung nagtrabaho ito dati, tiyak na magagamit itong muli.</string>
+    <string name="q_answer_2_2">Karamihan sa mga problema sa koneksyon ay malulutas sa pamamagitan ng pag-restart ng mga device. I-restart lang ang iyong telepono at TV, sundin ang regular na proseso ng koneksyon upang muling subukan.</string>
+    <string name="q_answer_3_1">Nangangahulugan ito na ang iyong telepono mismo ay hindi sumusuporta sa screen mirroring function.</string>
+    <string name="q_answer_3_2">Maaari mong gamitin ang XCast upang mag-cast ng video, audio at larawan sa TV. Sa XCast, magagawa mo ang iba pang mga bagay gamit ang iyong telepono habang nagka-cast sa TV.</string>
+    <string name="q_answer_4_1">Kung sinusuportahan ng iyong TV ang HDMI interface, inirerekomenda namin na bumili ka ng external na receiver para sa pag-mirror ng screen. Gaya ng Chromecast, Anycast atbp.</string>
+    <string name="q_answer_5_1">Ang ilang nilalaman ay nagsasangkot ng proteksyon sa copyright at hindi maaaring ipakita sa mga third party na device, gaya ng Netflix, Disney Plus atbp.</string>
+    <string name="q_answer_5_2">Maaari mong i-download ang video o hanapin ang parehong mapagkukunan sa iba pang mga app upang masubukan.</string>
+    <string name="q_answer_6_1">Maaari mong i-on ang Smart Connect sa iyong mga setting ng Wi-Fi. Patuloy itong maghahanap ng mas magagandang koneksyon sa Wi-fi, at palaging kumonekta pabalik-balik.</string>
+    <string name="q_answer_6_2">Pakitiyak na ang Wi-Fi ng mobile phone at TV ay ang SAM at ang pinakamahusay na signal.</string>
+    <string name="q_answer_7_1">Hindi namin susubaybayan o mangolekta ng anumang impormasyon sa iyo at sa iyong mobile phone. Maaari mong i-cast ang iyong screen nang walang anumang pag-aalala.</string>
+    <string name="q_answer_7_2">Maaaring balaan ka ng system na may panganib sa kaligtasan bago ang pag-mirror ng screen. Ito ay isang regular na paalala lamang, ito ay magiging</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">I-INSTALL</string>
+    <string name="install_small">I-install</string>
+    <string name="manual">Manwal</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Tiyaking nakakonekta ang iyong telepono at TV\sa parehong Wi-Fi network.</string>
+    <string name="hd_streaming">HD Streaming</string>
+    <string name="smart_devices">matalinong mga aparato</string>
+    <string name="private_browser">Pribadong Browser</string>
+    <string name="effects">Epekto</string>
+    <string name="slider">Slider</string>
+    <string name="search_or_type_web_address">Maghanap o mag-type ng web address</string>
+    <string name="install_2">I-install</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="downloads">Mga download</string>
+    <string name="download">I-download</string>
+    <string name="favorites">Mga paborito</string>
+    <string name="favorite">Paborito</string>
+    <string name="history">Kasaysayan</string>
+    <string name="share_pdf">Ibahagi ang PDF</string>
+    <string name="copy_url">Kopyahin ang URL</string>
+    <string name="share_app">Ibahagi ang App</string>
+    <string name="share_url">Ibahagi ang url</string>
+    <string name="exit">Lumabas</string>
+    <string name="new_tab">Bagong tab</string>
+    <string name="google">Google</string>
+    <string name="startpage">Panimulang Pahina</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Custom na search engine</string>
+    <string name="add_shortcut_to_home">Magdagdag ng shortcut sa bahay</string>
+    <string name="save_screenshot">I-save ang Screenshot</string>
+    <string name="add_to_bookmark">Idagdag sa bookmark</string>
+    <string name="save_as_pdf">I-save bilang pdf</string>
+    <string name="save_action">I-save ang Aksyon</string>
+    <string name="add_to_favorite">Idagdag sa Paborito</string>
+    <string name="search_engine">Search Engine</string>
+    <string name="browser_exit_body">Sigurado ka bang gusto mong lumabas sa Browser</string>
+    <string name="exit_browser">Lumabas sa Browser</string>
+    <string name="custom_user_agent">Pasadyang ahente ng gumagamit</string>
+    <string name="start_control">Simulan ang Kontrol</string>
+    <string name="data_control">Kontrol ng Data</string>
+    <string name="app_settings">Mga setting ng app</string>
+    <string name="browser_settings">Mga Setting ng Browser</string>
+    <string name="behavior_ui">Gawi/UI</string>
+    <string name="clear_cache">I-clear ang Cache</string>
+    <string name="clear_history">I-clear ang Kasaysayan</string>
+    <string name="clear_browsing_history">I-clear ang kasaysayan ng pagba-browse</string>
+    <string name="clear_all_cache">I-clear ang lahat ng cache</string>
+    <string name="clear_database_body">I-clear ang "mga naka-index na database" at "mga lokal na base ng data"</string>
+    <string name="clear_cookies_body">Kung pinagana, ang lahat ng cookies ay tatanggalin. Gayundin\nang Cookies ng mga pinagkakatiwalaang website</string>
+    <string name="clear_databases">I-clear ang mga database</string>
+    <string name="clear_cookies">I-clear ang Cookies</string>
+    <string name="clear_when_application_exit">I-clear kapag lumabas ang application</string>
+    <string name="clear_when_application_exit_body">Sa tuwing aalis ka sa lahat ng naka-check na data sa itaas\nmatatanggal</string>
+    <string name="image">Imahe</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Mga cookies</string>
+    <string name="reopen_last_tab">Buksan muli ang huling tab</string>
+    <string name="confirm_tab_close">Kumpirmahin ang pagsasara ng tab</string>
+    <string name="confirm_browser_exit">Kumpirmahin ang paglabas ng browser</string>
+    <string name="position">Posisyon</string>
+    <string name="first_toolbar">Unang toolbar</string>
+    <string name="hide_toolbar">Itago ang toolbar</string>
+    <string name="toolbar">Toolbar</string>
+    <string name="bookmarks">Mga bookmark</string>
+    <string name="edit">I-edit</string>
+    <string name="today">Ngayong araw</string>
+    <string name="the_last_hour">Ang huling oras</string>
+    <string name="last_week">Nakaraang linggo</string>
+    <string name="last_month">Noong nakaraang buwan</string>
+    <string name="delete_all_history">Tanggalin ang lahat ng kasaysayan</string>
+    <string name="copied">kinopya</string>
+    <string name="share_ss">Ibahagi ang SS</string>
+    <string name="file_manager">Tagapamahala ng File</string>
+    <string name="search_on">Naka-on ang Paghahanap</string>
+    <string name="add_shortcut">Magdagdag ng shortcut</string>
+    <string name="tab_exit">Tab Exit</string>
+    <string name="do_you_want_to_close">Gusto mo bang isara</string>
+    <string name="download_complete_share_image">Kumpleto na ang pag-download. Ibahagi ang larawan</string>
+    <string name="update">Update</string>
+    <string name="unfavorite">Hindi paborito</string>
+    <string name="no_input_provided">Walang ibinigay na input</string>
+    <string name="input">Input</string>
+    <string name="website_link">Link ng website</string>
+    <string name="for_you">Para sa iyo</string>
+    <string name="website">Website:</string>
+    <string name="url">Url:</string>
+    <string name="date">Petsa</string>
+    <string name="no_site_loaded">Wala kang na-load na website</string>
+    <string name="more_then_5_images_can_not_be_picked">Higit sa limang larawan ang hindi mapipili</string>
+    <string name="location">Lokasyon</string>
+
+</resources>

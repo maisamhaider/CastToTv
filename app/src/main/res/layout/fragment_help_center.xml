@@ -34,9 +34,10 @@
             android:id="@+id/materialTextView39"
             style="@style/header_text_3"
             android:layout_marginStart="@dimen/dp_4"
+            android:layout_marginEnd="@dimen/dp_6"
             android:text="@string/help_center"
             app:layout_constraintBottom_toTopOf="@+id/guideline107"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/recyclerView"
             app:layout_constraintStart_toEndOf="@+id/imageview_back"
             app:layout_constraintTop_toTopOf="@+id/guideline106" />
 

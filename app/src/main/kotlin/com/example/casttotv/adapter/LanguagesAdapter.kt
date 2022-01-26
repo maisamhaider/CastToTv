@@ -12,14 +12,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.casttotv.R
 import com.example.casttotv.databinding.LanguageItemBinding
 import com.example.casttotv.dataclasses.Lang
+import com.example.casttotv.interfaces.MyCallBack
 import com.example.casttotv.utils.LOCALE_LANGUAGE
 import com.example.casttotv.utils.MySingleton.resolveColorAttr
-import com.example.casttotv.utils.MySingleton.setAppLocale
-import com.example.casttotv.utils.Pref.getPrefs
+ import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.Pref.putPrefs
 
 class LanguagesAdapter(
-    private var context: Context,
+    private var context: Context, val myCallBack: MyCallBack,
 ) : ListAdapter<Lang, LanguagesAdapter.Holder>(DIF_UTIL) {
 
     companion object {
@@ -37,7 +37,6 @@ class LanguagesAdapter(
             ): Boolean {
                 return oldItem == newItem
             }
-
         }
     }
 
@@ -56,13 +55,13 @@ class LanguagesAdapter(
             }
         }
 
-        fun click(click: (Lang,Holder) -> Unit, lang: Lang, context: Context) {
+        fun click(click: (Lang) -> Unit, lang: Lang, context: Context) {
             bind(lang, context)
             binding.checkbox.setOnClickListener {
-                click(lang,this)
+                click(lang)
             }
             binding.root.setOnClickListener {
-                click(lang,this)
+                click(lang)
             }
         }
     }
@@ -83,15 +82,9 @@ class LanguagesAdapter(
 
     }
 
-    private fun click(lang: Lang,holder: Holder) {
+    private fun click(lang: Lang) {
+        myCallBack.callback()
         context.putPrefs(LOCALE_LANGUAGE, lang.code)
-//        if (holder.absoluteAdapterPosition != -1) {
-            holder.bind(getItem(holder.absoluteAdapterPosition), context)
-            notifyDataSetChanged()
-            ContextWrapper(context.setAppLocale(context.getPrefs(LOCALE_LANGUAGE, "en")))
-//        }
-
-
     }
 
 }

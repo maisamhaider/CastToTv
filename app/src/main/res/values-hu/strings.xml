@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--hungarian-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">Elhelyezkedés</string>
+    <string name="connection_close_confirm">Szeretné megszakítani a jelenlegi VPN-kapcsolatot?</string>
+    <string name="yes">IGEN</string>
+    <string name="no">NEM</string>
+    <string name="yes_2">Igen</string>
+    <string name="no_2">Nem</string>
+    <string name="select_images">Válassza a Képek lehetőséget</string>
+    <string name="tabs">Tabs</string>
+    <string name="share">Részvény</string>
+    <string name="save">Megment</string>
+    <string name="more">Több</string>
+    <string name="ok">rendben</string>
+    <string name="cancel">Megszünteti</string>
+    <string name="favorite_site">Módosítsa az alapértelmezett webhelyet, amely\na böngésző indításakor betöltődik</string>
+    <string name="custom_search_engine_body">Adjon hozzá egyéni keresési URL-t, és válassza az „Egyéni\nkeresőmotor” lehetőséget keresőszolgáltatóként</string>
+    <string name="search_engine_body">Válassza ki a kívánt keresőmotort, vagy\nállítson be egyéni keresőmotort</string>
+    <string name="data_control_body">Törölje a böngésző adatait, vagy döntse el, hogy mely adatok\ntörlődnek, amikor elhagyja az alkalmazást</string>
+    <string name="start_control_body">Döntse el, hogy a böngésző mely összetevői\n fognak elindulni</string>
+    <string name="behavior_ui_body">Módosítsa az alkalmazás viselkedését és felhasználói felületét\nbeállításainak megfelelően</string>
+    <string name="book_mark_body">A szűrő párbeszédablak megjelenítéséhez nyomja meg hosszan a könyvjelző ikont az áttekintésben. Döntse el, mely szűrőket használja</string>
+    <string name="app_settings_body">Böngészőbeállítások, ahol az Android verziójától függően engedélyezheti az engedélyt.</string>
+    <string name="start_control_image_body">Engedélyezze a hálózati képeket. A letiltása hasznos lehet\nmobiladatok megtakarításához és a webhely gyorsabb betöltéséhez</string>
+    <string name="start_control_location_body">Engedélyezze a webhelyeknek, hogy hozzáférjenek az Ön tartózkodási helyéhez. Egyes\nwebhelyeken ({google, maps for nav) szükséges ez az engedélyezés</string>
+    <string name="start_control_history_body">Mentse el a meglátogatott webhelyek előzményeit</string>
+    <string name="start_control_java_script_body">JavaScript engedélyezése. Sok webhelynek\nJavaScript szükséges a működéséhez. De ezek\n is pihennek, és támadásokra használhatók</string>
+    <string name="start_control_cookies_body">Cookie-k engedélyezése. A sütik kis szöveges fájlok,
+amelyek a készüléken vannak tárolva. Weboldalak használnak
+például a felhasználói beállítások tárolásához. De
+személyes felhasználók összegyűjtésére is használhatók
+adat. A harmadik féltől származó cookie-k mindig le vannak tiltva.</string>
+    <string name="confirmation_browser_exit_body">Megerősítő párbeszédpanel a böngésző bezárásakor</string>
+    <string name="confirmation_tab_close_body">Megerősítő párbeszédablak lap bezárásakor</string>
+    <string name="confirmation_reopen_last_body">Nyisson meg újra egy új lapot, amikor az utolsó lap be van zárva, ahelyett, hogy kilépne a böngészőből</string>
+    <string name="hide_toolbar_body">Használja a teljes képernyőt a webhely görgetése során, ha megnyomja a vissza gombot, kilép a teljes képernyős módból</string>
+    <string name="images">Képek</string>
+    <string name="videos">Videók</string>
+    <string name="web_browser">Böngésző</string>
+    <string name="image_slider">Képcsúszka</string>
+    <string name="next">Következő</string>
+    <string name="previous">Előző</string>
+    <string name="help">Segítség</string>
+    <string name="settings">Beállítások</string>
+    <string name="language">Nyelvek</string>
+    <string name="more_app">További alkalmazások</string>
+    <string name="rate_us">Értékelj minket</string>
+    <string name="screen_mirroring">Képernyő tükrözés</string>
+    <string name="home_screen_text">Győződjön meg arról, hogy telefonja és tévéje ugyanahhoz a Wi-Fi hálózathoz csatlakozik.</string>
+    <string name="wifi_connected">Wi-Fi csatlakoztatva</string>
+    <string name="wifi_disconnected">Wi-Fi kapcsolat megszakadt</string>
+    <string name="general">Tábornok</string>
+    <string name="communicate">Kommunikálni</string>
+    <string name="send_feedback">Visszajelzés küldése</string>
+    <string name="tutorial">Oktatóanyag</string>
+    <string name="how_to_use">Hogyan kell használni?</string>
+    <string name="streaming">Folyó</string>
+    <string name="streaming_quality">Streaming minőség</string>
+    <string name="auto_stop">Automatikus megállás</string>
+    <string name="auto_minimize">Automatikus kicsinyítés</string>
+    <string name="advance">Előleg</string>
+    <string name="orientation_mode">Tájolási mód</string>
+    <string name="auto_stop_body_text">A videó leállítása, ha megszakad a kapcsolat\n a céllal</string>
+    <string name="auto_minimize_body_text">Alkalmazás elrejtése a tükrözés megkezdésekor</string>
+    <string name="casting_orientation_body_text">Öntés tájolása</string>
+    <string name="mirroring_mode">Tükrözés mód</string>
+    <string name="screen_mirroring_privacy_policy">Képernyőtükrözés adatvédelmi szabályzata</string>
+    <string name="privacy_policy">Adatvédelmi irányelvek</string>
+    <string name="supporting_devices">Támogató eszközök</string>
+    <string name="see_which_devices_support_mirroring">Nézze meg, mely eszközök támogatják a tükrözést</string>
+    <string name="color_theme">Színes téma</string>
+    <string name="dark">Sötét</string>
+    <string name="light">Fény</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Válasszon nyelvet</string>
+    <string name="close">Bezárás</string>
+    <string name="images_slider">Képek Csúszka</string>
+    <string name="screen_mirror">Képernyő tükör</string>
+    <string name="tutorial_screen_setup_body">A céleszköznek ugyanabban a Wi-Fi hálózatban kell lennie, mint ennek az eszköznek, mert a Screen Mirror továbbítja a képernyőt.</string>
+    <string name="tutorial_screen_mirror_body">Streamelje eszköze képernyőjét Wi-Fi-n keresztül számítógépére, notebookjára vagy táblagépére.</string>
+    <string name="tutorial_device_hotspot_body">Használhatja eszköze hotspotját (internetmegosztási mód), és csatlakoztathatja céleszközét a hotspothoz.</string>
+    <string name="tutorial_scan_code_body">Nyissa meg a webhelyet a céleszközön. A QR-kód beolvasásával a kapcsolati konfiguráció továbbításra kerül, és elindul a tükrözés.</string>
+    <string name="tutorial_support_body">Kérjük, vegye figyelembe, hogy a Screen Mirror csak akkor működik, ha megfelelően van beállítva. A Screen Mirror továbbítja a képernyőt, de nem az eszköz hangjeleit. Ha bármilyen problémával szembesül, forduljon hozzánk.</string>
+    <string name="walk_through_body_1">Élvezze a sima és kiváló minőségű streamelést\nkésés nélkül</string>
+    <string name="walk_through_body_2">Csatlakozzon bármilyen okoseszközhöz, és élvezze\nbármilyen képernyőn a műsort</string>
+    <string name="walk_through_body_3">Élvezze az alkalmazáson belüli privát böngészőt korlátozások nélkül</string>
+    <string name="screen_setup">Képernyő beállítása</string>
+    <string name="device_hotspot">Az eszköz hotspotja</string>
+    <string name="scan_code">Scan Code</string>
+    <string name="support">Támogatás</string>
+    <string name="finish">Befejez</string>
+    <string name="our_policies">Irányelveink</string>
+    <string name="privacy_policy_text">Az Ön személyes adatainak védelme fontos számunkra. Reméljük, hogy a következő nyilatkozat segít megérteni, hogyan kezeljük a személyes azonosításra alkalmas adatokat, amelyeket időnként megadhat nekünk az interneten (a Google Play platformon) keresztül.\n\nÁltalában. nem gyűjtünk személyazonosításra alkalmas adatokat Öntől, amikor letölti Android-alkalmazásainkat. Pontosabban, nem követeljük meg az alkalmazásunk fogyasztóinak látogatását, sőt, még szerverünk sincs az ilyen személyes adatok tárolására.\n\nA Screen Mirroring a Facebookot használja hirdetésszolgáltatóként. A Facebook olyan hirdetéseket szeretne megjeleníteni, amelyek relevánsak az Ön számára. További információért látogasson el a\nhttps://m.facebook.com/ads/ad_choices oldalra.\n\nAz egyetlen helyzet, amikor hozzáférhetünk az Ön személyazonosításra alkalmas adataihoz, ha személyesen úgy dönt, hogy e-mailben küldi el visszajelzését, vagy elküldi nekünk a hibát. jelentés. Az Ön személyazonosításra alkalmas adatai, amelyeket ebben a helyzetben kaphatunk, szigorúan csak az Ön nevére, e-mail-címére és a felmérésre adott válaszára korlátozódnak.\n\nA fenti helyzetben garantáljuk, hogy az Ön személyes adatait csak az Önnel való kapcsolatfelvételre és szolgáltatásaink fejlesztésére használjuk fel. Soha nem fogjuk felhasználni ezeket az információkat (pl. az Ön nevét és e-mail címét_ semmilyen más célra, például termékeink további marketingjére, vagy arra, hogy személyes adatait kereskedelmi haszonszerzés céljából harmadik félnek kiadjuk.\n\nMeg kell jegyezni, hogy Az, hogy ne küldje el nekünk visszajelzését vagy hibajelentését, teljesen önkéntes kezdeményezés, saját döntése alapján. Ha aggodalmát fejezi ki amiatt, hogy személyazonosításra alkalmas adataival visszaélnek, vagy ha további információra van szüksége adatvédelmi szabályzatunkról és annak jelentéséről, kérjük, írjon nekünk e-mailt A screenmirroring.feedback@gmail.com címen igyekszünk időben egyértelmű választ adni kérdéseire .</string>
+    <string name="please_write_your_feedback">Kérjük, írja meg visszajelzését</string>
+    <string name="system_info">Rendszerinformációit elküldjük a Képernyőtükrözési Technikai Osztálynak</string>
+    <string name="send">Küld</string>
+    <string name="provide_feedback">visszajelzést</string>
+    <string name="invalid_email_provided">Érvénytelen e-mail-cím</string>
+    <string name="check_your_internet_connection">Ellenőrizze az internetkapcsolatot</string>
+    <string name="type_here">írj ide…</string>
+    <string name="enter_your_email_optional">Adja meg e-mail címét (nem kötelező)</string>
+    <string name="enjoy_the_app">Élvezed az alkalmazást?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Értékelje tapasztalatait a Screen\nMiroring App használatával.</string>
+    <string name="not_now">Nem most</string>
+    <string name="feedback">Visszacsatolás:</string>
+    <string name="model">Modell:</string>
+    <string name="brand">Márka:</string>
+    <string name="os_version">OS verzió:</string>
+    <string name="manufacturer">Gyártó:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Levél küldés</string>
+    <string name="select_picture">Válassza a Kép lehetőséget</string>
+    <string name="help_center">Segítség Központ</string>
+    <string name="question_1">A telefon elakad a „Csatlakozás” alatt, amikor párosítja a tévével.</string>
+    <string name="question_2">Nekem korábban működött, de \nmost nem.</string>
+    <string name="question_3">Azt mutatja, hogy a készülékem \nnem támogatott.</string>
+    <string name="question_4">A tévém egy régi tévé, és nem \ntámogatja a wi-fit.</string>
+    <string name="question_5">A tévében fekete a kép, de a \nhang hallható.</string>
+    <string name="question_6">A kapcsolat egy idő után \nmegszakad.</string>
+    <string name="question_7">Teljesen biztonságban vannak a személyes adataim vagy a mobiladataim?</string>
+    <string name="q_answer_1_1">Indítsa újra az okostelefon Wi-Fi-jét, és ellenőrizze, hogy a kapcsolat sikeres-e.</string>
+    <string name="q_answer_1_2">Kapcsolja ki a TV-t, és húzza ki a tápkábelét is a konnektorból. Várjon 1 percet, és indítsa újra a TV-t.</string>
+    <string name="q_answer_1_3">Csökkentse a távolságot a telefon és a TV között. Vidd közelről.</string>
+    <string name="q_answer_2_1">Ha korábban működött, akkor biztosan újra használható.</string>
+    <string name="q_answer_2_2">A legtöbb csatlakozási probléma megoldható az eszközök újraindításával. Csak indítsa újra a telefont és a TV-t, és kövesse a szokásos csatlakozási folyamatot az újrapróbálkozáshoz.</string>
+    <string name="q_answer_3_1">Ez azt jelenti, hogy maga a telefon nem támogatja a képernyőtükrözés funkciót.</string>
+    <string name="q_answer_3_2">Az XCast segítségével videót, hangot és fényképeket küldhet át TV-re. Az XCast segítségével más dolgokat is végezhet telefonjával, miközben átküldi a tévére.</string>
+    <string name="q_answer_4_1">Ha TV-je támogatja a HDMI interfészt, javasoljuk, hogy vásároljon külső vevőt a képernyő tükrözéséhez. Ilyen például a Chromecast, Anycast stb.</string>
+    <string name="q_answer_5_1">Egyes tartalmak szerzői jogvédelem alá esnek, és nem jeleníthetők meg harmadik féltől származó eszközökön, például a Netflixen, a Disney Pluson stb.</string>
+    <string name="q_answer_5_2">Letöltheti a videót, vagy megkeresheti ugyanazt az erőforrást más alkalmazásokban, hogy kipróbálhassa.</string>
+    <string name="q_answer_6_1">A Smart Connect funkciót a Wi-Fi beállításaiban kapcsolhatja be. Folyamatosan jobb Wi-Fi kapcsolatokat keres, és mindig oda-vissza csatlakozik.</string>
+    <string name="q_answer_6_2">Győződjön meg arról, hogy a mobiltelefon és a TV Wi-Fi-je a SAM és a legjobb jel.</string>
+    <string name="q_answer_7_1">Nem figyelünk és nem gyűjtünk semmilyen információt Önről és mobiltelefonjáról. Gond nélkül átküldheti képernyőjét.</string>
+    <string name="q_answer_7_2">A rendszer figyelmeztetheti Önt, hogy a képernyő tükrözése előtt biztonsági kockázat áll fenn. Ez csak egy szokásos emlékeztető, az lesz</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRA CAST</string>
+    <string name="install">TELEPÍTÉS</string>
+    <string name="install_small">Telepítés</string>
+    <string name="manual">Kézikönyv</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Győződjön meg arról, hogy telefonja és tévéje\n ugyanahhoz a Wi-Fi-hálózathoz csatlakozik.</string>
+    <string name="hd_streaming">HD Streaming</string>
+    <string name="smart_devices">okos eszközök</string>
+    <string name="private_browser">Privát böngésző</string>
+    <string name="effects">Hatások</string>
+    <string name="slider">Csúszka</string>
+    <string name="search_or_type_web_address">Keressen vagy írjon be webcímet</string>
+    <string name="install_2">Telepítés</string>
+    <string name="bookmark">Könyvjelző</string>
+    <string name="downloads">Letöltések</string>
+    <string name="download">Letöltés</string>
+    <string name="favorites">Kedvencek</string>
+    <string name="favorite">Kedvenc</string>
+    <string name="history">Történelem</string>
+    <string name="share_pdf">Pdf megosztása</string>
+    <string name="copy_url">URL másolása</string>
+    <string name="share_app">Share App</string>
+    <string name="share_url">URL megosztása</string>
+    <string name="exit">Kijárat</string>
+    <string name="new_tab">Új lap</string>
+    <string name="google">Google</string>
+    <string name="startpage">Kezdőlap</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Egyéni kereső</string>
+    <string name="add_shortcut_to_home">Parancsikon hozzáadása a kezdőlaphoz</string>
+    <string name="save_screenshot">Képernyőkép mentése</string>
+    <string name="add_to_bookmark">Hozzáadás a könyvjelzőhöz</string>
+    <string name="save_as_pdf">Mentés pdf-ként</string>
+    <string name="save_action">Művelet mentése</string>
+    <string name="add_to_favorite">Hozzáadás a kedvencekhez</string>
+    <string name="search_engine">Keresőmotor</string>
+    <string name="browser_exit_body">Biztosan ki akar lépni a böngészőből?</string>
+    <string name="exit_browser">Lépjen ki a böngészőből</string>
+    <string name="custom_user_agent">Egyéni felhasználói ügynök</string>
+    <string name="start_control">Start Control</string>
+    <string name="data_control">Adatkezelés</string>
+    <string name="app_settings">Alkalmazásbeállítások</string>
+    <string name="browser_settings">Böngésző beállításai</string>
+    <string name="behavior_ui">Viselkedés/UI</string>
+    <string name="clear_cache">Törölje a gyorsítótárat</string>
+    <string name="clear_history">Előzmények törlése</string>
+    <string name="clear_browsing_history">Böngészési előzmények törlése</string>
+    <string name="clear_all_cache">Törölje az összes gyorsítótárat</string>
+    <string name="clear_database_body">Törölje az „indexelt adatbázisokat” és a „helyi\adatbázisokat”</string>
+    <string name="clear_cookies_body">Ha engedélyezve van, az összes cookie törlődik. Továbbá\nmegbízható webhelyek cookie-jait</string>
+    <string name="clear_databases">Adatbázisok törlése</string>
+    <string name="clear_cookies">Cookie-k törlése</string>
+    <string name="clear_when_application_exit">Törölje az alkalmazás bezárásakor</string>
+    <string name="clear_when_application_exit_body">Valahányszor kilép, az összes fent bejelölt adat\ntörlődik</string>
+    <string name="image">Kép</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Cookie-k</string>
+    <string name="reopen_last_tab">Nyissa meg újra az utolsó lapot</string>
+    <string name="confirm_tab_close">Erősítse meg a lap bezárását</string>
+    <string name="confirm_browser_exit">Erősítse meg a böngészőből való kilépést</string>
+    <string name="position">Pozíció</string>
+    <string name="first_toolbar">Első eszköztár</string>
+    <string name="hide_toolbar">Eszköztár elrejtése</string>
+    <string name="toolbar">Eszköztár</string>
+    <string name="bookmarks">Könyvjelzők</string>
+    <string name="edit">Szerkesztés</string>
+    <string name="today">Ma</string>
+    <string name="the_last_hour">Az utolsó óra</string>
+    <string name="last_week">Múlt hét</string>
+    <string name="last_month">Múlt hónap</string>
+    <string name="delete_all_history">Az összes előzmény törlése</string>
+    <string name="copied">másolt</string>
+    <string name="share_ss">Share SS</string>
+    <string name="file_manager">Fájl kezelő</string>
+    <string name="search_on">Keresés bekapcsolva</string>
+    <string name="add_shortcut">Parancsikon hozzáadása</string>
+    <string name="tab_exit">Lap Kilépés</string>
+    <string name="do_you_want_to_close">Be akarod zárni</string>
+    <string name="download_complete_share_image">Letöltés kész. Kép megosztása</string>
+    <string name="update">Frissítés</string>
+    <string name="unfavorite">Nem kedvenc</string>
+    <string name="no_input_provided">Nincs megadva bemenet</string>
+    <string name="input">Bemenet</string>
+    <string name="website_link">Weboldal link</string>
+    <string name="for_you">Neked</string>
+    <string name="website">Weboldal:</string>
+    <string name="url">URL:</string>
+    <string name="date">Dátum</string>
+    <string name="no_site_loaded">Nincs betöltött webhelyed</string>
+    <string name="more_then_5_images_can_not_be_picked">Ötnél több kép nem választható ki</string>
+</resources>

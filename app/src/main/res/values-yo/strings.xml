@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Yoruba-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">Ṣe o fẹ lati fagilee Asopọ VPN lọwọlọwọ?</string>
+    <string name="yes">BẸẸNI</string>
+    <string name="no">RARA</string>
+    <string name="yes_2">Bẹẹni</string>
+    <string name="no_2">Rara</string>
+    <string name="select_images">Yan Awọn aworan</string>
+    <string name="tabs">Awọn taabu</string>
+    <string name="share">Pin</string>
+    <string name="save">Fipamọ</string>
+    <string name="more">Die e sii</string>
+    <string name="ok">O DARA</string>
+    <string name="cancel">Fagilee</string>
+    <string name="favorite_site">Yi oju opo wẹẹbu aiyipada pada ti o nrù lori\nbẹrẹ Aṣàwákiri</string>
+    <string name="custom_search_engine_body">Ṣafikun url wiwa aṣa tun yan “Ẹnjini wiwa Aṣa” bi olupese wiwa</string>
+    <string name="search_engine_body">Yan ẹrọ wiwa ti o fẹ tabi\nṣeto aṣa kan</string>
+    <string name="data_control_body">Pa data aṣawakiri rẹ kuro tabi pinnu iru data \n yoo parẹ nigbati o ba lọ kuro ni app naa</string>
+    <string name="start_control_body">Pinnu iru awọn paati ẹrọ aṣawakiri naa \n yoo wa ni ibẹrẹ</string>
+    <string name="behavior_ui_body">Yi ihuwasi ati ui app pada lati \n awọn ayanfẹ rẹ mu</string>
+    <string name="book_mark_body">Lati fi ajọṣọrọ àlẹmọ han gun tẹ aami bukumaaki ni akopọ. Pinnu iru awọn asẹ ti iwọ yoo lo</string>
+    <string name="app_settings_body">Awọn eto ẹrọ aṣawakiri, nibẹ ni o le da lori igbanilaaye ẹda ẹya Android rẹ.</string>
+    <string name="start_control_image_body">Mu awọn aworan Nẹtiwọọki ṣiṣẹ, Muu ṣiṣẹ le wulo\nlati ṣafipamọ data alagbeka ati fifuye oju opo wẹẹbu yiyara</string>
+    <string name="start_control_location_body">Gba awọn aaye ayelujara laaye lati wọle si ipo rẹ. Diẹ ninu awọn aaye ayelujara {google, maapu fun nav) nilo eyi ṣiṣẹ</string>
+    <string name="start_control_history_body">Ṣafipamọ itan-akọọlẹ ti awọn oju opo wẹẹbu ti o ṣabẹwo</string>
+    <string name="start_control_java_script_body">Mu JavaScript ṣiṣẹ. Ọpọlọpọ awọn oju opo wẹẹbu nilo\nJavaScript fun iṣẹ ṣiṣe wọn. Ṣugbọn wọn jẹ isinmi ati pe o le ṣee lo fun awọn ikọlu</string>
+    <string name="start_control_cookies_body">Mu Kuki ṣiṣẹ. Awọn kuki jẹ awọn faili ọrọ kekere,
+eyi ti o ti fipamọ sori ẹrọ rẹ. Awọn oju opo wẹẹbu lo
+wọn fun apẹẹrẹ lati tọju awọn eto olumulo. Sugbon
+wọn tun le ṣee lo lati gba olumulo ti ara ẹni
+data. Awọn kuki ẹnikẹta jẹ alaabo nigbagbogbo.</string>
+    <string name="confirmation_browser_exit_body">Ifọrọwanilẹnuwo nigba \n ti ẹrọ aṣawakiri tilekun</string>
+    <string name="confirmation_tab_close_body">Ifọrọwerọ ijẹrisi nigbati o ba pa taabu kan</string>
+    <string name="confirmation_reopen_last_body">Tun taabu titun ṣii nigbati taabu ti o kẹhin ti wa ni pipade dipo ti jade kuro ni ẹrọ aṣawakiri</string>
+    <string name="hide_toolbar_body">Lo gbogbo iboju nigbati o ba lọ kiri nipasẹ oju opo wẹẹbu ti o ba tẹ bọtini ẹhin iwọ yoo lọ kuro ni ipo iboju kikun</string>
+    <string name="images">Awọn aworan</string>
+    <string name="videos">Awọn fidio</string>
+    <string name="web_browser">Aṣàwákiri Ayelujara</string>
+    <string name="image_slider">Aworan Slider</string>
+    <string name="next">Itele</string>
+    <string name="previous">Ti tẹlẹ</string>
+    <string name="help">Egba Mi O</string>
+    <string name="settings">Ètò</string>
+    <string name="language">Awọn ede</string>
+    <string name="more_app">Awọn ohun elo diẹ sii</string>
+    <string name="rate_us">Oṣuwọn Wa</string>
+    <string name="screen_mirroring">Iboju Mirroring</string>
+    <string name="home_screen_text">Rii daju pe foonu rẹ ati TV ti sopọ si nẹtiwọki Wi-Fi kanna.</string>
+    <string name="wifi_connected">Wi-Fi ti sopọ</string>
+    <string name="wifi_disconnected">Wi-Fi Ge asopọ</string>
+    <string name="general">Gbogboogbo</string>
+    <string name="communicate">Ṣe ibaraẹnisọrọ</string>
+    <string name="send_feedback">Fi esi ranṣẹ</string>
+    <string name="tutorial">Ikẹkọ</string>
+    <string name="how_to_use">Bawo ni lati lo?</string>
+    <string name="streaming">Sisanwọle</string>
+    <string name="streaming_quality">Didara ṣiṣanwọle</string>
+    <string name="auto_stop">Iduro aifọwọyi</string>
+    <string name="auto_minimize">Gbe sẹgbẹ laifọwọyi</string>
+    <string name="advance">Ilọsiwaju</string>
+    <string name="orientation_mode">Ipo Iṣalaye</string>
+    <string name="auto_stop_body_text">Da fidio duro nigbati asopọ \si ibi-afẹde ba sọnu</string>
+    <string name="auto_minimize_body_text">Tọju app nigbati mirroring bẹrẹ</string>
+    <string name="casting_orientation_body_text">Iṣalaye simẹnti</string>
+    <string name="mirroring_mode">Ipo Mirroring</string>
+    <string name="screen_mirroring_privacy_policy">Iboju mirroring ìlànà ìpamọ</string>
+    <string name="privacy_policy">Asiri Afihan</string>
+    <string name="supporting_devices">Awọn ẹrọ atilẹyin</string>
+    <string name="see_which_devices_support_mirroring">Wo awọn ẹrọ wo ni atilẹyin mirroring</string>
+    <string name="color_theme">Akori Awọ</string>
+    <string name="dark">Dudu</string>
+    <string name="light">Imọlẹ</string>
+    <string name="auto">Aifọwọyi</string>
+    <string name="select_language">Yan Ede</string>
+    <string name="close">sunmo</string>
+    <string name="images_slider">Awọn aworan Slider</string>
+    <string name="screen_mirror">Digi iboju</string>
+    <string name="tutorial_screen_setup_body">Ẹrọ ibi-afẹde rẹ gbọdọ wa ni nẹtiwọọki Wi-Fi kanna bi ẹrọ yii, nitori Digi iboju n tan kaakiri iboju rẹ.</string>
+    <string name="tutorial_screen_mirror_body">Ṣe ṣiṣan iboju ẹrọ rẹ lori Wi-Fi si kọnputa rẹ, iwe ajako tabi tabulẹti.</string>
+    <string name="tutorial_device_hotspot_body">O tun le lo hotspot ẹrọ rẹ (ipo tethering) ki o so ẹrọ ibi-afẹde rẹ pọ si aaye ibi-itọpa rẹ.</string>
+    <string name="tutorial_scan_code_body">Open ojula lori rẹ afojusun ẹrọ. Nipa Antivirus awọn QR koodu iṣeto ni asopọ ti wa ni gbigbe ati mirroring bẹrẹ.</string>
+    <string name="tutorial_support_body">Jọwọ ṣe akiyesi pe digi iboju nikan n ṣiṣẹ nigbati o ba ṣeto ni deede. Digi iboju tan kaakiri iboju rẹ, ṣugbọn kii ṣe awọn ifihan agbara ohun ẹrọ rẹ. Ti o ba koju awọn iṣoro eyikeyi kan si wa.</string>
+    <string name="walk_through_body_1">Gbadun didan ati ṣiṣanwọle didara giga\n laisi aisun</string>
+    <string name="walk_through_body_2">Sopọ pẹlu ẹrọ ijafafa eyikeyi ki o gbadun \n show loju iboju eyikeyi</string>
+    <string name="walk_through_body_3">Gbadun ẹrọ aṣawakiri ikọkọ inu-app laisi awọn idiwọn</string>
+    <string name="screen_setup">Eto iboju</string>
+    <string name="device_hotspot">Hotspot ẹrọ</string>
+    <string name="scan_code">Ayẹwo koodu</string>
+    <string name="support">Atilẹyin</string>
+    <string name="finish">Pari</string>
+    <string name="our_policies">Awọn Ilana Wa</string>
+    <string name="privacy_policy_text">Idabobo asiri rẹ ṣe pataki fun wa. A nireti pe alaye atẹle yii yoo ran ọ lọwọ lati loye bi a ṣe n ṣe pẹlu alaye idanimọ ti ara ẹni, o le pese fun wa lẹẹkọọkan nipasẹ Intanẹẹti (ipilẹṣẹ Google Play).\n\nNi gbogbogbo. a ko gba eyikeyi PII lati ọdọ rẹ nigbati o ṣe igbasilẹ awọn ohun elo Android wa. Lati ṣe pato, a ko nilo awọn abẹwo si awọn onibara ti ohun elo wa, paapaa a ko ni olupin kan lati tọju iru PII.\n\nMigi iboju nlo Facebook gẹgẹbi olupese ipolowo. Facebook fẹ lati ṣafihan awọn ipolowo ti o ṣe pataki si ọ. Fun alaye diẹ sii jọwọ ṣabẹwo\nhttps://m.facebook.com/ads/ad_choices.\n\nIpo kan ṣoṣo ti a le ni iwọle si ọ PII ni nigbati o ba pinnu lati fi imeeli ranṣẹ si wa tabi lati pese kokoro kan fun wa iroyin. PII ti a le gba lati ọdọ rẹ ni ipo yẹn ni opin si fun ọ orukọ, adirẹsi imeeli ati esi iwadi rẹ nikan.\n\nNi ipo ti o wa loke, a ṣe ẹri pe iwọ yoo ṣee lo fun kikan si ọ nikan ati ilọsiwaju awọn iṣẹ wa. A kii yoo lo iru alaye bẹ lae (fun apẹẹrẹ orukọ rẹ ati adirẹsi imeeli_ fun awọn idi miiran, gẹgẹbi lati ta ọja wa siwaju sii, tabi lati ṣafihan alaye ti ara ẹni rẹ fun ẹnikẹta fun awọn ere iṣowo.\n\nO yẹ ki o ṣe akiyesi boya tabi tabi maṣe fi esi rẹ ranṣẹ si wa tabi ijabọ kokoro jẹ ipilẹṣẹ atinuwa patapata lori ipinnu tirẹ Ti o ba ni aniyan nipa ilokulo PII rẹ, tabi ti o ba fẹ alaye siwaju sii nipa eto imulo asiri wa ati kini o tumọ si, jọwọ lero ọfẹ lati fi imeeli ranṣẹ si wa ni screenmirroring.feedback@gmail.com, a yoo gbiyanju lati pese awọn idahun ti o ṣe kedere si awọn ibeere rẹ ni akoko ti o tọ.</string>
+    <string name="please_write_your_feedback">Jọwọ kọ esi rẹ</string>
+    <string name="system_info">Alaye Eto rẹ yoo firanṣẹ si Ẹka imọ-ẹrọ Mirroring iboju</string>
+    <string name="send">Firanṣẹ</string>
+    <string name="provide_feedback">pese esi</string>
+    <string name="invalid_email_provided">Imeeli ti ko tọ ti pese</string>
+    <string name="check_your_internet_connection">Ṣayẹwo asopọ intanẹẹti rẹ</string>
+    <string name="type_here">tẹ nibi…</string>
+    <string name="enter_your_email_optional">Tẹ imeeli rẹ sii (aṣayan)</string>
+    <string name="enjoy_the_app">Gbadun App naa?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Ṣe iwọn iriri rẹ nipa lilo Iboju\n Ohun elo Digi.</string>
+    <string name="not_now">Ko bayi</string>
+    <string name="feedback">Esi:</string>
+    <string name="model">Awoṣe:</string>
+    <string name="brand">Brand:</string>
+    <string name="os_version">Ẹya OS:</string>
+    <string name="manufacturer">Olupese:</string>
+    <string name="ram">ÀGBO:</string>
+    <string name="send_email">Firanṣẹ meeli</string>
+    <string name="select_picture">Yan Aworan</string>
+    <string name="help_center">Ile-iṣẹ Iranlọwọ</string>
+    <string name="question_1">Foonu mi di ni “Nsopọ” nigbati \no ba so pọ pẹlu TV.</string>
+    <string name="question_2">O ṣiṣẹ fun mi tẹlẹ, ṣugbọn ko \nṣiṣẹ ni bayi.</string>
+    <string name="question_3">O fihan pe ẹrọ mi ko ni \natilẹyin.</string>
+    <string name="question_4">TV mi jẹ TV atijọ ati pe ko \nṣe atilẹyin wi-fi.</string>
+    <string name="question_5">Aworan lori TV jẹ dudu, ṣugbọn \na le gbọ ohun naa.</string>
+    <string name="question_6">Asopọmọra yoo da duro lẹhin \nigba diẹ.</string>
+    <string name="question_7">Ṣe alaye ti ara ẹni mi tabi data alagbeka jẹ ailewu patapata?</string>
+    <string name="q_answer_1_1">Tun Wi-Fi foonu smati bẹrẹ ki o rii boya asopọ naa ṣaṣeyọri.</string>
+    <string name="q_answer_1_2">Pa TV kuro ki o si yọ okun agbara rẹ kuro ninu iho bi daradara. Duro iṣẹju 1 ki o tun TV bẹrẹ.</string>
+    <string name="q_answer_1_3">Kukuru aaye laarin foonu rẹ ati TV. Gbe e sunmọ.</string>
+    <string name="q_answer_2_1">Ti o ba ti ṣiṣẹ tẹlẹ, lẹhinna dajudaju o le ṣee lo lẹẹkansi.</string>
+    <string name="q_answer_2_2">Pupọ awọn iṣoro asopọ le ṣee yanju nipasẹ awọn ẹrọ tun bẹrẹ. Kan tun bẹrẹ foonu rẹ ati TV, tẹle ilana asopọ deede lati tun gbiyanju.</string>
+    <string name="q_answer_3_1">Eyi tumọ si pe foonu rẹ funrararẹ ko ṣe atilẹyin iṣẹ digi iboju.</string>
+    <string name="q_answer_3_2">O le lo XCast lati sọ fidio, ohun ati fọto si TV. Pẹlu XCast, o le ṣe awọn ohun miiran pẹlu foonu rẹ lakoko sisọ si TV.</string>
+    <string name="q_answer_4_1">Ti TV rẹ ba ṣe atilẹyin wiwo HDMI, a ṣeduro pe ki o ra olugba ita fun digi iboju. Bii Chromecast, Anycast ati bẹbẹ lọ.</string>
+    <string name="q_answer_5_1">Diẹ ninu akoonu jẹ aabo aṣẹ-lori ati pe ko le ṣe afihan lori awọn ẹrọ ẹnikẹta, gẹgẹbi Netflix, Disney Plus ati bẹbẹ lọ.</string>
+    <string name="q_answer_5_2">O le ṣe igbasilẹ fidio naa tabi wa awọn orisun kanna lori awọn ohun elo miiran lati gbiyanju.</string>
+    <string name="q_answer_6_1">O le tan-an Smart Connect ninu awọn eto Wi-Fi rẹ. Yoo wa awọn asopọ Wi-fi to dara julọ nigbagbogbo, ati nigbagbogbo so pada ati siwaju.</string>
+    <string name="q_answer_6_2">Jọwọ rii daju pe Wi-Fi ti foonu alagbeka ati TV jẹ SAM ati ifihan agbara to dara julọ.</string>
+    <string name="q_answer_7_1">A kii yoo ṣe atẹle tabi gba alaye eyikeyi lori iwọ ati foonu alagbeka rẹ. O le sọ iboju rẹ laisi aibalẹ eyikeyi.</string>
+    <string name="q_answer_7_2">Eto naa le kilo fun ọ pe eewu aabo wa ṣaaju didoju iboju. Eyi jẹ olurannileti deede, yoo jẹ</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">Fi sori ẹrọ</string>
+    <string name="install_small">Fi sori ẹrọ</string>
+    <string name="manual">Afowoyi</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Rii daju pe foonu rẹ ati TV ti sopọ \ si nẹtiwọki Wi-Fi kanna.</string>
+    <string name="hd_streaming">HD ṣiṣanwọle</string>
+    <string name="smart_devices">smati awọn ẹrọ</string>
+    <string name="private_browser">Aṣàwákiri Aladani</string>
+    <string name="effects">Awọn ipa</string>
+    <string name="slider">Slider</string>
+    <string name="search_or_type_web_address">Wa tabi tẹ adirẹsi ayelujara sii</string>
+    <string name="install_2">Fi sori ẹrọ</string>
+    <string name="bookmark">Bukumaaki</string>
+    <string name="downloads">Awọn igbasilẹ</string>
+    <string name="download">Gbigba lati ayelujara</string>
+    <string name="favorites">Awọn ayanfẹ</string>
+    <string name="favorite">Ayanfẹ</string>
+    <string name="history">Itan</string>
+    <string name="share_pdf">Pin PDF</string>
+    <string name="copy_url">Da URL</string>
+    <string name="share_app">Pin App</string>
+    <string name="share_url">Pin url</string>
+    <string name="exit">Jade</string>
+    <string name="new_tab">Taabu Tuntun</string>
+    <string name="google">Google</string>
+    <string name="startpage">Oju-iwe Ibẹrẹ</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwanti</string>
+    <string name="ecosia">Ekosia</string>
+    <string name="custom_search_engine">Aṣa wiwa engine</string>
+    <string name="add_shortcut_to_home">Ṣafikun ọna abuja si ile</string>
+    <string name="save_screenshot">Fi Sikirinifoto pamọ</string>
+    <string name="add_to_bookmark">Fi kun si bukumaaki</string>
+    <string name="save_as_pdf">Fipamọ bi pdf</string>
+    <string name="save_action">Fipamọ Iṣe</string>
+    <string name="add_to_favorite">Fi si ayanfẹ</string>
+    <string name="search_engine">Ẹrọ ìwádìí</string>
+    <string name="browser_exit_body">Ṣe o da ọ loju pe o fẹ jade kuro ni Aṣàwákiri</string>
+    <string name="exit_browser">Jade ni Browser</string>
+    <string name="custom_user_agent">Aṣa olumulo oluranlowo</string>
+    <string name="start_control">Bẹrẹ Iṣakoso</string>
+    <string name="data_control">Iṣakoso data</string>
+    <string name="app_settings">Awọn eto app</string>
+    <string name="browser_settings">Browser Eto</string>
+    <string name="behavior_ui">Iwa / UI</string>
+    <string name="clear_cache">Ko kaṣe kuro</string>
+    <string name="clear_history">Ko itan-akọọlẹ kuro</string>
+    <string name="clear_browsing_history">Ko itan lilọ kiri ayelujara kuro</string>
+    <string name="clear_all_cache">Ko gbogbo kaṣe kuro</string>
+    <string name="clear_database_body">Ko “awọn apoti isura data atọka” ati “awọn ipilẹ data agbegbe” kuro</string>
+    <string name="clear_cookies_body">Ti o ba mu ṣiṣẹ, gbogbo awọn kuki yoo paarẹ. Bakannaa\n awọn kuki ti awọn oju opo wẹẹbu ti o gbẹkẹle</string>
+    <string name="clear_databases">Ko awọn apoti isura infomesonu kuro</string>
+    <string name="clear_cookies">Ko awọn kuki kuro</string>
+    <string name="clear_when_application_exit">Ko o nigbati ohun elo jade</string>
+    <string name="clear_when_application_exit_body">Ni gbogbo igba ti o ba jade kuro ni gbogbo data ti a ṣayẹwo loke \n yoo paarẹ</string>
+    <string name="image">Aworan</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Awọn kuki</string>
+    <string name="reopen_last_tab">Tun taabu to kẹhin ṣii</string>
+    <string name="confirm_tab_close">Jẹrisi taabu sunmọ</string>
+    <string name="confirm_browser_exit">Jẹrisi ijade ẹrọ aṣawakiri</string>
+    <string name="position">Ipo</string>
+    <string name="first_toolbar">Pẹpẹ irinṣẹ akọkọ</string>
+    <string name="hide_toolbar">Tọju ọpa irinṣẹ</string>
+    <string name="toolbar">Pẹpẹ irinṣẹ</string>
+    <string name="bookmarks">Awọn bukumaaki</string>
+    <string name="edit">Ṣatunkọ</string>
+    <string name="today">Loni</string>
+    <string name="the_last_hour">Awọn ti o kẹhin wakati</string>
+    <string name="last_week">Ose ti o koja</string>
+    <string name="last_month">Osu to koja</string>
+    <string name="delete_all_history">Pa gbogbo itan rẹ rẹ</string>
+    <string name="copied">daakọ</string>
+    <string name="share_ss">Pin SS</string>
+    <string name="file_manager">Oluṣakoso faili</string>
+    <string name="search_on">Wa Lori</string>
+    <string name="add_shortcut">Fi Ọna abuja kun</string>
+    <string name="tab_exit">Jade taabu</string>
+    <string name="do_you_want_to_close">Ṣe o fẹ lati pa</string>
+    <string name="download_complete_share_image">Gbigba lati ayelujara ti pari. Pin aworan</string>
+    <string name="update">Imudojuiwọn</string>
+    <string name="unfavorite">Un ayanfẹ</string>
+    <string name="no_input_provided">Ko si igbewọle ti a pese</string>
+    <string name="input">Iṣawọle</string>
+    <string name="website_link">Aaye ayelujara ọna asopọ</string>
+    <string name="for_you">Fun e</string>
+    <string name="website">Aaye ayelujara:</string>
+    <string name="url">URL:</string>
+    <string name="date">Ọjọ</string>
+    <string name="no_site_loaded">O ko ni oju opo wẹẹbu ti kojọpọ</string>
+    <string name="more_then_5_images_can_not_be_picked">Diẹ sii ju awọn aworan marun marun ko le mu</string>
+    <string name="location">Ipo</string>
+</resources>
+

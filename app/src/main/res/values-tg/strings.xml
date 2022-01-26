@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Tajik-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">Оё шумо мехоҳед пайвасти ҷории VPN-ро бекор кунед?</string>
+    <string name="yes">ҲА</string>
+    <string name="no">НЕ</string>
+    <string name="yes_2">Бале</string>
+    <string name="no_2">Не</string>
+    <string name="select_images">Тасвирҳоро интихоб кунед</string>
+    <string name="tabs">Ҷадвалҳо</string>
+    <string name="share">Мубодила</string>
+    <string name="save">Захира кунед</string>
+    <string name="more">Бештар</string>
+    <string name="ok">Хуб</string>
+    <string name="cancel">Бекор кардан</string>
+    <string name="favorite_site">Вебсайти пешфарзро, ки дар оғози браузер бор мекунад, тағир диҳед</string>
+    <string name="custom_search_engine_body">Иловаи URL-и ҷустуҷӯи фармоишӣ инчунин ҳамчун провайдери ҷустуҷӯ "муҳаррики ҷустуҷӯ" -ро интихоб кунед</string>
+    <string name="search_engine_body">Муҳаррики ҷустуҷӯии худро интихоб кунед ё\nмуҳаррики фармоиширо таъин кунед</string>
+    <string name="data_control_body">Маълумоти браузери худро тоза кунед ё муайян кунед, ки ҳангоми баромадан аз барнома\n кадом маълумот тоза карда мешавад</string>
+    <string name="start_control_body">Муайян кунед, ки кадом ҷузъҳои браузер\n оғоз мешаванд</string>
+    <string name="behavior_ui_body">Рафтор ва ui-и барномаро барои\nба афзалиятҳои худ тағир диҳед</string>
+    <string name="book_mark_body">Барои нишон додани муколамаи филтр тасвири хатчӯбро дар шарҳи умумӣ пахш кунед. Муайян кунед, ки кадом филтрҳоро истифода мебаред</string>
+    <string name="app_settings_body">Танзимоти браузер, дар он ҷо шумо метавонед вобаста ба версияи андроид иҷозат диҳед.</string>
+    <string name="start_control_image_body">Тасвирҳои шабакавиро фаъол кунед, Хомӯш кардан метавонад\nбарои захира кардани маълумоти мобилӣ ва зудтар бор кардани вебсайт муфид бошад</string>
+    <string name="start_control_location_body">Ба вебсайтҳо иҷозат диҳед, ки макони шуморо дастрас кунанд. Баъзе\nвебсайтҳо {google, maps for nav) ба ин фаъолсозӣ ниёз доранд</string>
+    <string name="start_control_history_body">Таърихи вебсайтҳои диданшударо захира кунед</string>
+    <string name="start_control_java_script_body">JavaScript-ро фаъол созед. Бисёр вебсайтҳо барои кори худ\nJavaScript лозиманд. Аммо онҳо \nам истироҳат мекунанд ва метавонанд барои ҳамла истифода шаванд</string>
+    <string name="start_control_cookies_body">Кукиҳоро фаъол созед. Кукиҳо файлҳои хурди матнӣ мебошанд,
+ки дар дастгоҳи шумо нигоҳ дошта мешаванд. Вебсайтҳо истифода мебаранд
+масалан барои нигоҳ доштани танзимоти корбар. Аммо
+Онҳо инчунин метавонанд барои ҷамъоварии корбари шахсӣ истифода шаванд
+маълумот. Кукиҳои тарафи сеюм ҳамеша хомӯш карда мешаванд.</string>
+    <string name="confirmation_browser_exit_body">Муколамаи тасдиқ ҳангоми пӯшидани браузер</string>
+    <string name="confirmation_tab_close_body">Муколамаи тасдиқ ҳангоми пӯшидани ҷадвал</string>
+    <string name="confirmation_reopen_last_body">Вақте ки ҷадвали охирин ба ҷои баромадан аз браузер баста мешавад, ҷадвали навро аз нав кушоед</string>
+    <string name="hide_toolbar_body">Ҳангоми ҳаракат дар вебсайт тамоми экранро истифода баред, агар шумо тугмаи бозгаштро пахш кунед, шумо ҳолати пурраи экранро тарк мекунед</string>
+    <string name="images">Тасвирҳо</string>
+    <string name="videos">Видеоҳо</string>
+    <string name="web_browser">Веб-браузер</string>
+    <string name="image_slider">Слайдер тасвир</string>
+    <string name="next">Баъдӣ</string>
+    <string name="previous">Гузашта</string>
+    <string name="help">Ёрӣ</string>
+    <string name="settings">Танзимотҳо</string>
+    <string name="language">Забонҳо</string>
+    <string name="more_app">Барномаҳои бештар</string>
+    <string name="rate_us">Ба мо баҳо диҳед</string>
+    <string name="screen_mirroring">Зеркашии экран</string>
+    <string name="home_screen_text">Боварӣ ҳосил кунед, ки телефон ва телевизиони шумо ба як шабакаи Wi-Fi пайвастанд.</string>
+    <string name="wifi_connected">Wi-Fi пайваст</string>
+    <string name="wifi_disconnected">Wi-Fi ҷудо карда шудааст</string>
+    <string name="general">Генерал</string>
+    <string name="communicate">Муошират кунед</string>
+    <string name="send_feedback">Фиристодани фикру мулоҳиза</string>
+    <string name="tutorial">Дарсӣ</string>
+    <string name="how_to_use">Чӣ тавр истифода бурдан?</string>
+    <string name="streaming">Ҷараён</string>
+    <string name="streaming_quality">Сифати ҷараён</string>
+    <string name="auto_stop">Истгоҳи худкор</string>
+    <string name="auto_minimize">Кам кардани худкор</string>
+    <string name="advance">Пешакӣ</string>
+    <string name="orientation_mode">Ҳолати самтдиҳӣ</string>
+    <string name="auto_stop_body_text">Вақте ки пайвастшавӣ бо ҳадаф гум мешавад, видеоро қатъ кунед</string>
+    <string name="auto_minimize_body_text">Вақте ки оинасозӣ оғоз мешавад, барномаро пинҳон кунед</string>
+    <string name="casting_orientation_body_text">Самти кастинг</string>
+    <string name="mirroring_mode">Ҳолати оинасозӣ</string>
+    <string name="screen_mirroring_privacy_policy">Сиёсати махфияти инъикоси экран</string>
+    <string name="privacy_policy">Сиёсати Корбурди Маълумоти Шахсӣ</string>
+    <string name="supporting_devices">Дастгоҳҳои дастгирӣ</string>
+    <string name="see_which_devices_support_mirroring">Бингар, ки кадом дастгоҳҳо оинасозиро дастгирӣ мекунанд</string>
+    <string name="color_theme">Мавзӯи ранг</string>
+    <string name="dark">Торик</string>
+    <string name="light">Нур</string>
+    <string name="auto">Авто</string>
+    <string name="select_language">Забонро интихоб кунед</string>
+    <string name="close">наздик</string>
+    <string name="images_slider">Слайдери тасвирҳо</string>
+    <string name="screen_mirror">Зеркало экран</string>
+    <string name="tutorial_screen_setup_body">Дастгоҳи мавриди ҳадафи шумо бояд дар як шабакаи Wi-Fi бо ин дастгоҳ бошад, зеро оинаи экран экрани шуморо интиқол медиҳад.</string>
+    <string name="tutorial_screen_mirror_body">Экрани дастгоҳи худро тавассути Wi-Fi ба компютер, ноутбук ё планшетатон ҷараён диҳед.</string>
+    <string name="tutorial_device_hotspot_body">Шумо инчунин метавонед нуқтаи дастрасии дастгоҳи худро (режими пайвастшавӣ) истифода баред ва дастгоҳи мавриди ҳадафи худро ба нуқтаи дастрасии худ пайваст кунед.</string>
+    <string name="tutorial_scan_code_body">Сайтро дар дастгоҳи мавриди ҳадафи худ кушоед. Бо сканкунии рамзи QR конфигуратсияи пайвастшавӣ интиқол дода мешавад ва оинасозӣ оғоз мешавад.</string>
+    <string name="tutorial_support_body">Лутфан бидонед, ки Зеркало экран танҳо ҳангоми насби дуруст кор мекунад. Зеркало экран экрани шуморо интиқол медиҳад, аммо на сигналҳои аудиоии дастгоҳи шумо. Агар шумо ягон мушкилот дошта бошед, бо мо тамос гиред.</string>
+    <string name="walk_through_body_1">Аз ҷараёни ҳамвор ва босифати\nбе ягон ақибмонӣ лаззат баред</string>
+    <string name="walk_through_body_2">Бо ягон дастгоҳи интеллектуалӣ пайваст шавед ва аз намоиши\nдар дилхоҳ экран лаззат баред</string>
+    <string name="walk_through_body_3">Браузери хусусии дохили барномаро бидуни маҳдудият лаззат баред</string>
+    <string name="screen_setup">Танзимоти экран</string>
+    <string name="device_hotspot">Нуқтаи дастрасии дастгоҳ</string>
+    <string name="scan_code">Рамзи скан</string>
+    <string name="support">Дастгирӣ</string>
+    <string name="finish">Анҷом</string>
+    <string name="our_policies">Сиёсати мо</string>
+    <string name="privacy_policy_text">Муҳофизати махфияти шумо барои мо муҳим аст. Умедворем, ки изҳороти зерин ба шумо дар фаҳмидани он ки мо бо маълумоти мушаххасшавандаи шахсият чӣ гуна муносибат мекунем, кӯмак мекунад, шумо метавонед баъзан тавассути Интернет (платформаи Google Play) ба мо пешниҳод кунед.\n\nУмуман. Вақте ки шумо замимаҳои Android-и моро зеркашӣ мекунед, мо аз шумо ягон PII ҷамъ намекунем. Барои мушаххас гуфтан, мо дидани истеъмолкунандагонро ба замимаи мо талаб намекунем, мо ҳатто Сервер надорем, ки чунин PII-ро нигоҳ дорад.\n\nОинаи экран Facebook-ро ҳамчун провайдери таблиғ истифода мебарад. Facebook мехоҳад таблиғҳои ба шумо мувофиқро нишон диҳад. Барои маълумоти бештар лутфан ба\nhttps://m.facebook.com/ads/ad_choices муроҷиат кунед.\n\nЯгона ҳолате, ки мо метавонем ба шумо PII дастрасӣ пайдо кунем, вақте ки шумо шахсан тасмим гирифтед, ки фикру мулоҳизаҳои худро ба мо тавассути почтаи электронӣ фиристед ё хатогиро ба мо пешниҳод кунед. гузориш. PII, ки мо дар ин ҳолат аз шумо метавонем ба даст орем, танҳо бо ном, суроғаи почтаи электронӣ ва посухи пурсишатон маҳдуд аст.\n\nДар ҳолати боло, мо кафолат медиҳем, ки PII шумо танҳо барои тамос бо шумо ва беҳтар кардани хидматҳои мо истифода мешавад. Мо ҳеҷ гоҳ чунин маълумотро истифода намебарем (масалан, ном ва суроғаи почтаи электронии шумо_ -ро барои ҳама гуна мақсадҳои дигар, ба монанди фурӯши минбаъдаи маҳсулоти мо ё ифшои маълумоти шахсии шумо ба шахси сеюм ба манфиати тиҷоратӣ.\n\nБояд қайд кард, ки оё ё ба мо ирсол накардани фикру мулоҳизаҳо ё гузориши хатогиҳо як ташаббуси комилан ихтиёрӣ бо қарори худи шумост. дар screenmirroring.feedback@gmail.com мо саъй хоҳем кард, ки ба саволҳои шумо сари вақт ҷавобҳои возеҳ пешниҳод кунем.</string>
+    <string name="please_write_your_feedback">Лутфан фикру мулоҳизаҳои худро нависед</string>
+    <string name="system_info">Маълумоти системаи шумо ба шӯъбаи технологияи Screen Mirroring фиристода мешавад</string>
+    <string name="send">Фиристодан</string>
+    <string name="provide_feedback">фикру мулоҳиза пешниҳод кунед</string>
+    <string name="invalid_email_provided">Почтаи электронии беэътибор дода шудааст</string>
+    <string name="check_your_internet_connection">Пайвасти интернети худро санҷед</string>
+    <string name="type_here">ин ҷо нависед…</string>
+    <string name="enter_your_email_optional">Почтаи электронии худро ворид кунед (ихтиёрӣ)</string>
+    <string name="enjoy_the_app">Аз барнома лаззат баред?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Таҷрибаи худро бо истифода аз Барномаи Mirroring Screen\nБаҳо диҳед.</string>
+    <string name="not_now">Ҳозир не</string>
+    <string name="feedback">Алоқа:</string>
+    <string name="model">Модели:</string>
+    <string name="brand">Бренд:</string>
+    <string name="os_version">Версияи OS:</string>
+    <string name="manufacturer">Истеҳсолкунанда:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Почта фиристед</string>
+    <string name="select_picture">Тасвирро интихоб кунед</string>
+    <string name="help_center">Маркази кӯмак</string>
+    <string name="question_1">Ҳангоми пайвастшавӣ бо телевизор телефони ман дар "Пайвастшавӣ" часпида мешавад.</string>
+    <string name="question_2">Он барои ман пештар кор мекард, \nаммо ҳоло кор намекунад.</string>
+    <string name="question_3">Ин нишон медиҳад, ки дастгоҳи ман \nдастгирӣ намешавад.</string>
+    <string name="question_4">Телевизиони ман телевизори кӯҳна аст ва wi-fi-ро дастгирӣ намекунад.</string>
+    <string name="question_5">Тасвири телевизор сиёҳ аст, аммо \nсадо ба гӯш мерасад.</string>
+    <string name="question_6">Пайвастшавӣ пас аз муддате \nқатъ мешавад.</string>
+    <string name="question_7">Оё маълумоти шахсии ман ё маълумоти мобилии ман комилан бехатар аст?</string>
+    <string name="q_answer_1_1">Wi-Fi-и телефони смартфонро аз нав оғоз кунед ва бубинед, ки пайвастшавӣ муваффақ аст.</string>
+    <string name="q_answer_1_2">Телевизорро хомӯш кунед ва сими барқи онро низ аз розетка дур кунед. 1 дақиқа интизор шавед ва телевизорро бозоғоз намоед.</string>
+    <string name="q_answer_1_3">Масофаи байни телефон ва телевизорро кӯтоҳ кунед. Онро ба наздикӣ гиред.</string>
+    <string name="q_answer_2_1">Агар он қаблан кор карда бошад, пас онро бешубҳа дубора истифода бурдан мумкин аст.</string>
+    <string name="q_answer_2_2">Аксари мушкилоти пайвастшавиро тавассути аз нав оғоз кардани дастгоҳҳо ҳал кардан мумкин аст. Танҳо ҳам телефон ва ҳам телевизори худро бозоғоз намоед, раванди пайвастаи муқаррариро барои такроран кӯшиш кунед.</string>
+    <string name="q_answer_3_1">Ин маънои онро дорад, ки худи телефони шумо функсияи инъикоси экранро дастгирӣ намекунад.</string>
+    <string name="q_answer_3_2">Шумо метавонед XCast-ро барои интиқоли видео, аудио ва акс ба телевизион истифода баред. Бо XCast, шумо метавонед ҳангоми интиқол ба телевизион бо телефони худ корҳои дигарро иҷро кунед.</string>
+    <string name="q_answer_4_1">Агар телевизори шумо интерфейси HDMI-ро дастгирӣ кунад, мо тавсия медиҳем, ки барои инъикоси экран қабулкунаки беруна бихаред. Ба монанди Chromecast, Anycast ва ғайра.</string>
+    <string name="q_answer_5_1">Баъзе мундариҷаҳо ҳифзи ҳуқуқи муаллифро дар бар мегиранд ва онҳоро дар дастгоҳҳои сеюм, ба монанди Netflix, Disney Plus ва ғайра намоиш додан мумкин нест.</string>
+    <string name="q_answer_5_2">Шумо метавонед видеоро зеркашӣ кунед ё ҳамон як манбаъро дар дигар барномаҳо ҷустуҷӯ кунед, то кӯшиш кунед.</string>
+    <string name="q_answer_6_1">Шумо метавонед Smart Connect-ро дар танзимоти Wi-Fi-и худ фаъол созед. Он пайваста пайвастагиҳои беҳтари Wi-Fi-ро ҷустуҷӯ мекунад ва ҳамеша ба пеш ва бозгашт пайваст мешавад.</string>
+    <string name="q_answer_6_2">Лутфан боварӣ ҳосил кунед, ки Wi-Fi-и телефони мобилӣ ва телевизор SAM ва беҳтарин сигнал аст.</string>
+    <string name="q_answer_7_1">Мо ҳеҷ гуна маълумотро дар бораи шумо ва телефони мобилии шумо назорат намекунем ё ҷамъоварӣ намекунем. Шумо метавонед экрани худро бе ягон ташвиш кашед.</string>
+    <string name="q_answer_7_2">Система метавонад шуморо огоҳ кунад, ки пеш аз инъикоси экран хатари бехатарӣ вуҷуд дорад. Ин танҳо як ёдраскуниҳои муқаррарӣ аст, хоҳад буд</string>
+    <string name="wi_fi">ВАЙ-ФАЙ</string>
+    <string name="miracast">МИРАКАСТ</string>
+    <string name="install">НАСБ КУНЕД</string>
+    <string name="install_small">Насб кунед</string>
+    <string name="manual">Дастур</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Боварӣ ҳосил кунед, ки телефон ва телевизори шумо ба як шабакаи Wi-Fi\n пайвастанд.</string>
+    <string name="hd_streaming">Ҷараёни HD</string>
+    <string name="smart_devices">дастгоҳҳои интеллектуалӣ</string>
+    <string name="private_browser">Браузери хусусӣ</string>
+    <string name="effects">Таъсирҳо</string>
+    <string name="slider">Слайдер</string>
+    <string name="search_or_type_web_address">Суроғаи вебро ҷустуҷӯ кунед ё нависед</string>
+    <string name="install_2">Насб кунед</string>
+    <string name="bookmark">Хатчӯб</string>
+    <string name="downloads">Боргириҳо</string>
+    <string name="download">Download</string>
+    <string name="favorites">Дӯстдоштаҳо</string>
+    <string name="favorite">Дӯстдошта</string>
+    <string name="history">Таърих</string>
+    <string name="share_pdf">Мубодилаи PDF</string>
+    <string name="copy_url">URL-ро нусхабардорӣ кунед</string>
+    <string name="share_app">Мубодилаи барнома</string>
+    <string name="share_url">Мубодилаи URL</string>
+    <string name="exit">Баромадгоҳ</string>
+    <string name="new_tab">Ҷадвали нав</string>
+    <string name="google">Google</string>
+    <string name="startpage">Саҳифаи оғоз</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Байду</string>
+    <string name="qwant">Квант</string>
+    <string name="ecosia">Экозия</string>
+    <string name="custom_search_engine">Муҳаррики ҷустуҷӯии фармоишӣ</string>
+    <string name="add_shortcut_to_home">Ба хона миёнабур илова кунед</string>
+    <string name="save_screenshot">Скриншотро захира кунед</string>
+    <string name="add_to_bookmark">Ба хатчӯб илова кунед</string>
+    <string name="save_as_pdf">Ҳамчун pdf захира кунед</string>
+    <string name="save_action">Амалро захира кунед</string>
+    <string name="add_to_favorite">Ба дӯстдошта илова кунед</string>
+    <string name="search_engine">Муҳаррики ҷустуҷӯ</string>
+    <string name="browser_exit_body">Оё мутмаин ҳастед, ки мехоҳед аз браузер хориҷ шавед</string>
+    <string name="exit_browser">Хуруҷ аз браузер</string>
+    <string name="custom_user_agent">Агенти корбари фармоишӣ</string>
+    <string name="start_control">Оғози назорат</string>
+    <string name="data_control">Назорати маълумот</string>
+    <string name="app_settings">Танзимоти барнома</string>
+    <string name="browser_settings">Танзимоти браузер</string>
+    <string name="behavior_ui">Рафтор/UI</string>
+    <string name="clear_cache">Тоза кардани кэш</string>
+    <string name="clear_history">Таърихро тоза кунед</string>
+    <string name="clear_browsing_history">Тоза кардани таърихи дидан</string>
+    <string name="clear_all_cache">Ҳама кэшро тоза кунед</string>
+    <string name="clear_database_body">Тоза кардани "базанаҳои индексатсияшуда" ва "базаҳои маҳаллӣ\ndadata"</string>
+    <string name="clear_cookies_body">Агар фаъол бошад, ҳама кукиҳо нест карда мешаванд. Инчунин\nкукиҳои вебсайтҳои боэътимод</string>
+    <string name="clear_databases">Тоза кардани пойгоҳи додаҳо</string>
+    <string name="clear_cookies">Кукиҳоро тоза кунед</string>
+    <string name="clear_when_application_exit">Ҳангоми баромадани барнома тоза кунед</string>
+    <string name="clear_when_application_exit_body">Ҳар дафъае, ки шумо ҳамаи маълумоти дар боло санҷидашударо тарк мекунед\nҳуз карда мешаванд</string>
+    <string name="image">Тасвир</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Кукиҳо</string>
+    <string name="reopen_last_tab">Варақаи охиринро боз кунед</string>
+    <string name="confirm_tab_close">Пӯшидани ҷадвалро тасдиқ кунед</string>
+    <string name="confirm_browser_exit">Хуруҷи браузерро тасдиқ кунед</string>
+    <string name="position">Мавқеъ</string>
+    <string name="first_toolbar">Панели асбобҳои аввал</string>
+    <string name="hide_toolbar">Панели асбобҳоро пинҳон кунед</string>
+    <string name="toolbar">Панели асбобҳо</string>
+    <string name="bookmarks">Хатчӯбҳо</string>
+    <string name="edit">Таҳрир</string>
+    <string name="today">Имруз</string>
+    <string name="the_last_hour">Соати охир</string>
+    <string name="last_week">Ҳафтаи гузашта</string>
+    <string name="last_month">Мохи гузашта</string>
+    <string name="delete_all_history">Ҳама таърихро нест кунед</string>
+    <string name="copied">нусхабардорӣ кардааст</string>
+    <string name="share_ss">SS-ро мубодила кунед</string>
+    <string name="file_manager">Менеҷери файл</string>
+    <string name="search_on">Ҷустуҷӯ фаъол</string>
+    <string name="add_shortcut">Иловаи миёнабур</string>
+    <string name="tab_exit">Баромади ҷадвал</string>
+    <string name="do_you_want_to_close">Мехоҳед пӯшед</string>
+    <string name="download_complete_share_image">Зеркашӣ пурра. Мубодилаи тасвир</string>
+    <string name="update">Навсозӣ</string>
+    <string name="unfavorite">дӯстдошта нест</string>
+    <string name="no_input_provided">Ягон вуруд дода нашудааст</string>
+    <string name="input">Вуруд</string>
+    <string name="website_link">Истиноди вебсайт</string>
+    <string name="for_you">Барои шумо</string>
+    <string name="website">Вебсайт:</string>
+    <string name="url">URL:</string>
+    <string name="date">Сана</string>
+    <string name="no_site_loaded">Шумо вебсайти пурбор надоред</string>
+    <string name="more_then_5_images_can_not_be_picked">Зиёда аз панҷ тасвирро интихоб кардан мумкин нест</string>
+    <string name="location">"Ҷойгиршавӣ "</string>
+
+</resources>

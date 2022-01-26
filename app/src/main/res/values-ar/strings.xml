@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Arabic-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="location">"موقع "</string>
+
+    <string name="connection_close_confirm">هل ترغب في إلغاء اتصال VPN الحالي؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">رقم</string>
+    <string name="yes_2">نعم</string>
+    <string name="no_2">رقم</string>
+    <string name="select_images">حدد الصور</string>
+    <string name="tabs">نوافذ التبويب</string>
+    <string name="share">شارك</string>
+    <string name="save">يحفظ</string>
+    <string name="more">أكثر</string>
+    <string name="ok">موافق</string>
+    <string name="cancel">يلغي</string>
+    <string name="favorite_site">قم بتغيير موقع الويب الافتراضي الذي يتم تحميله عند
+        بدء تشغيل المستعرض</string>
+    <string name="custom_search_engine_body">أضف عنوان url المخصص للبحث أيضًا ، واختر "محرك بحث
+        مخصص" كموفر بحث</string>
+    <string name="search_engine_body"> اختر محرك البحث المفضل لديك أو
+        عيّن محركًا مخصصًا</string>
+    <string name="data_control_body">امسح بيانات المستعرض أو حدد البيانات
+        التي سيتم مسحها عند مغادرة التطبيق</string>
+    <string name="start_control_body"> حدد مكونات المستعرض
+        التي سيتم تشغيلها</string>
+    <string name="behavior_ui_body">غيّر سلوك وواجهة المستخدم للتطبيق
+        لتلائم تفضيلاتك</string>
+    <string name="book_mark_body">لإظهار مربع حوار الفلتر ، اضغط مطولاً على أيقونة الإشارة المرجعية في النظرة العامة. حدد المرشحات التي ستستخدمها</string>
+    <string name="app_settings_body">إعدادات المستعرض ، يمكنك اعتمادًا على
+        إصدار android الذي يمنح الإذن.</string>
+    <string name="start_control_image_body">تمكين صور الشبكة ، قد يكون التعطيل مفيدًا
+        لحفظ بيانات الجوال وتحميل موقع الويب بشكل أسرع</string>
+    <string name="start_control_location_body">اسمح لمواقع الويب بالوصول إلى موقعك. بعض
+        مواقع الويب {google، Maps for nav) تحتاج إلى هذا التمكين</string>
+    <string name="start_control_history_body">احفظ تاريخ المواقع التي تمت زيارتها</string>
+    <string name="start_control_java_script_body">قم بتمكين JavaScript. تحتاج العديد من مواقع الويب
+        إلى JavaScript لتشغيل وظائفها. لكنها أيضًا
+        في حالة راحة ويمكن استخدامها للهجمات</string>
+    <string name="start_control_cookies_body">                 تمكين ملفات تعريف الارتباط. ملفات تعريف الارتباط هي ملفات نصية صغيرة ،
+التي تم تخزينها على جهازك. تستخدم مواقع الويب
+عليها على سبيل المثال لتخزين إعدادات المستخدم. ولكن
+يمكن استخدامها أيضًا لجمع المستخدم الشخصيالبيانات. يتم دائمًا تعطيل ملفات تعريف ارتباط الطرف الثالث.</string>
+    <string name="confirmation_browser_exit_body">                  مربع حوار التأكيد عند
+        إغلاق المستعر </string>
+    <string name="confirmation_tab_close_body">مربع حوار التأكيد عند إغلاق علامة تبويب</string>
+    <string name="confirmation_reopen_last_body">أعد فتح علامة تبويب جديدة عند إغلاق آخر علامة تبويب بدلاً من الخروج من المتصفح</string>
+    <string name="hide_toolbar_body">استخدم الشاشة بأكملها عند التمرير عبر موقع الويب إذا ضغطت على زر الرجوع ، فستترك وضع ملء الشاشة</string>
+    <string name="images">الصور</string>
+    <string name="videos">أشرطة فيديو</string>
+    <string name="web_browser">متصفح الإنترنت</string>
+    <string name="image_slider">منزلق الصورة</string>
+    <string name="next">التالي</string>
+    <string name="previous">سابق</string>
+    <string name="help">يساعد</string>
+    <string name="settings">إعدادات</string>
+    <string name="language">اللغات</string>
+    <string name="more_app">تطبيقات أكثر</string>
+    <string name="rate_us">قيمنا</string>
+    <string name="screen_mirroring">شاشة النسخ المتطابق</string>
+    <string name="home_screen_text">تأكد من توصيل هاتفك وجهاز التلفزيون بنفس شبكة واي فاي.</string>
+    <string name="wifi_connected">واي فاي متصل</string>
+    <string name="wifi_disconnected">واي فاي غير متصل</string>
+    <string name="general">عام</string>
+    <string name="communicate">يتواصل</string>
+    <string name="send_feedback">ارسل رأيك</string>
+    <string name="tutorial">درس تعليمي</string>
+    <string name="how_to_use">كيف تستعمل؟</string>
+    <string name="streaming">تدفق</string>
+    <string name="streaming_quality">جودة البث</string>
+    <string name="auto_stop">توقف تلقائي</string>
+    <string name="auto_minimize">تصغير تلقائي</string>
+    <string name="advance">يتقدم</string>
+    <string name="orientation_mode">وضع التوجيه</string>
+    <string name="auto_stop_body_text">أوقف الفيديو عند فقدان الاتصال \nبالهدف</string>
+    <string name="auto_minimize_body_text">إخفاء التطبيق عندما يبدأ النسخ المتطابق</string>
+    <string name="casting_orientation_body_text">توجيه الصب</string>
+    <string name="mirroring_mode">وضع الانعكاس</string>
+    <string name="screen_mirroring_privacy_policy">سياسة الخصوصية لـ Screen Mirroring</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="supporting_devices">الأجهزة الداعمة</string>
+    <string name="see_which_devices_support_mirroring">تعرف على الأجهزة التي تدعم الانعكاس</string>
+    <string name="color_theme">مظهر اللون</string>
+    <string name="dark">داكن</string>
+    <string name="light">خفيفة</string>
+    <string name="auto">تلقاءي</string>
+    <string name="select_language">ختار اللغة</string>
+    <string name="close">أغلق</string>
+    <string name="images_slider">صور سيلدر</string>
+    <string name="screen_mirror">مرآة الشاشة</string>
+    <string name="tutorial_screen_setup_body">يجب أن يكون جهازك المستهدف في نفس شبكة Wi-Fi مثل هذا الجهاز ، لأن Screen Mirror ينقل شاشتك.</string>
+    <string name="tutorial_screen_mirror_body">قم ببث شاشة جهازك عبر Wi-Fi إلى جهاز الكمبيوتر أو الكمبيوتر المحمول أو الجهاز اللوحي.</string>
+    <string name="tutorial_device_hotspot_body">يمكنك أيضًا استخدام نقطة اتصال جهازك (وضع الربط) وتوصيل جهازك المستهدف بنقطة الاتصال الخاصة بك.</string>
+    <string name="tutorial_scan_code_body">افتح الموقع على جهازك المستهدف. عن طريق مسح رمز الاستجابة السريعة ضوئيًا ، يتم إرسال تكوين الاتصال ويبدأ النسخ المتطابق.</string>
+    <string name="tutorial_support_body">يرجى العلم أن Screen Mirror لا تعمل إلا عند الإعداد بشكل صحيح. تعمل ميزة Screen Mirror على نقل شاشتك ، ولكن ليس الإشارات الصوتية لجهازك. إذا واجهت أي مشاكل اتصل بنا.</string>
+    <string name="walk_through_body_1">استمتع ببث سلس وعالي الجودة\nبدون تأخير</string>
+    <string name="walk_through_body_2">اتصل بأي جهاز ذكي واستمتع\nبالعرض على أي شاشة</string>
+    <string name="walk_through_body_3">استمتع بالمتصفح الخاص داخل التطبيق بدون قيود</string>
+    <string name="screen_setup">إعداد الشاشة</string>
+    <string name="device_hotspot">نقطة اتصال الجهاز</string>
+    <string name="scan_code">كود المسح</string>
+    <string name="support">يدعم</string>
+    <string name="finish">ينهي</string>
+    <string name="our_policies">سياساتنا</string>
+    <string name="privacy_policy_text">                             حماية خصوصيتك أمر مهم بالنسبة لنا. نأمل أن يساعدك البيان التالي في فهم كيفية تعاملنا مع معلومات التعريف الشخصية ، والتي قد تزودنا بها أحيانًا عبر الإنترنت (نظام Google Play الأساسي).\n\nبشكل عام. نحن لا نجمع أي معلومات معلومات التعريف الشخصية منك عندما تقوم بتنزيل تطبيقات ذكري المظهر الخاصة بنا. على وجه التحديد ، لا نطلب زيارات المستهلكين لتطبيقنا ، حتى أننا لا نملك خادمًا لتخزين معلومات تحديد الهوية الشخصية هذه.\n\nتستخدم ميزة انعكاس الشاشة موقع التواصل الاجتماعي الفيسبوك كمزود إعلانات. يريد موقع التواصل الاجتماعي الفيسبوك عرض الإعلانات ذات الصلة بك. لمزيد من المعلومات ، يرجى زيارةhttps://m.facebook.com/ads/ad_choices.\n\nالموقف الوحيد الذي قد نتمكن من الوصول إليه لمعلومات تحديد الهوية الشخصية هو عندما تقرر شخصيًا إرسال ملاحظاتك إلينا عبر البريد الإلكتروني أو تزويدنا بخلل نقل. معلومات تحديد الهوية الشخصية التي قد نحصل عليها منك في هذه الحالة تقتصر بشكل صارم على اسمك وعنوان بريدك الإلكتروني واستجابتك للاستبيان فقط.\n\nفي الحالة المذكورة أعلاه ، نضمن أنك لن تستخدم سوى للاتصال بك وتحسين خدماتنا. لن نستخدم مثل هذه المعلومات أبدًا (على سبيل المثال ، اسمك وعنوان بريدك الإلكتروني_ لأي أغراض أخرى ، مثل زيادة تسويق منتجاتنا ، أو الكشف عن معلوماتك الشخصية لطرف ثالث لتحقيق مكاسب تجارية.\n\nوتجدر الإشارة إلى ما إذا كان أو إن عدم إرسال ملاحظاتك أو تقرير الأخطاء إلينا هو مبادرة طوعية تمامًا بناءً على قرارك الخاص. إذا كان لديك قلق بشأن إساءة استخدام معلومات تحديد الهوية الشخصية الخاصة بك ، أو إذا كنت تريد مزيدًا من المعلومات حول سياسة الخصوصية الخاصة بنا وما تعنيه ، فلا تتردد في مراسلتنا عبر البريد الإلكتروني على screenmirroring.feedback@gmail.com ، سنسعى لتقديم إجابات واضحة على أسئلتك في الوقت المناسب.</string>
+    <string name="please_write_your_feedback">الرجاء كتابة ملاحظاتك</string>
+    <string name="system_info">سيتم إرسال معلومات النظام الخاصة بك إلى إدارة تقنية Screen Mirroring</string>
+    <string name="send">إرسال</string>
+    <string name="provide_feedback">تقديم التغذية الراجعة</string>
+    <string name="invalid_email_provided">تم تقديم بريد إلكتروني غير صالح</string>
+    <string name="check_your_internet_connection">تحقق من اتصالك بالإنترنت</string>
+    <string name="type_here">أكتب هنا…</string>
+    <string name="enter_your_email_optional">أدخل بريدك الإلكتروني (اختياري)</string>
+    <string name="enjoy_the_app">                                   استمتع بالتطبيق؟</string>
+    <string name="rate_your_experience_using_screen_mirroring_app"> قيم تجربتك باستخدام تطبيق Screen \nMirroring.</string>
+    <string name="not_now">ليس الآن</string>
+    <string name="feedback">تعليق:</string>
+    <string name="model">نموذج:</string>
+    <string name="brand">ماركة:</string>
+    <string name="os_version">إصدار نظام التشغيل:</string>
+    <string name="manufacturer">الصانع:</string>
+    <string name="ram">الرامات "الذاكرة العشوائية في الهواتف والحواسيب:</string>
+    <string name="send_email">ارسل بريد</string>
+    <string name="select_picture">حدد صورة</string>
+    <string name="help_center">مركز المساعدة</string>
+    <string name="question_1">يتعطل "هاتفي" عند "الاتصال" عند \nالاقتران بالتلفزيون.</string>
+    <string name="question_2">لقد نجحت معي من قبل ، لكنها \nلا تعمل الآن.</string>
+    <string name="question_3">يظهر أن جهازي غير \nمدعوم.</string>
+    <string name="question_4">جهاز التلفزيون الخاص بي هو جهاز تلفزيون قديم \nولا يدعم شبكة wi-fi.</string>
+    <string name="question_5">الصورة على التلفزيون سوداء ولكن يمكن \nسماع الصوت.</string>
+    <string name="question_6">سيتم قطع الاتصال بعد \nفترة.</string>
+    <string name="question_7">هل معلوماتي الشخصية أو بيانات الهاتف المحمول\nآمنة تمامًا؟</string>
+    <string name="q_answer_1_1">أعد تشغيل شبكة Wi-Fi بالهاتف الذكي وتحقق من نجاح الاتصال.</string>
+    <string name="q_answer_1_2">قم بإيقاف تشغيل التلفزيون وإزالة سلك الطاقة الخاص به من المقبس أيضًا. انتظر دقيقة واحدة وأعد تشغيل التلفزيون.</string>
+    <string name="q_answer_1_3">قم بتقصير المسافة بين هاتفك والتلفزيون. خذها عن قرب.</string>
+    <string name="q_answer_2_1">إذا نجحت من قبل ، فمن المؤكد أنه يمكن استخدامها مرة أخرى.</string>
+    <string name="q_answer_2_2">يمكن حل معظم مشاكل الاتصال عن طريق إعادة تشغيل الأجهزة. ما عليك سوى إعادة تشغيل كل من الهاتف والتلفزيون ، واتبع عملية الاتصال العادية لإعادة المحاولة.</string>
+    <string name="q_answer_3_1">هذا يعني أن هاتفك نفسه لا يدعم وظيفة انعكاس الشاشة.</string>
+    <string name="q_answer_3_2">يمكنك استخدام XCast لإرسال الفيديو والصوت والصورة إلى التلفزيون. باستخدام XCast ، يمكنك القيام بأشياء أخرى بهاتفك أثناء الإرسال إلى التلفزيون.</string>
+    <string name="q_answer_4_1">إذا كان التلفزيون الخاص بك يدعم واجهة HDMI ، نوصيك بشراء جهاز استقبال خارجي لنسخ الشاشة. مثل Chromecast و Anycast إلخ.</string>
+    <string name="q_answer_5_1">تتضمن بعض المحتويات حماية حقوق النشر ولا يمكن عرضها على أجهزة تابعة لجهات خارجية ، مثل Netflix و Disney Plus وما إلى ذلك.</string>
+    <string name="q_answer_5_2">يمكنك تنزيل الفيديو أو البحث عن نفس المورد على تطبيقات أخرى لتجربته.</string>
+    <string name="q_answer_6_1">يمكنك تشغيل Smart Connect في إعدادات Wi-Fi الخاصة بك. سيبحث عن اتصالات Wi-fi أفضل باستمرار ، ويتصل دائمًا ذهابًا وإيابًا.</string>
+    <string name="q_answer_6_2">يرجى التأكد من أن شبكة Wi-Fi للهاتف المحمول والتلفزيون هي SAM وأفضل إشارة.</string>
+    <string name="q_answer_7_1">لن نقوم بمراقبة أو جمع أي معلومات عنك وعن هاتفك المحمول. يمكنك إرسال شاشتك دون أي قلق.</string>
+    <string name="q_answer_7_2">قد يحذرك النظام من وجود مخاطر تتعلق بالسلامة قبل انعكاس الشاشة. هذا مجرد تذكير منتظم ، سيكون</string>
+    <string name="wi_fi">واي فاي</string>
+    <string name="miracast">ميراكاست</string>
+    <string name="install">تثبيت</string>
+    <string name="install_small">تثبيت</string>
+    <string name="manual">كتيب</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">       تأكد من توصيل هاتفك وجهاز التلفزيون
+        بنفس شبكة wifi</string>
+    <string name="hd_streaming">HD الجري</string>
+    <string name="smart_devices">الأجهزة الذكية</string>
+    <string name="private_browser">متصفح خاص</string>
+    <string name="effects">تأثيرات</string>
+    <string name="slider">المنزلق</string>
+    <string name="search_or_type_web_address">ابحث أو اكتب عنوان الويب</string>
+    <string name="install_2">تثبيت</string>
+    <string name="bookmark">المرجعية</string>
+    <string name="downloads">التحميلات</string>
+    <string name="download">تحميل</string>
+    <string name="favorites">المفضلة</string>
+    <string name="favorite">مفضل</string>
+    <string name="history">تاريخ</string>
+    <string name="share_pdf">                                       مشاركة ملف PDF                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       </string>
+    <string name="copy_url">إنسخ الرابط</string>
+    <string name="share_app">شارك التطبيق</string>
+    <string name="share_url">مشاركة url</string>
+    <string name="exit">مخرج</string>
+    <string name="new_tab">علامة تبويب جديدة</string>
+    <string name="google">متصفح الجوجل</string>
+    <string name="startpage">أبدأ الصفحة</string>
+    <string name="bing">بنج</string>
+    <string name="duckduckgo">DuckDuckGo                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       </string>
+    <string name="searx">سيركس</string>
+    <string name="baidu">بايدو</string>
+    <string name="qwant">قوانت</string>
+    <string name="ecosia">إكوسيا</string>
+    <string name="custom_search_engine">محرك بحث مخصص</string>
+    <string name="add_shortcut_to_home">أضف الاختصار إلى المنزل</string>
+    <string name="save_screenshot">حفظ لقطة شاشة</string>
+    <string name="add_to_bookmark">أضف إلى المفضلة</string>
+    <string name="save_as_pdf">حفظ بصيغة بي دي إف</string>
+    <string name="save_action">حفظ العمل</string>
+    <string name="add_to_favorite">أضف إلى المفضلة</string>
+    <string name="search_engine">محرك البحث</string>
+    <string name="browser_exit_body">هل أنت متأكد أنك تريد الخروج من المتصفح</string>
+    <string name="exit_browser">متصفح الخروج</string>
+    <string name="custom_user_agent">وكيل مستخدم مخصص</string>
+    <string name="start_control">ابدأ التحكم</string>
+    <string name="data_control">التحكم في البيانات</string>
+    <string name="app_settings">إعدادات التطبيقات</string>
+    <string name="browser_settings">اعدادات المتصفح</string>
+    <string name="behavior_ui">السلوك / واجهة المستخدم</string>
+    <string name="clear_cache">مسح ذاكرة التخزين المؤقت</string>
+    <string name="clear_history">تاريخ واضح</string>
+    <string name="clear_browsing_history">محو سجل التصفح</string>
+    <string name="clear_all_cache">امسح كل ذاكرة التخزين المؤقت</string>
+    <string name="clear_database_body">امسح "قواعد البيانات المفهرسة" و "قواعد البيانات المحلية
+        "</string>
+    <string name="clear_cookies_body">في حالة التمكين ، سيتم حذف جميع ملفات تعريف الارتباط. أيضًا
+        ملفات تعريف الارتباط لمواقع الويب الموثوق بها</string>
+    <string name="clear_databases">قواعد البيانات واضحة</string>
+    <string name="clear_cookies">مسح ملفات تعريف الارتباط</string>
+    <string name="clear_when_application_exit">واضح عند الخروج من التطبيق</string>
+    <string name="clear_when_application_exit_body">في كل مرة تقوم فيها بإنهاء كافة البيانات المحددة أعلاه
+        سيتم حذفها</string>
+    <string name="image">صورة</string>
+    <string name="javascript">جافا سكريبت</string>
+    <string name="cookies">بسكويت</string>
+    <string name="reopen_last_tab">أعد فتح علامة التبويب الأخيرة</string>
+    <string name="confirm_tab_close">تأكيد إغلاق علامة التبويب</string>
+    <string name="confirm_browser_exit">قم بتأكيد خروج المتصفح</string>
+    <string name="position">موضع</string>
+    <string name="first_toolbar">شريط الأدوات الأول</string>
+    <string name="hide_toolbar">إخفاء شريط الأدوات</string>
+    <string name="toolbar">شريط الأدوات</string>
+    <string name="bookmarks">إشارات مرجعية</string>
+    <string name="edit">تعديل</string>
+    <string name="today">اليوم</string>
+    <string name="the_last_hour">الساعة الماضية</string>
+    <string name="last_week">الاسبوع الماضي</string>
+    <string name="last_month">الشهر الماضي</string>
+    <string name="delete_all_history">حذف كل المحفوظات</string>
+    <string name="copied">نسخ</string>
+    <string name="share_ss">حصة قطة</string>
+    <string name="file_manager">مدير الملفات</string>
+    <string name="search_on">بحث في</string>
+    <string name="add_shortcut">إضافة اختصار</string>
+    <string name="tab_exit">جدولة خروج</string>
+    <string name="do_you_want_to_close">هل تريد أن تغلق</string>
+    <string name="download_complete_share_image">تم التحميل. مشاركة الصورة</string>
+    <string name="update">تحديث</string>
+    <string name="unfavorite">غير مفضل</string>
+    <string name="no_input_provided">لم يتم تقديم أي إدخال</string>
+    <string name="input">مدخل</string>
+    <string name="website_link">رابط الموقع</string>
+    <string name="for_you">لك</string>
+    <string name="website">موقع إلكتروني:</string>
+    <string name="url">عنوان Url:</string>
+    <string name="date">تاريخ</string>
+    <string name="no_site_loaded">لم تقم بتحميل الموقع</string>
+    <string name="more_then_5_images_can_not_be_picked">لا يمكن انتقاء أكثر من خمس صور</string>
+</resources>

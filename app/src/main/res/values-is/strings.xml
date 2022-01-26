@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Icelandic-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">Staðsetning</string>
+    <string name="connection_close_confirm">Viltu hætta við núverandi VPN-tengingu?</string>
+    <string name="yes">JÁ</string>
+    <string name="no">NEI</string>
+    <string name="yes_2">Já</string>
+    <string name="no_2">Nei</string>
+    <string name="select_images">Veldu Myndir</string>
+    <string name="tabs">Flipar</string>
+    <string name="share">Deildu</string>
+    <string name="save">Vista</string>
+    <string name="more">Meira</string>
+    <string name="ok">Allt í lagi</string>
+    <string name="cancel">Hætta við</string>
+    <string name="favorite_site">Breyttu sjálfgefna vefsíðunni sem hleðst við\nræsingu vafra</string>
+    <string name="custom_search_engine_body">Bættu við sérsniðinni leitarvefslóð veldu einnig „Sérsniðin\nleitarvél“ sem leitarþjónustu</string>
+    <string name="search_engine_body">Veldu leitarvélina þína eða\nstilltu sérsniðna</string>
+    <string name="data_control_body">Hreinsaðu vafragögnin þín eða ákveðið hvaða gögn\n verða hreinsuð þegar þú ferð úr forritinu</string>
+    <string name="start_control_body">Ákveðið hvaða íhlutir vafrans\n verða við ræsingu</string>
+    <string name="behavior_ui_body">Breyttu hegðun og notendaviðmóti appsins til að\n henta þínum óskum</string>
+    <string name="book_mark_body">Til að sýna síunargluggann ýtirðu lengi á bókamerkjatáknið í yfirlitinu. Ákveða hvaða síur þú munt nota</string>
+    <string name="app_settings_body">Vafrastillingar, þar geturðu veitt leyfi, háð\Android útgáfunni þinni.</string>
+    <string name="start_control_image_body">Virkjaðu netmyndir, slökkt gæti verið gagnlegt\ntil að vista farsímagögn og hlaða vefsíðu hraðar</string>
+    <string name="start_control_location_body">Leyfðu vefsíðum að fá aðgang að staðsetningu þinni. Sumar\nvefsíður {google, maps for nav) þurfa þessa virkjun</string>
+    <string name="start_control_history_body">Vistaðu sögu heimsóttra vefsíðna</string>
+    <string name="start_control_java_script_body">Virkja JavaScript. Margar vefsíður þurfa\nJavaScript fyrir virkni sína. En þau eru\nlíka hvíld og hægt að nota þau fyrir árásir</string>
+    <string name="start_control_cookies_body">Virkja vafrakökur. Vafrakökur eru litlar textaskrár,
+sem eru geymdar í tækinu þínu. Vefsíður nota
+þær til dæmis til að geyma notendastillingar. En
+þeir gætu einnig verið notaðir til að safna persónulegum notendum
+gögn. Vafrakökur frá þriðja aðila eru alltaf óvirkar.</string>
+    <string name="confirmation_browser_exit_body">Staðfestingargluggi þegar\nvafra er lokað</string>
+    <string name="confirmation_tab_close_body">Staðfestingargluggi þegar flipa er lokað</string>
+    <string name="confirmation_reopen_last_body">Opnaðu nýjan flipa aftur þegar síðasta flipanum er lokað í stað þess að fara úr vafranum</string>
+    <string name="hide_toolbar_body">Notaðu allan skjáinn þegar þú flettir í gegnum vefsíðuna ef þú ýtir á til baka hnappinn muntu yfirgefa allan skjáinn</string>
+    <string name="images">Myndir</string>
+    <string name="videos">Myndbönd</string>
+    <string name="web_browser">Vefskoðari</string>
+    <string name="image_slider">Myndslenni</string>
+    <string name="next">Næst</string>
+    <string name="previous">Fyrri</string>
+    <string name="help">Hjálp</string>
+    <string name="settings">Stillingar</string>
+    <string name="language">Tungumál</string>
+    <string name="more_app">Fleiri forrit</string>
+    <string name="rate_us">Gefðu okkur einkunn</string>
+    <string name="screen_mirroring">Skjáspeglun</string>
+    <string name="home_screen_text">Gakktu úr skugga um að síminn þinn og sjónvarpið séu tengd við sama Wi-Fi net.</string>
+    <string name="wifi_connected">Wi-Fi tengt</string>
+    <string name="wifi_disconnected">Wi-Fi aftengt</string>
+    <string name="general">Almennt</string>
+    <string name="communicate">Samskipti</string>
+    <string name="send_feedback">Senda athugasemdir</string>
+    <string name="tutorial">Kennsla</string>
+    <string name="how_to_use">Hvernig skal nota?</string>
+    <string name="streaming">Straumspilun</string>
+    <string name="streaming_quality">Streymisgæði</string>
+    <string name="auto_stop">Auto Stop</string>
+    <string name="auto_minimize">Sjálfvirk lágmarka</string>
+    <string name="advance">Fyrirfram</string>
+    <string name="orientation_mode">Stefna</string>
+    <string name="auto_stop_body_text">Stöðva myndskeið þegar tenging\nvið skotmark rofnar</string>
+    <string name="auto_minimize_body_text">Fela app þegar speglun hefst</string>
+    <string name="casting_orientation_body_text">Steypa stefnumörkun</string>
+    <string name="mirroring_mode">Speglunarstilling</string>
+    <string name="screen_mirroring_privacy_policy">Persónuverndarstefna skjáspeglunar</string>
+    <string name="privacy_policy">Friðhelgisstefna</string>
+    <string name="supporting_devices">Stuðningstæki</string>
+    <string name="see_which_devices_support_mirroring">Sjáðu hvaða tæki styðja speglun</string>
+    <string name="color_theme">Litaþema</string>
+    <string name="dark">Myrkur</string>
+    <string name="light">Ljós</string>
+    <string name="auto">Sjálfvirk</string>
+    <string name="select_language">Veldu tungumál</string>
+    <string name="close">loka</string>
+    <string name="images_slider">Myndir Renna</string>
+    <string name="screen_mirror">Skjáspegill</string>
+    <string name="tutorial_screen_setup_body">Marktækið þitt verður að vera á sama Wi-Fi neti og þetta tæki, vegna þess að Screen Mirror sendir skjáinn þinn.</string>
+    <string name="tutorial_screen_mirror_body">Straumaðu skjá tækisins yfir Wi-Fi í tölvuna þína, fartölvu eða spjaldtölvu.</string>
+    <string name="tutorial_device_hotspot_body">Þú getur líka notað heitan reit tækisins þíns (tjóðrun) og tengt marktækið þitt við heitan reit.</string>
+    <string name="tutorial_scan_code_body">Opnaðu síðuna á marktækinu þínu. Með því að skanna QR kóðann er tengingarstillingin send og speglun hefst.</string>
+    <string name="tutorial_support_body">Vinsamlegast hafðu í huga að Screen Mirror virkar aðeins þegar uppsetningin er rétt. Skjárspegill sendir skjáinn þinn, en ekki hljóðmerki tækisins. Ef þú lendir í einhverjum vandræðum hafðu samband við okkur.</string>
+    <string name="walk_through_body_1">Njóttu slétts og hágæða streymis\nán tafar</string>
+    <string name="walk_through_body_2">Tengstu við hvaða snjalltæki sem er og njóttu\nsýningarinnar á hvaða skjá sem er</string>
+    <string name="walk_through_body_3">Njóttu einkavafra í forriti án takmarkana</string>
+    <string name="screen_setup">Skjáuppsetning</string>
+    <string name="device_hotspot">Heitur reitur tækisins</string>
+    <string name="scan_code">Skanna kóða</string>
+    <string name="support">Stuðningur</string>
+    <string name="finish">Klára</string>
+    <string name="our_policies">Stefna okkar</string>
+    <string name="privacy_policy_text">Það er okkur mikilvægt að vernda friðhelgi þína. Við vonum að eftirfarandi yfirlýsing hjálpi þér að skilja hvernig við förum með persónugreinanlegar upplýsingar sem þú gætir af og til veitt okkur í gegnum internetið (Google Play vettvangurinn).\n\nAlmennt. við söfnum engum PII frá þér þegar þú hleður niður Android forritunum okkar. Til að vera nákvæm, þá krefjumst við ekki heimsóknar neytenda í forritinu okkar, við höfum jafnvel ekki netþjón til að geyma slíkar persónuupplýsingar.\n\nSkjáspeglun notar Facebook sem auglýsingaveitu. Facebook vill sýna auglýsingar sem eiga við þig. Fyrir frekari upplýsingar vinsamlega farðu á\nhttps://m.facebook.com/ads/ad_choices.\n\nEina aðstæðurnar sem við gætum fengið aðgang að þér PII er þegar þú ákveður persónulega að senda okkur athugasemdir þínar í tölvupósti eða gefa okkur villu skýrslu. PII sem við gætum fengið frá þér í þeim aðstæðum eru stranglega takmörkuð við nafn þitt, netfang og könnunarsvar þitt eingöngu.\n\nÍ ofangreindum aðstæðum, ábyrgjumst við að PII verður aðeins notað til að hafa samband við þig og bæta þjónustu okkar. Við munum aldrei nota slíkar upplýsingar (td nafn þitt og netfang_ í öðrum tilgangi, svo sem til að markaðssetja vörur okkar frekar, eða til að birta persónuupplýsingar þínar til þriðja aðila í viðskiptalegum ávinningi.\n\nTakið skal fram að hvort eða eða að senda okkur ekki athugasemdir þínar eða villuskýrslu er algjörlega frjálst framtak að eigin ákvörðun. Ef þú hefur áhyggjur af því að persónuupplýsingar þínar séu misnotaðar eða ef þú vilt frekari upplýsingar um persónuverndarstefnu okkar og hvað hún þýðir skaltu ekki hika við að senda okkur tölvupóst á screenmirroring.feedback@gmail.com munum við leitast við að veita skýr svör við spurningum þínum tímanlega.</string>
+    <string name="please_write_your_feedback">Vinsamlegast skrifaðu álit þitt</string>
+    <string name="system_info">Kerfisupplýsingarnar þínar verða sendar til Screen Mirroring Tech Department</string>
+    <string name="send">Senda</string>
+    <string name="provide_feedback">veita endurgjöf</string>
+    <string name="invalid_email_provided">Ógildur tölvupóstur gefinn upp</string>
+    <string name="check_your_internet_connection">Athugaðu nettenginguna þína</string>
+    <string name="type_here">skrifaðu hér…</string>
+    <string name="enter_your_email_optional">Sláðu inn netfangið þitt (valfrjálst)</string>
+    <string name="enjoy_the_app">Njóttu appsins?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Gefðu upplifun þinni einkunn með því að nota skjá\nspeglaforritið.</string>
+    <string name="not_now">Ekki núna</string>
+    <string name="feedback">Viðbrögð:</string>
+    <string name="model">Gerð:</string>
+    <string name="brand">Merki:</string>
+    <string name="os_version">OS útgáfa:</string>
+    <string name="manufacturer">Framleiðandi:</string>
+    <string name="ram">VINNSLUMINNI:</string>
+    <string name="send_email">Senda póst</string>
+    <string name="select_picture">Veldu mynd</string>
+    <string name="help_center">Hjálparmiðstöð</string>
+    <string name="question_1">Síminn minn festist við „Tengjast“ þegar hann er paraður við sjónvarp.</string>
+    <string name="question_2">Það virkaði fyrir mig áður, en það virkar ekki núna.</string>
+    <string name="question_3">Það sýnir að tækið mitt er \nekki stutt.</string>
+    <string name="question_4">Sjónvarpið mitt er gamalt sjónvarp \nog styður ekki Wi-Fi.</string>
+    <string name="question_5">Myndin í sjónvarpinu er svört en \nhljóðið heyrist.</string>
+    <string name="question_6">Tengingin verður rofin eftir \nsmá stund.</string>
+    <string name="question_7">Eru persónuupplýsingar mínar eða farsímagögn algjörlega örugg?</string>
+    <string name="q_answer_1_1">Endurræstu Wi-Fi snjallsímans og athugaðu hvort tengingin hafi tekist.</string>
+    <string name="q_answer_1_2">Slökktu á sjónvarpinu og taktu einnig rafmagnssnúruna úr innstungunni. Bíddu í eina mínútu og endurræstu sjónvarpið.</string>
+    <string name="q_answer_1_3">Styttu fjarlægðina milli símans og sjónvarpsins. Taktu það nærri þér.</string>
+    <string name="q_answer_2_1">Ef það virkaði áður, þá er örugglega hægt að nota það aftur.</string>
+    <string name="q_answer_2_2">Flest tengingarvandamál er hægt að leysa með því að endurræsa tæki. Endurræstu bara bæði símann og sjónvarpið, fylgdu venjulegu tengingarferlinu til að reyna aftur.</string>
+    <string name="q_answer_3_1">Þetta þýðir að síminn þinn sjálfur styður ekki skjáspeglunaraðgerðina.</string>
+    <string name="q_answer_3_2">Þú getur notað XCast til að senda myndskeið, hljóð og myndir í sjónvarp. Með XCast geturðu gert aðra hluti með símanum þínum á meðan þú sendir út í sjónvarp.</string>
+    <string name="q_answer_4_1">Ef sjónvarpið þitt styður HDMI tengi mælum við með að þú kaupir ytri móttakara fyrir skjáspeglun. Svo sem Chromecast, Anycast osfrv.</string>
+    <string name="q_answer_5_1">Sumt efni felur í sér höfundarréttarvernd og er ekki hægt að birta það á tækjum þriðja aðila, eins og Netflix, Disney Plus o.s.frv.</string>
+    <string name="q_answer_5_2">Þú getur halað niður myndbandinu eða leitað að sömu auðlindinni í öðrum forritum til að prófa.</string>
+    <string name="q_answer_6_1">Þú getur kveikt á Smart Connect í Wi-Fi stillingunum þínum. Það mun leita að betri Wi-Fi tengingum stöðugt og alltaf tengja fram og til baka.</string>
+    <string name="q_answer_6_2">Gakktu úr skugga um að Wi-Fi farsímans og sjónvarpsins sé SAM og besta merkið.</string>
+    <string name="q_answer_7_1">Við munum ekki fylgjast með eða safna neinum upplýsingum um þig og farsímann þinn. Þú getur varpað skjánum þínum án þess að hafa áhyggjur.</string>
+    <string name="q_answer_7_2">Kerfið gæti varað þig við því að það sé öryggishætta fyrir skjáspeglun. Þetta er bara venjuleg áminning, það verður það</string>
+    <string name="wi_fi">ÞRÁÐLAUST NET</string>
+    <string name="miracast">MIRA CAST</string>
+    <string name="install">SETJA UPP</string>
+    <string name="install_small">Settu upp</string>
+    <string name="manual">Handbók</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Gakktu úr skugga um að síminn þinn og sjónvarpið séu tengd\nvið sama Wi-Fi net.</string>
+    <string name="hd_streaming">HD streymi</string>
+    <string name="smart_devices">snjalltæki</string>
+    <string name="private_browser">Einkavafri</string>
+    <string name="effects">Áhrif</string>
+    <string name="slider">Renna</string>
+    <string name="search_or_type_web_address">Leitaðu eða sláðu inn veffang</string>
+    <string name="install_2">Settu upp</string>
+    <string name="bookmark">Bókamerki</string>
+    <string name="downloads">Niðurhal</string>
+    <string name="download">Sækja</string>
+    <string name="favorites">Uppáhalds</string>
+    <string name="favorite">Uppáhalds</string>
+    <string name="history">Saga</string>
+    <string name="share_pdf">Deila pdf</string>
+    <string name="copy_url">Afritaðu vefslóð</string>
+    <string name="share_app">Deila app</string>
+    <string name="share_url">Deila slóð</string>
+    <string name="exit">Hætta</string>
+    <string name="new_tab">Nýr flipi</string>
+    <string name="google">Google</string>
+    <string name="startpage">Upphafssíða</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Sérsniðin leitarvél</string>
+    <string name="add_shortcut_to_home">Bættu flýtileið við heimilið</string>
+    <string name="save_screenshot">Vista skjámynd</string>
+    <string name="add_to_bookmark">Bæta við bókamerki</string>
+    <string name="save_as_pdf">Vista sem pdf</string>
+    <string name="save_action">Vista aðgerð</string>
+    <string name="add_to_favorite">Bæta við uppáhalds</string>
+    <string name="search_engine">Leitarvél</string>
+    <string name="browser_exit_body">Ertu viss um að þú viljir hætta í vafra</string>
+    <string name="exit_browser">Hætta vafra</string>
+    <string name="custom_user_agent">Sérsniðinn notendafulltrúi</string>
+    <string name="start_control">Start Control</string>
+    <string name="data_control">Gagnaeftirlit</string>
+    <string name="app_settings">App stillingar</string>
+    <string name="browser_settings">Stillingar vafra</string>
+    <string name="behavior_ui">Hegðun/HÍ</string>
+    <string name="clear_cache">Hreinsaðu skyndiminni</string>
+    <string name="clear_history">Hreinsa söguna</string>
+    <string name="clear_browsing_history">Hreinsaðu vafraferil</string>
+    <string name="clear_all_cache">Hreinsaðu allt skyndiminni</string>
+    <string name="clear_database_body">Hreinsaðu „verðtryggða gagnagrunna“ og „staðbundna\ngagnagrunna“</string>
+    <string name="clear_cookies_body">Ef það er virkt verður öllum vafrakökum eytt. Einnig\nvafrakökur traustra vefsíðna</string>
+    <string name="clear_databases">Hreinsa gagnagrunna</string>
+    <string name="clear_cookies">Hreinsaðu vafrakökur</string>
+    <string name="clear_when_application_exit">Hreinsaðu þegar forritið hættir</string>
+    <string name="clear_when_application_exit_body">Í hvert skipti sem þú hættir öllum ofangreindum gögnum\n verður eytt</string>
+    <string name="image">Mynd</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Kökur</string>
+    <string name="reopen_last_tab">Opnaðu síðasta flipa aftur</string>
+    <string name="confirm_tab_close">Staðfestu lokun flipa</string>
+    <string name="confirm_browser_exit">Staðfestu að loka vafranum</string>
+    <string name="position">Staða</string>
+    <string name="first_toolbar">Fyrsta tækjastikan</string>
+    <string name="hide_toolbar">Fela tækjastikuna</string>
+    <string name="toolbar">Tækjastikan</string>
+    <string name="bookmarks">Bókamerki</string>
+    <string name="edit">Breyta</string>
+    <string name="today">Í dag</string>
+    <string name="the_last_hour">Síðasta klukkutímann</string>
+    <string name="last_week">Síðustu viku</string>
+    <string name="last_month">Í síðasta mánuði</string>
+    <string name="delete_all_history">Eyða öllum sögu</string>
+    <string name="copied">afritað</string>
+    <string name="share_ss">Deildu SS</string>
+    <string name="file_manager">Skráasafn</string>
+    <string name="search_on">Leita á</string>
+    <string name="add_shortcut">Bæta við flýtileið</string>
+    <string name="tab_exit">Flipi Hætta</string>
+    <string name="do_you_want_to_close">Viltu loka</string>
+    <string name="download_complete_share_image">Niðurhali lokið. Deildu mynd</string>
+    <string name="update">Uppfærsla</string>
+    <string name="unfavorite">Í uppáhaldi</string>
+    <string name="no_input_provided">Engin inntak veitt</string>
+    <string name="input">Inntak</string>
+    <string name="website_link">Tengill á vefsíðu</string>
+    <string name="for_you">Fyrir þig</string>
+    <string name="website">Vefsíða:</string>
+    <string name="url">Vefslóð:</string>
+    <string name="date">Dagsetning</string>
+    <string name="no_site_loaded">Þú ert ekki með hlaðna vefsíðu</string>
+    <string name="more_then_5_images_can_not_be_picked">Ekki er hægt að velja fleiri en fimm myndir</string>
+</resources>

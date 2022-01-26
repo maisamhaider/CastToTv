@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Dutch-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+
+    <string name="connection_close_confirm">Wilt u de huidige VPN-verbinding opzeggen?</string>
+    <string name="yes">JA</string>
+    <string name="no">NEE</string>
+    <string name="yes_2">Ja</string>
+    <string name="no_2">Nee</string>
+    <string name="select_images">Selecteer afbeeldingen</string>
+    <string name="tabs">Tabbladen</string>
+    <string name="share">Deel</string>
+    <string name="save">Sparen</string>
+    <string name="more">Meer</string>
+    <string name="ok">oke</string>
+    <string name="cancel">Annuleren</string>
+    <string name="favorite_site">Wijzig de standaardwebsite die wordt geladen\nstart van de browser</string>
+    <string name="custom_search_engine_body">Voeg aangepaste zoek-url toe en kies ook "Aangepaste\nzoekmachine" als zoekmachine</string>
+    <string name="search_engine_body">Kies uw favoriete zoekmachine of\nstel een aangepaste zoekmachine in</string>
+    <string name="data_control_body">Wis uw browsergegevens of bepaal welke gegevens\nworden gewist wanneer u de app verlaat</string>
+    <string name="start_control_body">Bepaal welke componenten van de browser\nworden opgestart</string>
+    <string name="behavior_ui_body">Wijzig het gedrag en de gebruikersinterface van de app\naan uw voorkeuren</string>
+    <string name="book_mark_body">Om het filterdialoogvenster weer te geven, drukt u lang op het bladwijzerpictogram in het overzicht. Bepaal welke filters je gaat gebruiken</string>
+    <string name="app_settings_body">Browserinstellingen, daar kunt u afhankelijk van\nuw Android-versie toestemming verlenen.</string>
+    <string name="start_control_image_body">Schakel netwerkafbeeldingen in. Uitschakelen kan handig zijn\nom mobiele data op te slaan en de website sneller te laden</string>
+    <string name="start_control_location_body">Geef websites toegang tot uw locatie. Sommige\nwebsites {google, maps for nav) hebben deze functie nodig</string>
+    <string name="start_control_history_body">Bewaar de geschiedenis van bezochte websites</string>
+    <string name="start_control_java_script_body">Schakel Javascript in. Veel websites hebben\nJavaScript nodig voor hun functionaliteit. Maar ze zijn\nook rust en kunnen worden gebruikt voor aanvallen</string>
+    <string name="start_control_cookies_body">Cookies inschakelen. Cookies zijn kleine tekstbestanden,
+die op uw apparaat zijn opgeslagen. Websites gebruiken
+ze bijvoorbeeld om gebruikersinstellingen op te slaan. Maar
+ze kunnen ook worden gebruikt om persoonlijke gebruikers te verzamelen
+gegevens. Cookies van derden zijn altijd uitgeschakeld.</string>
+    <string name="confirmation_browser_exit_body">Bevestigingsdialoog bij\nbrowser sluiten</string>
+    <string name="confirmation_tab_close_body">Bevestigingsvenster bij het sluiten van een tabblad</string>
+    <string name="confirmation_reopen_last_body">Een nieuw tabblad opnieuw openen wanneer het laatste tabblad is gesloten in plaats van de browser te sluiten</string>
+    <string name="hide_toolbar_body">Gebruik het hele scherm wanneer u door de website bladert als u op de terug-knop drukt, verlaat u de modus voor volledig scherm</string>
+    <string name="images">Afbeeldingen</string>
+    <string name="videos">Videos</string>
+    <string name="web_browser">Webbrowser</string>
+    <string name="image_slider">Afbeeldingsschuifregelaar</string>
+    <string name="next">Volgende</string>
+    <string name="previous">Vorig</string>
+    <string name="help">Helpen</string>
+    <string name="settings">Instellingen</string>
+    <string name="language">Talen</string>
+    <string name="more_app">Meer apps</string>
+    <string name="rate_us">Beoordeel ons</string>
+    <string name="screen_mirroring">Scherm spiegelen</string>
+    <string name="home_screen_text">Zorg ervoor dat je telefoon en tv zijn verbonden met hetzelfde wifi-netwerk.</string>
+    <string name="wifi_connected">Wi-Fi verbonden</string>
+    <string name="wifi_disconnected">Wi-Fi verbroken</string>
+    <string name="general">Algemeen</string>
+    <string name="communicate">Communiceren</string>
+    <string name="send_feedback">Feedback verzenden</string>
+    <string name="tutorial">zelfstudie</string>
+    <string name="how_to_use">Hoe te gebruiken?</string>
+    <string name="streaming">Streamen</string>
+    <string name="streaming_quality">Streamingkwaliteit</string>
+    <string name="auto_stop">Auto Stop</string>
+    <string name="auto_minimize">Automatisch minimaliseren</string>
+    <string name="advance">Vooruitgaan</string>
+    <string name="orientation_mode">Oriëntatiemodus:</string>
+    <string name="auto_stop_body_text">Stop video wanneer de verbinding\n met het doel is verbroken</string>
+    <string name="auto_minimize_body_text">App verbergen wanneer spiegelen begint</string>
+    <string name="casting_orientation_body_text">Casting-oriëntatie:</string>
+    <string name="mirroring_mode">Spiegelmodus</string>
+    <string name="screen_mirroring_privacy_policy">Privacybeleid voor schermspiegeling</string>
+    <string name="privacy_policy">Privacybeleid</string>
+    <string name="supporting_devices">Ondersteunende apparaten</string>
+    <string name="see_which_devices_support_mirroring">Bekijk welke apparaten mirroring ondersteunen</string>
+    <string name="color_theme">Kleur Thema</string>
+    <string name="dark">Donker</string>
+    <string name="light">Licht</string>
+    <string name="auto">Auto</string>
+    <string name="select_language">Selecteer taal</string>
+    <string name="close">dichtbij</string>
+    <string name="images_slider">Afbeeldingen Schuifregelaar</string>
+    <string name="screen_mirror">Schermspiegel</string>
+    <string name="tutorial_screen_setup_body">Je doelapparaat moet in hetzelfde wifi-netwerk zitten als dit apparaat, omdat Screen Mirror je scherm doorstuurt.</string>
+    <string name="tutorial_screen_mirror_body">Stream het scherm van uw apparaat via Wi-Fi naar uw computer, notebook of tablet.</string>
+    <string name="tutorial_device_hotspot_body">U kunt ook de hotspot van uw apparaat gebruiken (tetheringmodus) en uw doelapparaat verbinden met uw hotspot.</string>
+    <string name="tutorial_scan_code_body">Open de site op uw doelapparaat. Door de QR-code te scannen, wordt de verbindingsconfiguratie verzonden en begint het spiegelen.</string>
+    <string name="tutorial_support_body">Houd er rekening mee dat Screen Mirror alleen werkt als deze correct is ingesteld. Screen Mirror verzendt uw scherm, maar niet de audiosignalen van uw apparaat. Neem contact met ons op als u problemen ondervindt.</string>
+    <string name="walk_through_body_1">Geniet van vloeiende streaming van hoge kwaliteit\nzonder vertraging</string>
+    <string name="walk_through_body_2">Maak verbinding met elk smart-apparaat en geniet van de\nshow op elk scherm</string>
+    <string name="walk_through_body_3">Geniet van een in-app privébrowser zonder beperkingen</string>
+    <string name="screen_setup">Scherminstelling</string>
+    <string name="device_hotspot">Hotspot van apparaat</string>
+    <string name="scan_code">Scancode</string>
+    <string name="support">Steun</string>
+    <string name="finish">Finish</string>
+    <string name="our_policies">ons beleid</string>
+    <string name="privacy_policy_text">Het beschermen van uw privacy is belangrijk voor ons. We hopen dat de volgende verklaring u zal helpen begrijpen hoe we omgaan met de persoonlijk identificeerbare informatie die u ons af en toe via internet (het Google Play-platform) verstrekt.\n\nOver het algemeen. we verzamelen geen PII van u wanneer u onze Android-applicaties downloadt. Om specifiek te zijn, we vereisen geen bezoeken van consumenten aan onze applicatie, we hebben zelfs geen server om dergelijke PII op te slaan.\n\nScreen Mirroring gebruikt Facebook als advertentieprovider. Facebook wil advertenties tonen die voor jou relevant zijn. Ga voor meer informatie naar\nhttps://m.facebook.com/ads/ad_choices.\n\nDe enige situatie waarin we toegang tot uw PII kunnen krijgen, is wanneer u persoonlijk besluit ons uw feedback te e-mailen of ons een bug te bezorgen verslag doen van. De PII die we in die situatie van u kunnen krijgen, is strikt beperkt tot uw naam, e-mailadres en alleen uw antwoord op de enquête.\n\nIn bovenstaande situatie garanderen we dat uw PII alleen zal worden gebruikt om contact met u op te nemen en onze diensten te verbeteren. We zullen dergelijke informatie (bijv. uw naam en e-mailadres_) nooit gebruiken voor andere doeleinden, zoals om onze producten verder op de markt te brengen, of om uw persoonlijke informatie aan een derde partij bekend te maken voor commerciële doeleinden.\n\nEr moet worden opgemerkt dat al dan niet om ons uw feedback of bugrapport niet te sturen, is een volledig vrijwillig initiatief naar uw eigen beslissing. Als u zich zorgen maakt over misbruik van uw PII, of als u meer informatie wilt over ons privacybeleid en wat het betekent, kunt u ons een e-mail sturen op screenmirroring.feedback@gmail.com zullen we ons best doen om tijdig duidelijke antwoorden op uw vragen te geven.</string>
+    <string name="please_write_your_feedback">Schrijf alstublieft uw feedback</string>
+    <string name="system_info">Uw systeeminformatie wordt verzonden naar de technische afdeling Screen Mirroring</string>
+    <string name="send">Versturen</string>
+    <string name="provide_feedback">geef feedback</string>
+    <string name="invalid_email_provided">Ongeldige e-mail opgegeven</string>
+    <string name="check_your_internet_connection">Controleer je internetverbinding</string>
+    <string name="type_here">typ hier…</string>
+    <string name="enter_your_email_optional">Vul je e-mailadres in (optioneel)</string>
+    <string name="enjoy_the_app">Geniet van de app?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Beoordeel je ervaring met de Screen\nMirroring-app.</string>
+    <string name="not_now">Niet nu</string>
+    <string name="feedback">Feedback:</string>
+    <string name="model">Model:</string>
+    <string name="brand">Merk:</string>
+    <string name="os_version">OS-versie:</string>
+    <string name="manufacturer">Fabrikant:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Verzend mail</string>
+    <string name="select_picture">Selecteer afbeelding</string>
+    <string name="help_center">Helpcentrum</string>
+    <string name="question_1">Mijn telefoon blijft hangen bij "Verbinden" bij het koppelen met tv.</string>
+    <string name="question_2">Bij mij werkte het vroeger wel, \nmaar nu niet meer.</string>
+    <string name="question_3">Het geeft aan dat mijn apparaat \nniet wordt ondersteund.</string>
+    <string name="question_4">Mijn tv is een oude tv en \nondersteunt geen wifi.</string>
+    <string name="question_5">Het beeld op tv is zwart, maar \nhet geluid is wel hoorbaar.</string>
+    <string name="question_6">De verbinding wordt na een tijdje \nonderbroken.</string>
+    <string name="question_7">Zijn mijn persoonlijke gegevens of mobiele data absoluut veilig?</string>
+    <string name="q_answer_1_1">Start de wifi van de smartphone opnieuw op en kijk of de verbinding tot stand is gebracht.</string>
+    <string name="q_answer_1_2">Zet de tv uit en haal ook het netsnoer uit het stopcontact. Wacht 1 minuut en start de TV opnieuw op.</string>
+    <string name="q_answer_1_3">Verklein de afstand tussen uw telefoon en de tv. Neem het van dichtbij mee.</string>
+    <string name="q_answer_2_1">Als het eerder werkte, kan het zeker opnieuw worden gebruikt.</string>
+    <string name="q_answer_2_2">De meeste verbindingsproblemen kunnen worden opgelost door apparaten opnieuw op te starten. Start gewoon zowel uw telefoon als uw tv opnieuw op, volg het normale verbindingsproces om het opnieuw te proberen.</string>
+    <string name="q_answer_3_1">Dit betekent dat je telefoon zelf de functie voor schermspiegeling niet ondersteunt.</string>
+    <string name="q_answer_3_2">U kunt XCast gebruiken om video, audio en foto naar tv te casten. Met XCast kun je andere dingen doen met je telefoon terwijl je cast naar tv.</string>
+    <string name="q_answer_4_1">Als uw tv een HDMI-interface ondersteunt, raden we u aan een externe ontvanger te kopen voor schermspiegeling. Zoals Chromecast, Anycast enz.</string>
+    <string name="q_answer_5_1">Sommige inhoud omvat auteursrechtelijke bescherming en kan niet worden weergegeven op apparaten van derden, zoals Netflix, Disney Plus enz.</string>
+    <string name="q_answer_5_2">Je kunt de video downloaden of dezelfde bron zoeken in andere apps om het te proberen.</string>
+    <string name="q_answer_6_1">U kunt Smart Connect inschakelen in uw Wi-Fi-instellingen. Het zal constant naar betere wifi-verbindingen zoeken en altijd heen en weer verbinding maken.</string>
+    <string name="q_answer_6_2">Zorg ervoor dat de wifi van de mobiele telefoon en tv de SAM en het beste signaal is.</string>
+    <string name="q_answer_7_1">We zullen geen informatie over u en uw mobiele telefoon controleren of verzamelen. U kunt uw scherm zonder zorgen casten.</string>
+    <string name="q_answer_7_2">Het systeem kan u waarschuwen dat er een veiligheidsrisico bestaat voordat het scherm wordt gespiegeld. Dit is slechts een regelmatige herinnering, het zal zijn</string>
+    <string name="wi_fi">WIFI</string>
+    <string name="miracast">MIRACAST</string>
+    <string name="install">INSTALLEREN</string>
+    <string name="install_small">Installeren</string>
+    <string name="manual">Handleiding</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Zorg ervoor dat je telefoon en tv zijn verbonden\nmet hetzelfde wifi-netwerk.</string>
+    <string name="hd_streaming">HD-streaming</string>
+    <string name="smart_devices">slimme apparaten</string>
+    <string name="private_browser">Privébrowser</string>
+    <string name="effects">Effecten</string>
+    <string name="slider">Schuifregelaar</string>
+    <string name="search_or_type_web_address">Zoek of typ webadres</string>
+    <string name="install_2">Installeren</string>
+    <string name="bookmark">Bladwijzer</string>
+    <string name="downloads">Downloads</string>
+    <string name="download">Downloaden</string>
+    <string name="favorites">Favorieten</string>
+    <string name="favorite">Favoriet</string>
+    <string name="history">Geschiedenis</string>
+    <string name="share_pdf">Deel Pdf</string>
+    <string name="copy_url">Kopie URL</string>
+    <string name="share_app">Deel app</string>
+    <string name="share_url">URL delen</string>
+    <string name="exit">Uitgang</string>
+    <string name="new_tab">Nieuw tabblad</string>
+    <string name="google">Google</string>
+    <string name="startpage">Startpagina</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Baidu</string>
+    <string name="qwant">Qwant</string>
+    <string name="ecosia">Ecosia</string>
+    <string name="custom_search_engine">Aangepaste zoekmachine</string>
+    <string name="add_shortcut_to_home">Snelkoppeling naar startpagina toevoegen</string>
+    <string name="save_screenshot">Schermafbeelding opslaan</string>
+    <string name="add_to_bookmark">Toevoegen aan bladwijzer</string>
+    <string name="save_as_pdf">Opslaan als pdf</string>
+    <string name="save_action">Actie opslaan</string>
+    <string name="add_to_favorite">Toevoegen aan favorieten</string>
+    <string name="search_engine">Zoekmachine</string>
+    <string name="browser_exit_body">Weet u zeker dat u Browser wilt afsluiten</string>
+    <string name="exit_browser">Browser afsluiten</string>
+    <string name="custom_user_agent">Aangepaste gebruikersagent</string>
+    <string name="start_control">Start controle</string>
+    <string name="data_control">Gegevensbeheer</string>
+    <string name="app_settings">App instellingen</string>
+    <string name="browser_settings">Browser instellingen</string>
+    <string name="behavior_ui">Gedrag/UI</string>
+    <string name="clear_cache">Cache wissen</string>
+    <string name="clear_history">Geschiedenis wissen</string>
+    <string name="clear_browsing_history">Browsegeschiedenis wissen</string>
+    <string name="clear_all_cache">Wis alle cache</string>
+    <string name="clear_database_body">Wis "geïndexeerde databases" en " lokale\ndatabases"</string>
+    <string name="clear_cookies_body">Indien ingeschakeld, worden alle cookies verwijderd. Ook\nde Cookies van vertrouwde websites</string>
+    <string name="clear_databases">Databases wissen</string>
+    <string name="clear_cookies">Cookies wissen</string>
+    <string name="clear_when_application_exit">Wissen wanneer toepassing wordt afgesloten</string>
+    <string name="clear_when_application_exit_body">Elke keer dat u stopt, worden alle hierboven aangevinkte gegevens\nverwijderd</string>
+    <string name="image">Afbeelding</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Koekjes</string>
+    <string name="reopen_last_tab">Laatste tabblad opnieuw openen</string>
+    <string name="confirm_tab_close">Bevestig tabblad sluiten</string>
+    <string name="confirm_browser_exit">Afsluiten van browser bevestigen</string>
+    <string name="position">Positie</string>
+    <string name="first_toolbar">Eerste werkbalk</string>
+    <string name="hide_toolbar">Verberg Toolbar</string>
+    <string name="toolbar">Werkbalk</string>
+    <string name="bookmarks">Bladwijzers</string>
+    <string name="edit">Bewerk</string>
+    <string name="today">Vandaag</string>
+    <string name="the_last_hour">Het laatste uur</string>
+    <string name="last_week">Vorige week</string>
+    <string name="last_month">Vorige maand</string>
+    <string name="delete_all_history">Alle geschiedenis verwijderen</string>
+    <string name="copied">gekopieerd</string>
+    <string name="share_ss">Deel SS</string>
+    <string name="file_manager">Bestandsbeheer</string>
+    <string name="search_on">Zoek door</string>
+    <string name="add_shortcut">Voeg snelkoppeling toe</string>
+    <string name="tab_exit">Tab Afsluiten</string>
+    <string name="do_you_want_to_close">Wil je afsluiten?</string>
+    <string name="download_complete_share_image">Download compleet. Deel afbeelding</string>
+    <string name="update">Bijwerken</string>
+    <string name="unfavorite">Niet favoriet</string>
+    <string name="no_input_provided">Geen invoer voorzien</string>
+    <string name="input">Invoer</string>
+    <string name="website_link">Website link</string>
+    <string name="for_you">Voor jou</string>
+    <string name="website">Website:</string>
+    <string name="url">URL:</string>
+    <string name="date">Datum</string>
+    <string name="no_site_loaded">U heeft geen geladen website</string>
+    <string name="more_then_5_images_can_not_be_picked">Meer dan vijf afbeeldingen kunnen niet worden gekozen</string>
+    <string name="location">Plaats</string>
+
+</resources>

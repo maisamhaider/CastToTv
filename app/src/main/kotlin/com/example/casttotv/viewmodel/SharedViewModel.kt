@@ -28,6 +28,8 @@ class SharedViewModel(context: Context) : ViewModel() {
     private var _mTimeLeftInMillis: MutableLiveData<Long> = MutableLiveData(0)
     private var _playingVideoCurrentPos: MutableLiveData<Int> = MutableLiveData(0)
     private var _playingVideoCurrentPosBeforeDestroy: MutableLiveData<Int> = MutableLiveData(0)
+    private var _wifiConnection: MutableLiveData<Boolean> = MutableLiveData(false)
+    val wifiConnection: LiveData<Boolean> = _wifiConnection
 
     val speed: LiveData<Int> = _speed
     val mTimeLeftInMillis: LiveData<Long> = _mTimeLeftInMillis
@@ -79,6 +81,10 @@ class SharedViewModel(context: Context) : ViewModel() {
 
     fun orientation(context: Activity): Int {
         return context.resources.configuration.orientation
+    }
+
+    fun wifiCon(value: Boolean) {
+        _wifiConnection.value = value
     }
 
 

@@ -38,7 +38,11 @@
 
             <com.google.android.material.textview.MaterialTextView
                 style="@style/body_text_view"
+                android:layout_marginStart="@dimen/dp_2"
+                android:layout_marginEnd="@dimen/dp_2"
+                android:ellipsize="end"
                 android:gravity="center"
+                android:maxLength="18"
                 android:maxLines="1"
                 android:text="@string/bookmark"
                 app:layout_constraintBottom_toTopOf="@+id/guideline344"
@@ -89,7 +93,11 @@
 
             <com.google.android.material.textview.MaterialTextView
                 style="@style/body_text_view"
+                android:layout_marginStart="@dimen/dp_2"
+                android:layout_marginEnd="@dimen/dp_2"
+                android:ellipsize="end"
                 android:gravity="center"
+                android:maxLength="18"
                 android:maxLines="1"
                 android:text="@string/history"
                 app:layout_constraintBottom_toTopOf="@+id/guideline353"
@@ -139,7 +147,11 @@
 
             <com.google.android.material.textview.MaterialTextView
                 style="@style/body_text_view"
+                android:layout_marginStart="@dimen/dp_2"
+                android:layout_marginEnd="@dimen/dp_2"
+                android:ellipsize="end"
                 android:gravity="center"
+                android:maxLength="18"
                 android:maxLines="1"
                 android:text="@string/favorites"
                 app:layout_constraintBottom_toTopOf="@+id/guideline350"
@@ -191,7 +203,11 @@
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/materialTextView38"
                 style="@style/body_text_view"
+                android:layout_marginStart="@dimen/dp_2"
+                android:layout_marginEnd="@dimen/dp_2"
+                android:ellipsize="end"
                 android:gravity="center"
+                android:maxLength="18"
                 android:maxLines="1"
                 android:text="@string/downloads"
                 app:layout_constraintBottom_toTopOf="@+id/guideline347"
@@ -247,6 +263,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_share_pdf"
                 style="@style/w_0_h_0"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_marginEnd="@dimen/dp_4"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/cl_share_ss"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -263,7 +281,9 @@
 
                 <com.google.android.material.textview.MaterialTextView
                     style="@style/body_text_view"
+                    android:ellipsize="end"
                     android:gravity="center"
+                    android:maxLength="18"
                     android:maxLines="1"
                     android:text="@string/share_pdf"
                     app:layout_constraintBottom_toTopOf="@+id/guideline380"
@@ -297,6 +317,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_share_ss"
                 style="@style/w_0_h_0"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_marginEnd="@dimen/dp_4"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/cl_file_manager"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -314,7 +336,9 @@
 
                 <com.google.android.material.textview.MaterialTextView
                     style="@style/body_text_view"
+                    android:ellipsize="end"
                     android:gravity="center"
+                    android:maxLength="18"
                     android:maxLines="1"
                     android:text="@string/share_ss"
                     app:layout_constraintBottom_toTopOf="@+id/guideline376"
@@ -348,6 +372,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_file_manager"
                 style="@style/w_0_h_0"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_marginEnd="@dimen/dp_4"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/cl_search_on"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -366,7 +392,9 @@
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/materialTextView43"
                     style="@style/body_text_view"
+                    android:ellipsize="end"
                     android:gravity="center"
+                    android:maxLength="18"
                     android:maxLines="1"
                     android:text="@string/file_manager"
                     app:layout_constraintBottom_toTopOf="@+id/guideline373"
@@ -400,6 +428,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_search_on"
                 style="@style/w_0_h_0"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_marginEnd="@dimen/dp_4"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -417,7 +447,9 @@
 
                 <com.google.android.material.textview.MaterialTextView
                     style="@style/body_text_view"
+                    android:ellipsize="end"
                     android:gravity="center"
+                    android:maxLength="18"
                     android:maxLines="1"
                     android:text="@string/search_on"
                     app:layout_constraintBottom_toTopOf="@+id/guideline369"
@@ -462,6 +494,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_copy_url"
                 style="@style/w_0_h_0"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_marginEnd="@dimen/dp_4"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/cl_share_app"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -479,7 +513,9 @@
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/materialTextView44"
                     style="@style/body_text_view"
+                    android:ellipsize="end"
                     android:gravity="center"
+                    android:maxLength="18"
                     android:maxLines="1"
                     android:text="@string/copy_url"
                     app:layout_constraintBottom_toTopOf="@+id/guideline368"
@@ -513,6 +549,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_share_app"
                 style="@style/w_0_h_0"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_marginEnd="@dimen/dp_4"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/cl_share_url"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -529,7 +567,9 @@
 
                 <com.google.android.material.textview.MaterialTextView
                     style="@style/body_text_view"
+                    android:ellipsize="end"
                     android:gravity="center"
+                    android:maxLength="18"
                     android:maxLines="1"
                     android:text="@string/share_app"
                     app:layout_constraintBottom_toTopOf="@+id/guideline366"
@@ -563,6 +603,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_share_url"
                 style="@style/w_0_h_0"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_marginEnd="@dimen/dp_4"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/cl_exit"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -579,7 +621,9 @@
 
                 <com.google.android.material.textview.MaterialTextView
                     style="@style/body_text_view"
+                    android:ellipsize="end"
                     android:gravity="center"
+                    android:maxLength="18"
                     android:maxLines="1"
                     android:text="@string/share_url"
                     app:layout_constraintBottom_toTopOf="@+id/guideline362"
@@ -613,6 +657,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/cl_exit"
                 style="@style/w_0_h_0"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_marginEnd="@dimen/dp_4"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -629,7 +675,9 @@
 
                 <com.google.android.material.textview.MaterialTextView
                     style="@style/body_text_view"
+                    android:ellipsize="end"
                     android:gravity="center"
+                    android:maxLength="18"
                     android:maxLines="1"
                     android:text="@string/exit"
                     app:layout_constraintBottom_toTopOf="@+id/guideline359"

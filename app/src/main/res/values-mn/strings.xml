@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Mongolian-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="connection_close_confirm">Та одоогийн VPN холболтыг цуцлахыг хүсэж байна уу?</string>
+    <string name="yes">ТИЙМ</string>
+    <string name="no">ҮГҮЙ</string>
+    <string name="yes_2">Тиймээ</string>
+    <string name="no_2">Үгүй</string>
+    <string name="select_images">Зураг сонгоно уу</string>
+    <string name="tabs">Таб</string>
+    <string name="share">Хуваалцах</string>
+    <string name="save">Хадгалах</string>
+    <string name="more">Илүү</string>
+    <string name="ok">БОЛЖ БАЙНА УУ</string>
+    <string name="cancel">Цуцлах</string>
+    <string name="favorite_site">Хөтөчийг эхлүүлэх үед ачаалах өгөгдмөл вэб сайтыг өөрчилнө үү</string>
+    <string name="custom_search_engine_body">Тусгай хайлтын url нэмэх мөн хайлтын үйлчилгээ үзүүлэгчээр "Захиалгат\nхайлтын систем"-ийг сонгоно уу</string>
+    <string name="search_engine_body">Өөрийн дуртай хайлтын системийг сонгох эсвэл\nзахиалгыг тохируулна уу</string>
+    <string name="data_control_body">Таныг програмаас гарах үед хөтчийнхөө өгөгдлүүдийг устгах эсвэл\nямар өгөгдлийг арилгахаа шийднэ үү</string>
+    <string name="start_control_body">Хөтчийн аль бүрэлдэхүүн хэсэг\nэхлэхээ шийднэ үү</string>
+    <string name="behavior_ui_body">Өөрийн тохиргоонд тохируулан\nапп-н үйл ажиллагаа болон ui-г өөрчилнө үү</string>
+    <string name="book_mark_body">Шүүлтүүрийн харилцах цонхыг харуулахын тулд тойм дээрх хавчуургын дүрс дээр удаан дарна уу. Та ямар шүүлтүүр ашиглахаа шийдээрэй</string>
+    <string name="app_settings_body">Хөтчийн тохиргоо, эндээс та өөрийн Android хувилбараас хамаарч зөвшөөрөл олгох боломжтой.</string>
+    <string name="start_control_image_body">Сүлжээний зургуудыг идэвхжүүлэх, Идэвхгүй болгох нь мобайл датаг хэмнэж, вэб сайтыг хурдан ачаалахад\nхэрэгтэй</string>
+    <string name="start_control_location_body">Вэбсайтуудад таны байршилд хандахыг зөвшөөрнө үү. Зарим\nвеб сайтад {google, maps for nav) үүнийг идэвхжүүлэх шаардлагатай</string>
+    <string name="start_control_history_body">Зочилсон вэбсайтуудын түүхийг хадгалах</string>
+    <string name="start_control_java_script_body">JavaScript-г идэвхжүүлнэ үү. Олон вэб сайтууд ажиллахын тулд\nJavaScript хэрэгтэй. Гэхдээ тэд амарч, халдлагад ашиглаж болно</string>
+    <string name="start_control_cookies_body">Күүкийг идэвхжүүл. Күүки нь жижиг текст файлууд,
+таны төхөөрөмж дээр хадгалагдсан. Вэбсайтууд ашигладаг
+жишээлбэл хэрэглэгчийн тохиргоог хадгалах. Гэхдээ
+тэдгээрийг мөн хувийн хэрэглэгч цуглуулахад ашиглаж болно
+өгөгдөл. Гуравдагч талын күүки үргэлж идэвхгүй байдаг.</string>
+    <string name="confirmation_browser_exit_body">Хөтөчийг хаах үед баталгаажуулах харилцах цонх</string>
+    <string name="confirmation_tab_close_body">Табыг хаах үед баталгаажуулах харилцах цонх</string>
+    <string name="confirmation_reopen_last_body">Хөтөчөөс гарахын оронд сүүлийн цонх хаагдсан үед шинэ табыг дахин нээнэ үү</string>
+    <string name="hide_toolbar_body">Вэбсайтаар гүйлгэхдээ дэлгэцийг бүхэлд нь ашиглана уу, хэрэв та буцах товчийг дарвал бүтэн дэлгэцийн горимоос гарах болно</string>
+    <string name="images">Зураг</string>
+    <string name="videos">Видеонууд</string>
+    <string name="web_browser">Вэб хөтөч</string>
+    <string name="image_slider">Зургийн слайдер</string>
+    <string name="next">Дараачийн</string>
+    <string name="previous">Өмнөх</string>
+    <string name="help">Туслаач</string>
+    <string name="settings">Тохиргоо</string>
+    <string name="language">Хэлнүүд</string>
+    <string name="more_app">Илүү их апп-ууд</string>
+    <string name="rate_us">Биднийг дүгнэнэ үү</string>
+    <string name="screen_mirroring">Дэлгэц толин тусгал</string>
+    <string name="home_screen_text">Таны утас болон ТВ ижил Wi-Fi сүлжээнд холбогдсон эсэхийг шалгаарай.</string>
+    <string name="wifi_connected">Wi-Fi холбогдсон</string>
+    <string name="wifi_disconnected">Wi-Fi салсан</string>
+    <string name="general">Генерал</string>
+    <string name="communicate">Харилцах</string>
+    <string name="send_feedback">Санал хүсэлт илгээх</string>
+    <string name="tutorial">Заавар</string>
+    <string name="how_to_use">Яаж хэрэглэх вэ?</string>
+    <string name="streaming">Дамжуулж байна</string>
+    <string name="streaming_quality">Дамжуулах чанар</string>
+    <string name="auto_stop">Автомат зогсолт</string>
+    <string name="auto_minimize">Автоматаар багасгах</string>
+    <string name="advance">Урьдчилгаа</string>
+    <string name="orientation_mode">Баримтлалын горим</string>
+    <string name="auto_stop_body_text">Зорилтот холболт тасарсан үед видеог зогсоо</string>
+    <string name="auto_minimize_body_text">Толин тусгал хийж эхлэх үед програмыг нуу</string>
+    <string name="casting_orientation_body_text">Дамжуулах чиг баримжаа</string>
+    <string name="mirroring_mode">Толин тусгал хийх горим</string>
+    <string name="screen_mirroring_privacy_policy">Дэлгэцийн толин тусгалын нууцлалын бодлого</string>
+    <string name="privacy_policy">Нууцлалын бодлого</string>
+    <string name="supporting_devices">Дэмжих төхөөрөмжүүд</string>
+    <string name="see_which_devices_support_mirroring">Ямар төхөөрөмжүүд толин тусгалыг дэмждэг болохыг харна уу</string>
+    <string name="color_theme">Өнгөний сэдэв</string>
+    <string name="dark">Харанхуй</string>
+    <string name="light">Гэрэл</string>
+    <string name="auto">Автомат</string>
+    <string name="select_language">Хэл сонгох</string>
+    <string name="close">хаах</string>
+    <string name="images_slider">Зургууд Силдер</string>
+    <string name="screen_mirror">Дэлгэцийн толь</string>
+    <string name="tutorial_screen_setup_body">Дэлгэцийн толин тусгал таны дэлгэцийг дамжуулж байгаа тул таны зорилтот төхөөрөмж энэ төхөөрөмжтэй ижил Wi-Fi сүлжээнд байх ёстой.</string>
+    <string name="tutorial_screen_mirror_body">Төхөөрөмжийнхөө дэлгэцийг Wi-Fi-аар компьютер, зөөврийн компьютер эсвэл таблет руугаа дамжуулаарай.</string>
+    <string name="tutorial_device_hotspot_body">Та мөн төхөөрөмжийнхөө халуун цэгийг (холбогдох горим) ашиглаж, зорилтот төхөөрөмжөө халуун цэгтээ холбож болно.</string>
+    <string name="tutorial_scan_code_body">Зорилтот төхөөрөмж дээрээ сайтыг нээнэ үү. QR кодыг скан хийснээр холболтын тохиргоог дамжуулж, толин тусгал хийж эхэлнэ.</string>
+    <string name="tutorial_support_body">Дэлгэцийн толин тусгал нь зөвхөн зөв тохируулагдсан үед ажилладаг гэдгийг анхаарна уу. Дэлгэцийн толь нь таны дэлгэцийг дамжуулах боловч таны төхөөрөмжийн аудио дохиог дамжуулахгүй. Хэрэв танд ямар нэгэн асуудал тулгарвал бидэнтэй холбоо барина уу.</string>
+    <string name="walk_through_body_1">Гөлгөр, өндөр чанартай дамжуулалтыг\nхоцролгүй үзээрэй</string>
+    <string name="walk_through_body_2">Дурын ухаалаг төхөөрөмжтэй холбогдож, дурын дэлгэц дээр\nшоуг үзээрэй</string>
+    <string name="walk_through_body_3">Апп доторх хувийн хөтчийг ямар ч хязгаарлалтгүйгээр сайхан өнгөрүүлээрэй</string>
+    <string name="screen_setup">Дэлгэцийн тохиргоо</string>
+    <string name="device_hotspot">Төхөөрөмжийн халуун цэг</string>
+    <string name="scan_code">Код сканнердах</string>
+    <string name="support">Дэмжлэг</string>
+    <string name="finish">Дуусга</string>
+    <string name="our_policies">Манай бодлого</string>
+    <string name="privacy_policy_text">Таны хувийн нууцыг хамгаалах нь бидний хувьд чухал юм. Дараах мэдэгдэл нь бид хувийн мэдээлэлтэй хэрхэн харьцдагийг ойлгоход тусална гэж найдаж байна. Та бидэнд хааяа Интернэтээр дамжуулан (Google Play платформ) өгч болно.\n\nЕрөнхийдөө. Таныг манай Андройд аппликейшнуудыг татаж авах үед бид танаас ямар ч PII авдаггүй. Тодруулж хэлбэл, бид хэрэглэгчиддээ манай аппликейшнд зочлох шаардлагагүй, тэр ч байтугай бидэнд ийм PII хадгалах сервер байхгүй.\n\nДэлгэц толин тусгал нь Facebook-ийг зар сурталчилгааны үйлчилгээ үзүүлэгч болгон ашигладаг. Facebook танд хамааралтай зар харуулахыг хүсч байна. Дэлгэрэнгүй мэдээлэл авахыг хүсвэл\nhttps://m.facebook.com/ads/ad_choices хаягаар зочилно уу.\n\nБид танд өөрийн хувийн мэдээлэлд хандах боломжтой цорын ганц нөхцөл бол та өөрийн биеэр бидэнд санал хүсэлтээ имэйлээр илгээх эсвэл алдааны талаар бидэнд мэдэгдэхээр шийдсэн үед л болно. тайлан. Энэ тохиолдолд танаас авч болох PII нь зөвхөн таны нэр, цахим шуудангийн хаяг болон таны судалгааны хариугаар хязгаарлагдана.\n\nДээрх тохиолдолд бид таныг зөвхөн тантай холбоо барих, үйлчилгээгээ сайжруулахад ашиглах болно гэдгийг баталгаажуулж байна. Бид ийм мэдээллийг (жишээ нь, таны нэр, цахим шуудангийн хаяг_) бүтээгдэхүүнээ цаашид зах зээлд гаргах, эсвэл арилжааны зорилгоор гуравдагч этгээдэд таны хувийн мэдээллийг задруулах гэх мэт бусад зорилгоор хэзээ ч ашиглахгүй.\n\nҮүнийг тэмдэглэх нь зүйтэй. Бидэнд санал хүсэлт, алдааны тайлангаа илгээхгүй байх нь таны шийдвэрээр бүрэн сайн дурын санаачилга юм. Хэрэв та өөрийн хувийн нууцлалыг буруугаар ашигласан талаар санаа зовж байгаа эсвэл манай нууцлалын бодлого болон энэ нь юу гэсэн үг болохыг мэдэхийг хүсвэл бидэнд имэйлээр чөлөөтэй илгээнэ үү. screenmirroring.feedback@gmail.com хаягаар бид таны асуултанд цаг тухайд нь тодорхой хариулт өгөхийг хичээх болно.</string>
+    <string name="please_write_your_feedback">Санал хүсэлтээ бичнэ үү</string>
+    <string name="system_info">Таны системийн мэдээллийг Screen Mirroring технологийн хэлтэст илгээх болно</string>
+    <string name="send">Илгээх</string>
+    <string name="provide_feedback">санал хүсэлтээ өгөх</string>
+    <string name="invalid_email_provided">Буруу имэйл оруулсан</string>
+    <string name="check_your_internet_connection">Интернет холболтоо шалгана уу</string>
+    <string name="type_here">энд бичнэ үү…</string>
+    <string name="enter_your_email_optional">Имэйлээ оруулна уу (заавал биш)</string>
+    <string name="enjoy_the_app">Аппликешн таалагдаж байна уу?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Дэлгэцийн толин тусгал програмыг ашиглан туршлагаа үнэлнэ үү.</string>
+    <string name="not_now">Одоо биш</string>
+    <string name="feedback">Санал хүсэлт:</string>
+    <string name="model">Загвар:</string>
+    <string name="brand">Брэнд:</string>
+    <string name="os_version">OS хувилбар:</string>
+    <string name="manufacturer">Үйлдвэрлэгч:</string>
+    <string name="ram">RAM:</string>
+    <string name="send_email">Шуудан илгээх</string>
+    <string name="select_picture">Зураг сонгоно уу</string>
+    <string name="help_center">Тусламжийн төв</string>
+    <string name="question_1">Миний утас ТВ-тэй холбогдох үед "Холбох" хэсэгт гацдаг.</string>
+    <string name="question_2">Энэ нь өмнө нь надад ажилладаг байсан ч одоо ажиллахгүй байна.</string>
+    <string name="question_3">Энэ нь миний төхөөрөмжийг дэмждэггүйг харуулж байна.</string>
+    <string name="question_4">Миний зурагт хуучин зурагт бөгөөд wi-fi-г дэмждэггүй.</string>
+    <string name="question_5">Зурагт дээрх зураг хар боловч \nдуу нь сонсогддог.</string>
+    <string name="question_6">Хэсэг хугацааны дараа холболт \nтасалдана.</string>
+    <string name="question_7">Миний хувийн мэдээлэл эсвэл гар утасны мэдээлэл үнэхээр аюулгүй юу?</string>
+    <string name="q_answer_1_1">Ухаалаг утасны Wi-Fi-г дахин эхлүүлээд холболт амжилттай болсон эсэхийг шалгана уу.</string>
+    <string name="q_answer_1_2">ТВ-ээ унтрааж, цахилгааны утсыг залгуураас нь салга. 1 минут хүлээгээд ТВ-ээ дахин асаана уу.</string>
+    <string name="q_answer_1_3">Утас болон ТВ-ийн хоорондох зайг богиносго. Үүнийг ойроос ав.</string>
+    <string name="q_answer_2_1">Хэрэв өмнө нь ажиллаж байсан бол дахин ашиглах боломжтой.</string>
+    <string name="q_answer_2_2">Ихэнх холболтын асуудлыг төхөөрөмжүүдийг дахин асаах замаар шийдэж болно. Зүгээр л утас болон ТВ-ээ дахин эхлүүлээд, дахин оролдохын тулд ердийн холболтын процессыг дагана уу.</string>
+    <string name="q_answer_3_1">Энэ нь таны утас өөрөө дэлгэцийн толин тусгал хийх функцийг дэмждэггүй гэсэн үг юм.</string>
+    <string name="q_answer_3_2">Та XCast-ыг ашиглан зурагтаар видео, аудио, зураг дамжуулах боломжтой. XCast-ийн тусламжтай та ТВ рүү дамжуулж байхдаа утсаараа бусад зүйлийг хийх боломжтой.</string>
+    <string name="q_answer_4_1">Хэрэв таны ТВ HDMI интерфейсийг дэмждэг бол дэлгэцийн толин тусгал хийх гадаад хүлээн авагч худалдаж авахыг зөвлөж байна. Chromecast, Anycast гэх мэт.</string>
+    <string name="q_answer_5_1">Зарим контент нь зохиогчийн эрхийн хамгаалалттай бөгөөд Netflix, Disney Plus гэх мэт гуравдагч талын төхөөрөмж дээр харуулах боломжгүй.</string>
+    <string name="q_answer_5_2">Та видеог татаж авах эсвэл бусад програмаас ижил эх сурвалжийг хайж олох боломжтой.</string>
+    <string name="q_answer_6_1">Та Wi-Fi тохиргоондоо Smart Connect-г асааж болно. Энэ нь илүү сайн Wi-Fi холболтуудыг байнга хайж, нааш цааш холбогдоно.</string>
+    <string name="q_answer_6_2">Гар утас, ТВ-ийн Wi-Fi нь SAM бөгөөд хамгийн сайн дохио гэдгийг анхаарна уу.</string>
+    <string name="q_answer_7_1">Бид таны болон таны гар утасны мэдээллийг хянахгүй, цуглуулахгүй. Та санаа зовох зүйлгүйгээр дэлгэцээ дамжуулах боломжтой.</string>
+    <string name="q_answer_7_2">Дэлгэц толин тусгал хийхээс өмнө аюулгүй байдлын аюул байгааг систем танд анхааруулж магадгүй. Энэ бол ердийн сануулга, тийм байх болно</string>
+    <string name="wi_fi">WI-FI</string>
+    <string name="miracast">МИРА ГҮЙЦЭТГЭГЧ</string>
+    <string name="install">СУУЛГАХ</string>
+    <string name="install_small">Суулгах</string>
+    <string name="manual">Гарын авлага</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">Таны утас болон ТВ нэг Wi-Fi сүлжээнд\n холбогдсон эсэхийг шалгана уу.</string>
+    <string name="hd_streaming">HD дамжуулалт</string>
+    <string name="smart_devices">ухаалаг төхөөрөмжүүд</string>
+    <string name="private_browser">Хувийн хөтөч</string>
+    <string name="effects">Үр нөлөө</string>
+    <string name="slider">Слайдер</string>
+    <string name="search_or_type_web_address">Вэб хаяг хайх эсвэл бичнэ үү</string>
+    <string name="install_2">Суулгах</string>
+    <string name="bookmark">Хавчуурга</string>
+    <string name="downloads">Татаж авсан зүйлс</string>
+    <string name="download">Татаж авах</string>
+    <string name="favorites">Дуртай</string>
+    <string name="favorite">Дуртай</string>
+    <string name="history">Түүх</string>
+    <string name="share_pdf">Pdf хуваалцах</string>
+    <string name="copy_url">URL хуулах</string>
+    <string name="share_app">Аппликешн хуваалцах</string>
+    <string name="share_url">URL хуваалцах</string>
+    <string name="exit">гарах</string>
+    <string name="new_tab">Шинэ таб</string>
+    <string name="google">Google</string>
+    <string name="startpage">Эхлэх хуудас</string>
+    <string name="bing">Bing</string>
+    <string name="duckduckgo">DuckDuckGo</string>
+    <string name="searx">Searx</string>
+    <string name="baidu">Байду</string>
+    <string name="qwant">Квант</string>
+    <string name="ecosia">Экосиа</string>
+    <string name="custom_search_engine">Тусгай хайлтын систем</string>
+    <string name="add_shortcut_to_home">Нүүр хуудас руу товчлол нэмнэ үү</string>
+    <string name="save_screenshot">Дэлгэцийн агшинг хадгалах</string>
+    <string name="add_to_bookmark">Хавчуурга нэмэх</string>
+    <string name="save_as_pdf">pdf хэлбэрээр хадгалах</string>
+    <string name="save_action">Үйлдлийг хадгалах</string>
+    <string name="add_to_favorite">Дуртайд нэмэх</string>
+    <string name="search_engine">Хайлтын систем</string>
+    <string name="browser_exit_body">Та хөтчөөс гарахдаа итгэлтэй байна уу</string>
+    <string name="exit_browser">Хөтөчөөс гарах</string>
+    <string name="custom_user_agent">Тусгай хэрэглэгчийн агент</string>
+    <string name="start_control">Хяналтыг эхлүүлэх</string>
+    <string name="data_control">Өгөгдлийн хяналт</string>
+    <string name="app_settings">Апп тохиргоо</string>
+    <string name="browser_settings">Хөтөчийн тохиргоо</string>
+    <string name="behavior_ui">Зан төлөв/UI</string>
+    <string name="clear_cache">Кэшийг цэвэрлэх</string>
+    <string name="clear_history">Түүхийг арилгах</string>
+    <string name="clear_browsing_history">Хайлтын түүхийг арилгах</string>
+    <string name="clear_all_cache">Бүх кэшийг цэвэрлэ</string>
+    <string name="clear_database_body">"Индексжүүлсэн өгөгдлийн сан" болон "локал мэдээллийн бааз"-ыг арилгах</string>
+    <string name="clear_cookies_body">Хэрэв идэвхжүүлсэн бол бүх күүки устах болно. Мөн\nитгэмжлэгдсэн вэбсайтуудын күүки</string>
+    <string name="clear_databases">Өгөгдлийн санг цэвэрлэх</string>
+    <string name="clear_cookies">Күүки цэвэрлэх</string>
+    <string name="clear_when_application_exit">Аппликешн гарах үед арилгах</string>
+    <string name="clear_when_application_exit_body">Таныг гарах тоолонд дээрх шалгасан бүх өгөгдөл\nустгагдах болно</string>
+    <string name="image">Зураг</string>
+    <string name="javascript">JavaScript</string>
+    <string name="cookies">Күүки</string>
+    <string name="reopen_last_tab">Сүүлийн табыг дахин нээнэ үү</string>
+    <string name="confirm_tab_close">Цонхны хаалтыг баталгаажуулна уу</string>
+    <string name="confirm_browser_exit">Хөтөчөөс гарахыг баталгаажуулна уу</string>
+    <string name="position">Байрлал</string>
+    <string name="first_toolbar">Эхний хэрэгслийн мөр</string>
+    <string name="hide_toolbar">Хэрэгслийн мөрийг нуух</string>
+    <string name="toolbar">Хэрэгслийн самбар</string>
+    <string name="bookmarks">Хавчуурга</string>
+    <string name="edit">Засварлах</string>
+    <string name="today">Өнөөдөр</string>
+    <string name="the_last_hour">Сүүлийн цаг</string>
+    <string name="last_week">Өнгөрсөн долоо хоногт</string>
+    <string name="last_month">Өнгөрсөн сар</string>
+    <string name="delete_all_history">Бүх түүхийг устгах</string>
+    <string name="copied">хуулсан</string>
+    <string name="share_ss">SS хуваалцах</string>
+    <string name="file_manager">Файл менежер</string>
+    <string name="search_on">Хайлт асаалттай</string>
+    <string name="add_shortcut">Товчлол нэмэх</string>
+    <string name="tab_exit">Цонхоос гарах</string>
+    <string name="do_you_want_to_close">Та хаахыг хүсч байна уу</string>
+    <string name="download_complete_share_image">Татаж дууссан. Зураг хуваалцах</string>
+    <string name="update">Шинэчлэх</string>
+    <string name="unfavorite">Дуртай биш</string>
+    <string name="no_input_provided">Оруулсан зүйл байхгүй</string>
+    <string name="input">Оруулах</string>
+    <string name="website_link">Вэб сайтын холбоос</string>
+    <string name="for_you">Таны төлөө</string>
+    <string name="website">Вэб сайт:</string>
+    <string name="url">Url:</string>
+    <string name="date">Огноо</string>
+    <string name="no_site_loaded">Танд ачаалагдсан вэбсайт байхгүй байна</string>
+    <string name="more_then_5_images_can_not_be_picked">Таваас дээш зургийг сонгох боломжгүй</string>
+    <string name="location">Байршил</string>
+</resources>

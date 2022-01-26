@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Korean-->
+    //Test ads ids
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
+
+    //Original ads ids
+    <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
+    <!--    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>-->
+    <!--    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>-->
+    <!--    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>-->
+    <!--    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>-->
+    <!--    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>-->
+    <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
+
+
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+
+    <string name="location">위치</string>
+    <string name="connection_close_confirm">현재 VPN 연결을 취소하시겠습니까?</string>
+    <string name="yes">네</string>
+    <string name="no">아니요</string>
+    <string name="yes_2">네</string>
+    <string name="no_2">아니</string>
+    <string name="select_images">이미지 선택</string>
+    <string name="tabs">탭</string>
+    <string name="share">공유하다</string>
+    <string name="save">구하다</string>
+    <string name="more">더</string>
+    <string name="ok">확인</string>
+    <string name="cancel">취소</string>
+    <string name="favorite_site">브라우저 시작 시 로드되는\n기본 웹사이트 변경</string>
+    <string name="custom_search_engine_body">맞춤 검색 URL을 추가하고 검색 공급자로 \'맞춤\n검색 엔진\'도 선택</string>
+    <string name="search_engine_body">원하는 검색 엔진을 선택하거나\n맞춤형 엔진을 설정하십시오.</string>
+    <string name="data_control_body">브라우저 데이터를 지우거나 앱을 종료할 때\n지울 데이터를 결정하세요.</string>
+    <string name="start_control_body">시작할 때 브라우저의 구성 요소를\n결정합니다.</string>
+    <string name="behavior_ui_body">기본 설정에 맞게\n앱의 동작과 UI를 변경하세요.</string>
+    <string name="book_mark_body">필터 대화 상자를 표시하려면 개요에서 책갈피 아이콘을 길게 누릅니다. 사용할 필터 결정</string>
+    <string name="app_settings_body">브라우저 설정에서 Android 버전에 따라\n권한을 부여할 수 있습니다.</string>
+    <string name="start_control_image_body">네트워크 이미지 활성화, 비활성화는\n모바일 데이터를 저장하고 웹사이트를 더 빠르게 로드하는 데 유용할 수 있습니다.</string>
+    <string name="start_control_location_body">웹사이트에서 사용자의 위치에 액세스하도록 허용합니다. 일부\n웹사이트(google, nav용 지도)는 이 활성화가 필요합니다.</string>
+    <string name="start_control_history_body">방문한 웹사이트의 기록 저장</string>
+    <string name="start_control_java_script_body">자바스크립트를 활성화합니다. 많은 웹사이트는 기능을 위해\n자바스크립트가 필요합니다. 그러나 그들은 휴식을 취하며 공격에 사용할 수 있습니다.</string>
+    <string name="start_control_cookies_body">쿠키를 활성화합니다. 쿠키는 작은 텍스트 파일이며,
+장치에 저장됩니다. 웹사이트 사용
+예를 들어 사용자 설정을 저장합니다. 하지만
+그들은 또한 개인 사용자를 수집하는 데 사용될 수 있습니다
+데이터. 타사 쿠키는 항상 비활성화되어 있습니다.</string>
+    <string name="confirmation_browser_exit_body">브라우저를 닫을 때\n확인 대화 상자</string>
+    <string name="confirmation_tab_close_body">탭을 닫을 때 확인 대화 상자</string>
+    <string name="confirmation_reopen_last_body">브라우저를 종료하는 대신 마지막 탭이 닫힐 때 새 탭 다시 열기</string>
+    <string name="hide_toolbar_body">웹사이트를 스크롤할 때 전체 화면을 사용합니다. 뒤로 버튼을 누르면 전체 화면 모드가 종료됩니다.</string>
+    <string name="images">이미지</string>
+    <string name="videos">비디오</string>
+    <string name="web_browser">웹 브라우저</string>
+    <string name="image_slider">이미지 슬라이더</string>
+    <string name="next">다음</string>
+    <string name="previous">이전의</string>
+    <string name="help">돕다</string>
+    <string name="settings">설정</string>
+    <string name="language">언어</string>
+    <string name="more_app">더 많은 애플 리케이션</string>
+    <string name="rate_us">평가</string>
+    <string name="screen_mirroring">화면 미러링</string>
+    <string name="home_screen_text">휴대전화와 TV가 동일한 Wi-Fi 네트워크에 연결되어 있는지 확인하세요.</string>
+    <string name="wifi_connected">Wi-Fi 연결됨</string>
+    <string name="wifi_disconnected">Wi-Fi 연결 끊김</string>
+    <string name="general">일반적인</string>
+    <string name="communicate">의사 소통하다</string>
+    <string name="send_feedback">피드백 보내기</string>
+    <string name="tutorial">지도 시간</string>
+    <string name="how_to_use">사용하는 방법?</string>
+    <string name="streaming">스트리밍</string>
+    <string name="streaming_quality">스트리밍 품질</string>
+    <string name="auto_stop">자동 정지</string>
+    <string name="auto_minimize">자동 최소화</string>
+    <string name="advance">전진</string>
+    <string name="orientation_mode">방향 모드</string>
+    <string name="auto_stop_body_text">대상에 대한\n연결이 끊어지면 비디오 중지</string>
+    <string name="auto_minimize_body_text">미러링 시작 시 앱 숨기기</string>
+    <string name="casting_orientation_body_text">캐스팅 방향</string>
+    <string name="mirroring_mode">미러링 모드</string>
+    <string name="screen_mirroring_privacy_policy">화면 미러링 개인 정보 보호 정책</string>
+    <string name="privacy_policy">개인 정보 정책</string>
+    <string name="supporting_devices">지원 장치</string>
+    <string name="see_which_devices_support_mirroring">미러링을 지원하는 장치 확인</string>
+    <string name="color_theme">색상 테마</string>
+    <string name="dark">어두운</string>
+    <string name="light">빛</string>
+    <string name="auto">자동</string>
+    <string name="select_language">언어 선택</string>
+    <string name="close">닫다</string>
+    <string name="images_slider">이미지 실더</string>
+    <string name="screen_mirror">스크린 미러</string>
+    <string name="tutorial_screen_setup_body">Screen Mirror가 화면을 전송하기 때문에 대상 장치는 이 장치와 동일한 Wi-Fi 네트워크에 있어야 합니다.</string>
+    <string name="tutorial_screen_mirror_body">Wi-Fi를 통해 장치 화면을 컴퓨터, 노트북 또는 태블릿으로 스트리밍합니다.</string>
+    <string name="tutorial_device_hotspot_body">장치의 핫스팟(테더링 모드)을 사용하고 대상 장치를 핫스팟에 연결할 수도 있습니다.</string>
+    <string name="tutorial_scan_code_body">대상 장치에서 사이트를 엽니다. QR 코드를 스캔하면 연결 구성이 전송되고 미러링이 시작됩니다.</string>
+    <string name="tutorial_support_body">Screen Mirror는 올바르게 설정한 경우에만 작동합니다. Screen Mirror는 화면을 전송하지만 장치의 오디오 신호는 전송하지 않습니다. 문제가 발생하면 저희에게 연락하십시오.</string>
+    <string name="walk_through_body_1">지연 없이 원활하게\n고품질 스트리밍을 즐기세요.</string>
+    <string name="walk_through_body_2">모든 스마트 장치와 연결하고\n어느 화면에서나 쇼를 즐기십시오.</string>
+    <string name="walk_through_body_3">제한 없이 인앱 프라이빗 브라우저를 즐기세요</string>
+    <string name="screen_setup">화면 설정</string>
+    <string name="device_hotspot">장치의 핫스팟</string>
+    <string name="scan_code">스캔 코드</string>
+    <string name="support">지원하다</string>
+    <string name="finish">마치다</string>
+    <string name="our_policies">우리의 정책</string>
+    <string name="privacy_policy_text">귀하의 개인 정보를 보호하는 것은 우리에게 중요합니다. 다음 진술이 귀하가 개인 식별 정보를 처리하는 방법을 이해하는 데 도움이 되기를 바랍니다. 귀하는 때때로 인터넷(Google Play 플랫폼)을 통해 제공할 수 있습니다.\n\n일반적으로. Android 애플리케이션을 다운로드할 때 PII를 수집하지 않습니다. 구체적으로 말하면 소비자가 애플리케이션을 방문할 필요가 없으며 이러한 PII를 저장할 서버도 없습니다.\n\nScreen Mirroring은 Facebook을 광고 제공자로 사용합니다. Facebook은 귀하와 관련된 광고를 표시하기를 원합니다. 자세한 내용은\nhttps://m.facebook.com/ads/ad_choices를 방문하세요.\n\n우리가 귀하의 PII에 액세스할 수 있는 유일한 상황은 귀하가 개인적으로 피드백을 이메일로 보내거나 버그를 제공하기로 결정한 경우입니다. 보고서. 이러한 상황에서 귀하로부터 얻을 수 있는 PII는 귀하의 이름, 이메일 주소 및 설문조사 응답으로만 엄격하게 제한됩니다.\n\n위의 상황에서 귀하의 PII는 귀하에게 연락하고 서비스를 개선하는 용도로만 사용됨을 보장합니다. 당사는 그러한 정보(예: 귀하의 이름 및 이메일 주소_)를 당사 제품을 추가로 마케팅하거나 상업적 이익을 위해 제3자에게 귀하의 개인 정보를 공개하는 것과 같은 다른 목적으로 절대 사용하지 않습니다.\n\n다음 여부에 유의해야 합니다. 피드백이나 버그 보고서를 보내지 않는 것은 전적으로 자발적인 결정입니다. 귀하의 PII가 오용되는 것에 대한 우려가 있거나 당사의 개인 정보 보호 정책과 그 의미에 대한 추가 정보가 필요한 경우 언제든지 이메일을 보내주십시오. screenmirroring.feedback@gmail.com에서 귀하의 질문에 적시에 명확한 답변을 제공하기 위해 노력할 것입니다.</string>
+    <string name="please_write_your_feedback">의견을 작성해 주세요.</string>
+    <string name="system_info">시스템 정보가 Screen Mirroring 기술 부서로 전송됩니다.</string>
+    <string name="send">보내다</string>
+    <string name="provide_feedback">피드백을 제공하다</string>
+    <string name="invalid_email_provided">잘못된 이메일 제공</string>
+    <string name="check_your_internet_connection">인터넷 연결 확인</string>
+    <string name="type_here">여기에 입력…</string>
+    <string name="enter_your_email_optional">이메일 입력(선택 사항)</string>
+    <string name="enjoy_the_app">앱을 즐기세요?</string>
+    <string name="rate_your_experience_using_screen_mirroring_app">Screen\n미러링 앱을 사용한 경험을 평가하세요.</string>
+    <string name="not_now">지금은 아니다</string>
+    <string name="feedback">피드백:</string>
+    <string name="model">모델:</string>
+    <string name="brand">상표:</string>
+    <string name="os_version">OS 버전:</string>
+    <string name="manufacturer">제조사:</string>
+    <string name="ram">램:</string>
+    <string name="send_email">메일을 보내다</string>
+    <string name="select_picture">사진 선택</string>
+    <string name="help_center">지원 센터</string>
+    <string name="question_1">내 전화가 TV와 페어링할 때 "연결 \n중"에서 멈춥니다.</string>
+    <string name="question_2">이전에는 작동했지만 지금은 \n작동하지 않습니다.</string>
+    <string name="question_3">내 장치가 지원되지 않음을 \n보여줍니다.</string>
+    <string name="question_4">내 TV는 오래된 TV이며 Wi-Fi를 \n지원하지 않습니다.</string>
+    <string name="question_5">TV의 이미지는 검은색이지만 소리는 \n들립니다.</string>
+    <string name="question_6">잠시 후 연결이 \n중단됩니다.</string>
+    <string name="question_7">내 개인 정보 또는 모바일 데이터는 \n절대적으로 안전한가요?</string>
+    <string name="q_answer_1_1">스마트 폰의 Wi-Fi를 다시 시작하여 연결이 성공적인지 확인하세요.</string>
+    <string name="q_answer_1_2">TV를 끄고 소켓에서 전원 코드도 뽑습니다. 1분 정도 기다렸다가 TV를 다시 시작하세요.</string>
+    <string name="q_answer_1_3">휴대전화와 TV 사이의 거리를 줄이세요. 가까이에서 가져 가라.</string>
+    <string name="q_answer_2_1">이전에 작동했다면 확실히 다시 사용할 수 있습니다.</string>
+    <string name="q_answer_2_2">대부분의 연결 문제는 장치를 다시 시작하여 해결할 수 있습니다. 휴대전화와 TV를 모두 다시 시작하고 일반 연결 프로세스에 따라 다시 시도하세요.</string>
+    <string name="q_answer_3_1">즉, 휴대폰 자체는 화면 미러링 기능을 지원하지 않습니다.</string>
+    <string name="q_answer_3_2">XCast를 사용하여 비디오, 오디오 및 사진을 TV로 전송할 수 있습니다. XCast를 사용하면 TV로 전송하는 동안 휴대전화로 다른 작업을 수행할 수 있습니다.</string>
+    <string name="q_answer_4_1">TV가 HDMI 인터페이스를 지원하는 경우 화면 미러링을 위한 외부 수신기를 구입하는 것이 좋습니다. Chromecast, Anycast 등과 같은</string>
+    <string name="q_answer_5_1">일부 콘텐츠에는 저작권 보호가 포함되며 Netflix, Disney Plus 등과 같은 타사 장치에 표시할 수 없습니다.</string>
+    <string name="q_answer_5_2">비디오를 다운로드하거나 다른 앱에서 동일한 리소스를 찾아 시도해 볼 수 있습니다.</string>
+    <string name="q_answer_6_1">Wi-Fi 설정에서 Smart Connect를 켤 수 있습니다. 더 나은 Wi-Fi 연결을 지속적으로 검색하고 항상 앞뒤로 연결합니다.</string>
+    <string name="q_answer_6_2">휴대폰과 TV의 Wi-Fi가 SAM이고 신호가 가장 좋은지 확인하십시오.</string>
+    <string name="q_answer_7_1">우리는 귀하와 귀하의 휴대 전화에 대한 정보를 모니터링하거나 수집하지 않습니다. 걱정 없이 화면을 전송할 수 있습니다.</string>
+    <string name="q_answer_7_2">시스템은 화면 미러링 전에 안전 위험이 있음을 경고할 수 있습니다. 이것은 단지 정기적인 알림일 뿐이며,</string>
+    <string name="wi_fi">와이파이</string>
+    <string name="miracast">미라 캐스트</string>
+    <string name="install">설치</string>
+    <string name="install_small">설치</string>
+    <string name="manual">수동</string>
+    <string name="make_sure_your_phone_and_tv_are_connected">휴대전화와 TV가\n같은 Wi-Fi 네트워크에 연결되어 있는지 확인하세요.</string>
+    <string name="hd_streaming">HD 스트리밍</string>
+    <string name="smart_devices">스마트 기기</string>
+    <string name="private_browser">개인 브라우저</string>
+    <string name="effects">효과</string>
+    <string name="slider">슬라이더</string>
+    <string name="search_or_type_web_address">웹 주소 검색 또는 입력</string>
+    <string name="install_2">설치</string>
+    <string name="bookmark">서표</string>
+    <string name="downloads">다운로드</string>
+    <string name="download">다운로드</string>
+    <string name="favorites">즐겨찾기</string>
+    <string name="favorite">가장 좋아하는</string>
+    <string name="history">역사</string>
+    <string name="share_pdf">PDF 공유</string>
+    <string name="copy_url">URL 복사</string>
+    <string name="share_app">앱 공유</string>
+    <string name="share_url">공유 URL</string>
+    <string name="exit">출구</string>
+    <string name="new_tab">새로운 탭</string>
+    <string name="google">Google</string>
+    <string name="startpage">시작 페이지</string>
+    <string name="bing">빙</string>
+    <string name="duckduckgo">덕덕고</string>
+    <string name="searx">서크스</string>
+    <string name="baidu">바이두</string>
+    <string name="qwant">콴트</string>
+    <string name="ecosia">에코시아</string>
+    <string name="custom_search_engine">맞춤 검색 엔진</string>
+    <string name="add_shortcut_to_home">집에 바로가기 추가</string>
+    <string name="save_screenshot">스크린샷 저장</string>
+    <string name="add_to_bookmark">북마크에 추가</string>
+    <string name="save_as_pdf">PDF로 저장</string>
+    <string name="save_action">작업 저장</string>
+    <string name="add_to_favorite">즐겨찾기에 추가</string>
+    <string name="search_engine">검색 엔진</string>
+    <string name="browser_exit_body">브라우저를 종료하시겠습니까?</string>
+    <string name="exit_browser">브라우저 종료</string>
+    <string name="custom_user_agent">사용자 지정 사용자 에이전트</string>
+    <string name="start_control">제어 시작</string>
+    <string name="data_control">데이터 제어</string>
+    <string name="app_settings">앱 설정</string>
+    <string name="browser_settings">브라우저 설정</string>
+    <string name="behavior_ui">행동/UI</string>
+    <string name="clear_cache">캐시 지우기</string>
+    <string name="clear_history">기록 지우기</string>
+    <string name="clear_browsing_history">인터넷 사용 기록 지우기</string>
+    <string name="clear_all_cache">모든 캐시 지우기</string>
+    <string name="clear_database_body">"인덱싱된 데이터베이스" 및 "로컬\n데이터베이스" 지우기</string>
+    <string name="clear_cookies_body">활성화하면 모든 쿠키가 삭제됩니다. 또한\n신뢰할 수 있는 웹사이트의 쿠키</string>
+    <string name="clear_databases">데이터베이스 지우기</string>
+    <string name="clear_cookies">쿠키 삭제</string>
+    <string name="clear_when_application_exit">애플리케이션 종료 시 지우기</string>
+    <string name="clear_when_application_exit_body">위에서 선택한 모든 데이터를 종료할 때마다\n삭제됩니다.</string>
+    <string name="image">영상</string>
+    <string name="javascript">자바스크립트</string>
+    <string name="cookies">쿠키</string>
+    <string name="reopen_last_tab">마지막 탭 다시 열기</string>
+    <string name="confirm_tab_close">탭 닫기 확인</string>
+    <string name="confirm_browser_exit">브라우저 종료 확인</string>
+    <string name="position">위치</string>
+    <string name="first_toolbar">첫 번째 도구 모음</string>
+    <string name="hide_toolbar">도구 모음 숨기기</string>
+    <string name="toolbar">도구 모음</string>
+    <string name="bookmarks">책갈피</string>
+    <string name="edit">편집하다</string>
+    <string name="today">오늘</string>
+    <string name="the_last_hour">지난 시간</string>
+    <string name="last_week">지난주</string>
+    <string name="last_month">지난 달</string>
+    <string name="delete_all_history">모든 기록 삭제</string>
+    <string name="copied">복사</string>
+    <string name="share_ss">공유 SS</string>
+    <string name="file_manager">파일 관리자</string>
+    <string name="search_on">검색</string>
+    <string name="add_shortcut">바로가기 추가</string>
+    <string name="tab_exit">탭 종료</string>
+    <string name="do_you_want_to_close">닫으시겠습니까</string>
+    <string name="download_complete_share_image">다운로드를 완료하였습니다. 이미지 공유</string>
+    <string name="update">업데이트</string>
+    <string name="unfavorite">즐겨찾기 해제</string>
+    <string name="no_input_provided">입력이 제공되지 않음</string>
+    <string name="input">입력</string>
+    <string name="website_link">웹 사이트 링크</string>
+    <string name="for_you">당신을위한</string>
+    <string name="website">웹사이트:</string>
+    <string name="url">URL:</string>
+    <string name="date">날짜</string>
+    <string name="no_site_loaded">로드된 웹사이트가 없습니다.</string>
+    <string name="more_then_5_images_can_not_be_picked">5개 이상의 이미지는 선택할 수 없습니다.</string>
+</resources>

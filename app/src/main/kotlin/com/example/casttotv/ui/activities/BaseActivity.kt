@@ -11,14 +11,15 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.example.casttotv.R
-import com.example.casttotv.utils.MySingleton
-import com.example.casttotv.utils.MySingleton.setAppLocale
+import com.example.casttotv.utils.ContextUtils
 import com.google.android.gms.ads.*
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.nativead.MediaView
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdOptions
 import com.google.android.gms.ads.nativead.NativeAdView
+import java.util.*
+
 
 open class BaseActivity : AppCompatActivity() {
     var originalContext: Context? = null
@@ -32,11 +33,14 @@ open class BaseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         // Initialize the Mobile Ads SDK.
 //        MobileAds.initialize(this) { createPersonalizedInterstitial() }
+
     }
 
+
     override fun attachBaseContext(newBase: Context) {
-        super.attachBaseContext(ContextWrapper(newBase.setAppLocale(MySingleton.localeLanguage)))
-        this.originalContext = newBase;
+        val localeUpdatedContext: ContextWrapper = ContextUtils(this).updateLocale(newBase)
+        this.originalContext = newBase
+        super.attachBaseContext(localeUpdatedContext)
 
     }
 

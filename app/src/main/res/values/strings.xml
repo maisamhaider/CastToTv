@@ -1,13 +1,13 @@
 <resources>
     //Test ads ids
-    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>
-    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>
-    <string name="interstitial_video">ca-app-pub-3940256099942544/8691691433</string>
-    <string name="rewarded">ca-app-pub-3940256099942544/5224354917</string>
-    <string name="rewarded_interstitial">ca-app-pub-3940256099942544/5354046379</string>
-    <string name="native_advanced">ca-app-pub-3940256099942544/2247696110</string>
-    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>
+    <string name="app_open" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstitial_video" translatable="false">ca-app-pub-3940256099942544/8691691433</string>
+    <string name="rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="rewarded_interstitial" translatable="false">ca-app-pub-3940256099942544/5354046379</string>
+    <string name="native_advanced" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_advanced_video" translatable="false">ca-app-pub-3940256099942544/1044960115</string>
 
     //Original ads ids
     <!--    <string name="app_open">ca-app-pub-3940256099942544/3419835294</string>-->
@@ -20,21 +20,22 @@
     <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
 
 
-    <string name="app_name">Screen Mirroring</string>
-
-    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="version" translatable="false">Version: %s</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="speed" translatable="false">%d</string>
+    <string name="ad" translatable="false">AD</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum is simply placeholder text of the printing and
         typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
         since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
         type specimen book"
     </string>
-
-
+    <string name="location">Location</string>
     <string name="connection_close_confirm">Would you like to cancel the current VPN Connection?</string>
     <string name="yes">YES</string>
     <string name="no">NO</string>
     <string name="yes_2">Yes</string>
     <string name="no_2">No</string>
-    <string name="speed">%d</string>
     <string name="select_images">Select Images</string>
     <string name="tabs">Tabs</string>
     <string name="share">Share</string>
@@ -104,10 +105,9 @@ data. Third party cookies are always disabled.</string>
     <string name="dark">Dark</string>
     <string name="light">Light</string>
     <string name="auto">Auto</string>
-    <string name="version">Version: %s</string>
     <string name="select_language">Select Language</string>
     <string name="close">close</string>
-    <string name="images_slider">Images Silder</string>
+    <string name="images_slider">Images Slider</string>
     <string name="screen_mirror">Screen Mirror</string>
     <string name="tutorial_screen_setup_body">Your target device has to be in the same Wi-Fi network as this device, because Screen Mirror is transmitting your screen.</string>
     <string name="tutorial_screen_mirror_body">Stream your device’s screen over Wi-Fi to your computer, notebook or tablet.</string>
@@ -146,7 +146,7 @@ data. Third party cookies are always disabled.</string>
     <string name="help_center">Help Center</string>
 
     <string name="question_1">My Phone gets stuck at “Connecting” when pairing up with TV.</string>
-    <string name="question_2">It worked for me before, but it doesn’t work now.</string>
+    <string name="question_2">It worked for me before, but it does not work now.</string>
     <string name="question_3">It shows that my device is not supported.</string>
     <string name="question_4">My TV is an old TV and does not support wi-fi.</string>
     <string name="question_5">The image on TV  is black, but the sound can be heard.</string>
@@ -187,7 +187,6 @@ data. Third party cookies are always disabled.</string>
     <string name="effects">Effects</string>
     <string name="slider">Slider</string>
     <string name="search_or_type_web_address">Search or type web address</string>
-    <string name="ad">AD</string>
     <string name="install_2">Install</string>
     <string name="bookmark">Bookmark</string>
     <string name="downloads">Downloads</string>
@@ -260,7 +259,6 @@ data. Third party cookies are always disabled.</string>
     <string name="tab_exit">Tab Exit</string>
     <string name="do_you_want_to_close">Do you want to close</string>
     <string name="download_complete_share_image">Download complete. Share image</string>
-    <string name="_0">0</string>
     <string name="update">Update</string>
     <string name="unfavorite">Un favorite</string>
     <string name="no_input_provided">No input provided</string>
