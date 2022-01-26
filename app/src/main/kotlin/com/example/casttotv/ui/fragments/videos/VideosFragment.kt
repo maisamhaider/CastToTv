@@ -12,7 +12,6 @@ import com.example.casttotv.adapter.ImageVideosAdapter
 import com.example.casttotv.databinding.FragmentVideosBinding
 import com.example.casttotv.dataclasses.FileModel
 import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
-import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.utils.VIDEO
 import com.example.casttotv.utils.folder_path
 import com.example.casttotv.utils.playingFileModel
@@ -78,7 +77,7 @@ class VideosFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        sharedViewModel.setOrientation(requireActivity(), true)
+        sharedViewModel.setActivityOrientationPot(requireActivity())
         sharedViewModel.playingVideoCurrentPosBeforeDestroy(0)
         sharedViewModel.setPlayingVideoCurrentPos(0)
         sharedViewModel.setTimeLeftInMillis(0)

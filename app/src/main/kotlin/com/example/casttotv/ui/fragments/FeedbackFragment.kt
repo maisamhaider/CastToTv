@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.provider.MediaStore
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,8 +23,10 @@ import com.example.casttotv.viewmodel.MainViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import java.io.File
 import java.util.*
 import kotlin.collections.ArrayList
+
 
 class FeedbackFragment : Fragment() {
     private lateinit var _binding: FragmentFeedbackBinding
@@ -70,17 +73,14 @@ class FeedbackFragment : Fragment() {
     private var someActivityResultLauncher = registerForActivityResult(
         StartActivityForResult()
     ) { result ->
-        if (result.resultCode == Activity.RESULT_OK && result.data?.clipData != null
+        if (result.resultCode == Activity.RESULT_OK && result.data != null
         ) {
-            val clipData = result.data!!.clipData
-            for (i in 0 until clipData!!.itemCount) {
-                if (adapterList2.size < 6) {
-                    val uri = clipData.getItemAt(i).uri
-                    uri?.let {
-                        adapterList2.add(Feedback(uri = uri))
-                    }
-                } else {
-                    break
+            val clipData = result.data?.dataString
+
+            if (adapterList2.size < 6) {
+                val uri = clipData.toString().toUri()
+                clipData?.let {
+                    adapterList2.add(Feedback(uri = uri))
                 }
             }
 
@@ -104,16 +104,32 @@ class FeedbackFragment : Fragment() {
 
     fun onItemClick(feedback: Feedback) {
         if (adapterList2.size < 5) {
-            val intent = Intent()
+            val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
+//            val intent = Intent()
             intent.type = "image/*"
-            intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true)
-            intent.action = Intent.ACTION_GET_CONTENT
+//            intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true)
+//            intent.action = Intent.ACTION_GET_CONTENT
             someActivityResultLauncher.launch(Intent.createChooser(intent,
                 getString(R.string.select_picture)))
         } else {
             requireContext().toastLong(getString(R.string.more_then_5_images_can_not_be_picked))
         }
 
+    }
+
+    private fun uriToImageFile(uri: Uri): File? {
+        val filePathColumn = arrayOf(MediaStore.Images.Media.DATA)
+        val cursor = requireContext().contentResolver.query(uri, filePathColumn, null, null, null)
+        if (cursor != null) {
+            if (cursor.moveToFirst()) {
+                val columnIndex = cursor.getColumnIndex(filePathColumn[0])
+                val filePath = cursor.getString(columnIndex)
+                cursor.close()
+                return File(filePath)
+            }
+            cursor.close()
+        }
+        return null
     }
 
 }

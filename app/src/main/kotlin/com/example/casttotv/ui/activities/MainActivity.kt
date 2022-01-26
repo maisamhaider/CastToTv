@@ -66,6 +66,9 @@ class MainActivity : BaseActivity() {
             }
             layoutExitButton.textViewExit.setOnClickListener { finish() }
             refreshAd2(layoutExitAd.flAdplaceholder, ::close)
+            clBottomSheet.setOnClickListener {
+                it.visibility = View.GONE
+            }
         }
     }
 
@@ -154,7 +157,6 @@ class MainActivity : BaseActivity() {
         }
     }
 
-
     fun fromBrowserBack() =
         controller.navigate(R.id.action_browserContainerFragment_to_homeFragment)
 
@@ -164,7 +166,6 @@ class MainActivity : BaseActivity() {
 
     override fun onBackPressed() {
         val currentFragment = supportFragmentManager.currentNavigationFragment
-
         when {
             (currentFragment is BrowserContainerFragment) -> {
                 if (browserVM.canGoBack() || !browserVM.showBroswerHome.value!! ||
@@ -194,9 +195,7 @@ class MainActivity : BaseActivity() {
                 }
             }
             else -> super.onBackPressed()
-
         }
-
     }
 
     override fun onDestroy() {

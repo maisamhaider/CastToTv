@@ -89,13 +89,12 @@ class CustomVideoPlayerFragment : Fragment() {
             }
         }
         sharedViewModel.wifiConnection.observe(viewLifecycleOwner) {
-            if (requireContext().getPrefs(AUTO_STOP,false))
-            {
-                if (!it){
+            if (requireContext().getPrefs(AUTO_STOP, false)) {
+                if (!it) {
 
-                   if (videoPlayer.isPlaying)
-                   { playPauseVideo()
-                   }
+                    if (videoPlayer.isPlaying) {
+                        playPauseVideo()
+                    }
                 }
             }
         }
@@ -373,7 +372,8 @@ class CustomVideoPlayerFragment : Fragment() {
                 binding.imageviewPlayPauseMain.visibility = View.GONE
                 videoPlayer.start()
                 restartTimer()
-                binding.imageViewPlayPause.setImageResource(R.drawable.ic_play_circle)/*pause*/
+                binding.imageViewPlayPause.setImageResource(R.drawable.ic_pause
+                )/*pause*/
             }
 
         }
@@ -416,7 +416,7 @@ class CustomVideoPlayerFragment : Fragment() {
         startTimer()
         playingFileModel = model
         binding.imageviewPlayPauseMain.visibility = View.GONE
-        binding.imageViewPlayPause.setImageResource(R.drawable.ic_play_circle)/*pause*/
+        binding.imageViewPlayPause.setImageResource(R.drawable.ic_pause)/*pause*/
         videoPlayer.setVideoPath(model.filePath)
         videoPlayer.start()
         videoPlayer.seekTo(playingVideoCurrentPosBeforeDestroy)
@@ -445,6 +445,12 @@ class CustomVideoPlayerFragment : Fragment() {
     override fun onResume() {
         super.onResume()
         playVideo(playingFileModel)
+        if (requireContext().getPrefs(AUTO_ROTATION, false)) {
+            sharedViewModel.setActivityOrientation(requireActivity())
+            binding.imageViewRotate.visibility = View.GONE
+        } else {
+            binding.imageViewRotate.visibility = View.VISIBLE
+        }
 
     }
 

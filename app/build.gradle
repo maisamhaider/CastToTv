@@ -98,6 +98,8 @@ dependencies {
 
     //pager dots indicator
     implementation 'com.tbuonomo:dotsindicator:4.2'
+    //lottie animation
+    implementation 'com.airbnb.android:lottie:4.0.0'
 
 }
 //kapt {

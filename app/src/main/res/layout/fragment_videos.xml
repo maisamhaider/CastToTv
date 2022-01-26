@@ -32,6 +32,7 @@
             android:id="@+id/materialTextView27"
             style="@style/header_text_3"
             android:layout_marginStart="@dimen/dp_4"
+            android:layout_marginEnd="@dimen/dp_10"
             android:text="@string/videos"
             app:layout_constraintBottom_toTopOf="@+id/guideline107"
             app:layout_constraintEnd_toStartOf="@+id/imageview_cast"

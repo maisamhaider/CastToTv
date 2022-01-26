@@ -97,17 +97,12 @@ class SharedViewModel(context: Context) : ViewModel() {
         }
     }
 
-    fun setOrientation(context: Activity, pot: Boolean) {
-        if (pot) {
-            if (orientation(context) == Configuration.ORIENTATION_LANDSCAPE) {
-                context.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
-            }
-        } else {
-            if (orientation(context) == Configuration.ORIENTATION_PORTRAIT) {
-                context.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
-            }
-        }
+    fun setActivityOrientation(activity: Activity) {
+        activity.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_SENSOR
+    }
 
+    fun setActivityOrientationPot(activity: Activity) {
+        activity.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
     }
 
     class SharedViewModelFactory(

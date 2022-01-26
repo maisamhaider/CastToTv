@@ -18,8 +18,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
 
-        android:background="?attr/colorPrimaryVariant"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="?attr/colorPrimaryVariant">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imageview_back"
@@ -37,9 +37,10 @@
             android:id="@+id/materialTextView27"
             style="@style/header_text_3"
             android:layout_marginStart="@dimen/dp_4"
+            android:layout_marginEnd="@dimen/dp_10"
             android:text="@string/image_slider"
             app:layout_constraintBottom_toTopOf="@+id/guideline107"
-            app:layout_constraintEnd_toStartOf="@+id/imageview_cast"
+            app:layout_constraintEnd_toStartOf="@+id/imageview_slideshow"
             app:layout_constraintStart_toEndOf="@+id/imageview_back"
             app:layout_constraintTop_toTopOf="@+id/guideline106" />
 
@@ -50,7 +51,7 @@
             android:onClick="@{()->thisFragment.next()}"
             android:scaleType="centerInside"
             app:layout_constraintBottom_toTopOf="@+id/guideline47"
-            app:layout_constraintEnd_toEndOf="@+id/materialTextView27"
+            app:layout_constraintEnd_toStartOf="@+id/imageview_cast"
             app:layout_constraintTop_toTopOf="@+id/guideline40"
             app:srcCompat="@drawable/ic_slideshow" />
 

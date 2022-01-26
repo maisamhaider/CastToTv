@@ -55,8 +55,9 @@ class WelcomeActivity : AppCompatActivity() {
 
         binding.includedLayoutSplash.textViewAppName.animation = slideUp
         binding.includedLayoutSplash.textviewSlogan.animation = slideUp2
+        binding.includedLayoutSplash.lottieAnimationView.playAnimation()
 
-        val scope = CoroutineScope(Job()).launch {
+         CoroutineScope(Job()).launch {
             delay(6000)
             startActivity(Intent(this@WelcomeActivity, MainActivity::class.java))
             finish()
@@ -202,12 +203,12 @@ class WelcomeActivity : AppCompatActivity() {
 
         binding.apply {
             lifecycleOwner = this@WelcomeActivity
-            binding.includedWalkThrough.tutorialVM = tutorialViewModel
-            binding.includedWalkThrough.thisActivity = this@WelcomeActivity
-            viewPager = binding.includedWalkThrough.viewpager2
-            binding.includedWalkThrough.viewpager2.adapter = adapter
+            includedWalkThrough.tutorialVM = tutorialViewModel
+            includedWalkThrough.thisActivity = this@WelcomeActivity
+            viewPager = includedWalkThrough.viewpager2
+            includedWalkThrough.viewpager2.adapter = adapter
             adapter.submitList(viewList)
-            binding.includedWalkThrough.dotsIndicator.setViewPager2(viewPager)
+            includedWalkThrough.dotsIndicator.setViewPager2(viewPager)
         }
         viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageScrolled(
