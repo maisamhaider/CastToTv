@@ -25,17 +25,12 @@ class HistoryAdapter(
             override fun areItemsTheSame(
                 oldItem: History,
                 newItem: History,
-            ): Boolean {
-                return oldItem == newItem
-            }
+            ) = oldItem == newItem
 
             override fun areContentsTheSame(
                 oldItem: History,
                 newItem: History,
-            ): Boolean {
-                return oldItem == newItem
-            }
-
+            ) = oldItem == newItem
         }
     }
 
@@ -54,17 +49,15 @@ class HistoryAdapter(
             val adapter = HistoryGroupsAdapter(::onClickLocal, context, this)
             binding.recyclerView.adapter = adapter
             adapter.submitList(history.list)
-//            binding.textViewDate.text = historyEntity.getDate()
         }
 
-        fun today(): String {
+        private fun today(): String {
             val sFormat = SimpleDateFormat("DD.MM.yyyy")
             sFormat.isLenient = false
-
             return sFormat.format(Date())
         }
 
-        fun onClickLocal(item: HistoryEntity) {
+        private fun onClickLocal(item: HistoryEntity) {
             onClick(item)
         }
 
@@ -72,7 +65,6 @@ class HistoryAdapter(
             val historyEntity: HistoryEntity = dataClass as HistoryEntity
             optionMenuListener.item(itemId, historyEntity)
         }
-
     }
 
     private fun onClickLocal(item: HistoryEntity) {
@@ -80,16 +72,12 @@ class HistoryAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
-
         return Holder(
             HistoryItemBinding.inflate(LayoutInflater.from(parent.context), parent, false),
             optionMenuListener, ::onClickLocal)
     }
 
-
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(context, getItem(holder.absoluteAdapterPosition))
     }
-
-
 }

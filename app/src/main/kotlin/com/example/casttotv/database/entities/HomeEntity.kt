@@ -3,8 +3,6 @@ package com.example.casttotv.database.entities
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
- import java.text.SimpleDateFormat
-import java.util.*
 
 @Entity(tableName = "home")
 data class HomeEntity(
@@ -15,8 +13,6 @@ data class HomeEntity(
     @ColumnInfo(name = "link")
     var link: String,
     @ColumnInfo(name = "date")
-    var date: String
+    var date: String,
 )
-fun HomeEntity.getDate(): String =
-    SimpleDateFormat("d mm, yyyy hh:mm a", Locale.getDefault()).format(date.toLong())
 

@@ -11,8 +11,10 @@ import com.example.casttotv.R
 import com.example.casttotv.adapter.ImageVideosAdapter
 import com.example.casttotv.databinding.FragmentAudiosBinding
 import com.example.casttotv.dataclasses.FileModel
-import com.example.casttotv.utils.*
-import com.example.casttotv.utils.MySingleton.toastLong
+import com.example.casttotv.utils.AUDIO
+import com.example.casttotv.utils.folder_path
+import com.example.casttotv.utils.playingFileModel
+import com.example.casttotv.utils.playingFileName
 import com.example.casttotv.viewmodel.SharedViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -51,15 +53,11 @@ class AudiosFragment : Fragment() {
                 }
             }
         }
-
     }
-
 
     private fun onItemClick(fileModel: FileModel, int: Int) {
         playingFileModel = fileModel
         playingFileName = fileModel.fileName
         findNavController().navigate(R.id.action_audiosFragment_to_audioPlayerFragment)
     }
-
-
 }

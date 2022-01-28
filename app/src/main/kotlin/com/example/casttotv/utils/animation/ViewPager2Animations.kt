@@ -3,10 +3,9 @@ package com.example.casttotv.utils.animation
 import android.graphics.Camera
 import android.graphics.Matrix
 import android.view.View
-import androidx.core.view.ViewCompat
 import androidx.viewpager2.widget.ViewPager2
-import kotlin.math.max
 import kotlin.math.abs
+import kotlin.math.max
 import kotlin.math.min
 
 
@@ -63,12 +62,13 @@ class AccordionTransformer : ViewPager2.PageTransformer {
     }
 
 }
+
 class AntiClockSpinTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.translationX = -position * page.width
 
         when {
-           abs(position)  < 0.5 -> {
+            abs(position) < 0.5 -> {
                 page.visibility = View.VISIBLE
                 page.scaleX = 1 - abs(position)
                 page.scaleY = 1 - abs(position)
@@ -99,6 +99,7 @@ class AntiClockSpinTransformer : ViewPager2.PageTransformer {
     }
 
 }
+
 class BackDrawTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         val pageWidth = page.width
@@ -146,6 +147,7 @@ class BackDrawTransformer : ViewPager2.PageTransformer {
     }
 
 }
+
 class BackgroundToForegroundTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         val height = page.height.toFloat()
@@ -164,6 +166,7 @@ class BackgroundToForegroundTransformer : ViewPager2.PageTransformer {
 
 
 }
+
 class ClockSpinTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.translationX = -position * page.width
@@ -201,6 +204,7 @@ class ClockSpinTransformer : ViewPager2.PageTransformer {
     }
 
 }
+
 class CubeInDepthTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.cameraDistance = 20000F
@@ -234,6 +238,7 @@ class CubeInDepthTransformer : ViewPager2.PageTransformer {
     }
 
 }
+
 class CubeInScalingTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.cameraDistance = 20000F
@@ -267,6 +272,7 @@ class CubeInScalingTransformer : ViewPager2.PageTransformer {
     }
 
 }
+
 class CubeInTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.cameraDistance = 20000F
@@ -295,6 +301,7 @@ class CubeInTransformer : ViewPager2.PageTransformer {
     }
 
 }
+
 class CubeOutDepthTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         when {
@@ -329,6 +336,7 @@ class CubeOutDepthTransformer : ViewPager2.PageTransformer {
     }
 
 }
+
 class CubeOutScalingTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         when {
@@ -363,6 +371,7 @@ class CubeOutScalingTransformer : ViewPager2.PageTransformer {
     }
 
 }
+
 class CubeOutTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         when {
@@ -388,6 +397,7 @@ class CubeOutTransformer : ViewPager2.PageTransformer {
     }
 
 }
+
 class DepthTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         when {
@@ -415,6 +425,7 @@ class DepthTransformer : ViewPager2.PageTransformer {
     }
 
 }
+
 class FadeOutTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.translationX = -position * page.width
@@ -423,6 +434,7 @@ class FadeOutTransformer : ViewPager2.PageTransformer {
     }
 
 }
+
 class FanTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.translationX = -position * page.width
@@ -451,6 +463,7 @@ class FanTransformer : ViewPager2.PageTransformer {
     }
 
 }
+
 class FidgetSpinTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.translationX = -position * page.width
@@ -492,6 +505,7 @@ class FidgetSpinTransformer : ViewPager2.PageTransformer {
     }
 
 }
+
 class ForegroundToBackgroundTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         val height = page.height.toFloat()
@@ -510,6 +524,7 @@ class ForegroundToBackgroundTransformer : ViewPager2.PageTransformer {
     }
 
 }
+
 class GateTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.translationX = -position * page.width
@@ -537,6 +552,7 @@ class GateTransformer : ViewPager2.PageTransformer {
     }
 
 }
+
 class HingeTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.translationX = -position * page.width
@@ -564,6 +580,7 @@ class HingeTransformer : ViewPager2.PageTransformer {
     }
 
 }
+
 class HorizontalFlipTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.translationX = -position * page.width
@@ -599,7 +616,8 @@ class HorizontalFlipTransformer : ViewPager2.PageTransformer {
     }
 
 }
- class PopTransformer : ViewPager2.PageTransformer {
+
+class PopTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.translationX = -position * page.width
         if (abs(position) < 0.5) {
@@ -611,6 +629,7 @@ class HorizontalFlipTransformer : ViewPager2.PageTransformer {
         }
     }
 }
+
 class RotateDownTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         val width = page.width.toFloat()
@@ -621,6 +640,7 @@ class RotateDownTransformer : ViewPager2.PageTransformer {
         page.rotation = rotation
     }
 }
+
 class RotateUpTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         val width = page.width.toFloat()
@@ -631,6 +651,7 @@ class RotateUpTransformer : ViewPager2.PageTransformer {
         page.rotation = rotation
     }
 }
+
 class SpinnerTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.translationX = -position * page.width
@@ -663,11 +684,13 @@ class SpinnerTransformer : ViewPager2.PageTransformer {
         }
     }
 }
+
 class StackTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.translationX = if (position < 0.0F) 0.0F else (-page.width).toFloat() * position
     }
 }
+
 class TabletTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         val rotation = (if (position < 0.0F) 30.0F else -30.0F) * abs(position)
@@ -682,7 +705,7 @@ class TabletTransformer : ViewPager2.PageTransformer {
         private val OFFSET_MATRIX = Matrix()
         private val OFFSET_CAMERA = Camera()
         private val OFFSET_TEMP_FLOAT = FloatArray(2)
-          fun getOffsetXForRotation(degrees: Float, width: Int, height: Int): Float {
+        fun getOffsetXForRotation(degrees: Float, width: Int, height: Int): Float {
             OFFSET_MATRIX.reset()
             OFFSET_CAMERA.save()
             OFFSET_CAMERA.rotateY(abs(degrees))
@@ -697,6 +720,7 @@ class TabletTransformer : ViewPager2.PageTransformer {
         }
     }
 }
+
 class TossTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.translationX = -position * page.width
@@ -716,15 +740,15 @@ class TossTransformer : ViewPager2.PageTransformer {
             }
             position <= 0 -> {    // [-1,0]
                 page.alpha = 1F
-                page.scaleX = Math.max(0.4F, 1 - abs(position))
-                page.scaleY = Math.max(0.4F, 1 - abs(position))
+                page.scaleX = max(0.4F, 1 - abs(position))
+                page.scaleY = max(0.4F, 1 - abs(position))
                 page.rotationX = 1080 * (1 - abs(position) + 1)
                 page.translationY = -1000 * abs(position)
             }
             position <= 1 -> {    // (0,1]
                 page.alpha = 1F
-                page.scaleX = Math.max(0.4F, 1 - abs(position))
-                page.scaleY = Math.max(0.4F, 1 - abs(position))
+                page.scaleX = max(0.4F, 1 - abs(position))
+                page.scaleY = max(0.4F, 1 - abs(position))
                 page.rotationX = -1080 * (1 - abs(position) + 1)
                 page.translationY = -1000 * abs(position)
             }
@@ -735,6 +759,7 @@ class TossTransformer : ViewPager2.PageTransformer {
         }
     }
 }
+
 class VerticalFlipTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.translationX = -position * page.width
@@ -767,6 +792,7 @@ class VerticalFlipTransformer : ViewPager2.PageTransformer {
         }
     }
 }
+
 class VerticalShutTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         page.translationX = -position * page.width
@@ -799,6 +825,7 @@ class VerticalShutTransformer : ViewPager2.PageTransformer {
         }
     }
 }
+
 class ZoomInTransformer : ViewPager2.PageTransformer {
     override fun transformPage(page: View, position: Float) {
         val scale = when {
@@ -812,6 +839,7 @@ class ZoomInTransformer : ViewPager2.PageTransformer {
         page.alpha = if (position >= -1.0F && position <= 1.0F) 1.0F - (scale - 1.0F) else 0.0F
     }
 }
+
 class ZoomOutSlideTransformer : ViewPager2.PageTransformer {
 
     override fun transformPage(page: View, position: Float) {
@@ -834,6 +862,7 @@ class ZoomOutSlideTransformer : ViewPager2.PageTransformer {
         }
     }
 }
+
 class ZoomOutTransformer : ViewPager2.PageTransformer {
     companion object {
         private const val MIN_SCALE = 0.65F

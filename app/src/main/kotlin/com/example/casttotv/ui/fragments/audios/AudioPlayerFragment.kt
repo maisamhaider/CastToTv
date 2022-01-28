@@ -10,7 +10,6 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -23,27 +22,25 @@ import androidx.navigation.fragment.findNavController
 import com.example.casttotv.R
 import com.example.casttotv.databinding.FragmentAudioPlayerBinding
 import com.example.casttotv.dataclasses.FileModel
-import com.example.casttotv.utils.*
 import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
-
 import com.example.casttotv.utils.MySingleton.toastLong
+import com.example.casttotv.utils.folder_path
+import com.example.casttotv.utils.playingFileCurrentPos
+import com.example.casttotv.utils.playingFileModel
+import com.example.casttotv.utils.playingFileName
 import com.example.casttotv.viewmodel.SharedViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import java.util.*
-import kotlin.collections.ArrayList
 import kotlin.math.roundToInt
 
 class AudioPlayerFragment : Fragment() {
-
-    private val TAG = "AudioPlayerFragment"
     private lateinit var binding: FragmentAudioPlayerBinding
 
     private val sharedViewModel: SharedViewModel by activityViewModels()
 
-    //    private val videosList: MutableList<String> = ArrayList()
     private val audiosModelList: MutableList<FileModel> = ArrayList()
     private var repeat = false
     private var mCountDownTimer: CountDownTimer? = null
@@ -52,7 +49,7 @@ class AudioPlayerFragment : Fragment() {
     private var mTimeNextInMillis: Double = 0.0
     private var locked = false
 
-    var audioSpeed = 100
+    private var audioSpeed = 100
 
     private var mediaPlayer: MediaPlayer? = null
     override fun onCreateView(
@@ -66,11 +63,7 @@ class AudioPlayerFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.apply {
-            thisFragment = this@AudioPlayerFragment
-
-        }
-
+        binding.apply { thisFragment = this@AudioPlayerFragment }
         observer()
         initFun()
     }
@@ -90,7 +83,7 @@ class AudioPlayerFragment : Fragment() {
             }
         }
 
-        sharedViewModel.speed.observe(viewLifecycleOwner, {
+        sharedViewModel.speed.observe(viewLifecycleOwner) {
             audioSpeed = it
             binding.textviewSpeed.text = audioSpeed.toString()
             binding.imageViewPlayBackSpeed.text = String.format("%.1fx", audioSpeed / 100f)
@@ -99,16 +92,13 @@ class AudioPlayerFragment : Fragment() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 mediaPlayer!!.playbackParams = PlaybackParams().setSpeed(audioSpeed / 100f)
             }
-
             playAudio()
-
-        })
+        }
     }
 
 
     private fun initFun() {
         binding.textViewFileName.text = playingFileName
-
         playAudio(playingFileModel)
 
         mediaPlayer!!.setOnCompletionListener {
@@ -120,10 +110,7 @@ class AudioPlayerFragment : Fragment() {
                 binding.imageviewPlayPauseMain.setImageResource(R.drawable.ic_play_circle)
                 playingFileCurrentPos = 0
             }
-
         }
-
-
     }
 
     fun lock() {
@@ -159,7 +146,6 @@ class AudioPlayerFragment : Fragment() {
             pauseTimer()
             startTimer()
         }
-
     }
 
     private fun setTime(milliseconds: Long) {
@@ -174,9 +160,7 @@ class AudioPlayerFragment : Fragment() {
                 binding.seekbar.progress = mCurrentPosition
             }
 
-            override fun onFinish() {
-
-            }
+            override fun onFinish() {}
         }.start()
     }
 
@@ -188,7 +172,6 @@ class AudioPlayerFragment : Fragment() {
         pauseTimer()
         mCountDownTimer!!.start()
     }
-
 
     private fun resetTimer() {
         mTimeNextInMillis = 0.0
@@ -376,7 +359,6 @@ class AudioPlayerFragment : Fragment() {
             }
         } catch (e: Exception) {
             e.stackTrace
-            Log.e(TAG, e.message.toString())
         }
         initSeekbar()
 

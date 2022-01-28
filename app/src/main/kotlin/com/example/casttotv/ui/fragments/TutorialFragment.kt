@@ -16,7 +16,7 @@ import com.example.casttotv.viewmodel.TutorialViewModel
 
 class TutorialFragment : Fragment() {
 
-    lateinit var _binding: FragmentTutorialBinding
+    private lateinit var _binding: FragmentTutorialBinding
     private val binding get() = _binding
     lateinit var adapter: TutorialPagerAdapter
     lateinit var viewPager: ViewPager2
@@ -83,32 +83,26 @@ class TutorialFragment : Fragment() {
                         binding.textviewHeader.text = getString(R.string.screen_setup)
                         tutorialViewModel.nextButtonProperties(getString(R.string.next))
                         binding.imageviewArrow.visibility = View.VISIBLE
-
                     }
                     2 -> {
                         binding.textviewHeader.text = getString(R.string.device_hotspot)
                         tutorialViewModel.nextButtonProperties(getString(R.string.next))
                         binding.imageviewArrow.visibility = View.VISIBLE
-
                     }
                     3 -> {
                         binding.textviewHeader.text = getString(R.string.scan_code)
                         tutorialViewModel.nextButtonProperties(getString(R.string.next))
                         binding.imageviewArrow.visibility = View.VISIBLE
-
                     }
                     4 -> {
                         binding.textviewHeader.text = getString(R.string.support)
                         tutorialViewModel.nextButtonProperties(getString(R.string.finish))
                         binding.imageviewArrow.visibility = View.GONE
-
                     }
                 }
             }
         })
-
     }
-
 
     fun nextOrFinished() {
         if (currentPosition == 4) {

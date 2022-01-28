@@ -9,8 +9,6 @@ import android.net.NetworkCapabilities.TRANSPORT_WIFI
 import android.os.Build
 
 class Internet(var context: Context) {
-
-
     fun isInternetAvailable(): Boolean {
         var result = false
         val connectivityManager =
@@ -26,7 +24,7 @@ class Internet(var context: Context) {
             }
         } else {
             connectivityManager.run {
-                connectivityManager. activeNetworkInfo?.run {
+                connectivityManager.activeNetworkInfo?.run {
                     result = when (type) {
                         TYPE_WIFI -> true
                         TYPE_MOBILE -> true
@@ -41,7 +39,7 @@ class Internet(var context: Context) {
         return result
     }
 
-      fun whichNetIsConnected(context: Context): Int {
+    fun whichNetIsConnected(context: Context): Int {
         var result = -1
         val connectivityManager =
             context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager

@@ -12,13 +12,13 @@ import com.example.casttotv.databinding.FragmentPrivacyPolicyBinding
 
 class PrivacyPolicyFragment : Fragment() {
 
-    lateinit var _binding: FragmentPrivacyPolicyBinding
+    private lateinit var _binding: FragmentPrivacyPolicyBinding
     private val binding get() = _binding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentPrivacyPolicyBinding.inflate(layoutInflater, container, false)
         return binding.root
@@ -34,6 +34,4 @@ class PrivacyPolicyFragment : Fragment() {
     fun back() {
         findNavController().navigate(R.id.action_pricacyPolicyFragment_to_appSettingsFragment)
     }
-
-
 }

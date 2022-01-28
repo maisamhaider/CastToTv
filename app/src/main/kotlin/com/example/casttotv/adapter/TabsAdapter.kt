@@ -43,17 +43,18 @@ class TabsAdapter(
                 textview.text = tab.webView.title ?: "empty"
                 Glide.with(context).load(tab.webView.url).placeholder(R.drawable.ic_browser)
                     .into(imageviewTabSiteLogo)
+                tab.webView.bitmap()?.let {
+                    imageview.setImageBitmap(it)
+                }
 
-                imageview.setImageBitmap(tab.webView.bitmap())
-
-                if (browserVm._currentTabIndex == absoluteAdapterPosition) {
+                if (browserVm._currentTabIndex.value!! == absoluteAdapterPosition) {
                     cl.setBackgroundResource(R.drawable.selected_tab_bg)
                     textview.setTextColor(ContextCompat.getColor(context, R.color.cr_white))
                     imageviewRemove.setColorFilter(ContextCompat.getColor(context,
                         R.color.cr_white))
                 }
                 imageviewRemoveClick.setOnClickListener {
-                    browserVm.closTabDialog(absoluteAdapterPosition)
+                    browserVm.closeDialog(absoluteAdapterPosition)
                 }
             }
         }

@@ -14,7 +14,6 @@ import com.example.casttotv.adapter.ImageViewPagerAdapter
 import com.example.casttotv.databinding.FragmentViewImagesBinding
 import com.example.casttotv.dataclasses.FileModel
 import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
-import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.utils.animation.DepthPageTransformer
 import com.example.casttotv.utils.playingFileModel
 import com.example.casttotv.utils.singletonFolderModel
@@ -28,7 +27,6 @@ class ViewImagesFragment : Fragment() {
     private val sharedViewModel: SharedViewModel by activityViewModels {
         SharedViewModel.SharedViewModelFactory(requireContext())
     }
-    var pos = 0
     lateinit var adapter: ImageHorizonAdapter2
     private lateinit var adapterSlider: ImageViewPagerAdapter
     private val list: MutableList<FileModel> = ArrayList()
@@ -44,7 +42,7 @@ class ViewImagesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        adapter = ImageHorizonAdapter2(::onItemClick,false)
+        adapter = ImageHorizonAdapter2(::onItemClick, false)
         adapterSlider = ImageViewPagerAdapter() { }
 
         binding.recyclerView.adapter = adapter
@@ -56,13 +54,11 @@ class ViewImagesFragment : Fragment() {
                     adapter.submitList(it)
                     adapterSlider.submitList(it)
                     list.addAll(it)
-
                 }
             }
         binding.apply {
             thisFrag = this@ViewImagesFragment
             textviewFileName.text = playingFileModel.fileName
-
         }
 
         binding.viewpager2.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
@@ -74,7 +70,6 @@ class ViewImagesFragment : Fragment() {
                 binding.textviewFileName.text = list[position].fileName
             }
         })
-
     }
 
     fun enablingWiFiDisplay() {
@@ -92,6 +87,4 @@ class ViewImagesFragment : Fragment() {
         adapter.notifyDataSetChanged()
         binding.textviewFileName.text = fileModel.fileName
     }
-
-
 }

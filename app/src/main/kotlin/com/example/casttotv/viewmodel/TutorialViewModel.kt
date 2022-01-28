@@ -21,9 +21,7 @@ class TutorialViewModel(context: Context) : ViewModel() {
 
     fun nextOrFinished(position: Int, viewPager2: ViewPager2) {
         viewPager2.setCurrentItem(position.plus(1), true)
-
     }
-
 
     class TutorialViewModelFactory(private val context: Context) :
         ViewModelProvider.Factory {

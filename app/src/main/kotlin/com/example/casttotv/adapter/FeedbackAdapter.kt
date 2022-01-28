@@ -24,17 +24,12 @@ class FeedbackAdapter(val context: Context, val onItemClicked: (Feedback) -> Uni
             override fun areItemsTheSame(
                 oldItem: Feedback,
                 newItem: Feedback,
-            ): Boolean {
-                return oldItem.uri == newItem.uri
-            }
+            ) = oldItem.uri == newItem.uri
 
             override fun areContentsTheSame(
                 oldItem: Feedback,
                 newItem: Feedback,
-            ): Boolean {
-                return oldItem == newItem
-            }
-
+            ) = oldItem == newItem
         }
     }
 
@@ -60,7 +55,6 @@ class FeedbackAdapter(val context: Context, val onItemClicked: (Feedback) -> Uni
                         ContextCompat.getDrawable(context,
                             R.drawable.shape_background_feedback_images)
                     Glide.with(context).load(feedback.uri).into(binding.imageView)
-
                 }
             }
         }
@@ -75,10 +69,8 @@ class FeedbackAdapter(val context: Context, val onItemClicked: (Feedback) -> Uni
                 onItemClicked(getItem(viewHolder.absoluteAdapterPosition))
             }
         }
-
         return viewHolder
     }
-
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(context, getItem(holder.absoluteAdapterPosition))

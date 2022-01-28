@@ -1,6 +1,5 @@
 package com.example.casttotv.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,7 +17,7 @@ import com.example.casttotv.viewmodel.SharedViewModel
 
 class ImageVideosAdapter(
     val onItemClicked: (FileModel, Int) -> Unit,
-     private val mimType: String,
+    private val mimType: String,
 ) :
     ListAdapter<FileModel, ImageVideosAdapter.Holder>(DIF_UTIL) {
     private val sliderImageList: MutableList<FileModel> = ArrayList()
@@ -26,38 +25,30 @@ class ImageVideosAdapter(
 
     companion object {
         val DIF_UTIL = object : DiffUtil.ItemCallback<FileModel>() {
-            override fun areItemsTheSame(oldItem: FileModel, newItem: FileModel): Boolean {
-                return oldItem == newItem
-            }
+            override fun areItemsTheSame(oldItem: FileModel, newItem: FileModel) =
+                oldItem == newItem
 
-            override fun areContentsTheSame(oldItem: FileModel, newItem: FileModel): Boolean {
-                return oldItem == newItem
-            }
-
+            override fun areContentsTheSame(oldItem: FileModel, newItem: FileModel) =
+                oldItem == newItem
         }
     }
 
     class Holder(private val binding: ImagesVideosItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(
-             fileModel: FileModel,
+            fileModel: FileModel,
             mimType: String,
             sliderImageList: MutableList<FileModel>,
             onItemClicked: (FileModel, Int) -> Unit,
         ) {
-
-//            context.toastShort("${fileModel.duration},\n ${fileModel.filePath},\n ${fileModel.fileName}")
             when (mimType) {
                 VIDEO -> {
                     binding.imageViewPlay.visibility = View.VISIBLE
-
                     Glide.with(itemView).load(fileModel.filePath).into(binding.imageView)
                 }
                 IMAGE -> {
                     binding.imageViewPlay.visibility = View.GONE
-
                     Glide.with(itemView).load(fileModel.filePath).into(binding.imageView)
-//                    binding.imageView.setImageURI(Uri.parse(fileModel.filePath))
                 }
                 SLIDE -> {
                     binding.checkBox.visibility = View.VISIBLE
@@ -67,7 +58,6 @@ class ImageVideosAdapter(
                     binding.checkBox.setOnClickListener {
                         onItemClicked(fileModel, absoluteAdapterPosition)
                     }
-
                 }
                 else -> {
                     Glide.with(itemView).load(R.drawable.ic_launcher_background)
@@ -81,9 +71,7 @@ class ImageVideosAdapter(
         val viewHolder = Holder(
             ImagesVideosItemBinding.inflate(
                 LayoutInflater.from(parent.context), parent, false
-            )
-        )
-
+            ))
         viewHolder.itemView.setOnClickListener {
             if (mimType == SLIDE) {
                 onLocalItemClicked(getItem(viewHolder.absoluteAdapterPosition),
@@ -94,15 +82,11 @@ class ImageVideosAdapter(
                     viewHolder.absoluteAdapterPosition
                 )
             }
-
-
         }
-
         return viewHolder
     }
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-
         holder.bind(
             getItem(holder.absoluteAdapterPosition),
             mimType,
@@ -124,5 +108,4 @@ class ImageVideosAdapter(
         }
         notifyItemChanged(int)
     }
-
 }

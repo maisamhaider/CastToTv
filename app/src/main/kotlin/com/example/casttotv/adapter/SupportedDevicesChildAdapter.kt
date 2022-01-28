@@ -15,24 +15,18 @@ class SupportedDevicesChildAdapter :
             override fun areItemsTheSame(
                 oldItem: String,
                 newItem: String,
-            ): Boolean {
-                return oldItem == newItem
-            }
+            ) = oldItem == newItem
 
             override fun areContentsTheSame(
                 oldItem: String,
                 newItem: String,
-            ): Boolean {
-                return oldItem == newItem
-            }
-
+            ) = oldItem == newItem
         }
     }
 
     class Holder(private val binding: SupportedDevicesChildItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(text: String) {
-
         }
     }
 
@@ -40,13 +34,10 @@ class SupportedDevicesChildAdapter :
         return Holder(
             SupportedDevicesChildItemBinding.inflate(LayoutInflater.from(parent.context),
                 parent,
-                false)
-        )
+                false))
     }
-
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(getItem(holder.absoluteAdapterPosition))
     }
-
 }

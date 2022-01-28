@@ -1,7 +1,6 @@
 package com.example.casttotv.repositories
 
 import android.annotation.SuppressLint
-import android.app.Activity
 import android.content.Context
 import android.database.Cursor
 import android.net.Uri
@@ -17,13 +16,12 @@ import java.io.File
 
 class SharedRepository(val context: Context) {
 
-
     @SuppressLint("Range")
     val imageFolderFlow: Flow<List<FolderModel>> = flow {
         val folder: MutableList<FolderModel> = ArrayList()
         val uri: Uri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI
-        var folderName = ""
-        var folderPath = ""
+        var folderName: String
+        var folderPath: String
         val folderList: MutableSet<String> = mutableSetOf()
         val projection = arrayOf(MediaStore.Images.Media.DATA)
         val cursor: Cursor = context.contentResolver.query(uri, projection, null, null, null)!!
@@ -33,7 +31,6 @@ class SharedRepository(val context: Context) {
                 val firstImage: String = cursor.getString(cursor.getColumnIndex(projection[0]))
                 val lastIndex = firstImage.lastIndexOf("/")
                 val prevIndex = firstImage.lastIndexOf("/", lastIndex - 1)
-
 
                 folderPath = firstImage.substring(0, lastIndex)
                 folderName = firstImage.substring(prevIndex + 1, lastIndex)
@@ -47,26 +44,6 @@ class SharedRepository(val context: Context) {
         cursor.close()
 
 
-    }
-
-    fun getAllShownImagesPath(activity: Activity): MutableList<Uri> {
-        val uriExternal: Uri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI
-        val cursor: Cursor?
-        val columnIndexID: Int
-        val listOfAllImages: MutableList<Uri> = mutableListOf()
-        val projection = arrayOf(MediaStore.Images.Media._ID)
-        var imageId: Long
-        cursor = activity.contentResolver.query(uriExternal, projection, null, null, null)
-        if (cursor != null) {
-            columnIndexID = cursor.getColumnIndexOrThrow(MediaStore.Images.Media._ID)
-            while (cursor.moveToNext()) {
-                imageId = cursor.getLong(columnIndexID)
-                val uriImage = Uri.withAppendedPath(uriExternal, "" + imageId)
-                listOfAllImages.add(uriImage)
-            }
-            cursor.close()
-        }
-        return listOfAllImages
     }
 
     @SuppressLint("Range")
@@ -101,8 +78,8 @@ class SharedRepository(val context: Context) {
     val videosFoldersFlow: Flow<List<FolderModel>> = flow {
         val folder: MutableList<FolderModel> = ArrayList()
         val uri: Uri = MediaStore.Video.Media.EXTERNAL_CONTENT_URI
-        var folderName = ""
-        var folderPath = ""
+        var folderName: String
+        var folderPath: String
         val folderList: MutableSet<String> = mutableSetOf()
         val projection = arrayOf(MediaStore.Video.Media.DATA)
         val cursor: Cursor = context.contentResolver.query(uri, projection, null, null, null)!!
@@ -123,7 +100,6 @@ class SharedRepository(val context: Context) {
             }
         }
         cursor.close()
-
     }
 
     @SuppressLint("Range")

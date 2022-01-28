@@ -12,15 +12,11 @@ import com.example.casttotv.adapter.ImageVideosAdapter
 import com.example.casttotv.databinding.FragmentImageSliderBinding
 import com.example.casttotv.dataclasses.FileModel
 import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
-import com.example.casttotv.utils.MySingleton.toastShort
 import com.example.casttotv.utils.SLIDE
 import com.example.casttotv.utils.singletonFolderModel
 import com.example.casttotv.viewmodel.SharedViewModel
-import kotlinx.coroutines.*
 
 class ImageSliderFragment : Fragment() {
-
-
     private lateinit var _binding: FragmentImageSliderBinding
     private val binding get() = _binding
 
@@ -29,7 +25,6 @@ class ImageSliderFragment : Fragment() {
     }
 
     private lateinit var imageVideosAdapter: ImageVideosAdapter
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -46,17 +41,13 @@ class ImageSliderFragment : Fragment() {
         imageVideosAdapter = ImageVideosAdapter(::onImageClick, SLIDE)
         imageVideosAdapter.setVM(sharedViewModel)
 
-
-
         _binding.apply {
             lifecycleOwner = viewLifecycleOwner
             shareViewModel = sharedViewModel
             thisFragment = this@ImageSliderFragment
             recyclerView.adapter = imageVideosAdapter
         }
-
         loadImages(singletonFolderModel.folderPath)
-
     }
 
     private fun loadImages(path: String) {
@@ -65,8 +56,7 @@ class ImageSliderFragment : Fragment() {
         }
     }
 
-    private fun onImageClick(fileModel: FileModel, int: Int) {
-    }
+    private fun onImageClick(fileModel: FileModel, int: Int) {}
 
     fun enablingWiFiDisplay() {
         requireContext().enablingWiFiDisplay()

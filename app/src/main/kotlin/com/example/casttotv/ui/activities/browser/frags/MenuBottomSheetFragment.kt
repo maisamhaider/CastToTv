@@ -57,7 +57,6 @@ class MenuBottomSheetFragment : BottomSheetDialogFragment() {
                 startActivity(Intent(requireContext(), HistoryActivity::class.java))
                 dismiss()
             }
-
             clShareApp.setOnClickListener {
                 requireContext().shareApp()
             }
@@ -92,10 +91,6 @@ class MenuBottomSheetFragment : BottomSheetDialogFragment() {
             clSearchOn.setOnClickListener {
                 browserViewModel.openWith()
             }
-
-
         }
     }
-
-
 }

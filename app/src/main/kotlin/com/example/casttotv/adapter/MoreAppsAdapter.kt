@@ -17,17 +17,12 @@ class MoreAppsAdapter(private var context: Context) :
             override fun areItemsTheSame(
                 oldItem: ModelMoreApps,
                 newItem: ModelMoreApps,
-            ): Boolean {
-                return oldItem.app_package == newItem.app_package
-            }
+            ) = oldItem.app_package == newItem.app_package
 
             override fun areContentsTheSame(
                 oldItem: ModelMoreApps,
                 newItem: ModelMoreApps,
-            ): Boolean {
-                return oldItem == newItem
-            }
-
+            ) = oldItem == newItem
         }
     }
 
@@ -42,9 +37,7 @@ class MoreAppsAdapter(private var context: Context) :
         )
     }
 
-
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(getItem(holder.absoluteAdapterPosition))
     }
-
 }

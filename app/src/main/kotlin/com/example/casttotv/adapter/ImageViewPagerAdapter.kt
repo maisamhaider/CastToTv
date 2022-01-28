@@ -1,7 +1,6 @@
 package com.example.casttotv.adapter
 
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -12,19 +11,17 @@ import com.example.casttotv.databinding.ImageSlidingBinding
 import com.example.casttotv.dataclasses.FileModel
 
 
-class ImageViewPagerAdapter(private val onItemClick: () -> Unit,
+class ImageViewPagerAdapter(
+    private val onItemClick: () -> Unit,
 ) : ListAdapter<FileModel, ImageViewPagerAdapter.Holder>(DIF_UTIL) {
 
     companion object {
         val DIF_UTIL = object : DiffUtil.ItemCallback<FileModel>() {
-            override fun areItemsTheSame(oldItem: FileModel, newItem: FileModel): Boolean {
-                return oldItem.filePath == newItem.filePath
-            }
+            override fun areItemsTheSame(oldItem: FileModel, newItem: FileModel) =
+                oldItem.filePath == newItem.filePath
 
-            override fun areContentsTheSame(oldItem: FileModel, newItem: FileModel): Boolean {
-                return oldItem == newItem
-            }
-
+            override fun areContentsTheSame(oldItem: FileModel, newItem: FileModel) =
+                oldItem == newItem
         }
     }
 
@@ -33,7 +30,6 @@ class ImageViewPagerAdapter(private val onItemClick: () -> Unit,
             Glide.with(itemView).load(fileModel.filePath).into(binding.imageView)
         }
     }
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val view = Holder(
@@ -50,5 +46,4 @@ class ImageViewPagerAdapter(private val onItemClick: () -> Unit,
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(getItem(holder.absoluteAdapterPosition))
     }
-
 }

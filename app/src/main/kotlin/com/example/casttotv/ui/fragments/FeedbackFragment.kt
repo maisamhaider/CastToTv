@@ -23,9 +23,6 @@ import com.example.casttotv.viewmodel.MainViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import java.io.File
-import java.util.*
-import kotlin.collections.ArrayList
 
 
 class FeedbackFragment : Fragment() {
@@ -65,9 +62,7 @@ class FeedbackFragment : Fragment() {
                     requireContext().toastLong(getString(R.string.check_your_internet_connection))
                 }
             }
-
         }
-
     }
 
     private var someActivityResultLauncher = registerForActivityResult(
@@ -84,14 +79,12 @@ class FeedbackFragment : Fragment() {
                 }
             }
 
-
             CoroutineScope(Dispatchers.IO).launch {
                 val filteredList =
                     adapterList2.filter { !it.uri.toString().contains("Add") && it.uri != null }
                 filteredList.forEach {
                     imagesUriArrayList.add(it.uri!!)
                 }
-
             }
             adapter.submitList(adapterList2)
             adapter.notifyDataSetChanged()
@@ -105,31 +98,11 @@ class FeedbackFragment : Fragment() {
     fun onItemClick(feedback: Feedback) {
         if (adapterList2.size < 5) {
             val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
-//            val intent = Intent()
             intent.type = "image/*"
-//            intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true)
-//            intent.action = Intent.ACTION_GET_CONTENT
             someActivityResultLauncher.launch(Intent.createChooser(intent,
                 getString(R.string.select_picture)))
         } else {
             requireContext().toastLong(getString(R.string.more_then_5_images_can_not_be_picked))
         }
-
     }
-
-    private fun uriToImageFile(uri: Uri): File? {
-        val filePathColumn = arrayOf(MediaStore.Images.Media.DATA)
-        val cursor = requireContext().contentResolver.query(uri, filePathColumn, null, null, null)
-        if (cursor != null) {
-            if (cursor.moveToFirst()) {
-                val columnIndex = cursor.getColumnIndex(filePathColumn[0])
-                val filePath = cursor.getString(columnIndex)
-                cursor.close()
-                return File(filePath)
-            }
-            cursor.close()
-        }
-        return null
-    }
-
 }

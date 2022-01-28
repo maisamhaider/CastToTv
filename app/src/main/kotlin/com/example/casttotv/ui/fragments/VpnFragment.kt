@@ -1,22 +1,22 @@
 package com.example.casttotv.ui.fragments
 
 import android.app.Activity
-import android.content.*
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
 import android.net.VpnService
 import android.os.Bundle
 import android.os.RemoteException
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
 import androidx.appcompat.app.AlertDialog
+import androidx.fragment.app.Fragment
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.ListUpdateCallback
 import com.bumptech.glide.Glide
 import com.example.casttotv.R
 import com.example.casttotv.databinding.FragmentVpnBinding
@@ -24,21 +24,16 @@ import com.example.casttotv.openvpn.CheckInternetConnection
 import com.example.casttotv.openvpn.SharedPreference
 import com.example.casttotv.openvpn.Utils
 import com.example.casttotv.openvpn.adapter.ServerListRVAdapter
-import com.example.casttotv.openvpn.interfaces.ChangeServer
 import com.example.casttotv.openvpn.interfaces.NavItemClickListener
 import com.example.casttotv.openvpn.model.Server
 import de.blinkt.openvpn.OpenVpnApi
-import de.blinkt.openvpn.core.OpenVPNService
 import de.blinkt.openvpn.core.OpenVPNService.getStatus
 import de.blinkt.openvpn.core.OpenVPNService.setDefaultStatus
-import de.blinkt.openvpn.core.OpenVPNThread
 import de.blinkt.openvpn.core.OpenVPNThread.stop
 import de.blinkt.openvpn.core.VpnStatus
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
-import java.lang.Exception
-import java.util.ArrayList
 
 class
 VpnFragment : Fragment(), View.OnClickListener, NavItemClickListener {
@@ -62,12 +57,11 @@ VpnFragment : Fragment(), View.OnClickListener, NavItemClickListener {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+        savedInstanceState: Bundle?,
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentVpnBinding.inflate(inflater, container, false)
         initializeAll()
-
         return binding.root
     }
 
@@ -83,8 +77,6 @@ VpnFragment : Fragment(), View.OnClickListener, NavItemClickListener {
             }
 
         }
-
-        // Checking is vpn already running or not
 
         // Checking is vpn already running or not
         isServiceRunning()
@@ -112,7 +104,7 @@ VpnFragment : Fragment(), View.OnClickListener, NavItemClickListener {
     }
 
     private val serverList: ArrayList<Server>
-        private get() {
+        get() {
             val servers = ArrayList<Server>()
             servers.add(
                 Server(
@@ -123,8 +115,6 @@ VpnFragment : Fragment(), View.OnClickListener, NavItemClickListener {
                     "vpn"
                 )
             )
-
-
             return servers
         }
 
@@ -360,7 +350,7 @@ VpnFragment : Fragment(), View.OnClickListener, NavItemClickListener {
         duration: String,
         lastPacketReceive: String,
         byteIn: String,
-        byteOut: String
+        byteOut: String,
     ) {
         binding.durationTv.text = "Duration: $duration"
         binding.lastPacketReceiveTv.text = "Packet Received: $lastPacketReceive second ago"

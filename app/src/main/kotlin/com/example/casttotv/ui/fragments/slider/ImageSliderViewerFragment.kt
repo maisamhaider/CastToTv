@@ -77,14 +77,14 @@ class ImageSliderViewerFragment : Fragment() {
         viewPager!!.adapter = adapterSlider
         viewPager!!.scrollBarFadeDuration = 2000
 
-        sharedViewModel.selectedImages.observe(viewLifecycleOwner, {
+        sharedViewModel.selectedImages.observe(viewLifecycleOwner) {
             listSize = it.size
             adapterSlider.submitList(it)
             adapter.submitList(it)
-        })
+        }
 
         startTimer()
-        sharedViewModel.play.observe(viewLifecycleOwner, {
+        sharedViewModel.play.observe(viewLifecycleOwner) {
             if (it) {
                 pauseTimer()
                 restartTimer()
@@ -96,7 +96,7 @@ class ImageSliderViewerFragment : Fragment() {
                 binding.imageViewPlayPause.visibility = View.VISIBLE
                 binding.imageViewPlayPause.setImageResource(R.drawable.ic_play_circle)
             }
-        })
+        }
         binding.viewpager2.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
@@ -151,16 +151,12 @@ class ImageSliderViewerFragment : Fragment() {
         viewPager!!.adapter = adapterSlider
         viewPager!!.scrollBarFadeDuration = 2000
         viewPager!!.setPageTransformer(animationClass?.pageTransformer)
-//        if (currentImage != 0) {
-//            binding.viewpager2.setCurrentItem(currentImage - 1, false)
-//        }
+
         if (pos != -1) {
             viewPager2AnimationsAdapter.setSelect(pos)
             binding.recyclerView.smoothScrollToPosition(pos)
             viewPager2AnimationsAdapter.notifyDataSetChanged()
         }
-
-
     }
 
     private fun onItemClick(fileModel: FileModel, pos: Int) {
@@ -179,5 +175,4 @@ class ImageSliderViewerFragment : Fragment() {
         super.onPause()
         sharedViewModel.playPause(false)
     }
-
 }

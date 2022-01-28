@@ -24,7 +24,6 @@ class HistoryActivity : BaseActivity(), OptionMenuListener {
 
     private val browserViewModel: BrowserViewModel by viewModels {
         BrowserViewModel.BrowserViewModelFactory(this)
-
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,14 +39,12 @@ class HistoryActivity : BaseActivity(), OptionMenuListener {
             }
         }
         loadHistory()
-
-
     }
 
     private fun loadHistory() {
         val adapter = HistoryAdapter(::onClick, this, this)
         binding.recyclerView.adapter = adapter
-        browserViewModel.getHistory().asLiveData().observe(this) {
+        browserViewModel.getHistoryGroupBtDay().asLiveData().observe(this) {
             if (map.isNotEmpty()) {
                 map.clear()
             }
@@ -64,7 +61,7 @@ class HistoryActivity : BaseActivity(), OptionMenuListener {
                     }
                 }
                 val list: MutableList<History> = ArrayList()
-                map.forEach { m -> list.add(0, History(m.key, m.value)) }
+                map.forEach { m -> list.add(History(m.key, m.value)) }
 
                 launch(Dispatchers.Main) {
                     adapter.submitList(list)
@@ -73,11 +70,9 @@ class HistoryActivity : BaseActivity(), OptionMenuListener {
         }
     }
 
-
     fun back() {
         finish()
     }
-
 
     fun onClick(historyEntity: HistoryEntity) {
         historyBookFavClose = historyEntity.link

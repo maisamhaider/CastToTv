@@ -12,7 +12,6 @@ import com.example.casttotv.adapter.FolderAdapter
 import com.example.casttotv.databinding.FragmentAudiosFoldersBinding
 import com.example.casttotv.dataclasses.FolderModel
 import com.example.casttotv.utils.AUDIO
-import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.utils.folder_path
 import com.example.casttotv.viewmodel.SharedViewModel
 import kotlinx.coroutines.CoroutineScope
@@ -33,7 +32,7 @@ class AudiosFoldersFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentAudiosFoldersBinding.inflate(inflater, container, false)
         return binding.root
@@ -59,9 +58,7 @@ class AudiosFoldersFragment : Fragment() {
     }
 
     private fun onItemClick(folderPath: FolderModel) {
-         folder_path = folderPath.folderPath
+        folder_path = folderPath.folderPath
         findNavController().navigate(R.id.action_audiosFoldersFragment_to_audiosFragment)
     }
-
-
 }

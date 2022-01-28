@@ -3,8 +3,6 @@ package com.example.casttotv.database.entities
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.text.SimpleDateFormat
-import java.util.*
 
 @Entity(tableName = "history")
 data class HistoryEntity(
@@ -20,5 +18,3 @@ data class HistoryEntity(
     @ColumnInfo(name = "days")
     val day: String,
 )
-fun HistoryEntity.getDate(): String =
-    SimpleDateFormat("d mm, yyyy hh:mm a", Locale.getDefault()).format(date.toLong())

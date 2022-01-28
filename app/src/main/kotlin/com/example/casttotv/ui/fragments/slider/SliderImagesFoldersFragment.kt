@@ -24,13 +24,12 @@ class SliderImagesFoldersFragment : Fragment() {
     private val sharedViewModel: SharedViewModel by activityViewModels {
         SharedViewModel.SharedViewModelFactory(requireContext())
     }
-
     private lateinit var adapter: FolderAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         _binding = FragmentSliderImagesFoldersBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -53,15 +52,17 @@ class SliderImagesFoldersFragment : Fragment() {
             }
         }
     }
+
     fun enablingWiFiDisplay() {
         requireContext().enablingWiFiDisplay()
     }
+
     fun back() {
         findNavController().navigate(R.id.action_sliderImagesFoldersFragment_to_homeFragment)
     }
 
     private fun onItemClick(folderPath: FolderModel) {
         singletonFolderModel = folderPath
-         findNavController().navigate(R.id.action_sliderImagesFoldersFragment_to_imageSliderFragment)
+        findNavController().navigate(R.id.action_sliderImagesFoldersFragment_to_imageSliderFragment)
     }
 }

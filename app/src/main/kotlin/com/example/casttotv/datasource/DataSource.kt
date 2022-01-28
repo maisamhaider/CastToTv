@@ -37,7 +37,6 @@ class DataSource {
         SearchEngine("Qwant", "www.qwant.com/?q=", R.drawable.ic_qwant),
         SearchEngine("Ecosia", "www.ecosia.org/search?q=", R.drawable.ic_ecosia))
 
-
     fun listOfQA(context: Context): List<QuestionAnswer> {
         return listOf(QuestionAnswer(context.getString(R.string.question_1),
             listOf(

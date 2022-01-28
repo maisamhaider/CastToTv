@@ -19,7 +19,6 @@ const val DATABASE = "DATABASE"
     FavoritesEntity::class],
     version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
-
     abstract fun bookmarkDao(): BookmarkDao
     abstract fun historyDao(): HistoryDao
     abstract fun homeDao(): HomeDao
@@ -34,9 +33,7 @@ abstract class AppDatabase : RoomDatabase() {
                 val instance = Room.databaseBuilder(context, AppDatabase::class.java, DATABASE)
                     .fallbackToDestructiveMigration()
                     .build()
-
                 instance.also { INSTANCE = it }
-
                 instance
             }
         }

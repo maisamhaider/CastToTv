@@ -14,24 +14,18 @@ class SupportedDevicesAdapter : ListAdapter<String, SupportedDevicesAdapter.Hold
             override fun areItemsTheSame(
                 oldItem: String,
                 newItem: String,
-            ): Boolean {
-                return oldItem == newItem
-            }
+            ) = oldItem == newItem
 
             override fun areContentsTheSame(
                 oldItem: String,
                 newItem: String,
-            ): Boolean {
-                return oldItem == newItem
-            }
-
+            ) = oldItem == newItem
         }
     }
 
     class Holder(private val binding: SupportedDevicesItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(bookmarkEntity: String) {
-//            binding.textViewText.text = bookmarkEntity.title
             val adapter = SupportedDevicesChildAdapter()
             binding.recyclerView.adapter = adapter
             listOf("1").let { adapter.submitList(it) }
@@ -43,7 +37,6 @@ class SupportedDevicesAdapter : ListAdapter<String, SupportedDevicesAdapter.Hold
             SupportedDevicesItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         )
     }
-
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(getItem(holder.absoluteAdapterPosition))

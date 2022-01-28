@@ -12,7 +12,6 @@ import com.example.casttotv.adapter.FolderAdapter
 import com.example.casttotv.databinding.FragmentVideosFoldersBinding
 import com.example.casttotv.dataclasses.FolderModel
 import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
-import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.utils.VIDEO
 import com.example.casttotv.utils.folder_path
 import com.example.casttotv.viewmodel.SharedViewModel
@@ -22,7 +21,6 @@ import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 class VideosFoldersFragment : Fragment() {
-
 
     private var _binding: FragmentVideosFoldersBinding? = null
     private val binding get() = _binding!!
@@ -61,9 +59,11 @@ class VideosFoldersFragment : Fragment() {
             }
         }
     }
+
     fun enablingWiFiDisplay() {
         requireContext().enablingWiFiDisplay()
     }
+
     fun back() {
         findNavController().navigate(R.id.action_videosFoldersFragment_to_homeFragment)
     }
@@ -72,6 +72,4 @@ class VideosFoldersFragment : Fragment() {
         folder_path = folderPath.folderPath
         findNavController().navigate(R.id.action_videosFoldersFragment_to_videosFragment)
     }
-
-
 }

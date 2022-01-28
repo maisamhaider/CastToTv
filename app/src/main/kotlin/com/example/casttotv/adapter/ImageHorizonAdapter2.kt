@@ -1,6 +1,5 @@
 package com.example.casttotv.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,20 +13,17 @@ import com.example.casttotv.dataclasses.FileModel
 
 class ImageHorizonAdapter2(
     val onItemClicked: (FileModel, Int) -> Unit,
-     private val isSlider: Boolean,
+    private val isSlider: Boolean,
 ) : ListAdapter<FileModel, ImageHorizonAdapter2.Holder>(DIF_UTIL) {
     private var selected = 0
 
     companion object {
         val DIF_UTIL = object : DiffUtil.ItemCallback<FileModel>() {
-            override fun areItemsTheSame(oldItem: FileModel, newItem: FileModel): Boolean {
-                return oldItem == newItem
-            }
+            override fun areItemsTheSame(oldItem: FileModel, newItem: FileModel) =
+                oldItem == newItem
 
-            override fun areContentsTheSame(oldItem: FileModel, newItem: FileModel): Boolean {
-                return oldItem == newItem
-            }
-
+            override fun areContentsTheSame(oldItem: FileModel, newItem: FileModel) =
+                oldItem == newItem
         }
     }
 
@@ -48,9 +44,7 @@ class ImageHorizonAdapter2(
             } else {
                 binding.clSelect.visibility = View.GONE
             }
-
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
@@ -71,12 +65,9 @@ class ImageHorizonAdapter2(
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(getItem(holder.absoluteAdapterPosition), isSlider)
         holder.setBack(holder.absoluteAdapterPosition == selected)
-
-
     }
 
     fun setSelect(selected: Int) {
         this.selected = selected
     }
-
 }

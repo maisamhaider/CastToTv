@@ -131,7 +131,6 @@ class MainViewModel : ViewModel() {
                         R.color.cr_black_80))
                 }
                 _orientation.value = context.getString(R.string.auto)
-                context.changeTheme()
             }
             clRatio2.setOnClickListener {
                 context.putPrefs(AUTO_ROTATION, false)
@@ -145,7 +144,6 @@ class MainViewModel : ViewModel() {
                 textviewManual.setTextColor(ContextCompat.getColor(context,
                     R.color.cr_dodger_blue_light_2))
                 _orientation.value = context.getString(R.string.manual)
-                context.changeTheme()
             }
         }
         dialog.show()

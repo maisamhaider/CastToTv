@@ -12,19 +12,22 @@ import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.viewpager2.widget.ViewPager2
 import com.example.casttotv.adapter.WalkThroughPagerAdapter
-import com.example.casttotv.databinding.*
-import com.example.casttotv.utils.*
+import com.example.casttotv.databinding.ActivityWelcomeBinding
+import com.example.casttotv.databinding.WalkThroughLayout1Binding
+import com.example.casttotv.databinding.WalkThroughLayout2Binding
+import com.example.casttotv.databinding.WalkThroughLayout3Binding
 import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.Pref.putPrefs
+import com.example.casttotv.utils.WALK_THROUGH
 import com.example.casttotv.viewmodel.TutorialViewModel
-import kotlinx.coroutines.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 
 class WelcomeActivity : AppCompatActivity() {
 
-    //    private val viewModel: WelcomeViewModel by viewModels {
-//        WelcomeViewModel.WelcomeFactory(this)
-//    }
     private lateinit var binding: ActivityWelcomeBinding
     private val tutorialViewModel: TutorialViewModel by viewModels {
         TutorialViewModel.TutorialViewModelFactory(this)
@@ -57,12 +60,11 @@ class WelcomeActivity : AppCompatActivity() {
         binding.includedLayoutSplash.textviewSlogan.animation = slideUp2
         binding.includedLayoutSplash.lottieAnimationView.playAnimation()
 
-         CoroutineScope(Job()).launch {
+        CoroutineScope(Job()).launch {
             delay(6000)
             startActivity(Intent(this@WelcomeActivity, MainActivity::class.java))
             finish()
         }
-
     }
 
     override fun onResume() {
@@ -74,121 +76,17 @@ class WelcomeActivity : AppCompatActivity() {
 
 //        val showSplash = getPrefs(SHOW_SPLASH_LAYOUT, false)
 //        val showPermissionLayout = getPrefs(SHOW_PERMISSION_LAYOUT, true)
-        val walkThrough = getPrefs(WALK_THROUGH, true)
-        if (walkThrough) {
+        if (getPrefs(WALK_THROUGH, true)) {
             walkThrough()
-        }
-        /*  else if (showPermissionLayout) {
-              binding.includedLayoutPermission.clShowPerm.visibility = View.VISIBLE
-              if (!viewModel.checkLocationPermission(this)) {
-                  viewModel.requestLocationPer(this)
-              } else if (!viewModel.isLocationEnabled()) {
-                  viewModel.showLocationDialog(this)
-                  binding.includedLayoutPermission.mtButtonEnableLocation.visibility =
-                      View.VISIBLE
-
-                  binding.includedLayoutPermission.mtButtonEnableLocation.setOnClickListener {
-                      */
-        /** Call isLocationEnabled from view model this will check is location is enbaled or
-         * not
-         * and it updates location status
-         * *//*
-                    if (!viewModel.isLocationEnabled()) {
-                        viewModel.showLocationDialog(this)
-                    } else {
-                        toastLong(resources.getString(R.string.location_is_already_enabled))
-                    }
-                }
-            } else {
-                binding.includedLayoutPermission.mtButtonEnableLocation.visibility = View.GONE
-                viewModel.currentLocation(this, object : LocationItem {
-                    override fun location(location: Location) {
-                        viewModel.getCurrentCountryName(this@WelcomeActivity, location)
-                    }
-
-                    override fun message(message: String) {
-                        toastLong(message)
-                        this@WelcomeActivity.putPrefs(COUNTRY, COUNTRY)
-                        this@WelcomeActivity.putPrefs(SHOW_PERMISSION_LAYOUT, false)
-                        showSplash()
-                    }
-
-                })
-                viewModel.country.observe(this, {
-                    if (it != null) {
-                        this.putPrefs(COUNTRY, it.countryName)
-                        this.putPrefs(SHOW_PERMISSION_LAYOUT, false)
-                        showSplash()
-                    } else {
-                        toastLong("Null")
-
-                    }
-                })
-            }
-
-        }*/ else {
-            /*   val savedCountry = getPrefs(COUNTRY, COUNTRY)
-
-               if (savedCountry != NO_COUNTRY) {
-                   */
-            /**check on Splash that if location permission is granted and location is enabled
-             * then check the saved country name and new current location based country name if
-             * saved country doesn't match new country name then update value in preferences
-             * *//*
-                if (viewModel.checkLocationPermission(this) && viewModel.isLocationEnabled()) {
-                    */
-            /** get current location*//*
-                    viewModel.currentLocation(this, object : LocationItem {
-                        override fun location(location: Location) {
-                            */
-            /** get current country name and country code
-             * update Country in view model
-             * *//*
-                            viewModel.getCurrentCountryName(this@WelcomeActivity, location)
-                        }
-
-                        override fun message(message: String) {
-                            toastLong(message)
-                            showSplash()
-                        }
-
-                    })
-                    */
-            /** Observer for country detail
-             * *//*
-                    viewModel.country.observe(this, {
-                        if (it != null) {
-                            if (savedCountry != it.countryName) {
-                                this.putPrefs(COUNTRY, it.countryName)
-                            }
-                            toastLong(it.countryName + " " + it.countryCode)
-                        } else {
-                            toastLong("country Null")
-                        }
-                        showSplash()
-
-                    })
-                } else {
-                    */
-            /** if location permission is not granted and location is not enabled
-             * then simply show splash and intent to main activity
-             * keep work with saved country name
-             * *//*
-                    toastLong(savedCountry)
-                    showSplash()
-                }
-            }
-*/
+        } else {
             showSplash()
-
         }
     }
 
     private fun walkThrough() {
         binding.includedWalkThrough.clWalkThroughMain.visibility = View.VISIBLE
         val viewList: MutableList<View> = ArrayList()
-
-        val adapter = WalkThroughPagerAdapter(this)
+        val adapter = WalkThroughPagerAdapter()
 
         val view1: View =
             WalkThroughLayout1Binding.inflate(LayoutInflater.from(this)).root
@@ -226,14 +124,11 @@ class WelcomeActivity : AppCompatActivity() {
                     1 -> {
                         tutorialViewModel.nextButtonProperties(getString(com.example.casttotv.R.string.next))
                         binding.includedWalkThrough.imageviewArrow.visibility = View.VISIBLE
-
                     }
                     2 -> {
                         tutorialViewModel.nextButtonProperties(getString(com.example.casttotv.R.string.finish))
                         binding.includedWalkThrough.imageviewArrow.visibility = View.GONE
-
                     }
-
                 }
             }
         })
@@ -247,6 +142,4 @@ class WelcomeActivity : AppCompatActivity() {
             tutorialViewModel.nextOrFinished(currentPosition, viewPager)
         }
     }
-
-
 }

@@ -26,17 +26,12 @@ class BookmarkAdapter(
             override fun areItemsTheSame(
                 oldItem: BookmarkEntity,
                 newItem: BookmarkEntity,
-            ): Boolean {
-                return oldItem.date == newItem.date
-            }
+            ) = oldItem.date == newItem.date
 
             override fun areContentsTheSame(
                 oldItem: BookmarkEntity,
                 newItem: BookmarkEntity,
-            ): Boolean {
-                return oldItem == newItem
-            }
-
+            ) = oldItem == newItem
         }
     }
 
@@ -76,10 +71,8 @@ class BookmarkAdapter(
         viewHolder.itemView.setOnClickListener {
             onItemClicked(getItem(viewHolder.absoluteAdapterPosition))
         }
-
         return viewHolder
     }
-
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(context, getItem(holder.absoluteAdapterPosition), optionMenuListener)

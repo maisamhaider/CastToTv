@@ -68,5 +68,4 @@ class ImagesFoldersFragment : Fragment() {
         findNavController().navigate(R.id.action_imagesFoldersFragment_to_imagesFragment)
         requireContext().toastLong(folderPath.folderPath)
     }
-
 }

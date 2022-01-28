@@ -12,6 +12,7 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.casttotv.BuildConfig
@@ -24,6 +25,7 @@ import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
 import com.example.casttotv.utils.MySingleton.shareApp
 import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.THEME_DARK
+import com.example.casttotv.viewmodel.BrowserViewModel
 import com.example.casttotv.viewmodel.MainViewModel
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -69,12 +71,12 @@ class HomeFragment : Fragment(), MyCallBack {
     }
 
     fun languagesDialog() {
-        viewModel.languageDialog(requireContext(),::click)
+        viewModel.languageDialog(requireContext(), ::click)
     }
 
     fun click() {
         mainActivity.restartActivity()
-     }
+    }
 
 
     fun rateUs() {
@@ -101,7 +103,6 @@ class HomeFragment : Fragment(), MyCallBack {
         }
     }
 
-
     fun goToScreenMirroring() {
         requireContext().enablingWiFiDisplay()
     }
@@ -115,6 +116,7 @@ class HomeFragment : Fragment(), MyCallBack {
     }
 
     fun goToWebBrowser() {
+        mainActivity.browserVM.checkDefaultSite.value = true
         navController.navigate(R.id.action_homeFragment_to_browserContainerFragment)
     }
 
@@ -191,6 +193,8 @@ class HomeFragment : Fragment(), MyCallBack {
                     R.drawable.ic_wifi_disconnected))
             }
         }
+
+
     }
 
     override fun onDestroy() {
@@ -198,8 +202,5 @@ class HomeFragment : Fragment(), MyCallBack {
         if (connection != null) {
             connection!!.unregisterNetworkCallback(networkCallbackWiFi)
         }
-
     }
-
-
 }

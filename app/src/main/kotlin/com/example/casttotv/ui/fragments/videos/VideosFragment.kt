@@ -57,7 +57,6 @@ class VideosFragment : Fragment() {
                 }
             }
         }
-
     }
 
     fun enablingWiFiDisplay() {

@@ -18,17 +18,11 @@ class ViewPager2AnimationsAdapter(private val onItemClick: (PagerAnimation?, Int
             override fun areItemsTheSame(
                 oldItem: PagerAnimation,
                 newItem: PagerAnimation,
-            ): Boolean {
-                return oldItem.int == newItem.int
-            }
+            ) = oldItem.int == newItem.int
 
             override fun areContentsTheSame(
-                oldItem: PagerAnimation,
-                newItem: PagerAnimation,
-            ): Boolean {
-                return oldItem == newItem
-            }
-
+                oldItem: PagerAnimation, newItem: PagerAnimation,
+            ) = oldItem == newItem
         }
     }
 
@@ -47,7 +41,6 @@ class ViewPager2AnimationsAdapter(private val onItemClick: (PagerAnimation?, Int
         }
     }
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
 
         val viewHolder =
@@ -58,7 +51,6 @@ class ViewPager2AnimationsAdapter(private val onItemClick: (PagerAnimation?, Int
             onItemClick(getItem(viewHolder.absoluteAdapterPosition),
                 viewHolder.absoluteAdapterPosition)
         }
-
         return viewHolder
     }
 
@@ -66,8 +58,8 @@ class ViewPager2AnimationsAdapter(private val onItemClick: (PagerAnimation?, Int
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(getItem(holder.absoluteAdapterPosition))
         holder.setBack(holder.absoluteAdapterPosition == selected)
-
     }
+
     fun setSelect(selected: Int) {
         this.selected = selected
     }

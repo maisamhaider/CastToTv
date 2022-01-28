@@ -86,6 +86,4 @@ class DeleteHistoryBottomSheetFragment : BottomSheetDialogFragment() {
             }
         }
     }
-
-
 }

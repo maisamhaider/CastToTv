@@ -41,13 +41,12 @@ class ImagesFragment : Fragment() {
             imagesFrag = this@ImagesFragment
             recyclerView.adapter = adapter
         }
-        sharedViewModel.imagesByFolder(singletonFolderModel.folderPath).observe(viewLifecycleOwner) {
-            if (!it.isNullOrEmpty()) {
-                adapter.submitList(it)
+        sharedViewModel.imagesByFolder(singletonFolderModel.folderPath)
+            .observe(viewLifecycleOwner) {
+                if (!it.isNullOrEmpty()) {
+                    adapter.submitList(it)
+                }
             }
-        }
-
-
     }
 
     fun back() {
@@ -59,9 +58,7 @@ class ImagesFragment : Fragment() {
     }
 
     private fun onItemClick(fileModel: FileModel, int: Int) {
-        val bundle = Bundle().apply {
-              playingFileModel = fileModel
-          }
+        Bundle().apply { playingFileModel = fileModel }
 
         findNavController().navigate(R.id.action_imagesFragment_to_viewImagesFragment)
         requireContext().toastLong(singletonFolderModel.filePath)

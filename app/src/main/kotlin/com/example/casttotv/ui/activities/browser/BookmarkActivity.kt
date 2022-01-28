@@ -9,7 +9,6 @@ import com.example.casttotv.database.entities.BookmarkEntity
 import com.example.casttotv.databinding.ActivityBookmarkBinding
 import com.example.casttotv.interfaces.OptionMenuListener
 import com.example.casttotv.ui.activities.BaseActivity
-import com.example.casttotv.ui.activities.browser.frags.BrowserHomeFragment
 import com.example.casttotv.utils.MySingleton.historyBookFavClose
 import com.example.casttotv.viewmodel.BrowserViewModel
 
@@ -22,7 +21,7 @@ class BookmarkActivity : BaseActivity(), OptionMenuListener {
         BrowserViewModel.BrowserViewModelFactory(this)
 
     }
-    val browHome = BrowserHomeFragment()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _binding = ActivityBookmarkBinding.inflate(layoutInflater)
@@ -68,6 +67,4 @@ class BookmarkActivity : BaseActivity(), OptionMenuListener {
             }
         }
     }
-
-
 }

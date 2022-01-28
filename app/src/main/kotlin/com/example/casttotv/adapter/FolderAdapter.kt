@@ -21,14 +21,11 @@ class FolderAdapter(
 
     companion object {
         val DIF_UTIL = object : DiffUtil.ItemCallback<FolderModel>() {
-            override fun areItemsTheSame(oldItem: FolderModel, newItem: FolderModel): Boolean {
-                return oldItem.folderPath == newItem.folderPath
-            }
+            override fun areItemsTheSame(oldItem: FolderModel, newItem: FolderModel) =
+                oldItem.folderPath == newItem.folderPath
 
-            override fun areContentsTheSame(oldItem: FolderModel, newItem: FolderModel): Boolean {
-                return oldItem == newItem
-            }
-
+            override fun areContentsTheSame(oldItem: FolderModel, newItem: FolderModel) =
+                oldItem == newItem
         }
     }
 
@@ -37,11 +34,9 @@ class FolderAdapter(
 
             when (mimType) {
                 VIDEO -> {
-//                    binding.imageViewPlay.visibility = View.VISIBLE
                     Glide.with(context).load(folderModel.filePath).into(binding.imageView)
                 }
                 IMAGE -> {
-//                    binding.imageViewPlay.visibility = View.GONE
                     Glide.with(context).load(folderModel.filePath).into(binding.imageView)
                 }
                 else -> {
@@ -60,10 +55,8 @@ class FolderAdapter(
         viewHolder.itemView.setOnClickListener {
             onItemClicked(getItem(viewHolder.absoluteAdapterPosition))
         }
-
         return viewHolder
     }
-
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(context, getItem(holder.absoluteAdapterPosition), mimType)

@@ -39,10 +39,10 @@ import kotlinx.coroutines.launch
 
 class MainActivity : BaseActivity() {
     private lateinit var binding: ActivityMainBinding
-    lateinit var controller: NavController
-    lateinit var navHostFragment: NavHostFragment
+    private lateinit var controller: NavController
+    private lateinit var navHostFragment: NavHostFragment
     private val viewModel: MainViewModel by viewModels()
-    private val browserVM: BrowserViewModel by viewModels {
+    val browserVM: BrowserViewModel by viewModels {
         BrowserViewModel.BrowserViewModelFactory(this)
     }
     private val sharedVm: SharedViewModel by viewModels {
@@ -66,9 +66,7 @@ class MainActivity : BaseActivity() {
             }
             layoutExitButton.textViewExit.setOnClickListener { finish() }
             refreshAd2(layoutExitAd.flAdplaceholder, ::close)
-            clBottomSheet.setOnClickListener {
-                it.visibility = View.GONE
-            }
+            clBottomSheet.setOnClickListener { it.visibility = View.GONE }
         }
     }
 
@@ -82,10 +80,7 @@ class MainActivity : BaseActivity() {
 
     private var networkCallbackWiFi = object : ConnectivityManager.NetworkCallback() {
         override fun onLost(network: Network) {
-            CoroutineScope(Dispatchers.Main).launch {
-                sharedVm.wifiCon(false)
-            }
-
+            CoroutineScope(Dispatchers.Main).launch { sharedVm.wifiCon(false) }
         }
 
         override fun onAvailable(network: Network) {
@@ -95,7 +90,6 @@ class MainActivity : BaseActivity() {
             }
         }
     }
-
 
     override fun onResume() {
         super.onResume()
@@ -107,7 +101,6 @@ class MainActivity : BaseActivity() {
             .addTransportType(NetworkCapabilities.TRANSPORT_WIFI)
             .build()
         connection!!.registerNetworkCallback(networkRequestWiFi, networkCallbackWiFi)
-
     }
 
     private fun showPermissionDialog() {
@@ -129,17 +122,13 @@ class MainActivity : BaseActivity() {
         return if (SDK_INT >= Build.VERSION_CODES.R) {
             Environment.isExternalStorageManager()
         } else {
-            val read = ContextCompat.checkSelfPermission(
-                this, permission.READ_EXTERNAL_STORAGE
-            )
+            val read = ContextCompat.checkSelfPermission(this, permission.READ_EXTERNAL_STORAGE)
             read == PackageManager.PERMISSION_GRANTED
         }
-
     }
 
-
     fun print() {
-        if (browserVM.webViewVisisble()) {
+        if (browserVM.webViewVisible()) {
             val printManager =
                 originalContext?.getSystemService(Context.PRINT_SERVICE) as PrintManager
             val printAdapter: PrintDocumentAdapter? =
@@ -163,19 +152,17 @@ class MainActivity : BaseActivity() {
     private val FragmentManager.currentNavigationFragment: Fragment?
         get() = primaryNavigationFragment?.childFragmentManager?.fragments?.first()
 
-
     override fun onBackPressed() {
         val currentFragment = supportFragmentManager.currentNavigationFragment
         when {
             (currentFragment is BrowserContainerFragment) -> {
-                if (browserVM.canGoBack() || !browserVM.showBroswerHome.value!! ||
+                if (browserVM.canGoBack() || !browserVM.showBrowserHome.value!! ||
                     browserVM.tabFragmentIsShowing()
                 ) {
                     browserVM.mainBackPress(true)
                 } else {
                     browserVM.exitDialog(this)
                 }
-
             }
             viewModel.languageDialogIsShowing() -> {
                 viewModel.cancelLanguageDialog()
@@ -188,10 +175,8 @@ class MainActivity : BaseActivity() {
                 }
                 if (Internet(this).isInternetAvailable()) {
                     binding.layoutExitAd.clAd.visibility = View.VISIBLE
-//                    binding.layoutExitForYou.clForYou.visibility = View.VISIBLE
                 } else {
                     binding.layoutExitAd.clAd.visibility = View.GONE
-//                    binding.layoutExitForYou.clForYou.visibility = View.GONE
                 }
             }
             else -> super.onBackPressed()
@@ -203,6 +188,5 @@ class MainActivity : BaseActivity() {
         if (connection != null) {
             connection!!.unregisterNetworkCallback(networkCallbackWiFi)
         }
-
     }
 }

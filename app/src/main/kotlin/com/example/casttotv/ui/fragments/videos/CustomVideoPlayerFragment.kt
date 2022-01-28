@@ -5,7 +5,9 @@ import android.media.PlaybackParams
 import android.os.Build
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.view.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.SeekBar
 import android.widget.VideoView
 import androidx.core.view.isVisible
@@ -20,10 +22,11 @@ import com.example.casttotv.utils.MySingleton.enablingWiFiDisplay
 import com.example.casttotv.utils.MySingleton.toastLong
 import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.viewmodel.SharedViewModel
-import kotlinx.coroutines.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.launch
 import java.util.*
-import kotlin.collections.ArrayList
 import kotlin.math.roundToInt
 
 
@@ -98,17 +101,15 @@ class CustomVideoPlayerFragment : Fragment() {
                 }
             }
         }
-        sharedViewModel.mTimeLeftInMillis.observe(viewLifecycleOwner, {
-            mTimeLeftInMillis = it
-        })
-        sharedViewModel.playingVideoCurrentPos.observe(viewLifecycleOwner, {
+        sharedViewModel.mTimeLeftInMillis.observe(viewLifecycleOwner) { mTimeLeftInMillis = it }
+        sharedViewModel.playingVideoCurrentPos.observe(viewLifecycleOwner) {
             playingVideoCurrentPos = it
-        })
-        sharedViewModel.playingVideoCurrentPosBeforeDestroy.observe(viewLifecycleOwner, {
+        }
+        sharedViewModel.playingVideoCurrentPosBeforeDestroy.observe(viewLifecycleOwner) {
             playingVideoCurrentPosBeforeDestroy = it
-        })
+        }
 
-        sharedViewModel.speed.observe(viewLifecycleOwner, {
+        sharedViewModel.speed.observe(viewLifecycleOwner) {
             videoSpeed = it
             sharedViewModel.setPlayingVideoCurrentPos(videoPlayer.currentPosition)
             videoPlayer.setOnPreparedListener { mp ->
@@ -117,7 +118,7 @@ class CustomVideoPlayerFragment : Fragment() {
                 }
             }
             playVideo(playingFileModel)
-        })
+        }
     }
 
 
@@ -133,11 +134,8 @@ class CustomVideoPlayerFragment : Fragment() {
                 binding.imageviewPlayPauseMain.setImageResource(R.drawable.ic_play_circle)
                 sharedViewModel.setPlayingVideoCurrentPos(0)
             }
-
         }
-
         initSeekbar()
-
     }
 
     fun lock() {
@@ -149,7 +147,6 @@ class CustomVideoPlayerFragment : Fragment() {
             binding.imageviewLock2.visibility = View.VISIBLE
             binding.clLockCrop?.visibility = View.GONE
             locked = true
-
         } else {
             binding.clSeekbar.visibility = View.VISIBLE
             binding.clBellowControls.visibility = View.VISIBLE
@@ -178,7 +175,6 @@ class CustomVideoPlayerFragment : Fragment() {
             pauseTimer()
             startTimer()
         }
-
     }
 
     fun resize() {
@@ -186,8 +182,6 @@ class CustomVideoPlayerFragment : Fragment() {
         // so it fits on the screen
         val screenWidth = binding.llcVideoView.width
 
-//        val videoProportion = getVideoProportion()
-//        val screenProportion = screenHeight.toFloat() / screenWidth.toFloat()
         val lp: ViewGroup.LayoutParams = binding.llcVideoView.layoutParams
 
         when (cropState) {
@@ -225,7 +219,6 @@ class CustomVideoPlayerFragment : Fragment() {
                 cropState = 0
             }
         }
-
         binding.llcVideoView.layoutParams = lp
     }
 
@@ -240,9 +233,7 @@ class CustomVideoPlayerFragment : Fragment() {
                 binding.seekbar.progress = videoPlayer.currentPosition / 1000
             }
 
-            override fun onFinish() {
-
-            }
+            override fun onFinish() {}
         }.start()
     }
 
@@ -254,7 +245,6 @@ class CustomVideoPlayerFragment : Fragment() {
         pauseTimer()
         mCountDownTimer!!.start()
     }
-
 
     private fun resetTimer() {
         sharedViewModel.setTimeLeftInMillis(mStartTimeInMillis)
@@ -283,7 +273,6 @@ class CustomVideoPlayerFragment : Fragment() {
         } else {
             String.format(Locale.getDefault(), "%02d:%02d", minutesEnd, secondsEnd)
         }
-
         binding.mTextviewEndTime.text = timeNextFormatted
         binding.mTextviewStartTime.text = timeLeftFormatted
     }
@@ -301,7 +290,6 @@ class CustomVideoPlayerFragment : Fragment() {
             binding.imageViewRepeat.setImageResource(R.drawable.ic_repeat_one)
         }
         repeat = !repeat
-
     }
 
     fun showSpeedMenu() {
@@ -318,7 +306,6 @@ class CustomVideoPlayerFragment : Fragment() {
                 videoSpeed += 10
                 videoPlayer.pause()
                 sharedViewModel.adjustPlayerSpeed(videoSpeed)
-
             }
         } else {
             if (videoSpeed > 10) {
@@ -328,7 +315,6 @@ class CustomVideoPlayerFragment : Fragment() {
             }
         }
         sharedViewModel.playingVideoCurrentPosBeforeDestroy(videoPlayer.currentPosition)
-
     }
 
     private fun initSeekbar() {
@@ -343,23 +329,17 @@ class CustomVideoPlayerFragment : Fragment() {
                     mTimeNextInMillis = (videoPlayer.currentPosition / 1000).toDouble()
                     updateCountDownText()
                 }
-
             }
 
-            override fun onStartTrackingTouch(p0: SeekBar?) {
-            }
+            override fun onStartTrackingTouch(p0: SeekBar?) {}
 
             override fun onStopTrackingTouch(p0: SeekBar?) {
                 videoPlayer.seekTo(p0!!.progress.times(1000))
-
             }
-
         })
     }
 
-
     fun playPauseVideo() {
-
         binding.clSpeed.visibility = View.GONE
         if (!locked) {
             if (videoPlayer.isPlaying) {
@@ -373,11 +353,9 @@ class CustomVideoPlayerFragment : Fragment() {
                 videoPlayer.start()
                 restartTimer()
                 binding.imageViewPlayPause.setImageResource(R.drawable.ic_pause
-                )/*pause*/
+                )
             }
-
         }
-
     }
 
     private fun pauseVideo() {
@@ -391,7 +369,6 @@ class CustomVideoPlayerFragment : Fragment() {
             sharedViewModel.playingVideoCurrentPosBeforeDestroy(videoPlayer.currentPosition)
         }
     }
-
 
     fun playNextVideo() {
         if (videosModelList.size == videosModelList.indexOf(playingFileModel).plus(1)) {
@@ -420,17 +397,13 @@ class CustomVideoPlayerFragment : Fragment() {
         videoPlayer.setVideoPath(model.filePath)
         videoPlayer.start()
         videoPlayer.seekTo(playingVideoCurrentPosBeforeDestroy)
-//        val eq = Equalizer(0, videoPlayer.audioSessionId)
-
     }
-
 
     private fun getNextModel() =
         videosModelList[videosModelList.indexOf(playingFileModel).plus(1)]
 
     private fun getPreviousModel() =
         videosModelList[videosModelList.indexOf(playingFileModel).minus(1)]
-
 
     fun back() {
         findNavController().navigate(R.id.action_customVideoPlayerFragment_to_videosFragment)
@@ -451,7 +424,6 @@ class CustomVideoPlayerFragment : Fragment() {
         } else {
             binding.imageViewRotate.visibility = View.VISIBLE
         }
-
     }
 
     override fun onPause() {
@@ -463,6 +435,4 @@ class CustomVideoPlayerFragment : Fragment() {
         super.onDestroy()
         sharedViewModel.adjustPlayerSpeed(100)
     }
-
-
 }

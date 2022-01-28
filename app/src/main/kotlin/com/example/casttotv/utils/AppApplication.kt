@@ -24,5 +24,4 @@ class AppApplication : Application() {
         setAppLocale(localeLanguage)
     }
 
-
 }

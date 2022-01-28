@@ -1,7 +1,6 @@
 package com.example.casttotv.adapter
 
 import android.content.Context
-import android.content.ContextWrapper
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.annotation.ColorInt
@@ -15,11 +14,11 @@ import com.example.casttotv.dataclasses.Lang
 import com.example.casttotv.interfaces.MyCallBack
 import com.example.casttotv.utils.LOCALE_LANGUAGE
 import com.example.casttotv.utils.MySingleton.resolveColorAttr
- import com.example.casttotv.utils.Pref.getPrefs
+import com.example.casttotv.utils.Pref.getPrefs
 import com.example.casttotv.utils.Pref.putPrefs
 
 class LanguagesAdapter(
-    private var context: Context, val myCallBack: MyCallBack,
+    private var context: Context, private val myCallBack: MyCallBack,
 ) : ListAdapter<Lang, LanguagesAdapter.Holder>(DIF_UTIL) {
 
     companion object {
@@ -44,7 +43,6 @@ class LanguagesAdapter(
         fun bind(lang: Lang, context: Context) {
             binding.textview.text = lang.name
             binding.checkbox.isChecked = context.getPrefs(LOCALE_LANGUAGE, "en") == lang.code
-
 
             if (context.getPrefs(LOCALE_LANGUAGE, "en") == lang.code) {
                 binding.textview.setTextColor(ContextCompat.getColor(context,
@@ -75,16 +73,13 @@ class LanguagesAdapter(
         return holder
     }
 
-
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(getItem(holder.absoluteAdapterPosition), context)
         holder.click(::click, getItem(holder.absoluteAdapterPosition), context)
-
     }
 
     private fun click(lang: Lang) {
         myCallBack.callback()
         context.putPrefs(LOCALE_LANGUAGE, lang.code)
     }
-
 }

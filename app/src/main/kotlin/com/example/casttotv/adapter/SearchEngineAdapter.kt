@@ -24,17 +24,12 @@ class SearchEngineAdapter(private var context: Context) :
             override fun areItemsTheSame(
                 oldItem: SearchEngine,
                 newItem: SearchEngine,
-            ): Boolean {
-                return oldItem.name == newItem.name
-            }
+            ) = oldItem.name == newItem.name
 
             override fun areContentsTheSame(
                 oldItem: SearchEngine,
                 newItem: SearchEngine,
-            ): Boolean {
-                return oldItem == newItem
-            }
-
+            ) = oldItem == newItem
         }
     }
 
@@ -43,9 +38,6 @@ class SearchEngineAdapter(private var context: Context) :
             binding.textview.text = searchEngine.name
             binding.checkbox.isChecked =
                 context.getPrefs(SELECTED_ENGINE, "google") == searchEngine.name.lowercase()
-
-
-
             if (context.getPrefs(SELECTED_ENGINE, "google") == searchEngine.name.lowercase()) {
                 binding.textview.setTextColor(ContextCompat.getColor(context,
                     R.color.cr_dodger_blue_light_2))
@@ -75,15 +67,12 @@ class SearchEngineAdapter(private var context: Context) :
         holder = Holder(
             LanguageItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         )
-
         return holder
     }
-
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(getItem(holder.absoluteAdapterPosition), context)
         holder.click(::click, getItem(holder.absoluteAdapterPosition), context)
-
     }
 
     private fun click(searchEngine: SearchEngine, holder: Holder) {
@@ -92,5 +81,4 @@ class SearchEngineAdapter(private var context: Context) :
         notifyDataSetChanged()
         context.getPrefs(SELECTED_ENGINE, "google")
     }
-
 }

@@ -18,7 +18,6 @@ class FavoritesActivity : BaseActivity(), OptionMenuListener {
 
     private val browserViewModel: BrowserViewModel by viewModels {
         BrowserViewModel.BrowserViewModelFactory(this)
-
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -67,6 +66,4 @@ class FavoritesActivity : BaseActivity(), OptionMenuListener {
             }
         }
     }
-
-
 }

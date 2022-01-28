@@ -25,17 +25,12 @@ class HistoryGroupsAdapter(
             override fun areItemsTheSame(
                 oldItem: HistoryEntity,
                 newItem: HistoryEntity,
-            ): Boolean {
-                return oldItem.id == newItem.id
-            }
+            ) = oldItem.id == newItem.id
 
             override fun areContentsTheSame(
                 oldItem: HistoryEntity,
                 newItem: HistoryEntity,
-            ): Boolean {
-                return oldItem == newItem
-            }
-
+            ) = oldItem == newItem
         }
     }
 
@@ -56,8 +51,6 @@ class HistoryGroupsAdapter(
                 .placeholder(R.drawable.ic_browser)
                 .into(binding.imageview)
 
-
-
             binding.viewMenuClick.setOnClickListener {
                 val popup = PopupMenu(context,
                     binding.appCompatImageView12,
@@ -73,14 +66,12 @@ class HistoryGroupsAdapter(
                     }
                     true
                 }
-
                 popup.show()
             }
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
-
         val hold = Holder(
             BookmarkItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         )
@@ -90,11 +81,9 @@ class HistoryGroupsAdapter(
         return hold
     }
 
-
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(context, getItem(holder.absoluteAdapterPosition), optionMenuListener)
         holder.removeAtPos(::removeAtPos)
-
     }
 
     private fun removeAtPos(pos: Int) {

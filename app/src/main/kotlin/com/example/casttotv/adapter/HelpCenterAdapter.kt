@@ -11,24 +11,19 @@ import com.example.casttotv.dataclasses.QuestionAnswer
 
 val visibilityList: MutableList<Pair<Int, Boolean>> = ArrayList()
 
-class HelpCenterAdapter: ListAdapter<QuestionAnswer, HelpCenterAdapter.Holder>(DIF_UTIL) {
+class HelpCenterAdapter : ListAdapter<QuestionAnswer, HelpCenterAdapter.Holder>(DIF_UTIL) {
 
     companion object {
         val DIF_UTIL = object : DiffUtil.ItemCallback<QuestionAnswer>() {
             override fun areItemsTheSame(
                 oldItem: QuestionAnswer,
                 newItem: QuestionAnswer,
-            ): Boolean {
-                return oldItem.question == newItem.question
-            }
+            ) = oldItem.question == newItem.question
 
             override fun areContentsTheSame(
                 oldItem: QuestionAnswer,
                 newItem: QuestionAnswer,
-            ): Boolean {
-                return oldItem == newItem
-            }
-
+            ) = oldItem == newItem
         }
     }
 
@@ -75,7 +70,6 @@ class HelpCenterAdapter: ListAdapter<QuestionAnswer, HelpCenterAdapter.Holder>(D
             HelpCenterItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         )
     }
-
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(getItem(holder.absoluteAdapterPosition))

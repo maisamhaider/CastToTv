@@ -29,14 +29,13 @@ import com.example.casttotv.viewmodel.MainViewModel
 
 
 class BrowserHomeFragment : Fragment() {
-    private lateinit var _binding: FragmentBrowserHomeBinding
-    private val binding get() = _binding
+    private var _binding: FragmentBrowserHomeBinding? = null
+    private val binding get() = _binding!!
 
     private val viewModel: BrowserViewModel by activityViewModels {
         BrowserViewModel.BrowserViewModelFactory(requireContext())
     }
     private val homeVM: MainViewModel by activityViewModels()
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -50,17 +49,17 @@ class BrowserHomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel.initWebViewContainer(binding.webViewContainer)
-
-        viewModel.showTabFragment.observe(viewLifecycleOwner, {
+        viewModel.reAddWebViewsToContainer()
+        viewModel.showTabFragment.observe(viewLifecycleOwner) {
             if (it) {
                 binding.includeTabs.clTabs.visibility = View.VISIBLE
                 loadTab()
             } else {
                 binding.includeTabs.clTabs.visibility = View.GONE
             }
-        })
+        }
 
-        viewModel.showBroswerHome.observe(viewLifecycleOwner) { show ->
+        viewModel.showBrowserHome.observe(viewLifecycleOwner) { show ->
             if (show) {
                 viewModel.setSearchText("")
                 binding.clHome.visibility = View.VISIBLE
@@ -70,13 +69,14 @@ class BrowserHomeFragment : Fragment() {
                 binding.clHome.visibility = View.GONE
                 binding.clWeb.visibility = View.VISIBLE
                 binding.webViewContainer.visibility = View.VISIBLE
-
-
             }
         }
         if (requireContext().getPrefs(FAVORITE_DEFAULT_SITE, "").isNotBlank()) {
             //if there is user default site load it on start of this fragment
-            viewModel.searchFromHistory(requireContext().getPrefs(FAVORITE_DEFAULT_SITE, ""))
+            if (viewModel.checkDefaultSite.value!!) {
+                viewModel.searchFromHistory(requireContext().getPrefs(FAVORITE_DEFAULT_SITE, ""))
+            }
+            viewModel.checkDefaultSite.value = false
         }
         loadHomeData()
 
@@ -87,14 +87,19 @@ class BrowserHomeFragment : Fragment() {
                         viewModel.clickTabLayout()
                     }
                     viewModel.canGoBack() -> {
-                        viewModel.back()
+                        if (viewModel.showBrowserHome.value!!) {
+                            viewModel.closeDialog(viewModel._currentTabIndex.value!!)
+                        } else {
+                            viewModel.back()
+                        }
                     }
-                    !viewModel.showBroswerHome.value!! -> {
-                        viewModel.closTabDialog(viewModel._currentTabIndex)
+                    !viewModel.showBrowserHome.value!! -> {
+                        viewModel.closeDialog(viewModel._currentTabIndex.value!!)
                     }
                 }
             }
         }
+
         viewModel.webView.observe(viewLifecycleOwner) {
             if (requireContext().getPrefs(BEHAVIOR_UI_HIDE_TOOLBAR, false)) {
                 it?.setOnScrollChangedCallback(object : ObservableWebView.OnScrollChangedCallback {
@@ -102,7 +107,6 @@ class BrowserHomeFragment : Fragment() {
                         if (t == 0) {
                             //Do stuff
                             binding.clSearchInput2Header.visibility = View.VISIBLE
-                            //Do stuff
                         } else if (t > 20) {
                             binding.clSearchInput2Header.visibility = View.GONE
                         }
@@ -110,7 +114,6 @@ class BrowserHomeFragment : Fragment() {
                 })
             }
         }
-
     }
 
     fun settings() {
@@ -118,7 +121,6 @@ class BrowserHomeFragment : Fragment() {
     }
 
     private fun isSearchValid() = viewModel.isSearchValid(binding.mInputEdittext.text.toString())
-
 
     fun back() = viewModel.back()
     override fun onResume() {
@@ -183,12 +185,12 @@ class BrowserHomeFragment : Fragment() {
     private fun loadHomeData() {
         val adapter = HomeAdapter(::onClick, requireContext())
         binding.recyclerView.adapter = adapter
-        viewModel.getHome().observe(viewLifecycleOwner, {
+        viewModel.getHome().observe(viewLifecycleOwner) {
             val list: MutableList<HomeEntity> = ArrayList()
             list.addAll(it)
             list.add(HomeEntity(-1, getString(R.string.add_shortcut), "", ""))
             adapter.submitList(list)
-        })
+        }
 
         if (activity is MainActivity) {
             ((activity) as MainActivity).refreshAdBrowser(binding.addContainer)
@@ -199,22 +201,18 @@ class BrowserHomeFragment : Fragment() {
     private fun loadTab() {
         val adapter = TabsAdapter(::onTabClicked, viewModel, requireContext())
         binding.includeTabs.recyclerView.adapter = adapter
-
-        viewModel.liveTabs.observe(viewLifecycleOwner, {
+        viewModel.liveTabs.observe(viewLifecycleOwner) {
             it?.let {
                 adapter.submitList(it)
                 adapter.notifyDataSetChanged()
             }
-        })
-
+        }
     }
-
 
     private fun onTabClicked(tab: Int) {
         viewModel.switchToTab(tab)
         viewModel.clickTabLayout()
     }
-
 
     private fun displaySpeechRecognizer() {
         val sRIntent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
@@ -232,7 +230,6 @@ class BrowserHomeFragment : Fragment() {
     ) { result: ActivityResult ->
         if (result.resultCode == AppCompatActivity.RESULT_OK) {
             if (result.data != null) {
-
                 result.data!!.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS)
                     .let { results ->
                         results!![0]
@@ -240,9 +237,7 @@ class BrowserHomeFragment : Fragment() {
                         viewModel.setSearchText(query)
                         viewModel.search(query)
                     }
-
             }
-
         }
     }
 
@@ -258,11 +253,5 @@ class BrowserHomeFragment : Fragment() {
                 viewModel.search(homeEntity.link)
             }
         }
-
-
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
     }
 }

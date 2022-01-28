@@ -4,7 +4,6 @@ import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
-import android.content.res.Configuration
 import android.util.TypedValue
 import android.widget.Toast
 import androidx.annotation.AttrRes
@@ -12,6 +11,7 @@ import androidx.annotation.ColorInt
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
+import androidx.lifecycle.MutableLiveData
 import com.example.casttotv.BuildConfig
 import com.example.casttotv.dataclasses.FileModel
 import com.example.casttotv.dataclasses.FolderModel
@@ -20,12 +20,6 @@ import com.example.casttotv.dataclasses.Tabs
 import com.example.casttotv.utils.Pref.getPrefs
 import java.io.File
 import java.util.*
-import kotlin.collections.ArrayList
-import android.content.ContextWrapper
-
-
-
-
 
 var folder_path = ""
 const val default = "default"
@@ -42,37 +36,11 @@ const val LOCATION_PERMISSION_REQUEST_CODE = 1000
 const val LATITUDE = "LATITUDE"
 const val LONGITUDE = "LONGITUDE"
 
-const val WHITE_LIST_TYPE = "WHITE_LIST_TYPE"
-const val WHITE_LIST_ADBLOCK = "WHITE_LIST_ADBLOCK"
-const val WHITE_LIST_JAVASCRIPT = "WHITE_LIST_JAVASCRIPT"
-const val WHITE_LIST_COOKIES = "WHITE_LIST_COOKIES"
-
-const val BAIDU_ENGINE_URL = "https://www.baidu.com/s?wd="
-const val BING_ENGINE_URL = "https://www.bing.com/search?q="
-const val DUCKDUCKGO_ENGINE_URL = "https://duckduckgo.com/?q="
-const val GOOGLE_ENGINE_URL = "https://www.google.com/search?q="
-const val SEARX_ENGINE_URL = "https://searx.github.io/searx/search.html?q="
-const val QWANT_ENGINE_URL = "https://www.qwant.com/?q="
-const val ECOSIA_ENGINE_URL = "https://www.ecosia.org/search?q="
 
 object MySingleton {
 
     var historyBookFavClose = ""
-    var LANGUAGE_DIALOG_SHOWING = false
     var localeLanguage = "en"
-    var tabs: MutableList<Tabs> = ArrayList()
-
-//    fun Context.themeDark(): Boolean = getPrefs(THEME_DARK, false)
-
-    fun Context.themeDark(): Boolean {
-        return when (resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) {
-            Configuration.UI_MODE_NIGHT_NO -> false
-            Configuration.UI_MODE_NIGHT_YES -> true
-            else -> false
-
-        }
-    }
-
 
     fun Context.changeTheme() {
         val dark = getPrefs(THEME_DARK, false)
@@ -101,9 +69,7 @@ object MySingleton {
             File(image)
         )
         share.putExtra(Intent.EXTRA_STREAM, photoURI)
-
         startActivity(Intent.createChooser(share, "share with"))
-
     }
 
     fun Context.funCopy(text: String) {
@@ -111,7 +77,6 @@ object MySingleton {
         val clipData: ClipData = ClipData.newPlainText("", text)
         clipboardManager.setPrimaryClip(clipData)
     }
-
 
     fun <T> Context.toastLong(messages: T) {
         Toast.makeText(this, messages.toString(), Toast.LENGTH_LONG).show()
@@ -149,12 +114,11 @@ object MySingleton {
         return ContextCompat.getColor(this, colorRes)
     }
 
-    fun Context.resolveThemeAttr(@AttrRes attrRes: Int): TypedValue {
+    private fun Context.resolveThemeAttr(@AttrRes attrRes: Int): TypedValue {
         val typedValue = TypedValue()
         theme.resolveAttribute(attrRes, typedValue, true)
         return typedValue
     }
-
 
     val LANGUAGES: List<Lang> = listOf(
         (Lang("af", "Afrikaans")),

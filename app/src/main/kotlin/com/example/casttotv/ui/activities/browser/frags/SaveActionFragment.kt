@@ -17,7 +17,6 @@ class SaveActionFragment : BottomSheetDialogFragment() {
     lateinit var _binding: FragmentSaveActionBinding
     private val binding get() = _binding
 
-
     private val viewModel: BrowserViewModel by activityViewModels {
         BrowserViewModel.BrowserViewModelFactory(requireActivity())
     }
@@ -35,7 +34,7 @@ class SaveActionFragment : BottomSheetDialogFragment() {
         _binding = FragmentSaveActionBinding.inflate(inflater, container, false)
         return binding.root
     }
-    
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
@@ -56,6 +55,4 @@ class SaveActionFragment : BottomSheetDialogFragment() {
             }
         }
     }
-
-
 }

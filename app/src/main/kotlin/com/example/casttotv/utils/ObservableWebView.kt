@@ -3,13 +3,13 @@ package com.example.casttotv.utils
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Canvas
+import android.os.Build
 import android.util.AttributeSet
 import android.view.View
 import android.webkit.CookieManager
 import android.webkit.WebView
-import com.example.casttotv.R
+import android.webkit.WebViewClient
 import com.example.casttotv.utils.Pref.getPrefs
-
 
 class ObservableWebView : WebView {
     private var onScrollChangedCallback: OnScrollChangedCallback? = null
@@ -19,7 +19,7 @@ class ObservableWebView : WebView {
     constructor(context: Context?, attrs: AttributeSet?) : super(
         context!!, attrs)
 
-    constructor(context: Context?, attrs: AttributeSet?, defStyle: Int) : super(
+     constructor(context: Context?, attrs: AttributeSet, defStyle: Int) : super(
         context!!, attrs, defStyle)
 
     init {
@@ -38,7 +38,7 @@ class ObservableWebView : WebView {
         this.onScrollChangedCallback = onScrollChangedCallback
     }
 
-    fun initValue() {
+    private fun initValue() {
         webViewClient = MyBrowser()
         settings.javaScriptEnabled = context.getPrefs(START_CONTROL_JAVASCRIPT, true)
         settings.loadsImagesAutomatically = context.getPrefs(START_CONTROL_IMAGE, true)
@@ -60,35 +60,34 @@ class ObservableWebView : WebView {
         fun onScroll(l: Int, t: Int, oldl: Int, oldt: Int)
     }
 
-    fun bitmap(): Bitmap {
-        val dimen144dp: Int =
-            context.resources.getDimensionPixelSize(R.dimen.layout_width_144dp)
-        val dimen108dp: Int =
-            context.resources.getDimensionPixelSize(R.dimen.layout_height_108dp)
+    fun bitmap(): Bitmap? {
+        val width = EasyViewUtils.dp2px(context, 200).toInt()
+        val height = EasyViewUtils.dp2px(context, 200).toInt()
 
-        val width: Float =
-            context.resources.getDimensionPixelSize(R.dimen.layout_width_144dp).toFloat()
-        val height: Float =
-            context.resources.getDimensionPixelSize(R.dimen.layout_height_108dp).toFloat()
-
-        setLayerType(View.LAYER_TYPE_HARDWARE, null)
-
-        val sBitmap = Bitmap.createBitmap(dimen144dp, dimen108dp, Bitmap.Config.RGB_565)
-
-        val sCanvas = Canvas(sBitmap)
-
-        val left: Int = this.left
-        val top: Int = this.top
-        val status = sCanvas.save()
-        sCanvas.translate(-left.toFloat(), -top.toFloat())
-
-        val scale: Float = width / this.width
-        val scale2: Float = height / this.height
-        sCanvas.scale(scale, scale, scale2, scale2)
-
-        this.draw(sCanvas)
-        sCanvas.restoreToCount(status)
-        return sBitmap
+        if (width > 0 && height > 0) {
+            val bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.RGB_565)
+            val canvas = Canvas(bitmap)
+            val left: Int = this.scrollX
+            val top: Int = this.scrollY
+            canvas.translate(-left.toFloat(), -top.toFloat())
+            val scaleX: Float = width.toFloat() / this.width
+            val scaleY: Float = height.toFloat() / this.height
+            canvas.scale(scaleX, scaleY, left.toFloat(), top.toFloat())
+            this.draw(canvas)
+            canvas.setBitmap(null)
+            return bitmap
+        }
+        return null
     }
 
+
+    class
+
+
+
+    MyBrowser : WebViewClient() {
+        override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
+            return true
+        }
+    }
 }

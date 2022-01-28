@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="FullScreenDialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowBackground">@drawable/full_screen_dialog_bg</item>
+    </style>
 
     <!--//-->
     <style name="w_0_h_0">

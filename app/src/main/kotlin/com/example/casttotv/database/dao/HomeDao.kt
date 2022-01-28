@@ -7,9 +7,6 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface HomeDao {
 
-    @Query("select * from home where id = :id")
-    fun getHome(id: Int): Flow<HomeEntity>
-
     @Query("select * from home")
     fun getHome(): Flow<List<HomeEntity>>
 
@@ -18,9 +15,6 @@ interface HomeDao {
 
     @Update
     fun update(homeEntity: HomeEntity)
-
-    @Query("delete from home")
-    fun delete()
 
     @Query("delete from home where id =:id")
     fun delete(id: Int)

@@ -29,7 +29,6 @@ class BrowserContainerFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentBrowserContainerBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -55,8 +54,6 @@ class BrowserContainerFragment : Fragment() {
                 if (viewModel.tabFragmentIsShowing()) {
                     viewModel.clickTabLayout()
                 }
-//                viewModel.cancelBottomSheet(requireActivity().supportFragmentManager,
-//                    SaveActionFragment())
             }
 
             viewDownloads.setOnClickListener {
@@ -72,18 +69,19 @@ class BrowserContainerFragment : Fragment() {
 
         }
         viewModel.liveTabs.observe(viewLifecycleOwner) {
-            it.size.let { size ->
-                if (size > 9) {
-                    binding.textviewTabsAmount.text = "*"
-                } else {
-                    binding.textviewTabsAmount.text = size.toString()
+            if (it != null) {
+                it.size.let { size ->
+                    if (size > 9) {
+                        binding.textviewTabsAmount.text = "*"
+                    } else {
+                        binding.textviewTabsAmount.text = size.toString()
+                    }
                 }
+            } else {
+                binding.textviewTabsAmount.text = "0"
             }
+
         }
-
-
-//        }
-
     }
 
     override fun onResume() {

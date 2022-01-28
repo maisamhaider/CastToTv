@@ -7,8 +7,6 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface BookmarkDao {
 
-    @Query("select * from bookmark where id = :id")
-    fun getBookmark(id: Int): Flow<BookmarkEntity>
 
     @Query("select * from bookmark")
     fun getBookmark(): Flow<List<BookmarkEntity>>
@@ -18,9 +16,6 @@ interface BookmarkDao {
 
     @Update
     fun update(bookmarkEntity: BookmarkEntity)
-
-    @Query("delete from bookmark")
-    fun delete()
 
     @Delete
     fun delete(bookmarkEntity: BookmarkEntity)

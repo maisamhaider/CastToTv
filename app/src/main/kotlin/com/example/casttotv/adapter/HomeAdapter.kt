@@ -19,14 +19,11 @@ class HomeAdapter(
     ListAdapter<HomeEntity, HomeAdapter.Holder>(DIF_UTIL) {
     companion object {
         val DIF_UTIL = object : DiffUtil.ItemCallback<HomeEntity>() {
-            override fun areItemsTheSame(oldItem: HomeEntity, newItem: HomeEntity): Boolean {
-                return oldItem.date == newItem.date
-            }
+            override fun areItemsTheSame(oldItem: HomeEntity, newItem: HomeEntity) =
+                oldItem.date == newItem.date
 
-            override fun areContentsTheSame(oldItem: HomeEntity, newItem: HomeEntity): Boolean {
-                return oldItem == newItem
-            }
-
+            override fun areContentsTheSame(oldItem: HomeEntity, newItem: HomeEntity) =
+                oldItem == newItem
         }
     }
 
@@ -57,13 +54,10 @@ class HomeAdapter(
             onItemClicked(getItem(viewHolder.absoluteAdapterPosition), true)
             true
         }
-
         return viewHolder
     }
-
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(context, getItem(holder.absoluteAdapterPosition))
     }
-
 }

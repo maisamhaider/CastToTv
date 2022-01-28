@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -16,7 +17,7 @@
             app:cardBackgroundColor="?attr/colorPrimary"
             app:cardCornerRadius="@dimen/dp_16"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintDimensionRatio="w,10:5"
+            app:layout_constraintDimensionRatio="w,10:3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -37,16 +38,6 @@
                     app:layout_constraintStart_toStartOf="@+id/guideline422"
                     app:layout_constraintTop_toTopOf="@+id/guideline418" />
 
-
-                <com.google.android.material.textview.MaterialTextView
-                    android:id="@+id/textview"
-                    style="@style/w_0_h_0"
-                    android:gravity="center|start"
-                    app:layout_constraintBottom_toTopOf="@+id/guideline427"
-                    app:layout_constraintEnd_toStartOf="@+id/guideline423"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="@+id/guideline422"
-                    app:layout_constraintTop_toTopOf="@+id/guideline424" />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/textview_cancel_click"
@@ -125,28 +116,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    app:layout_constraintGuide_percent="0.23" />
+                    app:layout_constraintGuide_percent="0.3" />
 
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline424"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_percent="0.35" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline427"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_percent="0.6" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guideline428"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    app:layout_constraintGuide_percent="0.78" />
+                    app:layout_constraintGuide_percent="0.72" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guideline447"
@@ -160,7 +138,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    app:layout_constraintGuide_percent="0.7" />
+                    app:layout_constraintGuide_percent="0.65" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guideline448"

@@ -3,8 +3,6 @@ package com.example.casttotv.database.entities
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import java.text.SimpleDateFormat
-import java.util.*
 
 @Entity(tableName = "favorites")
 data class FavoritesEntity(
@@ -16,8 +14,5 @@ data class FavoritesEntity(
     @ColumnInfo(name = "link")
     val link: String,
     @ColumnInfo(name = "date")
-    val date: String
+    val date: String,
 )
-
-fun FavoritesEntity.getDate(): String =
-    SimpleDateFormat("d mm, yyyy hh:mm a", Locale.getDefault()).format(date.toLong())

@@ -26,17 +26,12 @@ class FavoriteAdapter(
             override fun areItemsTheSame(
                 oldItem: FavoritesEntity,
                 newItem: FavoritesEntity,
-            ): Boolean {
-                return oldItem.date == newItem.date
-            }
+            ) = oldItem.date == newItem.date
 
             override fun areContentsTheSame(
                 oldItem: FavoritesEntity,
                 newItem: FavoritesEntity,
-            ): Boolean {
-                return oldItem == newItem
-            }
-
+            ) = oldItem == newItem
         }
     }
 
@@ -64,12 +59,9 @@ class FavoriteAdapter(
                     optionMenuListener.item(item.itemId, favoritesEntity)
                     true
                 }
-
                 popup.show()
             }
         }
-
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
@@ -79,7 +71,6 @@ class FavoriteAdapter(
         viewHolder.itemView.setOnClickListener {
             onItemClicked(getItem(viewHolder.absoluteAdapterPosition))
         }
-
         return viewHolder
     }
 

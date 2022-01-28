@@ -14,17 +14,12 @@ class HelpCenterChildAdapter : ListAdapter<String, HelpCenterChildAdapter.Holder
             override fun areItemsTheSame(
                 oldItem: String,
                 newItem: String,
-            ): Boolean {
-                return oldItem == newItem
-            }
+            ) = oldItem == newItem
 
             override fun areContentsTheSame(
                 oldItem: String,
                 newItem: String,
-            ): Boolean {
-                return oldItem == newItem
-            }
-
+            ) = oldItem == newItem
         }
     }
 
@@ -36,15 +31,12 @@ class HelpCenterChildAdapter : ListAdapter<String, HelpCenterChildAdapter.Holder
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
-
         return Holder(
             HelpItemChildItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         )
     }
 
-
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.bind(getItem(holder.absoluteAdapterPosition))
     }
-
 }
