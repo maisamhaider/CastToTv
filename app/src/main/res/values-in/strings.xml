@@ -260,5 +260,7 @@ data. Cookie pihak ketiga selalu dinonaktifkan.</string>
     <string name="date">Tanggal</string>
     <string name="no_site_loaded">Anda tidak memiliki situs web yang dimuat</string>
     <string name="more_then_5_images_can_not_be_picked">Lebih dari lima gambar tidak dapat diambil</string>
+    <string name="delete">Menghapus</string>
+    <string name="add">Menambahkan</string>
 
 </resources>

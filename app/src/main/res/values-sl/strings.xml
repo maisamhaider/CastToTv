@@ -259,4 +259,6 @@ podatkov. Piškotki tretjih oseb so vedno onemogočeni.</string>
     <string name="no_site_loaded">Nimate naloženega spletnega mesta</string>
     <string name="more_then_5_images_can_not_be_picked">Več kot pet slik ni mogoče izbrati</string>
     <string name="location">Location</string>
+    <string name="delete">Izbriši</string>
+    <string name="add">Dodaj</string>
 </resources>

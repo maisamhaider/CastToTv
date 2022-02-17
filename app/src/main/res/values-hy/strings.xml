@@ -260,4 +260,6 @@
     <string name="date">Ամսաթիվ</string>
     <string name="no_site_loaded">Դուք չունեք բեռնված կայք</string>
     <string name="more_then_5_images_can_not_be_picked">Հինգից ավելի պատկերներ չեն կարող ընտրվել</string>
+    <string name="delete">Ջնջել</string>
+    <string name="add">Ավելացնել</string>
 </resources>

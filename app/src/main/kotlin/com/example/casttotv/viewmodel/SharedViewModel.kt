@@ -63,7 +63,6 @@ class SharedViewModel(context: Context) : ViewModel() {
 
     fun selectImages(value: MutableList<FileModel>) {
         _selectedImages.value = value
-
     }
 
 

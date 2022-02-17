@@ -260,4 +260,6 @@ tiedot. Kolmannen osapuolen evästeet ovat aina poissa käytöstä.</string>
     <string name="date">Päivämäärä</string>
     <string name="no_site_loaded">Sinulla ei ole ladattua verkkosivustoa</string>
     <string name="more_then_5_images_can_not_be_picked">Yli viittä kuvaa ei voi valita</string>
+    <string name="delete">Poistaa</string>
+    <string name="add">Lisätä</string>
 </resources>

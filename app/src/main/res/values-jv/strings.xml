@@ -260,4 +260,6 @@ data. Cookie pihak katelu tansah dipateni.</string>
     <string name="date">Tanggal</string>
     <string name="no_site_loaded">Sampeyan ora duwe situs web sing dimuat</string>
     <string name="more_then_5_images_can_not_be_picked">Luwih saka limang gambar ora bisa dipilih</string>
+    <string name="delete">Mbusak</string>
+    <string name="add">Tambah</string>
 </resources>

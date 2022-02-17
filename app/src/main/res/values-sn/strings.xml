@@ -260,5 +260,7 @@ data. Wechitatu makuki anogara akavharwa.</string>
     <string name="no_site_loaded">Iwe hauna webhusaiti yakarodha</string>
     <string name="more_then_5_images_can_not_be_picked">Kupfuura mifananidzo mishanu haigone kutorwa</string>
     <string name="location">Location</string>
+    <string name="delete">Delete</string>
+    <string name="add">Wedzera</string>
 
 </resources>

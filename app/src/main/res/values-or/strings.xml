@@ -260,4 +260,6 @@
     <string name="no_site_loaded">ଆପଣ ୱେବସାଇଟ୍ ଲୋଡ୍ କରିନାହାଁନ୍ତି |</string>
     <string name="more_then_5_images_can_not_be_picked">ଅଧିକ ପାଞ୍ଚଟି ଚିତ୍ର ଉଠାଯାଇପାରିବ ନାହିଁ |</string>
     <string name="location">"ଅବସ୍ଥାନ "</string>
+    <string name="delete">ଡିଲିଟ୍ କରନ୍ତୁ |</string>
+    <string name="add">ଯୋଡନ୍ତୁ |</string>
 </resources>

@@ -260,5 +260,7 @@
     <string name="date">Күн</string>
     <string name="no_site_loaded">Сізде жүктелген веб-сайт жоқ</string>
     <string name="more_then_5_images_can_not_be_picked">Бестен астам суретті таңдау мүмкін емес</string>
+    <string name="delete">Жою</string>
+    <string name="add">қосу</string>
 
 </resources>

@@ -256,4 +256,6 @@
     <string name="no_site_loaded">Sizda yuklangan veb-sayt yo\'q</string>
     <string name="more_then_5_images_can_not_be_picked">Beshdan ortiq rasmni tanlab boʻlmaydi</string>
     <string name="location">Location</string>
+    <string name="delete">O\\ʻchirish</string>
+    <string name="add">Qo\\\'shish</string>
 </resources>

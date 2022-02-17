@@ -260,5 +260,7 @@ data. Ny cookies avy amin\'ny antoko fahatelo dia kilemaina foana.</string>
     <string name="no_site_loaded">Tsy manana tranokala feno entana ianao</string>
     <string name="more_then_5_images_can_not_be_picked">Tsy azo alaina ny sary mihoatra ny dimy</string>
     <string name="location">Toerana</string>
+    <string name="delete">Mamafa</string>
+    <string name="add">hametraka</string>
 
 </resources>

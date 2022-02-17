@@ -261,4 +261,6 @@
     <string name="date">તારીખ</string>
     <string name="no_site_loaded">તમે લોડ કરેલી વેબસાઇટ નથી</string>
     <string name="more_then_5_images_can_not_be_picked">પાંચથી વધુ છબીઓ પસંદ કરી શકાતી નથી</string>
+    <string name="delete">કાઢી નાખો</string>
+    <string name="add">ઉમેરો</string>
 </resources>

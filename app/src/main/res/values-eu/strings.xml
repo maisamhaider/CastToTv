@@ -260,4 +260,6 @@ datuak. Hirugarrenen cookieak beti desgaituta daude.</string>
     <string name="date">Data</string>
     <string name="no_site_loaded">Ez duzu webgunea kargatu</string>
     <string name="more_then_5_images_can_not_be_picked">Bost irudi baino gehiago ezin dira aukeratu</string>
+    <string name="delete">Ezabatu</string>
+    <string name="add">Gehitu</string>
 </resources>

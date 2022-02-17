@@ -260,5 +260,7 @@ idatha. Iikuki zomntu wesithathu zihlala zivaliwe.</string>
     <string name="no_site_loaded">Awunayo iwebhusayithi elayishiwe</string>
     <string name="more_then_5_images_can_not_be_picked">Ngaphezulu kwemifanekiso emihlanu ayinakuchongwa</string>
     <string name="location">Indawo</string>
+    <string name="delete">Cima</string>
+    <string name="add">Yongeza</string>
 </resources>
 

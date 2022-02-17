@@ -260,4 +260,6 @@
     <string name="date">Дата</string>
     <string name="no_site_loaded">У вас не загружаны вэб-сайт</string>
     <string name="more_then_5_images_can_not_be_picked">Больш за пяць малюнкаў нельга выбраць</string>
+    <string name="delete">Выдаліць</string>
+    <string name="add">Дадаць</string>
 </resources>

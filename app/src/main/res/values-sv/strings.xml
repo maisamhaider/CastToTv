@@ -22,7 +22,7 @@
     <!--    <string name="native_advanced_video">ca-app-pub-3940256099942544/1044960115</string>-->
 
 
-    <string name="app_name" translatable="false">Screen Mirroring</string>
+    <string name="app_name" translatable="false">Radera</string>
     <string name="version" translatable="false">Version: %s</string>
     <string name="_0" translatable="false">0</string>
     <string name="speed" translatable="false">%d</string>
@@ -260,5 +260,7 @@ data. Tredjepartscookies är alltid inaktiverade.</string>
     <string name="no_site_loaded">Du har inte laddad webbplats</string>
     <string name="more_then_5_images_can_not_be_picked">Fler än fem bilder kan inte väljas</string>
     <string name="location">Plats</string>
+    <string name="delete">Delete</string>
+    <string name="add">Lägg till</string>
 
 </resources>

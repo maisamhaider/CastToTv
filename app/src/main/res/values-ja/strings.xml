@@ -260,4 +260,6 @@
     <string name="date">日にち</string>
     <string name="no_site_loaded">あなたはウェブサイトをロードしていません</string>
     <string name="more_then_5_images_can_not_be_picked">5枚以上の画像は選択できません</string>
+    <string name="delete">消去</string>
+    <string name="add">追加</string>
 </resources>

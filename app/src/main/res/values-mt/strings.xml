@@ -260,4 +260,6 @@ data. Il-cookies ta’ partijiet terzi huma dejjem diżattivati.</string>
     <string name="no_site_loaded">M\'għandekx websajt mgħobbija</string>
     <string name="more_then_5_images_can_not_be_picked">Aktar minn ħames immaġini ma jistgħux jinġabru</string>
     <string name="location">Post</string>
+    <string name="delete">Ħassar</string>
+    <string name="add">Żid</string>
 </resources>

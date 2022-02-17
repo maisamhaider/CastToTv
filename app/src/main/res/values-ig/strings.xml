@@ -260,4 +260,6 @@ data. Kuki ndị ọzọ na-enwekwa nkwarụ mgbe niile.</string>
     <string name="date">Ụbọchị</string>
     <string name="no_site_loaded">Ị nweghị webụsaịtị ebujuru</string>
     <string name="more_then_5_images_can_not_be_picked">Enweghị ike ịse foto karịa karịa</string>
+    <string name="delete">Hichapụ</string>
+    <string name="add">Tinye</string>
 </resources>

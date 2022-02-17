@@ -260,5 +260,7 @@
     <string name="no_site_loaded">നിങ്ങൾക്ക് ലോഡ് ചെയ്ത വെബ്‌സൈറ്റ് ഇല്ല</string>
     <string name="more_then_5_images_can_not_be_picked">അഞ്ചിൽ കൂടുതൽ ചിത്രങ്ങൾ എടുക്കാൻ കഴിയില്ല</string>
     <string name="location">"സ്ഥാനം "</string>
+    <string name="delete">ഇല്ലാതാക്കുക</string>
+    <string name="add">ചേർക്കുക</string>
 
 </resources>

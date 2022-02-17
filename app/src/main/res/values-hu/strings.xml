@@ -260,4 +260,6 @@ adat. A harmadik féltől származó cookie-k mindig le vannak tiltva.</string>
     <string name="date">Dátum</string>
     <string name="no_site_loaded">Nincs betöltött webhelyed</string>
     <string name="more_then_5_images_can_not_be_picked">Ötnél több kép nem választható ki</string>
+    <string name="delete">Töröl</string>
+    <string name="add">Hozzáadás</string>
 </resources>

@@ -260,4 +260,6 @@
     <string name="no_site_loaded">ਤੁਹਾਡੇ ਕੋਲ ਲੋਡ ਕੀਤੀ ਵੈੱਬਸਾਈਟ ਨਹੀਂ ਹੈ</string>
     <string name="more_then_5_images_can_not_be_picked">ਪੰਜ ਤੋਂ ਵੱਧ ਚਿੱਤਰ ਨਹੀਂ ਲਏ ਜਾ ਸਕਦੇ</string>
     <string name="location">ਟਿਕਾਣਾ</string>
+    <string name="delete">ਮਿਟਾਓ</string>
+    <string name="add">ਸ਼ਾਮਲ ਕਰੋ</string>
 </resources>

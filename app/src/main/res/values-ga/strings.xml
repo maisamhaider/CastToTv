@@ -260,5 +260,7 @@ sonraí. Díchumasaítear fianáin tríú páirtí i gcónaí.</string>
     <string name="date">Dáta</string>
     <string name="no_site_loaded">Níl láithreán gréasáin luchtaithe agat</string>
     <string name="more_then_5_images_can_not_be_picked">Níos mó ná sin ní féidir cúig íomhá a phiocadh</string>
+    <string name="delete">Scrios</string>
+    <string name="add">Cuir</string>
 
 </resources>

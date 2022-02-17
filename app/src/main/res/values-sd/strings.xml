@@ -248,4 +248,6 @@
     <string name="no_site_loaded">توھان وٽ لوڊ ٿيل ويب سائيٽ نه آھي</string>
     <string name="more_then_5_images_can_not_be_picked">ان کان وڌيڪ پنجن تصويرن جي چونڊ نه ٿي سگھي</string>
     <string name="location">Location</string>
+    <string name="delete">حذف ڪريو</string>
+    <string name="add">شامل ڪريو</string>
 </resources>

@@ -261,4 +261,6 @@
     <string name="date">दिनांक</string>
     <string name="no_site_loaded">आपके पास लोडेड वेबसाइट नहीं है</string>
     <string name="more_then_5_images_can_not_be_picked">इससे अधिक पांच छवियों को नहीं चुना जा सकता</string>
+    <string name="delete">हटाएं</string>
+    <string name="add">जोड़ें</string>
 </resources>

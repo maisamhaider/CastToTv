@@ -260,5 +260,7 @@
     <string name="no_site_loaded">Немате вчитана веб-локација</string>
     <string name="more_then_5_images_can_not_be_picked">Повеќе од пет слики не можат да се изберат</string>
     <string name="location">Локација</string>
+    <string name="delete">Избриши</string>
+    <string name="add">Додадете</string>
 
 </resources>

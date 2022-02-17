@@ -260,5 +260,7 @@
     <string name="no_site_loaded">మీరు లోడ్ చేసిన వెబ్‌సైట్‌ను కలిగి లేరు</string>
     <string name="more_then_5_images_can_not_be_picked">ఐదు కంటే ఎక్కువ చిత్రాలను ఎంచుకోలేము</string>
     <string name="location">స్థానం</string>
+    <string name="delete">తొలగించు</string>
+    <string name="add">జోడించు</string>
 
 </resources>

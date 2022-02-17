@@ -261,4 +261,6 @@
     <string name="no_site_loaded">Сездә вебсайт юк</string>
     <string name="more_then_5_images_can_not_be_picked">Аннан соң биш рәсемне сайлап булмый</string>
     <string name="location">Урын</string>
+    <string name="delete">Бетерү</string>
+    <string name="add">Кушу</string>
 </resources>

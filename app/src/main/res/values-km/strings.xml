@@ -260,5 +260,7 @@
     <string name="date">កាលបរិច្ឆេទ</string>
     <string name="no_site_loaded">អ្នកមិនមានគេហទំព័រដែលបានផ្ទុកទេ។</string>
     <string name="more_then_5_images_can_not_be_picked">មិនអាចជ្រើសរើសរូបភាពជាងប្រាំទៀតបានទេ។</string>
+    <string name="delete">លុប</string>
+    <string name="add">បន្ថែម</string>
 
 </resources>

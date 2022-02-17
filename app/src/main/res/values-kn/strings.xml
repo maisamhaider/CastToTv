@@ -260,5 +260,7 @@
     <string name="date">ದಿನಾಂಕ</string>
     <string name="no_site_loaded">ನೀವು ಲೋಡ್ ಮಾಡಿದ ವೆಬ್‌ಸೈಟ್ ಅನ್ನು ಹೊಂದಿಲ್ಲ</string>
     <string name="more_then_5_images_can_not_be_picked">ಐದಕ್ಕಿಂತ ಹೆಚ್ಚು ಚಿತ್ರಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಲಾಗುವುದಿಲ್ಲ</string>
+    <string name="delete">ಅಳಿಸಿ</string>
+    <string name="add">ಸೇರಿಸಿ</string>
 
 </resources>

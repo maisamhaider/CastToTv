@@ -260,4 +260,6 @@ mohli by sa tiež použiť na zhromažďovanie osobných používateľov
     <string name="no_site_loaded">Nemáte načítanú webovú stránku</string>
     <string name="more_then_5_images_can_not_be_picked">Nie je možné vybrať viac ako päť obrázkov</string>
     <string name="location">Location</string>
+    <string name="delete">Odstrániť</string>
+    <string name="add">Pridať</string>
 </resources>

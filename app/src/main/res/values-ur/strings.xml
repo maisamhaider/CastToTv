@@ -260,6 +260,8 @@
     <string name="no_site_loaded">آپ کے پاس لوڈ کردہ ویب سائٹ نہیں ہے۔</string>
     <string name="more_then_5_images_can_not_be_picked">پانچ سے زیادہ تصاویر نہیں اٹھائی جا سکتیں۔</string>
     <string name="location">مقام</string>
+    <string name="delete">حذف کریں۔</string>
+    <string name="add">شامل کریں۔</string>
 
 </resources>
 

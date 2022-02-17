@@ -260,4 +260,6 @@ podaci. Kolačići treće strane uvijek su onemogućeni.</string>
     <string name="date">Datum</string>
     <string name="no_site_loaded">Nemate učitanu web stranicu</string>
     <string name="more_then_5_images_can_not_be_picked">Ne može se odabrati više od pet slika</string>
+    <string name="delete">Izbrisati</string>
+    <string name="add">Dodati</string>
 </resources>

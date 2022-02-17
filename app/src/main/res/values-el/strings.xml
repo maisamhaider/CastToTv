@@ -260,4 +260,6 @@
     <string name="date">Ημερομηνία</string>
     <string name="no_site_loaded">Δεν έχετε φορτώσει τον ιστότοπο</string>
     <string name="more_then_5_images_can_not_be_picked">Δεν μπορούν να επιλεγούν περισσότερες από πέντε εικόνες</string>
+    <string name="delete">Διαγράφω</string>
+    <string name="add">Προσθήκη</string>
 </resources>

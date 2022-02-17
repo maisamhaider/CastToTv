@@ -260,4 +260,6 @@
     <string name="date">Дата</string>
     <string name="no_site_loaded">Нямате зареден уебсайт</string>
     <string name="more_then_5_images_can_not_be_picked">Повече от пет изображения не могат да бъдат избрани</string>
+    <string name="delete">Изтрий</string>
+    <string name="add">Добавете</string>
 </resources>

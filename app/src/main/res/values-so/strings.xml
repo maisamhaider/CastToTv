@@ -260,4 +260,6 @@ xogta. Kukiyada kooxda saddexaad had iyo jeer waa naafo.</string>
     <string name="no_site_loaded">Ma aadan lahayn degel internet ah</string>
     <string name="more_then_5_images_can_not_be_picked">In ka badan shan sawir lama soo qaadi karo</string>
     <string name="location">Location</string>
+    <string name="delete">Tirtir</string>
+    <string name="add">Kudar</string>
 </resources>

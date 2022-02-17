@@ -261,4 +261,6 @@ dati. I cookies di terzu sò sempre disattivati.</string>
     <string name="date">Data</string>
     <string name="no_site_loaded">Ùn avete micca caricatu u situ web</string>
     <string name="more_then_5_images_can_not_be_picked">Più di cinque imagine ùn ponu esse scelte</string>
+    <string name="delete">Sguassà</string>
+    <string name="add">Add</string>
 </resources>

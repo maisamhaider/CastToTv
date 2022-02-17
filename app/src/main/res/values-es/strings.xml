@@ -260,4 +260,6 @@ datos. Las cookies de terceros siempre están deshabilitadas.</string>
     <string name="date">Fecha</string>
     <string name="no_site_loaded">No tienes web cargada</string>
     <string name="more_then_5_images_can_not_be_picked">No se pueden seleccionar más de cinco imágenes.</string>
+    <string name="delete">Borrar</string>
+    <string name="add">Agregar</string>
 </resources>

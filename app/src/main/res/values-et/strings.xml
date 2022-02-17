@@ -261,4 +261,6 @@ andmeid. Kolmanda osapoole küpsised on alati keelatud.</string>
     <string name="date">Kuupäev</string>
     <string name="no_site_loaded">Teil pole veebisaiti laaditud</string>
     <string name="more_then_5_images_can_not_be_picked">Rohkem kui viit pilti ei saa valida</string>
+    <string name="delete">Kustuta</string>
+    <string name="add">Lisama</string>
 </resources>

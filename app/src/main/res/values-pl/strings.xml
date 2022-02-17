@@ -260,5 +260,7 @@ dane. Pliki cookie stron trzecich są zawsze wyłączone.</string>
     <string name="no_site_loaded">Nie masz załadowanej strony internetowej</string>
     <string name="more_then_5_images_can_not_be_picked">Nie można wybrać więcej niż pięciu zdjęć</string>
     <string name="location">Lokalizacja</string>
+    <string name="delete">Kasować</string>
+    <string name="add">Dodać</string>
 
 </resources>

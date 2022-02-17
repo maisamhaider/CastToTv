@@ -260,4 +260,6 @@ data. Kuki pihak ketiga sentiasa dilumpuhkan.</string>
     <string name="no_site_loaded">Anda tidak mempunyai laman web yang dimuatkan</string>
     <string name="more_then_5_images_can_not_be_picked">Lebih daripada lima imej tidak boleh dipilih</string>
     <string name="location">Lokasi</string>
+    <string name="delete">Padam</string>
+    <string name="add">Tambah</string>
 </resources>

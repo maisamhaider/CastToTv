@@ -260,5 +260,7 @@
     <string name="no_site_loaded">คุณยังไม่ได้โหลดเว็บไซต์</string>
     <string name="more_then_5_images_can_not_be_picked">ไม่สามารถเลือกภาพได้มากกว่าห้าภาพ</string>
     <string name="location">ที่ตั้ง</string>
+    <string name="delete">ลบ</string>
+    <string name="add">เพิ่ม</string>
 
 </resources>

@@ -260,4 +260,6 @@ data. Tredjeparts informasjonskapsler er alltid deaktivert.</string>
     <string name="no_site_loaded">Du har ikke lastet nettside</string>
     <string name="more_then_5_images_can_not_be_picked">Mer enn fem bilder kan ikke velges</string>
     <string name="location">plassering</string>
+    <string name="delete">Slett</string>
+    <string name="add">Legg til</string>
 </resources>

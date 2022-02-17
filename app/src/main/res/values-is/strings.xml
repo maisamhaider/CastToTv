@@ -260,4 +260,6 @@ gögn. Vafrakökur frá þriðja aðila eru alltaf óvirkar.</string>
     <string name="date">Dagsetning</string>
     <string name="no_site_loaded">Þú ert ekki með hlaðna vefsíðu</string>
     <string name="more_then_5_images_can_not_be_picked">Ekki er hægt að velja fleiri en fimm myndir</string>
+    <string name="delete">Eyða</string>
+    <string name="add">Bæta við</string>
 </resources>

@@ -260,4 +260,6 @@
     <string name="no_site_loaded">သင့်တွင် တင်ထားသော ဝဘ်ဆိုက် မရှိပါ။</string>
     <string name="more_then_5_images_can_not_be_picked">ထို့ထက်ပို၍ ငါးပုံခူးမရပါ။</string>
     <string name="location">တည်နေရာ</string>
+    <string name="delete">" ဖျက်ပါ။"</string>
+    <string name="add">ထည့်ပါ။</string>
 </resources>

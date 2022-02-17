@@ -260,4 +260,6 @@
     <string name="no_site_loaded">Танд ачаалагдсан вэбсайт байхгүй байна</string>
     <string name="more_then_5_images_can_not_be_picked">Таваас дээш зургийг сонгох боломжгүй</string>
     <string name="location">Байршил</string>
+    <string name="delete">Устгах</string>
+    <string name="add">Нэмэх</string>
 </resources>

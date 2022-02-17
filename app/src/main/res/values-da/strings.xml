@@ -261,4 +261,6 @@ data. Tredjepartscookies er altid deaktiveret.</string>
     <string name="date">Dato</string>
     <string name="no_site_loaded">Du har ikke indlæst hjemmeside</string>
     <string name="more_then_5_images_can_not_be_picked">Mere end fem billeder kan ikke vælges</string>
+    <string name="delete">Slet</string>
+    <string name="add">Tilføje</string>
 </resources>

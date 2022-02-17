@@ -260,5 +260,7 @@ dados. Os cookies de terceiros estão sempre desabilitados.</string>
     <string name="no_site_loaded">Você não carregou o site</string>
     <string name="more_then_5_images_can_not_be_picked">Mais de cinco imagens não podem ser escolhidas</string>
     <string name="location">Localização</string>
+    <string name="delete">Excluir</string>
+    <string name="add">Adicionar</string>
 
 </resources>

@@ -260,5 +260,7 @@ date. Cookie-urile de la terți sunt întotdeauna dezactivate.</string>
     <string name="no_site_loaded">Nu ai încărcat site-ul web</string>
     <string name="more_then_5_images_can_not_be_picked">Mai mult de cinci imagini nu pot fi alese</string>
     <string name="location">"Locație "</string>
+    <string name="delete">Șterge</string>
+    <string name="add">Adăuga</string>
 
 </resources>

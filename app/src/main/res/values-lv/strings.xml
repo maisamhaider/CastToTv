@@ -260,4 +260,6 @@ datus. Trešās puses sīkfaili vienmēr ir atspējoti.</string>
     <string name="no_site_loaded">Jums nav ielādēta vietne</string>
     <string name="more_then_5_images_can_not_be_picked">Vairāk nekā piecus attēlus nevar izvēlēties</string>
     <string name="location">"Atrašanās vieta "</string>
+    <string name="delete">Dzēst</string>
+    <string name="add">Pievienot</string>
 </resources>

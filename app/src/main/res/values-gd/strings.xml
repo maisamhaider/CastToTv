@@ -260,4 +260,6 @@ dàta. Tha briosgaidean treas-phàrtaidh an-còmhnaidh à comas.</string>
     <string name="date">Ceann-latha</string>
     <string name="no_site_loaded">Chan eil làrach-lìn luchdaichte agad</string>
     <string name="more_then_5_images_can_not_be_picked">Barrachd air sin chan urrainnear còig dealbhan a thaghadh</string>
+    <string name="delete">Sguab às</string>
+    <string name="add">Cuir ris</string>
 </resources>

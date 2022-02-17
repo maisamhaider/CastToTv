@@ -260,5 +260,7 @@
     <string name="no_site_loaded">Шумо вебсайти пурбор надоред</string>
     <string name="more_then_5_images_can_not_be_picked">Зиёда аз панҷ тасвирро интихоб кардан мумкин нест</string>
     <string name="location">"Ҷойгиршавӣ "</string>
+    <string name="delete">Нобуд кунед</string>
+    <string name="add">Илова</string>
 
 </resources>

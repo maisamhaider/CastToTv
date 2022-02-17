@@ -256,4 +256,6 @@
     <string name="date">datum</string>
     <string name="no_site_loaded">Nemáte načtený web</string>
     <string name="more_then_5_images_can_not_be_picked">Více než pět obrázků nelze vybrat</string>
+    <string name="delete">Vymazat</string>
+    <string name="add">Přidat</string>
 </resources>

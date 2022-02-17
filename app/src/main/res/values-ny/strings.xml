@@ -260,4 +260,6 @@ deta. Ma cookie a chipani chachitatu amazimitsa nthawi zonse.</string>
     <string name="no_site_loaded">Mulibe tsamba lodzaza</string>
     <string name="more_then_5_images_can_not_be_picked">Zithunzi zochulukirapo kuposa zisanu sizitha kusankhidwa</string>
     <string name="location">"Malo "</string>
+    <string name="delete">"Chotsani "</string>
+    <string name="add">Onjezani</string>
 </resources>

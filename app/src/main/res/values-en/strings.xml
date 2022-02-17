@@ -260,4 +260,5 @@ data. Third party cookies are always disabled.</string>
     <string name="date">Date</string>
     <string name="no_site_loaded">You do not have loaded website</string>
     <string name="more_then_5_images_can_not_be_picked">More then five images can not be picked</string>
+    <string name="delete">Delete</string>
 </resources>

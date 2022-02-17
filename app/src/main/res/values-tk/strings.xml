@@ -260,5 +260,7 @@ maglumatlary. Üçünji tarap gutapjyklary elmydama ýapyk.</string>
     <string name="no_site_loaded">Web sahypa ýüklemediňiz</string>
     <string name="more_then_5_images_can_not_be_picked">Ondan soň bäş sany suraty saýlap bolmaz</string>
     <string name="location">"Locationerleşýän ýeri "</string>
+    <string name="delete">Öçür</string>
+    <string name="add">Goş</string>
 
 </resources>

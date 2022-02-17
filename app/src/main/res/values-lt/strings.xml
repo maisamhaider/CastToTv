@@ -260,4 +260,6 @@ duomenis. Trečiųjų šalių slapukai visada išjungti.</string>
     <string name="no_site_loaded">Neturite įkeltos svetainės</string>
     <string name="more_then_5_images_can_not_be_picked">Negalima pasirinkti daugiau nei penkių vaizdų</string>
     <string name="location">"Vieta "</string>
+    <string name="delete">Ištrinti</string>
+    <string name="add">Papildyti</string>
 </resources>

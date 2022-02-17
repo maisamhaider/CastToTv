@@ -260,4 +260,6 @@ cov ntaub ntawv. Cov ncuav qab zib thib peb yeej ib txwm ua tsis taus.</string>
     <string name="date">Hnub tim</string>
     <string name="no_site_loaded">Koj tsis muaj lub website loaded</string>
     <string name="more_then_5_images_can_not_be_picked">Ntau tshaj tsib daim duab tuaj yeem xaiv tsis tau</string>
+    <string name="delete">Rho tawm</string>
+    <string name="add">Ntxiv</string>
 </resources>

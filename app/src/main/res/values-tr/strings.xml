@@ -260,4 +260,6 @@ veri. Üçüncü taraf çerezleri her zaman devre dışıdır.</string>
     <string name="no_site_loaded">Yüklenen web siteniz yok</string>
     <string name="more_then_5_images_can_not_be_picked">Beşten fazla resim seçilemez</string>
     <string name="location">Konum</string>
+    <string name="delete">Silmek</string>
+    <string name="add">Eklemek</string>
 </resources>

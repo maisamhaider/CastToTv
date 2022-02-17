@@ -263,4 +263,6 @@ data. Derdepartykoekies is altyd gedeaktiveer.</string>
     <string name="date">Datum</string>
     <string name="no_site_loaded">Jy het nie gelaaide webwerf nie</string>
     <string name="more_then_5_images_can_not_be_picked">Meer as vyf beelde kan nie gekies word nie</string>
+    <string name="delete">Vee uit</string>
+    <string name="add">Voeg by</string>
 </resources>

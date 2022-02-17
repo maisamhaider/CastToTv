@@ -260,4 +260,6 @@ daten. Drëtt Partei Cookien sinn ëmmer behënnert.</string>
     <string name="date">Datum</string>
     <string name="no_site_loaded">Dir hutt keng gelueden Websäit</string>
     <string name="more_then_5_images_can_not_be_picked">Méi wéi fënnef Biller kënnen net gewielt ginn</string>
+    <string name="delete">Läschen</string>
+    <string name="add">Addéieren</string>
 </resources>

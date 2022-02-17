@@ -260,4 +260,6 @@ dati. I cookie di terze parti sono sempre disabilitati.</string>
     <string name="date">Data</string>
     <string name="no_site_loaded">Non hai caricato il sito web</string>
     <string name="more_then_5_images_can_not_be_picked">Non è possibile selezionare più di cinque immagini</string>
+    <string name="delete">Eliminare</string>
+    <string name="add">Aggiungere</string>
 </resources>

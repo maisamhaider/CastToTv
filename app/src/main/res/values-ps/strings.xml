@@ -260,4 +260,6 @@
     <string name="no_site_loaded">تاسو ډک شوی ویب پاڼه نلرئ</string>
     <string name="more_then_5_images_can_not_be_picked">د پنځو څخه زیات عکسونه نشي اخیستل کیدی</string>
     <string name="location">ځای</string>
+    <string name="delete">ړنګول</string>
+    <string name="add">اضافه کړئ</string>
 </resources>

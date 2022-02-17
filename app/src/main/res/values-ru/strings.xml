@@ -260,4 +260,6 @@
     <string name="no_site_loaded">У вас не загружен сайт</string>
     <string name="more_then_5_images_can_not_be_picked">Нельзя выбрать более пяти изображений.</string>
     <string name="location">" Место расположения"</string>
+    <string name="delete">Удалить</string>
+    <string name="add">Добавлять</string>
 </resources>

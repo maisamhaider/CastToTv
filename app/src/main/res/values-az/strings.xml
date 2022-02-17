@@ -260,4 +260,6 @@ data. Üçüncü tərəf kukiləri həmişə deaktivdir.</string>
     <string name="date">Tarix</string>
     <string name="no_site_loaded">Yüklənmiş veb saytınız yoxdur</string>
     <string name="more_then_5_images_can_not_be_picked">Beşdən çox şəkil seçilə bilməz</string>
+    <string name="delete">Sil</string>
+    <string name="add">Əlavə et</string>
 </resources>

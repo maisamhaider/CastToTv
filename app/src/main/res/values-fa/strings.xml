@@ -260,4 +260,6 @@
     <string name="date">تاریخ</string>
     <string name="no_site_loaded">شما وب سایت را بارگذاری نکرده اید</string>
     <string name="more_then_5_images_can_not_be_picked">بیش از پنج تصویر را نمی توان انتخاب کرد</string>
+    <string name="delete">حذف</string>
+    <string name="add">اضافه کردن</string>
 </resources>

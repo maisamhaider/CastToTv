@@ -260,4 +260,6 @@ data. Mae cwcis trydydd parti bob amser wedi\'u hanalluogi.</string>
     <string name="date">Dyddiad</string>
     <string name="no_site_loaded">Nid oes gennych wefan wedi\'i llwytho</string>
     <string name="more_then_5_images_can_not_be_picked">Ni ellir dewis mwy na phum delwedd</string>
+    <string name="delete">Dileu</string>
+    <string name="add">Ychwanegu</string>
 </resources>

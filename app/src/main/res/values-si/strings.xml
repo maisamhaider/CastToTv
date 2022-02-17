@@ -260,4 +260,6 @@
     <string name="no_site_loaded">ඔබට පූරණය කළ වෙබ් අඩවියක් නොමැත</string>
     <string name="more_then_5_images_can_not_be_picked">පින්තූර පහකට වඩා තෝරා ගත නොහැක</string>
     <string name="location">Location</string>
+    <string name="delete">මකන්න</string>
+    <string name="add">එකතු කරන්න</string>
 </resources>

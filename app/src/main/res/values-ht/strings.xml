@@ -260,4 +260,6 @@ done. Bonbon twazyèm pati yo toujou enfim.</string>
     <string name="date">Dat</string>
     <string name="no_site_loaded">Ou pa gen sit entènèt chaje</string>
     <string name="more_then_5_images_can_not_be_picked">Plis pase senk imaj pa ka chwazi</string>
+    <string name="delete">Efase</string>
+    <string name="add">Ajoute</string>
 </resources>

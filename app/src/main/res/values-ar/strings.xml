@@ -275,4 +275,6 @@
     <string name="date">تاريخ</string>
     <string name="no_site_loaded">لم تقم بتحميل الموقع</string>
     <string name="more_then_5_images_can_not_be_picked">لا يمكن انتقاء أكثر من خمس صور</string>
+    <string name="delete">حذف</string>
+    <string name="add">يضيف</string>
 </resources>

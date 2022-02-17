@@ -260,4 +260,6 @@ datos. As cookies de terceiros están sempre desactivadas.</string>
     <string name="date">Data</string>
     <string name="no_site_loaded">Non tes o sitio web cargado</string>
     <string name="more_then_5_images_can_not_be_picked">Non se poden escoller máis de cinco imaxes</string>
+    <string name="delete">Eliminar</string>
+    <string name="add">Engadir</string>
 </resources>

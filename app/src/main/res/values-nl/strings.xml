@@ -261,5 +261,7 @@ gegevens. Cookies van derden zijn altijd uitgeschakeld.</string>
     <string name="no_site_loaded">U heeft geen geladen website</string>
     <string name="more_then_5_images_can_not_be_picked">Meer dan vijf afbeeldingen kunnen niet worden gekozen</string>
     <string name="location">Plaats</string>
+    <string name="delete">Verwijderen</string>
+    <string name="add">Toevoegen</string>
 
 </resources>

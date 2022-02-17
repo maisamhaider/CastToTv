@@ -260,4 +260,6 @@ hiki ke hoʻohana ʻia e hōʻiliʻili i ka mea hoʻohana pilikino
     <string name="date">Lā</string>
     <string name="no_site_loaded">ʻAʻole ʻoe i hoʻouka i ka pūnaewele</string>
     <string name="more_then_5_images_can_not_be_picked">ʻAʻole hiki ke koho ʻia ma mua o ʻelima mau kiʻi</string>
+    <string name="delete">Holoi</string>
+    <string name="add">Hoʻohui</string>
 </resources>

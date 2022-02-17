@@ -262,4 +262,6 @@ dades. Les galetes de tercers sempre estan desactivades.</string>
     <string name="date">Data</string>
     <string name="no_site_loaded">No tens el lloc web carregat</string>
     <string name="more_then_5_images_can_not_be_picked">No es poden escollir més de cinc imatges</string>
+    <string name="delete">Suprimeix</string>
+    <string name="add">Afegeix</string>
 </resources>

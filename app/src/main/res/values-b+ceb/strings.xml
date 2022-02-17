@@ -261,7 +261,8 @@ datos. Ang mga cookies sa ikatulo nga partido kanunay nga gipugngan.</string>
     <string name="date">Petsa</string>
     <string name="no_site_loaded">Wala kay loaded nga website</string>
     <string name="more_then_5_images_can_not_be_picked">Labaw pa sa lima ka mga imahe ang dili mapili</string>
-
+    <string name="delete">Pagtangtang</string>
+    <string name="add">Idugang</string>
 
 
 </resources>

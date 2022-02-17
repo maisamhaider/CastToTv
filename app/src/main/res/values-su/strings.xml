@@ -260,5 +260,7 @@ data. Cookies pihak katilu sok ditumpurkeun.</string>
     <string name="no_site_loaded">Anjeun teu boga ramatloka dimuat</string>
     <string name="more_then_5_images_can_not_be_picked">Langkung ti lima gambar teu tiasa dipilih</string>
     <string name="location">lokasi</string>
+    <string name="delete">Mupus</string>
+    <string name="add">Nambihan</string>
 
 </resources>

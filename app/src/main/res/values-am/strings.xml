@@ -260,5 +260,7 @@
     <string name="date">ቀን</string>
     <string name="no_site_loaded">የተጫነ ድር ጣቢያ የለዎትም።</string>
     <string name="more_then_5_images_can_not_be_picked">ከአምስት የሚበልጡ ምስሎች ሊመረጡ አይችሉም</string>
+    <string name="delete">"ሰርዝ "</string>
+    <string name="add">አክል</string>
 
 </resources>

@@ -260,4 +260,6 @@
     <string name="date">ວັນທີ</string>
     <string name="no_site_loaded">ທ່ານບໍ່ມີເວັບໄຊທ໌ໂຫລດ</string>
     <string name="more_then_5_images_can_not_be_picked">ຫຼາຍກວ່ານັ້ນຫ້າຮູບພາບບໍ່ສາມາດເລືອກໄດ້</string>
+    <string name="delete">ລຶບ</string>
+    <string name="add">ຕື່ມ</string>
 </resources>

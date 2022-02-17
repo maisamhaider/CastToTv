@@ -260,5 +260,7 @@
     <string name="no_site_loaded">நீங்கள் ஏற்றப்பட்ட இணையதளம் இல்லை</string>
     <string name="more_then_5_images_can_not_be_picked">ஐந்து படங்களுக்கு மேல் எடுக்க முடியாது</string>
     <string name="location">இடம்</string>
+    <string name="delete">அழி</string>
+    <string name="add">கூட்டு</string>
 
 </resources>

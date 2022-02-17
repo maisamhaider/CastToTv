@@ -261,4 +261,6 @@ dữ liệu. Cookie của bên thứ ba luôn bị vô hiệu hóa.</string>
     <string name="no_site_loaded">Bạn chưa tải trang web</string>
     <string name="more_then_5_images_can_not_be_picked">Không thể chọn thêm năm hình ảnh nữa</string>
     <string name="location">"Địa điểm "</string>
+    <string name="delete">Xóa bỏ</string>
+    <string name="add">cộng</string>
 </resources>

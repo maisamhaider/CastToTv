@@ -261,4 +261,6 @@ Les données. Les cookies tiers sont toujours désactivés.</string>
     <string name="date">Date</string>
     <string name="no_site_loaded">Vous n\'avez pas de site Web chargé</string>
     <string name="more_then_5_images_can_not_be_picked">Plus de cinq images ne peuvent pas être sélectionnées</string>
+    <string name="delete">Supprimer</string>
+    <string name="add">Ajouter</string>
 </resources>

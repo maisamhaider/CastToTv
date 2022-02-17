@@ -261,5 +261,7 @@ të dhëna. Kukit e palëve të treta janë gjithmonë të çaktivizuara.</strin
     <string name="no_site_loaded">Ju nuk keni ngarkuar faqen e internetit</string>
     <string name="more_then_5_images_can_not_be_picked">Më shumë se pesë imazhe nuk mund të zgjidhen</string>
     <string name="location">Vendndodhja</string>
+    <string name="delete">Fshije</string>
+    <string name="add">Shtoni</string>
 
 </resources>

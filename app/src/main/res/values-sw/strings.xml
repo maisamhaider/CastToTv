@@ -260,5 +260,7 @@ data. Vidakuzi vya watu wengine huzimwa kila wakati.</string>
     <string name="no_site_loaded">Huna tovuti iliyopakiwa</string>
     <string name="more_then_5_images_can_not_be_picked">Picha zaidi ya tano haziwezi kuchaguliwa</string>
     <string name="location">Mahali</string>
+    <string name="delete">Futa</string>
+    <string name="add">Ongeza</string>
 
 </resources>

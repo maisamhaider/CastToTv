@@ -249,5 +249,7 @@ amakuru. Igice cya gatatu kuki gihagarikwa.</string>
     <string name="no_site_loaded">Ntabwo washyizeho urubuga</string>
     <string name="more_then_5_images_can_not_be_picked">Ibindi noneho amashusho atanu ntashobora gutorwa</string>
     <string name="location">Aho biherereye</string>
+    <string name="delete">Gusiba</string>
+    <string name="add">Ongeraho</string>
 
 </resources>

@@ -260,5 +260,7 @@ datos. Palaging hindi pinagana ang cookies ng third party.</string>
     <string name="no_site_loaded">Wala kang na-load na website</string>
     <string name="more_then_5_images_can_not_be_picked">Higit sa limang larawan ang hindi mapipili</string>
     <string name="location">Lokasyon</string>
+    <string name="delete">Tanggalin</string>
+    <string name="add">Idagdag</string>
 
 </resources>

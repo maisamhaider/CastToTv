@@ -260,4 +260,6 @@
     <string name="no_site_loaded">तपाइँसँग लोड गरिएको वेबसाइट छैन</string>
     <string name="more_then_5_images_can_not_be_picked">पाँच भन्दा बढी छविहरू छान्न सकिँदैन</string>
     <string name="location">"स्थान "</string>
+    <string name="delete">मेटाउन</string>
+    <string name="add">थप्नुहोस्</string>
 </resources>
